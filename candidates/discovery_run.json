@@ -1,0 +1,46 @@
+{
+  "spec_version": "1.0",
+  "sheet_version": "v1.1",
+  "built": "2026-08-08T14:43:20+00:00",
+  "criteria": {
+    "language": "python",
+    "min_stars": 50,
+    "max_age_days": 1095,
+    "build_files": [
+      "pyproject.toml",
+      "setup.py"
+    ],
+    "requires_tests": true,
+    "min_size_kb": 0,
+    "max_size_kb": 0,
+    "note": "star/recency floors are decisions of this tool, not inherited from any frozen spec"
+  },
+  "pool": {
+    "matched": 98416,
+    "enriched": 1761,
+    "pool_seed": 20260727,
+    "sampling": "seeded shuffle then enrich-until-target; NOT stars-ranked",
+    "searched": "2026-08-08",
+    "pushed_after": "2023-08-09"
+  },
+  "interleave_weights": {
+    "LOW": 15,
+    "MED": 20,
+    "HIGH": 25
+  },
+  "qc": {
+    "fraction": 0.1,
+    "seed": 20260727,
+    "n": 56,
+    "validates": "automated classifier vs one human pass (README \u00a78)"
+  },
+  "counts": {
+    "queued": 558,
+    "excluded": 1203,
+    "by_stratum": {
+      "HIGH": 135,
+      "LOW": 246,
+      "MED": 177
+    }
+  }
+}

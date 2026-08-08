@@ -1,0 +1,158 @@
+=== TRIAGE https://github.com/kennethreitz/records  sha=none  python=3.12  ref=python@sha256:cab2dbf575e971934a81e4622f5aba17aa7929719bd7e31033a3a83b97fd0464 ===
++ apt-get update -qq
++ apt-get install -y -qq git build-essential
++ python -m pip install -q --upgrade pip setuptools wheel
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ ok=1
++ '[' -f pyproject.toml ']'
++ '[' -f setup.py ']'
++ python -m pip install .
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting SQLAlchemy>=2.0 (from records==0.6.0)
+  Downloading sqlalchemy-2.0.51-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+Collecting tablib>=0.11.4 (from records==0.6.0)
+  Downloading tablib-3.9.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting openpyxl>2.6.0 (from records==0.6.0)
+  Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting docopt (from records==0.6.0)
+  Downloading docopt-0.6.2.tar.gz (25 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting et-xmlfile (from openpyxl>2.6.0->records==0.6.0)
+  Downloading et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting greenlet>=1 (from SQLAlchemy>=2.0->records==0.6.0)
+  Downloading greenlet-3.5.4-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting typing-extensions>=4.6.0 (from SQLAlchemy>=2.0->records==0.6.0)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+Downloading sqlalchemy-2.0.51-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 3.9 MB/s  0:00:00
+Downloading greenlet-3.5.4-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (621 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 621.5/621.5 kB 5.4 MB/s  0:00:00
+Downloading tablib-3.9.0-py3-none-any.whl (49 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Building wheels for collected packages: records, docopt
+  Building wheel for records (pyproject.toml): started
+  Building wheel for records (pyproject.toml): finished with status 'done'
+  Created wheel for records: filename=records-0.6.0-py3-none-any.whl size=10042 sha256=0dbc521ffee1425fe16c9e4b1c0cfa387e2a420b9ef700afd63c29bc995e6482
+  Stored in directory: /tmp/pip-ephem-wheel-cache-gr224yue/wheels/ed/25/30/93256a9245166a3129eecc7f476749387af4b58dcad2872e48
+  Building wheel for docopt (pyproject.toml): started
+  Building wheel for docopt (pyproject.toml): finished with status 'done'
+  Created wheel for docopt: filename=docopt-0.6.2-py2.py3-none-any.whl size=13782 sha256=7ca5fd3aa99055e7be20eb8b85be9cf8f27f42777614d647c6802d52a889c1fd
+  Stored in directory: /root/.cache/pip/wheels/1a/bf/a1/4cee4f7678c68c5875ca89eaccf460593539805c3906722228
+Successfully built records docopt
+Installing collected packages: docopt, typing-extensions, tablib, greenlet, et-xmlfile, SQLAlchemy, openpyxl, records
+
+Successfully installed SQLAlchemy-2.0.51 docopt-0.6.2 et-xmlfile-2.0.0 greenlet-3.5.4 openpyxl-3.1.5 records-0.6.0 tablib-3.9.0 typing-extensions-4.16.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ python -m pip install -r requirements.txt
+Obtaining file:///repo
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting pytest (from -r requirements.txt (line 2))
+  Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Requirement already satisfied: SQLAlchemy>=2.0 in /usr/local/lib/python3.12/site-packages (from records==0.6.0) (2.0.51)
+Requirement already satisfied: tablib>=0.11.4 in /usr/local/lib/python3.12/site-packages (from records==0.6.0) (3.9.0)
+Requirement already satisfied: openpyxl>2.6.0 in /usr/local/lib/python3.12/site-packages (from records==0.6.0) (3.1.5)
+Requirement already satisfied: docopt in /usr/local/lib/python3.12/site-packages (from records==0.6.0) (0.6.2)
+Collecting psycopg2-binary (from records==0.6.0)
+  Downloading psycopg2_binary-2.9.12-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+Collecting iniconfig>=1.0.1 (from pytest->-r requirements.txt (line 2))
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: packaging>=22 in /usr/local/lib/python3.12/site-packages (from pytest->-r requirements.txt (line 2)) (26.2)
+Collecting pluggy<2,>=1.5 (from pytest->-r requirements.txt (line 2))
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest->-r requirements.txt (line 2))
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: et-xmlfile in /usr/local/lib/python3.12/site-packages (from openpyxl>2.6.0->records==0.6.0) (2.0.0)
+Requirement already satisfied: greenlet>=1 in /usr/local/lib/python3.12/site-packages (from SQLAlchemy>=2.0->records==0.6.0) (3.5.4)
+Requirement already satisfied: typing-extensions>=4.6.0 in /usr/local/lib/python3.12/site-packages (from SQLAlchemy>=2.0->records==0.6.0) (4.16.0)
+Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 3.6 MB/s  0:00:00
+Downloading psycopg2_binary-2.9.12-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 3.1 MB/s  0:00:01
+Building wheels for collected packages: records
+  Building editable for records (pyproject.toml): started
+  Building editable for records (pyproject.toml): finished with status 'done'
+  Created wheel for records: filename=records-0.6.0-0.editable-py3-none-any.whl size=6556 sha256=022b93beadbf9f95c2c6a63e0396e036155af71fc932dd5edaf02029fa0f45e1
+  Stored in directory: /tmp/pip-ephem-wheel-cache-7gmsi4wk/wheels/ed/25/30/93256a9245166a3129eecc7f476749387af4b58dcad2872e48
+Successfully built records
+Installing collected packages: pygments, psycopg2-binary, pluggy, iniconfig, records, pytest
+  Attempting uninstall: records
+    Found existing installation: records 0.6.0
+    Uninstalling records-0.6.0:
+      Successfully uninstalled records-0.6.0
+
+Successfully installed iniconfig-2.3.0 pluggy-1.6.0 psycopg2-binary-2.9.12 pygments-2.20.0 pytest-9.1.1 records-0.6.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ '[' 1 '!=' 1 ']'
++ echo '###INSTALL_OK###'
++ python -m pip install -q pytest pytest-timeout
+###INSTALL_OK###
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ python -m pip freeze
+++ wc -l
++ echo '###LOCK_LINES=17###'
++ python -c 'import sys;print("###PYFULL=%d.%d.%d###"%sys.version_info[:3])'
+###LOCK_LINES=17###
+###PYFULL=3.12.13###
++ python -m pytest --collect-only -q
++ echo '###COLLECT_OK###'
+###COLLECT_OK###
+++ grep -cE '^[^ ]+::' /tmp/c.txt
++ echo '###NCOLLECT=31###'
++ tail -5 /tmp/c.txt
+###NCOLLECT=31###
+tests/test_transactions.py::test_failing_transaction[sqlite_memory]
+tests/test_transactions.py::test_passing_transaction_self_managed[sqlite_memory]
+tests/test_transactions.py::test_passing_transaction[sqlite_memory]
+
+31 tests collected in 0.03s
++ python -m pytest -q --timeout=300
++ rc=0
++ tail -30 /tmp/t.txt
+...............................                                          [100%]
+31 passed in 0.06s
++ echo '###TESTS_RC=0###'
+###TESTS_RC=0###
++ grep -oE '[0-9]+ (passed|failed|error|errors)' /tmp/t.txt
++ tail -6
++ sed 's/^/###COUNT /; s/$/###/'
+###COUNT 31 passed###
+
+----------------------------------------
+RESULT: BUILD_OK TESTS_OK
+LOG:    /home/sankalp.shankar/traceweave-data/out/records/py3.12/attempt.log
+----------------------------------------

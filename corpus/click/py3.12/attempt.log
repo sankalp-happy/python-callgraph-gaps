@@ -1,0 +1,103 @@
+=== TRIAGE https://github.com/pallets/click  sha=none  python=3.12  ref=python@sha256:55842c72c6b3584d06ec84c731fc516b30b8a53ad262ebd085e47ab568b3bfc1 ===
++ apt-get update -qq
++ apt-get install -y -qq git build-essential
++ python -m pip install -q --upgrade pip setuptools wheel
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ ok=1
++ '[' -f pyproject.toml ']'
++ python -m pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+WARNING: click 8.5.0.dev0 does not provide the extra 'test'
+Building wheels for collected packages: click
+  Building wheel for click (pyproject.toml): started
+  Building wheel for click (pyproject.toml): finished with status 'done'
+  Created wheel for click: filename=click-8.5.0.dev0-py3-none-any.whl size=124372 sha256=47f47fb832d1bba47a392dac61a8b8319c13192eb9d653fa809e365de2ae8cca
+  Stored in directory: /tmp/pip-ephem-wheel-cache-7_rq6o9a/wheels/ed/25/30/93256a9245166a3129eecc7f476749387af4b58dcad2872e48
+Successfully built click
+Installing collected packages: click
+Successfully installed click-8.5.0.dev0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
+###INSTALL_OK###
++ '[' 1 '!=' 1 ']'
++ echo '###INSTALL_OK###'
++ python -m pip install -q pytest pytest-timeout
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ python -m pip freeze
+++ wc -l
+###LOCK_LINES=9###
++ echo '###LOCK_LINES=9###'
++ python -c 'import sys;print("###PYFULL=%d.%d.%d###"%sys.version_info[:3])'
+###PYFULL=3.12.13###
++ python -m pytest --collect-only -q
+###COLLECT_OK###
++ echo '###COLLECT_OK###'
+++ grep -cE '^[^ ]+::' /tmp/c.txt
+###NCOLLECT=1965###
++ echo '###NCOLLECT=1965###'
++ tail -5 /tmp/c.txt
+tests/test_utils/test_style.py::test_unstyle_other_ansi[\x1b[<0;1;1Mx y\x1b[<0;1;1m-x y]
+tests/test_utils/test_style.py::test_unstyle_other_ansi[\x1b[0 qx y-x y]
+tests/test_utils/test_style.py::test_unstyle_other_ansi[x\x1b[3~y-xy]
+
+1965/32965 tests collected (31000 deselected) in 1.47s
++ python -m pytest -q --timeout=300
++ rc=0
++ tail -30 /tmp/t.txt
+........................................................................ [  3%]
+........................................................................ [  7%]
+........................................................................ [ 10%]
+..........x............................................................. [ 14%]
+........................................................................ [ 18%]
+........................................................................ [ 21%]
+........................................................................ [ 25%]
+........................................................................ [ 29%]
+........................................................................ [ 32%]
+........................................................................ [ 36%]
+........................................................................ [ 40%]
+........................................................................ [ 43%]
+........................................................................ [ 47%]
+........................................................................ [ 51%]
+........................................................................ [ 54%]
+........................................................................ [ 58%]
+........................................................................ [ 62%]
+........................................................................ [ 65%]
+........................................................................ [ 69%]
+........................................................................ [ 73%]
+................sssssssssssssssssssss................ss................. [ 76%]
+........................................................................ [ 80%]
+........................................................................ [ 84%]
+.................................s...................................... [ 87%]
+........................................................................ [ 91%]
+........................................................................ [ 95%]
+........................................................................ [ 98%]
+.....................                                                    [100%]
+1940 passed, 24 skipped, 31000 deselected, 1 xfailed in 2.05s
+###TESTS_RC=0###
++ echo '###TESTS_RC=0###'
++ grep -oE '[0-9]+ (passed|failed|error|errors)' /tmp/t.txt
++ sed 's/^/###COUNT /; s/$/###/'
++ tail -6
+###COUNT 1940 passed###
+
+----------------------------------------
+RESULT: BUILD_OK TESTS_OK
+LOG:    /Users/sankalpshankar/traceweave-data/out/click/py3.12/attempt.log
+----------------------------------------

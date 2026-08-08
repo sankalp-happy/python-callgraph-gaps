@@ -1,0 +1,8 @@
+=== TRIAGE https://github.com/traceweave-nonexistent/nope-xyz  sha=none  python=3.12  ref=python@sha256:cab2dbf575e971934a81e4622f5aba17aa7929719bd7e31033a3a83b97fd0464 ===
+remote: Repository not found.
+fatal: repository 'https://github.com/traceweave-nonexistent/nope-xyz/' not found
+
+----------------------------------------
+RESULT: BUILD_FAIL CLONE
+LOG:    /home/sankalp.shankar/traceweave-data/out/nope-xyz/py3.12/attempt.log
+----------------------------------------

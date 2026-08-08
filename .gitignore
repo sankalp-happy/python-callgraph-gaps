@@ -1,0 +1,41 @@
+# TraceWeave-Core
+#
+# The data root lives OUTSIDE this repo at ~/traceweave-data (see MANIFEST.md §1.1:
+# Docker Desktop cannot bind-mount /tmp, so corpus paths must be under $HOME).
+# These rules apply if you choose to bring parts of it in-tree.
+
+# --- regenerable corpus scratch: never commit -------------------------------
+# refrepos/ is 250 MB of shallow clones, rebuildable from
+#   traceweave/config/reference_repos.txt
+refrepos/
+work/
+traces/
+*.parquet
+
+# --- DO commit corpus provenance --------------------------------------------
+# corpus/ (or traceweave-data/out) holds result.env + lock.txt + attempt.log.
+# ~4 MB at 450 candidates, and it CANNOT be regenerated: lock.txt records what
+# PyPI resolved on a specific date, and re-resolving changes lock_sha256 and
+# therefore the repo's identity 5-tuple. See MIGRATION.md §1.
+# Deliberately NOT ignored. Do not add corpus/ here.
+
+# --- python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# --- editors / os -----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# --- secrets ----------------------------------------------------------------
+# github_meta.py reads GITHUB_TOKEN from the environment; never from a file.
+.env
+*.token

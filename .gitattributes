@@ -1,0 +1,13 @@
+# TraceWeave-Core — keep provenance byte-exact.
+#
+# candidates/ was produced on a Windows machine (HANDOFF_DISCOVERY.md), so the
+# CSVs carry CRLF. corpus/ holds result.env + lock.txt + attempt.log, whose bytes
+# back the identity 5-tuple and the classifier-disagreement number in the paper.
+# Git's eol normalization would rewrite these on add/checkout; -text disables it
+# so what is committed is exactly what the tools emitted.
+candidates/** -text
+corpus/** -text
+corpus.amd64-baseline/** -text
+
+# The paper is binary; never diff or munge it.
+*.pdf binary

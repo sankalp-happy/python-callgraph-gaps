@@ -1,0 +1,8 @@
+{
+  "matched": 98416,
+  "enriched": 1761,
+  "pool_seed": 20260727,
+  "sampling": "seeded shuffle then enrich-until-target; NOT stars-ranked",
+  "searched": "2026-08-08",
+  "pushed_after": "2023-08-09"
+}

@@ -1,0 +1,17 @@
+docopt==0.6.2
+et_xmlfile==2.0.0
+greenlet==3.5.4
+iniconfig==2.3.0
+openpyxl==3.1.5
+packaging==26.2
+pluggy==1.6.0
+psycopg2-binary==2.9.12
+Pygments==2.20.0
+pytest==9.1.1
+pytest-timeout==2.4.0
+-e git+https://github.com/kennethreitz/records@ea4273695cee6da42edf1cb294d1f2a4505470fc#egg=records
+setuptools==83.0.0
+SQLAlchemy==2.0.51
+tablib==3.9.0
+typing_extensions==4.16.0
+wheel==0.47.0

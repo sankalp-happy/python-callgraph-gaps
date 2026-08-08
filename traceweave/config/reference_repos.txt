@@ -1,0 +1,14 @@
+https://github.com/ansible/ansible
+https://github.com/celery/celery
+https://github.com/scrapy/scrapy
+https://github.com/pytest-dev/pytest
+https://github.com/pallets/flask
+https://github.com/sqlalchemy/sqlalchemy
+https://github.com/django/django
+https://github.com/psf/requests
+https://github.com/pallets/click
+https://github.com/kennethreitz/records
+https://github.com/TheAlgorithms/Python
+https://github.com/pytoolz/toolz
+https://github.com/chardet/chardet
+https://github.com/psf/black
