@@ -39,3 +39,6 @@ venv/
 # github_meta.py reads GITHUB_TOKEN from the environment; never from a file.
 .env
 *.token
+
+# --- claude code local settings (machine-specific, not shared) --------------
+.claude/
