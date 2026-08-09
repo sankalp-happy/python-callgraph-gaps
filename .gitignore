@@ -42,3 +42,4 @@ venv/
 
 # --- claude code local settings (machine-specific, not shared) --------------
 .claude/
+.gstack/

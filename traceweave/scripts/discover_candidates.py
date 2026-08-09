@@ -119,10 +119,25 @@ def write_jsonl(path: Path, rows: list[dict]) -> None:
 
 
 def search_shard(lo: int, hi: int | None, pushed_after: str,
-                 token: str | None) -> tuple[list[dict], int]:
-    """One star-range query, paginated to the search cap. Returns (repos, total)."""
+                 token: str | None, pushed_before: str | None = None,
+                 splittable: bool = True) -> tuple[list[dict], int]:
+    """One (star-range x date-window) query, paginated to the search cap.
+
+    Returns (repos, total). `total` is GitHub's total_count for the query, which
+    is what tells the caller whether this shard needs splitting.
+
+    The page-1 peek matters. `total_count` arrives with the very first page, and
+    a shard whose total exceeds the cap is going to be split and re-queried
+    anyway -- so paginating it first fetches up to nine more pages whose contents
+    the caller then throws away. The 2026-08-08 discovery run did exactly that and
+    discarded roughly 90% of everything it fetched. When the shard cannot be split
+    any further we DO paginate, because those truncated results are the only ones
+    we will ever get for that band.
+    """
     rng = f"{lo}..{hi}" if hi is not None else f">={lo}"
-    q = f"language:python stars:{rng} pushed:>={pushed_after}"
+    window = (f"{pushed_after}..{pushed_before}" if pushed_before
+              else f">={pushed_after}")
+    q = f"language:python stars:{rng} pushed:{window}"
     out: list[dict] = []
     total = 0
     for page in range(1, SEARCH_CAP // SEARCH_PAGE + 1):
@@ -135,7 +150,7 @@ def search_shard(lo: int, hi: int | None, pushed_after: str,
             time.sleep(wait)
             continue
         if not isinstance(data, dict):
-            log(f"  search failed HTTP {status} for stars:{rng}")
+            log(f"  search failed HTTP {status} for stars:{rng} pushed:{window}")
             break
         total = int(data.get("total_count") or 0)
         items = data.get("items") or []
@@ -144,41 +159,98 @@ def search_shard(lo: int, hi: int | None, pushed_after: str,
         time.sleep(SEARCH_PACE_S)
         if len(items) < SEARCH_PAGE:
             break
+        if page == 1 and total > SEARCH_CAP and splittable:
+            # Over the cap and splittable: stop here, the caller will subdivide.
+            break
     return out, total
 
 
-def shard_pool(min_stars: int, pushed_after: str, token: str | None) -> list[dict]:
-    """Bisect the star axis until each shard is under the search cap."""
+def shard_pool(min_stars: int, pushed_after: str,
+               token: str | None) -> tuple[list[dict], dict]:
+    """Bisect until every shard is under the search cap. Returns (repos, report).
+
+    Two axes, because one is not enough. Star-bisection alone leaves bands where
+    every repo has the SAME star count -- `stars:50..50` cannot be split further
+    -- and GitHub still refuses to page past 1000. The 2026-08-08 run lost 2,378
+    repos that way in the 50..62 band alone. So when the star axis is exhausted,
+    the `pushed:` window is bisected instead: a date range is always splittable
+    down to a single day, and the union of the sub-windows is the full band.
+
+    Every truncation that still survives both axes is recorded in the returned
+    report and ends up in `01_pool_meta.json`. A cap that is not written down
+    reads, later, as complete coverage.
+    """
     seen: dict[str, dict] = {}
-    # (lo, hi); hi=None means open-ended top shard.
-    todo: list[tuple[int, int | None]] = [(min_stars, None)]
+    today = date.today().isoformat()
+    # (lo, hi, after, before); hi=None is the open-ended top star shard,
+    # before=None means "up to now".
+    todo: list[tuple[int, int | None, str, str | None]] = [
+        (min_stars, None, pushed_after, None)]
+    truncations: list[dict] = []
+    n_queries = 0
+
     while todo:
-        lo, hi = todo.pop(0)
-        items, total = search_shard(lo, hi, pushed_after, token)
-        span = f"stars:{lo}..{hi if hi is not None else 'inf'}"
-        if total > SEARCH_CAP and (hi is None or hi > lo):
+        lo, hi, after, before = todo.pop(0)
+        star_splittable = hi is None or hi > lo
+        date_splittable = date.fromisoformat(after) < date.fromisoformat(before or today)
+        items, total = search_shard(lo, hi, after, token, before,
+                                    splittable=star_splittable or date_splittable)
+        n_queries += 1
+        span = (f"stars:{lo}..{hi if hi is not None else 'inf'} "
+                f"pushed:{after}..{before or 'now'}")
+
+        if total > SEARCH_CAP and star_splittable:
             # Geometric midpoint: star counts are heavily power-law distributed,
             # so splitting arithmetically leaves the low shard still over the cap.
             if hi is None:
                 mid = max(lo + 1, lo * 4)
-                todo.append((lo, mid - 1))
-                todo.append((mid, None))
+                todo.append((lo, mid - 1, after, before))
+                todo.append((mid, None, after, before))
             else:
                 mid = max(lo + 1, int((lo * hi) ** 0.5))
                 if mid >= hi:
                     mid = lo + (hi - lo) // 2 + 1
-                todo.append((lo, mid - 1))
-                todo.append((mid, hi))
-            log(f"  {span}: {total} > cap, splitting")
+                todo.append((lo, mid - 1, after, before))
+                todo.append((mid, hi, after, before))
+            log(f"  {span}: {total} > cap, splitting stars")
             continue
+
+        if total > SEARCH_CAP and date_splittable:
+            # Star axis exhausted; bisect the date window instead.
+            d_lo = date.fromisoformat(after)
+            d_hi = date.fromisoformat(before or today)
+            mid = date.fromordinal((d_lo.toordinal() + d_hi.toordinal()) // 2)
+            if mid <= d_lo:
+                mid = d_lo + timedelta(days=1)
+            todo.append((lo, hi, after, (mid - timedelta(days=1)).isoformat()))
+            todo.append((lo, hi, mid.isoformat(), before))
+            log(f"  {span}: {total} > cap and stars unsplittable, splitting dates")
+            continue
+
         if total > SEARCH_CAP:
-            log(f"  {span}: {total} > cap and unsplittable — TRUNCATED at {len(items)}")
+            lost = total - len(items)
+            log(f"  {span}: {total} > cap, BOTH axes exhausted — "
+                f"TRUNCATED at {len(items)}, {lost} unreachable")
+            truncations.append({"span": span, "total": total,
+                                "kept": len(items), "lost": lost})
+
         for it in items:
             fn = it.get("full_name")
             if fn:
                 seen.setdefault(fn, it)
         log(f"  {span}: total={total} kept={len(items)} pool={len(seen)}")
-    return list(seen.values())
+
+    report = {
+        "search_queries": n_queries,
+        "shards_truncated": len(truncations),
+        "repos_unreachable": sum(t["lost"] for t in truncations),
+        "truncations": truncations,
+        "axes": "stars bisected geometrically, then pushed-date bisected",
+    }
+    if truncations:
+        log(f"[pool] {len(truncations)} shard(s) still truncated after both axes; "
+            f"{report['repos_unreachable']} repos unreachable (recorded, not hidden)")
+    return list(seen.values()), report
 
 
 def classify_licence(lic: dict | None) -> tuple[str, str]:
@@ -225,7 +297,7 @@ def stage_pool(args, paths: dict[str, Path], token: str | None) -> int:
                     - timedelta(days=args.max_age_days)).date().isoformat()
     log(f"[pool] language:python stars:>={args.min_stars} pushed:>={pushed_after}")
 
-    raw = shard_pool(args.min_stars, pushed_after, token)
+    raw, shard_report = shard_pool(args.min_stars, pushed_after, token)
     n_matched = len(raw)
     log(f"[pool] {n_matched} distinct repos matched")
 
@@ -308,6 +380,7 @@ def stage_pool(args, paths: dict[str, Path], token: str | None) -> int:
         "sampling": "seeded shuffle then enrich-until-target; NOT stars-ranked",
         "searched": date.today().isoformat(),
         "pushed_after": pushed_after,
+        "search": shard_report,
     }, indent=2) + "\n")
     eligible = [r for r in rows if r["excluded_reason"] == "none"]
     log(f"[pool] wrote {len(rows)} rows -> {paths['pool']}")
@@ -580,13 +653,19 @@ def stage_queue(args, paths: dict[str, Path]) -> int:
     # told not to guess it.
     with paths["qc_csv"].open("w", newline="") as fh:
         w = csv.writer(fh)
+        # `result_line_seen` is required by ins1 v1.1 §6, which calls it "new in
+        # v1.1 and the most useful column on the sheet": when the human and the
+        # classifier disagree it distinguishes "saw different output" from "saw the
+        # same output and read the table differently". Omitting it from the QC
+        # sample defeated the sample's only purpose.
         w.writerow(["row_id", "repo_url", "sha", "status", "error_class",
                     "fix_applied", "n_failing", "minutes_spent", "log_file",
-                    "notes", "your_name", "date", "sheet_version"])
+                    "result_line_seen", "notes", "your_name", "date",
+                    "sheet_version"])
         for r in rows:
             if r.get("qc_sample") == "yes":
                 w.writerow([r["row_id"], r["repo_url"], r["sha"],
-                            "", "", "", "", "", "", "", "", "", SHEET_VERSION])
+                            "", "", "", "", "", "", "", "", "", "", SHEET_VERSION])
 
     provenance = {
         "spec_version": SPEC_VERSION,
