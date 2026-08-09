@@ -1,8 +1,9 @@
 # Phase 0 follow-ups — proposed edits to the frozen documents
 
-**Written:** 2026-08-09. **Not applied.** Every change below touches a document
-that is deliberately hard to change, so each is written out as a paste-ready diff
-with the evidence that motivates it.
+**Written:** 2026-08-09. **All applied 2026-08-09** — `MANIFEST.md` is now at
+`manifest_version 1.2`, `MIGRATION.md` §4 is rewritten, and `triage.sh` is at v1.2.
+The diffs are kept below as the evidence and rationale for each change; the
+authoritative text is now in the documents themselves.
 
 `MANIFEST.md` says of itself: *"It is written on day one and only ever appended
 to. If a pin changes, bump `manifest_version`, add a dated row, and keep the old
@@ -11,7 +12,7 @@ row."* Filling in a pin that was left blank is still a pin change, so §2, §6 a
 
 ---
 
-## 1. §2 — pin Pyright at `1.1.411`
+## 1. §2 — pin Pyright at `1.1.411` — ✅ APPLIED
 
 MANIFEST §7 item 1 and §2's Pyright row (*"Version query pending; pin before
 Phase 1 §1.2 starts"*).
@@ -40,7 +41,7 @@ curl -s https://registry.npmjs.org/pyright | python3 -c "import sys,json;print(j
 
 ---
 
-## 2. §2 — record that the PyCG `0.0.8` pin needs a shim
+## 2. §2 — record that the PyCG `0.0.8` pin needs a shim — ✅ APPLIED as §2.1
 
 This one is not a version change. The pin stays at `0.0.8`. What changes is that
 **`0.0.8` as published on PyPI cannot be imported on Linux at all**, which is a
@@ -150,7 +151,7 @@ under 3.12.** Tracebacks for every failure are in
 
 ---
 
-## 3. §7 — outstanding-before-Phase-1 checklist
+## 3. §7 — outstanding-before-Phase-1 checklist — ✅ APPLIED
 
 ```diff
  ## 7. Outstanding before Phase 1
@@ -167,7 +168,7 @@ under 3.12.** Tracebacks for every failure are in
 
 ---
 
-## 4. §6 — change-log row
+## 4. §6 — change-log row — ✅ APPLIED (manifest_version 1.1 → 1.2)
 
 ```diff
  | **1.1** | 2026-07-27 | **Added `linux/arm64` digests for all 5 images** … |
@@ -176,7 +177,13 @@ under 3.12.** Tracebacks for every failure are in
 
 ---
 
-## 5. `MIGRATION.md` §4 — the Apple Silicon claim is now false
+## 5. `MIGRATION.md` §4 — the Apple Silicon claim is now false — ✅ RESOLVED 2026-08-09
+
+> **Decided and applied.** Mac = manager host (development, docs, sheets, single-repo work,
+> reference set). Linux x86_64 box = execution host (the 558-repo triage, all tracing, every
+> published timing). The corpus is amd64; a repo triaged on the Mac is development output, not a
+> corpus record. `MIGRATION.md` §4 is rewritten to match — the analysis below is kept as the
+> evidence that motivated it.
 
 §4 currently reads *"Target machine is an Apple Silicon Mac (arm64). The work is
 done; no hand-editing required."* The arm64 digests are indeed in place and that
@@ -213,12 +220,28 @@ whichever way it goes. Suggested wording if the corpus is built on the Linux box
 
 ---
 
-## 6. Not a document change, but it ships with these
+## 6. `triage.sh` v1.2 — ✅ APPLIED
 
-`traceweave/triage/triage_v1.2.patch` — two verified defects in the triage atom.
-Applying it changes the classification vocabulary the operators' sheet is
-validated against, so it lands together with
-`ins1_v1.1_amendment_draft.md` §2, or neither lands.
+Two verified defects in the triage atom, both reproduced from scratch on this
+host. `triage.sh` now carries them; the standalone `triage_v1.2.patch` has been
+removed rather than left lying around, because an already-applied patch file is a
+double-apply waiting to happen. `git log -p traceweave/triage/triage.sh` is the
+reviewable diff.
 
-Both are reproduced from scratch on this host; see the patch header and the
-amendment draft §1 for the evidence.
+**A third defect was introduced by the patch and caught during verification.**
+`n_collected` was being read with `grep -oE "[0-9]+ tests? collected"`, which
+matches the *total* out of the middle of pytest's deselection form. `click`
+prints `1965/32965 tests collected (31000 deselected)`, so its collected count
+was recorded as **32965 instead of 1965** — a 16.8x overstatement, silently, on
+every repo that deselects by default. Fixed in both `triage.sh` and
+`runner.py`: the selected count wins, and the pre-deselection total is recorded
+separately as `n_collected_total`. Verified: `click` is back to 1965, matching the
+committed `corpus.amd64-baseline` record, with 32965 kept alongside.
+
+### This now owes the operators an amendment
+
+v1.2 emits `OOM`, `TIMEOUT`, `KILLED` and `collect_partial` — none of which ins1
+v1.1 §6 permits. An operator following §6 literally **cannot record what the
+script now prints**. `ins1_v1.1_amendment_draft.md` is the fix and it is not yet
+sent. Until it is, `scripts/validate_sheet.py --v12` is the machine check, and
+this is tracked as an open item in MANIFEST §7.

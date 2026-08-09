@@ -145,12 +145,24 @@ MARKER_RE = {
     "install_fail": re.compile(r"###INSTALL_FAIL###"),
     "collect_ok": re.compile(r"###COLLECT_OK###"),
     "collect_fail": re.compile(r"###COLLECT_FAIL###"),
+    # v1.2 markers. Kept alongside the v1.1 set rather than replacing it: logs
+    # written by v1.1 still have to classify correctly, because the 14-repo
+    # spot-check and the reference-set validation runs predate the patch.
+    "collect_partial": re.compile(r"###COLLECT_PARTIAL###"),
+    "script_end": re.compile(r"###SCRIPT_END###"),
 }
+NCOLLECT_ERRORS_RE = re.compile(r"###NCOLLECT_ERRORS=(\d+)###")
 NCOLLECT_RE = re.compile(r"###NCOLLECT=(\d+)###")
 TESTS_RC_RE = re.compile(r"###TESTS_RC=(-?\d+)###")
 # pytest's own summary, which triage.sh tails into the log even on the failure
 # path. This is what makes a false COLLECT_FAIL recoverable after the fact.
-PYTEST_COLLECTED_RE = re.compile(r"(\d+)\s+tests?\s+collected")
+#
+# Two forms, and the order matters. A repo that deselects by default prints
+# "1965/32965 tests collected (31000 deselected)" -- click does exactly that. The
+# selected count is the one that will run; matching the plain form first would
+# capture the total out of the middle of the slash form and overstate it 16x.
+PYTEST_SELECTED_RE = re.compile(r"(\d+)/(\d+)\s+tests?\s+collected")
+PYTEST_COLLECTED_RE = re.compile(r"(?<![\d/])(\d+)\s+tests?\s+collected")
 PYTEST_COLLECT_ERRORS_RE = re.compile(r"collected.*?,\s*(\d+)\s+errors?")
 PYTEST_INTERRUPTED_RE = re.compile(r"Interrupted:\s*(\d+)\s+error")
 
@@ -191,21 +203,29 @@ def verify_attempt(env: dict[str, str], log_path: Path) -> dict:
     # Recovery path: on the COLLECT_FAIL branch triage.sh emits no NCOLLECT
     # marker but does tail pytest's summary, which states the real count.
     recovered = None
-    for mm in PYTEST_COLLECTED_RE.finditer(text):
+    for mm in PYTEST_SELECTED_RE.finditer(text):
         recovered = int(mm.group(1))
+    if recovered is None:
+        for mm in PYTEST_COLLECTED_RE.finditer(text):
+            recovered = int(mm.group(1))
     if ncollect is None and recovered is not None:
         ncollect = recovered
         v["verify_note"] = "n_collected recovered from pytest summary"
     if ncollect is not None:
         v["n_collected_verified"] = str(ncollect)
 
+    # v1.2 states the collect-error count directly; v1.1 logs only imply it.
     n_err = None
-    for mm in PYTEST_COLLECT_ERRORS_RE.finditer(text):
+    mm = NCOLLECT_ERRORS_RE.search(text)
+    if mm:
         n_err = int(mm.group(1))
-    if n_err is None:
-        mm = PYTEST_INTERRUPTED_RE.search(text)
-        if mm:
+    else:
+        for mm in PYTEST_COLLECT_ERRORS_RE.finditer(text):
             n_err = int(mm.group(1))
+        if n_err is None:
+            mm = PYTEST_INTERRUPTED_RE.search(text)
+            if mm:
+                n_err = int(mm.group(1))
     if n_err is not None:
         v["n_collect_errors"] = str(n_err)
 
@@ -232,31 +252,50 @@ def verify_attempt(env: dict[str, str], log_path: Path) -> dict:
                  error_class_runner=env.get("error_class_v11") or "OTHER")
         return v
 
-    # Install succeeded. Everything below is where triage.sh:244 stops being
+    # Install succeeded. Everything below is where v1.1's triage.sh stopped being
     # able to reach RED, so the runner has to.
-    if not seen["collect_ok"] and not seen["collect_fail"]:
+    reached_collect = (seen["collect_ok"] or seen["collect_fail"]
+                       or seen["collect_partial"])
+    if not reached_collect:
         v.update(status_verified="RED")
         if hit_ceiling:
             v.update(error_class_runner="TIMEOUT",
                      verify_note=f"no collect marker; seconds_build="
                                  f"{seconds_build} at the 1800s container ceiling")
         else:
-            v.update(error_class_runner="KILLED",
-                     verify_note="install succeeded but no collect marker and no "
-                                 "timeout: container died (OOM is the usual cause)")
+            # v1.2 also records docker_rc, which names the killer outright.
+            rc = env.get("docker_rc", "")
+            named = {"124": "TIMEOUT", "137": "OOM"}.get(rc)
+            v.update(error_class_runner=named or "KILLED",
+                     verify_note="install succeeded but no collect marker"
+                                 + (f"; docker_rc={rc}" if rc else "")
+                                 + ("" if named else
+                                    ": container died (OOM is the usual cause)"))
         return v
 
-    if seen["collect_fail"]:
+    if seen["collect_partial"]:
+        # v1.2's explicit partial state: some modules collected, some failed to
+        # import, and the suite DID run. Verified on psf/black: 444 collected,
+        # 1 optional-extra import error, 442 passed. Fall through to the
+        # tests-ran ladder below so TESTS_RC decides GREEN/AMBER/OOM, and only
+        # tag the partial collect.
+        v["error_class_runner"] = "PARTIAL_COLLECT"
+        v["verify_note"] = (
+            (v["verify_note"] + "; " if v["verify_note"] else "")
+            + f"{ncollect if ncollect is not None else '?'} collected despite "
+              f"{v['n_collect_errors'] or '?'} import error(s)")
+    elif seen["collect_fail"]:
         if ncollect and ncollect > 0:
-            # THE false-COLLECT_FAIL case. Verified on psf/black: 444 collected,
-            # 1 optional-extra import error, 442 tests pass once the suite is
-            # allowed to run. Usable, and the count is known.
+            # v1.1's FALSE COLLECT_FAIL: the same situation as above, but the old
+            # script aborted before running the suite and recorded no count. The
+            # count is recovered from pytest's summary in the log tail.
             v.update(status_verified="AMBER",
                      error_class_runner="PARTIAL_COLLECT",
                      verify_note=(v["verify_note"] + "; " if v["verify_note"] else "")
                      + f"{ncollect} collected despite "
                        f"{v['n_collect_errors'] or '?'} import error(s); "
-                       f"suite was NOT run by triage.sh")
+                       f"suite was NOT run (triage.sh v1.1 behaviour)")
+            return v
         else:
             # Zero tests collected. triage.sh calls this AMBER; it is admissible
             # under amendment 2 but cannot satisfy ins2's >=1 test_suite
@@ -265,9 +304,14 @@ def verify_attempt(env: dict[str, str], log_path: Path) -> dict:
                      verify_note="collect failed with 0 tests collected")
         return v
 
-    # Collected cleanly; the suite ran.
+    # The suite ran. A partial collect is carried through as the error class
+    # rather than being flattened to NONE -- a repo where some test modules never
+    # imported is usable but not clean, and ins2 needs to know which modules it
+    # cannot draw a workload from. A kill outranks it: those branches keep their
+    # own class below.
+    clean_class = "PARTIAL_COLLECT" if seen["collect_partial"] else "NONE"
     if tests_rc == 0:
-        v.update(status_verified="GREEN", error_class_runner="NONE")
+        v.update(status_verified="GREEN", error_class_runner=clean_class)
     elif tests_rc == 137:
         # 128+9 = SIGKILL. On a memory-capped Docker VM this is the OOM killer.
         # ins1 v1.1 §6 has no rule for it (see ins1_v1.1_amendment_draft.md) and
@@ -282,7 +326,7 @@ def verify_attempt(env: dict[str, str], log_path: Path) -> dict:
         v.update(status_verified="RED", error_class_runner="KILLED",
                  verify_note="collect ok but no TESTS_RC marker: killed mid-suite")
     else:
-        v.update(status_verified="AMBER", error_class_runner="NONE")
+        v.update(status_verified="AMBER", error_class_runner=clean_class)
     return v
 
 
@@ -393,6 +437,10 @@ def triage_one(row: dict, default_py: str, rungs: dict[str, list[str]],
             "error_class_v11": env.get("error_class_v11", ""),
             "classifier_disagree": env.get("classifier_disagree", ""),
             "n_collected_triage": env.get("n_collected", ""),
+            # v1.2 only. The pre-deselection total: click collects 32965 and runs
+            # 1965. Recorded because a repo that deselects 94% of its suite by
+            # default is a different ins2 proposition from one that runs it all.
+            "n_collected_total": env.get("n_collected_total", ""),
             "n_failing": env.get("n_failing", ""),
             # --- the runner's independent verdict ------------------------------
             **v,
@@ -702,7 +750,8 @@ def stage_report(args) -> int:
             "status_triage", "status_verified", "error_class_runner",
             "verify_disagree", "admit", "admit_reason", "sha_resolved",
             "image_digest", "lock_sha256", "python_full", "n_collected_verified",
-            "n_collect_errors", "tests_rc", "n_failing", "platform", "host_arch",
+            "n_collected_total", "n_collect_errors", "tests_rc", "n_failing",
+            "platform", "host_arch",
             "emulated", "timings_valid", "seconds_total", "log_file", "verify_note"]
     with csv_out.open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=cols, extrasaction="ignore")

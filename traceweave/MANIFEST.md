@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| **manifest_version** | `1.1` |
+| **manifest_version** | `1.2` |
 | **created** | 2026-07-27 |
 | **project** | TraceWeave-Core — static-vs-runtime call-graph completeness on Python repositories (H2a) |
 | **internal deadline** | ~2026-10-26 (12 weeks) |
@@ -90,14 +90,67 @@ repo's `pyver` is part of its identity (§3).
 
 | Tool | Version | Purpose | Risk |
 |---|---|---|---|
-| **PyCG** | `0.0.8` | **Static baseline 1** — the published Python call-graph tool (ICSE 2021). Reporting against it makes H2a a claim about the state of the art, not about our extractor. | ⚠️ Latest release is `0.0.8` and it is years old. It parses with the *host* `ast`, so modern syntax (`match`, newer generics, PEP 695 type params) may crash it. **Do not treat a PyCG crash as a bug to hide** — the rate at which the field's standard baseline cannot parse contemporary Python is a reportable result. Log every failure with its traceback into the feasibility survey. |
+| **PyCG** | `0.0.8` | **Static baseline 1** — the published Python call-graph tool (ICSE 2021). Reporting against it makes H2a a claim about the state of the art, not about our extractor. | ⚠️ Latest release is `0.0.8` and it is years old. It parses with the *host* `ast`, so modern syntax (`match`, newer generics, PEP 695 type params) may crash it. **Do not treat a PyCG crash as a bug to hide** — the rate at which the field's standard baseline cannot parse contemporary Python is a reportable result. Log every failure with its traceback into the feasibility survey. ⚠️ **Two hard facts measured 2026-08-09, see §2.1:** the 0.0.8 sdist is *unimportable on Linux* without a `pycg`→`PyCG` symlink, and it *does not run on 3.12 at all*. |
 | **tree-sitter-python** | `0.25.0` | Parse layer for static baseline 2. Error-tolerant, so it survives what PyCG cannot. | Grammar revision must be pinned too — record `tree_sitter_python.language()` version at runtime into each extraction record. |
-| **Pyright** | *to pin* (npm `pyright`) | Type info for attribute-call resolution in **static baseline 2**. | Version query pending; pin before Phase 1 §1.2 starts. |
+| **Pyright** | `1.1.411` (npm `pyright`, published 2026-06-25) | Type info for attribute-call resolution in **static baseline 2**. | Installed inside the image, never on the host — §1: the host never traces, and host `npm` is not required (the registry answers over plain HTTPS). Pin the exact version in the image build: `npm i -g pyright` without a version resolves to whatever is current that day. |
 | **DuckDB** | `1.5.5` | Graph store over Parquet. Chosen over Neo4j/Kùzu deliberately — k-hop slices and set-difference are columnar-friendly, and no reviewer is evaluating our store. | none material |
 | **density scorer** | `1.0` (frozen) | Stratification. Calibrated on a 14-repo reference set; thresholds **4.0 / 10.0**. See [`docs/density_scorer_spec.md`](docs/density_scorer_spec.md). | Four false-positive classes were found and fixed during calibration; the regression fixture guarding them must keep passing. |
 
 Python deps for the harness itself are pinned in `requirements.txt` (generated, committed, and
 regenerated only alongside a `manifest_version` bump).
+
+## 2.1 PyCG 0.0.8 — two defects in the pin, and what they cost (added 1.2)
+
+The pin is unchanged at `0.0.8`: §2's argument for pinning PyCG at all is that reporting against it
+makes H2a a claim about the state of the art, and that wants the *latest published* release. But
+0.0.8 as published cannot be used as documented, and that has to be recorded next to the pin rather
+than rediscovered from a stack trace in Phase 1. Both facts were verified in the pinned images.
+
+**1. The sdist is unimportable on Linux.** It ships its package directory as `PyCG/` while every
+internal import reads `from pycg import …`. On a case-insensitive filesystem (macOS) that works by
+accident; on Linux — every container in this project — all four routes fail, including `import
+PyCG.pycg`, which is defeated by PyCG's *own* internal import. 0.0.8 also ships no console script,
+so the documented `pycg` command does not exist.
+
+> **Every image that installs PyCG MUST create the shim:**
+> `ln -sfn "$SP/PyCG" "$SP/pycg"` where `SP` is site-packages.
+> `scripts/pycg_parse_rate.py` does this. PyPI 0.0.7 packages correctly as lowercase, so the fault
+> is specific to the 0.0.8 release.
+
+**2. It does not run on Python 3.12.** §1 makes 3.12 the default — *"All triage starts here."*
+Static baseline 1 cannot run there. A five-line module with two functions and one call fails with
+`ImportManagerError: Can't add edge to a non existing node` on 3.12.13 and yields 3 nodes on
+3.10.20. Note it is **not** a `SyntaxError`: the failure is in PyCG's import-resolution machinery
+under 3.12's `ast`, not in parsing. §2 anticipated the parse risk; this is a larger and different
+one.
+
+> **Consequence for the design.** A repo's triaged `pyver` and the interpreter PyCG runs under are
+> **independent**. A repo triaged on 3.12 still has its static baseline extracted on ≤3.11. This is
+> defensible — PyCG reads source, it does not execute the repo — but it means the static and runtime
+> sides of an H2a comparison run under different interpreters, and that must be stated in the paper
+> rather than discovered by a reader.
+
+### Measured parse-failure rate (answers §7 item 2)
+
+14-repo reference set at recorded shas, 1311 files, seeded sample (seed 20260727), 120-file cap per
+repo with 7342 files skipped and recorded as skipped. Kept **per interpreter and never pooled**, for
+the same reason §1 requires tracer overhead to be reported per `pyver`.
+
+| interpreter | slice | failed / analysed | rate |
+|---|---|---|---|
+| **3.10** | library code only | 9 / 558 | **1.6%** |
+| 3.10 | all files | 32 / 1311 | 2.4% |
+| 3.10 | test & fixture paths | 23 / 753 | 3.1% |
+| **3.12** | all files | 1311 / 1311 | **100.0%** |
+
+On 3.10, by outcome: 17 `SyntaxError`, 8 timeout (>20 s on a single file), 7 other exceptions.
+**Report the slices, not the pooled 2.4%.** The failures concentrate in deliberately-exotic files —
+`black` alone contributes 11 of 32, all from its own syntax-edge-case corpus (`pep_654.py`,
+`type_params.py`, `type_param_defaults.py`). Those are *valid modern Python* that a 3.10 interpreter
+cannot parse, so they measure the interpreter's age rather than PyCG's quality.
+
+Tracebacks for every failure: `$TW_DATA/pycg/py<ver>/pycg_failures.jsonl`.
+Reproduce: `python3 scripts/pycg_parse_rate.py clone && … measure --pyver 3.10`.
 
 ---
 
@@ -169,10 +222,17 @@ Recorded here so it is not relitigated mid-project. All are future work in the p
 | 1.0 | 2026-07-27 | Initial. Base images + tool pins + identity tuples + corpus targets frozen. Pyright version outstanding. |
 | 1.0 | 2026-07-27 | Added §1.1 environment constraints (Docker Desktop `/tmp` unmountable; bind-mount overhead ⇒ report ratios not absolutes). Density scorer calibrated and frozen at 4.0/10.0. |
 | **1.1** | 2026-07-27 | **Added `linux/arm64` digests for all 5 images** (migration to Apple Silicon). `active_platform: auto` with daemon detection; `triage.sh` records `platform`/`host_arch`/`emulated` and warns on emulation. No amd64 digest changed — the 1.0 pins are preserved intact. |
+| **1.2** | 2026-08-09 | **Pinned Pyright `1.1.411`** (published 2026-06-25), closing the last blank pin. Added **§2.1**: the **PyCG 0.0.8** sdist is unimportable on Linux and requires a `pycg`→`PyCG` symlink shim, and it does not run on Python 3.12 at all — so static extraction runs on ≤3.11 independently of a repo's triaged `pyver`. PyCG pin **unchanged**; measured parse-failure rate recorded per interpreter. **No image digest changed**, so `config/base_images.json` keeps `manifest_version 1.1` — it versions the image pins, and none moved. Host topology settled in `../MIGRATION.md` §4: Mac is the manager host, the x86_64 box is the execution host, and **the corpus is amd64**. |
 
 ## 7. Outstanding before Phase 1
 
-- [ ] Pin the **Pyright** version (npm query returned only notices; retry). Needed before static baseline 2.
-- [ ] Install **PyCG 0.0.8** in a dedicated container and measure its parse-failure rate on the reference set — expected to be non-trivial and itself reportable.
-- [ ] `triage/runner.py` — parallel queue over the recipe ladder in `config/base_images.json`.
-- [ ] `scripts/discover_candidates.py` — candidate discovery to ~450 repos.
+- [x] Pin the **Pyright** version — `1.1.411`, published 2026-06-25. §2. Host `npm` turned out not to be on the critical path: Pyright is installed inside the image, and the registry answers over HTTPS.
+- [x] Install **PyCG 0.0.8** in a dedicated container and measure its parse-failure rate on the reference set — `scripts/pycg_parse_rate.py`. **1.6% on library code under 3.10; 100% under 3.12, where it does not run at all.** Non-trivial as expected, and larger than expected. See §2.1.
+- [x] `triage/runner.py` — parallel queue over the recipe ladder in `config/base_images.json`. Checkpoints every attempt before anything else happens, re-derives each outcome from the attempt log rather than trusting `triage.sh`'s `status`, computes corpus admission explicitly against §4 + amendment 2, and refuses to append to a ledger built on another architecture (§1, "one corpus, one architecture").
+- [x] `scripts/discover_candidates.py` — candidate discovery to ~450 repos. Delivered **558 queued** (HIGH 135 / MED 177 / LOW 246), against a §4 target of ~450 and a floor of 300.
+
+### Opened by the above, and outstanding
+
+- [ ] **`triage.sh` v1.2 is applied; ins1 §6's allowed values must be amended to match.** v1.2 can emit `OOM`, `TIMEOUT` and `KILLED` error classes and a `collect_partial` state that ins1 v1.1's sheet forbids, so an operator following §6 literally cannot record what the script now prints. Draft: `../ins1_v1.1_amendment_draft.md`. Until it ships, `scripts/validate_sheet.py --v12` is the machine check.
+- [ ] **Re-run the 10% human-vs-classifier audit entirely under v1.2.** v1.1 and v1.2 rows are not comparable on the three new classes, because under v1.1 the machine could not emit them at all. The 14 returned spot-check rows stay v1.1 evidence and must not be pooled with the 558.
+- [ ] **Decide whether `redistribution_class` gates corpus admission.** Nothing gates on it today. If the release restricts to permissive + non-archived, only **82 usable HIGH** remain of 135, which moves the §4 HIGH floor of 15 from 11.1% to 18.3% required survival.

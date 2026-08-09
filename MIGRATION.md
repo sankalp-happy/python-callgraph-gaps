@@ -98,11 +98,63 @@ whole payoff of pinning by digest instead of tag.
 
 ---
 
-## 4. Platform: Apple Silicon — already handled ✅
+## 4. Platform: two hosts, one corpus architecture
 
-**Target machine is an Apple Silicon Mac (arm64). The work is done; no hand-editing required.**
+**Decided 2026-08-09. The Apple Silicon Mac (arm64) is the *manager* host: development, docs,
+sheet generation, single-repo work, and the 14-repo reference set. The x86_64 Linux box
+(16 cores / 38 GB / 345 GB) is the *execution* host: every long run — the 558-repo triage, all
+tracing, and every published timing number.**
 
-`manifest_version` is now `1.1` and `config/base_images.json` carries digests for **both**
+Both platforms are pinned, so either machine can run any single repo unaided. What is *not* free
+is mixing them inside one corpus.
+
+### The one rule this split imposes
+
+MANIFEST §1 "One corpus, one architecture": a repo with compiled extensions can resolve different
+wheels on arm64 and therefore a different `lock_sha256`, which is part of the repo's identity
+5-tuple. So:
+
+> **The corpus is amd64. A repo triaged on the Mac is development output, not a corpus record.**
+
+`corpus.amd64-baseline/` is therefore the canonical baseline, not a legacy artifact. Anything the
+Mac produces under `corpus/` is scratch and must be re-triaged on the Linux box before admission.
+
+### Which work goes where
+
+| Work | Host | Why |
+|---|---|---|
+| Editing specs, scripts, sheets, docs | Mac | No containers involved |
+| Single-repo debugging, reference-set checks, `run_checks.sh` | Mac | Fast loop, results not corpus-admitted |
+| **558-repo triage (`runner.py`)** | **Linux** | ~100 worker-hours; the Mac OOM-kills large suites at `--jobs 3` (`TESTS_RC=137`) |
+| **All tracing (Phase 2) and any published overhead ratio** | **Linux** | Timings from a second host are not comparable, and MANIFEST §1's per-`pyver` overhead table must come from one machine |
+| Static extraction (Phase 1.2), PyCG / Pyright baselines | Linux | Reads source, so arch-independent in principle — but keep it with the corpus so the artifact is one machine's output end to end |
+
+### Measured, for the record
+
+| | Mac (manager) | Linux box (execution) |
+|---|---|---|
+| arch | arm64 | x86_64 |
+| cores | 8 | 16 |
+| RAM | 8 GB (Docker VM 3.83 GB) | 38 GB |
+| free disk | 18 GB (93% full) | 345 GB |
+
+The Mac's 18 GB free is the sharper constraint of the two: triage churns clones and images, and
+ins1 §8's weekly `docker system prune -af` is not optional there.
+
+### Both hosts run Docker Desktop
+
+MANIFEST §1.1's two constraints hold on **both** machines, not just the original one — Desktop on
+Linux was what discovery ran on, and Desktop on Mac behaves the same way. `/tmp` is unmountable on
+each, so the data root stays under `$HOME`; and each runs containers inside a VM, so absolute
+wall-clock is inflated on both. Publish ratios, per §1.1.
+
+One Linux-specific gotcha worth keeping from the discovery run: Docker Desktop for Linux ships as a
+*user* unit, `disabled`/`inactive`. It presents as a missing daemon, not a disabled service.
+`systemctl --user start docker-desktop`.
+
+### The digests themselves
+
+`manifest_version` is `1.1` and `config/base_images.json` carries digests for **both**
 platforms, all resolved 2026-07-27 (arm64 variant `v8`):
 
 | Python | `linux/arm64` digest |
@@ -120,10 +172,12 @@ becomes invalid.
 matching digest. On the Mac it will pick `linux/arm64` by itself. Verified on the x86_64 host: it
 correctly selected `linux/amd64`, `emulated=no`.
 
-### What you must still do on the Mac
+### Worth doing on the Mac — as a portability check, not a re-baseline
 
-**Re-triage the two real repos.** `click` and `records` were triaged on amd64. Their `lock.txt`
-files are amd64 resolutions, and arm64 may resolve different wheels for any compiled dependency.
+Under the old "the Mac is the target machine" framing, re-triaging `click` and `records` on arm64
+was mandatory: their `lock.txt` files were amd64 resolutions and would have been superseded. Under
+the split above they are **not** superseded — amd64 remains the corpus architecture and those
+records stand. Re-running them on the Mac is now a *measurement*, and a cheap one:
 
 ```bash
 cd ~/Project/major/traceweave/triage
@@ -141,7 +195,12 @@ Both repos have pure-Python dependency trees, so **`lock_sha256` will probably b
 (`10dc90ae86e4b711225ac27e2d5b742e1e72915e69451800abd89cac4b946913` for click). If it matches, that
 is useful evidence that pure-Python corpora are platform-portable, and worth a sentence in the
 paper's reproducibility section. If it differs, you have found a concrete compiled-wheel dependency
-and the corpus is platform-locked from here on.
+— which does not change where the corpus is built, but does put a number on how much a
+cross-architecture reproduction attempt would drift.
+
+**Already done once, and it held.** `click` was re-triaged on this Mac on 2026-08-09:
+`BUILD_OK TESTS_OK`, 1965 tests collected, `lock_sha256=10dc90ae…` — byte-identical to the
+committed `corpus.amd64-baseline` record across architectures.
 
 `nope-xyz` is the synthetic bad-URL test; it needs no re-run (it fails at clone, before any container).
 
