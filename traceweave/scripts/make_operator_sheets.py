@@ -38,7 +38,13 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+# Per sheet, not one constant: docs/sop_v1.2_changelog.md amends ins1 ONLY (it
+# adds OOM/TIMEOUT/KILLED and collect_partial). Stamping ins2 and ins3 v1.2 as
+# well would claim changes those documents never had, and validate_sheet.py gates
+# the new vocabulary on the row's own version -- so a wrong stamp there would
+# accept values the operator was never told about.
 SHEET_VERSION = "v1.1"
+SHEET_VERSION_INS1 = "v1.2"
 
 # ins1_v1.1_spotcheck.md §6, in order.
 INS1_COLS = ["row_id", "repo_url", "sha", "status", "error_class", "fix_applied",
@@ -113,7 +119,7 @@ def main() -> int:
              "status": "", "error_class": "", "fix_applied": "", "n_failing": "",
              "minutes_spent": "", "log_file": "", "result_line_seen": "",
              "notes": "-", "your_name": "", "date": "",
-             "sheet_version": SHEET_VERSION}
+             "sheet_version": SHEET_VERSION_INS1}
             for r in queued]
     write(args.out / "ins1_triage_558.csv", INS1_COLS, ins1)
 

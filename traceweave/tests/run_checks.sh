@@ -122,8 +122,19 @@ else
   fi
 fi
 
+echo "=== 7. static extraction layer (Phase 1 §1.2) ==="
+# The full suite lives in tests/test_static.py -- 39 checks over the node set,
+# the §2.2 taxonomy, PyCG name mapping and Pyright definition mapping. Rolled up
+# to one line here; run it directly for the detail.
+if out="$(python3 "$REPO/tests/test_static.py" 2>&1)"; then
+  ok "$(printf '%s' "$out" | tail -2 | tr -d '\n' | sed 's/^ *//')"
+else
+  bad "static extraction checks failed:"
+  printf '%s\n' "$out" | grep -E '^  FAIL' | sed 's/^/        /'
+fi
+
 if [ "$FULL" = "1" ]; then
-  echo "=== 7. full calibration sweep (expects 6 HIGH / 4 MED / 3 LOW / 1 TOO_SMALL) ==="
+  echo "=== 8. full calibration sweep (expects 6 HIGH / 4 MED / 3 LOW / 1 TOO_SMALL) ==="
   RR="${TW_DATA:-$HOME/traceweave-data}/refrepos"
   if [ ! -d "$RR" ] || [ -z "$(ls -A "$RR" 2>/dev/null)" ]; then
     echo "  SKIP  reference repos absent. Regenerate with:"

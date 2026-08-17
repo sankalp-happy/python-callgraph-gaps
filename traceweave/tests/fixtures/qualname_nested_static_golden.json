@@ -1,0 +1,5 @@
+{
+  "qualname_nested": [],
+  "qualname_nested.outer": ["qualname_nested.outer.inner"],
+  "qualname_nested.outer.inner": []
+}

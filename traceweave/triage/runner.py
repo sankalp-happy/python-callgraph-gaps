@@ -75,7 +75,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 SPEC_VERSION = "1.0"
-SHEET_VERSION = "v1.1"
+# v1.2: docs/sop_v1.2_changelog.md. triage.sh v1.2 can emit OOM / TIMEOUT /
+# KILLED and collect_partial, and the ledger's rows must declare the vintage
+# whose vocabulary they use -- v1.1 and v1.2 rows are not comparable on those
+# three classes (changelog §4), so the stamp is what keeps them unpooled.
+SHEET_VERSION = "v1.2"
 
 HERE = Path(__file__).resolve().parent
 TRIAGE_SH = HERE / "triage.sh"
@@ -353,6 +357,41 @@ def admit_verdict(v: dict, env: dict) -> tuple[str, str]:
     return "yes", "-"
 
 
+def redistribution_verdict(row: dict) -> tuple[str, str]:
+    """MANIFEST §7's redistribution gate, decided 2026-08-17.
+
+    The release ships repo source, so a corpus repo must be redistributable:
+    `PERMISSIVE` and not archived.
+
+    Recorded as its OWN field rather than folded into `admit`, for two reasons
+    that both cost real repos if ignored:
+
+      * `REVIEW_NEEDED` means "the script could not read a licence", which for
+        386 of 567 rows is a missing licence FILE, not a restrictive licence. A
+        human resolves those (ins3 Part 1-R). Refusing them at triage time would
+        discard rows nobody has read and push HIGH's required survival from
+        14.3% to 18.3%. So they come back `pending`, not `no`.
+      * A `COPYLEFT` repo's triage outcome still belongs to the **feasibility
+        survey**, which reports on repos it does not redistribute. Folding the
+        gate into `admit` would make those outcomes look like failures.
+
+    Corpus admission is therefore `admit == "yes" AND redistribution == "pass"`,
+    and a later licence review can flip `pending` to `pass` without re-triaging
+    anything.
+    """
+    cls = (row.get("redistribution_class") or "").strip().upper()
+    archived = (row.get("archived") or "").strip().lower() in ("true", "yes", "1")
+    if archived:
+        return "no", "archived upstream"
+    if cls == "PERMISSIVE":
+        return "pass", "-"
+    if cls == "REVIEW_NEEDED":
+        return "pending", "awaiting ins3 Part 1-R licence review"
+    if not cls:
+        return "pending", "no redistribution_class on the queue row"
+    return "no", f"redistribution_class={cls}: feasibility survey only, not the corpus"
+
+
 # ------------------------------------------------------------------- the attempt
 
 
@@ -403,6 +442,7 @@ def triage_one(row: dict, default_py: str, rungs: dict[str, list[str]],
         env = read_env_file(out_dir / "result.env")
         v = verify_attempt(env, out_dir / "attempt.log")
         admit, admit_reason = admit_verdict(v, env)
+        redistribution, redistribution_reason = redistribution_verdict(row)
 
         rec = {
             "row_id": row.get("row_id", ""),
@@ -448,6 +488,14 @@ def triage_one(row: dict, default_py: str, rungs: dict[str, list[str]],
                                 and env["status"] != v["status_verified"] else "no"),
             "admit": admit,
             "admit_reason": admit_reason,
+            # --- MANIFEST §7's redistribution gate, recorded separately -------
+            "redistribution_class": row.get("redistribution_class", ""),
+            "archived": row.get("archived", ""),
+            "redistribution": redistribution,
+            "redistribution_reason": redistribution_reason,
+            "corpus_eligible": "yes" if (admit == "yes" and redistribution == "pass")
+                               else ("pending" if admit == "yes" and redistribution == "pending"
+                                     else "no"),
             "log_file": str(out_dir / "attempt.log"),
             "spec_version": SPEC_VERSION,
             "sheet_version": SHEET_VERSION,
@@ -723,6 +771,29 @@ def stage_report(args) -> int:
         f"admissible total {len(admitted)}")
     log("")
 
+    # MANIFEST §7's redistribution gate. Reported beside admission, never merged
+    # into it: `pending` rows are waiting on a human reading a licence, and the
+    # difference between "not redistributable" and "nobody has looked yet" is the
+    # difference between 18.3% and 14.3% required HIGH survival.
+    if any(r.get("redistribution") for r in final.values()):
+        eligible = [r for r in admitted if r.get("redistribution") == "pass"]
+        pending = [r for r in admitted if r.get("redistribution") == "pending"]
+        blocked = [r for r in admitted if r.get("redistribution") == "no"]
+        log(f"[report] redistribution gate (MANIFEST §7, decided 2026-08-17): "
+            f"{len(eligible)} eligible / {len(pending)} pending review / "
+            f"{len(blocked)} survey-only, of {len(admitted)} admissible")
+        if pending:
+            log(f"         {len(pending)} repos are admissible AND unresolved on "
+                f"licence. Run the ins3 Part 1-R review before freezing the corpus "
+                f"-- these are mostly a missing LICENSE file, not a restrictive one.")
+        rd: dict[str, int] = {}
+        for r in blocked:
+            rd[r.get("redistribution_reason", "?")] = \
+                rd.get(r.get("redistribution_reason", "?"), 0) + 1
+        for k, n in sorted(rd.items(), key=lambda x: -x[1]):
+            log(f"         survey-only: {k[:60]:<60} {n}")
+        log("")
+
     # A --repos-from run (e.g. the frozen reference set) carries no stratum, so the
     # §4 table would report every floor as unmet and mean nothing by it.
     if any(r.get("stratum") in ("LOW", "MED", "HIGH") for r in final.values()):
@@ -748,7 +819,9 @@ def stage_report(args) -> int:
     csv_out = args.data / "triage" / "triage_results.csv"
     cols = ["row_id", "queue_position", "stratum", "repo_url", "attempt", "pyver",
             "status_triage", "status_verified", "error_class_runner",
-            "verify_disagree", "admit", "admit_reason", "sha_resolved",
+            "verify_disagree", "admit", "admit_reason",
+            "redistribution", "redistribution_reason", "corpus_eligible",
+            "redistribution_class", "archived", "sha_resolved",
             "image_digest", "lock_sha256", "python_full", "n_collected_verified",
             "n_collected_total", "n_collect_errors", "tests_rc", "n_failing",
             "platform", "host_arch",

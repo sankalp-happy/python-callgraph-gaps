@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| **manifest_version** | `1.2` |
+| **manifest_version** | `1.3` |
 | **created** | 2026-07-27 |
 | **project** | TraceWeave-Core — static-vs-runtime call-graph completeness on Python repositories (H2a) |
 | **internal deadline** | ~2026-10-26 (12 weeks) |
@@ -91,7 +91,7 @@ repo's `pyver` is part of its identity (§3).
 | Tool | Version | Purpose | Risk |
 |---|---|---|---|
 | **PyCG** | `0.0.8` | **Static baseline 1** — the published Python call-graph tool (ICSE 2021). Reporting against it makes H2a a claim about the state of the art, not about our extractor. | ⚠️ Latest release is `0.0.8` and it is years old. It parses with the *host* `ast`, so modern syntax (`match`, newer generics, PEP 695 type params) may crash it. **Do not treat a PyCG crash as a bug to hide** — the rate at which the field's standard baseline cannot parse contemporary Python is a reportable result. Log every failure with its traceback into the feasibility survey. ⚠️ **Two hard facts measured 2026-08-09, see §2.1:** the 0.0.8 sdist is *unimportable on Linux* without a `pycg`→`PyCG` symlink, and it *does not run on 3.12 at all*. |
-| **tree-sitter-python** | `0.25.0` | Parse layer for static baseline 2. Error-tolerant, so it survives what PyCG cannot. | Grammar revision must be pinned too — record `tree_sitter_python.language()` version at runtime into each extraction record. |
+| ~~**tree-sitter-python**~~ | ~~`0.25.0`~~ | ~~Parse layer for static baseline 2.~~ **RETIRED unused, 2026-08-17 (1.3). Baseline 2 parses with CPython's own `ast`.** Row kept per the append-only rule; nothing was ever built on it. | The reason is `docs/metric_spec_h2a.md` §1: node identity must equal CPython's `co_qualname` at runtime, because Phase 2 joins on it. `ast` mirrors that structure (including `<locals>` insertion and PEP 709 comprehension inlining) and tree-sitter would leave us reconstructing it — a reimplementation of the one thing that must not differ. The trade is error tolerance: a file `ast` cannot parse is recorded as a `parse_failure`, which is a reported metric either way (§4.4). Measured: **0 parse failures across click, toolz and chardet** on the 3.12 host. See `docs/static_extraction_spec.md`. |
 | **Pyright** | `1.1.411` (npm `pyright`, published 2026-06-25) | Type info for attribute-call resolution in **static baseline 2**. | Installed inside the image, never on the host — §1: the host never traces, and host `npm` is not required (the registry answers over plain HTTPS). Pin the exact version in the image build: `npm i -g pyright` without a version resolves to whatever is current that day. |
 | **DuckDB** | `1.5.5` | Graph store over Parquet. Chosen over Neo4j/Kùzu deliberately — k-hop slices and set-difference are columnar-friendly, and no reviewer is evaluating our store. | none material |
 | **density scorer** | `1.0` (frozen) | Stratification. Calibrated on a 14-repo reference set; thresholds **4.0 / 10.0**. See [`docs/density_scorer_spec.md`](docs/density_scorer_spec.md). | Four false-positive classes were found and fixed during calibration; the regression fixture guarding them must keep passing. |
@@ -151,6 +151,27 @@ cannot parse, so they measure the interpreter's age rather than PyCG's quality.
 
 Tracebacks for every failure: `$TW_DATA/pycg/py<ver>/pycg_failures.jsonl`.
 Reproduce: `python3 scripts/pycg_parse_rate.py clone && … measure --pyver 3.10`.
+
+## 2.2 The static-extraction image, and its one unpinned component (added 1.3)
+
+Both baselines' tools live in **one** image, `traceweave-static:latest`, built by
+`static/build_image.sh` from the digest-pinned `python:3.10-slim` of §6. One image rather than two
+so a reader can name a single artifact that produced both halves of `S`.
+
+Python **3.10**, not 3.12, and not a repo's triaged `pyver`: §2.1 — PyCG 0.0.8 does not run on 3.12
+at all. Our own AST inventory therefore runs on the **host's** newest interpreter and never inside
+this image, so nothing in the image has to parse contemporary syntax.
+
+| Component | Pinned by | Notes |
+|---|---|---|
+| base image | `config/base_images.json` digest, resolved per platform | never hardcoded in the Dockerfile — an amd64 pin silently emulates on arm64 and invalidates timings |
+| PyCG | `pycg==0.0.8` + the §2.1 symlink shim | |
+| Pyright | `pyright@1.1.411` (npm) | the npm package ships its own bundled JS, so the container needs no network at run time |
+| **node** | **NOT pinned** — comes from the base image's Debian repos | The one floating component. `static/build_image.sh` records the resolved version into `static/image_provenance.json` beside the image id, and `extract.py` copies that into every repo's record, so a rebuild that moves node is visible in the artifact instead of invisible in the results. Recorded on the manager host 2026-08-17: **node v20.19.2**. |
+
+`build_image.sh` builds with `--provenance=false --sbom=false`: buildx otherwise exports an OCI
+image *index* with attestation manifests, and `docker image inspect` then exits non-zero on a tag
+that is present and working — which reads to every preflight check as "the image is not built".
 
 ---
 
@@ -222,6 +243,7 @@ Recorded here so it is not relitigated mid-project. All are future work in the p
 | 1.0 | 2026-07-27 | Initial. Base images + tool pins + identity tuples + corpus targets frozen. Pyright version outstanding. |
 | 1.0 | 2026-07-27 | Added §1.1 environment constraints (Docker Desktop `/tmp` unmountable; bind-mount overhead ⇒ report ratios not absolutes). Density scorer calibrated and frozen at 4.0/10.0. |
 | **1.1** | 2026-07-27 | **Added `linux/arm64` digests for all 5 images** (migration to Apple Silicon). `active_platform: auto` with daemon detection; `triage.sh` records `platform`/`host_arch`/`emulated` and warns on emulation. No amd64 digest changed — the 1.0 pins are preserved intact. |
+| **1.3** | 2026-08-17 | **Phase 1 §1.2 built: `static/`, both baselines.** Added **§2.2** — the static-extraction image, and the fact that **node is its one unpinned component** (recorded per build, not assumed). **Retired the unused `tree-sitter-python 0.25.0` pin**: baseline 2 parses with CPython's `ast`, because node identity must equal `co_qualname` and tree-sitter would mean reimplementing exactly that (§2, `docs/static_extraction_spec.md`). No image digest and no tool pin changed, so `config/base_images.json` stays at `manifest_version 1.1`. §7: the ins1 amendment **shipped** as SOP v1.2 (`docs/sop_v1.2_changelog.md`), and the **redistribution gate is decided** — PERMISSIVE + non-archived, with the ins3 Part 1-R licence review run first; enforced by `runner.py`'s `redistribution_verdict()` as a field beside `admit`, never merged into it. |
 | **1.2** | 2026-08-09 | **Pinned Pyright `1.1.411`** (published 2026-06-25), closing the last blank pin. Added **§2.1**: the **PyCG 0.0.8** sdist is unimportable on Linux and requires a `pycg`→`PyCG` symlink shim, and it does not run on Python 3.12 at all — so static extraction runs on ≤3.11 independently of a repo's triaged `pyver`. PyCG pin **unchanged**; measured parse-failure rate recorded per interpreter. **No image digest changed**, so `config/base_images.json` keeps `manifest_version 1.1` — it versions the image pins, and none moved. Host topology settled in `../MIGRATION.md` §4: Mac is the manager host, the x86_64 box is the execution host, and **the corpus is amd64**. |
 
 ## 7. Outstanding before Phase 1
@@ -233,6 +255,47 @@ Recorded here so it is not relitigated mid-project. All are future work in the p
 
 ### Opened by the above, and outstanding
 
-- [ ] **`triage.sh` v1.2 is applied; ins1 §6's allowed values must be amended to match.** v1.2 can emit `OOM`, `TIMEOUT` and `KILLED` error classes and a `collect_partial` state that ins1 v1.1's sheet forbids, so an operator following §6 literally cannot record what the script now prints. Draft: `../ins1_v1.1_amendment_draft.md`. Until it ships, `scripts/validate_sheet.py --v12` is the machine check.
-- [ ] **Re-run the 10% human-vs-classifier audit entirely under v1.2.** v1.1 and v1.2 rows are not comparable on the three new classes, because under v1.1 the machine could not emit them at all. The 14 returned spot-check rows stay v1.1 evidence and must not be pooled with the 558.
-- [ ] **Decide whether `redistribution_class` gates corpus admission.** Nothing gates on it today. If the release restricts to permissive + non-archived, only **82 usable HIGH** remain of 135, which moves the §4 HIGH floor of 15 from 11.1% to 18.3% required survival.
+- [x] **`triage.sh` v1.2 is applied; ins1's allowed values are amended to match.** Shipped 2026-08-17 as **SOP v1.2** — `docs/sop_v1.2_changelog.md` amends ins1 §5 (columns and allowed values) and §8 (when something goes wrong). `error_class` gains `OOM` / `TIMEOUT` / `KILLED`, `n_failing` gains `collect_partial`, and a killed run is `RED` with `n_failing=na`, never `AMBER`. `scripts/validate_sheet.py` now gates the new vocabulary on **the row's own `sheet_version`** rather than on a `--v12` flag, which enforces the amendment and the no-pooling rule below in one check. `make_operator_sheets.py` stamps ins1 sheets `v1.2` (ins2/ins3 stay `v1.1` — the amendment touches ins1 only); `runner.py` records `v1.2`.
+- [ ] **Re-run the 10% human-vs-classifier audit entirely under v1.2.** v1.1 and v1.2 rows are not comparable on the three new classes, because under v1.1 the machine could not emit them at all. The 14 returned spot-check rows stay v1.1 evidence and must not be pooled with the 558. **Human task; blocked on operator time, not on code.**
+- [x] **`redistribution_class` gates corpus admission — decided 2026-08-17.** The release ships repo source, so a corpus repo must be redistributable. **Admission requires `redistribution_class = PERMISSIVE` and `archived = False`**, and the ins3 Part 1-R licence review (`handoff/ins3_part1R_licence_review_91.csv`, already generated) runs **before** admission so `REVIEW_NEEDED` rows are resolved rather than discarded.
+
+  Why in that order — the queue as scored:
+
+  | stratum | queued | PERMISSIVE | PERMISSIVE + non-archived | + REVIEW_NEEDED resolved | §4 floor | survival needed |
+  |---|---|---|---|---|---|---|
+  | HIGH | 135 | 87 | **82** | 105 | 15 | 11.1% → 18.3% → **14.3%** |
+  | MED | 177 | 132 | 127 | 149 | 12 | 6.8% → 9.4% → **8.1%** |
+  | LOW | 246 | 180 | 176 | 218 | 10 | 4.1% → 5.7% → **4.6%** |
+
+  The 567 `REVIEW_NEEDED` rows are 386 `NONE_FOUND` + 181 `OTHER`, i.e. mostly a missing licence file rather than a restrictive one — which is exactly what a human resolves cheaply and a script cannot. Gating without the review first would raise HIGH's required survival to 18.3% by discarding rows nobody has read. `COPYLEFT` (179 GPL) and `WEAK_COPYLEFT` (20 LGPL/MPL) repos stay in the **feasibility survey**, which reports on repos it does not redistribute, so their triage and tracing outcomes are not lost.
+
+---
+
+## 8. Phase 1 §1.2 — what is built, and what it is pinned to (added 1.3)
+
+`static/` produces `S(r)` for both baselines. Design decisions and the direction each one biases
+the result: **[`docs/static_extraction_spec.md`](docs/static_extraction_spec.md)**. Node and edge
+definitions remain frozen in `docs/metric_spec_h2a.md`; nothing in `static/` may change them.
+
+| | |
+|---|---|
+| **extraction_version** | `1.0` |
+| **image** | `traceweave-static:latest`, §2.2. Its `image_provenance.json` is copied into every repo's record. |
+| **PyCG seed policy** | `PYTHONHASHSEED ∈ {0, 1, 42}`; `S` is the **union of the runs that completed**, with the per-seed spread recorded. Not an implementation detail: PyCG's fixpoint iterates over sets, so without a seed policy "PyCG's graph for repo R" is not a value (`scripts/pycg_determinism.py`). Union gives the published baseline maximum credit, so a high miss rate cannot be answered with "you picked its worst run". |
+| **universe** | The repo's own package code. `tests/` is excluded by default and the choice is recorded per repo as `include_tests`, because it moves the denominator. §2.1's first condition (both endpoints in-repo) is what makes a test→library call out-of-universe rather than a miss. |
+| **artifacts** | `$TW_DATA/static/<repo>/{inventory,callsites,pycg,pyright,summary}.json` + an append-only `ledger.jsonl`. Resumable; a repo where one baseline failed is recorded `partial` and **is retried**, so a PyCG OOM is never mistaken for a finished repo. |
+| **guards** | `tests/test_static.py`, 39 checks, wired into `tests/run_checks.sh` as check 7. Asserted on click as well as on fixtures — every invariant in there, when it broke, silently *deleted* edges rather than raising. |
+
+**Validated on the manager host** (arm64, `--seeds 0,42`; development output, **not** corpus records
+— §1 and `../MIGRATION.md` §4 put the corpus on the x86_64 box):
+
+| repo | callable nodes | call sites | PyCG `S` | Pyright `S` | Jaccard | unresolved sites |
+|---|---|---|---|---|---|---|
+| chardet | 102 | 722 | 141 | 123 | 0.808 | 128 |
+| click | 540 | 2129 | 448 | 567 | 0.564 | 162 |
+| toolz | 457 | 585 | 111 | 122 | 0.494 | 55 |
+
+The two baselines disagree substantially, which §1.2 of the plan anticipated and asked to be
+reported. Two PyCG behaviours already documented in `docs/` reproduced themselves through the new
+harness: on **click** seed 0 was OOM-killed while seed 42 completed, and on **chardet** the two
+seeds returned different graphs. Both are recorded per repo rather than smoothed over.

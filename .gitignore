@@ -43,3 +43,10 @@ venv/
 # --- claude code local settings (machine-specific, not shared) --------------
 .claude/
 .gstack/
+
+# Written by traceweave/static/build_image.sh, and specific to the machine that
+# ran it (image id, platform, the node version Debian happened to supply). The
+# authoritative copy is not this file: extract.py stamps it into every repo's
+# ledger record, so each S carries the provenance of the image that produced it.
+# Committing it would just churn between the manager and execution hosts.
+traceweave/static/image_provenance.json

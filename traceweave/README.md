@@ -7,7 +7,7 @@
 | **Started** | 2026-07-27 |
 | **Deadline** | ~2026-10-26 (12 weeks) |
 | **Staffing** | 1 engineer + 2–3 annotators |
-| **Current state** | **Phase 0 complete.** Phase 1 not started. |
+| **Current state** | **Phase 0 complete. Phase 1 §1.1 and §1.2 built** — the triage queue runner and both static baselines. §1.3 (ins2 workload capture) is annotator work; the 558-repo triage and the corpus extraction are the two long unattended runs, both for the x86_64 execution host (`../MIGRATION.md` §4). |
 | **Approved plan** | `~/.claude/plans/given-the-convo-history-cheerful-pizza.md` |
 | **Parent research doc** | `../research_plans.md` (Direction 2) |
 | **Underlying review** | `../final_paper.pdf` |
@@ -165,16 +165,44 @@ traceweave/
 │   ├── density_scorer_spec.md    ← Calibration record. Observed distribution on 14
 │   │                               reference repos, the four false-positive classes
 │   │                               found and fixed, frozen thresholds, feature weights.
-│   └── sop_v1.1_changelog.md     ← ANNOTATOR-FACING. Hand this to the team. Written
-│                                   in the register of the ins*.md files.
+│   ├── static_extraction_spec.md ← Phase 1 §1.2. Every decision the frozen metric
+│   │                               spec left open, WITH THE DIRECTION EACH ONE
+│   │                               BIASES THE RESULT. Not frozen; versioned.
+│   ├── sop_v1.1_changelog.md     ← ANNOTATOR-FACING. Hand this to the team. Written
+│   │                               in the register of the ins*.md files.
+│   └── sop_v1.2_changelog.md     ← ANNOTATOR-FACING. Amends ins1 §5/§8: OOM,
+│                                   TIMEOUT, KILLED, collect_partial. A killed run
+│                                   is RED, never AMBER.
 │
 ├── scripts/
 │   ├── density_score.py          ← AST-based dynamic-feature scorer → LOW/MED/HIGH
+│   ├── discover_candidates.py    ← candidate discovery → the 558-row stratified queue
 │   ├── github_meta.py            ← replaces ins3 Part 1 via the GitHub REST API
+│   ├── make_operator_sheets.py   ← generates the operator CSVs (ins1 now v1.2)
+│   ├── validate_sheet.py         ← machine-checks a sheet before it comes back
+│   ├── pycg_parse_rate.py        ← how often the published baseline cannot parse
+│   ├── pycg_determinism.py       ← is PyCG's graph a function of its input? (no)
+│   ├── pycg_scaling.py           ← PyCG's cost curve, and its non-monotonicity
 │   └── workload_shell.sh         ← opens the certified environment for ins2 capture
 │
+├── static/                       ← PHASE 1 §1.2: S(r), from two baselines
+│   ├── nodes.py                  ← the node set, per metric spec §1
+│   ├── callsites.py              ← every call site + its edge_type, per §2.2,
+│   │                               from the CALLER'S AST and never from a tool
+│   ├── pycg_baseline.py          ← baseline 1, under a seed policy
+│   ├── pyright_baseline.py       ← baseline 2, via textDocument/definition
+│   ├── extract.py                ← the corpus driver: clone → both → compare
+│   └── run_corpus.sh             ← THE LONG RUN. x86_64 execution host.
+│
+├── tests/
+│   ├── run_checks.sh             ← 7 health checks; run before trusting anything
+│   ├── test_static.py            ← 39 guards for static/, asserted on click too
+│   └── fixtures/                 ← version-controlled inputs for both
+│
 └── triage/
-    └── triage.sh                 ← v1.1: one repo, one Python version, one attempt
+    ├── triage.sh                 ← v1.2: one repo, one Python version, one attempt
+    └── runner.py                 ← the parallel queue around it; verifies, admits,
+                                    checkpoints, reclaims
 ```
 
 Nothing here is generated. Every file is hand-authored and every pin in it was resolved by
@@ -424,6 +452,42 @@ rather than an oversight.
 `port_exists` is emitted as `NA_V11` — the column is retained so the sheet schema stays stable, and
 the value makes the deletion explicit rather than looking like an omission.
 
+> **The redistribution flag now gates the corpus** (MANIFEST §7, decided 2026-08-17): admission
+> requires `PERMISSIVE` and not archived, and `runner.py` records the verdict as its own field
+> beside `admit` so a `REVIEW_NEEDED` row comes back `pending` — waiting on the ins3 Part 1-R
+> licence review — rather than being discarded before anyone has read it.
+
+---
+
+### 6.5 `static/` — the static call graph, twice (Phase 1 §1.2)
+
+```bash
+cd static && ./build_image.sh          # once per machine
+
+python3 extract.py run --repos-from ../config/reference_repos.txt \
+    --clone-dir ~/traceweave-data/refrepos --limit 3
+python3 extract.py report
+
+./run_corpus.sh                        # THE LONG RUN, on the x86_64 box
+```
+
+Produces `S(r)` — the edges a static tool *predicts* — for **two independent baselines**, because
+the obvious attack on this paper is "your extractor is bad":
+
+| Baseline | What it is |
+|---|---|
+| **PyCG 0.0.8** | the published tool (ICSE 2021), under a fixed seed policy because its graph is not a function of its input alone |
+| **Pyright-assisted** | our own extractor; Pyright 1.1.411 answers `textDocument/definition` for the calls a parser cannot resolve |
+
+Both are mapped onto **one shared node set** (`nodes.py`), and edge *types* come from the caller's
+AST (`callsites.py`) and never from what a tool found — that is what keeps "static misses X% of
+edges of type T" non-circular.
+
+Read `static/README.md` for the artifacts and the gotchas, and
+`docs/static_extraction_spec.md` for every decision the frozen metric spec left open, each with
+**the direction it biases the result**. The short version: PyCG is given the benefit of the doubt at
+every ambiguity, our own extractor is not.
+
 ---
 
 ## 7. The data root
@@ -521,6 +585,12 @@ makes the eventual number a measurement rather than a search.
 | `docs/density_scorer_spec.md` + the thresholds in `density_score.py` | `1.0` | Same discipline. Thresholds were calibrated **once**, during Phase 0, before any corpus admission or H2a measurement. |
 | `config/base_images.json` / `MANIFEST.md` | `1.0` | Append a new dated entry; keep the old one. Never edit a digest in place. |
 
+Not frozen, but versioned the same way, because it is what a reviewer reads next to the frozen spec:
+
+| Versioned | Version | What it is |
+|---|---|---|
+| `docs/static_extraction_spec.md` | `1.0` | Every decision `metric_spec_h2a.md` left open, with the direction each biases the result. Two entries (class bodies, `@overload` stubs) touch the `fn_coverage` denominator and are flagged as candidates for a `spec_version` 1.1 bump. |
+
 **Analysis discipline, pre-committed:**
 
 - No threshold or definition may be tuned after seeing H2a results.
@@ -573,6 +643,47 @@ Seven things discovered by *running* Phase 0 rather than planning it.
    `TOO_SMALL`, so corpus-ineligible despite triaging GREEN. Fine for practice. A useful reminder
    that build-green ≠ corpus-eligible.
 
+### 10.1 Discovered by building Phase 1 §1.2
+
+Five more, in the same spirit — all found by *running* the extractor, four of them
+silently **deleting** data rather than raising, which is why the guards in
+`tests/test_static.py` are asserted on click and not only on fixtures.
+
+1. **`a.b().c()` gives the outer and inner call the same position.** Both expressions
+   start at `a`, so a call site keyed on `(line, col)` collapses them —
+   **151 of click's 2129 call sites** vanished from the request batch *and* from the
+   unresolved census. Fixed with a per-file sequence number; asserted injective.
+2. **`@typing.overload` stubs are not callable code.** Their bodies are `...` and
+   CPython discards them, so no run can ever activate one. Left in the
+   `fn_coverage` denominator they were **40 of click's 580 callables** — 7% of nodes
+   that can never be covered — and collision handling renamed **3 real
+   implementations** to `f#2`, so they stopped matching what PyCG and the runtime
+   both call them. The density scorer hit the same construct from the other side
+   (finding 2), which is what prompted the check.
+3. **A property setter has byte-identical `co_qualname` to its getter.** `C.v` for
+   both. The metric spec's `<locals>` rule cannot separate them and neither can raw
+   qualnames; identity was simply not injective. Now `C.v` / `C.v.<setter>`, with
+   line as the disambiguation hint §1 already sanctions.
+4. **`ast` columns are UTF-8 bytes; LSP columns are UTF-16 code units.** Identical on
+   ASCII, wrong on any line with a non-ASCII character before the callee — so the
+   definition requests would have quietly resolved the wrong token in exactly the
+   repos with non-English strings.
+5. **PyCG's language-server sibling problem is docker's, not PyCG's.** Driving
+   `pyright-langserver` from the host over `docker run -i` died reproducibly after a
+   few hundred requests: container `ExitCode 1`, `OOMKilled: false`, empty stderr,
+   nothing in `docker logs`. 400 requests at one position were fine; node heap size
+   changed nothing (241 requests at 384 MB, 209 at 2048 MB); pipelining depth changed
+   nothing; the request that died in a batch answered correctly alone. Moving the
+   session **inside** the container made it a plain subprocess — and made a death
+   handleable: restart, reopen, continue, and report `server_restarts`.
+
+Two PyCG behaviours already in `docs/` reproduced themselves through the new harness
+rather than being taken on trust: on **click**, `PYTHONHASHSEED=0` was OOM-killed
+while `42` completed; on **chardet**, the two seeds returned different graphs. This
+is why the seed policy is part of the metric (MANIFEST §8) and not a flag.
+
+---
+
 **Verified working end-to-end:** `click` triaged GREEN in 93 s → 9-package lockfile with sha256 →
 `workload_shell.sh` reproduced that exact environment → 1940 tests passed. `sha_resolved` was
 auto-recorded even though the sheet supplied no sha.
@@ -581,16 +692,20 @@ auto-recorded even though the sheet supplied no sha.
 
 ## 11. What is not built yet
 
-### Blocking Phase 1
+### Phase 1 (was: blocking Phase 1)
 
-- [ ] **Pin Pyright.** The npm version query returned only notices. Needed before static baseline 2.
-- [ ] **Install PyCG 0.0.8** in a dedicated container and measure its parse-failure rate on the 14 reference repos. Expected non-trivial and itself reportable (finding 4).
-- [ ] **`triage/runner.py`** — parallel queue walking the recipe ladder in `config/base_images.json`. ~6–8 concurrent jobs on this host. Must emit `result.json` aggregating each repo's ladder.
-- [ ] **`scripts/discover_candidates.py`** — discovery to ~450 candidates, then density-score and interleave by bin into the stratified queue.
+- [x] **Pin Pyright.** `1.1.411`, published 2026-06-25. Installed in the image, never on the host.
+- [x] **Install PyCG 0.0.8** in a dedicated container and measure its parse-failure rate. **1.6% on library code under 3.10; 100% under 3.12, where it does not run at all** (MANIFEST §2.1) — non-trivial as expected, and larger.
+- [x] **`triage/runner.py`** — parallel queue walking the recipe ladder in `config/base_images.json`. Delivered; re-derives every outcome from the attempt log instead of trusting `triage.sh`, and refuses a ledger from another architecture.
+- [x] **`scripts/discover_candidates.py`** — discovery to ~450 candidates, then density-score and interleave by bin. Delivered **558 queued** (HIGH 135 / MED 177 / LOW 246).
+- [x] **`static/` — both static baselines (§1.2).** PyCG 0.0.8 under a seed policy, and a Pyright-assisted extractor of our own, mapped onto one shared node set. `docs/static_extraction_spec.md` records every decision the frozen metric spec left open and which way each biases the result. Validated on click / toolz / chardet; the corpus run is `static/run_corpus.sh` on the Linux box.
 
-### Known gap worth fixing early
+### Still open in Phase 1
 
-- [ ] **The regression fixtures are not durable.** The two guards in §12 currently read from `/tmp` and the session scratchpad, so they will vanish. Commit them as `tests/fixtures/false_positives.py` and `tests/fixtures/all_features.py` with a small runner. The *checks* pass; their *inputs* are not yet version-controlled.
+- [ ] **§1.3: ins2 workload capture on green repos as they land.** Annotator work, and the true bottleneck for H2a. The Week-4 gate is ≥40 repos with a green build, ≥3 replayable workloads and a pinned lockfile/digest.
+- [ ] **Re-run the 10% human-vs-classifier audit under SOP v1.2.** `docs/sop_v1.2_changelog.md` §4: v1.1 and v1.2 rows are not comparable on `OOM`/`TIMEOUT`/`KILLED`, because under v1.1 the machine could not emit them. Human task, not blocked on code.
+- [ ] **ins3 Part 1-R licence review, before the corpus is frozen.** MANIFEST §7's redistribution gate holds 567 `REVIEW_NEEDED` rows as `pending` rather than discarding them; resolving them keeps HIGH's required survival at 14.3% instead of 18.3%.
+- [x] **The regression fixtures are durable.** Committed as `tests/fixtures/` with `tests/run_checks.sh`; the static layer's guards live in `tests/test_static.py` (check 7).
 
 ### Later phases
 
@@ -679,4 +794,4 @@ TOO_SMALL**) is in `docs/density_scorer_spec.md` §2, with the full expected tab
 
 ---
 
-*Phase 0 complete, 2026-07-27. Start Phase 1 at `MANIFEST.md` §7.*
+*Phase 0 complete 2026-07-27. Phase 1 §1.1 and §1.2 built 2026-08-17 — see `MANIFEST.md` §8 and `docs/static_extraction_spec.md`. Next: the two long runs on the x86_64 box (`triage/runner.py`, then `static/run_corpus.sh`), and §1.3 workload capture.*

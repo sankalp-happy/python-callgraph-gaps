@@ -34,17 +34,24 @@ INT_RE = re.compile(r"^\d+$")
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 URL_RE = re.compile(r"^https://github\.com/[^/\s]+/[^/\s]+$")
 
-# ins1_v1.1_spotcheck.md §6. `error_class` gains OOM/TIMEOUT/KILLED only if the
-# amendment in ins1_v1.1_amendment_draft.md is accepted -- --v12 turns them on.
+# ins1_v1.1_spotcheck.md §6, as amended by docs/sop_v1.2_changelog.md.
+#
+# The v1.2 vocabulary is gated on THE ROW'S OWN `sheet_version`, not on a CLI
+# flag. That is not a refinement, it is the rule: under v1.1 the harness could
+# not emit `OOM`/`TIMEOUT`/`KILLED` at all, so a v1.1 row carrying one of them is
+# a transcription error, and v1.1 and v1.2 rows must not be pooled on these three
+# classes (sop_v1.2_changelog §4). Per-row gating enforces both at once, which a
+# whole-file flag cannot do.
 INS1 = {
     "status": ["GREEN", "GREEN_AFTER_FIX", "AMBER", "RED", "UNCLEAR"],
     "error_class": ["NONE", "PYTHON_VERSION", "DEP_RESOLUTION",
                     "MISSING_SYSTEM_LIB", "NETWORK", "CLONE", "TIMEBOX", "OTHER"],
     "fix_applied": ["none", "py3.11", "py3.10", "py3.9", "py3.8",
                     "tried_3.11_3.10_3.9", "tried_3.10_3.8"],
-    "sheet_version": ["v1.1"],
+    "sheet_version": ["v1.1", "v1.2"],
 }
 INS1_V12_ERROR_CLASS = ["OOM", "TIMEOUT", "KILLED"]
+INS1_V12_N_FAILING = ["collect_partial"]
 
 # ins2_v1.1_prework.md §4 / §4.1
 INS2 = {
@@ -96,16 +103,37 @@ class Report:
 
 
 def check_ins1(rows: list[dict], rep: Report, args) -> None:
-    allowed = dict(INS1)
-    if args.v12:
-        allowed["error_class"] = INS1["error_class"] + INS1_V12_ERROR_CLASS
     for i, r in enumerate(rows, 2):  # row 1 is the header
         status = (r.get("status") or "")
         if args.filled_only and not status.strip():
             continue
-        for col, vals in allowed.items():
-            rep.enum(i, col, r.get(col, ""), vals)
+        # `--v12` remains accepted for a sheet whose version column is not filled
+        # in yet; a filled-in version always wins.
+        row_version = (r.get("sheet_version") or "").strip()
+        v12 = row_version == "v1.2" or (args.v12 and not row_version)
+        allowed = dict(INS1)
+        if v12:
+            allowed["error_class"] = INS1["error_class"] + INS1_V12_ERROR_CLASS
         ec, fx = r.get("error_class", ""), r.get("fix_applied", "")
+        for col, vals in allowed.items():
+            # The vintage-mismatch message below says strictly more than "not an
+            # allowed value" would, so don't print both for the same cell.
+            if col == "error_class" and not v12 and ec in INS1_V12_ERROR_CLASS:
+                continue
+            rep.enum(i, col, r.get(col, ""), vals)
+
+        # A v1.1 row cannot carry a v1.2-only class: under v1.1 the machine could
+        # not print one, so this is a transcription error and the two vintages
+        # must not be pooled on these classes.
+        if not v12 and ec in INS1_V12_ERROR_CLASS:
+            rep.add(i, "error_class", ec,
+                    f"{ec} is v1.2 vocabulary but this row is sheet_version="
+                    f"{row_version or '<blank>'} (sop_v1.2_changelog §4: v1.1 and "
+                    f"v1.2 rows are not comparable on OOM/TIMEOUT/KILLED)")
+        if not v12 and r.get("n_failing", "") in INS1_V12_N_FAILING:
+            rep.add(i, "n_failing", r.get("n_failing", ""),
+                    f"collect_partial is v1.2 vocabulary but this row is "
+                    f"sheet_version={row_version or '<blank>'}")
 
         # §6 cross-field rules.
         if status == "GREEN":
@@ -117,17 +145,22 @@ def check_ins1(rows: list[dict], rep: Report, args) -> None:
             rep.add(i, "error_class", ec, "status=AMBER requires error_class=NONE")
         if status == "RED" and ec == "NONE":
             rep.add(i, "error_class", ec, "status=RED requires error_class != NONE")
-        if args.v12 and ec in INS1_V12_ERROR_CLASS:
+        if v12 and ec in INS1_V12_ERROR_CLASS:
+            # A killed run is not an AMBER run: its pass counts and its timings
+            # are both meaningless, and MANIFEST §1.1 forbids publishing timing
+            # from an invalid run.
             if status != "RED":
                 rep.add(i, "status", status,
-                        f"error_class={ec} requires status=RED (amendment §2.3)")
+                        f"error_class={ec} requires status=RED "
+                        f"(sop_v1.2_changelog §2.3)")
             if r.get("n_failing") != "na":
                 rep.add(i, "n_failing", r.get("n_failing", ""),
-                        f"error_class={ec} requires n_failing=na (amendment §2.3)")
+                        f"error_class={ec} requires n_failing=na "
+                        f"(sop_v1.2_changelog §2.3)")
 
         # n_failing: a number, or 0, or collect_fail, or na (+ collect_partial in v1.2)
         nf = r.get("n_failing", "")
-        ok_nf = ["collect_fail", "na"] + (["collect_partial"] if args.v12 else [])
+        ok_nf = ["collect_fail", "na"] + (INS1_V12_N_FAILING if v12 else [])
         if nf and not INT_RE.match(nf) and nf not in ok_nf:
             rep.add(i, "n_failing", repr(nf),
                     f"must be a whole number, or one of {'/'.join(ok_nf)}")
