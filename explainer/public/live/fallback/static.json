@@ -1,0 +1,16 @@
+{
+  "run_id": "9999999999",
+  "graph": {
+    "fixture": [
+      "fixture.main"
+    ],
+    "fixture.PluginRegistry.dispatch": [
+      "<builtin>.getattr"
+    ],
+    "<builtin>.getattr": [],
+    "fixture.PluginRegistry.handle_email": [],
+    "fixture.main": [
+      "fixture.PluginRegistry.dispatch"
+    ]
+  }
+}

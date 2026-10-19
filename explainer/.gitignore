@@ -5,3 +5,6 @@ dist/
 *.tsbuildinfo
 .vercel/
 .DS_Store
+
+# Live-demo generated pair (design doc: Data contract). fallback/ stays tracked.
+public/live/*.json

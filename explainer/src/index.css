@@ -25,6 +25,10 @@
   --ok:         #3d6b52;
   --ok-wash:    #e2ebe5;
 
+  /* the edge a static map never draws, but the program actually ran */
+  --danger:     #b8102d;
+  --danger-wash:#f6dde2;
+
   --font-display: "Helvetica Neue", "Arial Narrow", Helvetica, Arial, sans-serif;
   --font-body: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
   --font-mono: "SF Mono", SFMono-Regular, "Cascadia Mono", "DejaVu Sans Mono", ui-monospace, monospace;
@@ -37,6 +41,7 @@
     --rule: #2b3542; --rule-soft: #222b36;
     --steel: #74a1c9; --accent: #e0913c; --accent-ink: #edad63; --accent-wash: #2c2117;
     --ok: #79ab8d; --ok-wash: #1a2620;
+    --danger: #e0566f; --danger-wash: #301a1e;
   }
 }
 
@@ -47,6 +52,7 @@
   --rule: #c9d2dc; --rule-soft: #dbe2e9;
   --steel: #3f6488; --accent: #b85c10; --accent-ink: #8f4709; --accent-wash: #f6e8d8;
   --ok: #3d6b52; --ok-wash: #e2ebe5;
+  --danger: #b8102d; --danger-wash: #f6dde2;
 }
 :root[data-theme="dark"] {
   --paper: #0f141b; --surface: #161d26; --surface-2: #1e2732;
@@ -54,6 +60,7 @@
   --rule: #2b3542; --rule-soft: #222b36;
   --steel: #74a1c9; --accent: #e0913c; --accent-ink: #edad63; --accent-wash: #2c2117;
   --ok: #79ab8d; --ok-wash: #1a2620;
+  --danger: #e0566f; --danger-wash: #301a1e;
 }
 
 * { box-sizing: border-box; }
@@ -263,4 +270,234 @@ footer { padding: 2.75rem 0 4rem; border-top: 2px solid var(--ink); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+/* Live Demo page. The missing-edge pulse itself is animated through
+   cytoscape's own API (CytoscapeGraph.tsx) -- canvas content can't be
+   selectively pulsed with a CSS filter on the container. */
+.live-counter { font-family: var(--font-mono); font-size: 1.4rem; color: var(--danger); }
+.live-spinner {
+  display: inline-block; width: .8rem; height: .8rem;
+  border: 2px solid var(--rule); border-top-color: var(--steel);
+  border-radius: 50%; animation: live-spin 0.8s linear infinite;
+}
+@keyframes live-spin { to { transform: rotate(360deg); } }
+
+/* ============================================================================
+   Real-repository measurement, construct taxonomy, tool-behaviour panels.
+   Same drafting-table language as the rest: hairlines, squares, steel for
+   what a tool drew, red for a road it never drew.
+   ========================================================================= */
+
+.headline-row {
+  display: grid; grid-template-columns: minmax(0, 15rem) 1fr; gap: 1.5rem;
+  align-items: start; padding: 1.15rem; background: var(--surface);
+  border: 1px solid var(--rule); border-left: 3px solid var(--danger);
+}
+@media (max-width: 700px) { .headline-row { grid-template-columns: 1fr; } }
+.headline-number {
+  font-family: var(--font-display); font-size: 3.4rem; line-height: 1;
+  color: var(--danger); margin: 0 0 .35rem;
+}
+.headline-figure .micro { margin: 0; }
+
+.notice {
+  padding: .8rem 1rem; background: var(--surface); border: 1px dashed var(--rule);
+  border-left: 3px solid var(--steel);
+}
+.notice p { margin: 0; }
+.notice-ok { border-left-color: var(--ok); background: var(--ok-wash); }
+.notice-warn { border-left-color: var(--accent); background: var(--accent-wash); }
+
+.graph-toolbar { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+.graph-frame { border: 1px solid var(--rule); background: var(--surface); }
+
+/* Squared, hairlined, mono -- the same drafting language as everything else.
+   Left as browser defaults these read as unfinished scaffolding next to type
+   this deliberate, which is the one thing a jury does notice.
+
+   Selector must include [type="button"]: tailwind's preflight sets
+   `[type="button"] { background-color: transparent }` at specificity 0,1,0,
+   which silently beats a bare `button` at 0,0,1. Every button on this page
+   carries type="button", so a bare selector loses the background and nothing
+   about the failure looks like a specificity problem. */
+button,
+[type="button"] {
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em;
+  text-transform: uppercase; padding: .42rem .8rem;
+  background-color: var(--surface); border: 1px solid var(--rule); color: var(--ink-soft);
+  cursor: pointer; border-radius: 0; transition: border-color .12s ease, color .12s ease;
+}
+button:hover,
+[type="button"]:hover { border-color: var(--steel); color: var(--ink); }
+button:active,
+[type="button"]:active { transform: translateY(1px); }
+button:focus-visible,
+[type="button"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+[aria-pressed="true"] { border-color: var(--steel); color: var(--ink); background-color: var(--surface-2); }
+
+/* The range input is the scrub control the presenter drives on stage, so it
+   gets the same treatment rather than shipping as a stock slider. */
+.graph-toolbar input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  height: 2px; background: var(--rule); cursor: pointer;
+}
+.graph-toolbar input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 11px; height: 15px; background: var(--ink); border: 0; border-radius: 0;
+}
+.graph-toolbar input[type="range"]::-moz-range-thumb {
+  width: 11px; height: 15px; background: var(--ink); border: 0; border-radius: 0;
+}
+.graph-toolbar input[type="range"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+/* Full screen. The shell carries the toolbar too, so the presenter keeps
+   replay and fit without dropping out of full screen to reach them. */
+.graph-shell:fullscreen {
+  background: var(--paper); padding: 1rem; gap: .8rem;
+}
+.graph-shell:fullscreen .graph-frame { flex: 1; min-height: 0; }
+.graph-shell:fullscreen .graph-toolbar { flex: none; }
+
+.edge-detail { border: 1px solid var(--rule); background: var(--surface); padding: .7rem .9rem; }
+.edge-detail-list { max-height: 15rem; overflow-y: auto; margin-top: .4rem; }
+.edge-row {
+  display: grid; grid-template-columns: 1.2rem minmax(0, 22rem) 1fr; gap: .5rem;
+  align-items: baseline; padding: .22rem 0; border-top: 1px dashed var(--rule-soft);
+}
+.edge-row:first-child { border-top: 0; }
+.edge-row .marker { color: var(--ok); }
+.edge-row.is-missing .marker { color: var(--danger); }
+.edge-row code { overflow-x: auto; white-space: pre; }
+
+.bar-row {
+  display: grid; grid-template-columns: minmax(0, 14rem) 1fr 4rem;
+  gap: .6rem; align-items: center;
+}
+@media (max-width: 700px) { .bar-row { grid-template-columns: minmax(0, 9rem) 1fr 3.5rem; } }
+.bar-track { background: var(--rule-soft); height: 12px; overflow: hidden; }
+.bar-fill-total { background: var(--steel); height: 100%; }
+.bar-fill-missing { background: var(--danger); height: 100%; }
+.bar-fill-missing.is-control { background: var(--ok); }
+
+.edge-table { border: 1px solid var(--rule); background: var(--surface); max-height: 26rem; overflow-y: auto; }
+.edge-table-row {
+  display: grid; grid-template-columns: minmax(0, 20rem) minmax(0, 11rem) 1fr;
+  gap: .7rem; padding: .35rem .75rem; border-top: 1px dashed var(--rule-soft);
+}
+.edge-table-row:first-child { border-top: 0; }
+.edge-table-row code { overflow-x: auto; white-space: pre; }
+@media (max-width: 900px) { .edge-table-row { grid-template-columns: 1fr; gap: .1rem; } }
+
+.construct-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr)); gap: 1px;
+  background: var(--rule); border: 1px solid var(--rule);
+}
+.construct-card {
+  background: var(--surface); padding: 1rem; display: flex; flex-direction: column; gap: .7rem;
+}
+.construct-head { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem; }
+.construct-title { font-size: 1rem; margin: 0; }
+.construct-card.outcome-missed { border-top: 3px solid var(--danger); }
+.construct-card.outcome-found { border-top: 3px solid var(--ok); }
+.construct-card.outcome-resolved-in-small { border-top: 3px solid var(--accent); }
+.pill-missed { background: var(--danger-wash); color: var(--danger); }
+.pill-found { background: var(--ok-wash); color: var(--ok); }
+.pill-resolved-in-small { background: var(--accent-wash); color: var(--accent-ink); }
+.construct-code {
+  font-family: var(--font-mono); font-size: .72rem; line-height: 1.5;
+  background: var(--paper); border: 1px solid var(--rule-soft); padding: .6rem .7rem;
+  overflow-x: auto; margin: 0; max-height: 18rem; overflow-y: auto;
+}
+.construct-edges { border-top: 1px dashed var(--rule); padding-top: .5rem; }
+.construct-edges .edge-row { grid-template-columns: 1.2rem 1fr; }
+.construct-evidence { margin: 0; color: var(--danger); }
+.construct-why { border-left: 2px solid var(--rule); padding-left: .7rem; white-space: pre-wrap; }
+
+.chart { width: 100%; height: auto; display: block; }
+.chart-tick { font-family: var(--font-mono); font-size: 9px; fill: var(--ink-faint); }
+
+.trial-grid { display: flex; flex-wrap: wrap; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.trial {
+  display: flex; flex-direction: column; align-items: center; gap: .1rem;
+  padding: .4rem .55rem; min-width: 3.6rem; background: var(--surface);
+}
+.trial-ok { border-bottom: 3px solid var(--ok); }
+.trial-dead { border-bottom: 3px solid var(--danger); background: var(--danger-wash); }
+
+/* Sentence-length small text. `.micro` is uppercase mono, which is right for
+   a two-word label and unreadable for a paragraph -- these panels carry a lot
+   of caveat prose that has to stay legible. */
+.note { font-size: .84rem; line-height: 1.6; color: var(--ink-soft); }
+.note code, .note strong { font-size: inherit; }
+.note-faint { color: var(--ink-faint); }
+
+/* `.micro` uppercases, which is right for a label and wrong for anything the
+   reader has to match against real code -- qualified names and source lines
+   must render exactly as they appear in the repository. */
+.micro.mono, code.micro, .micro code { text-transform: none; letter-spacing: 0; }
+.seed-rows { display: grid; gap: .4rem; }
+.seed-row { display: grid; grid-template-columns: minmax(0, 13rem) 1fr; gap: .6rem; align-items: center; }
+@media (max-width: 700px) { .seed-row { grid-template-columns: 1fr; gap: .2rem; } }
+
+/* ============================================================================
+   Presentation view. Aimed at a non-technical viewer seeing this once, from
+   the back of a room: bigger type, fewer things, the graph carrying the idea.
+   ========================================================================= */
+
+.masthead-foot { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.mode-switch {
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em;
+  text-transform: uppercase; padding: .4rem .8rem;
+  background: transparent; border: 1px solid var(--rule); color: var(--ink-soft);
+  cursor: pointer;
+}
+.mode-switch:hover { border-color: var(--steel); color: var(--ink); }
+
+.pres-title { font-size: clamp(1.5rem, 3.2vw, 2.3rem); line-height: 1.15; margin: 0; max-width: 24ch; }
+
+/* Presentation mode puts the graph above the fold. It was starting at y=845
+   on a 720px viewport, behind two stacked headline+deck blocks that said the
+   same thing, so the opening screen of the demo was entirely prose. The
+   masthead keeps its proportions and loses its padding. */
+.masthead-compact { padding: 2rem 0 1.25rem; }
+.masthead-compact h1 { font-size: clamp(2.1rem, 5.4vw, 3.35rem); }
+.masthead-compact .deck { max-width: 46rem; font-size: clamp(1rem, 1.7vw, 1.14rem); }
+.section-flush { padding-top: 1.5rem; }
+
+/* The one line that has to be read before the graph, so it sits against it
+   rather than up in the masthead with the rest of the prose. */
+.pres-caption {
+  display: flex; align-items: baseline; gap: .6rem;
+  border-left: 3px solid var(--danger); padding-left: .7rem;
+  font-size: 1.02rem; line-height: 1.45; color: var(--ink);
+}
+
+.pres-stage { border: 1px solid var(--rule); background: var(--surface); padding: .5rem; }
+
+.pres-tally { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.pres-stat { background: var(--surface); padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: .2rem; }
+.pres-stat-num { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1; font-variant-numeric: tabular-nums; }
+.pres-stat-ok .pres-stat-num { color: var(--steel); }
+.pres-stat-bad { background: var(--danger-wash); }
+.pres-stat-bad .pres-stat-num { color: var(--danger); }
+
+.pres-legend { display: flex; flex-wrap: wrap; gap: 1.4rem; align-items: center; }
+.pres-key { display: inline-flex; align-items: center; gap: .5rem; font-size: .84rem; color: var(--ink-soft); }
+.pres-swatch { display: inline-block; width: 26px; height: 0; border-top-width: 3px; border-top-style: solid; }
+.pres-swatch-found { border-top-color: var(--steel); }
+/* A line bundles every call between two files, so it can be partly right.
+   This was the most prominent colour on the graph and had no key at all. */
+.pres-swatch-mixed { border-top-color: var(--accent); }
+.pres-swatch-missing { border-top-color: var(--danger); border-top-style: dashed; }
+.pres-swatch-box { height: 16px; width: 22px; border: 1px solid var(--rule); background: var(--surface-2); }
+
+.pres-points { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.pres-point { background: var(--surface); padding: 1.1rem; display: flex; flex-direction: column; gap: .4rem; }
+.pres-point-num { font-family: var(--font-display); font-size: 2.4rem; line-height: 1; margin: 0; color: var(--accent-ink); font-variant-numeric: tabular-nums; }
+.pres-point:first-child .pres-point-num { color: var(--danger); }
+.pres-point .note { margin: 0; }
+
+@media (max-width: 640px) {
+  .pres-tally { grid-template-columns: 1fr; }
 }

@@ -1,0 +1,20 @@
+{
+  "run_id": "9999999999",
+  "edges": [
+    {
+      "caller": "fixture",
+      "callee": "fixture.main",
+      "ts": 1786733676.290167
+    },
+    {
+      "caller": "fixture.main",
+      "callee": "fixture.PluginRegistry.dispatch",
+      "ts": 1786733676.2901702
+    },
+    {
+      "caller": "fixture.PluginRegistry.dispatch",
+      "callee": "fixture.PluginRegistry.handle_email",
+      "ts": 1786733676.2901728
+    }
+  ]
+}

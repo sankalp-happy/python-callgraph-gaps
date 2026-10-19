@@ -26,7 +26,7 @@ const PHASES: Phase[] = [
         title: "Why the order matters so much",
         state: "done",
         body: [
-          "Almost every definition in this study could be adjusted to make the final number bigger or smaller. Decide them afterwards and you are no longer measuring — you are hunting for the answer you wanted.",
+          "Almost every definition in this study could be adjusted to make the final number bigger or smaller. Decide them afterwards and you are no longer measuring. You are hunting for the answer you wanted.",
           "So the three documents that define the measurement were written and locked before any of the code that uses them existed. Changing one now requires a new version number, a dated note explaining why, and re-running everything that depended on it. That is on purpose, and it is the main thing that will make a reviewer believe the result.",
         ],
       },
@@ -44,7 +44,7 @@ const PHASES: Phase[] = [
         state: "done",
         body: [
           "We need projects of varying difficulty, not all easy or all hard. So a tool reads each project and scores how much of the tricky behaviour it contains, sorting it into LOW, MEDIUM or HIGH.",
-          "Its first version was useless — 10 of 14 test projects came out HIGH, which tells you nothing. Four separate causes were found and fixed, then the thresholds were locked. It now reproduces the same split every time: 6 HIGH, 4 MEDIUM, 3 LOW, 1 too small to use.",
+          "Its first version was useless: 10 of 14 test projects came out HIGH, which tells you nothing. Four separate causes were found and fixed, then the thresholds were locked. It now reproduces the same split every time: 6 HIGH, 4 MEDIUM, 3 LOW, 1 too small to use.",
           "It also corrected two of our own guesses. We expected one project to be LOW; it scored mid-range because it genuinely does the tricky thing we are studying. We wrote that down rather than quietly agreeing with ourselves.",
         ],
       },
@@ -52,7 +52,7 @@ const PHASES: Phase[] = [
         title: "Rewriting the team instructions",
         state: "done",
         body: [
-          "The original three instruction documents were good, but one whole task in them turned out to be pointless — a leftover from an earlier version of this research where the software was going to be in a different programming language. It is deleted, which returns roughly 30 person-days.",
+          "The original three instruction documents were good, but one whole task in them turned out to be pointless. It was left over from an earlier version of this research, when the software was going to be written in a different language. It is deleted, which returns roughly 30 person-days.",
           "Another task turned out to be something a script does perfectly, so it was automated. The people who were doing it moved to the task no script can do.",
         ],
       },
@@ -70,8 +70,8 @@ const PHASES: Phase[] = [
         title: "Finding the candidates",
         state: "active",
         body: [
-          "A script searches for Python projects that are reasonably popular, still maintained, and have a test suite. For each one it records the exact version of the code as of the day the list was built — so the list cannot drift underneath us.",
-          "It then clones each project, scores its difficulty, and deletes the copy. The result is a queue where LOW, MEDIUM and HIGH projects alternate. That ordering matters: if we only get through 60% of the list we still have all three difficulty levels. Sorted by difficulty instead, an unfinished run would leave us with no HIGH projects at all — and HIGH is the group the whole study depends on.",
+          "A script searches for Python projects that are reasonably popular, still maintained, and have a test suite. For each one it records the exact version of the code as of the day the list was built, so the list cannot drift underneath us.",
+          "It then clones each project, scores its difficulty, and deletes the copy. The result is a queue where LOW, MEDIUM and HIGH projects alternate. That ordering matters: if we only get through 60% of the list we still have all three difficulty levels. Sorted by difficulty instead, an unfinished run would leave us with no HIGH projects at all, and HIGH is the group the whole study depends on.",
           "This is running now, on a teammate's machine.",
         ],
       },
@@ -79,7 +79,7 @@ const PHASES: Phase[] = [
         title: "Checking which projects actually run",
         state: "todo",
         body: [
-          'Most old software no longer installs. That is expected, and a "no" is worth just as much to us as a "yes" as long as it is recorded properly — the collected reasons for failure become a published finding in their own right.',
+          'Most old software no longer installs. That is expected, and a "no" is worth just as much to us as a "yes" as long as it is recorded properly. The collected reasons for failure become a published finding in their own right.',
           "Each project gets one of three verdicts. GREEN means it installs and all its tests pass. AMBER means it installs and runs but some tests fail. RED means it would not build at all.",
           "AMBER counts as usable, and that decision is worth understanding: we need software that runs, not software that passes. A failing test still executes code, and executing code is exactly what we watch. Throwing AMBER away would have discarded an estimated 20–40% of a perfectly good collection.",
         ],
@@ -128,7 +128,7 @@ const PHASES: Phase[] = [
         title: "What we are careful not to claim",
         body: [
           "We only see connections that happen in the situations we knew how to run. There will always be parts of a program nothing we did touched.",
-          'So we never say "this is everything the program does." We say it is a floor — at least this much happens — and that wording is required in every table and caption, not tucked away at the end. Overclaiming here is the single most likely way to get the paper rejected.',
+          'So we never say "this is everything the program does." We say it is a floor, meaning at least this much happens, and that wording is required in every table and caption, not tucked away at the end. Overclaiming here is the single most likely way to get the paper rejected.',
         ],
       },
     ],
@@ -152,16 +152,16 @@ const PHASES: Phase[] = [
         title: "Three ways this could produce a fake number",
         body: [
           "Each of these was written down and ruled out in advance, before the code existed.",
-          'First: connections into code that is not part of the project — built-in functions, other people\'s libraries. Tools never claimed to map those, so counting them as "missed" would invent an enormous number out of nothing. They are excluded by definition.',
+          'First: connections into code that is not part of the project, such as built-in functions or other people\'s libraries. Tools never claimed to map those, so counting them as "missed" would invent an enormous number out of nothing. They are excluded by definition.',
           "Second: a common Python feature causes the recording to show two steps where the tool shows one. Naively subtracting would manufacture two fake misses for every single use of it. The rule for collapsing that back down was written before any recording was made.",
-          'Third: a connection the tool drew but we never saw is not proof the tool was wrong — it may be real code our runs never reached. We refuse to call that an error, and we deliberately never use the word "precision" for it anywhere.',
+          'Third: a connection the tool drew but we never saw is not proof the tool was wrong. It may be real code our runs never reached. We refuse to call that an error, and we deliberately never use the word "precision" for it anywhere.',
         ],
       },
       {
         title: "The honest checkpoint",
         body: [
           "At the end of this phase there is a genuine stop-or-continue decision. If the answer turns out to be that these tools miss almost nothing, the follow-on work is pointless and we stop.",
-          "That is not a bad outcome. It is a finding, it is publishable, and discovering it cheaply at week 8 rather than expensively at week 12 is exactly why the phase boundary sits here.",
+          "That is not a bad outcome. It is a finding, it is publishable, and finding that out at week 8 instead of week 12 is why the phase boundary sits here.",
         ],
       },
     ],
@@ -172,20 +172,20 @@ const PHASES: Phase[] = [
     weeks: "Weeks 8–11",
     status: "future",
     summary:
-      "Test whether giving an AI the missing connections changes what it can do — including a control group where we predict no change at all.",
+      "Test whether giving an AI the missing connections changes what it can do, including a control group where we predict no change at all.",
     chapters: [
       {
         title: "The experiment",
         body: [
-          "Knowing connections are missing is one thing. Showing it changes outcomes is another. So we give an AI the same task twice — once with the map alone, once with the map plus the connections we recorded — and compare.",
-          "Everything else stays identical: same task, same instructions, same amount of information. The only difference is which connections exist. That is what makes the comparison mean something.",
+          "Knowing connections are missing is one thing. Showing it changes outcomes is another. So we give an AI the same task twice, once with the map alone and once with the map plus the connections we recorded, then compare the two.",
+          "Everything else stays identical: same task, same instructions, same amount of information. The only difference is which connections exist. Without that, the comparison would prove nothing.",
         ],
       },
       {
-        title: "The control group, and why it is the best part",
+        title: "The group where we expect nothing to happen",
         body: [
           "We also run the same test on projects with almost no tricky behaviour, where we predict the extra connections make no difference whatsoever.",
-          'If we are right and nothing improves there, that is far stronger evidence than the main result alone. "We added data and things got better" is weak — it could just be more information helping. "Things got better exactly where we predicted and nowhere else" identifies the actual cause.',
+          'If we are right and nothing improves there, that is far stronger evidence than the main result alone. "We added data and things got better" is weak, because it could just be more information helping. "Things got better exactly where we predicted and nowhere else" identifies the actual cause.',
           "We write that prediction down before running the test, so we cannot quietly reinterpret the outcome afterwards.",
         ],
       },
@@ -193,7 +193,7 @@ const PHASES: Phase[] = [
         title: "This phase is optional by design",
         body: [
           "Everything through Phase 3 is already a complete paper. Phase 4 adds to it rather than completing it.",
-          "That is deliberate. If twelve weeks turns out to be optimistic, this is the first thing cut — and the order of cuts was agreed in advance, while nobody was under pressure, precisely so it is not argued about later.",
+          "That is deliberate. If twelve weeks turns out to be optimistic, this is the first thing cut, and the order of cuts was agreed in advance, while nobody was under pressure, so it is not argued about later.",
         ],
       },
     ],
@@ -231,12 +231,12 @@ const ROLES: { who: string; task: string; note: string }[] = [
     note: "Running the search, scoring and queue-building on a 150 GB machine. Produces nothing that can conflict with anyone else's work, which is why it was safe to hand out first.",
   },
   {
-    who: "Annotator — build checks",
+    who: "Annotator (build checks)",
     task: "Checking the automation by hand",
-    note: "Triages a sample of projects manually so we can measure how often the automated verdict is right. Disagreeing with the script is the point, not a problem.",
+    note: "Triages a sample of projects manually so we can measure how often the automated verdict is right. Disagreeing with the script is the point of the job, not a problem with it.",
   },
   {
-    who: "Annotator — documentation",
+    who: "Annotator (documentation)",
     task: "Finding settings, then finding commands",
     note: "First: which configuration settings each project's documentation mentions. Then: which commands look like they would actually run each project. Browser work, no setup needed.",
   },
@@ -275,12 +275,12 @@ const GLOSSARY: { term: string; plain: string }[] = [
   {
     term: "Difficulty level",
     plain:
-      "LOW, MEDIUM or HIGH — how much of the tricky behaviour a project contains. Used to keep the collection balanced.",
+      "LOW, MEDIUM or HIGH: how much of the tricky behaviour a project contains. Used to keep the collection balanced.",
   },
   {
     term: "Workload",
     plain:
-      "A specific, written-down way of running a project — the exact command, verified to work twice. What we record connections from.",
+      "A specific, written-down way of running a project: the exact command, verified to work twice. What we record connections from.",
   },
   {
     term: "Pinning",
@@ -482,7 +482,7 @@ export default function App() {
             </h1>
             <p className="deck">
               We are measuring how many real connections inside a program the standard
-              code-reading tools never draw — and whether the ones they miss follow a pattern.
+              code-reading tools never draw, and whether the ones they miss follow a pattern.
             </p>
           </div>
 
@@ -501,6 +501,10 @@ export default function App() {
               </div>
             ))}
           </dl>
+
+          <a href="#live" className="micro faint">
+            → watch a call graph miss a real call, live
+          </a>
         </div>
       </header>
 
@@ -521,7 +525,7 @@ export default function App() {
             </p>
             <p>
               Tools exist that produce that map by <b>reading</b> the code, without ever running
-              it. They are fast, and they are what almost everyone uses — including the AI tools
+              it. They are fast, and they are what almost everyone uses, including the AI tools
               now being pointed at old software.
             </p>
             <p>
@@ -585,7 +589,7 @@ export default function App() {
               <p className="small soft" style={{ margin: 0 }}>
                 The same four, plus two we only saw by running it. Nothing in the code says{" "}
                 <span className="mono">report</span> will call <span className="mono">plugin</span>{" "}
-                — that gets decided while it runs.
+                will call it. That gets decided while it runs.
               </p>
             </div>
           </div>
@@ -612,8 +616,8 @@ export default function App() {
               <b>Why anyone should care.</b> An AI asked to rewrite{" "}
               <span className="mono">plugin</span> works from the left-hand picture. It has no way
               to know <span className="mono">billing</span> depends on it. The rewrite passes its
-              tests and quietly breaks billing in production — the kind of failure that never shows
-              up until it is expensive.
+              tests and quietly breaks billing in production. That kind of failure does not show up
+              until it is expensive.
             </p>
           </div>
         </div>
@@ -629,7 +633,7 @@ export default function App() {
           </div>
 
           <p className="lead" style={{ margin: 0, maxWidth: "40rem" }}>
-            Three things — and notably, none of them is <i>getting a big number</i>.
+            Three things, and none of them is <i>getting a big number</i>.
           </p>
 
           <div className="grid-3">
@@ -639,8 +643,8 @@ export default function App() {
               <p className="small soft" style={{ margin: 0 }}>
                 Whichever way it comes out, it is worth publishing. If tools miss 30% of
                 connections, that is a significant finding. If they miss only 8%, that is{" "}
-                <i>also</i> a finding — "these tools are more complete than the field assumes" is
-                useful, and nobody has measured it properly.
+                <i>also</i> a finding. "These tools are more complete than the field assumes" is
+                worth knowing, and nobody has measured it properly.
               </p>
             </div>
             <div className="card stack gap-2">
@@ -657,7 +661,7 @@ export default function App() {
               <h3>Something others reuse</h3>
               <p className="small soft" style={{ margin: 0 }}>
                 We release the project list, the exact recipes for running them, and the recorded
-                connections. Benchmarks tend to outlive the methods that produced them — this is
+                connections. Benchmarks tend to outlive the methods that produced them, so this is
                 the part most likely to still matter in five years.
               </p>
             </div>
@@ -678,7 +682,7 @@ export default function App() {
           <div className="stack gap-2">
             <h3>And what would count as failure</h3>
             <p className="small soft" style={{ maxWidth: "38rem", margin: 0 }}>
-              Not "the number was small". These three — each of which a written rule now guards
+              Not "the number was small". These three, each of which a written rule now guards
               against:
             </p>
             <ul className="checklist small soft" style={{ maxWidth: "40rem" }}>
@@ -759,7 +763,7 @@ export default function App() {
             <p className="small soft" style={{ margin: 0 }}>
               Phases 0 to 3 already add up to a complete paper on their own. Phases 4 and 5 are
               additions to it. That was designed in from the start so that running out of time
-              costs us extra findings rather than the whole result — and the order things get cut
+              costs us extra findings rather than the whole result, and the order things get cut
               in was agreed while nobody was under pressure.
             </p>
           </div>
@@ -809,7 +813,7 @@ export default function App() {
               <p className="small soft" style={{ margin: 0 }}>
                 Most of the software we look at will not install. Most projects will document no
                 settings. Many will have no obvious way to run them. None of that is a bad day's
-                work — every one of those is a recorded data point, and the collected failures
+                work. Every one of those is a recorded data point, and the collected failures
                 become a published finding.
               </p>
               <p className="small soft" style={{ margin: 0 }}>
@@ -825,8 +829,8 @@ export default function App() {
               </p>
               <p className="small soft" style={{ margin: 0 }}>
                 Everything else here is easy to fix later. That is not, because afterwards nobody
-                knows which rows to distrust. When in doubt the honest answer — including "I am not
-                sure" — is always the right one, and every form has a value that means exactly
+                knows which rows to distrust. When in doubt the honest answer, including "I am not
+                sure", is always the right one, and every form has a value that means exactly
                 that.
               </p>
             </div>
@@ -888,7 +892,7 @@ export default function App() {
             TraceWeave-Core
           </p>
           <p className="small soft" style={{ maxWidth: "38rem", margin: 0 }}>
-            Phase 0 complete. Phase 1 underway — the candidate list is being generated now, and
+            Phase 0 complete. Phase 1 underway: the candidate list is being generated now, and
             three of its four blocking items remain. Phases 2 to 5 not started.
           </p>
           <p className="small faint" style={{ maxWidth: "38rem", margin: 0 }}>
