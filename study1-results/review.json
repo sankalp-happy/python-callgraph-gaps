@@ -1,0 +1,498 @@
+{
+ "repos": {
+  "PyFunceble": {
+   "observed": 1045,
+   "missed": 480,
+   "shares": {
+    "reference/shared": 0.32708333333333334,
+    "unnamed/other": 0.22083333333333333,
+    "unnamed/dunder": 0.08125,
+    "reference/unique": 0.3020833333333333,
+    "call/shared": 0.035416666666666666,
+    "constructor/unique": 0.025,
+    "call/unique": 0.008333333333333333
+   }
+  },
+  "ShivyC": {
+   "observed": 1459,
+   "missed": 810,
+   "shares": {
+    "call/shared": 0.7419753086419754,
+    "unnamed/dunder": 0.10864197530864197,
+    "call/unique": 0.0691358024691358,
+    "unnamed/other": 0.07160493827160494,
+    "constructor/unique": 0.008641975308641974
+   }
+  },
+  "TradingView-Screener": {
+   "observed": 19,
+   "missed": 0,
+   "shares": {}
+  },
+  "all-repos": {
+   "observed": 221,
+   "missed": 38,
+   "shares": {
+    "unnamed/other": 0.47368421052631576,
+    "reference/shared": 0.13157894736842105,
+    "call/shared": 0.21052631578947367,
+    "call/unique": 0.02631578947368421,
+    "reference/unique": 0.15789473684210525
+   }
+  },
+  "apiflask": {
+   "observed": 142,
+   "missed": 44,
+   "shares": {
+    "unnamed/other": 0.4772727272727273,
+    "call/shared": 0.20454545454545456,
+    "reference/shared": 0.18181818181818182,
+    "unnamed/dunder": 0.06818181818181818,
+    "call/unique": 0.022727272727272728,
+    "reference/unique": 0.045454545454545456
+   }
+  },
+  "autoray": {
+   "observed": 50,
+   "missed": 6,
+   "shares": {
+    "unnamed/other": 0.8333333333333334,
+    "reference/shared": 0.16666666666666666
+   }
+  },
+  "aws-dynamodb-encryption-python": {
+   "observed": 74,
+   "missed": 24,
+   "shares": {
+    "reference/shared": 0.041666666666666664,
+    "unnamed/other": 0.7083333333333334,
+    "unnamed/dunder": 0.08333333333333333,
+    "call/shared": 0.16666666666666666
+   }
+  },
+  "bedrock-agentcore-sdk-python": {
+   "observed": 356,
+   "missed": 30,
+   "shares": {
+    "reference/unique": 0.4,
+    "unnamed/dunder": 0.16666666666666666,
+    "unnamed/other": 0.3,
+    "call/shared": 0.13333333333333333
+   }
+  },
+  "click": {
+   "observed": 704,
+   "missed": 217,
+   "shares": {
+    "unnamed/dunder": 0.2626728110599078,
+    "call/shared": 0.4055299539170507,
+    "unnamed/other": 0.17972350230414746,
+    "reference/unique": 0.10138248847926268,
+    "call/unique": 0.013824884792626729,
+    "constructor/unique": 0.009216589861751152,
+    "reference/shared": 0.027649769585253458
+   }
+  },
+  "compressed-tensors": {
+   "observed": 413,
+   "missed": 125,
+   "shares": {
+    "call/shared": 0.184,
+    "unnamed/dunder": 0.24,
+    "unnamed/other": 0.568,
+    "call/unique": 0.008
+   }
+  },
+  "confluence-markdown-exporter": {
+   "observed": 206,
+   "missed": 86,
+   "shares": {
+    "unnamed/other": 0.6046511627906976,
+    "reference/unique": 0.1744186046511628,
+    "call/unique": 0.09302325581395349,
+    "reference/shared": 0.11627906976744186,
+    "unnamed/dunder": 0.011627906976744186
+   }
+  },
+  "creosote": {
+   "observed": 63,
+   "missed": 5,
+   "shares": {
+    "constructor/unique": 0.2,
+    "unnamed/other": 0.6,
+    "unnamed/dunder": 0.2
+   }
+  },
+  "deepblast": {
+   "observed": 29,
+   "missed": 7,
+   "shares": {
+    "unnamed/other": 0.5714285714285714,
+    "reference/unique": 0.42857142857142855
+   }
+  },
+  "django-ses": {
+   "observed": 3,
+   "missed": 1,
+   "shares": {
+    "reference/unique": 1.0
+   }
+  },
+  "fastapi-injectable": {
+   "observed": 46,
+   "missed": 8,
+   "shares": {
+    "unnamed/other": 0.875,
+    "reference/unique": 0.125
+   }
+  },
+  "geocube": {
+   "observed": 45,
+   "missed": 6,
+   "shares": {
+    "call/shared": 0.16666666666666666,
+    "unnamed/other": 0.6666666666666666,
+    "unnamed/dunder": 0.16666666666666666
+   }
+  },
+  "json-logging-python": {
+   "observed": 86,
+   "missed": 51,
+   "shares": {
+    "unnamed/dunder": 0.13725490196078433,
+    "call/shared": 0.7843137254901961,
+    "unnamed/other": 0.058823529411764705,
+    "constructor/unique": 0.0196078431372549
+   }
+  },
+  "jsonapi-requests": {
+   "observed": 153,
+   "missed": 74,
+   "shares": {
+    "reference/unique": 0.28378378378378377,
+    "call/unique": 0.08108108108108109,
+    "call/shared": 0.2972972972972973,
+    "unnamed/dunder": 0.24324324324324326,
+    "reference/shared": 0.0945945945945946
+   }
+  },
+  "marshmallow-sqlalchemy": {
+   "observed": 38,
+   "missed": 9,
+   "shares": {
+    "unnamed/other": 0.3333333333333333,
+    "unnamed/dunder": 0.3333333333333333,
+    "call/shared": 0.1111111111111111,
+    "reference/unique": 0.1111111111111111,
+    "constructor/unique": 0.1111111111111111
+   }
+  },
+  "mcp-sequential-thinking": {
+   "observed": 36,
+   "missed": 4,
+   "shares": {
+    "unnamed/other": 1.0
+   }
+  },
+  "movingpandas": {
+   "observed": 382,
+   "missed": 165,
+   "shares": {
+    "unnamed/other": 0.3696969696969697,
+    "call/shared": 0.44242424242424244,
+    "call/unique": 0.09090909090909091,
+    "unnamed/dunder": 0.06060606060606061,
+    "reference/unique": 0.03636363636363636
+   }
+  },
+  "pr-agent": {
+   "observed": 619,
+   "missed": 129,
+   "shares": {
+    "unnamed/other": 0.751937984496124,
+    "unnamed/dunder": 0.06201550387596899,
+    "call/shared": 0.13178294573643412,
+    "reference/shared": 0.023255813953488372,
+    "reference/unique": 0.031007751937984496
+   }
+  },
+  "puncover": {
+   "observed": 22,
+   "missed": 1,
+   "shares": {
+    "reference/unique": 1.0
+   }
+  },
+  "pykwalify": {
+   "observed": 192,
+   "missed": 91,
+   "shares": {
+    "unnamed/other": 0.17582417582417584,
+    "reference/unique": 0.8021978021978022,
+    "reference/shared": 0.01098901098901099,
+    "unnamed/dunder": 0.01098901098901099
+   }
+  },
+  "pyrlp": {
+   "observed": 120,
+   "missed": 42,
+   "shares": {
+    "call/shared": 0.5714285714285714,
+    "unnamed/dunder": 0.35714285714285715,
+    "unnamed/other": 0.047619047619047616,
+    "constructor/unique": 0.023809523809523808
+   }
+  },
+  "pysui": {
+   "observed": 1393,
+   "missed": 1019,
+   "shares": {
+    "unnamed/other": 0.8743866535819431,
+    "unnamed/dunder": 0.11089303238469088,
+    "call/shared": 0.005888125613346418,
+    "reference/shared": 0.002944062806673209,
+    "reference/unique": 0.002944062806673209,
+    "call/unique": 0.001962708537782139,
+    "constructor/unique": 0.0009813542688910696
+   }
+  },
+  "python-lazy-object-proxy": {
+   "observed": 187,
+   "missed": 181,
+   "shares": {
+    "unnamed/dunder": 0.988950276243094,
+    "unnamed/other": 0.011049723756906077
+   }
+  },
+  "python-neutronclient": {
+   "observed": 47,
+   "missed": 3,
+   "shares": {
+    "reference/unique": 0.6666666666666666,
+    "unnamed/dunder": 0.3333333333333333
+   }
+  },
+  "redbeat": {
+   "observed": 63,
+   "missed": 25,
+   "shares": {
+    "reference/unique": 0.36,
+    "unnamed/other": 0.32,
+    "call/unique": 0.04,
+    "unnamed/dunder": 0.08,
+    "reference/shared": 0.08,
+    "constructor/unique": 0.08,
+    "call/shared": 0.04
+   }
+  },
+  "rejax": {
+   "observed": 174,
+   "missed": 111,
+   "shares": {
+    "reference/shared": 0.17117117117117117,
+    "unnamed/other": 0.40540540540540543,
+    "reference/unique": 0.12612612612612611,
+    "unnamed/dunder": 0.1981981981981982,
+    "call/unique": 0.036036036036036036,
+    "call/shared": 0.06306306306306306
+   }
+  },
+  "rlm": {
+   "observed": 142,
+   "missed": 30,
+   "shares": {
+    "unnamed/other": 0.23333333333333334,
+    "reference/unique": 0.3,
+    "reference/shared": 0.06666666666666667,
+    "unnamed/dunder": 0.13333333333333333,
+    "call/shared": 0.26666666666666666
+   }
+  },
+  "scrapyrt": {
+   "observed": 25,
+   "missed": 5,
+   "shares": {
+    "unnamed/dunder": 0.6,
+    "reference/unique": 0.2,
+    "unnamed/other": 0.2
+   }
+  },
+  "sec-edgar": {
+   "observed": 123,
+   "missed": 63,
+   "shares": {
+    "reference/shared": 0.47619047619047616,
+    "reference/unique": 0.4126984126984127,
+    "call/shared": 0.031746031746031744,
+    "unnamed/dunder": 0.015873015873015872,
+    "unnamed/other": 0.06349206349206349
+   }
+  },
+  "sqllineage": {
+   "observed": 761,
+   "missed": 417,
+   "shares": {
+    "reference/unique": 0.10551558752997602,
+    "call/shared": 0.2517985611510791,
+    "unnamed/dunder": 0.5443645083932853,
+    "reference/shared": 0.050359712230215826,
+    "call/unique": 0.004796163069544364,
+    "unnamed/other": 0.03117505995203837,
+    "constructor/unique": 0.011990407673860911
+   }
+  },
+  "tensortrade-ng": {
+   "observed": 834,
+   "missed": 468,
+   "shares": {
+    "unnamed/dunder": 0.3611111111111111,
+    "reference/unique": 0.14316239316239315,
+    "unnamed/other": 0.16880341880341881,
+    "reference/shared": 0.09188034188034189,
+    "call/shared": 0.16666666666666666,
+    "call/unique": 0.06837606837606838
+   }
+  },
+  "term-image": {
+   "observed": 336,
+   "missed": 117,
+   "shares": {
+    "unnamed/dunder": 0.5042735042735043,
+    "call/shared": 0.15384615384615385,
+    "unnamed/other": 0.24786324786324787,
+    "reference/unique": 0.07692307692307693,
+    "reference/shared": 0.017094017094017096
+   }
+  },
+  "throttled": {
+   "observed": 13,
+   "missed": 0,
+   "shares": {}
+  },
+  "toolz": {
+   "observed": 121,
+   "missed": 40,
+   "shares": {
+    "unnamed/dunder": 0.55,
+    "unnamed/other": 0.4,
+    "reference/unique": 0.05
+   }
+  },
+  "xacro": {
+   "observed": 140,
+   "missed": 21,
+   "shares": {
+    "unnamed/dunder": 0.5714285714285714,
+    "unnamed/other": 0.42857142857142855
+   }
+  }
+ },
+ "pooled": {
+  "pycg": 0.39174784047050176,
+  "pyright": 0.5243521411505238,
+  "union": 0.5448446976658703,
+  "observed": 10882
+ },
+ "decomp": {
+  "reference/shared": 321,
+  "unnamed/other": 1704,
+  "unnamed/dunder": 1103,
+  "reference/unique": 499,
+  "call/shared": 1157,
+  "constructor/unique": 33,
+  "call/unique": 136
+ },
+ "unnamed_found_by_union": 852,
+ "self_call_items": 59,
+ "reflect": {
+  "plain/found": 5823,
+  "reflective/found": 106,
+  "plain/missed": 4846,
+  "reflective/missed": 107
+ },
+ "served_by": {
+  "groq:openai/gpt-oss-20b -> None": 941,
+  "groq:qwen/qwen3.8-27b -> None": 940,
+  "groq:openai/gpt-oss-120b -> None": 940
+ },
+ "sample": {
+  "callers": 940,
+  "callers_static_wrong_only": 53,
+  "items": 5616,
+  "items_observed": 1368,
+  "all/static/tp": 885,
+  "all/static/fp": 186,
+  "all/static/fn": 483,
+  "all/static/n": 5616,
+  "all/gpt-oss-120b/tp": 1196,
+  "all/gpt-oss-120b/fp": 801,
+  "all/gpt-oss-120b/fn": 172,
+  "all/gpt-oss-120b/n": 5616,
+  "all/static_on_gpt-oss-120b/tp": 885,
+  "all/static_on_gpt-oss-120b/fp": 186,
+  "all/static_on_gpt-oss-120b/fn": 483,
+  "all/static_on_gpt-oss-120b/n": 5616,
+  "all/gpt-oss-20b/tp": 1135,
+  "all/gpt-oss-20b/fp": 679,
+  "all/gpt-oss-20b/fn": 233,
+  "all/gpt-oss-20b/n": 5611,
+  "all/static_on_gpt-oss-20b/tp": 885,
+  "all/static_on_gpt-oss-20b/fp": 186,
+  "all/static_on_gpt-oss-20b/fn": 483,
+  "all/static_on_gpt-oss-20b/n": 5611,
+  "all/qwen3.8-27b/tp": 1078,
+  "all/qwen3.8-27b/fp": 453,
+  "all/qwen3.8-27b/fn": 290,
+  "all/qwen3.8-27b/n": 5578,
+  "all/static_on_qwen3.8-27b/tp": 885,
+  "all/static_on_qwen3.8-27b/fp": 186,
+  "all/static_on_qwen3.8-27b/fn": 483,
+  "all/static_on_qwen3.8-27b/n": 5578,
+  "without_static_wrong_only/static/tp": 844,
+  "without_static_wrong_only/static/fp": 118,
+  "without_static_wrong_only/static/fn": 475,
+  "without_static_wrong_only/static/n": 5488,
+  "without_static_wrong_only/gpt-oss-120b/tp": 1148,
+  "without_static_wrong_only/gpt-oss-120b/fp": 734,
+  "without_static_wrong_only/gpt-oss-120b/fn": 171,
+  "without_static_wrong_only/gpt-oss-120b/n": 5488,
+  "without_static_wrong_only/static_on_gpt-oss-120b/tp": 844,
+  "without_static_wrong_only/static_on_gpt-oss-120b/fp": 118,
+  "without_static_wrong_only/static_on_gpt-oss-120b/fn": 475,
+  "without_static_wrong_only/static_on_gpt-oss-120b/n": 5488,
+  "without_static_wrong_only/gpt-oss-20b/tp": 1086,
+  "without_static_wrong_only/gpt-oss-20b/fp": 613,
+  "without_static_wrong_only/gpt-oss-20b/fn": 233,
+  "without_static_wrong_only/gpt-oss-20b/n": 5483,
+  "without_static_wrong_only/static_on_gpt-oss-20b/tp": 844,
+  "without_static_wrong_only/static_on_gpt-oss-20b/fp": 118,
+  "without_static_wrong_only/static_on_gpt-oss-20b/fn": 475,
+  "without_static_wrong_only/static_on_gpt-oss-20b/n": 5483,
+  "without_static_wrong_only/qwen3.8-27b/tp": 1031,
+  "without_static_wrong_only/qwen3.8-27b/fp": 386,
+  "without_static_wrong_only/qwen3.8-27b/fn": 288,
+  "without_static_wrong_only/qwen3.8-27b/n": 5450,
+  "without_static_wrong_only/static_on_qwen3.8-27b/tp": 844,
+  "without_static_wrong_only/static_on_qwen3.8-27b/fp": 118,
+  "without_static_wrong_only/static_on_qwen3.8-27b/fn": 475,
+  "without_static_wrong_only/static_on_qwen3.8-27b/n": 5450
+ },
+ "decomp_pct": {
+  "reference/shared": 0.06480920654149,
+  "unnamed/other": 0.34403391883706846,
+  "unnamed/dunder": 0.22269331718150615,
+  "reference/unique": 0.10074702200686453,
+  "call/shared": 0.2335958005249344,
+  "constructor/unique": 0.006662628709872804,
+  "call/unique": 0.02745810619826368
+ },
+ "decomp_repo_median": {
+  "call/shared": 0.06306306306306306,
+  "call/unique": 0.0,
+  "constructor/unique": 0.0,
+  "reference/shared": 0.0,
+  "reference/unique": 0.10551558752997602,
+  "unnamed/dunder": 0.13333333333333333,
+  "unnamed/other": 0.32
+ }
+}

@@ -1,0 +1,536 @@
+{
+ "repos": {
+  "apiflask": {
+   "observed": 142,
+   "recall_bundle_pycg": 0.47183098591549294,
+   "recall_strict_seed0": 0.47183098591549294,
+   "recall_lenient": 0.5,
+   "recall_pyright": 0.676056338028169,
+   "recall_union_lenient": 0.6901408450704225,
+   "ctor_n": 7,
+   "ctor_strict": 3,
+   "ctor_lenient": 7,
+   "ctor_pyright": 7
+  },
+  "autoray": {
+   "observed": 50,
+   "recall_bundle_pycg": 0.86,
+   "recall_strict_seed0": 0.86,
+   "recall_lenient": 0.86,
+   "recall_pyright": 0.74,
+   "recall_union_lenient": 0.88,
+   "ctor_n": 2,
+   "ctor_strict": 2,
+   "ctor_lenient": 2,
+   "ctor_pyright": 2
+  },
+  "pyrlp": {
+   "observed": 120,
+   "recall_bundle_pycg": 0.5333333333333333,
+   "recall_strict_seed0": 0.5333333333333333,
+   "recall_lenient": 0.575,
+   "recall_pyright": 0.6416666666666667,
+   "recall_union_lenient": 0.65,
+   "ctor_n": 22,
+   "ctor_strict": 14,
+   "ctor_lenient": 20,
+   "ctor_pyright": 21
+  },
+  "python-neutronclient": {
+   "observed": 47,
+   "recall_bundle_pycg": 0.9148936170212766,
+   "recall_strict_seed0": 0.9148936170212766,
+   "recall_lenient": 0.9148936170212766,
+   "recall_pyright": 0.9361702127659575,
+   "recall_union_lenient": 0.9361702127659575,
+   "ctor_n": 6,
+   "ctor_strict": 6,
+   "ctor_lenient": 6,
+   "ctor_pyright": 6
+  },
+  "redbeat": {
+   "observed": 63,
+   "recall_bundle_pycg": 0.5873015873015873,
+   "recall_strict_seed0": 0.5873015873015873,
+   "recall_lenient": 0.6031746031746031,
+   "recall_pyright": 0.5873015873015873,
+   "recall_union_lenient": 0.6031746031746031,
+   "ctor_n": 6,
+   "ctor_strict": 3,
+   "ctor_lenient": 4,
+   "ctor_pyright": 4
+  },
+  "scrapyrt": {
+   "observed": 25,
+   "recall_bundle_pycg": 0.72,
+   "recall_strict_seed0": 0.72,
+   "recall_lenient": 0.72,
+   "recall_pyright": 0.8,
+   "recall_union_lenient": 0.8,
+   "ctor_n": 2,
+   "ctor_strict": 2,
+   "ctor_lenient": 2,
+   "ctor_pyright": 2
+  },
+  "xacro": {
+   "observed": 140,
+   "recall_bundle_pycg": 0.8357142857142857,
+   "recall_strict_seed0": 0.8357142857142857,
+   "recall_lenient": 0.8357142857142857,
+   "recall_pyright": 0.8357142857142857,
+   "recall_union_lenient": 0.85,
+   "ctor_n": 19,
+   "ctor_strict": 19,
+   "ctor_lenient": 19,
+   "ctor_pyright": 19
+  },
+  "marshmallow-sqlalchemy": {
+   "observed": 38,
+   "recall_bundle_pycg": 0.6842105263157895,
+   "recall_strict_seed0": 0.6842105263157895,
+   "recall_lenient": 0.6842105263157895,
+   "recall_pyright": 0.7631578947368421,
+   "recall_union_lenient": 0.7631578947368421,
+   "ctor_n": 2,
+   "ctor_strict": 1,
+   "ctor_lenient": 1,
+   "ctor_pyright": 1
+  },
+  "all-repos": {
+   "observed": 221,
+   "recall_bundle_pycg": 0.7963800904977375,
+   "recall_strict_seed0": 0.7963800904977375,
+   "recall_lenient": 0.8099547511312217,
+   "recall_pyright": 0.8235294117647058,
+   "recall_union_lenient": 0.8280542986425339,
+   "ctor_n": 0,
+   "ctor_strict": 0,
+   "ctor_lenient": 0,
+   "ctor_pyright": 0
+  },
+  "bedrock-agentcore-sdk-python": {
+   "observed": 356,
+   "recall_bundle_pycg": 0.6825842696629213,
+   "recall_strict_seed0": 0.6825842696629213,
+   "recall_lenient": 0.6910112359550562,
+   "recall_pyright": 0.9157303370786517,
+   "recall_union_lenient": 0.9157303370786517,
+   "ctor_n": 18,
+   "ctor_strict": 3,
+   "ctor_lenient": 6,
+   "ctor_pyright": 18
+  },
+  "creosote": {
+   "observed": 63,
+   "recall_bundle_pycg": 0.9206349206349206,
+   "recall_strict_seed0": 0.9206349206349206,
+   "recall_lenient": 0.9206349206349206,
+   "recall_pyright": 0.9206349206349206,
+   "recall_union_lenient": 0.9206349206349206,
+   "ctor_n": 5,
+   "ctor_strict": 4,
+   "ctor_lenient": 4,
+   "ctor_pyright": 4
+  },
+  "mcp-sequential-thinking": {
+   "observed": 36,
+   "recall_bundle_pycg": 0.7222222222222222,
+   "recall_strict_seed0": 0.7222222222222222,
+   "recall_lenient": 0.7222222222222222,
+   "recall_pyright": 0.8888888888888888,
+   "recall_union_lenient": 0.8888888888888888,
+   "ctor_n": 0,
+   "ctor_strict": 0,
+   "ctor_lenient": 0,
+   "ctor_pyright": 0
+  },
+  "sec-edgar": {
+   "observed": 123,
+   "recall_bundle_pycg": 0.2682926829268293,
+   "recall_strict_seed0": 0.2682926829268293,
+   "recall_lenient": 0.34959349593495936,
+   "recall_pyright": 0.45528455284552843,
+   "recall_union_lenient": 0.4878048780487805,
+   "ctor_n": 11,
+   "ctor_strict": 1,
+   "ctor_lenient": 11,
+   "ctor_pyright": 11
+  },
+  "confluence-markdown-exporter": {
+   "observed": 206,
+   "recall_bundle_pycg": 0.5097087378640777,
+   "recall_strict_seed0": 0.5097087378640777,
+   "recall_lenient": 0.5194174757281553,
+   "recall_pyright": 0.5825242718446602,
+   "recall_union_lenient": 0.587378640776699,
+   "ctor_n": 1,
+   "ctor_strict": 1,
+   "ctor_lenient": 1,
+   "ctor_pyright": 1
+  },
+  "sqllineage": {
+   "observed": 761,
+   "recall_bundle_pycg": 0.2890932982917214,
+   "recall_strict_seed0": 0.2890932982917214,
+   "recall_lenient": 0.3692509855453351,
+   "recall_pyright": 0.44152431011826543,
+   "recall_union_lenient": 0.45729303547963207,
+   "ctor_n": 59,
+   "ctor_strict": 10,
+   "ctor_lenient": 56,
+   "ctor_pyright": 53
+  },
+  "ShivyC": {
+   "observed": 1459,
+   "recall_bundle_pycg": 0.3365318711446196,
+   "recall_strict_seed0": 0.3365318711446196,
+   "recall_lenient": 0.36257710760795064,
+   "recall_pyright": 0.40575736806031526,
+   "recall_union_lenient": 0.44482522275531183,
+   "ctor_n": 231,
+   "ctor_strict": 175,
+   "ctor_lenient": 213,
+   "ctor_pyright": 224
+  },
+  "rlm": {
+   "observed": 142,
+   "recall_bundle_pycg": 0.34507042253521125,
+   "recall_strict_seed0": 0.34507042253521125,
+   "recall_lenient": 0.4225352112676056,
+   "recall_pyright": 0.7887323943661971,
+   "recall_union_lenient": 0.7887323943661971,
+   "ctor_n": 13,
+   "ctor_strict": 2,
+   "ctor_lenient": 13,
+   "ctor_pyright": 13
+  },
+  "pr-agent": {
+   "observed": 619,
+   "recall_bundle_pycg": 0.6607431340872375,
+   "recall_strict_seed0": 0.6607431340872375,
+   "recall_lenient": 0.6672051696284329,
+   "recall_pyright": 0.7915993537964459,
+   "recall_union_lenient": 0.7932148626817448,
+   "ctor_n": 15,
+   "ctor_strict": 12,
+   "ctor_lenient": 15,
+   "ctor_pyright": 15
+  },
+  "aws-dynamodb-encryption-python": {
+   "observed": 74,
+   "recall_bundle_pycg": 0.581081081081081,
+   "recall_strict_seed0": 0.581081081081081,
+   "recall_lenient": 0.581081081081081,
+   "recall_pyright": 0.6081081081081081,
+   "recall_union_lenient": 0.6756756756756757,
+   "ctor_n": 8,
+   "ctor_strict": 8,
+   "ctor_lenient": 8,
+   "ctor_pyright": 8
+  },
+  "compressed-tensors": {
+   "observed": 413,
+   "recall_bundle_pycg": 0.5036319612590799,
+   "recall_strict_seed0": 0.5036319612590799,
+   "recall_lenient": 0.5375302663438256,
+   "recall_pyright": 0.6755447941888619,
+   "recall_union_lenient": 0.6973365617433414,
+   "ctor_n": 6,
+   "ctor_strict": 4,
+   "ctor_lenient": 6,
+   "ctor_pyright": 6
+  },
+  "deepblast": {
+   "observed": 29,
+   "recall_bundle_pycg": 0.6896551724137931,
+   "recall_strict_seed0": 0.6896551724137931,
+   "recall_lenient": 0.6896551724137931,
+   "recall_pyright": 0.7586206896551724,
+   "recall_union_lenient": 0.7586206896551724,
+   "ctor_n": 2,
+   "ctor_strict": 2,
+   "ctor_lenient": 2,
+   "ctor_pyright": 2
+  },
+  "django-ses": {
+   "observed": 3,
+   "recall_bundle_pycg": 0.6666666666666666,
+   "recall_strict_seed0": 0.6666666666666666,
+   "recall_lenient": 0.6666666666666666,
+   "recall_pyright": 0.6666666666666666,
+   "recall_union_lenient": 0.6666666666666666,
+   "ctor_n": 1,
+   "ctor_strict": 1,
+   "ctor_lenient": 1,
+   "ctor_pyright": 1
+  },
+  "geocube": {
+   "observed": 45,
+   "recall_bundle_pycg": 0.6444444444444445,
+   "recall_strict_seed0": 0.6444444444444445,
+   "recall_lenient": 0.6888888888888889,
+   "recall_pyright": 0.8666666666666667,
+   "recall_union_lenient": 0.8666666666666667,
+   "ctor_n": 2,
+   "ctor_strict": 0,
+   "ctor_lenient": 2,
+   "ctor_pyright": 2
+  },
+  "json-logging-python": {
+   "observed": 86,
+   "recall_bundle_pycg": 0.29069767441860467,
+   "recall_strict_seed0": 0.29069767441860467,
+   "recall_lenient": 0.3023255813953488,
+   "recall_pyright": 0.4069767441860465,
+   "recall_union_lenient": 0.4186046511627907,
+   "ctor_n": 1,
+   "ctor_strict": 0,
+   "ctor_lenient": 0,
+   "ctor_pyright": 0
+  },
+  "jsonapi-requests": {
+   "observed": 153,
+   "recall_bundle_pycg": 0.477124183006536,
+   "recall_strict_seed0": 0.477124183006536,
+   "recall_lenient": 0.477124183006536,
+   "recall_pyright": 0.49673202614379086,
+   "recall_union_lenient": 0.5163398692810458,
+   "ctor_n": 16,
+   "ctor_strict": 15,
+   "ctor_lenient": 15,
+   "ctor_pyright": 16
+  },
+  "puncover": {
+   "observed": 22,
+   "recall_bundle_pycg": 0.6818181818181818,
+   "recall_strict_seed0": 0.6818181818181818,
+   "recall_lenient": 0.6818181818181818,
+   "recall_pyright": 0.9545454545454546,
+   "recall_union_lenient": 0.9545454545454546,
+   "ctor_n": 1,
+   "ctor_strict": 1,
+   "ctor_lenient": 1,
+   "ctor_pyright": 1
+  },
+  "python-lazy-object-proxy": {
+   "observed": 187,
+   "recall_bundle_pycg": 0.016042780748663103,
+   "recall_strict_seed0": 0.0106951871657754,
+   "recall_lenient": 0.016042780748663103,
+   "recall_pyright": 0.03208556149732621,
+   "recall_union_lenient": 0.03208556149732621,
+   "ctor_n": 0,
+   "ctor_strict": 0,
+   "ctor_lenient": 0,
+   "ctor_pyright": 0
+  },
+  "rejax": {
+   "observed": 174,
+   "recall_bundle_pycg": 0.27586206896551724,
+   "recall_strict_seed0": 0.27586206896551724,
+   "recall_lenient": 0.3045977011494253,
+   "recall_pyright": 0.3620689655172414,
+   "recall_union_lenient": 0.367816091954023,
+   "ctor_n": 1,
+   "ctor_strict": 1,
+   "ctor_lenient": 1,
+   "ctor_pyright": 1
+  },
+  "tensortrade-ng": {
+   "observed": 834,
+   "recall_bundle_pycg": 0.1498800959232614,
+   "recall_strict_seed0": 0.1498800959232614,
+   "recall_lenient": 0.21342925659472423,
+   "recall_pyright": 0.42326139088729015,
+   "recall_union_lenient": 0.43884892086330934,
+   "ctor_n": 84,
+   "ctor_strict": 31,
+   "ctor_lenient": 75,
+   "ctor_pyright": 84
+  },
+  "PyFunceble": {
+   "observed": 1045,
+   "recall_bundle_pycg": 0.24880382775119617,
+   "recall_strict_seed0": 0.24880382775119617,
+   "recall_lenient": 0.3473684210526316,
+   "recall_pyright": 0.47464114832535886,
+   "recall_union_lenient": 0.5521531100478468,
+   "ctor_n": 98,
+   "ctor_strict": 7,
+   "ctor_lenient": 98,
+   "ctor_pyright": 83
+  },
+  "fastapi-injectable": {
+   "observed": 46,
+   "recall_bundle_pycg": 0.6956521739130435,
+   "recall_strict_seed0": 0.6956521739130435,
+   "recall_lenient": 0.6956521739130435,
+   "recall_pyright": 0.8260869565217391,
+   "recall_union_lenient": 0.8260869565217391,
+   "ctor_n": 3,
+   "ctor_strict": 3,
+   "ctor_lenient": 3,
+   "ctor_pyright": 3
+  },
+  "pykwalify": {
+   "observed": 192,
+   "recall_bundle_pycg": 0.4270833333333333,
+   "recall_strict_seed0": 0.4270833333333333,
+   "recall_lenient": 0.46875,
+   "recall_pyright": 0.5052083333333334,
+   "recall_union_lenient": 0.5260416666666666,
+   "ctor_n": 25,
+   "ctor_strict": 17,
+   "ctor_lenient": 25,
+   "ctor_pyright": 25
+  },
+  "pysui": {
+   "observed": 1393,
+   "recall_bundle_pycg": 0.24335965541995694,
+   "recall_strict_seed0": 0.24335965541995694,
+   "recall_lenient": 0.2447954055994257,
+   "recall_pyright": 0.2684852835606604,
+   "recall_union_lenient": 0.26920315865039485,
+   "ctor_n": 2,
+   "ctor_strict": 1,
+   "ctor_lenient": 2,
+   "ctor_pyright": 1
+  },
+  "term-image": {
+   "observed": 336,
+   "recall_bundle_pycg": 0.43154761904761907,
+   "recall_strict_seed0": 0.42857142857142855,
+   "recall_lenient": 0.44642857142857145,
+   "recall_pyright": 0.6160714285714286,
+   "recall_union_lenient": 0.6517857142857143,
+   "ctor_n": 21,
+   "ctor_strict": 10,
+   "ctor_lenient": 15,
+   "ctor_pyright": 21
+  },
+  "TradingView-Screener": {
+   "observed": 19,
+   "recall_bundle_pycg": 0.10526315789473684,
+   "recall_strict_seed0": 0.10526315789473684,
+   "recall_lenient": 0.631578947368421,
+   "recall_pyright": 1.0,
+   "recall_union_lenient": 1.0,
+   "ctor_n": 10,
+   "ctor_strict": 0,
+   "ctor_lenient": 10,
+   "ctor_pyright": 10
+  },
+  "movingpandas": {
+   "observed": 382,
+   "recall_bundle_pycg": 0.4790575916230366,
+   "recall_strict_seed0": 0.47643979057591623,
+   "recall_lenient": 0.5523560209424084,
+   "recall_pyright": 0.5392670157068062,
+   "recall_union_lenient": 0.5680628272251309,
+   "ctor_n": 39,
+   "ctor_strict": 10,
+   "ctor_lenient": 39,
+   "ctor_pyright": 39
+  },
+  "throttled": {
+   "observed": 13,
+   "recall_bundle_pycg": 1.0,
+   "recall_strict_seed0": 1.0,
+   "recall_lenient": 1.0,
+   "recall_pyright": 1.0,
+   "recall_union_lenient": 1.0,
+   "ctor_n": 0,
+   "ctor_strict": 0,
+   "ctor_lenient": 0,
+   "ctor_pyright": 0
+  }
+ },
+ "n_repos": 37,
+ "pooled": {
+  "recall_bundle_pycg": 0.3850054688276822,
+  "recall_strict_seed0": 0.38470716913592523,
+  "recall_lenient": 0.422094063836134,
+  "recall_pyright": 0.5122800039773292,
+  "recall_union_lenient": 0.5351496470120314
+ },
+ "median": {
+  "recall_bundle_pycg": 0.5333333333333333,
+  "recall_strict_seed0": 0.5333333333333333,
+  "recall_lenient": 0.581081081081081,
+  "recall_pyright": 0.6755447941888619,
+  "recall_union_lenient": 0.6901408450704225
+ },
+ "pyright_wins_strict": 31,
+ "pyright_wins_lenient": 30,
+ "ctor": {
+  "ctor_n": 739,
+  "ctor_strict": 369,
+  "ctor_lenient": 683,
+  "ctor_pyright": 704
+ },
+ "audit": {
+  "pyright_hits_strict_pycg_misses": 1492,
+  "mapping_loss": 355,
+  "genuine_miss": 1137,
+  "rules_used": {
+   "ctor": 688,
+   "suffix": 140,
+   "mro": 122
+  },
+  "examples_loss": [
+   [
+    "PyFunceble",
+    "PyFunceble/checker/availability/extras/base.py::ExtraRuleHandlerBase.__init__",
+    "PyFunceble/query/dns/query_tool.py::DNSQueryTool.__init__"
+   ],
+   [
+    "movingpandas",
+    "movingpandas/trajectory_cleaner.py::IqrCleaner._clean_traj",
+    "movingpandas/trajectory.py::Trajectory.__init__"
+   ],
+   [
+    "tensortrade-ng",
+    "src/tensortrade/feed/api/float/operations.py::rsub",
+    "src/tensortrade/feed/core/operators.py::BinOp.__init__"
+   ],
+   [
+    "ShivyC",
+    "shivyc/parser/utils.py::raise_error",
+    "shivyc/parser/utils.py::ParserError.__init__"
+   ],
+   [
+    "PyFunceble",
+    "PyFunceble/config/loader.py::ConfigLoader.__init__",
+    "PyFunceble/helpers/environment_variable.py::EnvironmentVariableHelper.__init__"
+   ]
+  ],
+  "examples_genuine": [
+   [
+    "bedrock-agentcore-sdk-python",
+    "src/bedrock_agentcore/runtime/app.py::BedrockAgentCoreApp._build_request_context",
+    "src/bedrock_agentcore/runtime/models.py::is_forwardable_header"
+   ],
+   [
+    "pykwalify",
+    "pykwalify/rule.py::Rule.init",
+    "pykwalify/rule.py::Rule.check_type_keywords"
+   ],
+   [
+    "sqllineage",
+    "sqllineage/core/parser/sqlfluff/extractors/base.py::BaseExtractor.extract_subquery",
+    "sqllineage/core/parser/sqlfluff/extractors/select.py::SelectExtractor.extract"
+   ],
+   [
+    "ShivyC",
+    "shivyc/tree/control_flow_nodes.py::Return.__init__",
+    "shivyc/tree/base_nodes.py::Node.__init__"
+   ],
+   [
+    "bedrock-agentcore-sdk-python",
+    "src/bedrock_agentcore/runtime/app.py::BedrockAgentCoreApp._build_request_context",
+    "src/bedrock_agentcore/runtime/context.py::BedrockAgentCoreContext.set_workload_access_token"
+   ]
+  ],
+  "random50_loss_share": 0.3
+ }
+}

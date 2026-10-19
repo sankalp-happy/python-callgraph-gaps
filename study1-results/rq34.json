@@ -4,9 +4,9 @@
    "stratum": "MED",
    "observed_edges": 1045,
    "edge_recall": {
-    "pycg": 0.249,
-    "pyright": 0.475,
-    "union": 0.541
+    "pycg": 0.248804,
+    "pyright": 0.474641,
+    "union": 0.54067
    },
    "items": 6242,
    "real": 740,
@@ -17,49 +17,49 @@
      "fp": 39,
      "fn": 612,
      "n": 6242,
-     "precision": 0.766,
-     "recall": 0.173,
-     "f1": 0.282
+     "precision": 0.766467,
+     "recall": 0.172973,
+     "f1": 0.282249
     },
     "Pyright": {
      "tp": 392,
      "fp": 85,
      "fn": 348,
      "n": 6242,
-     "precision": 0.822,
-     "recall": 0.53,
-     "f1": 0.644
+     "precision": 0.821803,
+     "recall": 0.52973,
+     "f1": 0.644207
     },
     "PyCG ∪ Pyright": {
      "tp": 405,
      "fp": 86,
      "fn": 335,
      "n": 6242,
-     "precision": 0.825,
-     "recall": 0.547,
-     "f1": 0.658
+     "precision": 0.824847,
+     "recall": 0.547297,
+     "f1": 0.658002
     },
     "name match": {
      "tp": 740,
      "fp": 5502,
      "fn": 0,
      "n": 6242,
-     "precision": 0.119,
+     "precision": 0.118552,
      "recall": 1.0,
-     "f1": 0.212
+     "f1": 0.211974
     },
     "shared-name union": {
      "tp": 137,
      "fp": 41,
      "fn": 174,
      "n": 5074,
-     "precision": 0.77,
-     "recall": 0.441,
-     "f1": 0.56
+     "precision": 0.769663,
+     "recall": 0.440514,
+     "f1": 0.560327
     }
    },
    "tests_passed": 748,
-   "line_coverage": 0.3794,
+   "line_coverage": 0.379382,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -70,9 +70,9 @@
    "stratum": "LOW",
    "observed_edges": 1459,
    "edge_recall": {
-    "pycg": 0.337,
-    "pyright": 0.406,
-    "union": 0.445
+    "pycg": 0.336532,
+    "pyright": 0.405757,
+    "union": 0.444825
    },
    "items": 3379,
    "real": 1252,
@@ -83,49 +83,49 @@
      "fp": 49,
      "fn": 774,
      "n": 3379,
-     "precision": 0.907,
-     "recall": 0.382,
-     "f1": 0.537
+     "precision": 0.907021,
+     "recall": 0.381789,
+     "f1": 0.537381
     },
     "Pyright": {
      "tp": 524,
      "fp": 49,
      "fn": 728,
      "n": 3379,
-     "precision": 0.914,
-     "recall": 0.419,
-     "f1": 0.574
+     "precision": 0.914485,
+     "recall": 0.41853,
+     "f1": 0.574247
     },
     "PyCG ∪ Pyright": {
      "tp": 580,
      "fp": 51,
      "fn": 672,
      "n": 3379,
-     "precision": 0.919,
-     "recall": 0.463,
-     "f1": 0.616
+     "precision": 0.919176,
+     "recall": 0.463259,
+     "f1": 0.616038
     },
     "name match": {
      "tp": 1252,
      "fp": 2127,
      "fn": 0,
      "n": 3379,
-     "precision": 0.371,
+     "precision": 0.370524,
      "recall": 1.0,
-     "f1": 0.541
+     "f1": 0.540704
     },
     "shared-name union": {
      "tp": 82,
      "fp": 9,
      "fn": 609,
      "n": 2188,
-     "precision": 0.901,
-     "recall": 0.119,
-     "f1": 0.21
+     "precision": 0.901099,
+     "recall": 0.118669,
+     "f1": 0.209719
     }
    },
    "tests_passed": 94,
-   "line_coverage": 0.8877,
+   "line_coverage": 0.88768,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -136,7 +136,7 @@
    "stratum": "LOW",
    "observed_edges": 19,
    "edge_recall": {
-    "pycg": 0.105,
+    "pycg": 0.105263,
     "pyright": 1.0,
     "union": 1.0
    },
@@ -150,8 +150,8 @@
      "fn": 17,
      "n": 54,
      "precision": 1.0,
-     "recall": 0.105,
-     "f1": 0.19
+     "recall": 0.105263,
+     "f1": 0.190476
     },
     "Pyright": {
      "tp": 19,
@@ -176,9 +176,9 @@
      "fp": 35,
      "fn": 0,
      "n": 54,
-     "precision": 0.352,
+     "precision": 0.351852,
      "recall": 1.0,
-     "f1": 0.521
+     "f1": 0.520548
     },
     "shared-name union": {
      "tp": 0,
@@ -191,7 +191,7 @@
     }
    },
    "tests_passed": 44,
-   "line_coverage": 0.5863,
+   "line_coverage": 0.586319,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -202,9 +202,9 @@
    "stratum": "MED",
    "observed_edges": 221,
    "edge_recall": {
-    "pycg": 0.796,
-    "pyright": 0.824,
-    "union": 0.828
+    "pycg": 0.79638,
+    "pyright": 0.823529,
+    "union": 0.828054
    },
    "items": 618,
    "real": 204,
@@ -215,26 +215,26 @@
      "fp": 12,
      "fn": 27,
      "n": 618,
-     "precision": 0.937,
-     "recall": 0.868,
-     "f1": 0.901
+     "precision": 0.936508,
+     "recall": 0.867647,
+     "f1": 0.900763
     },
     "Pyright": {
      "tp": 183,
      "fp": 5,
      "fn": 21,
      "n": 618,
-     "precision": 0.973,
-     "recall": 0.897,
-     "f1": 0.934
+     "precision": 0.973404,
+     "recall": 0.897059,
+     "f1": 0.933673
     },
     "PyCG ∪ Pyright": {
      "tp": 184,
      "fp": 12,
      "fn": 20,
      "n": 618,
-     "precision": 0.939,
-     "recall": 0.902,
+     "precision": 0.938776,
+     "recall": 0.901961,
      "f1": 0.92
     },
     "name match": {
@@ -242,22 +242,22 @@
      "fp": 414,
      "fn": 0,
      "n": 618,
-     "precision": 0.33,
+     "precision": 0.330097,
      "recall": 1.0,
-     "f1": 0.496
+     "f1": 0.49635
     },
     "shared-name union": {
      "tp": 34,
      "fp": 7,
      "fn": 13,
      "n": 362,
-     "precision": 0.829,
-     "recall": 0.723,
-     "f1": 0.773
+     "precision": 0.829268,
+     "recall": 0.723404,
+     "f1": 0.772727
     }
    },
    "tests_passed": 168,
-   "line_coverage": 0.9814,
+   "line_coverage": 0.981426,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -268,9 +268,9 @@
    "stratum": "HIGH",
    "observed_edges": 142,
    "edge_recall": {
-    "pycg": 0.472,
-    "pyright": 0.676,
-    "union": 0.69
+    "pycg": 0.471831,
+    "pyright": 0.676056,
+    "union": 0.690141
    },
    "items": 316,
    "real": 108,
@@ -282,48 +282,48 @@
      "fn": 44,
      "n": 316,
      "precision": 1.0,
-     "recall": 0.593,
-     "f1": 0.744
+     "recall": 0.592593,
+     "f1": 0.744186
     },
     "Pyright": {
      "tp": 88,
      "fp": 7,
      "fn": 20,
      "n": 316,
-     "precision": 0.926,
-     "recall": 0.815,
-     "f1": 0.867
+     "precision": 0.926316,
+     "recall": 0.814815,
+     "f1": 0.866995
     },
     "PyCG ∪ Pyright": {
      "tp": 88,
      "fp": 7,
      "fn": 20,
      "n": 316,
-     "precision": 0.926,
-     "recall": 0.815,
-     "f1": 0.867
+     "precision": 0.926316,
+     "recall": 0.814815,
+     "f1": 0.866995
     },
     "name match": {
      "tp": 108,
      "fp": 208,
      "fn": 0,
      "n": 316,
-     "precision": 0.342,
+     "precision": 0.341772,
      "recall": 1.0,
-     "f1": 0.509
+     "f1": 0.509434
     },
     "shared-name union": {
      "tp": 6,
      "fp": 7,
      "fn": 17,
      "n": 119,
-     "precision": 0.462,
-     "recall": 0.261,
-     "f1": 0.333
+     "precision": 0.461538,
+     "recall": 0.26087,
+     "f1": 0.333333
     }
    },
    "tests_passed": 402,
-   "line_coverage": 0.8823,
+   "line_coverage": 0.882321,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -348,8 +348,8 @@
      "fn": 2,
      "n": 331,
      "precision": 1.0,
-     "recall": 0.938,
-     "f1": 0.968
+     "recall": 0.9375,
+     "f1": 0.967742
     },
     "Pyright": {
      "tp": 31,
@@ -357,8 +357,8 @@
      "fn": 1,
      "n": 331,
      "precision": 1.0,
-     "recall": 0.969,
-     "f1": 0.984
+     "recall": 0.96875,
+     "f1": 0.984127
     },
     "PyCG ∪ Pyright": {
      "tp": 31,
@@ -366,17 +366,17 @@
      "fn": 1,
      "n": 331,
      "precision": 1.0,
-     "recall": 0.969,
-     "f1": 0.984
+     "recall": 0.96875,
+     "f1": 0.984127
     },
     "name match": {
      "tp": 32,
      "fp": 299,
      "fn": 0,
      "n": 331,
-     "precision": 0.097,
+     "precision": 0.096677,
      "recall": 1.0,
-     "f1": 0.176
+     "f1": 0.176309
     },
     "shared-name union": {
      "tp": 0,
@@ -389,7 +389,7 @@
     }
    },
    "tests_passed": 1,
-   "line_coverage": 0.2628,
+   "line_coverage": 0.262822,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -400,9 +400,9 @@
    "stratum": "HIGH",
    "observed_edges": 74,
    "edge_recall": {
-    "pycg": 0.581,
-    "pyright": 0.608,
-    "union": 0.676
+    "pycg": 0.581081,
+    "pyright": 0.608108,
+    "union": 0.675676
    },
    "items": 369,
    "real": 42,
@@ -414,8 +414,8 @@
      "fn": 7,
      "n": 369,
      "precision": 1.0,
-     "recall": 0.833,
-     "f1": 0.909
+     "recall": 0.833333,
+     "f1": 0.909091
     },
     "Pyright": {
      "tp": 37,
@@ -423,8 +423,8 @@
      "fn": 5,
      "n": 369,
      "precision": 1.0,
-     "recall": 0.881,
-     "f1": 0.937
+     "recall": 0.880952,
+     "f1": 0.936709
     },
     "PyCG ∪ Pyright": {
      "tp": 37,
@@ -432,17 +432,17 @@
      "fn": 5,
      "n": 369,
      "precision": 1.0,
-     "recall": 0.881,
-     "f1": 0.937
+     "recall": 0.880952,
+     "f1": 0.936709
     },
     "name match": {
      "tp": 42,
      "fp": 327,
      "fn": 0,
      "n": 369,
-     "precision": 0.114,
+     "precision": 0.113821,
      "recall": 1.0,
-     "f1": 0.204
+     "f1": 0.20438
     },
     "shared-name union": {
      "tp": 4,
@@ -450,12 +450,12 @@
      "fn": 5,
      "n": 121,
      "precision": 1.0,
-     "recall": 0.444,
-     "f1": 0.615
+     "recall": 0.444444,
+     "f1": 0.615385
     }
    },
    "tests_passed": 78,
-   "line_coverage": 0.4614,
+   "line_coverage": 0.461385,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -466,9 +466,9 @@
    "stratum": "MED",
    "observed_edges": 356,
    "edge_recall": {
-    "pycg": 0.683,
-    "pyright": 0.916,
-    "union": 0.916
+    "pycg": 0.682584,
+    "pyright": 0.91573,
+    "union": 0.91573
    },
    "items": 986,
    "real": 333,
@@ -479,49 +479,49 @@
      "fp": 30,
      "fn": 90,
      "n": 986,
-     "precision": 0.89,
-     "recall": 0.73,
-     "f1": 0.802
+     "precision": 0.89011,
+     "recall": 0.72973,
+     "f1": 0.80198
     },
     "Pyright": {
      "tp": 317,
      "fp": 40,
      "fn": 16,
      "n": 986,
-     "precision": 0.888,
-     "recall": 0.952,
-     "f1": 0.919
+     "precision": 0.887955,
+     "recall": 0.951952,
+     "f1": 0.918841
     },
     "PyCG ∪ Pyright": {
      "tp": 317,
      "fp": 40,
      "fn": 16,
      "n": 986,
-     "precision": 0.888,
-     "recall": 0.952,
-     "f1": 0.919
+     "precision": 0.887955,
+     "recall": 0.951952,
+     "f1": 0.918841
     },
     "name match": {
      "tp": 333,
      "fp": 653,
      "fn": 0,
      "n": 986,
-     "precision": 0.338,
+     "precision": 0.337728,
      "recall": 1.0,
-     "f1": 0.505
+     "f1": 0.504928
     },
     "shared-name union": {
      "tp": 34,
      "fp": 22,
      "fn": 4,
      "n": 261,
-     "precision": 0.607,
-     "recall": 0.895,
-     "f1": 0.723
+     "precision": 0.607143,
+     "recall": 0.894737,
+     "f1": 0.723404
     }
    },
    "tests_passed": 1842,
-   "line_coverage": 0.5865,
+   "line_coverage": 0.586527,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -532,9 +532,9 @@
    "stratum": "HIGH",
    "observed_edges": 704,
    "edge_recall": {
-    "pycg": 0.459,
-    "pyright": 0.682,
-    "union": 0.692
+    "pycg": 0.458807,
+    "pyright": 0.681818,
+    "union": 0.691761
    },
    "items": 2071,
    "real": 586,
@@ -545,57 +545,57 @@
      "fp": 16,
      "fn": 270,
      "n": 2071,
-     "precision": 0.952,
-     "recall": 0.539,
-     "f1": 0.688
+     "precision": 0.951807,
+     "recall": 0.539249,
+     "f1": 0.688453
     },
     "Pyright": {
      "tp": 461,
      "fp": 19,
      "fn": 125,
      "n": 2071,
-     "precision": 0.96,
-     "recall": 0.787,
-     "f1": 0.865
+     "precision": 0.960417,
+     "recall": 0.786689,
+     "f1": 0.864916
     },
     "PyCG ∪ Pyright": {
      "tp": 462,
      "fp": 23,
      "fn": 124,
      "n": 2071,
-     "precision": 0.953,
-     "recall": 0.788,
-     "f1": 0.863
+     "precision": 0.952577,
+     "recall": 0.788396,
+     "f1": 0.862745
     },
     "name match": {
      "tp": 586,
      "fp": 1485,
      "fn": 0,
      "n": 2071,
-     "precision": 0.283,
+     "precision": 0.282955,
      "recall": 1.0,
-     "f1": 0.441
+     "f1": 0.441099
     },
     "shared-name union": {
      "tp": 112,
      "fp": 17,
      "fn": 96,
      "n": 1280,
-     "precision": 0.868,
-     "recall": 0.538,
-     "f1": 0.665
+     "precision": 0.868217,
+     "recall": 0.538462,
+     "f1": 0.664688
     }
    },
    "tests_passed": 1939,
-   "line_coverage": 0.818
+   "line_coverage": 0.81797
   },
   "compressed-tensors": {
    "stratum": "HIGH",
    "observed_edges": 413,
    "edge_recall": {
-    "pycg": 0.504,
-    "pyright": 0.676,
-    "union": 0.697
+    "pycg": 0.503632,
+    "pyright": 0.675545,
+    "union": 0.697337
    },
    "items": 1101,
    "real": 294,
@@ -606,49 +606,49 @@
      "fp": 18,
      "fn": 99,
      "n": 1101,
-     "precision": 0.915,
-     "recall": 0.663,
-     "f1": 0.769
+     "precision": 0.915493,
+     "recall": 0.663265,
+     "f1": 0.769231
     },
     "Pyright": {
      "tp": 270,
      "fp": 25,
      "fn": 24,
      "n": 1101,
-     "precision": 0.915,
-     "recall": 0.918,
-     "f1": 0.917
+     "precision": 0.915254,
+     "recall": 0.918367,
+     "f1": 0.916808
     },
     "PyCG ∪ Pyright": {
      "tp": 270,
      "fp": 26,
      "fn": 24,
      "n": 1101,
-     "precision": 0.912,
-     "recall": 0.918,
-     "f1": 0.915
+     "precision": 0.912162,
+     "recall": 0.918367,
+     "f1": 0.915254
     },
     "name match": {
      "tp": 294,
      "fp": 807,
      "fn": 0,
      "n": 1101,
-     "precision": 0.267,
+     "precision": 0.26703,
      "recall": 1.0,
-     "f1": 0.422
+     "f1": 0.421505
     },
     "shared-name union": {
      "tp": 35,
      "fp": 17,
      "fn": 23,
      "n": 517,
-     "precision": 0.673,
-     "recall": 0.603,
-     "f1": 0.636
+     "precision": 0.673077,
+     "recall": 0.603448,
+     "f1": 0.636364
     }
    },
    "tests_passed": 732,
-   "line_coverage": 0.6594,
+   "line_coverage": 0.659404,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -659,9 +659,9 @@
    "stratum": "MED",
    "observed_edges": 206,
    "edge_recall": {
-    "pycg": 0.51,
-    "pyright": 0.583,
-    "union": 0.583
+    "pycg": 0.509709,
+    "pyright": 0.582524,
+    "union": 0.582524
    },
    "items": 553,
    "real": 150,
@@ -672,49 +672,49 @@
      "fp": 25,
      "fn": 46,
      "n": 553,
-     "precision": 0.806,
-     "recall": 0.693,
-     "f1": 0.746
+     "precision": 0.806202,
+     "recall": 0.693333,
+     "f1": 0.74552
     },
     "Pyright": {
      "tp": 117,
      "fp": 29,
      "fn": 33,
      "n": 553,
-     "precision": 0.801,
+     "precision": 0.80137,
      "recall": 0.78,
-     "f1": 0.791
+     "f1": 0.790541
     },
     "PyCG ∪ Pyright": {
      "tp": 117,
      "fp": 29,
      "fn": 33,
      "n": 553,
-     "precision": 0.801,
+     "precision": 0.80137,
      "recall": 0.78,
-     "f1": 0.791
+     "f1": 0.790541
     },
     "name match": {
      "tp": 150,
      "fp": 403,
      "fn": 0,
      "n": 553,
-     "precision": 0.271,
+     "precision": 0.271248,
      "recall": 1.0,
-     "f1": 0.427
+     "f1": 0.426743
     },
     "shared-name union": {
      "tp": 10,
      "fp": 7,
      "fn": 10,
      "n": 251,
-     "precision": 0.588,
+     "precision": 0.588235,
      "recall": 0.5,
-     "f1": 0.541
+     "f1": 0.540541
     }
    },
    "tests_passed": 442,
-   "line_coverage": 0.5721,
+   "line_coverage": 0.572149,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -725,9 +725,9 @@
    "stratum": "MED",
    "observed_edges": 63,
    "edge_recall": {
-    "pycg": 0.921,
-    "pyright": 0.921,
-    "union": 0.921
+    "pycg": 0.920635,
+    "pyright": 0.920635,
+    "union": 0.920635
    },
    "items": 74,
    "real": 60,
@@ -739,8 +739,8 @@
      "fn": 1,
      "n": 74,
      "precision": 1.0,
-     "recall": 0.983,
-     "f1": 0.992
+     "recall": 0.983333,
+     "f1": 0.991597
     },
     "Pyright": {
      "tp": 59,
@@ -748,8 +748,8 @@
      "fn": 1,
      "n": 74,
      "precision": 1.0,
-     "recall": 0.983,
-     "f1": 0.992
+     "recall": 0.983333,
+     "f1": 0.991597
     },
     "PyCG ∪ Pyright": {
      "tp": 59,
@@ -757,17 +757,17 @@
      "fn": 1,
      "n": 74,
      "precision": 1.0,
-     "recall": 0.983,
-     "f1": 0.992
+     "recall": 0.983333,
+     "f1": 0.991597
     },
     "name match": {
      "tp": 60,
      "fp": 14,
      "fn": 0,
      "n": 74,
-     "precision": 0.811,
+     "precision": 0.810811,
      "recall": 1.0,
-     "f1": 0.896
+     "f1": 0.895522
     },
     "shared-name union": {
      "tp": 4,
@@ -780,7 +780,7 @@
     }
    },
    "tests_passed": 165,
-   "line_coverage": 0.8831,
+   "line_coverage": 0.883117,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -791,9 +791,9 @@
    "stratum": "HIGH",
    "observed_edges": 29,
    "edge_recall": {
-    "pycg": 0.69,
-    "pyright": 0.759,
-    "union": 0.759
+    "pycg": 0.689655,
+    "pyright": 0.758621,
+    "union": 0.758621
    },
    "items": 122,
    "real": 23,
@@ -804,49 +804,49 @@
      "fp": 6,
      "fn": 3,
      "n": 122,
-     "precision": 0.769,
-     "recall": 0.87,
-     "f1": 0.816
+     "precision": 0.769231,
+     "recall": 0.869565,
+     "f1": 0.816327
     },
     "Pyright": {
      "tp": 20,
      "fp": 6,
      "fn": 3,
      "n": 122,
-     "precision": 0.769,
-     "recall": 0.87,
-     "f1": 0.816
+     "precision": 0.769231,
+     "recall": 0.869565,
+     "f1": 0.816327
     },
     "PyCG ∪ Pyright": {
      "tp": 20,
      "fp": 6,
      "fn": 3,
      "n": 122,
-     "precision": 0.769,
-     "recall": 0.87,
-     "f1": 0.816
+     "precision": 0.769231,
+     "recall": 0.869565,
+     "f1": 0.816327
     },
     "name match": {
      "tp": 23,
      "fp": 99,
      "fn": 0,
      "n": 122,
-     "precision": 0.189,
+     "precision": 0.188525,
      "recall": 1.0,
-     "f1": 0.317
+     "f1": 0.317241
     },
     "shared-name union": {
      "tp": 7,
      "fp": 6,
      "fn": 0,
      "n": 44,
-     "precision": 0.538,
+     "precision": 0.538462,
      "recall": 1.0,
      "f1": 0.7
     }
    },
    "tests_passed": 11,
-   "line_coverage": 0.238,
+   "line_coverage": 0.237958,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -857,9 +857,9 @@
    "stratum": "HIGH",
    "observed_edges": 3,
    "edge_recall": {
-    "pycg": 0.667,
-    "pyright": 0.667,
-    "union": 0.667
+    "pycg": 0.666667,
+    "pyright": 0.666667,
+    "union": 0.666667
    },
    "items": 13,
    "real": 3,
@@ -871,7 +871,7 @@
      "fn": 1,
      "n": 13,
      "precision": 1.0,
-     "recall": 0.667,
+     "recall": 0.666667,
      "f1": 0.8
     },
     "Pyright": {
@@ -880,7 +880,7 @@
      "fn": 1,
      "n": 13,
      "precision": 1.0,
-     "recall": 0.667,
+     "recall": 0.666667,
      "f1": 0.8
     },
     "PyCG ∪ Pyright": {
@@ -889,7 +889,7 @@
      "fn": 1,
      "n": 13,
      "precision": 1.0,
-     "recall": 0.667,
+     "recall": 0.666667,
      "f1": 0.8
     },
     "name match": {
@@ -897,7 +897,7 @@
      "fp": 10,
      "fn": 0,
      "n": 13,
-     "precision": 0.231,
+     "precision": 0.230769,
      "recall": 1.0,
      "f1": 0.375
     },
@@ -912,7 +912,7 @@
     }
    },
    "tests_passed": 2,
-   "line_coverage": 0.2655,
+   "line_coverage": 0.265487,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -923,9 +923,9 @@
    "stratum": "MED",
    "observed_edges": 46,
    "edge_recall": {
-    "pycg": 0.696,
-    "pyright": 0.826,
-    "union": 0.826
+    "pycg": 0.695652,
+    "pyright": 0.826087,
+    "union": 0.826087
    },
    "items": 90,
    "real": 39,
@@ -936,36 +936,36 @@
      "fp": 5,
      "fn": 7,
      "n": 90,
-     "precision": 0.865,
-     "recall": 0.821,
-     "f1": 0.842
+     "precision": 0.864865,
+     "recall": 0.820513,
+     "f1": 0.842105
     },
     "Pyright": {
      "tp": 38,
      "fp": 5,
      "fn": 1,
      "n": 90,
-     "precision": 0.884,
-     "recall": 0.974,
-     "f1": 0.927
+     "precision": 0.883721,
+     "recall": 0.974359,
+     "f1": 0.926829
     },
     "PyCG ∪ Pyright": {
      "tp": 38,
      "fp": 5,
      "fn": 1,
      "n": 90,
-     "precision": 0.884,
-     "recall": 0.974,
-     "f1": 0.927
+     "precision": 0.883721,
+     "recall": 0.974359,
+     "f1": 0.926829
     },
     "name match": {
      "tp": 39,
      "fp": 51,
      "fn": 0,
      "n": 90,
-     "precision": 0.433,
+     "precision": 0.433333,
      "recall": 1.0,
-     "f1": 0.605
+     "f1": 0.604651
     },
     "shared-name union": {
      "tp": 0,
@@ -978,7 +978,7 @@
     }
    },
    "tests_passed": 80,
-   "line_coverage": 0.6489,
+   "line_coverage": 0.648855,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -989,9 +989,9 @@
    "stratum": "HIGH",
    "observed_edges": 45,
    "edge_recall": {
-    "pycg": 0.644,
-    "pyright": 0.867,
-    "union": 0.867
+    "pycg": 0.644444,
+    "pyright": 0.866667,
+    "union": 0.866667
    },
    "items": 78,
    "real": 40,
@@ -1004,7 +1004,7 @@
      "n": 78,
      "precision": 1.0,
      "recall": 0.725,
-     "f1": 0.841
+     "f1": 0.84058
     },
     "Pyright": {
      "tp": 39,
@@ -1013,7 +1013,7 @@
      "n": 78,
      "precision": 1.0,
      "recall": 0.975,
-     "f1": 0.987
+     "f1": 0.987342
     },
     "PyCG ∪ Pyright": {
      "tp": 39,
@@ -1022,16 +1022,16 @@
      "n": 78,
      "precision": 1.0,
      "recall": 0.975,
-     "f1": 0.987
+     "f1": 0.987342
     },
     "name match": {
      "tp": 40,
      "fp": 38,
      "fn": 0,
      "n": 78,
-     "precision": 0.513,
+     "precision": 0.512821,
      "recall": 1.0,
-     "f1": 0.678
+     "f1": 0.677966
     },
     "shared-name union": {
      "tp": 1,
@@ -1040,11 +1040,11 @@
      "n": 13,
      "precision": 1.0,
      "recall": 0.5,
-     "f1": 0.667
+     "f1": 0.666667
     }
    },
    "tests_passed": 31,
-   "line_coverage": 0.823,
+   "line_coverage": 0.823045,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1055,9 +1055,9 @@
    "stratum": "HIGH",
    "observed_edges": 86,
    "edge_recall": {
-    "pycg": 0.291,
-    "pyright": 0.407,
-    "union": 0.407
+    "pycg": 0.290698,
+    "pyright": 0.406977,
+    "union": 0.406977
    },
    "items": 208,
    "real": 75,
@@ -1068,49 +1068,49 @@
      "fp": 1,
      "fn": 50,
      "n": 208,
-     "precision": 0.962,
-     "recall": 0.333,
-     "f1": 0.495
+     "precision": 0.961538,
+     "recall": 0.333333,
+     "f1": 0.49505
     },
     "Pyright": {
      "tp": 34,
      "fp": 2,
      "fn": 41,
      "n": 208,
-     "precision": 0.944,
-     "recall": 0.453,
-     "f1": 0.613
+     "precision": 0.944444,
+     "recall": 0.453333,
+     "f1": 0.612613
     },
     "PyCG ∪ Pyright": {
      "tp": 34,
      "fp": 2,
      "fn": 41,
      "n": 208,
-     "precision": 0.944,
-     "recall": 0.453,
-     "f1": 0.613
+     "precision": 0.944444,
+     "recall": 0.453333,
+     "f1": 0.612613
     },
     "name match": {
      "tp": 75,
      "fp": 133,
      "fn": 0,
      "n": 208,
-     "precision": 0.361,
+     "precision": 0.360577,
      "recall": 1.0,
-     "f1": 0.53
+     "f1": 0.530035
     },
     "shared-name union": {
      "tp": 5,
      "fp": 1,
      "fn": 40,
      "n": 146,
-     "precision": 0.833,
-     "recall": 0.111,
-     "f1": 0.196
+     "precision": 0.833333,
+     "recall": 0.111111,
+     "f1": 0.196078
     }
    },
    "tests_passed": 26,
-   "line_coverage": 0.6935,
+   "line_coverage": 0.693473,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1121,9 +1121,9 @@
    "stratum": "HIGH",
    "observed_edges": 153,
    "edge_recall": {
-    "pycg": 0.477,
-    "pyright": 0.497,
-    "union": 0.516
+    "pycg": 0.477124,
+    "pyright": 0.496732,
+    "union": 0.51634
    },
    "items": 456,
    "real": 133,
@@ -1134,49 +1134,49 @@
      "fp": 9,
      "fn": 62,
      "n": 456,
-     "precision": 0.887,
-     "recall": 0.534,
-     "f1": 0.667
+     "precision": 0.8875,
+     "recall": 0.533835,
+     "f1": 0.666667
     },
     "Pyright": {
      "tp": 76,
      "fp": 7,
      "fn": 57,
      "n": 456,
-     "precision": 0.916,
-     "recall": 0.571,
-     "f1": 0.704
+     "precision": 0.915663,
+     "recall": 0.571429,
+     "f1": 0.703704
     },
     "PyCG ∪ Pyright": {
      "tp": 77,
      "fp": 12,
      "fn": 56,
      "n": 456,
-     "precision": 0.865,
-     "recall": 0.579,
-     "f1": 0.694
+     "precision": 0.865169,
+     "recall": 0.578947,
+     "f1": 0.693694
     },
     "name match": {
      "tp": 133,
      "fp": 323,
      "fn": 0,
      "n": 456,
-     "precision": 0.292,
+     "precision": 0.291667,
      "recall": 1.0,
-     "f1": 0.452
+     "f1": 0.451613
     },
     "shared-name union": {
      "tp": 14,
      "fp": 12,
      "fn": 29,
      "n": 243,
-     "precision": 0.538,
-     "recall": 0.326,
-     "f1": 0.406
+     "precision": 0.538462,
+     "recall": 0.325581,
+     "f1": 0.405797
     }
    },
    "tests_passed": 34,
-   "line_coverage": 0.8617,
+   "line_coverage": 0.86172,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1187,9 +1187,9 @@
    "stratum": "HIGH",
    "observed_edges": 38,
    "edge_recall": {
-    "pycg": 0.684,
-    "pyright": 0.763,
-    "union": 0.763
+    "pycg": 0.684211,
+    "pyright": 0.763158,
+    "union": 0.763158
    },
    "items": 75,
    "real": 31,
@@ -1201,35 +1201,35 @@
      "fn": 5,
      "n": 75,
      "precision": 1.0,
-     "recall": 0.839,
-     "f1": 0.912
+     "recall": 0.83871,
+     "f1": 0.912281
     },
     "Pyright": {
      "tp": 28,
      "fp": 1,
      "fn": 3,
      "n": 75,
-     "precision": 0.966,
-     "recall": 0.903,
-     "f1": 0.933
+     "precision": 0.965517,
+     "recall": 0.903226,
+     "f1": 0.933333
     },
     "PyCG ∪ Pyright": {
      "tp": 28,
      "fp": 1,
      "fn": 3,
      "n": 75,
-     "precision": 0.966,
-     "recall": 0.903,
-     "f1": 0.933
+     "precision": 0.965517,
+     "recall": 0.903226,
+     "f1": 0.933333
     },
     "name match": {
      "tp": 31,
      "fp": 44,
      "fn": 0,
      "n": 75,
-     "precision": 0.413,
+     "precision": 0.413333,
      "recall": 1.0,
-     "f1": 0.585
+     "f1": 0.584906
     },
     "shared-name union": {
      "tp": 1,
@@ -1238,11 +1238,11 @@
      "n": 6,
      "precision": 1.0,
      "recall": 0.5,
-     "f1": 0.667
+     "f1": 0.666667
     }
    },
    "tests_passed": 61,
-   "line_coverage": 0.6468,
+   "line_coverage": 0.646833,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1253,9 +1253,9 @@
    "stratum": "MED",
    "observed_edges": 36,
    "edge_recall": {
-    "pycg": 0.722,
-    "pyright": 0.889,
-    "union": 0.889
+    "pycg": 0.722222,
+    "pyright": 0.888889,
+    "union": 0.888889
    },
    "items": 39,
    "real": 32,
@@ -1267,8 +1267,8 @@
      "fn": 6,
      "n": 39,
      "precision": 1.0,
-     "recall": 0.812,
-     "f1": 0.897
+     "recall": 0.8125,
+     "f1": 0.896552
     },
     "Pyright": {
      "tp": 32,
@@ -1293,9 +1293,9 @@
      "fp": 7,
      "fn": 0,
      "n": 39,
-     "precision": 0.821,
+     "precision": 0.820513,
      "recall": 1.0,
-     "f1": 0.901
+     "f1": 0.901408
     },
     "shared-name union": {
      "tp": 0,
@@ -1308,7 +1308,7 @@
     }
    },
    "tests_passed": 53,
-   "line_coverage": 0.7386,
+   "line_coverage": 0.738636,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1319,9 +1319,9 @@
    "stratum": "LOW",
    "observed_edges": 382,
    "edge_recall": {
-    "pycg": 0.479,
-    "pyright": 0.539,
-    "union": 0.568
+    "pycg": 0.479058,
+    "pyright": 0.539267,
+    "union": 0.568063
    },
    "items": 698,
    "real": 301,
@@ -1332,49 +1332,49 @@
      "fp": 35,
      "fn": 127,
      "n": 698,
-     "precision": 0.833,
-     "recall": 0.578,
-     "f1": 0.682
+     "precision": 0.832536,
+     "recall": 0.578073,
+     "f1": 0.682353
     },
     "Pyright": {
      "tp": 205,
      "fp": 24,
      "fn": 96,
      "n": 698,
-     "precision": 0.895,
-     "recall": 0.681,
-     "f1": 0.774
+     "precision": 0.895197,
+     "recall": 0.681063,
+     "f1": 0.773585
     },
     "PyCG ∪ Pyright": {
      "tp": 207,
      "fp": 36,
      "fn": 94,
      "n": 698,
-     "precision": 0.852,
-     "recall": 0.688,
-     "f1": 0.761
+     "precision": 0.851852,
+     "recall": 0.687708,
+     "f1": 0.761029
     },
     "name match": {
      "tp": 301,
      "fp": 397,
      "fn": 0,
      "n": 698,
-     "precision": 0.431,
+     "precision": 0.431232,
      "recall": 1.0,
-     "f1": 0.603
+     "f1": 0.602603
     },
     "shared-name union": {
      "tp": 23,
      "fp": 19,
      "fn": 73,
      "n": 349,
-     "precision": 0.548,
-     "recall": 0.24,
-     "f1": 0.333
+     "precision": 0.547619,
+     "recall": 0.239583,
+     "f1": 0.333333
     }
    },
    "tests_passed": 209,
-   "line_coverage": 0.6673,
+   "line_coverage": 0.667288,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1385,9 +1385,9 @@
    "stratum": "LOW",
    "observed_edges": 619,
    "edge_recall": {
-    "pycg": 0.661,
-    "pyright": 0.792,
-    "union": 0.792
+    "pycg": 0.660743,
+    "pyright": 0.791599,
+    "union": 0.791599
    },
    "items": 1676,
    "real": 508,
@@ -1398,49 +1398,49 @@
      "fp": 46,
      "fn": 98,
      "n": 1676,
-     "precision": 0.899,
-     "recall": 0.807,
-     "f1": 0.851
+     "precision": 0.899123,
+     "recall": 0.807087,
+     "f1": 0.850622
     },
     "Pyright": {
      "tp": 484,
      "fp": 86,
      "fn": 24,
      "n": 1676,
-     "precision": 0.849,
-     "recall": 0.953,
-     "f1": 0.898
+     "precision": 0.849123,
+     "recall": 0.952756,
+     "f1": 0.897959
     },
     "PyCG ∪ Pyright": {
      "tp": 484,
      "fp": 86,
      "fn": 24,
      "n": 1676,
-     "precision": 0.849,
-     "recall": 0.953,
-     "f1": 0.898
+     "precision": 0.849123,
+     "recall": 0.952756,
+     "f1": 0.897959
     },
     "name match": {
      "tp": 508,
      "fp": 1168,
      "fn": 0,
      "n": 1676,
-     "precision": 0.303,
+     "precision": 0.303103,
      "recall": 1.0,
-     "f1": 0.465
+     "f1": 0.465201
     },
     "shared-name union": {
      "tp": 128,
      "fp": 27,
      "fn": 20,
      "n": 821,
-     "precision": 0.826,
-     "recall": 0.865,
-     "f1": 0.845
+     "precision": 0.825806,
+     "recall": 0.864865,
+     "f1": 0.844884
     }
    },
    "tests_passed": 1710,
-   "line_coverage": 0.5445,
+   "line_coverage": 0.544544,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1451,9 +1451,9 @@
    "stratum": "HIGH",
    "observed_edges": 22,
    "edge_recall": {
-    "pycg": 0.682,
-    "pyright": 0.955,
-    "union": 0.955
+    "pycg": 0.681818,
+    "pyright": 0.954545,
+    "union": 0.954545
    },
    "items": 65,
    "real": 18,
@@ -1465,8 +1465,8 @@
      "fn": 1,
      "n": 65,
      "precision": 0.68,
-     "recall": 0.944,
-     "f1": 0.791
+     "recall": 0.944444,
+     "f1": 0.790698
     },
     "Pyright": {
      "tp": 17,
@@ -1474,8 +1474,8 @@
      "fn": 1,
      "n": 65,
      "precision": 0.68,
-     "recall": 0.944,
-     "f1": 0.791
+     "recall": 0.944444,
+     "f1": 0.790698
     },
     "PyCG ∪ Pyright": {
      "tp": 17,
@@ -1483,17 +1483,17 @@
      "fn": 1,
      "n": 65,
      "precision": 0.68,
-     "recall": 0.944,
-     "f1": 0.791
+     "recall": 0.944444,
+     "f1": 0.790698
     },
     "name match": {
      "tp": 18,
      "fp": 47,
      "fn": 0,
      "n": 65,
-     "precision": 0.277,
+     "precision": 0.276923,
      "recall": 1.0,
-     "f1": 0.434
+     "f1": 0.433735
     },
     "shared-name union": {
      "tp": 0,
@@ -1506,7 +1506,7 @@
     }
    },
    "tests_passed": 49,
-   "line_coverage": 0.3825,
+   "line_coverage": 0.382544,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1517,9 +1517,9 @@
    "stratum": "MED",
    "observed_edges": 192,
    "edge_recall": {
-    "pycg": 0.427,
-    "pyright": 0.505,
-    "union": 0.526
+    "pycg": 0.427083,
+    "pyright": 0.505208,
+    "union": 0.526042
    },
    "items": 311,
    "real": 161,
@@ -1531,8 +1531,8 @@
      "fn": 87,
      "n": 311,
      "precision": 1.0,
-     "recall": 0.46,
-     "f1": 0.63
+     "recall": 0.459627,
+     "f1": 0.629787
     },
     "Pyright": {
      "tp": 85,
@@ -1540,8 +1540,8 @@
      "fn": 76,
      "n": 311,
      "precision": 1.0,
-     "recall": 0.528,
-     "f1": 0.691
+     "recall": 0.52795,
+     "f1": 0.691057
     },
     "PyCG ∪ Pyright": {
      "tp": 87,
@@ -1549,17 +1549,17 @@
      "fn": 74,
      "n": 311,
      "precision": 1.0,
-     "recall": 0.54,
-     "f1": 0.702
+     "recall": 0.540373,
+     "f1": 0.701613
     },
     "name match": {
      "tp": 161,
      "fp": 150,
      "fn": 0,
      "n": 311,
-     "precision": 0.518,
+     "precision": 0.517685,
      "recall": 1.0,
-     "f1": 0.682
+     "f1": 0.682203
     },
     "shared-name union": {
      "tp": 2,
@@ -1567,12 +1567,12 @@
      "fn": 1,
      "n": 6,
      "precision": 1.0,
-     "recall": 0.667,
+     "recall": 0.666667,
      "f1": 0.8
     }
    },
    "tests_passed": 45,
-   "line_coverage": 0.6988,
+   "line_coverage": 0.698769,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1583,8 +1583,8 @@
    "stratum": "HIGH",
    "observed_edges": 120,
    "edge_recall": {
-    "pycg": 0.533,
-    "pyright": 0.642,
+    "pycg": 0.533333,
+    "pyright": 0.641667,
     "union": 0.65
    },
    "items": 246,
@@ -1596,45 +1596,45 @@
      "fp": 1,
      "fn": 42,
      "n": 246,
-     "precision": 0.984,
+     "precision": 0.984375,
      "recall": 0.6,
-     "f1": 0.746
+     "f1": 0.745562
     },
     "Pyright": {
      "tp": 75,
      "fp": 4,
      "fn": 30,
      "n": 246,
-     "precision": 0.949,
-     "recall": 0.714,
-     "f1": 0.815
+     "precision": 0.949367,
+     "recall": 0.714286,
+     "f1": 0.815217
     },
     "PyCG ∪ Pyright": {
      "tp": 75,
      "fp": 4,
      "fn": 30,
      "n": 246,
-     "precision": 0.949,
-     "recall": 0.714,
-     "f1": 0.815
+     "precision": 0.949367,
+     "recall": 0.714286,
+     "f1": 0.815217
     },
     "name match": {
      "tp": 105,
      "fp": 141,
      "fn": 0,
      "n": 246,
-     "precision": 0.427,
+     "precision": 0.426829,
      "recall": 1.0,
-     "f1": 0.598
+     "f1": 0.598291
     },
     "shared-name union": {
      "tp": 10,
      "fp": 3,
      "fn": 28,
      "n": 94,
-     "precision": 0.769,
-     "recall": 0.263,
-     "f1": 0.392
+     "precision": 0.769231,
+     "recall": 0.263158,
+     "f1": 0.392157
     }
    },
    "tests_passed": 241,
@@ -1649,9 +1649,9 @@
    "stratum": "MED",
    "observed_edges": 1393,
    "edge_recall": {
-    "pycg": 0.243,
-    "pyright": 0.268,
-    "union": 0.268
+    "pycg": 0.24336,
+    "pyright": 0.268485,
+    "union": 0.268485
    },
    "items": 2999,
    "real": 98,
@@ -1662,49 +1662,49 @@
      "fp": 163,
      "fn": 50,
      "n": 2999,
-     "precision": 0.227,
-     "recall": 0.49,
-     "f1": 0.311
+     "precision": 0.227488,
+     "recall": 0.489796,
+     "f1": 0.31068
     },
     "Pyright": {
      "tp": 83,
      "fp": 263,
      "fn": 15,
      "n": 2999,
-     "precision": 0.24,
-     "recall": 0.847,
-     "f1": 0.374
+     "precision": 0.239884,
+     "recall": 0.846939,
+     "f1": 0.373874
     },
     "PyCG ∪ Pyright": {
      "tp": 83,
      "fp": 264,
      "fn": 15,
      "n": 2999,
-     "precision": 0.239,
-     "recall": 0.847,
-     "f1": 0.373
+     "precision": 0.239193,
+     "recall": 0.846939,
+     "f1": 0.373034
     },
     "name match": {
      "tp": 98,
      "fp": 2901,
      "fn": 0,
      "n": 2999,
-     "precision": 0.033,
+     "precision": 0.032678,
      "recall": 1.0,
-     "f1": 0.063
+     "f1": 0.063287
     },
     "shared-name union": {
      "tp": 28,
      "fp": 57,
      "fn": 9,
      "n": 2015,
-     "precision": 0.329,
-     "recall": 0.757,
-     "f1": 0.459
+     "precision": 0.329412,
+     "recall": 0.756757,
+     "f1": 0.459016
     }
    },
    "tests_passed": 1041,
-   "line_coverage": 0.5633,
+   "line_coverage": 0.563324,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1715,9 +1715,9 @@
    "stratum": "HIGH",
    "observed_edges": 187,
    "edge_recall": {
-    "pycg": 0.016,
-    "pyright": 0.032,
-    "union": 0.032
+    "pycg": 0.016043,
+    "pyright": 0.032086,
+    "union": 0.032086
    },
    "items": 23,
    "real": 4,
@@ -1737,7 +1737,7 @@
      "fp": 2,
      "fn": 0,
      "n": 23,
-     "precision": 0.667,
+     "precision": 0.666667,
      "recall": 1.0,
      "f1": 0.8
     },
@@ -1746,7 +1746,7 @@
      "fp": 2,
      "fn": 0,
      "n": 23,
-     "precision": 0.667,
+     "precision": 0.666667,
      "recall": 1.0,
      "f1": 0.8
     },
@@ -1755,9 +1755,9 @@
      "fp": 19,
      "fn": 0,
      "n": 23,
-     "precision": 0.174,
+     "precision": 0.173913,
      "recall": 1.0,
-     "f1": 0.296
+     "f1": 0.296296
     },
     "shared-name union": {
      "tp": 0,
@@ -1770,7 +1770,7 @@
     }
    },
    "tests_passed": 1594,
-   "line_coverage": 0.9426,
+   "line_coverage": 0.942574,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1781,9 +1781,9 @@
    "stratum": "HIGH",
    "observed_edges": 47,
    "edge_recall": {
-    "pycg": 0.915,
-    "pyright": 0.936,
-    "union": 0.936
+    "pycg": 0.914894,
+    "pyright": 0.93617,
+    "union": 0.93617
    },
    "items": 3200,
    "real": 45,
@@ -1794,36 +1794,36 @@
      "fp": 2,
      "fn": 2,
      "n": 3200,
-     "precision": 0.956,
-     "recall": 0.956,
-     "f1": 0.956
+     "precision": 0.955556,
+     "recall": 0.955556,
+     "f1": 0.955556
     },
     "Pyright": {
      "tp": 43,
      "fp": 2,
      "fn": 2,
      "n": 3200,
-     "precision": 0.956,
-     "recall": 0.956,
-     "f1": 0.956
+     "precision": 0.955556,
+     "recall": 0.955556,
+     "f1": 0.955556
     },
     "PyCG ∪ Pyright": {
      "tp": 43,
      "fp": 2,
      "fn": 2,
      "n": 3200,
-     "precision": 0.956,
-     "recall": 0.956,
-     "f1": 0.956
+     "precision": 0.955556,
+     "recall": 0.955556,
+     "f1": 0.955556
     },
     "name match": {
      "tp": 45,
      "fp": 3155,
      "fn": 0,
      "n": 3200,
-     "precision": 0.014,
+     "precision": 0.014063,
      "recall": 1.0,
-     "f1": 0.028
+     "f1": 0.027735
     },
     "shared-name union": {
      "tp": 19,
@@ -1836,7 +1836,7 @@
     }
    },
    "tests_passed": 154,
-   "line_coverage": 0.3445,
+   "line_coverage": 0.344495,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1847,9 +1847,9 @@
    "stratum": "HIGH",
    "observed_edges": 63,
    "edge_recall": {
-    "pycg": 0.587,
-    "pyright": 0.587,
-    "union": 0.603
+    "pycg": 0.587302,
+    "pyright": 0.587302,
+    "union": 0.603175
    },
    "items": 110,
    "real": 52,
@@ -1861,8 +1861,8 @@
      "fn": 16,
      "n": 110,
      "precision": 1.0,
-     "recall": 0.692,
-     "f1": 0.818
+     "recall": 0.692308,
+     "f1": 0.818182
     },
     "Pyright": {
      "tp": 37,
@@ -1870,8 +1870,8 @@
      "fn": 15,
      "n": 110,
      "precision": 1.0,
-     "recall": 0.712,
-     "f1": 0.831
+     "recall": 0.711538,
+     "f1": 0.831461
     },
     "PyCG ∪ Pyright": {
      "tp": 37,
@@ -1879,17 +1879,17 @@
      "fn": 15,
      "n": 110,
      "precision": 1.0,
-     "recall": 0.712,
-     "f1": 0.831
+     "recall": 0.711538,
+     "f1": 0.831461
     },
     "name match": {
      "tp": 52,
      "fp": 58,
      "fn": 0,
      "n": 110,
-     "precision": 0.473,
+     "precision": 0.472727,
      "recall": 1.0,
-     "f1": 0.642
+     "f1": 0.641975
     },
     "shared-name union": {
      "tp": 0,
@@ -1902,7 +1902,7 @@
     }
    },
    "tests_passed": 87,
-   "line_coverage": 0.9019,
+   "line_coverage": 0.901919,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1913,9 +1913,9 @@
    "stratum": "HIGH",
    "observed_edges": 174,
    "edge_recall": {
-    "pycg": 0.276,
-    "pyright": 0.362,
-    "union": 0.362
+    "pycg": 0.275862,
+    "pyright": 0.362069,
+    "union": 0.362069
    },
    "items": 516,
    "real": 90,
@@ -1926,49 +1926,49 @@
      "fp": 3,
      "fn": 54,
      "n": 516,
-     "precision": 0.923,
+     "precision": 0.923077,
      "recall": 0.4,
-     "f1": 0.558
+     "f1": 0.55814
     },
     "Pyright": {
      "tp": 46,
      "fp": 1,
      "fn": 44,
      "n": 516,
-     "precision": 0.979,
-     "recall": 0.511,
-     "f1": 0.672
+     "precision": 0.978723,
+     "recall": 0.511111,
+     "f1": 0.671533
     },
     "PyCG ∪ Pyright": {
      "tp": 46,
      "fp": 3,
      "fn": 44,
      "n": 516,
-     "precision": 0.939,
-     "recall": 0.511,
-     "f1": 0.662
+     "precision": 0.938776,
+     "recall": 0.511111,
+     "f1": 0.661871
     },
     "name match": {
      "tp": 90,
      "fp": 426,
      "fn": 0,
      "n": 516,
-     "precision": 0.174,
+     "precision": 0.174419,
      "recall": 1.0,
-     "f1": 0.297
+     "f1": 0.29703
     },
     "shared-name union": {
      "tp": 20,
      "fp": 3,
      "fn": 26,
      "n": 400,
-     "precision": 0.87,
-     "recall": 0.435,
-     "f1": 0.58
+     "precision": 0.869565,
+     "recall": 0.434783,
+     "f1": 0.57971
     }
    },
    "tests_passed": 37,
-   "line_coverage": 0.5652,
+   "line_coverage": 0.565192,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -1979,9 +1979,9 @@
    "stratum": "LOW",
    "observed_edges": 142,
    "edge_recall": {
-    "pycg": 0.345,
-    "pyright": 0.789,
-    "union": 0.789
+    "pycg": 0.34507,
+    "pyright": 0.788732,
+    "union": 0.788732
    },
    "items": 606,
    "real": 125,
@@ -1992,9 +1992,9 @@
      "fp": 3,
      "fn": 75,
      "n": 606,
-     "precision": 0.943,
+     "precision": 0.943396,
      "recall": 0.4,
-     "f1": 0.562
+     "f1": 0.561798
     },
     "Pyright": {
      "tp": 106,
@@ -2019,24 +2019,24 @@
      "fp": 481,
      "fn": 0,
      "n": 606,
-     "precision": 0.206,
+     "precision": 0.206271,
      "recall": 1.0,
-     "f1": 0.342
+     "f1": 0.341997
     },
     "shared-name union": {
      "tp": 40,
      "fp": 18,
      "fn": 10,
      "n": 406,
-     "precision": 0.69,
+     "precision": 0.689655,
      "recall": 0.8,
-     "f1": 0.741
+     "f1": 0.740741
     }
    },
    "tests_passed": 271,
-   "line_coverage": 0.3727,
+   "line_coverage": 0.372725,
    "retrace": {
-    "jaccard": 0.986,
+    "jaccard": 0.986014,
     "only_first": 1,
     "only_second": 1
    }
@@ -2058,36 +2058,36 @@
      "fp": 3,
      "fn": 2,
      "n": 59,
-     "precision": 0.857,
+     "precision": 0.857143,
      "recall": 0.9,
-     "f1": 0.878
+     "f1": 0.878049
     },
     "Pyright": {
      "tp": 19,
      "fp": 2,
      "fn": 1,
      "n": 59,
-     "precision": 0.905,
+     "precision": 0.904762,
      "recall": 0.95,
-     "f1": 0.927
+     "f1": 0.926829
     },
     "PyCG ∪ Pyright": {
      "tp": 19,
      "fp": 3,
      "fn": 1,
      "n": 59,
-     "precision": 0.864,
+     "precision": 0.863636,
      "recall": 0.95,
-     "f1": 0.905
+     "f1": 0.904762
     },
     "name match": {
      "tp": 20,
      "fp": 39,
      "fn": 0,
      "n": 59,
-     "precision": 0.339,
+     "precision": 0.338983,
      "recall": 1.0,
-     "f1": 0.506
+     "f1": 0.506329
     },
     "shared-name union": {
      "tp": 1,
@@ -2096,11 +2096,11 @@
      "n": 4,
      "precision": 0.5,
      "recall": 1.0,
-     "f1": 0.667
+     "f1": 0.666667
     }
    },
    "tests_passed": 58,
-   "line_coverage": 0.6377,
+   "line_coverage": 0.63773,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -2111,9 +2111,9 @@
    "stratum": "MED",
    "observed_edges": 123,
    "edge_recall": {
-    "pycg": 0.268,
-    "pyright": 0.455,
-    "union": 0.488
+    "pycg": 0.268293,
+    "pyright": 0.455285,
+    "union": 0.487805
    },
    "items": 489,
    "real": 112,
@@ -2124,49 +2124,49 @@
      "fp": 3,
      "fn": 83,
      "n": 489,
-     "precision": 0.906,
-     "recall": 0.259,
-     "f1": 0.403
+     "precision": 0.90625,
+     "recall": 0.258929,
+     "f1": 0.402778
     },
     "Pyright": {
      "tp": 54,
      "fp": 9,
      "fn": 58,
      "n": 489,
-     "precision": 0.857,
-     "recall": 0.482,
-     "f1": 0.617
+     "precision": 0.857143,
+     "recall": 0.482143,
+     "f1": 0.617143
     },
     "PyCG ∪ Pyright": {
      "tp": 54,
      "fp": 9,
      "fn": 58,
      "n": 489,
-     "precision": 0.857,
-     "recall": 0.482,
-     "f1": 0.617
+     "precision": 0.857143,
+     "recall": 0.482143,
+     "f1": 0.617143
     },
     "name match": {
      "tp": 112,
      "fp": 377,
      "fn": 0,
      "n": 489,
-     "precision": 0.229,
+     "precision": 0.229039,
      "recall": 1.0,
-     "f1": 0.373
+     "f1": 0.372712
     },
     "shared-name union": {
      "tp": 2,
      "fp": 1,
      "fn": 32,
      "n": 293,
-     "precision": 0.667,
-     "recall": 0.059,
-     "f1": 0.108
+     "precision": 0.666667,
+     "recall": 0.058824,
+     "f1": 0.108108
     }
    },
    "tests_passed": 478,
-   "line_coverage": 0.8978,
+   "line_coverage": 0.897849,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -2177,9 +2177,9 @@
    "stratum": "MED",
    "observed_edges": 761,
    "edge_recall": {
-    "pycg": 0.289,
-    "pyright": 0.442,
-    "union": 0.452
+    "pycg": 0.289093,
+    "pyright": 0.441524,
+    "union": 0.452037
    },
    "items": 1199,
    "real": 512,
@@ -2190,36 +2190,36 @@
      "fp": 3,
      "fn": 297,
      "n": 1199,
-     "precision": 0.986,
-     "recall": 0.42,
-     "f1": 0.589
+     "precision": 0.986239,
+     "recall": 0.419922,
+     "f1": 0.589041
     },
     "Pyright": {
      "tp": 334,
      "fp": 41,
      "fn": 178,
      "n": 1199,
-     "precision": 0.891,
-     "recall": 0.652,
-     "f1": 0.753
+     "precision": 0.890667,
+     "recall": 0.652344,
+     "f1": 0.7531
     },
     "PyCG ∪ Pyright": {
      "tp": 335,
      "fp": 42,
      "fn": 177,
      "n": 1199,
-     "precision": 0.889,
-     "recall": 0.654,
-     "f1": 0.754
+     "precision": 0.888594,
+     "recall": 0.654297,
+     "f1": 0.753656
     },
     "name match": {
      "tp": 512,
      "fp": 687,
      "fn": 0,
      "n": 1199,
-     "precision": 0.427,
+     "precision": 0.427023,
      "recall": 1.0,
-     "f1": 0.598
+     "f1": 0.59848
     },
     "shared-name union": {
      "tp": 63,
@@ -2227,14 +2227,14 @@
      "fn": 126,
      "n": 572,
      "precision": 0.6,
-     "recall": 0.333,
-     "f1": 0.429
+     "recall": 0.333333,
+     "f1": 0.428571
     }
    },
    "tests_passed": 494,
-   "line_coverage": 0.9288,
+   "line_coverage": 0.928832,
    "retrace": {
-    "jaccard": 0.9987,
+    "jaccard": 0.998686,
     "only_first": 1,
     "only_second": 0
    }
@@ -2243,9 +2243,9 @@
    "stratum": "HIGH",
    "observed_edges": 834,
    "edge_recall": {
-    "pycg": 0.15,
-    "pyright": 0.423,
-    "union": 0.439
+    "pycg": 0.14988,
+    "pyright": 0.423261,
+    "union": 0.438849
    },
    "items": 2370,
    "real": 518,
@@ -2257,48 +2257,48 @@
      "fn": 420,
      "n": 2370,
      "precision": 1.0,
-     "recall": 0.189,
-     "f1": 0.318
+     "recall": 0.189189,
+     "f1": 0.318182
     },
     "Pyright": {
      "tp": 297,
      "fp": 18,
      "fn": 221,
      "n": 2370,
-     "precision": 0.943,
-     "recall": 0.573,
-     "f1": 0.713
+     "precision": 0.942857,
+     "recall": 0.573359,
+     "f1": 0.713085
     },
     "PyCG ∪ Pyright": {
      "tp": 297,
      "fp": 18,
      "fn": 221,
      "n": 2370,
-     "precision": 0.943,
-     "recall": 0.573,
-     "f1": 0.713
+     "precision": 0.942857,
+     "recall": 0.573359,
+     "f1": 0.713085
     },
     "name match": {
      "tp": 518,
      "fp": 1852,
      "fn": 0,
      "n": 2370,
-     "precision": 0.219,
+     "precision": 0.218565,
      "recall": 1.0,
-     "f1": 0.359
+     "f1": 0.358726
     },
     "shared-name union": {
      "tp": 68,
      "fp": 16,
      "fn": 122,
      "n": 1364,
-     "precision": 0.81,
-     "recall": 0.358,
-     "f1": 0.496
+     "precision": 0.809524,
+     "recall": 0.357895,
+     "f1": 0.49635
     }
    },
    "tests_passed": 278,
-   "line_coverage": 0.7525,
+   "line_coverage": 0.752483,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -2309,9 +2309,9 @@
    "stratum": "MED",
    "observed_edges": 336,
    "edge_recall": {
-    "pycg": 0.432,
-    "pyright": 0.616,
-    "union": 0.652
+    "pycg": 0.431548,
+    "pyright": 0.616071,
+    "union": 0.651786
    },
    "items": 744,
    "real": 223,
@@ -2322,49 +2322,49 @@
      "fp": 44,
      "fn": 88,
      "n": 744,
-     "precision": 0.754,
-     "recall": 0.605,
-     "f1": 0.672
+     "precision": 0.75419,
+     "recall": 0.605381,
+     "f1": 0.671642
     },
     "Pyright": {
      "tp": 190,
      "fp": 48,
      "fn": 33,
      "n": 744,
-     "precision": 0.798,
-     "recall": 0.852,
-     "f1": 0.824
+     "precision": 0.798319,
+     "recall": 0.852018,
+     "f1": 0.824295
     },
     "PyCG ∪ Pyright": {
      "tp": 194,
      "fp": 53,
      "fn": 29,
      "n": 744,
-     "precision": 0.785,
-     "recall": 0.87,
-     "f1": 0.826
+     "precision": 0.785425,
+     "recall": 0.869955,
+     "f1": 0.825532
     },
     "name match": {
      "tp": 223,
      "fp": 521,
      "fn": 0,
      "n": 744,
-     "precision": 0.3,
+     "precision": 0.299731,
      "recall": 1.0,
-     "f1": 0.461
+     "f1": 0.46122
     },
     "shared-name union": {
      "tp": 37,
      "fp": 17,
      "fn": 20,
      "n": 300,
-     "precision": 0.685,
-     "recall": 0.649,
-     "f1": 0.667
+     "precision": 0.685185,
+     "recall": 0.649123,
+     "f1": 0.666667
     }
    },
    "tests_passed": 1210,
-   "line_coverage": 0.8583,
+   "line_coverage": 0.858349,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -2390,7 +2390,7 @@
      "n": 47,
      "precision": 0.325,
      "recall": 1.0,
-     "f1": 0.491
+     "f1": 0.490566
     },
     "Pyright": {
      "tp": 13,
@@ -2399,7 +2399,7 @@
      "n": 47,
      "precision": 0.325,
      "recall": 1.0,
-     "f1": 0.491
+     "f1": 0.490566
     },
     "PyCG ∪ Pyright": {
      "tp": 13,
@@ -2408,16 +2408,16 @@
      "n": 47,
      "precision": 0.325,
      "recall": 1.0,
-     "f1": 0.491
+     "f1": 0.490566
     },
     "name match": {
      "tp": 13,
      "fp": 34,
      "fn": 0,
      "n": 47,
-     "precision": 0.277,
+     "precision": 0.276596,
      "recall": 1.0,
-     "f1": 0.433
+     "f1": 0.433333
     },
     "shared-name union": {
      "tp": 0,
@@ -2430,7 +2430,7 @@
     }
    },
    "tests_passed": 51,
-   "line_coverage": 0.4418,
+   "line_coverage": 0.441774,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -2441,9 +2441,9 @@
    "stratum": "MED",
    "observed_edges": 121,
    "edge_recall": {
-    "pycg": 0.562,
-    "pyright": 0.612,
-    "union": 0.669
+    "pycg": 0.561983,
+    "pyright": 0.61157,
+    "union": 0.669421
    },
    "items": 310,
    "real": 64,
@@ -2454,56 +2454,56 @@
      "fp": 3,
      "fn": 10,
      "n": 310,
-     "precision": 0.947,
-     "recall": 0.844,
-     "f1": 0.893
+     "precision": 0.947368,
+     "recall": 0.84375,
+     "f1": 0.892562
     },
     "Pyright": {
      "tp": 62,
      "fp": 3,
      "fn": 2,
      "n": 310,
-     "precision": 0.954,
-     "recall": 0.969,
-     "f1": 0.961
+     "precision": 0.953846,
+     "recall": 0.96875,
+     "f1": 0.96124
     },
     "PyCG ∪ Pyright": {
      "tp": 62,
      "fp": 4,
      "fn": 2,
      "n": 310,
-     "precision": 0.939,
-     "recall": 0.969,
-     "f1": 0.954
+     "precision": 0.939394,
+     "recall": 0.96875,
+     "f1": 0.953846
     },
     "name match": {
      "tp": 64,
      "fp": 246,
      "fn": 0,
      "n": 310,
-     "precision": 0.206,
+     "precision": 0.206452,
      "recall": 1.0,
-     "f1": 0.342
+     "f1": 0.342246
     },
     "shared-name union": {
      "tp": 2,
      "fp": 1,
      "fn": 0,
      "n": 16,
-     "precision": 0.667,
+     "precision": 0.666667,
      "recall": 1.0,
      "f1": 0.8
     }
    },
    "tests_passed": 180,
-   "line_coverage": 0.8995
+   "line_coverage": 0.899478
   },
   "xacro": {
    "stratum": "HIGH",
    "observed_edges": 140,
    "edge_recall": {
-    "pycg": 0.836,
-    "pyright": 0.836,
+    "pycg": 0.835714,
+    "pyright": 0.835714,
     "union": 0.85
    },
    "items": 177,
@@ -2515,36 +2515,36 @@
      "fp": 2,
      "fn": 0,
      "n": 177,
-     "precision": 0.983,
+     "precision": 0.983193,
      "recall": 1.0,
-     "f1": 0.992
+     "f1": 0.991525
     },
     "Pyright": {
      "tp": 115,
      "fp": 2,
      "fn": 2,
      "n": 177,
-     "precision": 0.983,
-     "recall": 0.983,
-     "f1": 0.983
+     "precision": 0.982906,
+     "recall": 0.982906,
+     "f1": 0.982906
     },
     "PyCG ∪ Pyright": {
      "tp": 117,
      "fp": 2,
      "fn": 0,
      "n": 177,
-     "precision": 0.983,
+     "precision": 0.983193,
      "recall": 1.0,
-     "f1": 0.992
+     "f1": 0.991525
     },
     "name match": {
      "tp": 117,
      "fp": 60,
      "fn": 0,
      "n": 177,
-     "precision": 0.661,
+     "precision": 0.661017,
      "recall": 1.0,
-     "f1": 0.796
+     "f1": 0.795918
     },
     "shared-name union": {
      "tp": 0,
@@ -2557,7 +2557,7 @@
     }
    },
    "tests_passed": 119,
-   "line_coverage": 0.7752,
+   "line_coverage": 0.775165,
    "retrace": {
     "jaccard": 1.0,
     "only_first": 0,
@@ -2571,36 +2571,36 @@
    "fp": 558,
    "fn": 3588,
    "n": 33020,
-   "precision": 0.869,
-   "recall": 0.507,
-   "f1": 0.641
+   "precision": 0.868768,
+   "recall": 0.507278,
+   "f1": 0.640541
   },
   "Pyright": {
    "tp": 5036,
    "fp": 839,
    "fn": 2246,
    "n": 33020,
-   "precision": 0.857,
-   "recall": 0.692,
-   "f1": 0.766
+   "precision": 0.857191,
+   "recall": 0.691568,
+   "f1": 0.765524
   },
   "PyCG ∪ Pyright": {
    "tp": 5119,
    "fp": 882,
    "fn": 2163,
    "n": 33020,
-   "precision": 0.853,
-   "recall": 0.703,
-   "f1": 0.771
+   "precision": 0.853024,
+   "recall": 0.702966,
+   "f1": 0.77076
   },
   "name match": {
    "tp": 7282,
    "fp": 25738,
    "fn": 0,
    "n": 33020,
-   "precision": 0.221,
+   "precision": 0.220533,
    "recall": 1.0,
-   "f1": 0.361
+   "f1": 0.361372
   }
  },
  "llm": {
@@ -2610,18 +2610,18 @@
     "fp": 801,
     "fn": 172,
     "n": 5616,
-    "precision": 0.599,
-    "recall": 0.874,
-    "f1": 0.711
+    "precision": 0.598898,
+    "recall": 0.874269,
+    "f1": 0.710847
    },
    "static union, same items": {
     "tp": 885,
     "fp": 186,
     "fn": 483,
     "n": 5616,
-    "precision": 0.826,
-    "recall": 0.647,
-    "f1": 0.726
+    "precision": 0.826331,
+    "recall": 0.64693,
+    "f1": 0.725707
    },
    "repos": [
     "PyFunceble",
@@ -2671,18 +2671,18 @@
     "fp": 679,
     "fn": 233,
     "n": 5611,
-    "precision": 0.626,
-    "recall": 0.83,
-    "f1": 0.713
+    "precision": 0.625689,
+    "recall": 0.829678,
+    "f1": 0.713388
    },
    "static union, same items": {
     "tp": 885,
     "fp": 186,
     "fn": 483,
     "n": 5611,
-    "precision": 0.826,
-    "recall": 0.647,
-    "f1": 0.726
+    "precision": 0.826331,
+    "recall": 0.64693,
+    "f1": 0.725707
    },
    "repos": [
     "PyFunceble",
@@ -2732,18 +2732,18 @@
     "fp": 453,
     "fn": 290,
     "n": 5578,
-    "precision": 0.704,
-    "recall": 0.788,
-    "f1": 0.744
+    "precision": 0.704115,
+    "recall": 0.788012,
+    "f1": 0.743705
    },
    "static union, same items": {
     "tp": 885,
     "fp": 186,
     "fn": 483,
     "n": 5578,
-    "precision": 0.826,
-    "recall": 0.647,
-    "f1": 0.726
+    "precision": 0.826331,
+    "recall": 0.64693,
+    "f1": 0.725707
    },
    "repos": [
     "PyFunceble",
@@ -2803,108 +2803,108 @@
    "fp": 327,
    "fn": 1404,
    "n": 14654,
-   "precision": 0.802,
-   "recall": 0.485,
-   "f1": 0.605
+   "precision": 0.801938,
+   "recall": 0.485337,
+   "f1": 0.604704
   },
   "MED/Pyright": {
    "tp": 1946,
    "fp": 528,
    "fn": 782,
    "n": 14654,
-   "precision": 0.787,
-   "recall": 0.713,
-   "f1": 0.748
+   "precision": 0.78658,
+   "recall": 0.713343,
+   "f1": 0.748174
   },
   "MED/PyCG ∪ Pyright": {
    "tp": 1967,
    "fp": 544,
    "fn": 761,
    "n": 14654,
-   "precision": 0.783,
-   "recall": 0.721,
-   "f1": 0.751
+   "precision": 0.783353,
+   "recall": 0.721041,
+   "f1": 0.750907
   },
   "MED/name match": {
    "tp": 2728,
    "fp": 11926,
    "fn": 0,
    "n": 14654,
-   "precision": 0.186,
+   "precision": 0.186161,
    "recall": 1.0,
-   "f1": 0.314
+   "f1": 0.313888
   },
   "LOW/PyCG": {
    "tp": 1127,
    "fp": 160,
    "fn": 1091,
    "n": 6460,
-   "precision": 0.876,
-   "recall": 0.508,
-   "f1": 0.643
+   "precision": 0.87568,
+   "recall": 0.508115,
+   "f1": 0.643081
   },
   "LOW/Pyright": {
    "tp": 1351,
    "fp": 205,
    "fn": 867,
    "n": 6460,
-   "precision": 0.868,
-   "recall": 0.609,
-   "f1": 0.716
+   "precision": 0.868252,
+   "recall": 0.609107,
+   "f1": 0.715951
   },
   "LOW/PyCG ∪ Pyright": {
    "tp": 1409,
    "fp": 219,
    "fn": 809,
    "n": 6460,
-   "precision": 0.865,
-   "recall": 0.635,
-   "f1": 0.733
+   "precision": 0.865479,
+   "recall": 0.635257,
+   "f1": 0.732709
   },
   "LOW/name match": {
    "tp": 2218,
    "fp": 4242,
    "fn": 0,
    "n": 6460,
-   "precision": 0.343,
+   "precision": 0.343344,
    "recall": 1.0,
-   "f1": 0.511
+   "f1": 0.511178
   },
   "HIGH/PyCG": {
    "tp": 1243,
    "fp": 71,
    "fn": 1093,
    "n": 11906,
-   "precision": 0.946,
-   "recall": 0.532,
-   "f1": 0.681
+   "precision": 0.945967,
+   "recall": 0.532106,
+   "f1": 0.681096
   },
   "HIGH/Pyright": {
    "tp": 1739,
    "fp": 106,
    "fn": 597,
    "n": 11906,
-   "precision": 0.943,
-   "recall": 0.744,
-   "f1": 0.832
+   "precision": 0.942547,
+   "recall": 0.744435,
+   "f1": 0.831858
   },
   "HIGH/PyCG ∪ Pyright": {
    "tp": 1743,
    "fp": 119,
    "fn": 593,
    "n": 11906,
-   "precision": 0.936,
-   "recall": 0.746,
-   "f1": 0.83
+   "precision": 0.93609,
+   "recall": 0.746147,
+   "f1": 0.830395
   },
   "HIGH/name match": {
    "tp": 2336,
    "fp": 9570,
    "fn": 0,
    "n": 11906,
-   "precision": 0.196,
+   "precision": 0.196204,
    "recall": 1.0,
-   "f1": 0.328
+   "f1": 0.328044
   }
  },
  "llm_by_repo": {
@@ -2915,18 +2915,18 @@
      "fp": 14,
      "fn": 14,
      "n": 416,
-     "precision": 0.696,
-     "recall": 0.696,
-     "f1": 0.696
+     "precision": 0.695652,
+     "recall": 0.695652,
+     "f1": 0.695652
     },
     "static union, same items": {
      "tp": 22,
      "fp": 1,
      "fn": 24,
      "n": 416,
-     "precision": 0.957,
-     "recall": 0.478,
-     "f1": 0.638
+     "precision": 0.956522,
+     "recall": 0.478261,
+     "f1": 0.637681
     }
    },
    "ShivyC": {
@@ -2935,18 +2935,18 @@
      "fp": 60,
      "fn": 77,
      "n": 495,
-     "precision": 0.627,
-     "recall": 0.567,
-     "f1": 0.596
+     "precision": 0.627329,
+     "recall": 0.567416,
+     "f1": 0.59587
     },
     "static union, same items": {
      "tp": 63,
      "fp": 6,
      "fn": 115,
      "n": 495,
-     "precision": 0.913,
-     "recall": 0.354,
-     "f1": 0.51
+     "precision": 0.913043,
+     "recall": 0.353933,
+     "f1": 0.510121
     }
    },
    "TradingView-Screener": {
@@ -2975,18 +2975,18 @@
      "fp": 13,
      "fn": 8,
      "n": 169,
-     "precision": 0.729,
-     "recall": 0.814,
-     "f1": 0.769
+     "precision": 0.729167,
+     "recall": 0.813953,
+     "f1": 0.769231
     },
     "static union, same items": {
      "tp": 32,
      "fp": 2,
      "fn": 11,
      "n": 169,
-     "precision": 0.941,
-     "recall": 0.744,
-     "f1": 0.831
+     "precision": 0.941176,
+     "recall": 0.744186,
+     "f1": 0.831169
     }
    },
    "apiflask": {
@@ -2995,18 +2995,18 @@
      "fp": 8,
      "fn": 0,
      "n": 104,
-     "precision": 0.784,
+     "precision": 0.783784,
      "recall": 1.0,
-     "f1": 0.879
+     "f1": 0.878788
     },
     "static union, same items": {
      "tp": 22,
      "fp": 1,
      "fn": 7,
      "n": 104,
-     "precision": 0.957,
-     "recall": 0.759,
-     "f1": 0.846
+     "precision": 0.956522,
+     "recall": 0.758621,
+     "f1": 0.846154
     }
    },
    "autoray": {
@@ -3015,9 +3015,9 @@
      "fp": 5,
      "fn": 0,
      "n": 220,
-     "precision": 0.783,
+     "precision": 0.782609,
      "recall": 1.0,
-     "f1": 0.878
+     "f1": 0.878049
     },
     "static union, same items": {
      "tp": 18,
@@ -3035,9 +3035,9 @@
      "fp": 50,
      "fn": 0,
      "n": 136,
-     "precision": 0.153,
+     "precision": 0.152542,
      "recall": 1.0,
-     "f1": 0.265
+     "f1": 0.264706
     },
     "static union, same items": {
      "tp": 9,
@@ -3055,17 +3055,17 @@
      "fp": 17,
      "fn": 1,
      "n": 81,
-     "precision": 0.541,
-     "recall": 0.952,
-     "f1": 0.69
+     "precision": 0.540541,
+     "recall": 0.952381,
+     "f1": 0.689655
     },
     "static union, same items": {
      "tp": 13,
      "fp": 6,
      "fn": 8,
      "n": 81,
-     "precision": 0.684,
-     "recall": 0.619,
+     "precision": 0.684211,
+     "recall": 0.619048,
      "f1": 0.65
     }
    },
@@ -3075,18 +3075,18 @@
      "fp": 55,
      "fn": 10,
      "n": 906,
-     "precision": 0.784,
-     "recall": 0.952,
-     "f1": 0.86
+     "precision": 0.784314,
+     "recall": 0.952381,
+     "f1": 0.860215
     },
     "static union, same items": {
      "tp": 159,
      "fp": 13,
      "fn": 51,
      "n": 906,
-     "precision": 0.924,
-     "recall": 0.757,
-     "f1": 0.832
+     "precision": 0.924419,
+     "recall": 0.757143,
+     "f1": 0.832461
     }
    },
    "compressed-tensors": {
@@ -3095,18 +3095,18 @@
      "fp": 53,
      "fn": 0,
      "n": 192,
-     "precision": 0.303,
+     "precision": 0.302632,
      "recall": 1.0,
-     "f1": 0.465
+     "f1": 0.464646
     },
     "static union, same items": {
      "tp": 20,
      "fp": 6,
      "fn": 3,
      "n": 192,
-     "precision": 0.769,
-     "recall": 0.87,
-     "f1": 0.816
+     "precision": 0.769231,
+     "recall": 0.869565,
+     "f1": 0.816327
     }
    },
    "confluence-markdown-exporter": {
@@ -3115,18 +3115,18 @@
      "fp": 21,
      "fn": 0,
      "n": 148,
-     "precision": 0.604,
+     "precision": 0.603774,
      "recall": 1.0,
-     "f1": 0.753
+     "f1": 0.752941
     },
     "static union, same items": {
      "tp": 21,
      "fp": 8,
      "fn": 11,
      "n": 148,
-     "precision": 0.724,
-     "recall": 0.656,
-     "f1": 0.689
+     "precision": 0.724138,
+     "recall": 0.65625,
+     "f1": 0.688525
     }
    },
    "creosote": {
@@ -3135,9 +3135,9 @@
      "fp": 2,
      "fn": 1,
      "n": 15,
-     "precision": 0.778,
+     "precision": 0.777778,
      "recall": 0.875,
-     "f1": 0.824
+     "f1": 0.823529
     },
     "static union, same items": {
      "tp": 7,
@@ -3146,7 +3146,7 @@
      "n": 15,
      "precision": 1.0,
      "recall": 0.875,
-     "f1": 0.933
+     "f1": 0.933333
     }
    },
    "deepblast": {
@@ -3155,18 +3155,18 @@
      "fp": 20,
      "fn": 0,
      "n": 87,
-     "precision": 0.444,
+     "precision": 0.444444,
      "recall": 1.0,
-     "f1": 0.615
+     "f1": 0.615385
     },
     "static union, same items": {
      "tp": 13,
      "fp": 6,
      "fn": 3,
      "n": 87,
-     "precision": 0.684,
-     "recall": 0.812,
-     "f1": 0.743
+     "precision": 0.684211,
+     "recall": 0.8125,
+     "f1": 0.742857
     }
    },
    "django-ses": {
@@ -3177,7 +3177,7 @@
      "n": 6,
      "precision": 0.5,
      "recall": 1.0,
-     "f1": 0.667
+     "f1": 0.666667
     },
     "static union, same items": {
      "tp": 1,
@@ -3186,7 +3186,7 @@
      "n": 6,
      "precision": 1.0,
      "recall": 0.5,
-     "f1": 0.667
+     "f1": 0.666667
     }
    },
    "fastapi-injectable": {
@@ -3195,17 +3195,17 @@
      "fp": 11,
      "fn": 0,
      "n": 52,
-     "precision": 0.542,
+     "precision": 0.541667,
      "recall": 1.0,
-     "f1": 0.703
+     "f1": 0.702703
     },
     "static union, same items": {
      "tp": 12,
      "fp": 5,
      "fn": 1,
      "n": 52,
-     "precision": 0.706,
-     "recall": 0.923,
+     "precision": 0.705882,
+     "recall": 0.923077,
      "f1": 0.8
     }
    },
@@ -3225,8 +3225,8 @@
      "fn": 1,
      "n": 39,
      "precision": 1.0,
-     "recall": 0.889,
-     "f1": 0.941
+     "recall": 0.888889,
+     "f1": 0.941176
     }
    },
    "json-logging-python": {
@@ -3235,18 +3235,18 @@
      "fp": 36,
      "fn": 0,
      "n": 101,
-     "precision": 0.486,
+     "precision": 0.485714,
      "recall": 1.0,
-     "f1": 0.654
+     "f1": 0.653846
     },
     "static union, same items": {
      "tp": 16,
      "fp": 2,
      "fn": 18,
      "n": 101,
-     "precision": 0.889,
-     "recall": 0.471,
-     "f1": 0.615
+     "precision": 0.888889,
+     "recall": 0.470588,
+     "f1": 0.615385
     }
    },
    "jsonapi-requests": {
@@ -3255,18 +3255,18 @@
      "fp": 25,
      "fn": 6,
      "n": 113,
-     "precision": 0.597,
-     "recall": 0.86,
-     "f1": 0.705
+     "precision": 0.596774,
+     "recall": 0.860465,
+     "f1": 0.704762
     },
     "static union, same items": {
      "tp": 15,
      "fp": 1,
      "fn": 28,
      "n": 113,
-     "precision": 0.938,
-     "recall": 0.349,
-     "f1": 0.508
+     "precision": 0.9375,
+     "recall": 0.348837,
+     "f1": 0.508475
     }
    },
    "marshmallow-sqlalchemy": {
@@ -3275,7 +3275,7 @@
      "fp": 4,
      "fn": 0,
      "n": 48,
-     "precision": 0.778,
+     "precision": 0.777778,
      "recall": 1.0,
      "f1": 0.875
     },
@@ -3284,9 +3284,9 @@
      "fp": 1,
      "fn": 3,
      "n": 48,
-     "precision": 0.917,
-     "recall": 0.786,
-     "f1": 0.846
+     "precision": 0.916667,
+     "recall": 0.785714,
+     "f1": 0.846154
     }
    },
    "mcp-sequential-thinking": {
@@ -3315,18 +3315,18 @@
      "fp": 20,
      "fn": 0,
      "n": 128,
-     "precision": 0.677,
+     "precision": 0.677419,
      "recall": 1.0,
-     "f1": 0.808
+     "f1": 0.807692
     },
     "static union, same items": {
      "tp": 25,
      "fp": 9,
      "fn": 17,
      "n": 128,
-     "precision": 0.735,
-     "recall": 0.595,
-     "f1": 0.658
+     "precision": 0.735294,
+     "recall": 0.595238,
+     "f1": 0.657895
     }
    },
    "pr-agent": {
@@ -3335,8 +3335,8 @@
      "fp": 85,
      "fn": 1,
      "n": 180,
-     "precision": 0.336,
-     "recall": 0.977,
+     "precision": 0.335938,
+     "recall": 0.977273,
      "f1": 0.5
     },
     "static union, same items": {
@@ -3344,9 +3344,9 @@
      "fp": 21,
      "fn": 3,
      "n": 180,
-     "precision": 0.661,
-     "recall": 0.932,
-     "f1": 0.774
+     "precision": 0.66129,
+     "recall": 0.931818,
+     "f1": 0.773585
     }
    },
    "puncover": {
@@ -3355,7 +3355,7 @@
      "fp": 9,
      "fn": 0,
      "n": 27,
-     "precision": 0.471,
+     "precision": 0.470588,
      "recall": 1.0,
      "f1": 0.64
     },
@@ -3364,9 +3364,9 @@
      "fp": 8,
      "fn": 1,
      "n": 27,
-     "precision": 0.467,
+     "precision": 0.466667,
      "recall": 0.875,
-     "f1": 0.609
+     "f1": 0.608696
     }
    },
    "pykwalify": {
@@ -3375,9 +3375,9 @@
      "fp": 3,
      "fn": 8,
      "n": 135,
-     "precision": 0.949,
+     "precision": 0.949153,
      "recall": 0.875,
-     "f1": 0.911
+     "f1": 0.910569
     },
     "static union, same items": {
      "tp": 26,
@@ -3385,8 +3385,8 @@
      "fn": 38,
      "n": 135,
      "precision": 1.0,
-     "recall": 0.406,
-     "f1": 0.578
+     "recall": 0.40625,
+     "f1": 0.577778
     }
    },
    "pyrlp": {
@@ -3395,18 +3395,18 @@
      "fp": 34,
      "fn": 19,
      "n": 164,
-     "precision": 0.558,
-     "recall": 0.694,
-     "f1": 0.619
+     "precision": 0.558442,
+     "recall": 0.693548,
+     "f1": 0.618705
     },
     "static union, same items": {
      "tp": 32,
      "fp": 4,
      "fn": 30,
      "n": 164,
-     "precision": 0.889,
-     "recall": 0.516,
-     "f1": 0.653
+     "precision": 0.888889,
+     "recall": 0.516129,
+     "f1": 0.653061
     }
    },
    "pysui": {
@@ -3415,18 +3415,18 @@
      "fp": 18,
      "fn": 0,
      "n": 133,
-     "precision": 0.217,
+     "precision": 0.217391,
      "recall": 1.0,
-     "f1": 0.357
+     "f1": 0.357143
     },
     "static union, same items": {
      "tp": 5,
      "fp": 16,
      "fn": 0,
      "n": 133,
-     "precision": 0.238,
+     "precision": 0.238095,
      "recall": 1.0,
-     "f1": 0.385
+     "f1": 0.384615
     }
    },
    "python-lazy-object-proxy": {
@@ -3435,7 +3435,7 @@
      "fp": 6,
      "fn": 0,
      "n": 21,
-     "precision": 0.333,
+     "precision": 0.333333,
      "recall": 1.0,
      "f1": 0.5
     },
@@ -3455,18 +3455,18 @@
      "fp": 23,
      "fn": 2,
      "n": 130,
-     "precision": 0.521,
-     "recall": 0.926,
-     "f1": 0.667
+     "precision": 0.520833,
+     "recall": 0.925926,
+     "f1": 0.666667
     },
     "static union, same items": {
      "tp": 25,
      "fp": 2,
      "fn": 2,
      "n": 130,
-     "precision": 0.926,
-     "recall": 0.926,
-     "f1": 0.926
+     "precision": 0.925926,
+     "recall": 0.925926,
+     "f1": 0.925926
     }
    },
    "redbeat": {
@@ -3475,9 +3475,9 @@
      "fp": 7,
      "fn": 0,
      "n": 84,
-     "precision": 0.863,
+     "precision": 0.862745,
      "recall": 1.0,
-     "f1": 0.926
+     "f1": 0.926316
     },
     "static union, same items": {
      "tp": 29,
@@ -3485,8 +3485,8 @@
      "fn": 15,
      "n": 84,
      "precision": 1.0,
-     "recall": 0.659,
-     "f1": 0.795
+     "recall": 0.659091,
+     "f1": 0.794521
     }
    },
    "rejax": {
@@ -3495,9 +3495,9 @@
      "fp": 25,
      "fn": 0,
      "n": 117,
-     "precision": 0.39,
+     "precision": 0.390244,
      "recall": 1.0,
-     "f1": 0.561
+     "f1": 0.561404
     },
     "static union, same items": {
      "tp": 7,
@@ -3505,8 +3505,8 @@
      "fn": 9,
      "n": 117,
      "precision": 1.0,
-     "recall": 0.438,
-     "f1": 0.609
+     "recall": 0.4375,
+     "f1": 0.608696
     }
    },
    "rlm": {
@@ -3515,9 +3515,9 @@
      "fp": 32,
      "fn": 0,
      "n": 136,
-     "precision": 0.347,
+     "precision": 0.346939,
      "recall": 1.0,
-     "f1": 0.515
+     "f1": 0.515152
     },
     "static union, same items": {
      "tp": 15,
@@ -3525,8 +3525,8 @@
      "fn": 2,
      "n": 136,
      "precision": 0.75,
-     "recall": 0.882,
-     "f1": 0.811
+     "recall": 0.882353,
+     "f1": 0.810811
     }
    },
    "scrapyrt": {
@@ -3535,17 +3535,17 @@
      "fp": 10,
      "fn": 0,
      "n": 31,
-     "precision": 0.474,
+     "precision": 0.473684,
      "recall": 1.0,
-     "f1": 0.643
+     "f1": 0.642857
     },
     "static union, same items": {
      "tp": 8,
      "fp": 3,
      "fn": 1,
      "n": 31,
-     "precision": 0.727,
-     "recall": 0.889,
+     "precision": 0.727273,
+     "recall": 0.888889,
      "f1": 0.8
     }
    },
@@ -3555,8 +3555,8 @@
      "fp": 6,
      "fn": 8,
      "n": 164,
-     "precision": 0.824,
-     "recall": 0.778,
+     "precision": 0.823529,
+     "recall": 0.777778,
      "f1": 0.8
     },
     "static union, same items": {
@@ -3564,9 +3564,9 @@
      "fp": 3,
      "fn": 20,
      "n": 164,
-     "precision": 0.842,
-     "recall": 0.444,
-     "f1": 0.582
+     "precision": 0.842105,
+     "recall": 0.444444,
+     "f1": 0.581818
     }
    },
    "sqllineage": {
@@ -3575,18 +3575,18 @@
      "fp": 5,
      "fn": 9,
      "n": 214,
-     "precision": 0.943,
-     "recall": 0.902,
-     "f1": 0.922
+     "precision": 0.943182,
+     "recall": 0.902174,
+     "f1": 0.922222
     },
     "static union, same items": {
      "tp": 61,
      "fp": 11,
      "fn": 31,
      "n": 214,
-     "precision": 0.847,
-     "recall": 0.663,
-     "f1": 0.744
+     "precision": 0.847222,
+     "recall": 0.663043,
+     "f1": 0.743902
     }
    },
    "tensortrade-ng": {
@@ -3595,18 +3595,18 @@
      "fp": 24,
      "fn": 2,
      "n": 208,
-     "precision": 0.586,
-     "recall": 0.944,
-     "f1": 0.723
+     "precision": 0.586207,
+     "recall": 0.944444,
+     "f1": 0.723404
     },
     "static union, same items": {
      "tp": 14,
      "fp": 3,
      "fn": 22,
      "n": 208,
-     "precision": 0.824,
-     "recall": 0.389,
-     "f1": 0.528
+     "precision": 0.823529,
+     "recall": 0.388889,
+     "f1": 0.528302
     }
    },
    "term-image": {
@@ -3615,18 +3615,18 @@
      "fp": 28,
      "fn": 5,
      "n": 142,
-     "precision": 0.569,
-     "recall": 0.881,
-     "f1": 0.692
+     "precision": 0.569231,
+     "recall": 0.880952,
+     "f1": 0.691589
     },
     "static union, same items": {
      "tp": 37,
      "fp": 12,
      "fn": 5,
      "n": 142,
-     "precision": 0.755,
-     "recall": 0.881,
-     "f1": 0.813
+     "precision": 0.755102,
+     "recall": 0.880952,
+     "f1": 0.813187
     }
    },
    "throttled": {
@@ -3635,18 +3635,18 @@
      "fp": 27,
      "fn": 0,
      "n": 43,
-     "precision": 0.289,
+     "precision": 0.289474,
      "recall": 1.0,
-     "f1": 0.449
+     "f1": 0.44898
     },
     "static union, same items": {
      "tp": 11,
      "fp": 27,
      "fn": 0,
      "n": 43,
-     "precision": 0.289,
+     "precision": 0.289474,
      "recall": 1.0,
-     "f1": 0.449
+     "f1": 0.44898
     }
    },
    "toolz": {
@@ -3655,9 +3655,9 @@
      "fp": 27,
      "fn": 0,
      "n": 130,
-     "precision": 0.526,
+     "precision": 0.526316,
      "recall": 1.0,
-     "f1": 0.69
+     "f1": 0.689655
     },
     "static union, same items": {
      "tp": 29,
@@ -3665,8 +3665,8 @@
      "fn": 1,
      "n": 130,
      "precision": 1.0,
-     "recall": 0.967,
-     "f1": 0.983
+     "recall": 0.966667,
+     "f1": 0.983051
     }
    },
    "xacro": {
@@ -3676,17 +3676,17 @@
      "fn": 1,
      "n": 76,
      "precision": 0.75,
-     "recall": 0.968,
-     "f1": 0.845
+     "recall": 0.967742,
+     "f1": 0.84507
     },
     "static union, same items": {
      "tp": 31,
      "fp": 2,
      "fn": 0,
      "n": 76,
-     "precision": 0.939,
+     "precision": 0.939394,
      "recall": 1.0,
-     "f1": 0.969
+     "f1": 0.96875
     }
    }
   },
@@ -3698,17 +3698,17 @@
      "fn": 16,
      "n": 416,
      "precision": 0.75,
-     "recall": 0.652,
-     "f1": 0.698
+     "recall": 0.652174,
+     "f1": 0.697674
     },
     "static union, same items": {
      "tp": 22,
      "fp": 1,
      "fn": 24,
      "n": 416,
-     "precision": 0.957,
-     "recall": 0.478,
-     "f1": 0.638
+     "precision": 0.956522,
+     "recall": 0.478261,
+     "f1": 0.637681
     }
    },
    "ShivyC": {
@@ -3717,18 +3717,18 @@
      "fp": 34,
      "fn": 80,
      "n": 495,
-     "precision": 0.742,
-     "recall": 0.551,
-     "f1": 0.632
+     "precision": 0.742424,
+     "recall": 0.550562,
+     "f1": 0.632258
     },
     "static union, same items": {
      "tp": 63,
      "fp": 6,
      "fn": 115,
      "n": 495,
-     "precision": 0.913,
-     "recall": 0.354,
-     "f1": 0.51
+     "precision": 0.913043,
+     "recall": 0.353933,
+     "f1": 0.510121
     }
    },
    "TradingView-Screener": {
@@ -3757,18 +3757,18 @@
      "fp": 16,
      "fn": 8,
      "n": 169,
-     "precision": 0.686,
-     "recall": 0.814,
-     "f1": 0.745
+     "precision": 0.686275,
+     "recall": 0.813953,
+     "f1": 0.744681
     },
     "static union, same items": {
      "tp": 32,
      "fp": 2,
      "fn": 11,
      "n": 169,
-     "precision": 0.941,
-     "recall": 0.744,
-     "f1": 0.831
+     "precision": 0.941176,
+     "recall": 0.744186,
+     "f1": 0.831169
     }
    },
    "apiflask": {
@@ -3777,18 +3777,18 @@
      "fp": 2,
      "fn": 2,
      "n": 104,
-     "precision": 0.931,
-     "recall": 0.931,
-     "f1": 0.931
+     "precision": 0.931034,
+     "recall": 0.931034,
+     "f1": 0.931034
     },
     "static union, same items": {
      "tp": 22,
      "fp": 1,
      "fn": 7,
      "n": 104,
-     "precision": 0.957,
-     "recall": 0.759,
-     "f1": 0.846
+     "precision": 0.956522,
+     "recall": 0.758621,
+     "f1": 0.846154
     }
    },
    "autoray": {
@@ -3797,8 +3797,8 @@
      "fp": 7,
      "fn": 3,
      "n": 220,
-     "precision": 0.682,
-     "recall": 0.833,
+     "precision": 0.681818,
+     "recall": 0.833333,
      "f1": 0.75
     },
     "static union, same items": {
@@ -3817,9 +3817,9 @@
      "fp": 40,
      "fn": 0,
      "n": 136,
-     "precision": 0.184,
+     "precision": 0.183673,
      "recall": 1.0,
-     "f1": 0.31
+     "f1": 0.310345
     },
     "static union, same items": {
      "tp": 9,
@@ -3837,17 +3837,17 @@
      "fp": 16,
      "fn": 3,
      "n": 81,
-     "precision": 0.529,
-     "recall": 0.857,
-     "f1": 0.655
+     "precision": 0.529412,
+     "recall": 0.857143,
+     "f1": 0.654545
     },
     "static union, same items": {
      "tp": 13,
      "fp": 6,
      "fn": 8,
      "n": 81,
-     "precision": 0.684,
-     "recall": 0.619,
+     "precision": 0.684211,
+     "recall": 0.619048,
      "f1": 0.65
     }
    },
@@ -3857,18 +3857,18 @@
      "fp": 44,
      "fn": 22,
      "n": 906,
-     "precision": 0.81,
-     "recall": 0.895,
-     "f1": 0.851
+     "precision": 0.810345,
+     "recall": 0.895238,
+     "f1": 0.850679
     },
     "static union, same items": {
      "tp": 159,
      "fp": 13,
      "fn": 51,
      "n": 906,
-     "precision": 0.924,
-     "recall": 0.757,
-     "f1": 0.832
+     "precision": 0.924419,
+     "recall": 0.757143,
+     "f1": 0.832461
     }
    },
    "compressed-tensors": {
@@ -3877,18 +3877,18 @@
      "fp": 53,
      "fn": 3,
      "n": 192,
-     "precision": 0.274,
-     "recall": 0.87,
-     "f1": 0.417
+     "precision": 0.273973,
+     "recall": 0.869565,
+     "f1": 0.416667
     },
     "static union, same items": {
      "tp": 20,
      "fp": 6,
      "fn": 3,
      "n": 192,
-     "precision": 0.769,
-     "recall": 0.87,
-     "f1": 0.816
+     "precision": 0.769231,
+     "recall": 0.869565,
+     "f1": 0.816327
     }
    },
    "confluence-markdown-exporter": {
@@ -3898,17 +3898,17 @@
      "fn": 1,
      "n": 148,
      "precision": 0.62,
-     "recall": 0.969,
-     "f1": 0.756
+     "recall": 0.96875,
+     "f1": 0.756098
     },
     "static union, same items": {
      "tp": 21,
      "fp": 8,
      "fn": 11,
      "n": 148,
-     "precision": 0.724,
-     "recall": 0.656,
-     "f1": 0.689
+     "precision": 0.724138,
+     "recall": 0.65625,
+     "f1": 0.688525
     }
    },
    "creosote": {
@@ -3919,7 +3919,7 @@
      "n": 15,
      "precision": 0.8,
      "recall": 1.0,
-     "f1": 0.889
+     "f1": 0.888889
     },
     "static union, same items": {
      "tp": 7,
@@ -3928,7 +3928,7 @@
      "n": 15,
      "precision": 1.0,
      "recall": 0.875,
-     "f1": 0.933
+     "f1": 0.933333
     }
    },
    "deepblast": {
@@ -3937,18 +3937,18 @@
      "fp": 22,
      "fn": 0,
      "n": 87,
-     "precision": 0.421,
+     "precision": 0.421053,
      "recall": 1.0,
-     "f1": 0.593
+     "f1": 0.592593
     },
     "static union, same items": {
      "tp": 13,
      "fp": 6,
      "fn": 3,
      "n": 87,
-     "precision": 0.684,
-     "recall": 0.812,
-     "f1": 0.743
+     "precision": 0.684211,
+     "recall": 0.8125,
+     "f1": 0.742857
     }
    },
    "django-ses": {
@@ -3968,7 +3968,7 @@
      "n": 6,
      "precision": 1.0,
      "recall": 0.5,
-     "f1": 0.667
+     "f1": 0.666667
     }
    },
    "fastapi-injectable": {
@@ -3978,16 +3978,16 @@
      "fn": 2,
      "n": 52,
      "precision": 0.55,
-     "recall": 0.846,
-     "f1": 0.667
+     "recall": 0.846154,
+     "f1": 0.666667
     },
     "static union, same items": {
      "tp": 12,
      "fp": 5,
      "fn": 1,
      "n": 52,
-     "precision": 0.706,
-     "recall": 0.923,
+     "precision": 0.705882,
+     "recall": 0.923077,
      "f1": 0.8
     }
    },
@@ -3999,7 +3999,7 @@
      "n": 39,
      "precision": 0.5,
      "recall": 1.0,
-     "f1": 0.667
+     "f1": 0.666667
     },
     "static union, same items": {
      "tp": 8,
@@ -4007,8 +4007,8 @@
      "fn": 1,
      "n": 39,
      "precision": 1.0,
-     "recall": 0.889,
-     "f1": 0.941
+     "recall": 0.888889,
+     "f1": 0.941176
     }
    },
    "json-logging-python": {
@@ -4017,18 +4017,18 @@
      "fp": 13,
      "fn": 12,
      "n": 101,
-     "precision": 0.629,
-     "recall": 0.647,
-     "f1": 0.638
+     "precision": 0.628571,
+     "recall": 0.647059,
+     "f1": 0.637681
     },
     "static union, same items": {
      "tp": 16,
      "fp": 2,
      "fn": 18,
      "n": 101,
-     "precision": 0.889,
-     "recall": 0.471,
-     "f1": 0.615
+     "precision": 0.888889,
+     "recall": 0.470588,
+     "f1": 0.615385
     }
    },
    "jsonapi-requests": {
@@ -4038,17 +4038,17 @@
      "fn": 9,
      "n": 112,
      "precision": 0.68,
-     "recall": 0.791,
-     "f1": 0.731
+     "recall": 0.790698,
+     "f1": 0.731183
     },
     "static union, same items": {
      "tp": 15,
      "fp": 1,
      "fn": 28,
      "n": 112,
-     "precision": 0.938,
-     "recall": 0.349,
-     "f1": 0.508
+     "precision": 0.9375,
+     "recall": 0.348837,
+     "f1": 0.508475
     }
    },
    "marshmallow-sqlalchemy": {
@@ -4057,18 +4057,18 @@
      "fp": 2,
      "fn": 1,
      "n": 48,
-     "precision": 0.867,
-     "recall": 0.929,
-     "f1": 0.897
+     "precision": 0.866667,
+     "recall": 0.928571,
+     "f1": 0.896552
     },
     "static union, same items": {
      "tp": 11,
      "fp": 1,
      "fn": 3,
      "n": 48,
-     "precision": 0.917,
-     "recall": 0.786,
-     "f1": 0.846
+     "precision": 0.916667,
+     "recall": 0.785714,
+     "f1": 0.846154
     }
    },
    "mcp-sequential-thinking": {
@@ -4098,17 +4098,17 @@
      "fn": 2,
      "n": 128,
      "precision": 0.625,
-     "recall": 0.952,
-     "f1": 0.755
+     "recall": 0.952381,
+     "f1": 0.754717
     },
     "static union, same items": {
      "tp": 25,
      "fp": 9,
      "fn": 17,
      "n": 128,
-     "precision": 0.735,
-     "recall": 0.595,
-     "f1": 0.658
+     "precision": 0.735294,
+     "recall": 0.595238,
+     "f1": 0.657895
     }
    },
    "pr-agent": {
@@ -4117,18 +4117,18 @@
      "fp": 83,
      "fn": 6,
      "n": 180,
-     "precision": 0.314,
-     "recall": 0.864,
-     "f1": 0.461
+     "precision": 0.31405,
+     "recall": 0.863636,
+     "f1": 0.460606
     },
     "static union, same items": {
      "tp": 41,
      "fp": 21,
      "fn": 3,
      "n": 180,
-     "precision": 0.661,
-     "recall": 0.932,
-     "f1": 0.774
+     "precision": 0.66129,
+     "recall": 0.931818,
+     "f1": 0.773585
     }
    },
    "puncover": {
@@ -4137,18 +4137,18 @@
      "fp": 8,
      "fn": 1,
      "n": 27,
-     "precision": 0.467,
+     "precision": 0.466667,
      "recall": 0.875,
-     "f1": 0.609
+     "f1": 0.608696
     },
     "static union, same items": {
      "tp": 7,
      "fp": 8,
      "fn": 1,
      "n": 27,
-     "precision": 0.467,
+     "precision": 0.466667,
      "recall": 0.875,
-     "f1": 0.609
+     "f1": 0.608696
     }
    },
    "pykwalify": {
@@ -4157,9 +4157,9 @@
      "fp": 5,
      "fn": 6,
      "n": 135,
-     "precision": 0.921,
-     "recall": 0.906,
-     "f1": 0.913
+     "precision": 0.920635,
+     "recall": 0.90625,
+     "f1": 0.913386
     },
     "static union, same items": {
      "tp": 26,
@@ -4167,8 +4167,8 @@
      "fn": 38,
      "n": 135,
      "precision": 1.0,
-     "recall": 0.406,
-     "f1": 0.578
+     "recall": 0.40625,
+     "f1": 0.577778
     }
    },
    "pyrlp": {
@@ -4177,18 +4177,18 @@
      "fp": 11,
      "fn": 22,
      "n": 164,
-     "precision": 0.784,
-     "recall": 0.645,
-     "f1": 0.708
+     "precision": 0.784314,
+     "recall": 0.645161,
+     "f1": 0.707965
     },
     "static union, same items": {
      "tp": 32,
      "fp": 4,
      "fn": 30,
      "n": 164,
-     "precision": 0.889,
-     "recall": 0.516,
-     "f1": 0.653
+     "precision": 0.888889,
+     "recall": 0.516129,
+     "f1": 0.653061
     }
    },
    "pysui": {
@@ -4197,18 +4197,18 @@
      "fp": 19,
      "fn": 0,
      "n": 133,
-     "precision": 0.208,
+     "precision": 0.208333,
      "recall": 1.0,
-     "f1": 0.345
+     "f1": 0.344828
     },
     "static union, same items": {
      "tp": 5,
      "fp": 16,
      "fn": 0,
      "n": 133,
-     "precision": 0.238,
+     "precision": 0.238095,
      "recall": 1.0,
-     "f1": 0.385
+     "f1": 0.384615
     }
    },
    "python-lazy-object-proxy": {
@@ -4218,8 +4218,8 @@
      "fn": 1,
      "n": 21,
      "precision": 0.25,
-     "recall": 0.667,
-     "f1": 0.364
+     "recall": 0.666667,
+     "f1": 0.363636
     },
     "static union, same items": {
      "tp": 3,
@@ -4237,18 +4237,18 @@
      "fp": 19,
      "fn": 2,
      "n": 130,
-     "precision": 0.568,
-     "recall": 0.926,
-     "f1": 0.704
+     "precision": 0.568182,
+     "recall": 0.925926,
+     "f1": 0.704225
     },
     "static union, same items": {
      "tp": 25,
      "fp": 2,
      "fn": 2,
      "n": 130,
-     "precision": 0.926,
-     "recall": 0.926,
-     "f1": 0.926
+     "precision": 0.925926,
+     "recall": 0.925926,
+     "f1": 0.925926
     }
    },
    "redbeat": {
@@ -4257,9 +4257,9 @@
      "fp": 2,
      "fn": 0,
      "n": 84,
-     "precision": 0.957,
+     "precision": 0.956522,
      "recall": 1.0,
-     "f1": 0.978
+     "f1": 0.977778
     },
     "static union, same items": {
      "tp": 29,
@@ -4267,8 +4267,8 @@
      "fn": 15,
      "n": 84,
      "precision": 1.0,
-     "recall": 0.659,
-     "f1": 0.795
+     "recall": 0.659091,
+     "f1": 0.794521
     }
    },
    "rejax": {
@@ -4277,9 +4277,9 @@
      "fp": 15,
      "fn": 0,
      "n": 117,
-     "precision": 0.516,
+     "precision": 0.516129,
      "recall": 1.0,
-     "f1": 0.681
+     "f1": 0.680851
     },
     "static union, same items": {
      "tp": 7,
@@ -4287,8 +4287,8 @@
      "fn": 9,
      "n": 117,
      "precision": 1.0,
-     "recall": 0.438,
-     "f1": 0.609
+     "recall": 0.4375,
+     "f1": 0.608696
     }
    },
    "rlm": {
@@ -4297,9 +4297,9 @@
      "fp": 26,
      "fn": 1,
      "n": 135,
-     "precision": 0.381,
-     "recall": 0.941,
-     "f1": 0.542
+     "precision": 0.380952,
+     "recall": 0.941176,
+     "f1": 0.542373
     },
     "static union, same items": {
      "tp": 15,
@@ -4307,8 +4307,8 @@
      "fn": 2,
      "n": 135,
      "precision": 0.75,
-     "recall": 0.882,
-     "f1": 0.811
+     "recall": 0.882353,
+     "f1": 0.810811
     }
    },
    "scrapyrt": {
@@ -4317,17 +4317,17 @@
      "fp": 5,
      "fn": 0,
      "n": 31,
-     "precision": 0.643,
+     "precision": 0.642857,
      "recall": 1.0,
-     "f1": 0.783
+     "f1": 0.782609
     },
     "static union, same items": {
      "tp": 8,
      "fp": 3,
      "fn": 1,
      "n": 31,
-     "precision": 0.727,
-     "recall": 0.889,
+     "precision": 0.727273,
+     "recall": 0.888889,
      "f1": 0.8
     }
    },
@@ -4337,18 +4337,18 @@
      "fp": 4,
      "fn": 7,
      "n": 164,
-     "precision": 0.879,
-     "recall": 0.806,
-     "f1": 0.841
+     "precision": 0.878788,
+     "recall": 0.805556,
+     "f1": 0.84058
     },
     "static union, same items": {
      "tp": 16,
      "fp": 3,
      "fn": 20,
      "n": 164,
-     "precision": 0.842,
-     "recall": 0.444,
-     "f1": 0.582
+     "precision": 0.842105,
+     "recall": 0.444444,
+     "f1": 0.581818
     }
    },
    "sqllineage": {
@@ -4357,18 +4357,18 @@
      "fp": 18,
      "fn": 11,
      "n": 214,
-     "precision": 0.818,
-     "recall": 0.88,
-     "f1": 0.848
+     "precision": 0.818182,
+     "recall": 0.880435,
+     "f1": 0.848168
     },
     "static union, same items": {
      "tp": 61,
      "fp": 11,
      "fn": 31,
      "n": 214,
-     "precision": 0.847,
-     "recall": 0.663,
-     "f1": 0.744
+     "precision": 0.847222,
+     "recall": 0.663043,
+     "f1": 0.743902
     }
    },
    "tensortrade-ng": {
@@ -4377,18 +4377,18 @@
      "fp": 36,
      "fn": 4,
      "n": 208,
-     "precision": 0.471,
-     "recall": 0.889,
-     "f1": 0.615
+     "precision": 0.470588,
+     "recall": 0.888889,
+     "f1": 0.615385
     },
     "static union, same items": {
      "tp": 14,
      "fp": 3,
      "fn": 22,
      "n": 208,
-     "precision": 0.824,
-     "recall": 0.389,
-     "f1": 0.528
+     "precision": 0.823529,
+     "recall": 0.388889,
+     "f1": 0.528302
     }
    },
    "term-image": {
@@ -4397,18 +4397,18 @@
      "fp": 22,
      "fn": 7,
      "n": 142,
-     "precision": 0.614,
-     "recall": 0.833,
-     "f1": 0.707
+     "precision": 0.614035,
+     "recall": 0.833333,
+     "f1": 0.707071
     },
     "static union, same items": {
      "tp": 37,
      "fp": 12,
      "fn": 5,
      "n": 142,
-     "precision": 0.755,
-     "recall": 0.881,
-     "f1": 0.813
+     "precision": 0.755102,
+     "recall": 0.880952,
+     "f1": 0.813187
     }
    },
    "throttled": {
@@ -4417,18 +4417,18 @@
      "fp": 27,
      "fn": 0,
      "n": 43,
-     "precision": 0.289,
+     "precision": 0.289474,
      "recall": 1.0,
-     "f1": 0.449
+     "f1": 0.44898
     },
     "static union, same items": {
      "tp": 11,
      "fp": 27,
      "fn": 0,
      "n": 43,
-     "precision": 0.289,
+     "precision": 0.289474,
      "recall": 1.0,
-     "f1": 0.449
+     "f1": 0.44898
     }
    },
    "toolz": {
@@ -4437,9 +4437,9 @@
      "fp": 24,
      "fn": 0,
      "n": 128,
-     "precision": 0.556,
+     "precision": 0.555556,
      "recall": 1.0,
-     "f1": 0.714
+     "f1": 0.714286
     },
     "static union, same items": {
      "tp": 29,
@@ -4447,8 +4447,8 @@
      "fn": 1,
      "n": 128,
      "precision": 1.0,
-     "recall": 0.967,
-     "f1": 0.983
+     "recall": 0.966667,
+     "f1": 0.983051
     }
    },
    "xacro": {
@@ -4457,18 +4457,18 @@
      "fp": 11,
      "fn": 1,
      "n": 75,
-     "precision": 0.732,
-     "recall": 0.968,
-     "f1": 0.833
+     "precision": 0.731707,
+     "recall": 0.967742,
+     "f1": 0.833333
     },
     "static union, same items": {
      "tp": 31,
      "fp": 2,
      "fn": 0,
      "n": 75,
-     "precision": 0.939,
+     "precision": 0.939394,
      "recall": 1.0,
-     "f1": 0.969
+     "f1": 0.96875
     }
    }
   },
@@ -4479,18 +4479,18 @@
      "fp": 4,
      "fn": 17,
      "n": 395,
-     "precision": 0.879,
-     "recall": 0.63,
-     "f1": 0.734
+     "precision": 0.878788,
+     "recall": 0.630435,
+     "f1": 0.734177
     },
     "static union, same items": {
      "tp": 22,
      "fp": 1,
      "fn": 24,
      "n": 395,
-     "precision": 0.957,
-     "recall": 0.478,
-     "f1": 0.638
+     "precision": 0.956522,
+     "recall": 0.478261,
+     "f1": 0.637681
     }
    },
    "ShivyC": {
@@ -4499,18 +4499,18 @@
      "fp": 16,
      "fn": 86,
      "n": 495,
-     "precision": 0.852,
-     "recall": 0.517,
-     "f1": 0.643
+     "precision": 0.851852,
+     "recall": 0.516854,
+     "f1": 0.643357
     },
     "static union, same items": {
      "tp": 63,
      "fp": 6,
      "fn": 115,
      "n": 495,
-     "precision": 0.913,
-     "recall": 0.354,
-     "f1": 0.51
+     "precision": 0.913043,
+     "recall": 0.353933,
+     "f1": 0.510121
     }
    },
    "TradingView-Screener": {
@@ -4539,18 +4539,18 @@
      "fp": 13,
      "fn": 8,
      "n": 169,
-     "precision": 0.729,
-     "recall": 0.814,
-     "f1": 0.769
+     "precision": 0.729167,
+     "recall": 0.813953,
+     "f1": 0.769231
     },
     "static union, same items": {
      "tp": 32,
      "fp": 2,
      "fn": 11,
      "n": 169,
-     "precision": 0.941,
-     "recall": 0.744,
-     "f1": 0.831
+     "precision": 0.941176,
+     "recall": 0.744186,
+     "f1": 0.831169
     }
    },
    "apiflask": {
@@ -4560,17 +4560,17 @@
      "fn": 5,
      "n": 104,
      "precision": 0.75,
-     "recall": 0.828,
-     "f1": 0.787
+     "recall": 0.827586,
+     "f1": 0.786885
     },
     "static union, same items": {
      "tp": 22,
      "fp": 1,
      "fn": 7,
      "n": 104,
-     "precision": 0.957,
-     "recall": 0.759,
-     "f1": 0.846
+     "precision": 0.956522,
+     "recall": 0.758621,
+     "f1": 0.846154
     }
    },
    "autoray": {
@@ -4579,9 +4579,9 @@
      "fp": 40,
      "fn": 0,
      "n": 220,
-     "precision": 0.31,
+     "precision": 0.310345,
      "recall": 1.0,
-     "f1": 0.474
+     "f1": 0.473684
     },
     "static union, same items": {
      "tp": 18,
@@ -4599,9 +4599,9 @@
      "fp": 20,
      "fn": 0,
      "n": 136,
-     "precision": 0.31,
+     "precision": 0.310345,
      "recall": 1.0,
-     "f1": 0.474
+     "f1": 0.473684
     },
     "static union, same items": {
      "tp": 9,
@@ -4620,7 +4620,7 @@
      "fn": 3,
      "n": 77,
      "precision": 0.75,
-     "recall": 0.857,
+     "recall": 0.857143,
      "f1": 0.8
     },
     "static union, same items": {
@@ -4628,8 +4628,8 @@
      "fp": 6,
      "fn": 8,
      "n": 77,
-     "precision": 0.684,
-     "recall": 0.619,
+     "precision": 0.684211,
+     "recall": 0.619048,
      "f1": 0.65
     }
    },
@@ -4639,18 +4639,18 @@
      "fp": 31,
      "fn": 43,
      "n": 906,
-     "precision": 0.843,
-     "recall": 0.795,
-     "f1": 0.819
+     "precision": 0.843434,
+     "recall": 0.795238,
+     "f1": 0.818627
     },
     "static union, same items": {
      "tp": 159,
      "fp": 13,
      "fn": 51,
      "n": 906,
-     "precision": 0.924,
-     "recall": 0.757,
-     "f1": 0.832
+     "precision": 0.924419,
+     "recall": 0.757143,
+     "f1": 0.832461
     }
    },
    "compressed-tensors": {
@@ -4659,18 +4659,18 @@
      "fp": 13,
      "fn": 3,
      "n": 192,
-     "precision": 0.606,
-     "recall": 0.87,
-     "f1": 0.714
+     "precision": 0.606061,
+     "recall": 0.869565,
+     "f1": 0.714286
     },
     "static union, same items": {
      "tp": 20,
      "fp": 6,
      "fn": 3,
      "n": 192,
-     "precision": 0.769,
-     "recall": 0.87,
-     "f1": 0.816
+     "precision": 0.769231,
+     "recall": 0.869565,
+     "f1": 0.816327
     }
    },
    "confluence-markdown-exporter": {
@@ -4680,17 +4680,17 @@
      "fn": 2,
      "n": 148,
      "precision": 0.6,
-     "recall": 0.938,
-     "f1": 0.732
+     "recall": 0.9375,
+     "f1": 0.731707
     },
     "static union, same items": {
      "tp": 21,
      "fp": 8,
      "fn": 11,
      "n": 148,
-     "precision": 0.724,
-     "recall": 0.656,
-     "f1": 0.689
+     "precision": 0.724138,
+     "recall": 0.65625,
+     "f1": 0.688525
     }
    },
    "creosote": {
@@ -4701,7 +4701,7 @@
      "n": 15,
      "precision": 1.0,
      "recall": 0.875,
-     "f1": 0.933
+     "f1": 0.933333
     },
     "static union, same items": {
      "tp": 7,
@@ -4710,7 +4710,7 @@
      "n": 15,
      "precision": 1.0,
      "recall": 0.875,
-     "f1": 0.933
+     "f1": 0.933333
     }
    },
    "deepblast": {
@@ -4719,18 +4719,18 @@
      "fp": 7,
      "fn": 0,
      "n": 87,
-     "precision": 0.696,
+     "precision": 0.695652,
      "recall": 1.0,
-     "f1": 0.821
+     "f1": 0.820513
     },
     "static union, same items": {
      "tp": 13,
      "fp": 6,
      "fn": 3,
      "n": 87,
-     "precision": 0.684,
-     "recall": 0.812,
-     "f1": 0.743
+     "precision": 0.684211,
+     "recall": 0.8125,
+     "f1": 0.742857
     }
    },
    "django-ses": {
@@ -4750,7 +4750,7 @@
      "n": 6,
      "precision": 1.0,
      "recall": 0.5,
-     "f1": 0.667
+     "f1": 0.666667
     }
    },
    "fastapi-injectable": {
@@ -4759,17 +4759,17 @@
      "fp": 10,
      "fn": 0,
      "n": 52,
-     "precision": 0.565,
+     "precision": 0.565217,
      "recall": 1.0,
-     "f1": 0.722
+     "f1": 0.722222
     },
     "static union, same items": {
      "tp": 12,
      "fp": 5,
      "fn": 1,
      "n": 52,
-     "precision": 0.706,
-     "recall": 0.923,
+     "precision": 0.705882,
+     "recall": 0.923077,
      "f1": 0.8
     }
    },
@@ -4779,9 +4779,9 @@
      "fp": 4,
      "fn": 0,
      "n": 39,
-     "precision": 0.692,
+     "precision": 0.692308,
      "recall": 1.0,
-     "f1": 0.818
+     "f1": 0.818182
     },
     "static union, same items": {
      "tp": 8,
@@ -4789,8 +4789,8 @@
      "fn": 1,
      "n": 39,
      "precision": 1.0,
-     "recall": 0.889,
-     "f1": 0.941
+     "recall": 0.888889,
+     "f1": 0.941176
     }
    },
    "json-logging-python": {
@@ -4799,18 +4799,18 @@
      "fp": 11,
      "fn": 14,
      "n": 101,
-     "precision": 0.645,
-     "recall": 0.588,
-     "f1": 0.615
+     "precision": 0.645161,
+     "recall": 0.588235,
+     "f1": 0.615385
     },
     "static union, same items": {
      "tp": 16,
      "fp": 2,
      "fn": 18,
      "n": 101,
-     "precision": 0.889,
-     "recall": 0.471,
-     "f1": 0.615
+     "precision": 0.888889,
+     "recall": 0.470588,
+     "f1": 0.615385
     }
    },
    "jsonapi-requests": {
@@ -4819,18 +4819,18 @@
      "fp": 14,
      "fn": 9,
      "n": 113,
-     "precision": 0.708,
-     "recall": 0.791,
-     "f1": 0.747
+     "precision": 0.708333,
+     "recall": 0.790698,
+     "f1": 0.747253
     },
     "static union, same items": {
      "tp": 15,
      "fp": 1,
      "fn": 28,
      "n": 113,
-     "precision": 0.938,
-     "recall": 0.349,
-     "f1": 0.508
+     "precision": 0.9375,
+     "recall": 0.348837,
+     "f1": 0.508475
     }
    },
    "marshmallow-sqlalchemy": {
@@ -4839,18 +4839,18 @@
      "fp": 1,
      "fn": 2,
      "n": 48,
-     "precision": 0.923,
-     "recall": 0.857,
-     "f1": 0.889
+     "precision": 0.923077,
+     "recall": 0.857143,
+     "f1": 0.888889
     },
     "static union, same items": {
      "tp": 11,
      "fp": 1,
      "fn": 3,
      "n": 48,
-     "precision": 0.917,
-     "recall": 0.786,
-     "f1": 0.846
+     "precision": 0.916667,
+     "recall": 0.785714,
+     "f1": 0.846154
     }
    },
    "mcp-sequential-thinking": {
@@ -4879,18 +4879,18 @@
      "fp": 19,
      "fn": 2,
      "n": 128,
-     "precision": 0.678,
-     "recall": 0.952,
-     "f1": 0.792
+     "precision": 0.677966,
+     "recall": 0.952381,
+     "f1": 0.792079
     },
     "static union, same items": {
      "tp": 25,
      "fp": 9,
      "fn": 17,
      "n": 128,
-     "precision": 0.735,
-     "recall": 0.595,
-     "f1": 0.658
+     "precision": 0.735294,
+     "recall": 0.595238,
+     "f1": 0.657895
     }
    },
    "pr-agent": {
@@ -4899,18 +4899,18 @@
      "fp": 22,
      "fn": 3,
      "n": 180,
-     "precision": 0.651,
-     "recall": 0.932,
-     "f1": 0.766
+     "precision": 0.650794,
+     "recall": 0.931818,
+     "f1": 0.766355
     },
     "static union, same items": {
      "tp": 41,
      "fp": 21,
      "fn": 3,
      "n": 180,
-     "precision": 0.661,
-     "recall": 0.932,
-     "f1": 0.774
+     "precision": 0.66129,
+     "recall": 0.931818,
+     "f1": 0.773585
     }
    },
    "puncover": {
@@ -4919,7 +4919,7 @@
      "fp": 9,
      "fn": 0,
      "n": 27,
-     "precision": 0.471,
+     "precision": 0.470588,
      "recall": 1.0,
      "f1": 0.64
     },
@@ -4928,9 +4928,9 @@
      "fp": 8,
      "fn": 1,
      "n": 27,
-     "precision": 0.467,
+     "precision": 0.466667,
      "recall": 0.875,
-     "f1": 0.609
+     "f1": 0.608696
     }
    },
    "pykwalify": {
@@ -4939,9 +4939,9 @@
      "fp": 1,
      "fn": 7,
      "n": 135,
-     "precision": 0.983,
-     "recall": 0.891,
-     "f1": 0.934
+     "precision": 0.982759,
+     "recall": 0.890625,
+     "f1": 0.934426
     },
     "static union, same items": {
      "tp": 26,
@@ -4949,8 +4949,8 @@
      "fn": 38,
      "n": 135,
      "precision": 1.0,
-     "recall": 0.406,
-     "f1": 0.578
+     "recall": 0.40625,
+     "f1": 0.577778
     }
    },
    "pyrlp": {
@@ -4959,18 +4959,18 @@
      "fp": 5,
      "fn": 31,
      "n": 164,
-     "precision": 0.861,
+     "precision": 0.861111,
      "recall": 0.5,
-     "f1": 0.633
+     "f1": 0.632653
     },
     "static union, same items": {
      "tp": 32,
      "fp": 4,
      "fn": 30,
      "n": 164,
-     "precision": 0.889,
-     "recall": 0.516,
-     "f1": 0.653
+     "precision": 0.888889,
+     "recall": 0.516129,
+     "f1": 0.653061
     }
    },
    "pysui": {
@@ -4981,16 +4981,16 @@
      "n": 133,
      "precision": 0.2,
      "recall": 1.0,
-     "f1": 0.333
+     "f1": 0.333333
     },
     "static union, same items": {
      "tp": 5,
      "fp": 16,
      "fn": 0,
      "n": 133,
-     "precision": 0.238,
+     "precision": 0.238095,
      "recall": 1.0,
-     "f1": 0.385
+     "f1": 0.384615
     }
    },
    "python-lazy-object-proxy": {
@@ -4999,9 +4999,9 @@
      "fp": 5,
      "fn": 2,
      "n": 21,
-     "precision": 0.167,
-     "recall": 0.333,
-     "f1": 0.222
+     "precision": 0.166667,
+     "recall": 0.333333,
+     "f1": 0.222222
     },
     "static union, same items": {
      "tp": 3,
@@ -5019,18 +5019,18 @@
      "fp": 21,
      "fn": 4,
      "n": 130,
-     "precision": 0.523,
-     "recall": 0.852,
-     "f1": 0.648
+     "precision": 0.522727,
+     "recall": 0.851852,
+     "f1": 0.647887
     },
     "static union, same items": {
      "tp": 25,
      "fp": 2,
      "fn": 2,
      "n": 130,
-     "precision": 0.926,
-     "recall": 0.926,
-     "f1": 0.926
+     "precision": 0.925926,
+     "recall": 0.925926,
+     "f1": 0.925926
     }
    },
    "redbeat": {
@@ -5039,9 +5039,9 @@
      "fp": 1,
      "fn": 1,
      "n": 84,
-     "precision": 0.977,
-     "recall": 0.977,
-     "f1": 0.977
+     "precision": 0.977273,
+     "recall": 0.977273,
+     "f1": 0.977273
     },
     "static union, same items": {
      "tp": 29,
@@ -5049,8 +5049,8 @@
      "fn": 15,
      "n": 84,
      "precision": 1.0,
-     "recall": 0.659,
-     "f1": 0.795
+     "recall": 0.659091,
+     "f1": 0.794521
     }
    },
    "rejax": {
@@ -5061,7 +5061,7 @@
      "n": 117,
      "precision": 0.4,
      "recall": 1.0,
-     "f1": 0.571
+     "f1": 0.571429
     },
     "static union, same items": {
      "tp": 7,
@@ -5069,8 +5069,8 @@
      "fn": 9,
      "n": 117,
      "precision": 1.0,
-     "recall": 0.438,
-     "f1": 0.609
+     "recall": 0.4375,
+     "f1": 0.608696
     }
    },
    "rlm": {
@@ -5079,9 +5079,9 @@
      "fp": 9,
      "fn": 0,
      "n": 136,
-     "precision": 0.654,
+     "precision": 0.653846,
      "recall": 1.0,
-     "f1": 0.791
+     "f1": 0.790698
     },
     "static union, same items": {
      "tp": 15,
@@ -5089,8 +5089,8 @@
      "fn": 2,
      "n": 136,
      "precision": 0.75,
-     "recall": 0.882,
-     "f1": 0.811
+     "recall": 0.882353,
+     "f1": 0.810811
     }
    },
    "scrapyrt": {
@@ -5099,8 +5099,8 @@
      "fp": 3,
      "fn": 1,
      "n": 31,
-     "precision": 0.727,
-     "recall": 0.889,
+     "precision": 0.727273,
+     "recall": 0.888889,
      "f1": 0.8
     },
     "static union, same items": {
@@ -5108,8 +5108,8 @@
      "fp": 3,
      "fn": 1,
      "n": 31,
-     "precision": 0.727,
-     "recall": 0.889,
+     "precision": 0.727273,
+     "recall": 0.888889,
      "f1": 0.8
     }
    },
@@ -5119,8 +5119,8 @@
      "fp": 6,
      "fn": 8,
      "n": 164,
-     "precision": 0.824,
-     "recall": 0.778,
+     "precision": 0.823529,
+     "recall": 0.777778,
      "f1": 0.8
     },
     "static union, same items": {
@@ -5128,9 +5128,9 @@
      "fp": 3,
      "fn": 20,
      "n": 164,
-     "precision": 0.842,
-     "recall": 0.444,
-     "f1": 0.582
+     "precision": 0.842105,
+     "recall": 0.444444,
+     "f1": 0.581818
     }
    },
    "sqllineage": {
@@ -5139,18 +5139,18 @@
      "fp": 11,
      "fn": 18,
      "n": 205,
-     "precision": 0.871,
-     "recall": 0.804,
-     "f1": 0.836
+     "precision": 0.870588,
+     "recall": 0.804348,
+     "f1": 0.836158
     },
     "static union, same items": {
      "tp": 61,
      "fp": 11,
      "fn": 31,
      "n": 205,
-     "precision": 0.847,
-     "recall": 0.663,
-     "f1": 0.744
+     "precision": 0.847222,
+     "recall": 0.663043,
+     "f1": 0.743902
     }
    },
    "tensortrade-ng": {
@@ -5160,17 +5160,17 @@
      "fn": 12,
      "n": 208,
      "precision": 0.75,
-     "recall": 0.667,
-     "f1": 0.706
+     "recall": 0.666667,
+     "f1": 0.705882
     },
     "static union, same items": {
      "tp": 14,
      "fp": 3,
      "fn": 22,
      "n": 208,
-     "precision": 0.824,
-     "recall": 0.389,
-     "f1": 0.528
+     "precision": 0.823529,
+     "recall": 0.388889,
+     "f1": 0.528302
     }
    },
    "term-image": {
@@ -5179,18 +5179,18 @@
      "fp": 13,
      "fn": 7,
      "n": 138,
-     "precision": 0.729,
-     "recall": 0.833,
-     "f1": 0.778
+     "precision": 0.729167,
+     "recall": 0.833333,
+     "f1": 0.777778
     },
     "static union, same items": {
      "tp": 37,
      "fp": 12,
      "fn": 5,
      "n": 138,
-     "precision": 0.755,
-     "recall": 0.881,
-     "f1": 0.813
+     "precision": 0.755102,
+     "recall": 0.880952,
+     "f1": 0.813187
     }
    },
    "throttled": {
@@ -5199,18 +5199,18 @@
      "fp": 27,
      "fn": 0,
      "n": 43,
-     "precision": 0.289,
+     "precision": 0.289474,
      "recall": 1.0,
-     "f1": 0.449
+     "f1": 0.44898
     },
     "static union, same items": {
      "tp": 11,
      "fp": 27,
      "fn": 0,
      "n": 43,
-     "precision": 0.289,
+     "precision": 0.289474,
      "recall": 1.0,
-     "f1": 0.449
+     "f1": 0.44898
     }
    },
    "toolz": {
@@ -5219,9 +5219,9 @@
      "fp": 19,
      "fn": 0,
      "n": 130,
-     "precision": 0.612,
+     "precision": 0.612245,
      "recall": 1.0,
-     "f1": 0.759
+     "f1": 0.759494
     },
     "static union, same items": {
      "tp": 29,
@@ -5229,8 +5229,8 @@
      "fn": 1,
      "n": 130,
      "precision": 1.0,
-     "recall": 0.967,
-     "f1": 0.983
+     "recall": 0.966667,
+     "f1": 0.983051
     }
    },
    "xacro": {
@@ -5239,18 +5239,18 @@
      "fp": 12,
      "fn": 1,
      "n": 76,
-     "precision": 0.714,
-     "recall": 0.968,
-     "f1": 0.822
+     "precision": 0.714286,
+     "recall": 0.967742,
+     "f1": 0.821918
     },
     "static union, same items": {
      "tp": 31,
      "fp": 2,
      "fn": 0,
      "n": 76,
-     "precision": 0.939,
+     "precision": 0.939394,
      "recall": 1.0,
-     "f1": 0.969
+     "f1": 0.96875
     }
    }
   }
@@ -5263,18 +5263,18 @@
      "fp": 133,
      "fn": 12,
      "n": 801,
-     "precision": 0.808,
-     "recall": 0.979,
-     "f1": 0.885
+     "precision": 0.808081,
+     "recall": 0.979021,
+     "f1": 0.885375
     },
     "static union, same items": {
      "tp": 544,
      "fp": 104,
      "fn": 28,
      "n": 801,
-     "precision": 0.84,
-     "recall": 0.951,
-     "f1": 0.892
+     "precision": 0.839506,
+     "recall": 0.951049,
+     "f1": 0.891803
     }
    },
    "reference/unique": {
@@ -5283,9 +5283,9 @@
      "fp": 249,
      "fn": 19,
      "n": 1143,
-     "precision": 0.316,
-     "recall": 0.858,
-     "f1": 0.462
+     "precision": 0.315934,
+     "recall": 0.858209,
+     "f1": 0.461847
     },
     "static union, same items": {
      "tp": 7,
@@ -5293,8 +5293,8 @@
      "fn": 127,
      "n": 1143,
      "precision": 0.875,
-     "recall": 0.052,
-     "f1": 0.099
+     "recall": 0.052239,
+     "f1": 0.098592
     }
    },
    "constructor/unique": {
@@ -5303,18 +5303,18 @@
      "fp": 81,
      "fn": 12,
      "n": 418,
-     "precision": 0.585,
-     "recall": 0.905,
-     "f1": 0.71
+     "precision": 0.584615,
+     "recall": 0.904762,
+     "f1": 0.71028
     },
     "static union, same items": {
      "tp": 116,
      "fp": 5,
      "fn": 10,
      "n": 418,
-     "precision": 0.959,
-     "recall": 0.921,
-     "f1": 0.939
+     "precision": 0.958678,
+     "recall": 0.920635,
+     "f1": 0.939271
     }
    },
    "reference/shared": {
@@ -5324,8 +5324,8 @@
      "fn": 8,
      "n": 1456,
      "precision": 0.38,
-     "recall": 0.826,
-     "f1": 0.521
+     "recall": 0.826087,
+     "f1": 0.520548
     },
     "static union, same items": {
      "tp": 0,
@@ -5343,18 +5343,18 @@
      "fp": 276,
      "fn": 121,
      "n": 1798,
-     "precision": 0.572,
-     "recall": 0.753,
-     "f1": 0.65
+     "precision": 0.572093,
+     "recall": 0.753061,
+     "f1": 0.65022
     },
     "static union, same items": {
      "tp": 218,
      "fp": 75,
      "fn": 272,
      "n": 1798,
-     "precision": 0.744,
-     "recall": 0.445,
-     "f1": 0.557
+     "precision": 0.744027,
+     "recall": 0.444898,
+     "f1": 0.556833
     }
    }
   },
@@ -5365,18 +5365,18 @@
      "fp": 133,
      "fn": 28,
      "n": 801,
-     "precision": 0.804,
-     "recall": 0.951,
-     "f1": 0.871
+     "precision": 0.803545,
+     "recall": 0.951049,
+     "f1": 0.871097
     },
     "static union, same items": {
      "tp": 544,
      "fp": 104,
      "fn": 28,
      "n": 801,
-     "precision": 0.84,
-     "recall": 0.951,
-     "f1": 0.892
+     "precision": 0.839506,
+     "recall": 0.951049,
+     "f1": 0.891803
     }
    },
    "reference/unique": {
@@ -5385,9 +5385,9 @@
      "fp": 215,
      "fn": 19,
      "n": 1139,
-     "precision": 0.348,
-     "recall": 0.858,
-     "f1": 0.496
+     "precision": 0.348485,
+     "recall": 0.858209,
+     "f1": 0.49569
     },
     "static union, same items": {
      "tp": 7,
@@ -5395,8 +5395,8 @@
      "fn": 127,
      "n": 1139,
      "precision": 0.875,
-     "recall": 0.052,
-     "f1": 0.099
+     "recall": 0.052239,
+     "f1": 0.098592
     }
    },
    "constructor/unique": {
@@ -5405,18 +5405,18 @@
      "fp": 63,
      "fn": 12,
      "n": 417,
-     "precision": 0.644,
-     "recall": 0.905,
-     "f1": 0.752
+     "precision": 0.644068,
+     "recall": 0.904762,
+     "f1": 0.752475
     },
     "static union, same items": {
      "tp": 116,
      "fp": 5,
      "fn": 10,
      "n": 417,
-     "precision": 0.959,
-     "recall": 0.921,
-     "f1": 0.939
+     "precision": 0.958678,
+     "recall": 0.920635,
+     "f1": 0.939271
     }
    },
    "reference/shared": {
@@ -5425,9 +5425,9 @@
      "fp": 46,
      "fn": 11,
      "n": 1456,
-     "precision": 0.432,
-     "recall": 0.761,
-     "f1": 0.551
+     "precision": 0.432099,
+     "recall": 0.76087,
+     "f1": 0.551181
     },
     "static union, same items": {
      "tp": 0,
@@ -5445,18 +5445,18 @@
      "fp": 222,
      "fn": 163,
      "n": 1798,
-     "precision": 0.596,
-     "recall": 0.667,
-     "f1": 0.629
+     "precision": 0.595628,
+     "recall": 0.667347,
+     "f1": 0.629451
     },
     "static union, same items": {
      "tp": 218,
      "fp": 75,
      "fn": 272,
      "n": 1798,
-     "precision": 0.744,
-     "recall": 0.445,
-     "f1": 0.557
+     "precision": 0.744027,
+     "recall": 0.444898,
+     "f1": 0.556833
     }
    }
   },
@@ -5467,18 +5467,18 @@
      "fp": 126,
      "fn": 9,
      "n": 800,
-     "precision": 0.817,
-     "recall": 0.984,
-     "f1": 0.893
+     "precision": 0.817126,
+     "recall": 0.984266,
+     "f1": 0.892942
     },
     "static union, same items": {
      "tp": 544,
      "fp": 104,
      "fn": 28,
      "n": 800,
-     "precision": 0.84,
-     "recall": 0.951,
-     "f1": 0.892
+     "precision": 0.839506,
+     "recall": 0.951049,
+     "f1": 0.891803
     }
    },
    "reference/unique": {
@@ -5487,9 +5487,9 @@
      "fp": 155,
      "fn": 22,
      "n": 1134,
-     "precision": 0.419,
-     "recall": 0.836,
-     "f1": 0.559
+     "precision": 0.419476,
+     "recall": 0.835821,
+     "f1": 0.558603
     },
     "static union, same items": {
      "tp": 7,
@@ -5497,8 +5497,8 @@
      "fn": 127,
      "n": 1134,
      "precision": 0.875,
-     "recall": 0.052,
-     "f1": 0.099
+     "recall": 0.052239,
+     "f1": 0.098592
     }
    },
    "constructor/unique": {
@@ -5507,18 +5507,18 @@
      "fp": 19,
      "fn": 14,
      "n": 409,
-     "precision": 0.855,
-     "recall": 0.889,
-     "f1": 0.872
+     "precision": 0.854962,
+     "recall": 0.888889,
+     "f1": 0.871595
     },
     "static union, same items": {
      "tp": 116,
      "fp": 5,
      "fn": 10,
      "n": 409,
-     "precision": 0.959,
-     "recall": 0.921,
-     "f1": 0.939
+     "precision": 0.958678,
+     "recall": 0.920635,
+     "f1": 0.939271
     }
    },
    "reference/shared": {
@@ -5527,9 +5527,9 @@
      "fp": 47,
      "fn": 12,
      "n": 1440,
-     "precision": 0.42,
-     "recall": 0.739,
-     "f1": 0.535
+     "precision": 0.419753,
+     "recall": 0.73913,
+     "f1": 0.535433
     },
     "static union, same items": {
      "tp": 0,
@@ -5547,18 +5547,18 @@
      "fp": 106,
      "fn": 233,
      "n": 1795,
-     "precision": 0.708,
-     "recall": 0.524,
-     "f1": 0.603
+     "precision": 0.707989,
+     "recall": 0.52449,
+     "f1": 0.602579
     },
     "static union, same items": {
      "tp": 218,
      "fp": 75,
      "fn": 272,
      "n": 1795,
-     "precision": 0.744,
-     "recall": 0.445,
-     "f1": 0.557
+     "precision": 0.744027,
+     "recall": 0.444898,
+     "f1": 0.556833
     }
    }
   }
@@ -5575,27 +5575,27 @@
     "fp": 40,
     "fn": 401,
     "n": 4169,
-    "precision": 0.906,
-    "recall": 0.491,
-    "f1": 0.637
+    "precision": 0.906323,
+    "recall": 0.491117,
+    "f1": 0.637037
    },
    "Pyright": {
     "tp": 751,
     "fp": 60,
     "fn": 37,
     "n": 4169,
-    "precision": 0.926,
-    "recall": 0.953,
-    "f1": 0.939
+    "precision": 0.926017,
+    "recall": 0.953046,
+    "f1": 0.939337
    },
    "PyCG ∪ Pyright": {
     "tp": 755,
     "fp": 60,
     "fn": 33,
     "n": 4169,
-    "precision": 0.926,
-    "recall": 0.958,
-    "f1": 0.942
+    "precision": 0.92638,
+    "recall": 0.958122,
+    "f1": 0.941984
    }
   },
   "reference/shared": {
@@ -5605,8 +5605,8 @@
     "fn": 321,
     "n": 8751,
     "precision": 1.0,
-    "recall": 0.009,
-    "f1": 0.018
+    "recall": 0.009259,
+    "f1": 0.018349
    },
    "Pyright": {
     "tp": 0,
@@ -5623,8 +5623,8 @@
     "fn": 321,
     "n": 8751,
     "precision": 0.6,
-    "recall": 0.009,
-    "f1": 0.018
+    "recall": 0.009259,
+    "f1": 0.018237
    }
   },
   "reference/unique": {
@@ -5633,27 +5633,27 @@
     "fp": 3,
     "fn": 506,
     "n": 3598,
-    "precision": 0.923,
-    "recall": 0.066,
-    "f1": 0.124
+    "precision": 0.923077,
+    "recall": 0.066421,
+    "f1": 0.123924
    },
    "Pyright": {
     "tp": 34,
     "fp": 2,
     "fn": 508,
     "n": 3598,
-    "precision": 0.944,
-    "recall": 0.063,
-    "f1": 0.118
+    "precision": 0.944444,
+    "recall": 0.062731,
+    "f1": 0.117647
    },
    "PyCG ∪ Pyright": {
     "tp": 41,
     "fp": 3,
     "fn": 501,
     "n": 3598,
-    "precision": 0.932,
-    "recall": 0.076,
-    "f1": 0.14
+    "precision": 0.931818,
+    "recall": 0.075646,
+    "f1": 0.139932
    }
   },
   "call/unique": {
@@ -5662,27 +5662,27 @@
     "fp": 368,
     "fn": 822,
     "n": 4798,
-    "precision": 0.88,
-    "recall": 0.767,
-    "f1": 0.82
+    "precision": 0.880364,
+    "recall": 0.767139,
+    "f1": 0.819861
    },
    "Pyright": {
     "tp": 3374,
     "fp": 465,
     "fn": 156,
     "n": 4798,
-    "precision": 0.879,
-    "recall": 0.956,
-    "f1": 0.916
+    "precision": 0.878875,
+    "recall": 0.955807,
+    "f1": 0.915728
    },
    "PyCG ∪ Pyright": {
     "tp": 3394,
     "fp": 468,
     "fn": 136,
     "n": 4798,
-    "precision": 0.879,
-    "recall": 0.961,
-    "f1": 0.918
+    "precision": 0.878819,
+    "recall": 0.961473,
+    "f1": 0.91829
    }
   },
   "call/shared": {
@@ -5691,27 +5691,27 @@
     "fp": 147,
     "fn": 1538,
     "n": 11704,
-    "precision": 0.792,
-    "recall": 0.267,
-    "f1": 0.399
+    "precision": 0.792079,
+    "recall": 0.266921,
+    "f1": 0.399287
    },
    "Pyright": {
     "tp": 877,
     "fp": 310,
     "fn": 1221,
     "n": 11704,
-    "precision": 0.739,
-    "recall": 0.418,
-    "f1": 0.534
+    "precision": 0.738837,
+    "recall": 0.418017,
+    "f1": 0.533942
    },
    "PyCG ∪ Pyright": {
     "tp": 926,
     "fp": 349,
     "fn": 1172,
     "n": 11704,
-    "precision": 0.726,
-    "recall": 0.441,
-    "f1": 0.549
+    "precision": 0.726275,
+    "recall": 0.441373,
+    "f1": 0.549066
    }
   }
  },
@@ -5723,8 +5723,8 @@
     "fn": 145,
     "n": 483,
     "precision": 1.0,
-    "recall": 0.7,
-    "f1": 0.823
+    "recall": 0.699793,
+    "f1": 0.823386
    },
    "static found": {
     "tp": 858,
@@ -5732,8 +5732,8 @@
     "fn": 27,
     "n": 885,
     "precision": 1.0,
-    "recall": 0.969,
-    "f1": 0.985
+    "recall": 0.969492,
+    "f1": 0.984509
    }
   },
   "gpt-oss-20b": {
@@ -5743,8 +5743,8 @@
     "fn": 179,
     "n": 483,
     "precision": 1.0,
-    "recall": 0.629,
-    "f1": 0.773
+    "recall": 0.6294,
+    "f1": 0.772554
    },
    "static found": {
     "tp": 831,
@@ -5752,8 +5752,8 @@
     "fn": 54,
     "n": 885,
     "precision": 1.0,
-    "recall": 0.939,
-    "f1": 0.969
+    "recall": 0.938983,
+    "f1": 0.968531
    }
   },
   "qwen3.8-27b": {
@@ -5763,8 +5763,8 @@
     "fn": 261,
     "n": 483,
     "precision": 1.0,
-    "recall": 0.46,
-    "f1": 0.63
+    "recall": 0.459627,
+    "f1": 0.629787
    },
    "static found": {
     "tp": 856,
@@ -5772,8 +5772,8 @@
     "fn": 29,
     "n": 885,
     "precision": 1.0,
-    "recall": 0.967,
-    "f1": 0.983
+    "recall": 0.967232,
+    "f1": 0.983343
    }
   }
  },
@@ -5781,90 +5781,90 @@
   "gpt-oss-120b": {
    "model": {
     "precision": [
-     0.511,
-     0.673
+     0.510638,
+     0.672749
     ],
     "recall": [
-     0.781,
-     0.947
+     0.780812,
+     0.947487
     ],
     "f1": [
-     0.644,
-     0.772
+     0.643836,
+     0.772152
     ]
    },
    "static union, same items": {
     "precision": [
-     0.752,
-     0.881
+     0.751807,
+     0.880837
     ],
     "recall": [
-     0.551,
-     0.742
+     0.550996,
+     0.742154
     ],
     "f1": [
-     0.663,
-     0.784
+     0.6628,
+     0.784357
     ]
    }
   },
   "gpt-oss-20b": {
    "model": {
     "precision": [
-     0.532,
-     0.703
+     0.531902,
+     0.703061
     ],
     "recall": [
-     0.745,
-     0.899
+     0.745266,
+     0.898534
     ],
     "f1": [
-     0.645,
-     0.769
+     0.645472,
+     0.769458
     ]
    },
    "static union, same items": {
     "precision": [
-     0.752,
-     0.881
+     0.751807,
+     0.880837
     ],
     "recall": [
-     0.551,
-     0.742
+     0.550996,
+     0.742154
     ],
     "f1": [
-     0.663,
-     0.784
+     0.6628,
+     0.784357
     ]
    }
   },
   "qwen3.8-27b": {
    "model": {
     "precision": [
-     0.626,
-     0.764
+     0.626176,
+     0.764116
     ],
     "recall": [
-     0.707,
-     0.871
+     0.707254,
+     0.871009
     ],
     "f1": [
-     0.696,
-     0.783
+     0.696255,
+     0.783387
     ]
    },
    "static union, same items": {
     "precision": [
-     0.752,
-     0.881
+     0.751807,
+     0.880837
     ],
     "recall": [
-     0.551,
-     0.742
+     0.550996,
+     0.742154
     ],
     "f1": [
-     0.663,
-     0.784
+     0.6628,
+     0.784357
     ]
    }
   }
@@ -5873,10 +5873,10 @@
  "tests_vs_recall_spearman": -0.231,
  "retrace": {
   "repos": 37,
-  "jaccard_min": 0.986,
+  "jaccard_min": 0.986014,
   "jaccard_median": 1.0
  },
- "edge_recall_union_median": 0.69,
+ "edge_recall_union_median": 0.690141,
  "combiner": {
   "repos": [
    "PyFunceble",

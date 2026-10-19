@@ -44,7 +44,7 @@ def tally(its, f):
 def prf(t):
     p = t["tp"] / (t["tp"] + t["fp"]) if t["tp"] + t["fp"] else 0.0
     r = t["tp"] / (t["tp"] + t["fn"]) if t["tp"] + t["fn"] else 0.0
-    return {**t, "precision": round(p, 3), "recall": round(r, 3), "f1": round(2 * p * r / (p + r), 3) if p + r else 0.0}
+    return {**t, "precision": round(p, 6), "recall": round(r, 6), "f1": round(2 * p * r / (p + r), 6) if p + r else 0.0}
 
 
 def add(a, b):
@@ -70,7 +70,7 @@ def coverage(b, truth) -> float | None:
         stmts = {n.lineno for n in ast.walk(tree) if isinstance(n, ast.stmt)}
         total += len(stmts)
         ran += len(stmts & ran_by.get(str(f.relative_to(root)), set()))
-    return round(ran / total, 4) if total else None
+    return round(ran / total, 6) if total else None
 
 
 def spearman(x, y):
@@ -90,16 +90,16 @@ def bootstrap(per_repo: dict, reps: int = 1000, seed: int = 20261019) -> dict:
         s = prf(t)
         for k in out:
             out[k].append(s[k])
-    return {k: [round(sorted(v)[int(0.025 * reps)], 3), round(sorted(v)[int(0.975 * reps) - 1], 3)] for k, v in out.items()}
+    return {k: [round(sorted(v)[int(0.025 * reps)], 6), round(sorted(v)[int(0.975 * reps) - 1], 6)] for k, v in out.items()}
 for name in repos:
     b = Bundle(name)
     truth = json.loads((b.dir / "truth.json").read_text())
     # same pairs as the harness's truth_summary (studies.py): no recursion, callee a function or method
     observed = {(e[0], e[1]) for e in truth["edges"]
                 if e[0] != ENTRY and e[0] != e[1] and b.nodes[e[1]]["kind"] in ("function", "method")}
-    edge = {tool: round(len(observed & es) / len(observed), 3) if observed else None
+    edge = {tool: round(len(observed & es) / len(observed), 6) if observed else None
             for tool, es in b.static_by_tool.items()}
-    edge["union"] = round(len(observed & b.static) / len(observed), 3) if observed else None
+    edge["union"] = round(len(observed & b.static) / len(observed), 6) if observed else None
     its = bench.items(b)
     unnamed = len(bench.unnamed(b, its))
     row = {"stratum": STRATA.get(name, "?"), "observed_edges": len(observed), "edge_recall": edge,
@@ -110,7 +110,7 @@ for name in repos:
         t2 = json.loads(run2.read_text())
         obs2 = {(e[0], e[1]) for e in t2["edges"]
                 if e[0] != ENTRY and e[0] != e[1] and b.nodes[e[1]]["kind"] in ("function", "method")}
-        row["retrace"] = {"jaccard": round(len(observed & obs2) / len(observed | obs2), 4) if observed | obs2 else None,
+        row["retrace"] = {"jaccard": round(len(observed & obs2) / len(observed | obs2), 6) if observed | obs2 else None,
                           "only_first": len(observed - obs2), "only_second": len(obs2 - observed)}
     for k, f in STATIC.items():
         t = tally(its, f)
@@ -174,7 +174,7 @@ out["tests_vs_recall_spearman"] = spearman([t or 0 for _, _, t in cov], [u for _
 rt = [r["retrace"]["jaccard"] for r in out["repos"].values() if r.get("retrace") and r["retrace"]["jaccard"] is not None]
 out["retrace"] = {"repos": len(rt), "jaccard_min": min(rt), "jaccard_median": st.median(rt)} if rt else None
 rec = [r["edge_recall"]["union"] for r in out["repos"].values() if r["edge_recall"]["union"] is not None]
-out["edge_recall_union_median"] = round(st.median(rec), 3) if rec else None
+out["edge_recall_union_median"] = round(st.median(rec), 6) if rec else None
 
 # the combiner: only repos every LLM answered
 full = [n for n in repos if all(n in d.get("repos", []) for d in llm_pool.values()) and len(llm_pool) == len(ml.LLMS)]

@@ -16,10 +16,10 @@ dens = {json.loads(l)["name"]: json.loads(l).get("density_score") for l in (ROOT
 dens |= {"click": 17.39, "toolz": 7.82}          # same reference-set values as make_numbers.py
 
 plt.rcParams.update({"font.family": "serif", "font.serif": ["Times", "Nimbus Roman", "DejaVu Serif"],
-                     "font.size": 7, "pdf.fonttype": 42, "axes.linewidth": 0.5,
+                     "font.size": 8, "pdf.fonttype": 42, "axes.linewidth": 0.5,
                      "xtick.major.width": 0.5, "ytick.major.width": 0.5})
 STRATA = [("LOW", "#2a78d6", "o"), ("MED", "#eb6834", "s"), ("HIGH", "#1baf7a", "^")]
-fig, (a, b) = plt.subplots(1, 2, figsize=(3.5, 1.6), constrained_layout=True)
+fig, (a, b) = plt.subplots(1, 2, figsize=(3.5, 1.65), constrained_layout=True)
 
 a.plot([0, 1], [0, 1], color="#999999", lw=0.6, ls="--", zorder=0)
 for s, c, m in STRATA:
@@ -31,7 +31,7 @@ a.set(xlim=(0, 1.02), ylim=(0, 1.02), xlabel="PyCG recall", ylabel="Pyright reca
 b.set(xlim=(-1, None), ylim=(0, 1.02), xlabel="dynamism score", ylabel="union recall", title="(b)")
 a.legend(loc="lower right", frameon=False, handletextpad=0.1, borderpad=0.1, labelspacing=0.2)
 for ax in (a, b):
-    ax.title.set_size(7)
+    ax.title.set_size(8)
     ax.spines[["top", "right"]].set_visible(False)
     ax.grid(color="#e5e5e5", lw=0.4)
     ax.set_axisbelow(True)

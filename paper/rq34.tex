@@ -8,10 +8,10 @@
 \else\newcommand{\retraceSentence}{}\fi
 \ifdefined\sweepMaxPts
   \newcommand{\sweepRecall}{Across ten seeds, PyCG's recall against observed calls changed on \nSweptVaries{}
-  of \nSwept{} traced repositories, by up to \sweepMaxDelta{} (\texttt{\sweepWorstRepo}:
+  of the \nSwept{} traced repositories in the sweep (\texttt{click} and \texttt{toolz} are outside it), by up to \sweepMaxDelta{} (\texttt{\sweepWorstRepo}:
   \sweepWorstLo--\sweepWorstHi; median \sweepMedDelta), while the union's moved by at most
-  \sweepUnionMaxDelta: Pyright holds most of the edges PyCG gains or loses. The edges that change with the
-  seed include observed calls on \nVaryObserved{} repositories.}
+  \sweepUnionMaxDelta: Pyright holds most of the edges PyCG gains or loses. On \nVaryObserved{} repositories some
+  of the edges that change with the seed are observed calls.}
 \else\newcommand{\sweepRecall}{\pending}\fi
 % RQ3/RQ4 prose. Numbers are macros from numbers.tex (make_numbers.py <- study1-results/rq34.json).
 \providecommand{\cvComb}{--- & --- & ---}
@@ -26,47 +26,39 @@
 the calls observed (range \edgeUnionMin--\edgeUnionMax), and \pctMissShared{} of the calls it misses
 go through a method name shared by several functions.}
 
-\renewcommand{\rqFourAbstract}{raise recall on hard items from \llmTwentyStaticR{} to
-\llmQwenR--\llmOneTwentyR{} but lower precision from \llmTwentyStaticP{} to
-\llmOneTwentyP--\llmQwenP. A combiner of static and LLM answers, trained on other projects, raises
-F1 on unseen projects from \loroUnionFone{} to \loroCombFone.}
+\renewcommand{\rqFourAbstract}{, choosing among the names on a caller's executed lines in a
+sample enriched for hard calls, raise recall from \llmTwentyStaticR{} to \llmQwenR--\llmOneTwentyR{}
+but lower precision from \llmTwentyStaticP{} to \llmOneTwentyP--\llmQwenP. Combining static and LLM
+answers lifts F1 on unseen repositories only from \loroUnionFone{} to \loroCombFone, no more than a
+plain union of Pyright and the best LLM.}
 
 \renewcommand{\rqFourSampleNote}{Each corpus repository contributes at most 25 sampled callers;
-\texttt{click} and \texttt{toolz}, traced earlier, contribute \sampleClick{} and \sampleToolz.}
+\texttt{click} and \texttt{toolz}, traced during development, contribute \sampleClick{} and \sampleToolz.}
 
 \renewcommand{\rqFourCvNote}{once with folds grouped by caller function, so that no function's
 items are scored by a model trained on them, and once leaving out one whole repository at a time.}
 
 \renewcommand{\rqThreeBody}{%
 We traced the test suites of the sampled repositories, plus \texttt{click} and \texttt{toolz}
-from the scorer's reference set. Of these, \nRuntimeExcluded{} could not be measured: \texttt{kolla-ansible}'s tests never
-import its own package, \texttt{wsgidav}'s suite produced no countable test results under the
-harness, and \texttt{recurrentgemma} keeps its tests beside the code (\texttt{foo\_test.py}), which
-the harness cannot separate from package code. Across the remaining \nRuntimeRepos{} repositories
-the tests exercised \nObservedPairs{} distinct calls between functions and methods of the packages.
-Table~\ref{tab:recall} lists each repository.
+from the dynamism score's reference set. Of these, \nRuntimeExcluded{} could not be measured: \texttt{kolla-ansible}'s tests never
+import its own package, \texttt{wsgidav}'s suite produced no countable test results under our
+runner, and \texttt{recurrentgemma} keeps its tests beside the code (\texttt{foo\_test.py}), which
+our runner cannot separate from package code. Across the remaining \nRuntimeRepos{} repositories
+the tests exercised \nObservedPairs{} distinct calls between functions and methods of the packages:
+\nRealItems{} whose callee the caller names, less \nSelfCallItems{} recursive self-calls, plus
+\nUnnamed{} whose callee it never names.
+Fig.~\ref{fig:recall} shows each repository; per-repository values are in the released data.
 
-\begin{table*}[t]
-\caption{Static recall against calls observed under each test suite. S: stratum. Pairs: distinct
-caller$\to$callee calls observed. PyCG, Pyright, Union: share of those calls in each static graph.}\label{tab:recall}
-\centering\footnotesize
-\setlength{\tabcolsep}{2.5pt}
-\begin{tabular}{llrrrr@{\hspace{10pt}}llrrrr}
-\toprule
-Repository & S & Pairs & PyCG & Pyright & Union & Repository & S & Pairs & PyCG & Pyright & Union \\
-\midrule
-\rqThreeRows
-\midrule
-\multicolumn{6}{l}{} & \multicolumn{3}{l}{Median over repositories} & \edgePycgMed & \edgePyrightMed & \edgeUnionMed \\
-\bottomrule
-\end{tabular}
-\end{table*}
 
 \textbf{How much is missing.} The union of both static graphs contains a median of
-\edgeUnionMed{} of the observed calls per repository, from \edgeUnionMin{} to \edgeUnionMax{}.
-Pyright alone reaches \edgePyrightMed{} and PyCG \edgePycgMed{}; Pyright finds more of the
-observed calls in \nPyrightBeatsPycg{} of \nRuntimeRepos{} repositories (Fig.~\ref{fig:recall}a), so in
-this corpus the type checker is the stronger call-graph source. Pooled over \nItems{} call-resolution items
+\edgeUnionMed{} of the observed calls per repository (95\% CI \ciEdgeUnionMed), from \edgeUnionMin{}
+to \edgeUnionMax{}. Pooled over all \nObservedPairs{} observed calls, so that large repositories weigh
+more, it holds \poolRecallUnion{} (PyCG \poolRecallPycg, Pyright \poolRecallPyright). Without the \nSmallRepos{} repositories with fewer than 20 observed calls the medians barely move (union
+\bigMedUnion, Pyright \bigMedPyright, PyCG \bigMedPycg). Pyright alone reaches \edgePyrightMed{} and PyCG \edgePycgMed{}; Pyright finds more of the
+observed calls in \nPyrightBeatsPycg{} of \nRuntimeRepos{} repositories, ties on \nPyrPycgTies{} and
+is behind on \nPyrPycgReversals{} (Fig.~\ref{fig:recall}a; median per-repository gain \pyrMinusPycgMed, 95\% CI
+\ciPyrMinusPycgMed, Wilcoxon $p \pyrPycgWilcoxonP$), so in this corpus the type checker is the
+stronger call-graph source. Pooled over \nItems{} call-resolution items
 (\nRealItems{} of them observed calls), the union has precision \itemUnionP{} and recall
 \itemUnionR{} (PyCG \itemPycgP/\itemPycgR, Pyright \itemPyrightP/\itemPyrightR). Plain name
 matching, which treats every name on an executed line as a call, has precision \itemNameP{}: most
@@ -74,105 +66,130 @@ names in code that ran are not calls the tests made. Union precision is \staticP
 calls to uniquely named functions and \staticPrecSharedCall{} on shared names, where an unobserved
 claim may be a call that another run would make.
 
-\textbf{Where it misses.} Of the \nMissed{} observed calls the union misses, \pctMissShared{} go
-to a method whose name is shared by several functions in the package, that is, dispatch over a
-class hierarchy or over unrelated classes with a common method name, and \pctMissReference{} are
-names written without call syntax, such as property reads and functions passed as values. The
-worst repository illustrates the first pattern: \texttt{ShivyC}, a C compiler, defines
-\texttt{make\_il} on \shivycMakeIl{} syntax-tree classes and \texttt{make\_asm} on \shivycMakeAsm, and the static union
-holds fewer than half of its observed calls. A further \nUnnamed{} observed calls
-(\pctUnnamed{} of all calls) reach a function never named in the calling function, so no resolver
-that reads the caller's code can find them: \pctUnnamedDunder{} are special methods invoked
-implicitly (operators, iteration, attribute hooks), and the rest are callbacks and functions reached
-through library code, \pctUnnamedTopOfRest{} of them in one repository, \texttt{\unnamedTopRepo}. Implicit calls also
-explain the lowest recall in Table~\ref{tab:recall}: \texttt{python-lazy-object-proxy} (\edgeUnionMin)
-is a proxy-object library whose tests exercise operator overloading, so almost every observed call
-is a special method that no call site names.
+\begin{table}[t]
+\caption{Every observed call the static union misses (\nMissAll), by how the callee appears in the
+calling function. Classes are exclusive. Pooled: share of all misses, rounded; median: per-repository
+share of each class.}\label{tab:misses}
+\centering\footnotesize
+\begin{tabular}{lrr}
+\toprule
+Callee in the calling function & Pooled & Median \\
+\midrule
+not named, reached through library code & \missUnnamedOther & \medMissUnnamedOther \\
+not named, special method & \missUnnamedDunder & \medMissUnnamedDunder \\
+call, shared name & \missCallShared & \medMissCallShared \\
+call, unique name & \missCallUnique & \medMissCallUnique \\
+reference, shared name & \missRefShared & \medMissRefShared \\
+reference, unique name & \missRefUnique & \medMissRefUnique \\
+class name & \missCtor & \medMissCtor \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\textbf{Dynamism predicts recall only weakly.} The corpus was stratified by an AST score of
-reflective and dynamic constructs, but across repositories the score and union recall correlate
-only weakly (Spearman $\rho = \densitySpearman$, Fig.~\ref{fig:recall}b), and median recall is not ordered by stratum:
-\edgeMedLow{} for LOW, \edgeMedMed{} for MED and \edgeMedHigh{} for HIGH. The constructs such scores
-count, reflection and dynamic imports, are not where static analysers lose most calls on real code;
-ordinary polymorphic dispatch is.
+\textbf{Where it misses.} Table~\ref{tab:misses} splits the \nMissAll{} observed calls the union
+misses. Most (\missUnnamedAll) reach a function the caller never names: special methods invoked
+implicitly (operators, iteration, attribute hooks) and callbacks or functions reached through
+library code. No call site in the caller names these callees, so a resolver of call sites, as
+our Pyright extractor and the LLMs are, cannot report them directly; the union still holds
+\pctUnnamedFound{} of them. A resolver that modelled operator dispatch and library callbacks could
+recover more. They explain the lowest recall: \texttt{python-lazy-object-proxy}
+(\edgeUnionMin) is a proxy-object library whose tests exercise operator overloading, so almost every
+observed call is a special method that no call site names. Method names shared by several
+functions come next, with \missSharedAll{} of all misses and \pctMissShared{} of those whose callee
+the caller names: dispatch over a class hierarchy or over unrelated classes with a common method
+name. \texttt{ShivyC}, a C compiler, defines \texttt{make\_il} on \shivycMakeIl{} syntax-tree
+classes and \texttt{make\_asm} on \shivycMakeAsm, and the union holds fewer than half of its
+observed calls. Shared-name misses concentrate in a few large repositories: the median repository
+loses \medMissCallShared{} of its misses to shared-name calls but \medMissUnnamedAll{} to unnamed ones taken together. Names written without call syntax, such as
+property reads and functions passed as values, account for \missReferenceAll{} of misses.
+
+\textbf{Not reflection.} Functions that use reflection (a \texttt{getattr}-family call with a
+computed name, \texttt{eval} or \texttt{exec}, a dynamic import) make only \pctReflectCalls{} of
+observed calls (\nReflectCalls). Their calls are missed at a rate of \reflectMissRate{} against \plainMissRate{}
+elsewhere, and they account for \pctMissReflective{} of all misses. Across repositories, the
+dynamism score used to stratify the corpus shows no evidence of a relation to recall (Spearman
+$\rho = \densitySpearmanExact$, $p = \densitySpearmanP$; Fig.~\ref{fig:recall}b; without the
+\nSmallRepos{} repositories with fewer than 20 observed calls, $\rho = \bigDensitySpearman$,
+$p = \bigDensitySpearmanP$), and recall does not differ by stratum (Kruskal--Wallis
+$p = \kwStrataP$; medians \edgeMedLow{} for LOW,
+\edgeMedMed{} for MED and \edgeMedHigh{} for HIGH). Static analysers lose calls in this corpus to
+implicit calls and dispatch over shared names, not to reflection.
 
 \textbf{Coverage and stability of the labels.} The tests executed a median of \covMed{} of each
-package's statement lines (\covMin{} to \covMax{}). Recall does not rise with coverage (Spearman
-$\rho = \covSpearman$ across repositories) or with the number of tests ($\rho = \testsSpearman$);
-if anything, more thorough suites expose more of the hard calls. \retraceSentence{}
+package's statement lines (\covMin{} to \covMax{}). Recall falls as coverage rises, a
+marginal relation (Spearman $\rho = \covSpearman$, $p = \covSpearmanP$, 95\% CI $\covSpearmanCI$),
+and shows no clear relation to the number of tests ($\rho = \testsSpearmanExact$, $p = \testsSpearmanP$).
+If suites that reach more code also reach more hard calls, recall on lightly tested repositories
+is overstated. \retraceSentence{}
 
 \textbf{Does the seed change recall?} \sweepRecall{}}
 
 \renewcommand{\rqFourBody}{%
-Table~\ref{tab:llm} compares the LLMs with the static union on the sampled callers, which are
-enriched for hard items. Every LLM finds more of the observed calls than static analysis does:
+On the sampled callers, which are enriched for hard items, every LLM finds more of the observed calls than static analysis does:
 recall rises from \llmTwentyStaticR{} for the static union on the same items to \llmTwentyR{} for gpt-oss-20b, \llmOneTwentyR{} for gpt-oss-120b and \llmQwenR{} for qwen3.8-27b.
 Precision falls from \llmTwentyStaticP{} to between \llmOneTwentyP{} and \llmQwenP: the models claim calls
 the tests never made. The larger gpt-oss model has the highest recall and the lowest precision.
 On real code, then, the micro-benchmark finding that PyCG outperforms LLMs~\cite{venkatesh2025llmcg}
-holds for precision but reverses for recall. Resampling whole repositories, the 95\% interval for
+holds for precision but reverses for recall, on a narrower task: our models choose among names on
+executed lines rather than build a graph. With whole repositories resampled, the 95\% interval for
 recall is \ciOneTwentyRec{} for gpt-oss-120b against \ciStaticRec{} for the static union, but the F1
 intervals overlap (\ciOneTwentyFone{} against \ciStaticFone{}), and an LLM has the higher F1 in only
-\llmBeatsMin--\llmBeatsMax{} of \llmReposN{} repositories.
+\llmBeatsMin--\llmBeatsMax{} of \llmReposN{} repositories. Calls the caller never names are not
+items, so this comparison covers only named calls. The sample holds \nSampleCallers{} callers, and
+\sampleBaseRate{} of its items are observed calls. Only \nSampleStaticOnly{} callers entered it
+solely through a static error; without them, static precision and recall are \woStaticP{} and
+\woStaticR{} and the LLMs' \woLlmP{} and \woLlmR, so the comparison does not rest on that
+criterion.
 
 The LLMs complement static analysis rather than duplicate it: on observed calls the static union
 missed they recover \compMissedR{}, and on those it found they agree on \compFoundR{}.
-Table~\ref{tab:kinds} shows where the gain comes from. Every resolver finds almost all calls to uniquely
+The gain comes from hard names. Every resolver finds almost all calls to uniquely
 named functions. On shared method names static recall is \kindSharedStaticR{} against
-\kindSharedLlmR{} for the LLMs, and names written without call syntax, which static graphs almost
-never hold (recall at most \kindRefStaticR), the LLMs recover at \kindRefLlmR{}, but with precision
+\kindSharedLlmR{} for the LLMs. Names written without call syntax are almost absent from static
+graphs (recall at most \kindRefStaticR); the LLMs recover them at \kindRefLlmR{}, but with precision
 of only \kindRefLlmP.
 
 \begin{table}[t]
-\caption{Call resolution on the LLM sample. Top: each resolver on the items it answered.
-Bottom: the items every LLM answered, scored leaving one repository out.}\label{tab:llm}
+\caption{Call resolution on the items every LLM answered, scored leaving one repository out. Last
+column: the learned combiner's F1 minus this row's, 95\% paired repository-bootstrap interval.}\label{tab:llm}
 \centering\footnotesize
-\begin{tabular}{lrrr}
-\toprule
-Resolver (items) & Precision & Recall & \\
-\midrule
-gpt-oss-20b (\llmTwentyN) & \llmTwentyP & \llmTwentyR & \\
-gpt-oss-120b (\llmOneTwentyN) & \llmOneTwentyP & \llmOneTwentyR & \\
-qwen3.8-27b (\llmQwenN) & \llmQwenP & \llmQwenR & \\
-\midrule
- & Precision & Recall & F1 \\
-\midrule
-\loroRows
-\bottomrule
-\end{tabular}
-\end{table}
-
-\providecommand{\rqFourKindRows}{\pending & & & & & \\}
-\begin{table}[t]
-\caption{Recall / precision on the LLM sample by how the candidate is named in the caller.}\label{tab:kinds}
-\centering\scriptsize
 \setlength{\tabcolsep}{3pt}
-\begin{tabular}{lrcccc}
+\begin{tabular}{lrrrc}
 \toprule
-Item kind & Items & Static & 20b & 120b & qwen \\
+Resolver & P & R & F1 & Combiner $-$ row \\
 \midrule
-\rqFourKindRows
+\loroRowsCI
 \bottomrule
 \end{tabular}
 \end{table}
 
-The bottom of Table~\ref{tab:llm} scores every resolver on the same items, leaving one whole
-repository out at a time. Adding every LLM claim to the static graph maximises recall at a large
+
+Table~\ref{tab:llm} scores every resolver on the items all three LLMs answered, leaving one
+whole repository out at a time. Adding every LLM claim to the static graph maximises recall at a large
 cost in precision. A majority vote of the three LLMs matches the static union on F1
 (\loroMajorityFone{} against \loroUnionFone). The learned combiner, trained on \nCombItems{} items
 from \nCombRepos{} repositories, gives every source a positive weight and discounts names written
 without call syntax; on a repository it has never seen it reaches F1 \loroCombFone{} (precision
 \loroCombP, recall \loroCombR, against \loroUnionP{} and \loroUnionR{} for the union). It beats the
-union on \nLoroBeats{} of \nLoroRepos{} repositories and loses on \nLoroWorse. With folds grouped by
-caller, which lets it train on other functions of the test project, it reaches \cvCombFone{}, no
-better: what it learns is not specific to one project.}
+union on \nLoroBeats{} of \nLoroRepos{} repositories and loses on \nLoroWorse. Paired over
+repositories, the 95\% CI of its F1 gain is \ciLoroDiffUnion{} over the static union and
+\ciLoroDiffPyright{} over Pyright alone: a small gain whose interval reaches zero. Over the best single LLM (\bestLlm), the majority vote
+and the union of Pyright with \bestLlm{} its gain is indistinguishable from zero: a plain union does
+about as well as the learned filter. Without \texttt{click} and \texttt{toolz}, on which its hyperparameters were set, it scores
+\loroNorefCombFone{} against \loroNorefUnionFone{} for the union (difference \ciLoroNorefDiffUnion). With folds grouped by
+caller, which lets it see the test project's other functions, it reaches \cvCombFone, no better.}
 
 \renewcommand{\rqDiscussionLlm}{Static analysis is precise but blind to dispatch over shared
-names and to references; the LLMs see those but over-claim. Neither is enough alone, and combined
-through a filter learned on other projects they beat static analysis on unseen code. A tool that
+names and to references; the LLMs see those but over-claim, and neither sees implicit calls, the
+largest class of misses. Neither is enough alone; combined,
+whether by a learned filter or by a plain union of Pyright and the best LLM, they give a small F1
+gain on unseen repositories
+(\loroUnionFone{} to \loroCombFone). A tool that
 consumes call graphs can treat LLM answers as a second vote, not as a replacement.}
 
 \renewcommand{\rqConclusion}{the union of two static analysers finds a median of \edgeUnionMed{} of
-the calls, and its misses concentrate on shared method names rather than on the reflective
-constructs usually blamed. LLMs recover many of those calls at a cost in precision, and a learned
-combination of the two, trained on other projects, improves on static analysis alone.}
+the calls per repository (\poolRecallUnion{} pooled). Most of what it misses are implicit calls that
+no call site names, then calls through shared method names; reflection accounts for
+\pctMissReflective. LLMs recover many of the named misses at a cost in precision,
+and combining the two, whether by a learned filter or a plain union, gives only a small F1 gain on
+unseen repositories (\loroUnionFone{} to \loroCombFone).}
