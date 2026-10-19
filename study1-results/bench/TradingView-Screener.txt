@@ -1,0 +1,11 @@
+
+TradingView-Screener: 54 items, 19 real calls; 0 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.35   1.00   0.52   0.00
+  PyCG                              all   1.00   0.10   0.19   0.00
+  Pyright                           all   1.00   1.00   1.00   0.00
+  PyCG ∪ Pyright                    all   1.00   1.00   1.00   0.00
+  name match                     sample   0.00   0.00   0.00   0.00
+  PyCG                           sample   0.00   0.00   0.00   0.00
+  Pyright                        sample   0.00   0.00   0.00   0.00
+  PyCG ∪ Pyright                 sample   0.00   0.00   0.00   0.00

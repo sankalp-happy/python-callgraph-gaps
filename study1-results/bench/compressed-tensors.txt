@@ -1,0 +1,11 @@
+
+compressed-tensors: 1101 items, 294 real calls; 123 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.27   1.00   0.42   1.00
+  PyCG                              all   0.92   0.66   0.77   0.21
+  Pyright                           all   0.92   0.92   0.92   0.60
+  PyCG ∪ Pyright                    all   0.91   0.92   0.92   0.60
+  name match                     sample   0.12   1.00   0.21   1.00
+  PyCG                           sample   0.83   0.43   0.57   0.11
+  Pyright                        sample   0.77   0.87   0.82   0.67
+  PyCG ∪ Pyright                 sample   0.77   0.87   0.82   0.67

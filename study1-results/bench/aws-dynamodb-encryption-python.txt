@@ -1,0 +1,11 @@
+
+aws-dynamodb-encryption-python: 369 items, 42 real calls; 32 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.11   1.00   0.20   1.00
+  PyCG                              all   1.00   0.83   0.91   0.44
+  Pyright                           all   1.00   0.88   0.94   0.44
+  PyCG ∪ Pyright                    all   1.00   0.88   0.94   0.44
+  name match                     sample   0.07   1.00   0.12   1.00
+  PyCG                           sample   1.00   1.00   1.00   1.00
+  Pyright                        sample   1.00   1.00   1.00   1.00
+  PyCG ∪ Pyright                 sample   1.00   1.00   1.00   1.00

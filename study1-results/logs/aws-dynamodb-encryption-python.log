@@ -1,0 +1,528 @@
+
+===== 2026-10-19T08:18:50Z aws-dynamodb-encryption-python clone
+
+===== 2026-10-19T08:18:51Z aws-dynamodb-encryption-python repo
+
+===== 2026-10-19T08:18:51Z aws-dynamodb-encryption-python env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python
++ python -m venv /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python
++ . /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(aws-dynamodb-encryption-python) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((aws-dynamodb-encryption-python) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python
++ '[' -f pyproject.toml ']'
++ '[' -f setup.py ']'
++ pip install .
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting boto3>=1.10.0 (from dynamodb-encryption-sdk==3.3.0)
+  Using cached boto3-1.43.114-py3-none-any.whl.metadata (6.6 kB)
+Collecting cryptography>=3.4.6 (from dynamodb-encryption-sdk==3.3.0)
+  Using cached cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+Collecting attrs>=17.4.0 (from dynamodb-encryption-sdk==3.3.0)
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting botocore<1.44.0,>=1.43.114 (from boto3>=1.10.0->dynamodb-encryption-sdk==3.3.0)
+  Using cached botocore-1.43.114-py3-none-any.whl.metadata (5.6 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3>=1.10.0->dynamodb-encryption-sdk==3.3.0)
+  Using cached jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.20.0,>=0.19.0 (from boto3>=1.10.0->dynamodb-encryption-sdk==3.3.0)
+  Using cached s3transfer-0.19.2-py3-none-any.whl.metadata (1.7 kB)
+Collecting python-dateutil<3.0.0,>=2.1 (from botocore<1.44.0,>=1.43.114->boto3>=1.10.0->dynamodb-encryption-sdk==3.3.0)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3!=2.2.0,<3,>=1.25.4 (from botocore<1.44.0,>=1.43.114->boto3>=1.10.0->dynamodb-encryption-sdk==3.3.0)
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting six>=1.5 (from python-dateutil<3.0.0,>=2.1->botocore<1.44.0,>=1.43.114->boto3>=1.10.0->dynamodb-encryption-sdk==3.3.0)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting cffi>=2.0.0 (from cryptography>=3.4.6->dynamodb-encryption-sdk==3.3.0)
+  Using cached cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.6->dynamodb-encryption-sdk==3.3.0)
+  Using cached pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Using cached boto3-1.43.114-py3-none-any.whl (140 kB)
+Using cached botocore-1.43.114-py3-none-any.whl (16.1 MB)
+Using cached jmespath-1.1.0-py3-none-any.whl (20 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached s3transfer-0.19.2-py3-none-any.whl (90 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+Using cached cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached pycparser-3.11-py3-none-any.whl (51 kB)
+Building wheels for collected packages: dynamodb-encryption-sdk
+  Building wheel for dynamodb-encryption-sdk (pyproject.toml): started
+  Building wheel for dynamodb-encryption-sdk (pyproject.toml): finished with status 'done'
+  Created wheel for dynamodb-encryption-sdk: filename=dynamodb_encryption_sdk-3.3.0-py2.py3-none-any.whl size=103887 sha256=246d5eb348b2bd82e22c7d85e4c66e3b7eb6601b2a884efe38c0877caf9e6bff
+  Stored in directory: /tmp/pip-ephem-wheel-cache-q7rfpt0b/wheels/65/6c/15/b7a36a06f149c67b69fe6a58e3d2393793b760d1b15f52b2b9
+Successfully built dynamodb-encryption-sdk
+Installing collected packages: urllib3, six, pycparser, jmespath, attrs, python-dateutil, cffi, cryptography, botocore, s3transfer, boto3, dynamodb-encryption-sdk
+
+Successfully installed attrs-26.1.0 boto3-1.43.114 botocore-1.43.114 cffi-2.1.1 cryptography-50.0.2 dynamodb-encryption-sdk-3.3.0 jmespath-1.1.0 pycparser-3.11 python-dateutil-2.9.0.post0 s3transfer-0.19.2 six-1.17.0 urllib3-2.8.0
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ pip install -r requirements.txt
+Requirement already satisfied: boto3>=1.10.0 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (1.43.114)
+Requirement already satisfied: cryptography>=3.4.6 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (50.0.2)
+Requirement already satisfied: attrs>=17.4.0 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (26.1.0)
+Requirement already satisfied: botocore<1.44.0,>=1.43.114 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from boto3>=1.10.0->-r requirements.txt (line 1)) (1.43.114)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from boto3>=1.10.0->-r requirements.txt (line 1)) (1.1.0)
+Requirement already satisfied: s3transfer<0.20.0,>=0.19.0 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from boto3>=1.10.0->-r requirements.txt (line 1)) (0.19.2)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from botocore<1.44.0,>=1.43.114->boto3>=1.10.0->-r requirements.txt (line 1)) (2.9.0.post0)
+Requirement already satisfied: urllib3!=2.2.0,<3,>=1.25.4 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from botocore<1.44.0,>=1.43.114->boto3>=1.10.0->-r requirements.txt (line 1)) (2.8.0)
+Requirement already satisfied: six>=1.5 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.44.0,>=1.43.114->boto3>=1.10.0->-r requirements.txt (line 1)) (1.17.0)
+Requirement already satisfied: cffi>=2.0.0 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from cryptography>=3.4.6->-r requirements.txt (line 2)) (2.1.1)
+Requirement already satisfied: pycparser in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from cffi>=2.0.0->cryptography>=3.4.6->-r requirements.txt (line 2)) (3.11)
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Installing collected packages: pygments, pluggy, iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pygments-2.21.0 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: dynamodb-encryption-sdk
+  Building editable for dynamodb-encryption-sdk (pyproject.toml): started
+  Building editable for dynamodb-encryption-sdk (pyproject.toml): finished with status 'done'
+  Created wheel for dynamodb-encryption-sdk: filename=dynamodb_encryption_sdk-3.3.0-0.editable-py2.py3-none-any.whl size=8532 sha256=493c75610ac70c1324378d27d9fe39d372d5cc942a50a71759cec3684a685c15
+  Stored in directory: /tmp/pip-ephem-wheel-cache-8fm1tg23/wheels/65/6c/15/b7a36a06f149c67b69fe6a58e3d2393793b760d1b15f52b2b9
+Successfully built dynamodb-encryption-sdk
+Installing collected packages: dynamodb-encryption-sdk
+  Attempting uninstall: dynamodb-encryption-sdk
+    Found existing installation: dynamodb-encryption-sdk 3.3.0
+    Uninstalling dynamodb-encryption-sdk-3.3.0:
+      Successfully uninstalled dynamodb-encryption-sdk-3.3.0
+Successfully installed dynamodb-encryption-sdk-3.3.0
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 33 s
+
+===== 2026-10-19T08:19:24Z aws-dynamodb-encryption-python trace
++ cd /home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python
++ TW_PYTEST_ARGS=test
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/src
++ /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/src --package /home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/src/dynamodb_encryption_sdk --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id aws-dynamodb-encryption-python-2026-10-19T08:19:24Z --out /home/azureuser/traceweave-harness/bundles/aws-dynamodb-encryption-python/trace.json
+........................................................................ [ 92%]
+......                                                                   [100%]
+==================================== ERRORS ====================================
+__________ ERROR collecting test/acceptance/encrypted/test_client.py ___________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/acceptance/encrypted/test_client.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/acceptance/encrypted/test_client.py:16: in <module>
+    from mock import MagicMock
+E   ModuleNotFoundError: No module named 'mock'
+___________ ERROR collecting test/acceptance/encrypted/test_item.py ____________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/acceptance/encrypted/test_item.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/acceptance/encrypted/test_item.py:15: in <module>
+    from moto import mock_dynamodb2
+E   ModuleNotFoundError: No module named 'moto'
+_________ ERROR collecting test/acceptance/encrypted/test_resource.py __________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/acceptance/encrypted/test_resource.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/acceptance/encrypted/test_resource.py:18: in <module>
+    from mock import MagicMock
+E   ModuleNotFoundError: No module named 'mock'
+___________ ERROR collecting test/acceptance/encrypted/test_table.py ___________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/acceptance/encrypted/test_table.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/acceptance/encrypted/test_table.py:16: in <module>
+    from mock import MagicMock
+E   ModuleNotFoundError: No module named 'mock'
+__________ ERROR collecting test/functional/encrypted/test_client.py ___________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/encrypted/test_client.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/encrypted/test_client.py:14: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+___________ ERROR collecting test/functional/encrypted/test_item.py ____________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/encrypted/test_item.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/encrypted/test_item.py:14: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+_________ ERROR collecting test/functional/encrypted/test_resource.py __________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/encrypted/test_resource.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/encrypted/test_resource.py:16: in <module>
+    from ..functional_test_utils import example_table  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/functional_test_utils.py:27: in <module>
+    from mock import patch
+E   ModuleNotFoundError: No module named 'mock'
+___________ ERROR collecting test/functional/encrypted/test_table.py ___________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/encrypted/test_table.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/encrypted/test_table.py:14: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+____ ERROR collecting test/functional/internal/formatting/test_attribute.py ____
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/internal/formatting/test_attribute.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/internal/formatting/test_attribute.py:14: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+_ ERROR collecting test/functional/internal/formatting/test_material_description.py _
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/internal/formatting/test_material_description.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/internal/formatting/test_material_description.py:14: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+___________ ERROR collecting test/functional/internal/test_utils.py ____________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/internal/test_utils.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/internal/test_utils.py:18: in <module>
+    from mock import Mock
+E   ModuleNotFoundError: No module named 'mock'
+____ ERROR collecting test/functional/material_providers/store/test_meta.py ____
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/material_providers/store/test_meta.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/material_providers/store/test_meta.py:20: in <module>
+    from ...functional_test_utils import mock_metastore  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/functional_test_utils.py:27: in <module>
+    from mock import patch
+E   ModuleNotFoundError: No module named 'mock'
+___ ERROR collecting test/functional/material_providers/test_most_recent.py ____
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/material_providers/test_most_recent.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/material_providers/test_most_recent.py:18: in <module>
+    from mock import MagicMock, sentinel
+E   ModuleNotFoundError: No module named 'mock'
+________ ERROR collecting test/functional/test_hypothesis_strategies.py ________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/test_hypothesis_strategies.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/test_hypothesis_strategies.py:14: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+_____________ ERROR collecting test/functional/test_structures.py ______________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/functional/test_structures.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/test_structures.py:21: in <module>
+    from .functional_test_utils import example_table  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/functional_test_utils.py:27: in <module>
+    from mock import patch
+E   ModuleNotFoundError: No module named 'mock'
+__________ ERROR collecting test/integration/encrypted/test_client.py __________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/integration/encrypted/test_client.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/integration/encrypted/test_client.py:16: in <module>
+    from ..integration_test_utils import (  # noqa pylint: disable=unused-import
+test/integration/integration_test_utils.py:23: in <module>
+    from ..functional import hypothesis_strategies  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/hypothesis_strategies.py:17: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+_________ ERROR collecting test/integration/encrypted/test_resource.py _________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/integration/encrypted/test_resource.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/integration/encrypted/test_resource.py:16: in <module>
+    from ..integration_test_utils import (  # noqa pylint: disable=unused-import
+test/integration/integration_test_utils.py:23: in <module>
+    from ..functional import hypothesis_strategies  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/hypothesis_strategies.py:17: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+__________ ERROR collecting test/integration/encrypted/test_table.py ___________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/integration/encrypted/test_table.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/integration/encrypted/test_table.py:16: in <module>
+    from ..integration_test_utils import (  # noqa pylint: disable=unused-import
+test/integration/integration_test_utils.py:23: in <module>
+    from ..functional import hypothesis_strategies  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/hypothesis_strategies.py:17: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+___ ERROR collecting test/integration/material_providers/store/test_meta.py ____
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/integration/material_providers/store/test_meta.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/integration/material_providers/store/test_meta.py:19: in <module>
+    from ...integration_test_utils import temp_metastore  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/integration/integration_test_utils.py:23: in <module>
+    from ..functional import hypothesis_strategies  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/hypothesis_strategies.py:17: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+_____ ERROR collecting test/integration/material_providers/test_aws_kms.py _____
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/integration/material_providers/test_aws_kms.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/integration/material_providers/test_aws_kms.py:17: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+___ ERROR collecting test/integration/material_providers/test_most_recent.py ___
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/integration/material_providers/test_most_recent.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/integration/material_providers/test_most_recent.py:16: in <module>
+    from ..integration_test_utils import ddb_table_name  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/integration/integration_test_utils.py:23: in <module>
+    from ..functional import hypothesis_strategies  # noqa=F401 pylint: disable=unused-import
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/functional/hypothesis_strategies.py:17: in <module>
+    import hypothesis
+E   ModuleNotFoundError: No module named 'hypothesis'
+________ ERROR collecting test/unit/material_providers/test_aws_kms.py _________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/unit/material_providers/test_aws_kms.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/unit/material_providers/test_aws_kms.py:19: in <module>
+    from mock import MagicMock, sentinel
+E   ModuleNotFoundError: No module named 'mock'
+_________ ERROR collecting test/unit/material_providers/test_static.py _________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/unit/material_providers/test_static.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/unit/material_providers/test_static.py:15: in <module>
+    from mock import MagicMock
+E   ModuleNotFoundError: No module named 'mock'
+________ ERROR collecting test/unit/material_providers/test_wrapped.py _________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/unit/material_providers/test_wrapped.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/unit/material_providers/test_wrapped.py:15: in <module>
+    from mock import MagicMock
+E   ModuleNotFoundError: No module named 'mock'
+_______________ ERROR collecting test/unit/test_compatability.py _______________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/aws-dynamodb-encryption-python/test/unit/test_compatability.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/unit/test_compatability.py:16: in <module>
+    import mock
+E   ModuleNotFoundError: No module named 'mock'
+=============================== warnings summary ===============================
+../../../traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages/_pytest/python.py:124
+  /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages/_pytest/python.py:124: PytestRemovedIn10Warning: Passing a non-Collection iterable to parametrize is deprecated.
+  Test: test/functional/delegated_keys/test_jce.py::test_warn_on_short_keys, argvalues type: generator
+  Please convert to a list or tuple.
+  See https://docs.pytest.org/en/stable/deprecations.html#parametrize-iterators
+    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)
+
+../../../traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages/_pytest/python.py:124
+  /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/lib/python3.12/site-packages/_pytest/python.py:124: PytestRemovedIn10Warning: Passing a non-Collection iterable to parametrize is deprecated.
+  Test: test/functional/internal/crypto/test_authentication.py::test_string_to_sign, argvalues type: generator
+  Please convert to a list or tuple.
+  See https://docs.pytest.org/en/stable/deprecations.html#parametrize-iterators
+    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR test/acceptance/encrypted/test_client.py
+ERROR test/acceptance/encrypted/test_item.py
+ERROR test/acceptance/encrypted/test_resource.py
+ERROR test/acceptance/encrypted/test_table.py
+ERROR test/functional/encrypted/test_client.py
+ERROR test/functional/encrypted/test_item.py
+ERROR test/functional/encrypted/test_resource.py
+ERROR test/functional/encrypted/test_table.py
+ERROR test/functional/internal/formatting/test_attribute.py
+ERROR test/functional/internal/formatting/test_material_description.py
+ERROR test/functional/internal/test_utils.py
+ERROR test/functional/material_providers/store/test_meta.py
+ERROR test/functional/material_providers/test_most_recent.py
+ERROR test/functional/test_hypothesis_strategies.py
+ERROR test/functional/test_structures.py
+ERROR test/integration/encrypted/test_client.py
+ERROR test/integration/encrypted/test_resource.py
+ERROR test/integration/encrypted/test_table.py
+ERROR test/integration/material_providers/store/test_meta.py
+ERROR test/integration/material_providers/test_aws_kms.py
+ERROR test/integration/material_providers/test_most_recent.py
+ERROR test/unit/material_providers/test_aws_kms.py
+ERROR test/unit/material_providers/test_static.py
+ERROR test/unit/material_providers/test_wrapped.py
+ERROR test/unit/test_compatability.py
+78 passed, 2 warnings, 25 errors in 7.38s
+wrote 85 edges (56 internal, 29 entry) over 42 modules -> /home/azureuser/traceweave-harness/bundles/aws-dynamodb-encryption-python/trace.json
+===== trace rc=0 in 11 s
+
+===== 2026-10-19T08:19:35Z aws-dynamodb-encryption-python bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/bin/python build_bundle.py aws-dynamodb-encryption-python --static /home/azureuser/traceweave-data/static/aws-dynamodb-encryption-python --runtime /home/azureuser/traceweave-harness/bundles/aws-dynamodb-encryption-python/trace.json
+aws-dynamodb-encryption-python: 430 nodes, pycg 244 / pyright 284 static edges, 85 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T08:19:36Z aws-dynamodb-encryption-python truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/bin/python tw.py truth aws-dynamodb-encryption-python
+aws-dynamodb-encryption-python: 205 in-package call sites, 185 caller->callee pairs, 1362 package lines ran; suite 78 passed in 6.63 s -> bundles/aws-dynamodb-encryption-python/truth.json
+===== truth rc=0 in 17 s
+
+===== 2026-10-19T08:19:54Z aws-dynamodb-encryption-python bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/aws-dynamodb-encryption-python/bin/python tw.py bench aws-dynamodb-encryption-python
++ mv /home/azureuser/traceweave-data/study1/bench/aws-dynamodb-encryption-python.txt.tmp /home/azureuser/traceweave-data/study1/bench/aws-dynamodb-encryption-python.txt
++ cat /home/azureuser/traceweave-data/study1/bench/aws-dynamodb-encryption-python.txt
+
+aws-dynamodb-encryption-python: 369 items, 42 real calls; 32 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.11   1.00   0.20   1.00
+  PyCG                              all   1.00   0.83   0.91   0.44
+  Pyright                           all   1.00   0.88   0.94   0.44
+  PyCG ∪ Pyright                    all   1.00   0.88   0.94   0.44
+  name match                     sample   0.07   1.00   0.12   1.00
+  PyCG                           sample   1.00   1.00   1.00   1.00
+  Pyright                        sample   1.00   1.00   1.00   1.00
+  PyCG ∪ Pyright                 sample   1.00   1.00   1.00   1.00
+===== bench rc=0 in 2 s

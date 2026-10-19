@@ -314,3 +314,5 @@ all-repos: 618 items, 204 real calls; 19 real calls whose target is never named
   Pyright                        sample   0.94   0.74   0.83   0.57
   PyCG ∪ Pyright                 sample   0.94   0.74   0.83   0.57
 ===== bench rc=0 in 2 s
+
+===== 2026-10-19T08:18:50Z all-repos clone

@@ -176,6 +176,8 @@ class Run:
                 package = summary["packages"][0]
                 tests = next((t for t in (*TESTS_DIRS, *(f"{package}/{d}" for d in TESTS_DIRS))
                               if (checkout / t).is_dir()), None)
+                # No fallback to the package dir for Google-style foo_test.py files: the harness treats the
+                # tests path as test code, so the whole package drops out (recurrentgemma, 0 nodes).
                 if tests is None:
                     return step, "no tests directory found"
                 bundle.mkdir(parents=True, exist_ok=True)

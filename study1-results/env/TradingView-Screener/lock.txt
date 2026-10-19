@@ -1,0 +1,18 @@
+certifi==2026.10.18
+charset-normalizer==3.5.2
+idna==3.20
+iniconfig==2.3.1
+numpy==2.5.4
+packaging==26.3
+pandas==3.0.6
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.1.1
+pytest-timeout==2.4.0
+python-dateutil==2.9.0.post0
+requests==2.34.2
+setuptools==84.0.0
+six==1.17.0
+tradingview-screener @ file:///home/azureuser/traceweave-harness/work/TradingView-Screener
+urllib3==2.8.0
+wheel==0.48.0

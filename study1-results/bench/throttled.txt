@@ -1,0 +1,11 @@
+
+throttled: 47 items, 13 real calls; 0 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.28   1.00   0.43   0.00
+  PyCG                              all   0.33   1.00   0.49   0.00
+  Pyright                           all   0.33   1.00   0.49   0.00
+  PyCG ∪ Pyright                    all   0.33   1.00   0.49   0.00
+  name match                     sample   0.26   1.00   0.41   0.00
+  PyCG                           sample   0.29   1.00   0.45   0.00
+  Pyright                        sample   0.29   1.00   0.45   0.00
+  PyCG ∪ Pyright                 sample   0.29   1.00   0.45   0.00

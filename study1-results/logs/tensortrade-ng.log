@@ -1,0 +1,595 @@
+
+===== 2026-10-19T08:49:43Z tensortrade-ng clone
+
+===== 2026-10-19T08:49:45Z tensortrade-ng repo
+
+===== 2026-10-19T08:49:45Z tensortrade-ng env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/tensortrade-ng
++ python -m venv /home/azureuser/traceweave-data/study1/venv/tensortrade-ng
++ . /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/tensortrade-ng
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/tensortrade-ng
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/tensortrade-ng/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(tensortrade-ng) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((tensortrade-ng) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/tensortrade-ng
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting catboost>=1.2.5 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading catboost-1.2.10-cp312-cp312-manylinux2014_x86_64.whl.metadata (1.2 kB)
+Collecting deprecated>=1.2.14 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached deprecated-3.0.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting gymnasium>=0.29.1 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading gymnasium-1.4.0-py3-none-any.whl.metadata (9.0 kB)
+Collecting matplotlib>=3.9.2 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting numpy<2,>=1.26.4 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting pandas>=2.1.0 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached pandas-3.0.6-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Collecting plotly>=5.23.0 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading plotly-7.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting pyyaml>=6.0.2 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting scikit-learn>=1.5.1 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.3 kB)
+Collecting coverage>=7.6.1 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached coverage-7.16.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.2 kB)
+Collecting ipython>=8.26.0 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading ipython-9.17.1-py3-none-any.whl.metadata (4.6 kB)
+Collecting pytest>=5.1.1 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting ta>=0.4.7 (from tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading ta-0.11.0.tar.gz (25 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting graphviz (from catboost>=1.2.5->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading graphviz-0.21-py3-none-any.whl.metadata (12 kB)
+Collecting scipy (from catboost>=1.2.5->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting six (from catboost>=1.2.5->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting python-dateutil>=2.8.2 (from pandas>=2.1.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting wrapt<3,>=1.16 (from deprecated>=1.2.14->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached wrapt-2.5.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+Collecting cloudpickle>=1.2.0 (from gymnasium>=0.29.1->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting typing-extensions>=4.12.0 (from gymnasium>=0.29.1->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting farama-notifications>=0.0.1 (from gymnasium>=0.29.1->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached farama_notifications-0.0.6-py3-none-any.whl.metadata (729 bytes)
+Collecting ipython-pygments-lexers>=1.0.0 (from ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading ipython_pygments_lexers-1.1.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting jedi>=0.18.2 (from ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading jedi-0.20.1-py2.py3-none-any.whl.metadata (23 kB)
+Collecting matplotlib-inline>=0.1.6 (from ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading matplotlib_inline-0.2.2-py3-none-any.whl.metadata (2.4 kB)
+Collecting pexpect>4.6 (from ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached prompt_toolkit-3.0.53-py3-none-any.whl.metadata (6.4 kB)
+Collecting psutil>=7 (from ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting pygments>=2.14.0 (from ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting stack_data>=0.6.0 (from ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting traitlets>=5.13.0 (from ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached traitlets-5.16.1-py3-none-any.whl.metadata (10 kB)
+Collecting wcwidth>=0.1.4 (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Collecting parso<0.9.0,>=0.8.7 (from jedi>=0.18.2->ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading parso-0.8.7-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting contourpy>=1.0.1 (from matplotlib>=3.9.2->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib>=3.9.2->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib>=3.9.2->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached fonttools-4.67.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (137 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib>=3.9.2->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Requirement already satisfied: packaging>=20.0 in /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages (from matplotlib>=3.9.2->tensortrade-ng==0.1.dev1+gec6552e3c) (26.3)
+Collecting pillow>=9 (from matplotlib>=3.9.2->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib>=3.9.2->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+INFO: pip is looking at multiple versions of contourpy to determine which version is compatible with other requirements. This could take a while.
+Collecting contourpy>=1.0.1 (from matplotlib>=3.9.2->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.6->ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting narwhals>=1.15.1 (from plotly>=5.23.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting iniconfig>=1.0.1 (from pytest>=5.1.1->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting pluggy<2,>=1.5 (from pytest>=5.1.1->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting joblib>=1.4.0 (from scikit-learn>=1.5.1->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn>=1.5.1->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Using cached threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+INFO: pip is looking at multiple versions of scipy to determine which version is compatible with other requirements. This could take a while.
+Collecting scipy (from catboost>=1.2.5->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading scipy-1.18.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+  Downloading scipy-1.17.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting executing>=1.2.0 (from stack_data>=0.6.0->ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading executing-2.3.0-py3-none-any.whl.metadata (9.1 kB)
+Collecting asttokens>=2.1.0 (from stack_data>=0.6.0->ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading asttokens-3.0.2-py3-none-any.whl.metadata (5.7 kB)
+Collecting pure-eval (from stack_data>=0.6.0->ipython>=8.26.0->tensortrade-ng==0.1.dev1+gec6552e3c)
+  Downloading pure_eval-0.2.4-py3-none-any.whl.metadata (6.4 kB)
+Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.0/18.0 MB 70.8 MB/s  0:00:00
+Downloading catboost-1.2.10-cp312-cp312-manylinux2014_x86_64.whl (97.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.1/97.1 MB 56.5 MB/s  0:00:01
+Using cached pandas-3.0.6-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (10.8 MB)
+Using cached coverage-7.16.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (258 kB)
+Using cached deprecated-3.0.0-py3-none-any.whl (21 kB)
+Using cached wrapt-2.5.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (250 kB)
+Downloading gymnasium-1.4.0-py3-none-any.whl (476 kB)
+Using cached cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Using cached farama_notifications-0.0.6-py3-none-any.whl (2.9 kB)
+Downloading ipython-9.17.1-py3-none-any.whl (639 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 639.0/639.0 kB 16.5 MB/s  0:00:00
+Using cached prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Downloading ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+Downloading jedi-0.20.1-py2.py3-none-any.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 86.2 MB/s  0:00:00
+Downloading parso-0.8.7-py2.py3-none-any.whl (107 kB)
+Using cached matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+Downloading contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (362 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.67.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+Using cached kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+Downloading matplotlib_inline-0.2.2-py3-none-any.whl (9.5 kB)
+Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Using cached pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+Downloading plotly-7.1.0-py3-none-any.whl (9.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 106.3 MB/s  0:00:00
+Using cached narwhals-2.27.1-py3-none-any.whl (483 kB)
+Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Using cached scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.2 MB)
+Using cached joblib-1.6.0-py3-none-any.whl (306 kB)
+Downloading scipy-1.17.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.2/35.2 MB 66.2 MB/s  0:00:00
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Downloading asttokens-3.0.2-py3-none-any.whl (28 kB)
+Downloading executing-2.3.0-py3-none-any.whl (29 kB)
+Using cached threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Using cached traitlets-5.16.1-py3-none-any.whl (86 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (769 kB)
+Downloading graphviz-0.21-py3-none-any.whl (47 kB)
+Downloading pure_eval-0.2.4-py3-none-any.whl (11 kB)
+Building wheels for collected packages: tensortrade-ng, ta
+  Building wheel for tensortrade-ng (pyproject.toml): started
+  Building wheel for tensortrade-ng (pyproject.toml): finished with status 'done'
+  Created wheel for tensortrade-ng: filename=tensortrade_ng-0.1.dev1+gec6552e3c-py3-none-any.whl size=147272 sha256=dfbbf224866f0925eb472865fc2bb1f9e20c906af062acaf50c56dbff35763e0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-xsee8du3/wheels/5f/af/05/f78ea303d9601867cb9fea53aab996472daf8a3a6f337ad257
+  Building wheel for ta (pyproject.toml): started
+  Building wheel for ta (pyproject.toml): finished with status 'done'
+  Created wheel for ta: filename=ta-0.11.0-py3-none-any.whl size=29482 sha256=407192684c1cbcf929de38d59782e8231fe728a3aafb03fdf3935f4b48dc1a5a
+  Stored in directory: /home/azureuser/traceweave-data/study1/pip-cache/wheels/5c/a1/5f/c6b85a7d9452057be4ce68a8e45d77ba34234a6d46581777c6
+Successfully built tensortrade-ng ta
+Installing collected packages: pure-eval, ptyprocess, farama-notifications, wrapt, wcwidth, typing-extensions, traitlets, threadpoolctl, six, pyyaml, pyparsing, pygments, psutil, pluggy, pillow, pexpect, parso, numpy, narwhals, kiwisolver, iniconfig, graphviz, fonttools, executing, cycler, coverage, cloudpickle, asttokens, stack_data, scipy, python-dateutil, pytest, prompt_toolkit, plotly, matplotlib-inline, joblib, jedi, ipython-pygments-lexers, gymnasium, deprecated, contourpy, scikit-learn, pandas, matplotlib, ipython, ta, catboost, tensortrade-ng
+
+Successfully installed asttokens-3.0.2 catboost-1.2.10 cloudpickle-3.1.2 contourpy-1.3.3 coverage-7.16.2 cycler-0.12.1 deprecated-3.0.0 executing-2.3.0 farama-notifications-0.0.6 fonttools-4.67.0 graphviz-0.21 gymnasium-1.4.0 iniconfig-2.3.1 ipython-9.17.1 ipython-pygments-lexers-1.1.1 jedi-0.20.1 joblib-1.6.0 kiwisolver-1.5.1 matplotlib-3.11.2 matplotlib-inline-0.2.2 narwhals-2.27.1 numpy-1.26.4 pandas-3.0.6 parso-0.8.7 pexpect-4.9.0 pillow-13.0.0 plotly-7.1.0 pluggy-1.7.0 prompt_toolkit-3.0.53 psutil-7.2.2 ptyprocess-0.7.0 pure-eval-0.2.4 pygments-2.21.0 pyparsing-3.3.3 pytest-9.1.1 python-dateutil-2.9.0.post0 pyyaml-6.0.3 scikit-learn-1.9.1 scipy-1.17.1 six-1.17.0 stack_data-0.6.3 ta-0.11.0 tensortrade-ng-0.1.dev1+gec6552e3c threadpoolctl-3.7.0 traitlets-5.16.1 typing-extensions-4.16.0 wcwidth-0.9.2 wrapt-2.5.1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Requirement already satisfied: pytest in /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages (9.1.1)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: iniconfig>=1.0.1 in /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages (from pytest) (2.3.1)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages (from pytest) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages (from pytest) (2.21.0)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Installing collected packages: pytest-timeout
+Successfully installed pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/tensortrade-ng
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: tensortrade-ng
+  Building editable for tensortrade-ng (pyproject.toml): started
+  Building editable for tensortrade-ng (pyproject.toml): finished with status 'done'
+  Created wheel for tensortrade-ng: filename=tensortrade_ng-0.1.dev1+gec6552e3c-py3-none-any.whl size=13427 sha256=ae80bf3161b07da7f5ef02269ec7de86ff56bc08f20396dda3f3157aa9ebc627
+  Stored in directory: /tmp/pip-ephem-wheel-cache-x57c0fve/wheels/5f/af/05/f78ea303d9601867cb9fea53aab996472daf8a3a6f337ad257
+Successfully built tensortrade-ng
+Installing collected packages: tensortrade-ng
+  Attempting uninstall: tensortrade-ng
+    Found existing installation: tensortrade-ng 0.1.dev1+gec6552e3c
+    Uninstalling tensortrade-ng-0.1.dev1+gec6552e3c:
+      Successfully uninstalled tensortrade-ng-0.1.dev1+gec6552e3c
+Successfully installed tensortrade-ng-0.1.dev1+gec6552e3c
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 97 s
+
+===== 2026-10-19T08:51:22Z tensortrade-ng trace
++ cd /home/azureuser/traceweave-harness/work/tensortrade-ng
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/tensortrade-ng/src
++ /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/tensortrade-ng/src --package /home/azureuser/traceweave-harness/work/tensortrade-ng/src/tensortrade --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id tensortrade-ng-2026-10-19T08:51:22Z --out /home/azureuser/traceweave-harness/bundles/tensortrade-ng/trace.json
+.................................................................F.F.... [ 25%]
+......s................................................................. [ 51%]
+........................................................................ [ 76%]
+.................................................................        [100%]
+=================================== FAILURES ===================================
+_______________________________ test_pct_change ________________________________
+
+    def test_pct_change():
+        configs = [
+            {"periods": 1, "fill_method": None},
+            {"periods": 1, "fill_method": "pad"},
+            {"periods": 1, "fill_method": "ffill"},
+            {"periods": 2, "fill_method": None},
+            {"periods": 2, "fill_method": "pad"},
+            {"periods": 2, "fill_method": "ffill"},
+        ]
+    
+        for array, config in product(arrays, configs):
+    
+            s = Stream.source(array, dtype="float")
+            w = s.pct_change(**config).rename("w")
+>           expected = list(pd.Series(array).pct_change(**config))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/tensortrade/unit/feed/api/float/test_utils.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = 0   -1.50
+1    2.20
+2   -3.30
+3    4.70
+4   -5.10
+5    7.45
+6    8.80
+dtype: float64
+periods = 1, fill_method = 'pad', freq = None, kwargs = {}
+
+    @final
+    def pct_change(
+        self,
+        periods: int = 1,
+        fill_method: None = None,
+        freq=None,
+        **kwargs,
+    ) -> Self:
+        """
+        Fractional change between the current and a prior element.
+    
+        Computes the fractional change from the immediately previous row by
+        default. This is useful in comparing the fraction of change in a time
+        series of elements.
+    
+        .. note::
+    
+            Despite the name of this method, it calculates fractional change
+            (also known as per unit change or relative change) and not
+            percentage change. If you need the percentage change, multiply
+            these values by 100.
+    
+        Parameters
+        ----------
+        periods : int, default 1
+            Periods to shift for forming percent change.
+        fill_method : None
+            Must be None. This argument will be removed in a future version of pandas.
+        freq : DateOffset, timedelta, or str, optional
+            Increment to use from time series API (e.g. 'ME' or BDay()).
+        **kwargs
+            Additional keyword arguments are passed into
+            `DataFrame.shift` or `Series.shift`.
+    
+        Returns
+        -------
+        Series or DataFrame
+            The same type as the calling object.
+    
+        See Also
+        --------
+        Series.diff : Compute the difference of two elements in a Series.
+        DataFrame.diff : Compute the difference of two elements in a DataFrame.
+        Series.shift : Shift the index by some number of periods.
+        DataFrame.shift : Shift the index by some number of periods.
+    
+        Examples
+        --------
+        **Series**
+    
+        >>> s = pd.Series([90, 91, 85])
+        >>> s
+        0    90
+        1    91
+        2    85
+        dtype: int64
+    
+        >>> s.pct_change()
+        0         NaN
+        1    0.011111
+        2   -0.065934
+        dtype: float64
+    
+        >>> s.pct_change(periods=2)
+        0         NaN
+        1         NaN
+        2   -0.055556
+        dtype: float64
+    
+        See the percentage change in a Series where filling NAs with last
+        valid observation forward to next valid.
+    
+        >>> s = pd.Series([90, 91, None, 85])
+        >>> s
+        0    90.0
+        1    91.0
+        2     NaN
+        3    85.0
+        dtype: float64
+    
+        >>> s.ffill().pct_change()
+        0         NaN
+        1    0.011111
+        2    0.000000
+        3   -0.065934
+        dtype: float64
+    
+        **DataFrame**
+    
+        Percentage change in French franc, Deutsche Mark, and Italian lira from
+        1980-01-01 to 1980-03-01.
+    
+        >>> df = pd.DataFrame(
+        ...     {
+        ...         "FR": [4.0405, 4.0963, 4.3149],
+        ...         "GR": [1.7246, 1.7482, 1.8519],
+        ...         "IT": [804.74, 810.01, 860.13],
+        ...     },
+        ...     index=["1980-01-01", "1980-02-01", "1980-03-01"],
+        ... )
+        >>> df
+                        FR      GR      IT
+        1980-01-01  4.0405  1.7246  804.74
+        1980-02-01  4.0963  1.7482  810.01
+        1980-03-01  4.3149  1.8519  860.13
+    
+        >>> df.pct_change()
+                          FR        GR        IT
+        1980-01-01       NaN       NaN       NaN
+        1980-02-01  0.013810  0.013684  0.006549
+        1980-03-01  0.053365  0.059318  0.061876
+    
+        Percentage of change in GOOG and APPL stock volume. Shows computing
+        the percentage change between columns.
+    
+        >>> df = pd.DataFrame(
+        ...     {
+        ...         "2016": [1769950, 30586265],
+        ...         "2015": [1500923, 40912316],
+        ...         "2014": [1371819, 41403351],
+        ...     },
+        ...     index=["GOOG", "APPL"],
+        ... )
+        >>> df
+                  2016      2015      2014
+        GOOG   1769950   1500923   1371819
+        APPL  30586265  40912316  41403351
+    
+        >>> df.pct_change(axis="columns", periods=-1)
+                  2016      2015  2014
+        GOOG  0.179241  0.094112   NaN
+        APPL -0.252395 -0.011860   NaN
+        """
+        # GH#53491
+        if fill_method is not None:
+>           raise ValueError(f"fill_method must be None; got {fill_method=}.")
+E           ValueError: fill_method must be None; got fill_method='pad'.
+
+../../../traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages/pandas/core/generic.py:11556: ValueError
+----------------------------- Captured stdout call -----------------------------
+{'periods': 1, 'fill_method': None}
+________________________________ test_ewm_mean _________________________________
+
+    def test_ewm_mean():
+    
+        array = [1, np.nan, 3, 4, 5, 6, np.nan, 7]
+    
+        s = Stream.source(array, dtype="float")
+    
+        for config in configurations:
+            w = s.ewm(**config).mean().rename("w")
+            expected = list(pd.Series(array).ewm(**config).mean())
+    
+>           assert_op([w], expected)
+
+tests/tensortrade/unit/feed/api/float/window/test_ewm.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/utils/ops.py:23: in assert_op
+    np.testing.assert_allclose(actual, expected)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = (<function assert_allclose.<locals>.compare at 0x736baf391c60>, array([1.        , 1.        , 2.33333333, 3.16666667,...04166667, 6.34722222]), array([1.      , 1.      , 2.5     , 3.25    , 4.125   , 5.0625  ,
+       5.0625  , 6.515625]))
+kwds = {'err_msg': '', 'verbose': True, 'header': 'Not equal to tolerance rtol=1e-07, atol=0', 'equal_nan': True}
+
+    @wraps(func)
+    def inner(*args, **kwds):
+        with self._recreate_cm():
+>           return func(*args, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^
+E           AssertionError: 
+E           Not equal to tolerance rtol=1e-07, atol=0
+E           
+E           Mismatched elements: 6 / 8 (75%)
+E           Max absolute difference: 0.16840278
+E           Max relative difference: 0.06666667
+E            x: array([1.      , 1.      , 2.333333, 3.166667, 4.083333, 5.041667,
+E                  5.041667, 6.347222])
+E            y: array([1.      , 1.      , 2.5     , 3.25    , 4.125   , 5.0625  ,
+E                  5.0625  , 6.515625])
+
+/usr/local/lib/python3.12/contextlib.py:81: AssertionError
+=============================== warnings summary ===============================
+src/tensortrade/env/rewards/pbr.py:28
+  /home/azureuser/traceweave-harness/work/tensortrade-ng/src/tensortrade/env/rewards/pbr.py:28: SyntaxWarning: invalid escape sequence '\c'
+    :math:`R_{t} = (p_{t} - p_{t-1}) \cdot x_{t}`.
+
+tests/tensortrade/unit/env/rewards/test_simple_profit.py::TestSimpleProfit::test_reward
+tests/tensortrade/unit/env/test_env.py::test_runs_with_external_feed_only
+tests/tensortrade/unit/env/test_env.py::test_runs_with_random_start
+  /home/azureuser/traceweave-harness/work/tensortrade-ng/src/tensortrade/env/utils/feed_controller.py:201: UserWarning: Feed has no meta feed. Therefor some components may not work.
+    warn('Feed has no meta feed. Therefor some components may not work.', UserWarning)
+
+tests/tensortrade/unit/env/test_env.py::test_runs_with_external_feed_only
+tests/tensortrade/unit/env/test_env.py::test_runs_with_random_start
+  /home/azureuser/traceweave-harness/work/tensortrade-ng/src/tensortrade/env/utils/feed_controller.py:184: UserWarning: Your feature set contains more than 20 features. This may introduce noise and lead to overfitting, potentially reducing your model's effectiveness. Consider reducing the number of features to improve performance and accuracy.
+    warn('Your feature set contains more than 20 features. This may introduce noise and lead to overfitting, '
+
+tests/tensortrade/unit/feed/api/float/test_utils.py::test_sqrt
+  /home/azureuser/traceweave-harness/work/tensortrade-ng/src/tensortrade/feed/core/operators.py:33: RuntimeWarning: invalid value encountered in sqrt
+    return self.func(node.value)
+
+tests/tensortrade/unit/feed/api/float/test_utils.py::test_log
+  /home/azureuser/traceweave-harness/work/tensortrade-ng/src/tensortrade/feed/core/operators.py:33: RuntimeWarning: invalid value encountered in log
+    return self.func(node.value)
+
+tests/tensortrade/unit/feed/api/float/window/test_expanding.py::test_expanding_var
+tests/tensortrade/unit/feed/api/float/window/test_rolling.py::test_rolling_var
+tests/tensortrade/unit/feed/api/float/window/test_rolling.py::test_rolling_std
+  /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages/numpy/core/fromnumeric.py:3787: RuntimeWarning: Degrees of freedom <= 0 for slice
+    return _methods._var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+
+tests/tensortrade/unit/feed/api/float/window/test_expanding.py::test_expanding_var
+tests/tensortrade/unit/feed/api/float/window/test_expanding.py::test_expanding_std
+tests/tensortrade/unit/feed/api/float/window/test_rolling.py::test_rolling_var
+tests/tensortrade/unit/feed/api/float/window/test_rolling.py::test_rolling_std
+  /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages/numpy/core/_methods.py:198: RuntimeWarning: invalid value encountered in scalar divide
+    ret = ret.dtype.type(ret / rcount)
+
+tests/tensortrade/unit/feed/api/float/window/test_expanding.py::test_expanding_std
+  /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages/numpy/core/_methods.py:206: RuntimeWarning: Degrees of freedom <= 0 for slice
+    ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+
+tests/tensortrade/unit/feed/api/float/window/test_rolling.py::test_rolling_var
+tests/tensortrade/unit/feed/api/float/window/test_rolling.py::test_rolling_std
+  /home/azureuser/traceweave-harness/work/tensortrade-ng/src/tensortrade/feed/api/float/window/rolling.py:153: RuntimeWarning: Degrees of freedom <= 0 for slice.
+    def func1(x): return np.nanvar(x, ddof=1)
+
+tests/tensortrade/unit/pipeline/transformers/test_catboost_rfecv.py::TestCatBoostRFECVTransformer::test_transform_no_columns_dropped
+  /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages/sklearn/feature_selection/_rfe.py:860: UserWarning: Found min_features_to_select=10 > n_features=6. There will be no feature selection and all features will be kept.
+    warnings.warn(
+
+tests/tensortrade/unit/pipeline/transformers/test_lasso_feature_selection.py::TestLassoFeatureSelectionTransformer::test_transform_includes_target_column
+tests/tensortrade/unit/pipeline/transformers/test_lasso_feature_selection.py::TestLassoFeatureSelectionTransformer::test_transform_preserves_index
+tests/tensortrade/unit/pipeline/transformers/test_lasso_feature_selection.py::TestLassoFeatureSelectionTransformer::test_transform_returns_dataframe
+tests/tensortrade/unit/pipeline/transformers/test_lasso_feature_selection.py::TestLassoFeatureSelectionTransformer::test_transform_selects_correct_number_of_features
+tests/tensortrade/unit/pipeline/transformers/test_lasso_feature_selection.py::TestLassoFeatureSelectionTransformer::test_transform_selects_features_with_highest_coefficients
+  /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.772424e+01, tolerance: 7.788e+00
+    model = cd_fast.enet_coordinate_descent(
+
+tests/tensortrade/unit/pipeline/transformers/test_lasso_feature_selection.py::TestLassoFeatureSelectionTransformer::test_transform_selects_features_with_highest_coefficients
+  /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/lib/python3.12/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.551811e+01, tolerance: 7.788e+00
+    model = cd_fast.enet_coordinate_descent(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/tensortrade/unit/feed/api/float/test_utils.py::test_pct_change
+FAILED tests/tensortrade/unit/feed/api/float/window/test_ewm.py::test_ewm_mean
+2 failed, 278 passed, 1 skipped, 25 warnings in 93.61s (0:01:33)
+wrote 1002 edges (788 internal, 214 entry) over 114 modules -> /home/azureuser/traceweave-harness/bundles/tensortrade-ng/trace.json
+===== trace rc=0 in 98 s
+
+===== 2026-10-19T08:53:00Z tensortrade-ng bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/bin/python build_bundle.py tensortrade-ng --static /home/azureuser/traceweave-data/static/tensortrade-ng --runtime /home/azureuser/traceweave-harness/bundles/tensortrade-ng/trace.json
+tensortrade-ng: 873 nodes, pycg 199 / pyright 463 static edges, 1000 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 2 s
+
+===== 2026-10-19T08:53:02Z tensortrade-ng truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/bin/python tw.py truth tensortrade-ng
+tensortrade-ng: 1260 in-package call sites, 1078 caller->callee pairs, 3709 package lines ran; suite 278 passed in 100.59 s -> bundles/tensortrade-ng/truth.json
+===== truth rc=0 in 213 s
+
+===== 2026-10-19T08:56:34Z tensortrade-ng bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/tensortrade-ng/bin/python tw.py bench tensortrade-ng
+<unknown>:28: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\c'
++ mv /home/azureuser/traceweave-data/study1/bench/tensortrade-ng.txt.tmp /home/azureuser/traceweave-data/study1/bench/tensortrade-ng.txt
++ cat /home/azureuser/traceweave-data/study1/bench/tensortrade-ng.txt
+
+tensortrade-ng: 2370 items, 518 real calls; 318 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.22   1.00   0.36   1.00
+  PyCG                              all   1.00   0.19   0.32   0.16
+  Pyright                           all   0.94   0.57   0.71   0.36
+  PyCG ∪ Pyright                    all   0.94   0.57   0.71   0.36
+  name match                     sample   0.17   1.00   0.29   1.00
+  PyCG                           sample   1.00   0.19   0.33   0.19
+  Pyright                        sample   0.82   0.39   0.53   0.33
+  PyCG ∪ Pyright                 sample   0.82   0.39   0.53   0.33
+===== bench rc=0 in 5 s

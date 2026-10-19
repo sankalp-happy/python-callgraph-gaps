@@ -265,3 +265,5 @@ autoray: 331 items, 32 real calls; 18 real calls whose target is never named
   Pyright                        sample   1.00   1.00   1.00   0.00
   PyCG ∪ Pyright                 sample   1.00   1.00   1.00   0.00
 ===== bench rc=0 in 3 s
+
+===== 2026-10-19T08:18:50Z autoray clone

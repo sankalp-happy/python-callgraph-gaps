@@ -1,0 +1,11 @@
+
+python-lazy-object-proxy: 23 items, 4 real calls; 183 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.17   1.00   0.30   0.00
+  PyCG                              all   0.50   0.50   0.50   0.00
+  Pyright                           all   0.67   1.00   0.80   0.00
+  PyCG ∪ Pyright                    all   0.67   1.00   0.80   0.00
+  name match                     sample   0.14   1.00   0.25   0.00
+  PyCG                           sample   0.33   0.33   0.33   0.00
+  Pyright                        sample   0.60   1.00   0.75   0.00
+  PyCG ∪ Pyright                 sample   0.60   1.00   0.75   0.00

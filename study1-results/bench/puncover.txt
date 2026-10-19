@@ -1,0 +1,11 @@
+
+puncover: 65 items, 18 real calls; 6 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.28   1.00   0.43   0.00
+  PyCG                              all   0.68   0.94   0.79   0.00
+  Pyright                           all   0.68   0.94   0.79   0.00
+  PyCG ∪ Pyright                    all   0.68   0.94   0.79   0.00
+  name match                     sample   0.30   1.00   0.46   0.00
+  PyCG                           sample   0.47   0.88   0.61   0.00
+  Pyright                        sample   0.47   0.88   0.61   0.00
+  PyCG ∪ Pyright                 sample   0.47   0.88   0.61   0.00

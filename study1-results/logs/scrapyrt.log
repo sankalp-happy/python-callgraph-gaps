@@ -340,3 +340,5 @@ scrapyrt: 59 items, 20 real calls; 5 real calls whose target is never named
   Pyright                        sample   0.80   0.89   0.84   1.00
   PyCG ∪ Pyright                 sample   0.73   0.89   0.80   1.00
 ===== bench rc=0 in 1 s
+
+===== 2026-10-19T08:18:50Z scrapyrt clone

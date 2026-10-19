@@ -1,0 +1,11 @@
+
+django-ses: 13 items, 3 real calls; 0 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.23   1.00   0.38   0.00
+  PyCG                              all   1.00   0.67   0.80   0.00
+  Pyright                           all   1.00   0.67   0.80   0.00
+  PyCG ∪ Pyright                    all   1.00   0.67   0.80   0.00
+  name match                     sample   0.33   1.00   0.50   0.00
+  PyCG                           sample   1.00   0.50   0.67   0.00
+  Pyright                        sample   1.00   0.50   0.67   0.00
+  PyCG ∪ Pyright                 sample   1.00   0.50   0.67   0.00

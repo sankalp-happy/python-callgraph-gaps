@@ -1,0 +1,2431 @@
+
+===== 2026-10-19T08:40:39Z json-logging-python clone
+
+===== 2026-10-19T08:40:40Z json-logging-python repo
+
+===== 2026-10-19T08:40:40Z json-logging-python env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/json-logging-python
++ python -m venv /home/azureuser/traceweave-data/study1/venv/json-logging-python
++ . /home/azureuser/traceweave-data/study1/venv/json-logging-python/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/json-logging-python
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/json-logging-python
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/json-logging-python/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(json-logging-python) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((json-logging-python) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/json-logging-python
++ '[' -f pyproject.toml ']'
++ '[' -f setup.py ']'
++ pip install .
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: json-logging
+  Building wheel for json-logging (pyproject.toml): started
+  Building wheel for json-logging (pyproject.toml): finished with status 'done'
+  Created wheel for json-logging: filename=json_logging-1.5.1-py2.py3-none-any.whl size=23938 sha256=5f0ee8fbf6929a318f6154a00fd296794cf44c004a2a60ffd608a008035a8fcb
+  Stored in directory: /tmp/pip-ephem-wheel-cache-nj8b93sr/wheels/a9/9c/47/7747eb4f432c0db636d465559543d84f92040a03c862762c19
+Successfully built json-logging
+Installing collected packages: json-logging
+Successfully installed json-logging-1.5.1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ pip install -r test-requirements.txt
+Obtaining file:///home/azureuser/traceweave-harness/work/json-logging-python (from -r test-requirements.txt (line 11))
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: wheel in /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages (from -r test-requirements.txt (line 1)) (0.48.0)
+Collecting flask (from -r test-requirements.txt (line 2))
+  Using cached flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting quart (from -r test-requirements.txt (line 4))
+  Downloading quart-0.22.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting sanic (from -r test-requirements.txt (line 5))
+  Downloading sanic-25.12.1-py3-none-any.whl.metadata (11 kB)
+Collecting fastapi (from -r test-requirements.txt (line 6))
+  Downloading fastapi-0.146.0-py3-none-any.whl.metadata (26 kB)
+Collecting uvicorn (from -r test-requirements.txt (line 7))
+  Using cached uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting requests (from -r test-requirements.txt (line 8))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting flake8 (from -r test-requirements.txt (line 9))
+  Using cached flake8-7.4.1-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting pytest (from -r test-requirements.txt (line 10))
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting connexion[swagger-ui] (from -r test-requirements.txt (line 3))
+  Downloading connexion-3.3.0-py3-none-any.whl.metadata (12 kB)
+Requirement already satisfied: packaging>=24.0 in /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages (from wheel->-r test-requirements.txt (line 1)) (26.3)
+Collecting blinker>=1.9.0 (from flask->-r test-requirements.txt (line 2))
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from flask->-r test-requirements.txt (line 2))
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from flask->-r test-requirements.txt (line 2))
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from flask->-r test-requirements.txt (line 2))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from flask->-r test-requirements.txt (line 2))
+  Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from flask->-r test-requirements.txt (line 2))
+  Using cached werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+Collecting PyYAML>=5.1 (from connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting asgiref>=3.4 (from connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached asgiref-3.12.1-py3-none-any.whl.metadata (9.4 kB)
+Collecting httpx>=0.23 (from connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting inflection>=0.3.1 (from connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Downloading inflection-0.5.1-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting jsonschema>=4.17.3 (from connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting python-multipart>=0.0.15 (from connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+Collecting starlette>=0.35 (from connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting swagger-ui-bundle>=1.1.0 (from connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Downloading swagger_ui_bundle-1.1.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting typing-extensions>=4.6.1 (from connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting aiofiles (from quart->-r test-requirements.txt (line 4))
+  Downloading aiofiles-25.1.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting hypercorn>=0.11.2 (from quart->-r test-requirements.txt (line 4))
+  Downloading hypercorn-0.18.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting sanic-routing>=23.12.0 (from sanic->-r test-requirements.txt (line 5))
+  Downloading sanic_routing-23.12.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting httptools>=0.0.10 (from sanic->-r test-requirements.txt (line 5))
+  Downloading httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+Collecting uvloop>=0.15.0 (from sanic->-r test-requirements.txt (line 5))
+  Downloading uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+Collecting ujson>=1.35 (from sanic->-r test-requirements.txt (line 5))
+  Downloading ujson-6.0.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (10.0 kB)
+Collecting websockets>=10.0 (from sanic->-r test-requirements.txt (line 5))
+  Using cached websockets-17.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+Collecting multidict<7.0,>=5.0 (from sanic->-r test-requirements.txt (line 5))
+  Using cached multidict-6.9.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting html5tagger>=1.2.1 (from sanic->-r test-requirements.txt (line 5))
+  Downloading html5tagger-2.0.0-py3-none-any.whl.metadata (13 kB)
+Collecting tracerite>=2.2.0 (from sanic->-r test-requirements.txt (line 5))
+  Downloading tracerite-2.6.5-py3-none-any.whl.metadata (6.1 kB)
+Requirement already satisfied: setuptools>=70.1.0 in /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages (from sanic->-r test-requirements.txt (line 5)) (84.0.0)
+Collecting pydantic>=2.9.0 (from fastapi->-r test-requirements.txt (line 6))
+  Using cached pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+Collecting typing-inspection>=0.4.2 (from fastapi->-r test-requirements.txt (line 6))
+  Using cached typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting annotated-doc>=0.0.2 (from fastapi->-r test-requirements.txt (line 6))
+  Using cached annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting opentelemetry-api>=1.44.0 (from fastapi->-r test-requirements.txt (line 6))
+  Using cached opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting h11>=0.8 (from uvicorn->-r test-requirements.txt (line 7))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting charset_normalizer<4,>=2 (from requests->-r test-requirements.txt (line 8))
+  Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests->-r test-requirements.txt (line 8))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->-r test-requirements.txt (line 8))
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->-r test-requirements.txt (line 8))
+  Using cached certifi-2026.10.18-py3-none-any.whl.metadata (2.5 kB)
+Collecting mccabe<0.8.0,>=0.7.0 (from flake8->-r test-requirements.txt (line 9))
+  Using cached mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting pycodestyle<2.16.0,>=2.15.0 (from flake8->-r test-requirements.txt (line 9))
+  Using cached pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)
+Collecting pyflakes<4.1.0,>=4.0.0 (from flake8->-r test-requirements.txt (line 9))
+  Using cached pyflakes-4.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+Collecting iniconfig>=1.0.1 (from pytest->-r test-requirements.txt (line 10))
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting pluggy<2,>=1.5 (from pytest->-r test-requirements.txt (line 10))
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest->-r test-requirements.txt (line 10))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting anyio (from httpx>=0.23->connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting httpcore==1.* (from httpx>=0.23->connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h2>=4.3.0 (from hypercorn>=0.11.2->quart->-r test-requirements.txt (line 4))
+  Downloading h2-4.4.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting priority (from hypercorn>=0.11.2->quart->-r test-requirements.txt (line 4))
+  Downloading priority-2.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting wsproto>=0.14.0 (from hypercorn>=0.11.2->quart->-r test-requirements.txt (line 4))
+  Downloading wsproto-1.3.2-py3-none-any.whl.metadata (5.2 kB)
+Collecting hyperframe<7,>=6.1 (from h2>=4.3.0->hypercorn>=0.11.2->quart->-r test-requirements.txt (line 4))
+  Downloading hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting hpack<5,>=4.2 (from h2>=4.3.0->hypercorn>=0.11.2->quart->-r test-requirements.txt (line 4))
+  Downloading hpack-4.2.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=4.17.3->connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=4.17.3->connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=4.17.3->connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=4.17.3->connexion[swagger-ui]->-r test-requirements.txt (line 3))
+  Using cached rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi->-r test-requirements.txt (line 6))
+  Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.50.1 (from pydantic>=2.9.0->fastapi->-r test-requirements.txt (line 6))
+  Using cached pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+Using cached flask-3.1.3-py3-none-any.whl (103 kB)
+Downloading connexion-3.3.0-py3-none-any.whl (113 kB)
+Downloading quart-0.22.0-py3-none-any.whl (78 kB)
+Downloading sanic-25.12.1-py3-none-any.whl (258 kB)
+Using cached multidict-6.9.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (336 kB)
+Downloading fastapi-0.146.0-py3-none-any.whl (144 kB)
+Using cached uvicorn-0.54.0-py3-none-any.whl (87 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached flake8-7.4.1-py2.py3-none-any.whl (57 kB)
+Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Using cached pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)
+Using cached pyflakes-4.0.3-py2.py3-none-any.whl (66 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Downloading aiofiles-25.1.0-py3-none-any.whl (14 kB)
+Using cached annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Using cached asgiref-3.12.1-py3-none-any.whl (25 kB)
+Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Using cached certifi-2026.10.18-py3-none-any.whl (134 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading html5tagger-2.0.0-py3-none-any.whl (17 kB)
+Downloading httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (552 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 552.8/552.8 kB 8.4 MB/s  0:00:00
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading hypercorn-0.18.0-py3-none-any.whl (61 kB)
+Downloading h2-4.4.1-py3-none-any.whl (62 kB)
+Downloading hpack-4.2.0-py3-none-any.whl (34 kB)
+Downloading hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Downloading inflection-0.5.1-py2.py3-none-any.whl (9.5 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Using cached opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+Using cached pydantic-2.14.1-py3-none-any.whl (488 kB)
+Using cached pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Downloading sanic_routing-23.12.0-py3-none-any.whl (25 kB)
+Using cached starlette-1.9.0-py3-none-any.whl (80 kB)
+Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+Downloading swagger_ui_bundle-1.1.0-py3-none-any.whl (2.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 48.4 MB/s  0:00:00
+Downloading tracerite-2.6.5-py3-none-any.whl (112 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Downloading ujson-6.0.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (56 kB)
+Downloading uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 83.0 MB/s  0:00:00
+Using cached websockets-17.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+Using cached werkzeug-3.1.9-py3-none-any.whl (228 kB)
+Downloading wsproto-1.3.2-py3-none-any.whl (24 kB)
+Downloading priority-2.0.0-py3-none-any.whl (8.9 kB)
+Building wheels for collected packages: json-logging
+  Building editable for json-logging (pyproject.toml): started
+  Building editable for json-logging (pyproject.toml): finished with status 'done'
+  Created wheel for json-logging: filename=json_logging-1.5.1-0.editable-py2.py3-none-any.whl size=8050 sha256=37e3c3670bf49ed6d11e0e86977c85771cf66fc7a339e3600d0d95a73eda46a3
+  Stored in directory: /tmp/pip-ephem-wheel-cache-beaf30rm/wheels/a9/9c/47/7747eb4f432c0db636d465559543d84f92040a03c862762c19
+Successfully built json-logging
+Installing collected packages: sanic-routing, json-logging, websockets, uvloop, urllib3, ujson, typing-extensions, rpds-py, PyYAML, python-multipart, pygments, pyflakes, pycodestyle, priority, pluggy, multidict, mccabe, markupsafe, itsdangerous, iniconfig, inflection, idna, hyperframe, httptools, html5tagger, hpack, h11, click, charset_normalizer, certifi, blinker, attrs, asgiref, annotated-types, annotated-doc, aiofiles, wsproto, werkzeug, uvicorn, typing-inspection, tracerite, requests, referencing, pytest, pydantic-core, opentelemetry-api, jinja2, httpcore, h2, flake8, anyio, swagger-ui-bundle, starlette, sanic, pydantic, jsonschema-specifications, hypercorn, httpx, flask, quart, jsonschema, fastapi, connexion
+  Attempting uninstall: json-logging
+    Found existing installation: json-logging 1.5.1
+    Uninstalling json-logging-1.5.1:
+      Successfully uninstalled json-logging-1.5.1
+
+Successfully installed PyYAML-6.0.3 aiofiles-25.1.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 asgiref-3.12.1 attrs-26.1.0 blinker-1.9.0 certifi-2026.10.18 charset_normalizer-3.5.2 click-8.5.0 connexion-3.3.0 fastapi-0.146.0 flake8-7.4.1 flask-3.1.3 h11-0.16.0 h2-4.4.1 hpack-4.2.0 html5tagger-2.0.0 httpcore-1.0.9 httptools-0.9.0 httpx-0.28.1 hypercorn-0.18.0 hyperframe-6.1.0 idna-3.20 inflection-0.5.1 iniconfig-2.3.1 itsdangerous-2.2.0 jinja2-3.1.6 json-logging-1.5.1 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 markupsafe-3.0.4 mccabe-0.7.0 multidict-6.9.1 opentelemetry-api-1.45.1 pluggy-1.7.0 priority-2.0.0 pycodestyle-2.15.0 pydantic-2.14.1 pydantic-core-2.50.1 pyflakes-4.0.3 pygments-2.21.0 pytest-9.1.1 python-multipart-0.0.32 quart-0.22.0 referencing-0.37.0 requests-2.34.2 rpds-py-2026.9.1 sanic-25.12.1 sanic-routing-23.12.0 starlette-1.9.0 swagger-ui-bundle-1.1.0 tracerite-2.6.5 typing-extensions-4.16.0 typing-inspection-0.4.4 ujson-6.0.0 urllib3-2.8.0 uvicorn-0.54.0 uvloop-0.23.0 websockets-17.2 werkzeug-3.1.9 wsproto-1.3.2
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Requirement already satisfied: pytest in /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages (9.1.1)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: iniconfig>=1.0.1 in /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages (from pytest) (2.3.1)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages (from pytest) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages (from pytest) (2.21.0)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Installing collected packages: pytest-timeout
+Successfully installed pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/json-logging-python
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: json-logging
+  Building editable for json-logging (pyproject.toml): started
+  Building editable for json-logging (pyproject.toml): finished with status 'done'
+  Created wheel for json-logging: filename=json_logging-1.5.1-0.editable-py2.py3-none-any.whl size=8050 sha256=8b975a0569c9fbffefeba717ebdbf1f2640df2080c4eb60982a061a751713d62
+  Stored in directory: /tmp/pip-ephem-wheel-cache-qol2nir7/wheels/a9/9c/47/7747eb4f432c0db636d465559543d84f92040a03c862762c19
+Successfully built json-logging
+Installing collected packages: json-logging
+  Attempting uninstall: json-logging
+    Found existing installation: json-logging 1.5.1
+    Uninstalling json-logging-1.5.1:
+      Successfully uninstalled json-logging-1.5.1
+Successfully installed json-logging-1.5.1
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 51 s
+
+===== 2026-10-19T08:41:31Z json-logging-python trace
++ cd /home/azureuser/traceweave-harness/work/json-logging-python
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/json-logging-python
++ /home/azureuser/traceweave-data/study1/venv/json-logging-python/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/json-logging-python --package /home/azureuser/traceweave-harness/work/json-logging-python/json_logging --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id json-logging-python-2026-10-19T08:41:31Z --out /home/azureuser/traceweave-harness/bundles/json-logging-python/trace.json
+...FFFEEEEEEEEE.EEEEEEEEEEE                                              [100%]
+==================================== ERRORS ====================================
+__________ ERROR at setup of test_record_format_per_log_level[error] ___________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = fastapi.FastAPI()
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_fastapi(enable_json=True)
+
+tests/test_fastapi.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:202: in init_fastapi
+    __init(framework_name='fastapi', custom_formatter=custom_formatter, enable_json=enable_json)
+json_logging/__init__.py:129: in __init
+    ENABLE_JSON_LOGGING and _logger.debug("Update all existing logger to using JSONLogFormatter")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/logging/__init__.py:1527: in debug
+    self._log(DEBUG, msg, args, **kwargs)
+/usr/local/lib/python3.12/logging/__init__.py:1684: in _log
+    self.handle(record)
+/usr/local/lib/python3.12/logging/__init__.py:1700: in handle
+    self.callHandlers(record)
+/usr/local/lib/python3.12/logging/__init__.py:1762: in callHandlers
+    hdlr.handle(record)
+/usr/local/lib/python3.12/logging/__init__.py:1028: in handle
+    self.emit(record)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/_pytest/logging.py:399: in emit
+    super().emit(record)
+/usr/local/lib/python3.12/logging/__init__.py:1168: in emit
+    self.handleError(record)
+/usr/local/lib/python3.12/logging/__init__.py:1160: in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/logging/__init__.py:999: in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+json_logging/formatters.py:60: in format
+    log_object = self._format_log_object(record, request_util=json_logging._request_util)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json_logging/formatters.py:151: in _format_log_object
+    json_logging.CORRELATION_ID_FIELD: request_util.get_correlation_id(within_formatter=True),
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json_logging/util.py:137: in get_correlation_id
+    request = self.get_request_from_call_stack()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <json_logging.util.RequestUtil object at 0x748c9502d0a0>
+within_formatter = False
+
+    def get_request_from_call_stack(self, within_formatter=False):
+        """
+    
+        :return: get request object from call stack
+        """
+        """
+            python 3 call stack frame
+            00 get_request_from_call_stack [util.py:225]
+            01 get_correlation_id [util.py:177]
+            02 format [__init__.py:333]
+            03 format [__init__.py:830]
+            04 emit [__init__.py:980]
+            05 handle [__init__.py:855]
+            06 callHandlers [__init__.py:1487]
+            07 handle [__init__.py:1425]
+            08 _log [__init__.py:1415]
+            09 info [__init__.py:1279]
+            10 logging statement
+        """
+        module = inspect.getmodule(inspect.currentframe().f_back)
+    
+        class_type = self.request_info_extractor_class.get_request_class_type()
+        no_of_go_up_level = 11 if within_formatter else 1
+    
+        # FIXME: find out the depth of logging call stack in Python 2.7
+        f = currentframe(no_of_go_up_level)
+        while True:
+            f_locals = f.f_locals
+            if 'request' in f_locals:
+                if isinstance(f_locals['request'], class_type):
+                    return f_locals['request']
+    
+            if 'req' in f_locals:
+                if isinstance(f_locals['req'], class_type):
+                    return f_locals['req']
+    
+>           for key in f_locals:
+                       ^^^^^^^^
+E           RuntimeError: dictionary changed size during iteration
+
+json_logging/util.py:190: RuntimeError
+_________________ ERROR at setup of test_correlation_id_given __________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = fastapi.FastAPI()
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_fastapi(enable_json=True)
+
+tests/test_fastapi.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:202: in init_fastapi
+    __init(framework_name='fastapi', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'fastapi', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+_______________ ERROR at setup of test_correlation_id_generated ________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = fastapi.FastAPI()
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_fastapi(enable_json=True)
+
+tests/test_fastapi.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:202: in init_fastapi
+    __init(framework_name='fastapi', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'fastapi', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+__________________ ERROR at setup of test_get_correlation_id ___________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = fastapi.FastAPI()
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_fastapi(enable_json=True)
+
+tests/test_fastapi.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:202: in init_fastapi
+    __init(framework_name='fastapi', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'fastapi', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+____________________ ERROR at setup of test_extra_property _____________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = fastapi.FastAPI()
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_fastapi(enable_json=True)
+
+tests/test_fastapi.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:202: in init_fastapi
+    __init(framework_name='fastapi', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'fastapi', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+________________ ERROR at setup of test_extra_property_no_props ________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = fastapi.FastAPI()
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_fastapi(enable_json=True)
+
+tests/test_fastapi.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:202: in init_fastapi
+    __init(framework_name='fastapi', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'fastapi', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+___________ ERROR at setup of test_exception_logged_with_stack_trace ___________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = fastapi.FastAPI()
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_fastapi(enable_json=True)
+
+tests/test_fastapi.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:202: in init_fastapi
+    __init(framework_name='fastapi', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'fastapi', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+________________ ERROR at setup of test_request_instrumentation ________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = fastapi.FastAPI()
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_fastapi(enable_json=True)
+
+tests/test_fastapi.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:202: in init_fastapi
+    __init(framework_name='fastapi', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'fastapi', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+_________ ERROR at setup of test_excluded_from_request_instrumentation _________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = fastapi.FastAPI()
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_fastapi(enable_json=True)
+
+tests/test_fastapi.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:202: in init_fastapi
+    __init(framework_name='fastapi', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'fastapi', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+__________ ERROR at setup of test_record_format_per_log_level[debug] ___________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+___________ ERROR at setup of test_record_format_per_log_level[info] ___________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+__________ ERROR at setup of test_record_format_per_log_level[error] ___________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+_________________ ERROR at setup of test_correlation_id_given __________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+_______________ ERROR at setup of test_correlation_id_generated ________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+__________________ ERROR at setup of test_get_correlation_id ___________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+____________________ ERROR at setup of test_extra_property _____________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+________________ ERROR at setup of test_extra_property_no_props ________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+___________ ERROR at setup of test_exception_logged_with_stack_trace ___________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+________________ ERROR at setup of test_request_instrumentation ________________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+_________ ERROR at setup of test_excluded_from_request_instrumentation _________
+
+    @pytest.fixture
+    def client_and_log_handler():
+        import json_logging
+    
+        # Init app
+        app = flask.Flask(__name__)
+    
+        # Init std logging
+        logger = logging.getLogger(LOGGER_NAME)
+        logger.setLevel(logging.DEBUG)
+        handler = FormattedMessageCollectorHandler()
+        logger.addHandler(handler)
+    
+        # Add json_logging
+>       json_logging.init_flask(enable_json=True)
+
+tests/test_flask.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+json_logging/__init__.py:186: in init_flask
+    __init(framework_name='flask', custom_formatter=custom_formatter, enable_json=enable_json)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+framework_name = 'flask', custom_formatter = None, enable_json = True
+
+    def __init(framework_name=None, custom_formatter=None, enable_json=False):
+        """
+        Initialize JSON logging support, if no **framework_name** passed, logging will be initialized in non-web context.
+        This is supposed to be called only one time.
+    
+        If **custom_formatter** is passed, it will (in non-web context) use this formatter over the default.
+    
+        :param framework_name: type of framework logging should support.DEFAULT_CORRELATION_ID_HEADERS
+        :param custom_formatter: formatter to override default JSONLogFormatter.
+        """
+    
+        global _current_framework
+        global ENABLE_JSON_LOGGING
+        global _default_formatter
+    
+        if _current_framework is not None:
+>           raise RuntimeError("Can not call init more than once")
+E           RuntimeError: Can not call init more than once
+
+json_logging/__init__.py:92: RuntimeError
+=================================== FAILURES ===================================
+___________________________ test_api_example[sanic] ____________________________
+
+self = <HTTPConnection(host='localhost', port=5000) at 0x748c96f8fec0>
+
+    def _new_conn(self) -> socket.socket:
+        """Establish a socket connection and set nodelay settings on it.
+    
+        :return: New socket connection.
+        """
+        try:
+>           sock = connection.create_connection(
+                (self._dns_host, self.port),
+                self.timeout,
+                source_address=self.source_address,
+                socket_options=self.socket_options,
+            )
+
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/connection.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/util/connection.py:85: in create_connection
+    raise err
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+address = ('localhost', 5000), timeout = 1, source_address = None
+socket_options = [(6, 1, 1)]
+
+    def create_connection(
+        address: tuple[str, int],
+        timeout: _TYPE_TIMEOUT = _DEFAULT_TIMEOUT,
+        source_address: tuple[str, int] | None = None,
+        socket_options: _TYPE_SOCKET_OPTIONS | None = None,
+    ) -> socket.socket:
+        """Connect to *address* and return the socket object.
+    
+        Convenience function.  Connect to *address* (a 2-tuple ``(host,
+        port)``) and return the socket object.  Passing the optional
+        *timeout* parameter will set the timeout on the socket instance
+        before attempting to connect.  If no *timeout* is supplied, the
+        global default timeout setting returned by :func:`socket.getdefaulttimeout`
+        is used.  If *source_address* is set it must be a tuple of (host, port)
+        for the socket to bind as a source address before making the connection.
+        An host of '' or port 0 tells the OS to use the default.
+        """
+    
+        host, port = address
+        if host.startswith("["):
+            host = host.strip("[]")
+        err = None
+    
+        # Using the value from allowed_gai_family() in the context of getaddrinfo lets
+        # us select whether to work with IPv4 DNS records, IPv6 records, or both.
+        # The original create_connection function always returns all records.
+        family = allowed_gai_family()
+    
+        try:
+            host.encode("idna")
+        except UnicodeError:
+            raise LocationParseError(f"'{host}', label empty or too long") from None
+    
+        for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+            af, socktype, proto, canonname, sa = res
+            sock = None
+            try:
+                sock = socket.socket(af, socktype, proto)
+    
+                # If provided, set socket level options before connecting.
+                _set_socket_options(sock, socket_options)
+    
+                if timeout is not _DEFAULT_TIMEOUT:
+                    sock.settimeout(timeout)
+                if source_address:
+                    sock.bind(source_address)
+>               sock.connect(sa)
+E               ConnectionRefusedError: [Errno 111] Connection refused
+
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/util/connection.py:73: ConnectionRefusedError
+
+The above exception was the direct cause of the following exception:
+
+self = <urllib3.connectionpool.HTTPConnectionPool object at 0x748c96f8f470>
+method = 'GET', url = '/', body = None
+headers = {'User-Agent': 'python-requests/2.34.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
+retries = Retry(total=0, connect=None, read=False, redirect=None, status=None)
+redirect = False, assert_same_host = False
+timeout = Timeout(connect=1, read=1, total=None), pool_timeout = None
+release_conn = False, chunked = False, body_pos = None, preload_content = False
+decode_content = False, response_kw = {}
+
+    def urlopen(  # type: ignore[override]
+        self,
+        method: str,
+        url: str,
+        body: _TYPE_BODY | None = None,
+        headers: typing.Mapping[str, str] | None = None,
+        retries: Retry | bool | int | None = None,
+        redirect: bool = True,
+        assert_same_host: bool = True,
+        timeout: _TYPE_TIMEOUT = _DEFAULT_TIMEOUT,
+        pool_timeout: int | None = None,
+        release_conn: bool | None = None,
+        chunked: bool = False,
+        body_pos: _TYPE_BODY_POSITION | None = None,
+        preload_content: bool = True,
+        decode_content: bool = True,
+        **response_kw: typing.Any,
+    ) -> BaseHTTPResponse:
+        """
+        Get a connection from the pool and perform an HTTP request. This is the
+        lowest level call for making a request, so you'll need to specify all
+        the raw details.
+    
+        .. note::
+    
+           More commonly, it's appropriate to use a convenience method
+           such as :meth:`request`.
+    
+        .. note::
+    
+           `release_conn` will only behave as expected if
+           `preload_content=False` because we want to make
+           `preload_content=False` the default behaviour someday soon without
+           breaking backwards compatibility.
+    
+        :param method:
+            HTTP request method (such as GET, POST, PUT, etc.)
+    
+        :param url:
+            The URL to perform the request on.
+    
+        :param body:
+            Data to send in the request body, either :class:`str`, :class:`bytes`,
+            an iterable of :class:`str`/:class:`bytes`, or a file-like object.
+    
+        :param headers:
+            Dictionary of custom headers to send, such as User-Agent,
+            If-None-Match, etc. If None, pool headers are used. If provided,
+            these headers completely replace any pool-specific headers.
+    
+        :param retries:
+            Configure the number of retries to allow before raising a
+            :class:`~urllib3.exceptions.MaxRetryError` exception.
+    
+            If ``None`` (default) will retry 3 times, see ``Retry.DEFAULT``. Pass a
+            :class:`~urllib3.util.retry.Retry` object for fine-grained control
+            over different types of retries.
+            Pass an integer number to retry connection errors that many times,
+            but no other types of errors. Pass zero to never retry.
+    
+            If ``False``, then retries are disabled and any exception is raised
+            immediately. Also, instead of raising a MaxRetryError on redirects,
+            the redirect response will be returned.
+    
+        :type retries: :class:`~urllib3.util.retry.Retry`, False, or an int.
+    
+        :param redirect:
+            If True, automatically handle redirects (status codes 301, 302,
+            303, 307, 308). Each redirect counts as a retry. Disabling retries
+            will disable redirect, too.
+    
+        :param assert_same_host:
+            If ``True``, will make sure that the host of the pool requests is
+            consistent else will raise HostChangedError. When ``False``, you can
+            use the pool on an HTTP proxy and request foreign hosts.
+    
+        :param timeout:
+            If specified, overrides the default timeout for this one
+            request. It may be a float (in seconds) or an instance of
+            :class:`urllib3.util.Timeout`.
+    
+        :param pool_timeout:
+            If set and the pool is set to block=True, then this method will
+            block for ``pool_timeout`` seconds and raise EmptyPoolError if no
+            connection is available within the time period.
+    
+        :param bool preload_content:
+            If True, the response's body will be preloaded into memory.
+    
+        :param bool decode_content:
+            If True, will attempt to decode the body based on the
+            'content-encoding' header.
+    
+        :param release_conn:
+            If False, then the urlopen call will not release the connection
+            back into the pool once a response is received (but will release if
+            you read the entire contents of the response such as when
+            `preload_content=True`). This is useful if you're not preloading
+            the response's content immediately. You will need to call
+            ``r.release_conn()`` on the response ``r`` to return the connection
+            back into the pool. If None, it takes the value of ``preload_content``
+            which defaults to ``True``.
+    
+        :param bool chunked:
+            If True, urllib3 will send the body using chunked transfer
+            encoding. Otherwise, urllib3 will send the body using the standard
+            content-length form. Defaults to False.
+    
+        :param int body_pos:
+            Position to seek to in file-like body in the event of a retry or
+            redirect. Typically this won't need to be set because urllib3 will
+            auto-populate the value when needed.
+        """
+        # Ensure that the URL we're connecting to is properly encoded
+        if url.startswith("/"):
+            # URLs starting with / are inherently schemeless.
+            url = to_str(_encode_target(url))
+            destination_scheme = None
+        else:
+            parsed_url = parse_url(url)
+            destination_scheme = parsed_url.scheme
+            url = to_str(parsed_url._replace(fragment=None).url)
+    
+        if headers is None:
+            headers = self.headers
+    
+        if not isinstance(retries, Retry):
+            retries = Retry.from_int(retries, redirect=redirect, default=self.retries)
+    
+        if release_conn is None:
+            release_conn = preload_content
+    
+        # Check host
+        if assert_same_host and not self.is_same_host(url):
+            raise HostChangedError(self, url, retries)
+    
+        conn = None
+    
+        # Track whether `conn` needs to be released before
+        # returning/raising/recursing. Update this variable if necessary, and
+        # leave `release_conn` constant throughout the function. That way, if
+        # the function recurses, the original value of `release_conn` will be
+        # passed down into the recursive call, and its value will be respected.
+        #
+        # See issue #651 [1] for details.
+        #
+        # [1] <https://github.com/urllib3/urllib3/issues/651>
+        release_this_conn = release_conn
+    
+        http_tunnel_required = connection_requires_http_tunnel(
+            self.proxy, self.proxy_config, destination_scheme
+        )
+    
+        # Merge the proxy headers. Only done when not using HTTP CONNECT. We
+        # have to copy the headers dict so we can safely change it without those
+        # changes being reflected in anyone else's copy.
+        if not http_tunnel_required:
+            headers = headers.copy()  # type: ignore[attr-defined]
+            headers.update(self.proxy_headers)  # type: ignore[union-attr]
+    
+        # Must keep the exception bound to a separate variable or else Python 3
+        # complains about UnboundLocalError.
+        err = None
+    
+        # Keep track of whether we cleanly exited the except block. This
+        # ensures we do proper cleanup in finally.
+        clean_exit = False
+    
+        # Rewind body position, if needed. Record current position
+        # for future rewinds in the event of a redirect/retry.
+        body_pos = set_file_position(body, body_pos)
+    
+        timeout_obj = self._get_timeout(timeout)
+        try:
+            # Request a connection from the queue.
+            conn = self._get_conn(timeout=pool_timeout)
+            conn.timeout = timeout_obj.connect_timeout  # type: ignore[assignment]
+    
+            # Is this a closed/new connection that requires CONNECT tunnelling?
+            if self.proxy is not None and http_tunnel_required and conn.is_closed:
+                try:
+                    self._prepare_proxy(conn)
+                except (BaseSSLError, OSError, SocketTimeout) as e:
+                    self._raise_timeout(
+                        err=e, url=self.proxy.url, timeout_value=conn.timeout
+                    )
+                    raise
+    
+            # If we're going to release the connection in ``finally:``, then
+            # the response doesn't need to know about the connection. Otherwise
+            # it will also try to release it and we'll have a double-release
+            # mess.
+            response_conn = conn if not release_conn else None
+    
+            # Make the request on the HTTPConnection object
+>           response = self._make_request(
+                conn,
+                method,
+                url,
+                timeout=timeout_obj,
+                body=body,
+                headers=headers,
+                chunked=chunked,
+                retries=retries,
+                response_conn=response_conn,
+                preload_content=preload_content,
+                decode_content=decode_content,
+                **response_kw,
+            )
+
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/connectionpool.py:793: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/connectionpool.py:499: in _make_request
+    conn.request(
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/connection.py:567: in request
+    self.endheaders()
+/usr/local/lib/python3.12/http/client.py:1353: in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+/usr/local/lib/python3.12/http/client.py:1113: in _send_output
+    self.send(msg)
+/usr/local/lib/python3.12/http/client.py:1057: in send
+    self.connect()
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/connection.py:398: in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <HTTPConnection(host='localhost', port=5000) at 0x748c96f8fec0>
+
+    def _new_conn(self) -> socket.socket:
+        """Establish a socket connection and set nodelay settings on it.
+    
+        :return: New socket connection.
+        """
+        try:
+            sock = connection.create_connection(
+                (self._dns_host, self.port),
+                self.timeout,
+                source_address=self.source_address,
+                socket_options=self.socket_options,
+            )
+        except socket.gaierror as e:
+            raise NameResolutionError(self.host, self, e) from e
+        except SocketTimeout as e:
+            raise ConnectTimeoutError(
+                self,
+                f"Connection to {self.host} timed out. (connect timeout={self.timeout})",
+            ) from e
+    
+        except OSError as e:
+>           raise NewConnectionError(
+                self, f"Failed to establish a new connection: {e}"
+            ) from e
+E           urllib3.exceptions.NewConnectionError: HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused
+
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/connection.py:254: NewConnectionError
+
+The above exception was the direct cause of the following exception:
+
+self = <requests.adapters.HTTPAdapter object at 0x748c96f8f7d0>
+request = <PreparedRequest [GET]>, stream = False, timeout = 1, verify = True
+cert = None, proxies = OrderedDict()
+
+    def send(
+        self,
+        request: PreparedRequest,
+        stream: bool = False,
+        timeout: _t.TimeoutType = None,
+        verify: _t.VerifyType = True,
+        cert: _t.CertType = None,
+        proxies: dict[str, str] | None = None,
+    ) -> Response:
+        """Sends PreparedRequest object. Returns Response object.
+    
+        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
+        :param stream: (optional) Whether to stream the request content.
+        :param timeout: (optional) How long to wait for the server to send
+            data before giving up, as a float, or a :ref:`(connect timeout,
+            read timeout) <timeouts>` tuple.
+        :type timeout: float or tuple or urllib3 Timeout object
+        :param verify: (optional) Either a boolean, in which case it controls whether
+            we verify the server's TLS certificate, or a string, in which case it
+            must be a path to a CA bundle to use
+        :param cert: (optional) Any user-provided SSL certificate to be trusted.
+        :param proxies: (optional) The proxies dictionary to apply to the request.
+        :rtype: requests.Response
+        """
+    
+        assert _is_prepared(request)
+    
+        try:
+            conn = self.get_connection_with_tls_context(
+                request, verify, proxies=proxies, cert=cert
+            )
+        except LocationValueError as e:
+            raise InvalidURL(e, request=request)
+    
+        self.cert_verify(conn, request.url, verify, cert)
+        url = self.request_url(request, proxies)
+        self.add_headers(
+            request,
+            stream=stream,
+            timeout=timeout,
+            verify=verify,
+            cert=cert,
+            proxies=proxies,
+        )
+    
+        chunked = not (request.body is None or "Content-Length" in request.headers)
+    
+        if isinstance(timeout, tuple):
+            try:
+                connect, read = timeout
+                resolved_timeout = TimeoutSauce(connect=connect, read=read)
+            except ValueError:
+                raise ValueError(
+                    f"Invalid timeout {timeout}. Pass a (connect, read) timeout tuple, "
+                    f"or a single float to set both timeouts to the same value."
+                )
+        elif isinstance(timeout, TimeoutSauce):
+            resolved_timeout = timeout
+        else:
+            resolved_timeout = TimeoutSauce(connect=timeout, read=timeout)
+    
+        try:
+>           resp = conn.urlopen(
+                method=request.method,
+                url=url,
+                body=request.body,  # type: ignore[arg-type]  # urllib3 stubs don't accept Iterable[bytes | str]
+                headers=request.headers,  # type: ignore[arg-type]  # urllib3#3072
+                redirect=False,
+                assert_same_host=False,
+                preload_content=False,
+                decode_content=False,
+                retries=self.max_retries,
+                timeout=resolved_timeout,
+                chunked=chunked,
+            )
+
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/requests/adapters.py:696: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/connectionpool.py:847: in urlopen
+    retries = retries.increment(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Retry(total=0, connect=None, read=False, redirect=None, status=None)
+method = 'GET', url = '/', response = None
+error = NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused")
+_pool = <urllib3.connectionpool.HTTPConnectionPool object at 0x748c96f8f470>
+_stacktrace = <traceback object at 0x748c96c93380>
+
+    def increment(
+        self,
+        method: str | None = None,
+        url: str | None = None,
+        response: BaseHTTPResponse | None = None,
+        error: Exception | None = None,
+        _pool: ConnectionPool | None = None,
+        _stacktrace: TracebackType | None = None,
+    ) -> Self:
+        """Return a new Retry object with incremented retry counters.
+    
+        :param response: A response object, or None, if the server did not
+            return a response.
+        :type response: :class:`~urllib3.response.BaseHTTPResponse`
+        :param Exception error: An error encountered during the request, or
+            None if the response was received successfully.
+    
+        :return: A new ``Retry`` object.
+        """
+        if self.total is False and error:
+            # Disabled, indicate to re-raise the error.
+            raise reraise(type(error), error, _stacktrace)
+    
+        total = self.total
+        if total is not None:
+            total -= 1
+    
+        connect = self.connect
+        read = self.read
+        redirect = self.redirect
+        status_count = self.status
+        other = self.other
+        cause = "unknown"
+        status = None
+        redirect_location = None
+    
+        if error and self._is_connection_error(error):
+            # Connect retry?
+            if connect is False:
+                raise reraise(type(error), error, _stacktrace)
+            elif connect is not None:
+                connect -= 1
+    
+        elif error and self._is_read_error(error):
+            # Read retry?
+            if read is False or method is None or not self._is_method_retryable(method):
+                raise reraise(type(error), error, _stacktrace)
+            elif read is not None:
+                read -= 1
+    
+        elif error:
+            # Other retry?
+            if other is not None:
+                other -= 1
+    
+        elif response and response.get_redirect_location():
+            # Redirect retry?
+            if redirect is not None:
+                redirect -= 1
+            cause = "too many redirects"
+            response_redirect_location = response.get_redirect_location()
+            if response_redirect_location:
+                redirect_location = response_redirect_location
+            status = response.status
+    
+        else:
+            # Incrementing because of a server error like a 500 in
+            # status_forcelist and the given method is in the allowed_methods
+            cause = ResponseError.GENERIC_ERROR
+            if response and response.status:
+                if status_count is not None:
+                    status_count -= 1
+                cause = ResponseError.SPECIFIC_ERROR.format(status_code=response.status)
+                status = response.status
+    
+        history = self.history + (
+            RequestHistory(method, url, error, status, redirect_location),
+        )
+    
+        new_retry = self.new(
+            total=total,
+            connect=connect,
+            read=read,
+            redirect=redirect,
+            status=status_count,
+            other=other,
+            history=history,
+        )
+    
+        if new_retry.is_exhausted():
+            reason = error or ResponseError(cause)
+>           raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/urllib3/util/retry.py:555: MaxRetryError
+
+During handling of the above exception, another exception occurred:
+
+backend = 'sanic'
+
+    @pytest.mark.parametrize('backend', collect_backends(), ids=collect_backends())
+    def test_api_example(backend):
+        """For each of the examples start the API and see if the root endpoint is reachable"""
+        api_process = subprocess.Popen(
+            [sys.executable, str(os.path.join(Path(__file__).parent, backend, "api.py"))],
+            stdout=sys.stdout,
+            stderr=subprocess.STDOUT,
+        )
+        try:
+            deadline = time.perf_counter() + 15.0
+            while time.perf_counter() < deadline:
+                time.sleep(3)
+                session = requests.Session()
+                session.trust_env = False
+                os.environ['NO_PROXY'] = 'localhost'
+                os.environ['no_proxy'] = 'localhost'
+                try:
+>                   response = requests.get("http://localhost:5000/", timeout=1)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/smoketests/test_run_smoketest.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/requests/api.py:87: in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/requests/api.py:71: in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/requests/sessions.py:651: in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/requests/sessions.py:784: in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <requests.adapters.HTTPAdapter object at 0x748c96f8f7d0>
+request = <PreparedRequest [GET]>, stream = False, timeout = 1, verify = True
+cert = None, proxies = OrderedDict()
+
+    def send(
+        self,
+        request: PreparedRequest,
+        stream: bool = False,
+        timeout: _t.TimeoutType = None,
+        verify: _t.VerifyType = True,
+        cert: _t.CertType = None,
+        proxies: dict[str, str] | None = None,
+    ) -> Response:
+        """Sends PreparedRequest object. Returns Response object.
+    
+        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
+        :param stream: (optional) Whether to stream the request content.
+        :param timeout: (optional) How long to wait for the server to send
+            data before giving up, as a float, or a :ref:`(connect timeout,
+            read timeout) <timeouts>` tuple.
+        :type timeout: float or tuple or urllib3 Timeout object
+        :param verify: (optional) Either a boolean, in which case it controls whether
+            we verify the server's TLS certificate, or a string, in which case it
+            must be a path to a CA bundle to use
+        :param cert: (optional) Any user-provided SSL certificate to be trusted.
+        :param proxies: (optional) The proxies dictionary to apply to the request.
+        :rtype: requests.Response
+        """
+    
+        assert _is_prepared(request)
+    
+        try:
+            conn = self.get_connection_with_tls_context(
+                request, verify, proxies=proxies, cert=cert
+            )
+        except LocationValueError as e:
+            raise InvalidURL(e, request=request)
+    
+        self.cert_verify(conn, request.url, verify, cert)
+        url = self.request_url(request, proxies)
+        self.add_headers(
+            request,
+            stream=stream,
+            timeout=timeout,
+            verify=verify,
+            cert=cert,
+            proxies=proxies,
+        )
+    
+        chunked = not (request.body is None or "Content-Length" in request.headers)
+    
+        if isinstance(timeout, tuple):
+            try:
+                connect, read = timeout
+                resolved_timeout = TimeoutSauce(connect=connect, read=read)
+            except ValueError:
+                raise ValueError(
+                    f"Invalid timeout {timeout}. Pass a (connect, read) timeout tuple, "
+                    f"or a single float to set both timeouts to the same value."
+                )
+        elif isinstance(timeout, TimeoutSauce):
+            resolved_timeout = timeout
+        else:
+            resolved_timeout = TimeoutSauce(connect=timeout, read=timeout)
+    
+        try:
+            resp = conn.urlopen(
+                method=request.method,
+                url=url,
+                body=request.body,  # type: ignore[arg-type]  # urllib3 stubs don't accept Iterable[bytes | str]
+                headers=request.headers,  # type: ignore[arg-type]  # urllib3#3072
+                redirect=False,
+                assert_same_host=False,
+                preload_content=False,
+                decode_content=False,
+                retries=self.max_retries,
+                timeout=resolved_timeout,
+                chunked=chunked,
+            )
+    
+        except (ProtocolError, OSError) as err:
+            raise ConnectionError(err, request=request)
+    
+        except MaxRetryError as e:
+            if isinstance(e.reason, ConnectTimeoutError):
+                # TODO: Remove this in 3.0.0: see #2811
+                if not isinstance(e.reason, NewConnectionError):
+                    raise ConnectTimeout(e, request=request)
+    
+            if isinstance(e.reason, ResponseError):
+                raise RetryError(e, request=request)
+    
+            if isinstance(e.reason, _ProxyError):
+                raise ProxyError(e, request=request)
+    
+            if isinstance(e.reason, _SSLError):
+                # This branch is for urllib3 v1.22 and later.
+                raise SSLError(e, request=request)
+    
+>           raise ConnectionError(e, request=request)
+E           requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/requests/adapters.py:729: ConnectionError
+----------------------------- Captured stdout call -----------------------------
+/home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/connexion/apps/abstract.py:9: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient
+Traceback (most recent call last):
+  File "/home/azureuser/traceweave-harness/work/json-logging-python/tests/smoketests/sanic/api.py", line 4, in <module>
+    json_logging.init_sanic(enable_json=True)
+  File "/home/azureuser/traceweave-harness/work/json-logging-python/json_logging/__init__.py", line 190, in init_sanic
+    __init(framework_name='sanic', custom_formatter=custom_formatter, enable_json=enable_json)
+  File "/home/azureuser/traceweave-harness/work/json-logging-python/json_logging/__init__.py", line 120, in __init
+    _current_framework['app_configurator']().config()
+  File "/home/azureuser/traceweave-harness/work/json-logging-python/json_logging/framework/sanic/__init__.py", line 42, in config
+    del LOGGING_CONFIG_DEFAULTS["formatters"]["generic"]["format"]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'format'
+___________________ test_record_format_per_log_level[debug] ____________________
+
+client_and_log_handler = (<starlette.testclient.TestClient object at 0x748c964e9bb0>, <FormattedMessageCollectorHandler (NOTSET)>)
+level = 'debug'
+
+    @pytest.mark.parametrize("level", ["debug", "info", "error"])
+    def test_record_format_per_log_level(client_and_log_handler, level):
+        """Test if log messages are formatted correctly for all log levels"""
+        api_client, handler = client_and_log_handler
+    
+>       response = api_client.get("/log/levels/" + level)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_fastapi.py:95: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:1053: in get
+    return self.request(
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/testclient.py:518: in request
+    return super().request(
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:825: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:928: in send
+    raise exc
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:922: in send
+    response.read()
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_models.py:881: in read
+    self._content = b"".join(self.iter_bytes())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_models.py:897: in iter_bytes
+    for raw_bytes in self.iter_raw():
+                     ^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_models.py:951: in iter_raw
+    for raw_stream_bytes in self.stream:
+                            ^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:153: in __iter__
+    for chunk in self._stream:
+                 ^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/testclient.py:384: in iter_body
+    exit_stack.close()
+/usr/local/lib/python3.12/contextlib.py:618: in close
+    self.__exit__(None, None, None)
+/usr/local/lib/python3.12/contextlib.py:610: in __exit__
+    raise exc_details[1]
+/usr/local/lib/python3.12/contextlib.py:595: in __exit__
+    if cb(*exc_details):
+       ^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/testclient.py:399: in close_app
+    raise exception
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/testclient.py:366: in run_app
+    await self.app(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/applications.py:1194: in __call__
+    await super().__call__(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/applications.py:96: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/telemetry/_asgi.py:151: in __call__
+    await self.app(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/base.py:203: in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json_logging/framework/fastapi/implementation.py:36: in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/base.py:179: in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/base.py:149: in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/routing.py:678: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:2809: in app
+    await route.handle(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:1328: in handle
+    await super().handle(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/routing.py:284: in handle
+    await self.app(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:166: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:152: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:745: in app
+    raw_response = await run_endpoint_function(
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:372: in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_fastapi.py:37: in log_debug
+    logger.debug("debug message")
+/usr/local/lib/python3.12/logging/__init__.py:1527: in debug
+    self._log(DEBUG, msg, args, **kwargs)
+/usr/local/lib/python3.12/logging/__init__.py:1684: in _log
+    self.handle(record)
+/usr/local/lib/python3.12/logging/__init__.py:1700: in handle
+    self.callHandlers(record)
+/usr/local/lib/python3.12/logging/__init__.py:1762: in callHandlers
+    hdlr.handle(record)
+/usr/local/lib/python3.12/logging/__init__.py:1028: in handle
+    self.emit(record)
+tests/helpers/handler.py:16: in emit
+    self.messages.append(self.format(record))
+                         ^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/logging/__init__.py:999: in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+json_logging/formatters.py:60: in format
+    log_object = self._format_log_object(record, request_util=json_logging._request_util)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json_logging/formatters.py:151: in _format_log_object
+    json_logging.CORRELATION_ID_FIELD: request_util.get_correlation_id(within_formatter=True),
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json_logging/util.py:137: in get_correlation_id
+    request = self.get_request_from_call_stack()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <json_logging.util.RequestUtil object at 0x748c964e9730>
+within_formatter = False
+
+    def get_request_from_call_stack(self, within_formatter=False):
+        """
+    
+        :return: get request object from call stack
+        """
+        """
+            python 3 call stack frame
+            00 get_request_from_call_stack [util.py:225]
+            01 get_correlation_id [util.py:177]
+            02 format [__init__.py:333]
+            03 format [__init__.py:830]
+            04 emit [__init__.py:980]
+            05 handle [__init__.py:855]
+            06 callHandlers [__init__.py:1487]
+            07 handle [__init__.py:1425]
+            08 _log [__init__.py:1415]
+            09 info [__init__.py:1279]
+            10 logging statement
+        """
+        module = inspect.getmodule(inspect.currentframe().f_back)
+    
+        class_type = self.request_info_extractor_class.get_request_class_type()
+        no_of_go_up_level = 11 if within_formatter else 1
+    
+        # FIXME: find out the depth of logging call stack in Python 2.7
+        f = currentframe(no_of_go_up_level)
+        while True:
+            f_locals = f.f_locals
+            if 'request' in f_locals:
+                if isinstance(f_locals['request'], class_type):
+                    return f_locals['request']
+    
+            if 'req' in f_locals:
+                if isinstance(f_locals['req'], class_type):
+                    return f_locals['req']
+    
+>           for key in f_locals:
+                       ^^^^^^^^
+E           RuntimeError: dictionary changed size during iteration
+
+json_logging/util.py:190: RuntimeError
+------------------------------ Captured log setup ------------------------------
+DEBUG    json_logging:__init__.py:129 Update all existing logger to using JSONLogFormatter
+____________________ test_record_format_per_log_level[info] ____________________
+
+client_and_log_handler = (<starlette.testclient.TestClient object at 0x748c964e9a90>, <FormattedMessageCollectorHandler (NOTSET)>)
+level = 'info'
+
+    @pytest.mark.parametrize("level", ["debug", "info", "error"])
+    def test_record_format_per_log_level(client_and_log_handler, level):
+        """Test if log messages are formatted correctly for all log levels"""
+        api_client, handler = client_and_log_handler
+    
+>       response = api_client.get("/log/levels/" + level)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_fastapi.py:95: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:1053: in get
+    return self.request(
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/testclient.py:518: in request
+    return super().request(
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:825: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:928: in send
+    raise exc
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:922: in send
+    response.read()
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_models.py:881: in read
+    self._content = b"".join(self.iter_bytes())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_models.py:897: in iter_bytes
+    for raw_bytes in self.iter_raw():
+                     ^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_models.py:951: in iter_raw
+    for raw_stream_bytes in self.stream:
+                            ^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/httpx/_client.py:153: in __iter__
+    for chunk in self._stream:
+                 ^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/testclient.py:384: in iter_body
+    exit_stack.close()
+/usr/local/lib/python3.12/contextlib.py:618: in close
+    self.__exit__(None, None, None)
+/usr/local/lib/python3.12/contextlib.py:610: in __exit__
+    raise exc_details[1]
+/usr/local/lib/python3.12/contextlib.py:595: in __exit__
+    if cb(*exc_details):
+       ^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/testclient.py:399: in close_app
+    raise exception
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/anyio/from_thread.py:265: in _call_func
+    retval = await retval_or_awaitable
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/testclient.py:366: in run_app
+    await self.app(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/applications.py:1194: in __call__
+    await super().__call__(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/applications.py:96: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/errors.py:186: in __call__
+    raise exc
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/telemetry/_asgi.py:151: in __call__
+    await self.app(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/base.py:203: in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json_logging/framework/fastapi/implementation.py:36: in dispatch
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/base.py:179: in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/base.py:149: in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/middleware/exceptions.py:63: in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py:18: in __call__
+    await self.app(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/routing.py:678: in __call__
+    await self.middleware_stack(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:2809: in app
+    await route.handle(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:1328: in handle
+    await super().handle(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/routing.py:284: in handle
+    await self.app(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:166: in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/_exception_handler.py:53: in wrapped_app
+    raise exc
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/starlette/_exception_handler.py:42: in wrapped_app
+    await app(scope, receive, sender)
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:152: in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:745: in app
+    raw_response = await run_endpoint_function(
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/routing.py:372: in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_fastapi.py:42: in log_info
+    logger.info("info message")
+/usr/local/lib/python3.12/logging/__init__.py:1539: in info
+    self._log(INFO, msg, args, **kwargs)
+/usr/local/lib/python3.12/logging/__init__.py:1684: in _log
+    self.handle(record)
+/usr/local/lib/python3.12/logging/__init__.py:1700: in handle
+    self.callHandlers(record)
+/usr/local/lib/python3.12/logging/__init__.py:1762: in callHandlers
+    hdlr.handle(record)
+/usr/local/lib/python3.12/logging/__init__.py:1028: in handle
+    self.emit(record)
+tests/helpers/handler.py:16: in emit
+    self.messages.append(self.format(record))
+                         ^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/logging/__init__.py:999: in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+json_logging/formatters.py:60: in format
+    log_object = self._format_log_object(record, request_util=json_logging._request_util)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json_logging/formatters.py:151: in _format_log_object
+    json_logging.CORRELATION_ID_FIELD: request_util.get_correlation_id(within_formatter=True),
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+json_logging/util.py:137: in get_correlation_id
+    request = self.get_request_from_call_stack()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <json_logging.util.RequestUtil object at 0x748c9502d0a0>
+within_formatter = False
+
+    def get_request_from_call_stack(self, within_formatter=False):
+        """
+    
+        :return: get request object from call stack
+        """
+        """
+            python 3 call stack frame
+            00 get_request_from_call_stack [util.py:225]
+            01 get_correlation_id [util.py:177]
+            02 format [__init__.py:333]
+            03 format [__init__.py:830]
+            04 emit [__init__.py:980]
+            05 handle [__init__.py:855]
+            06 callHandlers [__init__.py:1487]
+            07 handle [__init__.py:1425]
+            08 _log [__init__.py:1415]
+            09 info [__init__.py:1279]
+            10 logging statement
+        """
+        module = inspect.getmodule(inspect.currentframe().f_back)
+    
+        class_type = self.request_info_extractor_class.get_request_class_type()
+        no_of_go_up_level = 11 if within_formatter else 1
+    
+        # FIXME: find out the depth of logging call stack in Python 2.7
+        f = currentframe(no_of_go_up_level)
+        while True:
+            f_locals = f.f_locals
+            if 'request' in f_locals:
+                if isinstance(f_locals['request'], class_type):
+                    return f_locals['request']
+    
+            if 'req' in f_locals:
+                if isinstance(f_locals['req'], class_type):
+                    return f_locals['req']
+    
+>           for key in f_locals:
+                       ^^^^^^^^
+E           RuntimeError: dictionary changed size during iteration
+
+json_logging/util.py:190: RuntimeError
+------------------------------ Captured log setup ------------------------------
+DEBUG    json_logging:__init__.py:129 Update all existing logger to using JSONLogFormatter
+=============================== warnings summary ===============================
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/_pytest/python.py:124
+  /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/_pytest/python.py:124: PytestRemovedIn10Warning: Passing a non-Collection iterable to parametrize is deprecated.
+  Test: tests/smoketests/test_run_smoketest.py::test_api_example, argvalues type: generator
+  Please convert to a list or tuple.
+  See https://docs.pytest.org/en/stable/deprecations.html#parametrize-iterators
+    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)
+
+../../../traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/test_fastapi.py::test_record_format_per_log_level[debug]
+tests/test_fastapi.py::test_record_format_per_log_level[debug]
+  /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/connexion/json_schema.py:16: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
+    from jsonschema import Draft4Validator, RefResolver
+
+tests/test_fastapi.py::test_record_format_per_log_level[debug]
+  /home/azureuser/traceweave-data/study1/venv/json-logging-python/lib/python3.12/site-packages/connexion/json_schema.py:17: DeprecationWarning: jsonschema.exceptions.RefResolutionError is deprecated as of version 4.18.0. If you wish to catch potential reference resolution errors, directly catch referencing.exceptions.Unresolvable.
+    from jsonschema.exceptions import RefResolutionError, ValidationError  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/smoketests/test_run_smoketest.py::test_api_example[sanic] - requ...
+FAILED tests/test_fastapi.py::test_record_format_per_log_level[debug] - Runti...
+FAILED tests/test_fastapi.py::test_record_format_per_log_level[info] - Runtim...
+ERROR tests/test_fastapi.py::test_record_format_per_log_level[error] - Runtim...
+ERROR tests/test_fastapi.py::test_correlation_id_given - RuntimeError: Can no...
+ERROR tests/test_fastapi.py::test_correlation_id_generated - RuntimeError: Ca...
+ERROR tests/test_fastapi.py::test_get_correlation_id - RuntimeError: Can not ...
+ERROR tests/test_fastapi.py::test_extra_property - RuntimeError: Can not call...
+ERROR tests/test_fastapi.py::test_extra_property_no_props - RuntimeError: Can...
+ERROR tests/test_fastapi.py::test_exception_logged_with_stack_trace - Runtime...
+ERROR tests/test_fastapi.py::test_request_instrumentation - RuntimeError: Can...
+ERROR tests/test_fastapi.py::test_excluded_from_request_instrumentation - Run...
+ERROR tests/test_flask.py::test_record_format_per_log_level[debug] - RuntimeE...
+ERROR tests/test_flask.py::test_record_format_per_log_level[info] - RuntimeEr...
+ERROR tests/test_flask.py::test_record_format_per_log_level[error] - RuntimeE...
+ERROR tests/test_flask.py::test_correlation_id_given - RuntimeError: Can not ...
+ERROR tests/test_flask.py::test_correlation_id_generated - RuntimeError: Can ...
+ERROR tests/test_flask.py::test_get_correlation_id - RuntimeError: Can not ca...
+ERROR tests/test_flask.py::test_extra_property - RuntimeError: Can not call i...
+ERROR tests/test_flask.py::test_extra_property_no_props - RuntimeError: Can n...
+ERROR tests/test_flask.py::test_exception_logged_with_stack_trace - RuntimeEr...
+ERROR tests/test_flask.py::test_request_instrumentation - RuntimeError: Can n...
+ERROR tests/test_flask.py::test_excluded_from_request_instrumentation - Runti...
+3 failed, 4 passed, 5 warnings, 20 errors in 28.30s
+wrote 47 edges (31 internal, 16 entry) over 13 modules -> /home/azureuser/traceweave-harness/bundles/json-logging-python/trace.json
+===== trace rc=0 in 31 s
+
+===== 2026-10-19T08:42:02Z json-logging-python bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/json-logging-python/bin/python build_bundle.py json-logging-python --static /home/azureuser/traceweave-data/static/json-logging-python --runtime /home/azureuser/traceweave-harness/bundles/json-logging-python/trace.json
+json-logging-python: 207 nodes, pycg 41 / pyright 59 static edges, 47 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T08:42:04Z json-logging-python truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/json-logging-python/bin/python tw.py truth json-logging-python
+json-logging-python: 141 in-package call sites, 129 caller->callee pairs, 675 package lines ran; suite 26 passed in 20.01 s -> bundles/json-logging-python/truth.json
+===== truth rc=0 in 37 s
+
+===== 2026-10-19T08:42:41Z json-logging-python bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/json-logging-python/bin/python tw.py bench json-logging-python
++ mv /home/azureuser/traceweave-data/study1/bench/json-logging-python.txt.tmp /home/azureuser/traceweave-data/study1/bench/json-logging-python.txt
++ cat /home/azureuser/traceweave-data/study1/bench/json-logging-python.txt
+
+json-logging-python: 208 items, 75 real calls; 11 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.36   1.00   0.53   1.00
+  PyCG                              all   0.96   0.33   0.49   0.00
+  Pyright                           all   0.94   0.45   0.61   0.11
+  PyCG ∪ Pyright                    all   0.94   0.45   0.61   0.11
+  name match                     sample   0.34   1.00   0.50   1.00
+  PyCG                           sample   0.91   0.29   0.44   0.00
+  Pyright                        sample   0.89   0.47   0.61   0.19
+  PyCG ∪ Pyright                 sample   0.89   0.47   0.61   0.19
+===== bench rc=0 in 2 s

@@ -1,0 +1,11 @@
+
+fastapi-injectable: 90 items, 39 real calls; 7 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.43   1.00   0.60   0.00
+  PyCG                              all   0.86   0.82   0.84   0.00
+  Pyright                           all   0.88   0.97   0.93   0.00
+  PyCG ∪ Pyright                    all   0.88   0.97   0.93   0.00
+  name match                     sample   0.25   1.00   0.40   0.00
+  PyCG                           sample   0.64   0.69   0.67   0.00
+  Pyright                        sample   0.71   0.92   0.80   0.00
+  PyCG ∪ Pyright                 sample   0.71   0.92   0.80   0.00

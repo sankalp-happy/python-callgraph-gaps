@@ -1,0 +1,184 @@
+
+===== 2026-10-19T08:42:42Z jsonapi-requests clone
+
+===== 2026-10-19T08:42:44Z jsonapi-requests repo
+
+===== 2026-10-19T08:42:44Z jsonapi-requests env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/jsonapi-requests
++ python -m venv /home/azureuser/traceweave-data/study1/venv/jsonapi-requests
++ . /home/azureuser/traceweave-data/study1/venv/jsonapi-requests/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/jsonapi-requests
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/jsonapi-requests
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/jsonapi-requests/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(jsonapi-requests) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((jsonapi-requests) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/jsonapi-requests
++ '[' -f pyproject.toml ']'
++ '[' -f setup.py ']'
++ pip install .
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting requests (from jsonapi-requests==0.8.1.dev0)
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting tenacity (from jsonapi-requests==0.8.1.dev0)
+  Using cached tenacity-9.2.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting charset_normalizer<4,>=2 (from requests->jsonapi-requests==0.8.1.dev0)
+  Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests->jsonapi-requests==0.8.1.dev0)
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->jsonapi-requests==0.8.1.dev0)
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->jsonapi-requests==0.8.1.dev0)
+  Using cached certifi-2026.10.18-py3-none-any.whl.metadata (2.5 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached certifi-2026.10.18-py3-none-any.whl (134 kB)
+Using cached tenacity-9.2.1-py3-none-any.whl (32 kB)
+Building wheels for collected packages: jsonapi-requests
+  Building wheel for jsonapi-requests (pyproject.toml): started
+  Building wheel for jsonapi-requests (pyproject.toml): finished with status 'done'
+  Created wheel for jsonapi-requests: filename=jsonapi_requests-0.8.1.dev0-py2.py3-none-any.whl size=13153 sha256=2a3e23f13bf371b55675a8e603b3587870b03a5e2d9866fc6a0bc32579284ebb
+  Stored in directory: /tmp/pip-ephem-wheel-cache-fedwt27p/wheels/0a/0a/b0/3f0e42691ef00f681a6435f5b156feafb9a8cd8c799d20d4a5
+Successfully built jsonapi-requests
+Installing collected packages: urllib3, tenacity, idna, charset_normalizer, certifi, requests, jsonapi-requests
+
+Successfully installed certifi-2026.10.18 charset_normalizer-3.5.2 idna-3.20 jsonapi-requests-0.8.1.dev0 requests-2.34.2 tenacity-9.2.1 urllib3-2.8.0
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/jsonapi-requests/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Installing collected packages: pygments, pluggy, iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pygments-2.21.0 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/jsonapi-requests
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: jsonapi-requests
+  Building editable for jsonapi-requests (pyproject.toml): started
+  Building editable for jsonapi-requests (pyproject.toml): finished with status 'done'
+  Created wheel for jsonapi-requests: filename=jsonapi_requests-0.8.1.dev0-0.editable-py2.py3-none-any.whl size=5962 sha256=c9d3fced17c85c44a8963cf8a382f7a9a850a1eed1efd48e9d4c8599b391cae6
+  Stored in directory: /tmp/pip-ephem-wheel-cache-54stp94e/wheels/0a/0a/b0/3f0e42691ef00f681a6435f5b156feafb9a8cd8c799d20d4a5
+Successfully built jsonapi-requests
+Installing collected packages: jsonapi-requests
+  Attempting uninstall: jsonapi-requests
+    Found existing installation: jsonapi-requests 0.8.1.dev0
+    Uninstalling jsonapi-requests-0.8.1.dev0:
+      Successfully uninstalled jsonapi-requests-0.8.1.dev0
+Successfully installed jsonapi-requests-0.8.1.dev0
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 32 s
+
+===== 2026-10-19T08:43:15Z jsonapi-requests trace
++ cd /home/azureuser/traceweave-harness/work/jsonapi-requests
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/jsonapi-requests
++ /home/azureuser/traceweave-data/study1/venv/jsonapi-requests/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/jsonapi-requests --package /home/azureuser/traceweave-harness/work/jsonapi-requests/jsonapi_requests --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id jsonapi-requests-2026-10-19T08:43:15Z --out /home/azureuser/traceweave-harness/bundles/jsonapi-requests/trace.json
+..................................                                       [100%]
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_auth.py ______________________
+ImportError while importing test module '/home/azureuser/traceweave-harness/work/jsonapi-requests/tests/test_auth.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_auth.py:5: in <module>
+    from flask import Flask
+E   ModuleNotFoundError: No module named 'flask'
+=========================== short test summary info ============================
+ERROR tests/test_auth.py
+34 passed, 1 error in 1.36s
+wrote 182 edges (148 internal, 34 entry) over 12 modules -> /home/azureuser/traceweave-harness/bundles/jsonapi-requests/trace.json
+===== trace rc=0 in 4 s
+
+===== 2026-10-19T08:43:19Z jsonapi-requests bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/jsonapi-requests/bin/python build_bundle.py jsonapi-requests --static /home/azureuser/traceweave-data/static/jsonapi-requests --runtime /home/azureuser/traceweave-harness/bundles/jsonapi-requests/trace.json
+jsonapi-requests: 195 nodes, pycg 119 / pyright 112 static edges, 180 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T08:43:21Z jsonapi-requests truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/jsonapi-requests/bin/python tw.py truth jsonapi-requests
+jsonapi-requests: 208 in-package call sites, 204 caller->callee pairs, 587 package lines ran; suite 34 passed in 2.19 s -> bundles/jsonapi-requests/truth.json
+===== truth rc=0 in 6 s
+
+===== 2026-10-19T08:43:26Z jsonapi-requests bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/jsonapi-requests/bin/python tw.py bench jsonapi-requests
++ mv /home/azureuser/traceweave-data/study1/bench/jsonapi-requests.txt.tmp /home/azureuser/traceweave-data/study1/bench/jsonapi-requests.txt
++ cat /home/azureuser/traceweave-data/study1/bench/jsonapi-requests.txt
+
+jsonapi-requests: 456 items, 133 real calls; 20 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.29   1.00   0.45   1.00
+  PyCG                              all   0.89   0.53   0.67   0.23
+  Pyright                           all   0.92   0.57   0.70   0.30
+  PyCG ∪ Pyright                    all   0.86   0.58   0.69   0.33
+  name match                     sample   0.38   1.00   0.55   1.00
+  PyCG                           sample   1.00   0.33   0.49   0.07
+  Pyright                        sample   0.94   0.35   0.51   0.07
+  PyCG ∪ Pyright                 sample   0.94   0.35   0.51   0.07
+===== bench rc=0 in 2 s

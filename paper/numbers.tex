@@ -12,6 +12,10 @@
 \newcommand{\medNodesFail}{935}
 \newcommand{\minNodesFail}{16}
 \newcommand{\minNodesFailRepo}{chevron}
+\newcommand{\nFailTimeout}{15}
+\newcommand{\nFailCrash}{4}
+\newcommand{\nFailOom}{1}
+\newcommand{\nFailMixed}{2}
 \newcommand{\nNondet}{36}
 \newcommand{\pctNondet}{46\%}
 \newcommand{\medSpread}{1.0\%}
@@ -32,72 +36,179 @@
 \newcommand{\pyrightOnlyShare}{27\%}
 \newcommand{\nEdgesUnion}{33{,}368}
 \newcommand{\pending}{\textbf{[pending]}}
-\newcommand{\nRuntimeRepos}{20}
-\newcommand{\nRuntimeExcluded}{2}
-\newcommand{\edgeUnionMed}{0.78}
-\newcommand{\edgeUnionMin}{0.45}
-\newcommand{\edgeUnionMax}{0.94}
-\newcommand{\edgePycgMed}{0.62}
-\newcommand{\edgePyrightMed}{0.75}
-\newcommand{\nPyrightBeatsPycg}{16}
-\newcommand{\nObservedPairs}{5{,}436}
-\newcommand{\edgeMedLow}{0.79 ($n{=}3$)}
-\newcommand{\edgeMedMed}{0.75 ($n{=}8$)}
-\newcommand{\edgeMedHigh}{0.76 ($n{=}9$)}
-\newcommand{\itemPycgP}{0.93}
-\newcommand{\itemPycgR}{0.57}
-\newcommand{\itemPyrightP}{0.91}
-\newcommand{\itemPyrightR}{0.71}
-\newcommand{\itemUnionP}{0.91}
-\newcommand{\itemUnionR}{0.73}
-\newcommand{\itemNameP}{0.27}
+\newcommand{\nPoolMatched}{98{,}416}
+\newcommand{\nQueued}{558}
+\newcommand{\nRefSet}{14}
+\newcommand{\nRoundOne}{20}
+\newcommand{\roundOneStrata}{8 HIGH, 7 MED, 5 LOW}
+\newcommand{\nRoundTwo}{20}
+\newcommand{\shivycMakeIl}{29}
+\newcommand{\shivycMakeAsm}{20}
+\newcommand{\sampleClick}{140}
+\newcommand{\sampleToolz}{60}
+\newcommand{\pilotFusedFails}{8}
+\newcommand{\nRuntimeRepos}{39}
+\newcommand{\nRuntimeExcluded}{3}
+\newcommand{\edgeUnionMed}{0.69}
+\newcommand{\edgeUnionMissMed}{31\%}
+\newcommand{\nLowRuntime}{6}
+\newcommand{\edgeUnionMin}{0.03}
+\newcommand{\edgeUnionMax}{1.00}
+\newcommand{\edgePycgMed}{0.53}
+\newcommand{\edgePyrightMed}{0.68}
+\newcommand{\nPyrightBeatsPycg}{33}
+\newcommand{\nObservedPairs}{10{,}882}
+\newcommand{\edgeMedLow}{0.79 ($n{=}6$)}
+\newcommand{\edgeMedMed}{0.65 ($n{=}13$)}
+\newcommand{\edgeMedHigh}{0.69 ($n{=}20$)}
+\newcommand{\itemPycgP}{0.87}
+\newcommand{\itemPycgR}{0.51}
+\newcommand{\itemPyrightP}{0.86}
+\newcommand{\itemPyrightR}{0.69}
+\newcommand{\itemUnionP}{0.85}
+\newcommand{\itemUnionR}{0.70}
+\newcommand{\itemNameP}{0.22}
 \newcommand{\itemNameR}{1.00}
-\newcommand{\nItems}{16{,}514}
-\newcommand{\nRealItems}{4{,}448}
-\newcommand{\nMissed}{1{,}218}
-\newcommand{\pctMissShared}{80\%}
-\newcommand{\pctMissReference}{20\%}
-\newcommand{\pctUnnamed}{19\%}
-\newcommand{\nUnnamed}{1{,}033}
-\newcommand{\llmOneTwentyP}{0.66}
-\newcommand{\llmOneTwentyR}{0.85}
-\newcommand{\llmOneTwentyStaticP}{0.88}
-\newcommand{\llmOneTwentyStaticR}{0.67}
-\newcommand{\llmOneTwentyN}{3{,}502}
-\newcommand{\llmTwentyP}{0.69}
-\newcommand{\llmTwentyR}{0.82}
-\newcommand{\llmTwentyStaticP}{0.88}
-\newcommand{\llmTwentyStaticR}{0.67}
-\newcommand{\llmTwentyN}{3{,}498}
-\newcommand{\llmQwenP}{0.75}
-\newcommand{\llmQwenR}{0.77}
-\newcommand{\llmQwenStaticP}{0.88}
-\newcommand{\llmQwenStaticR}{0.67}
-\newcommand{\llmQwenN}{3{,}489}
-\newcommand{\cvComb}{0.84 & 0.73 & 0.78}
-\newcommand{\cvCombUnion}{0.88 & 0.67 & 0.76}
-\newcommand{\cvMajority}{0.72 & 0.83 & 0.77}
-\newcommand{\cvAnyLlm}{0.58 & 0.89 & 0.70}
-\newcommand{\nCombItems}{3{,}485}
-\newcommand{\nCombRepos}{20}
-\newcommand{\loroComb}{0.81 & 0.71 & 0.76}
-\newcommand{\rqThreeRows}{\texttt{ShivyC} & L & 1459 & 0.34 & 0.41 & 0.45 & 0.46 \\
-\texttt{rlm} & L & 142 & 0.34 & 0.79 & 0.79 & 0.85 \\
-\texttt{pr-agent} & L & 619 & 0.66 & 0.79 & 0.79 & 0.95 \\
-\texttt{sqllineage} & M & 761 & 0.29 & 0.44 & 0.45 & 0.65 \\
-\texttt{sec-edgar} & M & 123 & 0.27 & 0.46 & 0.49 & 0.48 \\
-\texttt{confluence-md-exporter} & M & 206 & 0.51 & 0.58 & 0.58 & 0.78 \\
-\texttt{toolz} & M & 121 & 0.56 & 0.61 & 0.67 & 0.97 \\
-\texttt{all-repos} & M & 221 & 0.80 & 0.82 & 0.83 & 0.90 \\
-\texttt{mcp-seq-thinking} & M & 36 & 0.72 & 0.89 & 0.89 & 1.00 \\
-\texttt{bedrock-agentcore-sdk} & M & 356 & 0.68 & 0.92 & 0.92 & 0.95 \\
-\texttt{creosote} & M & 63 & 0.92 & 0.92 & 0.92 & 0.98 \\
-\texttt{redbeat} & H & 63 & 0.59 & 0.59 & 0.60 & 0.71 \\
-\texttt{pyrlp} & H & 120 & 0.53 & 0.64 & 0.65 & 0.71 \\
-\texttt{apiflask} & H & 142 & 0.47 & 0.68 & 0.69 & 0.81 \\
-\texttt{click} & H & 704 & 0.46 & 0.68 & 0.69 & 0.79 \\
-\texttt{marshmallow-sqlalchemy} & H & 38 & 0.68 & 0.76 & 0.76 & 0.90 \\
-\texttt{scrapyrt} & H & 25 & 0.72 & 0.80 & 0.80 & 0.95 \\
-\texttt{xacro} & H & 140 & 0.84 & 0.84 & 0.85 & 1.00 \\
-\texttt{autoray} & H & 50 & 0.86 & 0.74 & 0.88 & 0.97 \\
-\texttt{python-neutronclient} & H & 47 & 0.92 & 0.94 & 0.94 & 0.96 \\}
+\newcommand{\nItems}{33{,}020}
+\newcommand{\nRealItems}{7{,}282}
+\newcommand{\nMissed}{2{,}163}
+\newcommand{\pctMissShared}{69\%}
+\newcommand{\pctMissReference}{38\%}
+\newcommand{\pctUnnamed}{33\%}
+\newcommand{\nUnnamed}{3{,}659}
+\newcommand{\llmOneTwentyP}{0.60}
+\newcommand{\llmOneTwentyR}{0.87}
+\newcommand{\llmOneTwentyStaticP}{0.83}
+\newcommand{\llmOneTwentyStaticR}{0.65}
+\newcommand{\llmOneTwentyN}{5{,}616}
+\newcommand{\llmTwentyP}{0.63}
+\newcommand{\llmTwentyR}{0.83}
+\newcommand{\llmTwentyStaticP}{0.83}
+\newcommand{\llmTwentyStaticR}{0.65}
+\newcommand{\llmTwentyN}{5{,}611}
+\newcommand{\llmQwenP}{0.70}
+\newcommand{\llmQwenR}{0.79}
+\newcommand{\llmQwenStaticP}{0.83}
+\newcommand{\llmQwenStaticR}{0.65}
+\newcommand{\llmQwenN}{5{,}578}
+\newcommand{\cvComb}{0.76 & 0.74 & 0.75}
+\newcommand{\cvCombUnion}{0.83 & 0.65 & 0.73}
+\newcommand{\cvMajority}{0.66 & 0.85 & 0.74}
+\newcommand{\cvAnyLlm}{0.54 & 0.91 & 0.68}
+\newcommand{\cvCombFone}{0.75}
+\newcommand{\nCombItems}{5{,}573}
+\newcommand{\nCombRepos}{39}
+\newcommand{\loroComb}{0.81 & 0.73 & 0.77}
+\newcommand{\rqThreeRows}{\texttt{ShivyC} & L & 1459 & 0.34 & 0.41 & 0.45 & \texttt{rejax} & H & 174 & 0.28 & 0.36 & 0.36 \\
+\texttt{movingpandas} & L & 382 & 0.48 & 0.54 & 0.57 & \texttt{json-logging-python} & H & 86 & 0.29 & 0.41 & 0.41 \\
+\texttt{rlm} & L & 142 & 0.34 & 0.79 & 0.79 & \texttt{tensortrade-ng} & H & 834 & 0.15 & 0.42 & 0.44 \\
+\texttt{pr-agent} & L & 619 & 0.66 & 0.79 & 0.79 & \texttt{jsonapi-requests} & H & 153 & 0.48 & 0.50 & 0.52 \\
+\texttt{TradingView-Screener} & L & 19 & 0.10 & 1.00 & 1.00 & \texttt{redbeat} & H & 63 & 0.59 & 0.59 & 0.60 \\
+\texttt{throttled} & L & 13 & 1.00 & 1.00 & 1.00 & \texttt{pyrlp} & H & 120 & 0.53 & 0.64 & 0.65 \\
+\texttt{pysui} & M & 1393 & 0.24 & 0.27 & 0.27 & \texttt{django-ses} & H & 3 & 0.67 & 0.67 & 0.67 \\
+\texttt{sqllineage} & M & 761 & 0.29 & 0.44 & 0.45 & \texttt{aws-dynamodb-encryption} & H & 74 & 0.58 & 0.61 & 0.68 \\
+\texttt{sec-edgar} & M & 123 & 0.27 & 0.46 & 0.49 & \texttt{apiflask} & H & 142 & 0.47 & 0.68 & 0.69 \\
+\texttt{pykwalify} & M & 192 & 0.43 & 0.51 & 0.53 & \texttt{click} & H & 704 & 0.46 & 0.68 & 0.69 \\
+\texttt{PyFunceble} & M & 1045 & 0.25 & 0.47 & 0.54 & \texttt{compressed-tensors} & H & 413 & 0.50 & 0.68 & 0.70 \\
+\texttt{confluence-md-exporter} & M & 206 & 0.51 & 0.58 & 0.58 & \texttt{deepblast} & H & 29 & 0.69 & 0.76 & 0.76 \\
+\texttt{term-image} & M & 336 & 0.43 & 0.62 & 0.65 & \texttt{marshmallow-sqlalchemy} & H & 38 & 0.68 & 0.76 & 0.76 \\
+\texttt{toolz} & M & 121 & 0.56 & 0.61 & 0.67 & \texttt{scrapyrt} & H & 25 & 0.72 & 0.80 & 0.80 \\
+\texttt{fastapi-injectable} & M & 46 & 0.70 & 0.83 & 0.83 & \texttt{xacro} & H & 140 & 0.84 & 0.84 & 0.85 \\
+\texttt{all-repos} & M & 221 & 0.80 & 0.82 & 0.83 & \texttt{geocube} & H & 45 & 0.64 & 0.87 & 0.87 \\
+\texttt{mcp-seq-thinking} & M & 36 & 0.72 & 0.89 & 0.89 & \texttt{autoray} & H & 50 & 0.86 & 0.74 & 0.88 \\
+\texttt{bedrock-agentcore-sdk} & M & 356 & 0.68 & 0.92 & 0.92 & \texttt{neutronclient} & H & 47 & 0.92 & 0.94 & 0.94 \\
+\texttt{creosote} & M & 63 & 0.92 & 0.92 & 0.92 & \texttt{puncover} & H & 22 & 0.68 & 0.95 & 0.95 \\
+\texttt{lazy-object-proxy} & H & 187 & 0.02 & 0.03 & 0.03 &  & & & & &  \\}
+\newcommand{\rqFourKindRows}{call, unique name & 801 & 0.95 / 0.84 & 0.95 / 0.80 & 0.98 / 0.81 & 0.98 / 0.82 \\
+call, shared name & 1798 & 0.45 / 0.74 & 0.67 / 0.60 & 0.75 / 0.57 & 0.52 / 0.71 \\
+class name & 417 & 0.92 / 0.96 & 0.91 / 0.64 & 0.91 / 0.58 & 0.89 / 0.85 \\
+reference, unique name & 1139 & 0.05 / 0.88 & 0.86 / 0.35 & 0.86 / 0.32 & 0.84 / 0.42 \\
+reference, shared name & 1456 & 0.00 / 0.00 & 0.76 / 0.43 & 0.83 / 0.38 & 0.74 / 0.42 \\}
+\newcommand{\kindSharedStaticR}{0.45}
+\newcommand{\kindSharedLlmR}{0.52--0.75}
+\newcommand{\kindRefStaticR}{0.05}
+\newcommand{\kindRefLlmR}{0.74--0.86}
+\newcommand{\kindRefLlmP}{0.32--0.43}
+\newcommand{\llmBeatsMin}{15}
+\newcommand{\llmBeatsMax}{18}
+\newcommand{\llmReposN}{39}
+\newcommand{\covSpearman}{-0.33}
+\newcommand{\testsSpearman}{-0.23}
+\newcommand{\covMed}{67\%}
+\newcommand{\covMin}{24\%}
+\newcommand{\covMax}{98\%}
+\newcommand{\nRetrace}{37}
+\newcommand{\retraceJacMin}{0.99}
+\newcommand{\retraceJacMed}{1.00}
+\newcommand{\compMissedR}{0.46--0.70}
+\newcommand{\compFoundR}{0.94--0.97}
+\newcommand{\nCompMissed}{483}
+\newcommand{\ciOneTwentyPrec}{[0.51, 0.67]}
+\newcommand{\ciOneTwentyRec}{[0.78, 0.95]}
+\newcommand{\ciOneTwentyFone}{[0.64, 0.77]}
+\newcommand{\ciTwentyPrec}{[0.53, 0.70]}
+\newcommand{\ciTwentyRec}{[0.74, 0.90]}
+\newcommand{\ciTwentyFone}{[0.65, 0.77]}
+\newcommand{\ciQwenPrec}{[0.63, 0.76]}
+\newcommand{\ciQwenRec}{[0.71, 0.87]}
+\newcommand{\ciQwenFone}{[0.70, 0.78]}
+\newcommand{\ciStaticPrec}{[0.75, 0.88]}
+\newcommand{\ciStaticRec}{[0.55, 0.74]}
+\newcommand{\ciStaticFone}{[0.66, 0.78]}
+\newcommand{\staticPrecUniqueCall}{0.88}
+\newcommand{\staticPrecSharedCall}{0.73}
+\newcommand{\staticRecallSharedCall}{0.44}
+\newcommand{\pycgRecallCtor}{0.49}
+\newcommand{\pyrightRecallCtor}{0.95}
+\newcommand{\loroRows}{PyCG & 0.84 & 0.49 & 0.62 \\
+Pyright & 0.83 & 0.64 & 0.73 \\
+PyCG $\cup$ Pyright & 0.83 & 0.65 & 0.73 \\
+majority of the three LLMs & 0.66 & 0.85 & 0.74 \\
+static $\cup$ any LLM & 0.54 & 0.91 & 0.68 \\
+learned combiner & 0.81 & 0.73 & 0.77 \\}
+\newcommand{\loroCombFone}{0.77}
+\newcommand{\loroUnionFone}{0.73}
+\newcommand{\loroMajorityFone}{0.74}
+\newcommand{\loroCombP}{0.81}
+\newcommand{\loroCombR}{0.73}
+\newcommand{\loroUnionP}{0.83}
+\newcommand{\loroUnionR}{0.65}
+\newcommand{\nLoroBeats}{20}
+\newcommand{\nLoroWorse}{9}
+\newcommand{\nLoroRepos}{39}
+\newcommand{\densitySpearman}{-0.23}
+\newcommand{\pctUnnamedDunder}{38\%}
+\newcommand{\unnamedTopRepo}{pysui}
+\newcommand{\pctUnnamedTopOfRest}{52\%}
+\newcommand{\nTenSeed}{77}
+\newcommand{\nSwept}{37}
+\newcommand{\nSweptVaries}{8}
+\newcommand{\sweepMaxPts}{10}
+\newcommand{\sweepMaxDelta}{0.10}
+\newcommand{\sweepMedDelta}{0.00}
+\newcommand{\sweepWorstRepo}{term-image}
+\newcommand{\sweepWorstLo}{0.34}
+\newcommand{\sweepWorstHi}{0.43}
+\newcommand{\sweepMedPts}{0.0}
+\newcommand{\sweepMaxGraphs}{7}
+\newcommand{\sweepUnionMaxPts}{2}
+\newcommand{\sweepUnionMaxDelta}{0.02}
+\newcommand{\nMixedTermination}{4}
+\newcommand{\mixedTerminationRepo}{CorridorKey}
+\newcommand{\nSetSwept}{76}
+\newcommand{\nSetNondet}{20}
+\newcommand{\setJacMin}{0.40}
+\newcommand{\setJacMinRepo}{python-lazy-object-proxy}
+\newcommand{\nVaryObserved}{8}
+\newcommand{\nRawOnly}{16}
+\newcommand{\nHiddenByCount}{2}
+\newcommand{\nCountNondetSwept}{34}
+\newcommand{\chevPasses}{100}
+\newcommand{\chevDefsFirst}{177}
+\newcommand{\chevDefsLast}{1420}
+\newcommand{\chevGrowth}{12}
+\newcommand{\chevRepeats}{0}
+\newcommand{\muscNamesFirst}{555}
+\newcommand{\muscNamesLast}{18{,}387}
+\newcommand{\muscPasses}{4}
+\newcommand{\muscLastPassMin}{22}

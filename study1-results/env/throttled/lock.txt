@@ -1,0 +1,11 @@
+configparser==7.2.0
+dbus-fast==5.0.22
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.1.1
+pytest-timeout==2.4.0
+setuptools==84.0.0
+throttled @ file:///home/azureuser/traceweave-harness/work/throttled
+wheel==0.48.0

@@ -1,0 +1,5 @@
+{"iter": 0, "converged": false, "defs": 1635, "names": 555, "fingerprint": "fa8cc69dc718a322", "seen_at": null, "seconds": 0.31, "new_defs": []}
+{"iter": 1, "converged": false, "defs": 2305, "names": 1163, "fingerprint": "f1f96fe6723c9a73", "seen_at": null, "seconds": 0.74, "new_defs": ["abc.ABC._complete_kv", "abc.ABC.dim_per_head", "abc.ABC.embed_dim", "abc.ABC.forward"]}
+{"iter": 2, "converged": false, "defs": 2412, "names": 1503, "fingerprint": "bf916b2fddc13e7e", "seen_at": null, "seconds": 1.49, "new_defs": ["base64.b64encode.decode", "copy.deepcopy.text", "copy.deepcopy.wav", "einops.rearrange.shape"]}
+{"iter": 3, "converged": false, "defs": 2533, "names": 4880, "fingerprint": "00852ead3a082cd2", "seen_at": null, "seconds": 12.78, "new_defs": ["einops.rearrange.bias", "einops.rearrange.device", "einops.rearrange.dtype", "einops.rearrange.reshape"]}
+{"iter": 4, "converged": false, "defs": 3410, "names": 18387, "fingerprint": "bcd6512b889c56b6", "seen_at": null, "seconds": 1307.02, "new_defs": ["abc.ABC.zero_idx", "einops.rearrange.float", "einops.rearrange.items", "einops.rearrange.reshape.argmax"]}

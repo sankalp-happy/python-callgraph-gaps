@@ -1,0 +1,11 @@
+
+geocube: 78 items, 40 real calls; 5 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.51   1.00   0.68   1.00
+  PyCG                              all   1.00   0.72   0.84   0.50
+  Pyright                           all   1.00   0.97   0.99   0.50
+  PyCG ∪ Pyright                    all   1.00   0.97   0.99   0.50
+  name match                     sample   0.23   1.00   0.38   1.00
+  PyCG                           sample   1.00   0.44   0.61   0.50
+  Pyright                        sample   1.00   0.89   0.94   0.50
+  PyCG ∪ Pyright                 sample   1.00   0.89   0.94   0.50

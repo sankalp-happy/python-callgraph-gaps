@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/s/pycg_iterprobe.py", line 62, in <module>
+    sys.exit(main())
+  File "/s/pycg_iterprobe.py", line 38, in main
+    cg.do_pass(PreProcessor, True, *mgrs)
+  File "/usr/local/lib/python3.10/site-packages/pycg/pycg.py", line 153, in do_pass
+    processor.analyze()
+  File "/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py", line 424, in analyze
+    self.visit(ast.parse(self.contents, self.filename))
+  File "/usr/local/lib/python3.10/ast.py", line 418, in visit
+    return visitor(node)
+  File "/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py", line 130, in visit_Module
+    super().visit_Module(node)
+  File "/usr/local/lib/python3.10/site-packages/pycg/processing/base.py", line 62, in visit_Module
+    self.generic_visit(node)
+  File "/usr/local/lib/python3.10/ast.py", line 426, in generic_visit
+    self.visit(item)
+  File "/usr/local/lib/python3.10/ast.py", line 418, in visit
+    return visitor(node)
+  File "/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py", line 417, in visit_ClassDef
+    super().visit_ClassDef(node)
+  File "/usr/local/lib/python3.10/site-packages/pycg/processing/base.py", line 131, in visit_ClassDef
+    self.visit(stmt)
+  File "/usr/local/lib/python3.10/ast.py", line 418, in visit
+    return visitor(node)
+  File "/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py", line 341, in visit_FunctionDef
+    self._handle_function_def(node, node.name)
+  File "/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py", line 258, in _handle_function_def
+    defaults = self._get_fun_defaults(node)
+  File "/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py", line 59, in _get_fun_defaults
+    defaults[node.args.args[cnt].arg] = self.decode_node(d)
+IndexError: list index out of range

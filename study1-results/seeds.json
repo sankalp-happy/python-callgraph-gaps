@@ -1,0 +1,9538 @@
+{
+ "APIException": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.33,
+    "edges": 28
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 11.21,
+    "edges": 28
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.04,
+    "edges": 28
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.51,
+    "edges": 28
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.35,
+    "edges": 28
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.32,
+    "edges": 28
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.39,
+    "edges": 28
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.6,
+    "edges": 28
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.72,
+    "edges": 28
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.5,
+    "edges": 28
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 28,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "AirIAM": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 3.38,
+    "edges": 93
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 5.16,
+    "edges": 93
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.49,
+    "edges": 93
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.69,
+    "edges": 93
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 4.6,
+    "edges": 93
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 2.77,
+    "edges": 93
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.51,
+    "edges": 93
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.6,
+    "edges": 93
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.61,
+    "edges": 93
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 5.13,
+    "edges": 93
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 93,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "AutoLens": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 46.09,
+    "edges": 334
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 33.82,
+    "edges": 334
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 41.62,
+    "edges": 334
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 41.34,
+    "edges": 334
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 36.37,
+    "edges": 334
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 43.02,
+    "edges": 334
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 42.85,
+    "edges": 334
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 41.58,
+    "edges": 334
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 62.17,
+    "edges": 334
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 37.98,
+    "edges": 334
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 334,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "CorridorKey": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 100.36,
+    "edges": 240
+   },
+   "0": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "6": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "5": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 53.6,
+    "edges": 240
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 125.05,
+    "edges": 240
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 41.31,
+    "edges": 240
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 300.25,
+    "edges": 240
+   },
+   "9": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 60.06,
+    "edges": 240
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 240,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "Curator": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1670.96,
+    "edges": 1735
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 887.78,
+    "edges": 1735
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 943.17,
+    "edges": 1737
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1104.03,
+    "edges": 1730
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1126.51,
+    "edges": 1732
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1034.23,
+    "edges": 1732
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1248.16,
+    "edges": 1727
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1001.61,
+    "edges": 1740
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 937.44,
+    "edges": 1734
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1241.18,
+    "edges": 1735
+   }
+  },
+  "jaccard_min": 0.9869,
+  "jaccard_median": 0.9954,
+  "distinct_graphs": 8,
+  "varying_edges": 32,
+  "varying_observed": null,
+  "always_edges": 1727,
+  "vs_seed0": {
+   "3": {
+    "added": 8,
+    "removed": 8
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 10,
+    "removed": 8
+   },
+   "5": {
+    "added": 3,
+    "removed": 8
+   },
+   "1": {
+    "added": 5,
+    "removed": 8
+   },
+   "4": {
+    "added": 5,
+    "removed": 8
+   },
+   "7": {
+    "added": 0,
+    "removed": 8
+   },
+   "8": {
+    "added": 13,
+    "removed": 8
+   },
+   "9": {
+    "added": 7,
+    "removed": 8
+   },
+   "2": {
+    "added": 8,
+    "removed": 8
+   }
+  },
+  "examples": {
+   "added": [
+    "nemo_curator/stages/video/clipping/clip_extraction_stages.py::ClipTranscodingStage.process->nemo_curator/core/serve/ray_serve/config.py::RayServeServerConfig",
+    "nemo_curator/stages/video/clipping/clip_extraction_stages.py::ClipTranscodingStage.process->nemo_curator/models/asr/qwen_omni.py::_default_sampling_kwargs",
+    "nemo_curator/stages/video/clipping/clip_extraction_stages.py::ClipTranscodingStage.process->nemo_curator/tasks/video.py::ClipStats"
+   ],
+   "removed": [
+    "nemo_curator/stages/video/clipping/clip_extraction_stages.py::ClipTranscodingStage.process->nemo_curator/core/serve/dynamo/config.py::DynamoRouterConfig",
+    "nemo_curator/stages/video/io/clip_writer.py::ClipWriterStage._write_clip_embedding->nemo_curator/core/serve/dynamo/config.py::DynamoRouterConfig",
+    "nemo_curator/stages/video/io/clip_writer.py::ClipWriterStage._write_clip_embedding_to_buffer->nemo_curator/core/serve/dynamo/config.py::DynamoRouterConfig"
+   ],
+   "varying_observed": []
+  }
+ },
+ "DC3-MWCP": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 10.59,
+    "edges": 390
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 9.97,
+    "edges": 390
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 15.12,
+    "edges": 390
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 17.22,
+    "edges": 390
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 14.86,
+    "edges": 390
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 15.55,
+    "edges": 390
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 10.89,
+    "edges": 390
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 10.18,
+    "edges": 390
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 15.08,
+    "edges": 390
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 12.31,
+    "edges": 390
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 390,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "Fast-Poisson-Image-Editing": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.88,
+    "edges": 56
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.16,
+    "edges": 56
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.64,
+    "edges": 56
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.72,
+    "edges": 56
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.04,
+    "edges": 56
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.64,
+    "edges": 56
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.94,
+    "edges": 56
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.11,
+    "edges": 56
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.2,
+    "edges": 56
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.89,
+    "edges": 56
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 56,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "HippoRAG": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 13.48,
+    "edges": 261
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 14.1,
+    "edges": 261
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 13.16,
+    "edges": 261
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 14.36,
+    "edges": 261
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 12.14,
+    "edges": 261
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 14.2,
+    "edges": 261
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 8.87,
+    "edges": 261
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 13.37,
+    "edges": 261
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 13.14,
+    "edges": 261
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 11.53,
+    "edges": 261
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 261,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "OpenAGI": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.94,
+    "edges": 64
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.76,
+    "edges": 64
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.92,
+    "edges": 64
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.75,
+    "edges": 64
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.99,
+    "edges": 64
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.85,
+    "edges": 64
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.46,
+    "edges": 64
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.01,
+    "edges": 64
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.34,
+    "edges": 64
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 2.06,
+    "edges": 64
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 64,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "PathPicker": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.07,
+    "edges": 105
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.99,
+    "edges": 105
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.9,
+    "edges": 105
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.92,
+    "edges": 105
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.14,
+    "edges": 105
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.99,
+    "edges": 105
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.65,
+    "edges": 105
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.81,
+    "edges": 105
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.57,
+    "edges": 105
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 2.09,
+    "edges": 105
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 105,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "PyFluff": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.84,
+    "edges": 108
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.71,
+    "edges": 108
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.42,
+    "edges": 108
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.85,
+    "edges": 108
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.94,
+    "edges": 108
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.9,
+    "edges": 108
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.93,
+    "edges": 108
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.94,
+    "edges": 108
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.05,
+    "edges": 108
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.96,
+    "edges": 108
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 108,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "PyFunceble": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 174.95,
+    "edges": 1328,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 152.67,
+    "edges": 1323,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 151.27,
+    "edges": 1325,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 136.24,
+    "edges": 1325,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 177.49,
+    "edges": 1322,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 165.47,
+    "edges": 1322,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 167.14,
+    "edges": 1322,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 162.15,
+    "edges": 1327,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 169.88,
+    "edges": 1325,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 170.7,
+    "edges": 1325,
+    "recall_pycg": 0.2488,
+    "recall_union": 0.5407
+   }
+  },
+  "jaccard_min": 0.9955,
+  "jaccard_median": 0.9977,
+  "distinct_graphs": 6,
+  "varying_edges": 6,
+  "varying_observed": 0,
+  "always_edges": 1322,
+  "vs_seed0": {
+   "3": {
+    "added": 5,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 2,
+    "removed": 0
+   },
+   "5": {
+    "added": 3,
+    "removed": 1
+   },
+   "1": {
+    "added": 0,
+    "removed": 1
+   },
+   "4": {
+    "added": 0,
+    "removed": 1
+   },
+   "7": {
+    "added": 0,
+    "removed": 1
+   },
+   "8": {
+    "added": 5,
+    "removed": 1
+   },
+   "9": {
+    "added": 3,
+    "removed": 1
+   },
+   "2": {
+    "added": 3,
+    "removed": 1
+   }
+  },
+  "examples": {
+   "added": [
+    "PyFunceble/cli/file_preloader.py::FilePreloader.start->PyFunceble/cli/utils/testing.py::get_subjects_from_line",
+    "PyFunceble/cli/filesystem/dir_structure/backup.py::DirectoryStructureBackup.get_backup_data->PyFunceble/config/loader.py::ConfigLoader.config_dir",
+    "PyFunceble/cli/filesystem/dir_structure/restore.py::DirectoryStructureRestoration.restore_from_backup->PyFunceble/config/loader.py::ConfigLoader.config_dir"
+   ],
+   "removed": [
+    "PyFunceble/logger.py::Logger.guess_all_settings->PyFunceble/config/loader.py::ConfigLoader.config_dir"
+   ],
+   "varying_observed": []
+  },
+  "observed": 1045,
+  "recall_pycg": [
+   0.2488,
+   0.2488,
+   0.2488
+  ],
+  "recall_union": [
+   0.5407,
+   0.5407,
+   0.5407
+  ],
+  "recall_pycg_union_of_seeds": 0.2488
+ },
+ "Pyneat": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 97.78,
+    "edges": 660
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 83.53,
+    "edges": 660
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 96.47,
+    "edges": 660
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 70.77,
+    "edges": 660
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 90.68,
+    "edges": 660
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 89.63,
+    "edges": 660
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 85.87,
+    "edges": 660
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 79.54,
+    "edges": 660
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 95.8,
+    "edges": 660
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 91.07,
+    "edges": 660
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 660,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "SerpScrap": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 10.78,
+    "edges": 274
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 6.68,
+    "edges": 271
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 8.63,
+    "edges": 271
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 9.96,
+    "edges": 271
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 8.27,
+    "edges": 274
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 10.88,
+    "edges": 274
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 10.19,
+    "edges": 274
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 11.37,
+    "edges": 271
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 9.4,
+    "edges": 274
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 10.97,
+    "edges": 271
+   }
+  },
+  "jaccard_min": 0.9891,
+  "jaccard_median": 0.9891,
+  "distinct_graphs": 2,
+  "varying_edges": 3,
+  "varying_observed": null,
+  "always_edges": 271,
+  "vs_seed0": {
+   "3": {
+    "added": 3,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 3,
+    "removed": 0
+   },
+   "4": {
+    "added": 3,
+    "removed": 0
+   },
+   "7": {
+    "added": 3,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 3,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "serpscrap/mcp_server.py::McpHandler.do_GET->serpscrap/mcp_server.py::McpHandler._send",
+    "serpscrap/mcp_server.py::McpHandler.do_POST->serpscrap/mcp_server.py::McpHandler._authorized",
+    "serpscrap/mcp_server.py::McpHandler.do_POST->serpscrap/mcp_server.py::McpHandler._send"
+   ],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "ShivyC": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 9.7,
+    "edges": 609,
+    "recall_pycg": 0.3358,
+    "recall_union": 0.4441
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 11.0,
+    "edges": 610,
+    "recall_pycg": 0.3365,
+    "recall_union": 0.4448
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 7.73,
+    "edges": 610,
+    "recall_pycg": 0.3365,
+    "recall_union": 0.4448
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 34.28,
+    "edges": 610,
+    "recall_pycg": 0.3365,
+    "recall_union": 0.4448
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 14.69,
+    "edges": 610,
+    "recall_pycg": 0.3365,
+    "recall_union": 0.4448
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 8.39,
+    "edges": 610,
+    "recall_pycg": 0.3365,
+    "recall_union": 0.4448
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 13.44,
+    "edges": 610,
+    "recall_pycg": 0.3365,
+    "recall_union": 0.4448
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 9.44,
+    "edges": 609,
+    "recall_pycg": 0.3358,
+    "recall_union": 0.4441
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 8.08,
+    "edges": 610,
+    "recall_pycg": 0.3365,
+    "recall_union": 0.4448
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 13.34,
+    "edges": 609,
+    "recall_pycg": 0.3358,
+    "recall_union": 0.4441
+   }
+  },
+  "jaccard_min": 0.9984,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 2,
+  "varying_edges": 1,
+  "varying_observed": 1,
+  "always_edges": 609,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 1
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 1
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 1
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [
+    "shivyc/tree/type_exprs.py::Cast.make_il->shivyc/ctypes.py::CType.is_scalar"
+   ],
+   "varying_observed": [
+    "shivyc/tree/type_exprs.py::Cast.make_il->shivyc/ctypes.py::CType.is_scalar"
+   ]
+  },
+  "observed": 1459,
+  "recall_pycg": [
+   0.3358,
+   0.3365,
+   0.3365
+  ],
+  "recall_union": [
+   0.4441,
+   0.4448,
+   0.4448
+  ],
+  "recall_pycg_union_of_seeds": 0.3365
+ },
+ "TradingView-Screener": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.59,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.75,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.46,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.68,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.52,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.59,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.57,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.45,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.61,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.49,
+    "edges": 13,
+    "recall_pycg": 0.1053,
+    "recall_union": 1.0
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 13,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 19,
+  "recall_pycg": [
+   0.1053,
+   0.1053,
+   0.1053
+  ],
+  "recall_union": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "recall_pycg_union_of_seeds": 0.1053
+ },
+ "XAgent": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 5.29,
+    "edges": 214
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 8.97,
+    "edges": 214
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 6.81,
+    "edges": 214
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 8.07,
+    "edges": 214
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 7.45,
+    "edges": 214
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 8.21,
+    "edges": 214
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 6.58,
+    "edges": 214
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 6.08,
+    "edges": 214
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 7.29,
+    "edges": 214
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 5.24,
+    "edges": 214
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 214,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "all-repos": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 3.31,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.43,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.68,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.49,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.42,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 3.25,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.75,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 3.6,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.61,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 3.22,
+    "edges": 206,
+    "recall_pycg": 0.7964,
+    "recall_union": 0.8281
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 206,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 221,
+  "recall_pycg": [
+   0.7964,
+   0.7964,
+   0.7964
+  ],
+  "recall_union": [
+   0.8281,
+   0.8281,
+   0.8281
+  ],
+  "recall_pycg_union_of_seeds": 0.7964
+ },
+ "apiflask": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.67,
+    "edges": 78,
+    "recall_pycg": 0.4789,
+    "recall_union": 0.6972
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 3.13,
+    "edges": 77,
+    "recall_pycg": 0.4718,
+    "recall_union": 0.6901
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.26,
+    "edges": 77,
+    "recall_pycg": 0.4718,
+    "recall_union": 0.6901
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.32,
+    "edges": 77,
+    "recall_pycg": 0.4718,
+    "recall_union": 0.6901
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 3.18,
+    "edges": 77,
+    "recall_pycg": 0.4718,
+    "recall_union": 0.6901
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 2.25,
+    "edges": 78,
+    "recall_pycg": 0.4789,
+    "recall_union": 0.6972
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.85,
+    "edges": 78,
+    "recall_pycg": 0.4789,
+    "recall_union": 0.6972
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 3.26,
+    "edges": 77,
+    "recall_pycg": 0.4718,
+    "recall_union": 0.6901
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.15,
+    "edges": 77,
+    "recall_pycg": 0.4718,
+    "recall_union": 0.6901
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 2.94,
+    "edges": 78,
+    "recall_pycg": 0.4789,
+    "recall_union": 0.6972
+   }
+  },
+  "jaccard_min": 0.9747,
+  "jaccard_median": 0.9872,
+  "distinct_graphs": 3,
+  "varying_edges": 2,
+  "varying_observed": 2,
+  "always_edges": 77,
+  "vs_seed0": {
+   "3": {
+    "added": 1,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 1,
+    "removed": 0
+   },
+   "7": {
+    "added": 1,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 1,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "src/apiflask/scaffold.py::APIScaffold.input.decorator.wrapper#0->src/apiflask/scaffold.py::_ensure_sync.wrapper",
+    "src/apiflask/scaffold.py::APIScaffold.output.decorator._response->src/apiflask/scaffold.py::_ensure_sync.wrapper"
+   ],
+   "removed": [],
+   "varying_observed": [
+    "src/apiflask/scaffold.py::APIScaffold.input.decorator.wrapper#0->src/apiflask/scaffold.py::_ensure_sync.wrapper",
+    "src/apiflask/scaffold.py::APIScaffold.output.decorator._response->src/apiflask/scaffold.py::_ensure_sync.wrapper"
+   ]
+  },
+  "observed": 142,
+  "recall_pycg": [
+   0.4718,
+   0.4718,
+   0.4789
+  ],
+  "recall_union": [
+   0.6901,
+   0.6901,
+   0.6972
+  ],
+  "recall_pycg_union_of_seeds": 0.4859
+ },
+ "autoray": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 3.48,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 4.25,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 3.46,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 4.09,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 3.26,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 3.1,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 3.04,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 3.6,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 4.13,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 4.0,
+    "edges": 567,
+    "recall_pycg": 0.86,
+    "recall_union": 0.88
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 567,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 50,
+  "recall_pycg": [
+   0.86,
+   0.86,
+   0.86
+  ],
+  "recall_union": [
+   0.88,
+   0.88,
+   0.88
+  ],
+  "recall_pycg_union_of_seeds": 0.86
+ },
+ "aws-dynamodb-encryption-python": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 6.92,
+    "edges": 244,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 9.55,
+    "edges": 243,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 5.28,
+    "edges": 247,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 8.26,
+    "edges": 245,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 10.58,
+    "edges": 243,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 6.83,
+    "edges": 243,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 5.22,
+    "edges": 244,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 9.39,
+    "edges": 248,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 8.36,
+    "edges": 244,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 4.42,
+    "edges": 244,
+    "recall_pycg": 0.5811,
+    "recall_union": 0.6757
+   }
+  },
+  "jaccard_min": 0.9759,
+  "jaccard_median": 0.9918,
+  "distinct_graphs": 5,
+  "varying_edges": 7,
+  "varying_observed": 0,
+  "always_edges": 243,
+  "vs_seed0": {
+   "3": {
+    "added": 1,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 4,
+    "removed": 0
+   },
+   "5": {
+    "added": 2,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 1,
+    "removed": 0
+   },
+   "8": {
+    "added": 5,
+    "removed": 0
+   },
+   "9": {
+    "added": 1,
+    "removed": 0
+   },
+   "2": {
+    "added": 1,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "src/dynamodb_encryption_sdk/internal/utils.py::crypto_config_from_cache->src/dynamodb_encryption_sdk/internal/utils.py::_item_attributes_match",
+    "src/dynamodb_encryption_sdk/internal/utils.py::crypto_config_from_cache->src/dynamodb_encryption_sdk/internal/utils.py::_item_keys_match",
+    "src/dynamodb_encryption_sdk/internal/utils.py::crypto_config_from_cache->src/dynamodb_encryption_sdk/internal/utils.py::crypto_config_from_cache"
+   ],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 74,
+  "recall_pycg": [
+   0.5811,
+   0.5811,
+   0.5811
+  ],
+  "recall_union": [
+   0.6757,
+   0.6757,
+   0.6757
+  ],
+  "recall_pycg_union_of_seeds": 0.5811
+ },
+ "bedrock-agentcore-sdk-python": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 46.59,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 42.52,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 73.73,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 71.51,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 47.32,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 66.73,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 61.33,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 73.86,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 69.71,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 64.76,
+    "edges": 591,
+    "recall_pycg": 0.6826,
+    "recall_union": 0.9157
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 591,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 356,
+  "recall_pycg": [
+   0.6826,
+   0.6826,
+   0.6826
+  ],
+  "recall_union": [
+   0.9157,
+   0.9157,
+   0.9157
+  ],
+  "recall_pycg_union_of_seeds": 0.6826
+ },
+ "bitmapist": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.59,
+    "edges": 84
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.31,
+    "edges": 84
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.7,
+    "edges": 84
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.82,
+    "edges": 84
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.76,
+    "edges": 84
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.78,
+    "edges": 84
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.54,
+    "edges": 84
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.7,
+    "edges": 84
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.7,
+    "edges": 84
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.81,
+    "edges": 84
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 84,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "borsa-mcp": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 34.94,
+    "edges": 521
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 36.39,
+    "edges": 521
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 34.94,
+    "edges": 521
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 33.73,
+    "edges": 521
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 37.47,
+    "edges": 521
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 33.35,
+    "edges": 521
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 35.83,
+    "edges": 521
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 28.42,
+    "edges": 521
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 29.24,
+    "edges": 521
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 34.66,
+    "edges": 521
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 521,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "bt-ccxt-store": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.37,
+    "edges": 28
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.54,
+    "edges": 28
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.48,
+    "edges": 28
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.42,
+    "edges": 28
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.37,
+    "edges": 28
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.57,
+    "edges": 28
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.54,
+    "edges": 28
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.54,
+    "edges": 28
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.42,
+    "edges": 28
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.63,
+    "edges": 28
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 28,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "cloud-intelligence-dashboards-framework": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 11.14,
+    "edges": 541
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 16.07,
+    "edges": 522
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 17.56,
+    "edges": 542
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 17.41,
+    "edges": 539
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 17.18,
+    "edges": 540
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 13.38,
+    "edges": 539
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 16.27,
+    "edges": 541
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 16.29,
+    "edges": 522
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 17.48,
+    "edges": 539
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 10.1,
+    "edges": 521
+   }
+  },
+  "jaccard_min": 0.9613,
+  "jaccard_median": 0.9945,
+  "distinct_graphs": 6,
+  "varying_edges": 21,
+  "varying_observed": null,
+  "always_edges": 521,
+  "vs_seed0": {
+   "3": {
+    "added": 20,
+    "removed": 1
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 20,
+    "removed": 0
+   },
+   "5": {
+    "added": 18,
+    "removed": 1
+   },
+   "1": {
+    "added": 18,
+    "removed": 0
+   },
+   "4": {
+    "added": 18,
+    "removed": 1
+   },
+   "7": {
+    "added": 20,
+    "removed": 1
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 18,
+    "removed": 1
+   },
+   "2": {
+    "added": 0,
+    "removed": 1
+   }
+  },
+  "examples": {
+   "added": [
+    "cid/common.py::Cid.__init__->cid/helpers/quicksight/dashboard_patching.py::remove_fields",
+    "cid/common.py::Cid._confirm_dataset_experience_migration->cid/helpers/quicksight/dashboard_patching.py::remove_fields",
+    "cid/common.py::Cid._deploy->cid/helpers/quicksight/dashboard_patching.py::remove_fields"
+   ],
+   "removed": [
+    "cid/export.py::export_analysis->cid/helpers/glue.py::Glue.get_crawler"
+   ],
+   "varying_observed": []
+  }
+ },
+ "compressed-tensors": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 28.57,
+    "edges": 371,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 24.67,
+    "edges": 369,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 34.63,
+    "edges": 369,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 30.74,
+    "edges": 369,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 31.29,
+    "edges": 369,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 28.8,
+    "edges": 369,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 31.73,
+    "edges": 369,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 30.67,
+    "edges": 371,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 32.16,
+    "edges": 371,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 33.7,
+    "edges": 371,
+    "recall_pycg": 0.5036,
+    "recall_union": 0.6973
+   }
+  },
+  "jaccard_min": 0.9946,
+  "jaccard_median": 0.9946,
+  "distinct_graphs": 2,
+  "varying_edges": 2,
+  "varying_observed": 0,
+  "always_edges": 369,
+  "vs_seed0": {
+   "3": {
+    "added": 2,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 2,
+    "removed": 0
+   },
+   "9": {
+    "added": 2,
+    "removed": 0
+   },
+   "2": {
+    "added": 2,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "src/compressed_tensors/compressors/model_compressors/model_compressor.py::ModelCompressor.compress_model->src/compressed_tensors/offload/dispatch.py::_get_greedy_dispatch",
+    "src/compressed_tensors/offload/dispatch.py::dispatch_model->src/compressed_tensors/offload/dispatch.py::_get_greedy_dispatch"
+   ],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 413,
+  "recall_pycg": [
+   0.5036,
+   0.5036,
+   0.5036
+  ],
+  "recall_union": [
+   0.6973,
+   0.6973,
+   0.6973
+  ],
+  "recall_pycg_union_of_seeds": 0.5036
+ },
+ "confluence-markdown-exporter": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 4.01,
+    "edges": 361,
+    "recall_pycg": 0.5146,
+    "recall_union": 0.5825
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 35.85,
+    "edges": 362,
+    "recall_pycg": 0.5097,
+    "recall_union": 0.5825
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 13.37,
+    "edges": 386,
+    "recall_pycg": 0.5194,
+    "recall_union": 0.5922
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 34.41,
+    "edges": 362,
+    "recall_pycg": 0.5097,
+    "recall_union": 0.5825
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 5.64,
+    "edges": 359,
+    "recall_pycg": 0.5097,
+    "recall_union": 0.5825
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 4.46,
+    "edges": 362,
+    "recall_pycg": 0.5097,
+    "recall_union": 0.5825
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 5.64,
+    "edges": 362,
+    "recall_pycg": 0.5097,
+    "recall_union": 0.5825
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 5.16,
+    "edges": 362,
+    "recall_pycg": 0.5097,
+    "recall_union": 0.5825
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 5.65,
+    "edges": 364,
+    "recall_pycg": 0.5097,
+    "recall_union": 0.5825
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 5.0,
+    "edges": 362,
+    "recall_pycg": 0.5097,
+    "recall_union": 0.5825
+   }
+  },
+  "jaccard_min": 0.9253,
+  "jaccard_median": 0.9917,
+  "distinct_graphs": 5,
+  "varying_edges": 31,
+  "varying_observed": 3,
+  "always_edges": 359,
+  "vs_seed0": {
+   "3": {
+    "added": 2,
+    "removed": 3
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 24,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 3
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 2,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "confluence_markdown_exporter/confluence.py::Attachment._template_vars->confluence_markdown_exporter/confluence.py::Attachment._template_vars",
+    "confluence_markdown_exporter/confluence.py::Attachment._template_vars->confluence_markdown_exporter/confluence.py::Descendant._template_vars",
+    "confluence_markdown_exporter/confluence.py::Attachment._template_vars->confluence_markdown_exporter/confluence.py::Page._template_vars"
+   ],
+   "removed": [
+    "confluence_markdown_exporter/utils/app_data_store.py::get_app_config_path->confluence_markdown_exporter/confluence.py::Attachment._template_vars",
+    "confluence_markdown_exporter/utils/app_data_store.py::get_app_config_path->confluence_markdown_exporter/confluence.py::Descendant._template_vars",
+    "confluence_markdown_exporter/utils/app_data_store.py::get_app_config_path->confluence_markdown_exporter/confluence.py::Page._template_vars"
+   ],
+   "varying_observed": [
+    "confluence_markdown_exporter/confluence.py::Attachment.export_path->confluence_markdown_exporter/confluence.py::Attachment._template_vars",
+    "confluence_markdown_exporter/confluence.py::Page.export_path->confluence_markdown_exporter/confluence.py::Page._template_vars",
+    "confluence_markdown_exporter/utils/app_data_store.py::AuthConfig.get_instance->confluence_markdown_exporter/utils/app_data_store.py::AuthConfig._match_by_host"
+   ]
+  },
+  "observed": 206,
+  "recall_pycg": [
+   0.5097,
+   0.5097,
+   0.5194
+  ],
+  "recall_union": [
+   0.5825,
+   0.5825,
+   0.5922
+  ],
+  "recall_pycg_union_of_seeds": 0.5243
+ },
+ "cornice": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.85,
+    "edges": 51
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.26,
+    "edges": 51
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.62,
+    "edges": 51
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.76,
+    "edges": 51
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.8,
+    "edges": 51
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.72,
+    "edges": 51
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.58,
+    "edges": 51
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.76,
+    "edges": 51
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.71,
+    "edges": 51
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.78,
+    "edges": 51
+   }
+  },
+  "jaccard_min": 0.9615,
+  "jaccard_median": 0.9615,
+  "distinct_graphs": 2,
+  "varying_edges": 2,
+  "varying_observed": null,
+  "always_edges": 50,
+  "vs_seed0": {
+   "3": {
+    "added": 1,
+    "removed": 1
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 1,
+    "removed": 1
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 1,
+    "removed": 1
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 1,
+    "removed": 1
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "src/cornice/cors.py::apply_cors_post_request->src/cornice/cors.py::ensure_origin"
+   ],
+   "removed": [
+    "src/cornice/cors.py::apply_cors_post_request->src/cornice/__init__.py::set_localizer_for_languages"
+   ],
+   "varying_observed": []
+  }
+ },
+ "creosote": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.52,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.77,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.65,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.88,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.7,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.86,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.73,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.57,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.09,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.72,
+    "edges": 62,
+    "recall_pycg": 0.9206,
+    "recall_union": 0.9206
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 62,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 63,
+  "recall_pycg": [
+   0.9206,
+   0.9206,
+   0.9206
+  ],
+  "recall_union": [
+   0.9206,
+   0.9206,
+   0.9206
+  ],
+  "recall_pycg_union_of_seeds": 0.9206
+ },
+ "deepblast": {
+  "seeds": {
+   "3": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 50.81,
+    "edges": 154,
+    "recall_pycg": 0.6897,
+    "recall_union": 0.7586
+   },
+   "6": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "5": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "1": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "4": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "7": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "8": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "9": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "2": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   }
+  },
+  "observed": 29,
+  "recall_pycg": [
+   0.6897,
+   0.6897,
+   0.6897
+  ],
+  "recall_union": [
+   0.7586,
+   0.7586,
+   0.7586
+  ],
+  "recall_pycg_union_of_seeds": 0.6897
+ },
+ "django-ses": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.43,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.09,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.33,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.2,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.34,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 2.15,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.37,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.45,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.19,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 2.01,
+    "edges": 62,
+    "recall_pycg": 0.6667,
+    "recall_union": 0.6667
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 62,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 3,
+  "recall_pycg": [
+   0.6667,
+   0.6667,
+   0.6667
+  ],
+  "recall_union": [
+   0.6667,
+   0.6667,
+   0.6667
+  ],
+  "recall_pycg_union_of_seeds": 0.6667
+ },
+ "dnsrobocert": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.82,
+    "edges": 69
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.51,
+    "edges": 69
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.02,
+    "edges": 69
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.0,
+    "edges": 69
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.79,
+    "edges": 69
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.66,
+    "edges": 69
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.74,
+    "edges": 69
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.8,
+    "edges": 69
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.95,
+    "edges": 69
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.7,
+    "edges": 69
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 69,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "enterprise-deep-research": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 6.28,
+    "edges": 88
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 4.54,
+    "edges": 88
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 4.8,
+    "edges": 88
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 6.12,
+    "edges": 88
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 6.4,
+    "edges": 88
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 6.09,
+    "edges": 88
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 6.41,
+    "edges": 88
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 7.1,
+    "edges": 88
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 6.8,
+    "edges": 88
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 6.25,
+    "edges": 88
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 88,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "fastapi-injectable": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.63,
+    "edges": 64,
+    "recall_pycg": 0.6957,
+    "recall_union": 0.8261
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.71,
+    "edges": 67,
+    "recall_pycg": 0.6957,
+    "recall_union": 0.8261
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.47,
+    "edges": 66,
+    "recall_pycg": 0.7174,
+    "recall_union": 0.8478
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.72,
+    "edges": 74,
+    "recall_pycg": 0.7174,
+    "recall_union": 0.8478
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.46,
+    "edges": 64,
+    "recall_pycg": 0.6957,
+    "recall_union": 0.8261
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.5,
+    "edges": 64,
+    "recall_pycg": 0.6957,
+    "recall_union": 0.8261
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.6,
+    "edges": 64,
+    "recall_pycg": 0.6957,
+    "recall_union": 0.8261
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.57,
+    "edges": 62,
+    "recall_pycg": 0.6957,
+    "recall_union": 0.8261
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.71,
+    "edges": 64,
+    "recall_pycg": 0.6957,
+    "recall_union": 0.8261
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.55,
+    "edges": 67,
+    "recall_pycg": 0.6957,
+    "recall_union": 0.8261
+   }
+  },
+  "jaccard_min": 0.8378,
+  "jaccard_median": 0.9552,
+  "distinct_graphs": 5,
+  "varying_edges": 12,
+  "varying_observed": 1,
+  "always_edges": 62,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 3
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 4,
+    "removed": 5
+   },
+   "5": {
+    "added": 7,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 3
+   },
+   "4": {
+    "added": 0,
+    "removed": 3
+   },
+   "7": {
+    "added": 0,
+    "removed": 3
+   },
+   "8": {
+    "added": 0,
+    "removed": 5
+   },
+   "9": {
+    "added": 0,
+    "removed": 3
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "src/fastapi_injectable/decorator.py::injectable.decorator.async_gen_wrapper->src/fastapi_injectable/util.py::_create_async_depends_function.inner",
+    "src/fastapi_injectable/decorator.py::injectable.decorator.async_gen_wrapper->src/fastapi_injectable/util.py::_create_depends_function.inner",
+    "src/fastapi_injectable/decorator.py::injectable.decorator.async_wrapper->src/fastapi_injectable/util.py::_create_async_depends_function.inner"
+   ],
+   "removed": [
+    "src/fastapi_injectable/decorator.py::injectable.decorator.async_gen_wrapper->src/fastapi_injectable/concurrency.py::run_coroutine_sync",
+    "src/fastapi_injectable/decorator.py::injectable.decorator.async_gen_wrapper->src/fastapi_injectable/decorator.py::injectable",
+    "src/fastapi_injectable/decorator.py::injectable.decorator.async_wrapper->src/fastapi_injectable/concurrency.py::run_coroutine_sync"
+   ],
+   "varying_observed": [
+    "src/fastapi_injectable/decorator.py::injectable.decorator.async_wrapper->src/fastapi_injectable/util.py::_create_async_depends_function.inner"
+   ]
+  },
+  "observed": 46,
+  "recall_pycg": [
+   0.6957,
+   0.6957,
+   0.7174
+  ],
+  "recall_union": [
+   0.8261,
+   0.8261,
+   0.8478
+  ],
+  "recall_pycg_union_of_seeds": 0.7174
+ },
+ "flashattention2-custom-mask": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.54,
+    "edges": 5
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.39,
+    "edges": 5
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.55,
+    "edges": 5
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.5,
+    "edges": 5
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.34,
+    "edges": 5
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.45,
+    "edges": 5
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.49,
+    "edges": 5
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.51,
+    "edges": 5
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.37,
+    "edges": 5
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.53,
+    "edges": 5
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 5,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "free-python-games": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.42,
+    "edges": 130
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.14,
+    "edges": 130
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.88,
+    "edges": 130
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.83,
+    "edges": 130
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.66,
+    "edges": 130
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 2.2,
+    "edges": 130
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.3,
+    "edges": 130
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.43,
+    "edges": 130
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.54,
+    "edges": 130
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 2.61,
+    "edges": 130
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 130,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "geocube": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.64,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.85,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.79,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.7,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.93,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.85,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.61,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.69,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.31,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.65,
+    "edges": 33,
+    "recall_pycg": 0.6444,
+    "recall_union": 0.8667
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 33,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 45,
+  "recall_pycg": [
+   0.6444,
+   0.6444,
+   0.6444
+  ],
+  "recall_union": [
+   0.8667,
+   0.8667,
+   0.8667
+  ],
+  "recall_pycg_union_of_seeds": 0.6444
+ },
+ "iterprobe": {
+  "seeds": {}
+ },
+ "json-logging-python": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.73,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.09,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.76,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.75,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.19,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.71,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.71,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.98,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.3,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.75,
+    "edges": 41,
+    "recall_pycg": 0.2907,
+    "recall_union": 0.407
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 41,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 86,
+  "recall_pycg": [
+   0.2907,
+   0.2907,
+   0.2907
+  ],
+  "recall_union": [
+   0.407,
+   0.407,
+   0.407
+  ],
+  "recall_pycg_union_of_seeds": 0.2907
+ },
+ "jsonapi-requests": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.12,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.29,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.78,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.98,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.53,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.92,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.1,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.64,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.24,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.69,
+    "edges": 119,
+    "recall_pycg": 0.4771,
+    "recall_union": 0.5163
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 119,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 153,
+  "recall_pycg": [
+   0.4771,
+   0.4771,
+   0.4771
+  ],
+  "recall_union": [
+   0.5163,
+   0.5163,
+   0.5163
+  ],
+  "recall_pycg_union_of_seeds": 0.4771
+ },
+ "kolla-ansible": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.88,
+    "edges": 111
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.12,
+    "edges": 111
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.28,
+    "edges": 111
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.38,
+    "edges": 111
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.0,
+    "edges": 111
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 2.2,
+    "edges": 111
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.09,
+    "edges": 111
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.82,
+    "edges": 111
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.86,
+    "edges": 111
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 2.86,
+    "edges": 111
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 111,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "lagent": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 23.25,
+    "edges": 289
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 21.46,
+    "edges": 295
+   },
+   "6": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 19.28,
+    "edges": 298
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 18.74,
+    "edges": 298
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 17.54,
+    "edges": 298
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 22.73,
+    "edges": 298
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 48.55,
+    "edges": 298
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 25.3,
+    "edges": 289
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 21.41,
+    "edges": 295
+   }
+  },
+  "jaccard_min": 0.9663,
+  "jaccard_median": 0.9899,
+  "distinct_graphs": 3,
+  "varying_edges": 11,
+  "varying_observed": null,
+  "always_edges": 287,
+  "vs_seed0": {
+   "3": {
+    "added": 2,
+    "removed": 8
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 3,
+    "removed": 0
+   },
+   "1": {
+    "added": 3,
+    "removed": 0
+   },
+   "4": {
+    "added": 3,
+    "removed": 0
+   },
+   "7": {
+    "added": 3,
+    "removed": 0
+   },
+   "8": {
+    "added": 3,
+    "removed": 0
+   },
+   "9": {
+    "added": 2,
+    "removed": 8
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "lagent/actions/action_executor.py::ActionExecutor.forward->lagent/prompts/parsers/json_parser.py::JSONParser",
+    "lagent/actions/action_executor.py::AsyncActionExecutor.forward->lagent/prompts/parsers/json_parser.py::JSONParser",
+    "lagent/actions/ipython_manager.py::IPythonProcess.run->lagent/actions/ipython_manager.py::IPythonProcess.create_shell"
+   ],
+   "removed": [
+    "lagent/actions/action_executor.py::ActionExecutor.forward->lagent/agents/agent.py::Agent.__init__",
+    "lagent/actions/action_executor.py::ActionExecutor.forward->lagent/agents/agent.py::AgentDict.__init__",
+    "lagent/actions/action_executor.py::ActionExecutor.forward->lagent/agents/agent.py::AgentList.__init__"
+   ],
+   "varying_observed": []
+  }
+ },
+ "marshmallow-sqlalchemy": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.45,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.52,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.21,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.42,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.36,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.33,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.16,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.36,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.19,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.37,
+    "edges": 42,
+    "recall_pycg": 0.6842,
+    "recall_union": 0.7632
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 42,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 38,
+  "recall_pycg": [
+   0.6842,
+   0.6842,
+   0.6842
+  ],
+  "recall_union": [
+   0.7632,
+   0.7632,
+   0.7632
+  ],
+  "recall_pycg_union_of_seeds": 0.6842
+ },
+ "mcp-sequential-thinking": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.45,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.67,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.49,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.7,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.55,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.6,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.59,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.9,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.61,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.44,
+    "edges": 39,
+    "recall_pycg": 0.7222,
+    "recall_union": 0.8889
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 39,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 36,
+  "recall_pycg": [
+   0.7222,
+   0.7222,
+   0.7222
+  ],
+  "recall_union": [
+   0.8889,
+   0.8889,
+   0.8889
+  ],
+  "recall_pycg_union_of_seeds": 0.7222
+ },
+ "mininet": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.9,
+    "edges": 186
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 3.42,
+    "edges": 186
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.48,
+    "edges": 203
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 3.06,
+    "edges": 203
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 3.34,
+    "edges": 186
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 2.48,
+    "edges": 203
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 3.89,
+    "edges": 203
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.89,
+    "edges": 186
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.36,
+    "edges": 203
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 3.16,
+    "edges": 203
+   }
+  },
+  "jaccard_min": 0.9163,
+  "jaccard_median": 0.9163,
+  "distinct_graphs": 2,
+  "varying_edges": 17,
+  "varying_observed": null,
+  "always_edges": 186,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 17,
+    "removed": 0
+   },
+   "5": {
+    "added": 17,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 17,
+    "removed": 0
+   },
+   "7": {
+    "added": 17,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 17,
+    "removed": 0
+   },
+   "2": {
+    "added": 17,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "mininet/cli.py::CLI.do_noecho->mininet/util.py::quietRun",
+    "mininet/cli.py::CLI.run->mininet/util.py::quietRun",
+    "mininet/cli.py::CLI.waitForNode->mininet/util.py::quietRun"
+   ],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "movingpandas": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 6.56,
+    "edges": 346,
+    "recall_pycg": 0.4764,
+    "recall_union": 0.5681
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 5.02,
+    "edges": 340,
+    "recall_pycg": 0.4764,
+    "recall_union": 0.5681
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 10.06,
+    "edges": 341,
+    "recall_pycg": 0.4791,
+    "recall_union": 0.5681
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 11.63,
+    "edges": 347,
+    "recall_pycg": 0.4791,
+    "recall_union": 0.5681
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 10.08,
+    "edges": 341,
+    "recall_pycg": 0.4791,
+    "recall_union": 0.5681
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 10.22,
+    "edges": 341,
+    "recall_pycg": 0.4791,
+    "recall_union": 0.5681
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 5.44,
+    "edges": 340,
+    "recall_pycg": 0.4764,
+    "recall_union": 0.5681
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 4.78,
+    "edges": 340,
+    "recall_pycg": 0.4764,
+    "recall_union": 0.5681
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 4.67,
+    "edges": 340,
+    "recall_pycg": 0.4764,
+    "recall_union": 0.5681
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 4.84,
+    "edges": 340,
+    "recall_pycg": 0.4764,
+    "recall_union": 0.5681
+   }
+  },
+  "jaccard_min": 0.9798,
+  "jaccard_median": 0.9971,
+  "distinct_graphs": 4,
+  "varying_edges": 7,
+  "varying_observed": 1,
+  "always_edges": 340,
+  "vs_seed0": {
+   "3": {
+    "added": 6,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 1,
+    "removed": 0
+   },
+   "5": {
+    "added": 7,
+    "removed": 0
+   },
+   "1": {
+    "added": 1,
+    "removed": 0
+   },
+   "4": {
+    "added": 1,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "movingpandas/io.py::_create_tc_from_mfcollection_json->movingpandas/trajectory_utils.py::convert_time_ranges_to_segments",
+    "movingpandas/trajectory.py::Trajectory.to_line_gdf->movingpandas/trajectory.py::Trajectory.get_geom_col",
+    "movingpandas/trajectory_splitter.py::AngleChangeSplitter._split_traj->movingpandas/trajectory_utils.py::convert_time_ranges_to_segments"
+   ],
+   "removed": [],
+   "varying_observed": [
+    "movingpandas/trajectory.py::Trajectory.to_line_gdf->movingpandas/trajectory.py::Trajectory.get_geom_col"
+   ]
+  },
+  "observed": 382,
+  "recall_pycg": [
+   0.4764,
+   0.4764,
+   0.4791
+  ],
+  "recall_union": [
+   0.5681,
+   0.5681,
+   0.5681
+  ],
+  "recall_pycg_union_of_seeds": 0.4791
+ },
+ "paperseek": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 10.28,
+    "edges": 524
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 10.35,
+    "edges": 524
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 12.55,
+    "edges": 524
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 7.63,
+    "edges": 524
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 9.17,
+    "edges": 524
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 10.74,
+    "edges": 524
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 9.3,
+    "edges": 524
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 11.67,
+    "edges": 524
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 11.33,
+    "edges": 524
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 8.36,
+    "edges": 524
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 524,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "pexpect": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.42,
+    "edges": 197
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.37,
+    "edges": 197
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.08,
+    "edges": 197
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.61,
+    "edges": 197
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.19,
+    "edges": 197
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 3.09,
+    "edges": 197
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.84,
+    "edges": 197
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.49,
+    "edges": 197
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.82,
+    "edges": 197
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 3.23,
+    "edges": 197
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 197,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "pixivpy": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.57,
+    "edges": 101
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.92,
+    "edges": 101
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.78,
+    "edges": 101
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.89,
+    "edges": 101
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.6,
+    "edges": 101
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.54,
+    "edges": 101
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.86,
+    "edges": 101
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.57,
+    "edges": 101
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.34,
+    "edges": 101
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.78,
+    "edges": 101
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 101,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "pr-agent": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 47.6,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 63.01,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 43.17,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 38.69,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 50.53,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 48.38,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 38.23,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 33.04,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 45.05,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 41.5,
+    "edges": 978,
+    "recall_pycg": 0.6607,
+    "recall_union": 0.7916
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 978,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 619,
+  "recall_pycg": [
+   0.6607,
+   0.6607,
+   0.6607
+  ],
+  "recall_union": [
+   0.7916,
+   0.7916,
+   0.7916
+  ],
+  "recall_pycg_union_of_seeds": 0.6607
+ },
+ "prompt2model": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 5.72,
+    "edges": 106
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 9.49,
+    "edges": 106
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 10.0,
+    "edges": 106
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 6.49,
+    "edges": 106
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 8.98,
+    "edges": 106
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 5.93,
+    "edges": 106
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 9.64,
+    "edges": 106
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 9.67,
+    "edges": 106
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 8.88,
+    "edges": 106
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 7.62,
+    "edges": 106
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 106,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "puncover": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.95,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.89,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.79,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.9,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.5,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.87,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.86,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.67,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.79,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 2.22,
+    "edges": 130,
+    "recall_pycg": 0.6818,
+    "recall_union": 0.9545
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 130,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 22,
+  "recall_pycg": [
+   0.6818,
+   0.6818,
+   0.6818
+  ],
+  "recall_union": [
+   0.9545,
+   0.9545,
+   0.9545
+  ],
+  "recall_pycg_union_of_seeds": 0.6818
+ },
+ "py2app": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 394.96,
+    "edges": 318
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 260.28,
+    "edges": 318
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 266.63,
+    "edges": 318
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 203.95,
+    "edges": 318
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 517.81,
+    "edges": 318
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 301.95,
+    "edges": 318
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 277.13,
+    "edges": 319
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 234.24,
+    "edges": 318
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 354.71,
+    "edges": 318
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 190.84,
+    "edges": 318
+   }
+  },
+  "jaccard_min": 0.9969,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 2,
+  "varying_edges": 1,
+  "varying_observed": null,
+  "always_edges": 318,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 1,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "src/py2app/build_app.py::py2app.finalize_options->src/py2app/util.py::fancy_split"
+   ],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "pykwalify": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.08,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.49,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.33,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.84,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.1,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.81,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.13,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.84,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.89,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.87,
+    "edges": 132,
+    "recall_pycg": 0.4271,
+    "recall_union": 0.526
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 132,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 192,
+  "recall_pycg": [
+   0.4271,
+   0.4271,
+   0.4271
+  ],
+  "recall_union": [
+   0.526,
+   0.526,
+   0.526
+  ],
+  "recall_pycg_union_of_seeds": 0.4271
+ },
+ "pyrlp": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.63,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.34,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.36,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.9,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.57,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.79,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.92,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.42,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.37,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 2.27,
+    "edges": 87,
+    "recall_pycg": 0.5333,
+    "recall_union": 0.65
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 87,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 120,
+  "recall_pycg": [
+   0.5333,
+   0.5333,
+   0.5333
+  ],
+  "recall_union": [
+   0.65,
+   0.65,
+   0.65
+  ],
+  "recall_pycg_union_of_seeds": 0.5333
+ },
+ "pysui": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 55.36,
+    "edges": 1255,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 63.52,
+    "edges": 1255,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 54.98,
+    "edges": 1255,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 59.29,
+    "edges": 1257,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 51.94,
+    "edges": 1255,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 51.4,
+    "edges": 1255,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 63.02,
+    "edges": 1255,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 60.83,
+    "edges": 1257,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 60.92,
+    "edges": 1257,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 52.01,
+    "edges": 1257,
+    "recall_pycg": 0.2434,
+    "recall_union": 0.2685
+   }
+  },
+  "jaccard_min": 0.9984,
+  "jaccard_median": 0.9984,
+  "distinct_graphs": 2,
+  "varying_edges": 2,
+  "varying_observed": 0,
+  "always_edges": 1255,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 2,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 2,
+    "removed": 0
+   },
+   "9": {
+    "added": 2,
+    "removed": 0
+   },
+   "2": {
+    "added": 2,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "pysui/sui/sui_common/txn_arg_encoder.py::_grpc_body_to_variant->pysui/sui/sui_pgql/pgql_types.py::OpenMoveDatatypeBodyGQL",
+    "pysui/sui/sui_pgql/pgql_types.py::_body_from_dict->pysui/sui/sui_pgql/pgql_types.py::OpenMoveDatatypeBodyGQL"
+   ],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 1393,
+  "recall_pycg": [
+   0.2434,
+   0.2434,
+   0.2434
+  ],
+  "recall_union": [
+   0.2685,
+   0.2685,
+   0.2685
+  ],
+  "recall_pycg_union_of_seeds": 0.2434
+ },
+ "python-lazy-object-proxy": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.48,
+    "edges": 15,
+    "recall_pycg": 0.016,
+    "recall_union": 0.0321
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.26,
+    "edges": 6,
+    "recall_pycg": 0.0107,
+    "recall_union": 0.0321
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.48,
+    "edges": 15,
+    "recall_pycg": 0.016,
+    "recall_union": 0.0321
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.4,
+    "edges": 13,
+    "recall_pycg": 0.016,
+    "recall_union": 0.0321
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.47,
+    "edges": 15,
+    "recall_pycg": 0.016,
+    "recall_union": 0.0321
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.42,
+    "edges": 13,
+    "recall_pycg": 0.016,
+    "recall_union": 0.0321
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.27,
+    "edges": 6,
+    "recall_pycg": 0.0107,
+    "recall_union": 0.0321
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.43,
+    "edges": 13,
+    "recall_pycg": 0.016,
+    "recall_union": 0.0321
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.41,
+    "edges": 14,
+    "recall_pycg": 0.016,
+    "recall_union": 0.0321
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.32,
+    "edges": 13,
+    "recall_pycg": 0.016,
+    "recall_union": 0.0321
+   }
+  },
+  "jaccard_min": 0.4,
+  "jaccard_median": 0.8667,
+  "distinct_graphs": 4,
+  "varying_edges": 9,
+  "varying_observed": 1,
+  "always_edges": 6,
+  "vs_seed0": {
+   "3": {
+    "added": 9,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 9,
+    "removed": 0
+   },
+   "5": {
+    "added": 7,
+    "removed": 0
+   },
+   "1": {
+    "added": 9,
+    "removed": 0
+   },
+   "4": {
+    "added": 7,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 7,
+    "removed": 0
+   },
+   "9": {
+    "added": 8,
+    "removed": 0
+   },
+   "2": {
+    "added": 7,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "src/lazy_object_proxy/simple.py::make_proxy_method.proxy_wrapper->src/lazy_object_proxy/slots.py::Proxy.__init__",
+    "src/lazy_object_proxy/simple.py::make_proxy_method.proxy_wrapper->src/lazy_object_proxy/slots.py::Proxy.__wrapped__",
+    "src/lazy_object_proxy/slots.py::Proxy.__call__->src/lazy_object_proxy/slots.py::Proxy.__init__"
+   ],
+   "removed": [],
+   "varying_observed": [
+    "src/lazy_object_proxy/slots.py::Proxy.__call__->src/lazy_object_proxy/slots.py::Proxy.__wrapped__"
+   ]
+  },
+  "observed": 187,
+  "recall_pycg": [
+   0.0107,
+   0.016,
+   0.016
+  ],
+  "recall_union": [
+   0.0321,
+   0.0321,
+   0.0321
+  ],
+  "recall_pycg_union_of_seeds": 0.016
+ },
+ "python-memcached": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.47,
+    "edges": 95
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.72,
+    "edges": 95
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.43,
+    "edges": 95
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.55,
+    "edges": 95
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.68,
+    "edges": 95
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.59,
+    "edges": 95
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.48,
+    "edges": 95
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.65,
+    "edges": 95
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.54,
+    "edges": 95
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.83,
+    "edges": 95
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 95,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "python-mysql-replication": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 4.69,
+    "edges": 174
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 3.85,
+    "edges": 174
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 5.12,
+    "edges": 174
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 5.53,
+    "edges": 174
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 4.76,
+    "edges": 174
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 5.22,
+    "edges": 174
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 3.8,
+    "edges": 174
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 4.81,
+    "edges": 174
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 5.63,
+    "edges": 174
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 3.87,
+    "edges": 174
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 174,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "python-neutronclient": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 44.56,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 43.71,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 39.23,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 36.04,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 36.06,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 31.33,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 42.72,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 42.43,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 30.33,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 43.72,
+    "edges": 1055,
+    "recall_pycg": 0.9149,
+    "recall_union": 0.9362
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 1055,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 47,
+  "recall_pycg": [
+   0.9149,
+   0.9149,
+   0.9149
+  ],
+  "recall_union": [
+   0.9362,
+   0.9362,
+   0.9362
+  ],
+  "recall_pycg_union_of_seeds": 0.9149
+ },
+ "rdflib-sqlalchemy": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.81,
+    "edges": 61
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.61,
+    "edges": 61
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.8,
+    "edges": 61
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.93,
+    "edges": 61
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.89,
+    "edges": 61
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.82,
+    "edges": 61
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.75,
+    "edges": 61
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.69,
+    "edges": 61
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.94,
+    "edges": 61
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.73,
+    "edges": 61
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 61,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "recurrentgemma": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 7.77,
+    "edges": 277
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 7.21,
+    "edges": 277
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 5.55,
+    "edges": 277
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 5.82,
+    "edges": 277
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 5.46,
+    "edges": 277
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 5.02,
+    "edges": 277
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 7.18,
+    "edges": 277
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 6.11,
+    "edges": 277
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 7.42,
+    "edges": 277
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 5.0,
+    "edges": 277
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 277,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "redbeat": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.56,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.78,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.62,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.65,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.46,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.5,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.63,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.5,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.6,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.85,
+    "edges": 43,
+    "recall_pycg": 0.5873,
+    "recall_union": 0.6032
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 43,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 63,
+  "recall_pycg": [
+   0.5873,
+   0.5873,
+   0.5873
+  ],
+  "recall_union": [
+   0.6032,
+   0.6032,
+   0.6032
+  ],
+  "recall_pycg_union_of_seeds": 0.5873
+ },
+ "rejax": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 5.33,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 5.92,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 5.37,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 5.31,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 4.97,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 5.34,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 5.42,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 5.38,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 5.6,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 5.38,
+    "edges": 165,
+    "recall_pycg": 0.2759,
+    "recall_union": 0.3621
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 165,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 174,
+  "recall_pycg": [
+   0.2759,
+   0.2759,
+   0.2759
+  ],
+  "recall_union": [
+   0.3621,
+   0.3621,
+   0.3621
+  ],
+  "recall_pycg_union_of_seeds": 0.2759
+ },
+ "rlm": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 5.55,
+    "edges": 174,
+    "recall_pycg": 0.3451,
+    "recall_union": 0.7887
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 5.08,
+    "edges": 174,
+    "recall_pycg": 0.3451,
+    "recall_union": 0.7887
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 13.61,
+    "edges": 174,
+    "recall_pycg": 0.3451,
+    "recall_union": 0.7887
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 6.59,
+    "edges": 173,
+    "recall_pycg": 0.338,
+    "recall_union": 0.7887
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 5.27,
+    "edges": 173,
+    "recall_pycg": 0.338,
+    "recall_union": 0.7887
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 5.01,
+    "edges": 173,
+    "recall_pycg": 0.338,
+    "recall_union": 0.7887
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 24.74,
+    "edges": 173,
+    "recall_pycg": 0.338,
+    "recall_union": 0.7887
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 6.95,
+    "edges": 173,
+    "recall_pycg": 0.338,
+    "recall_union": 0.7887
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 5.47,
+    "edges": 173,
+    "recall_pycg": 0.338,
+    "recall_union": 0.7887
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 6.69,
+    "edges": 174,
+    "recall_pycg": 0.3451,
+    "recall_union": 0.7887
+   }
+  },
+  "jaccard_min": 0.9943,
+  "jaccard_median": 0.9943,
+  "distinct_graphs": 2,
+  "varying_edges": 1,
+  "varying_observed": 1,
+  "always_edges": 173,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 1
+   },
+   "1": {
+    "added": 0,
+    "removed": 1
+   },
+   "4": {
+    "added": 0,
+    "removed": 1
+   },
+   "7": {
+    "added": 0,
+    "removed": 1
+   },
+   "8": {
+    "added": 0,
+    "removed": 1
+   },
+   "9": {
+    "added": 0,
+    "removed": 1
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [
+    "rlm/core/rlm.py::RLM.completion->rlm/core/types.py::UsageSummary.to_dict"
+   ],
+   "varying_observed": [
+    "rlm/core/rlm.py::RLM.completion->rlm/core/types.py::UsageSummary.to_dict"
+   ]
+  },
+  "observed": 142,
+  "recall_pycg": [
+   0.338,
+   0.338,
+   0.3451
+  ],
+  "recall_union": [
+   0.7887,
+   0.7887,
+   0.7887
+  ],
+  "recall_pycg_union_of_seeds": 0.3451
+ },
+ "scrapyrt": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.59,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.57,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.5,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.65,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.5,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.51,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.8,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.75,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.52,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.44,
+    "edges": 44,
+    "recall_pycg": 0.72,
+    "recall_union": 0.8
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 44,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 25,
+  "recall_pycg": [
+   0.72,
+   0.72,
+   0.72
+  ],
+  "recall_union": [
+   0.8,
+   0.8,
+   0.8
+  ],
+  "recall_pycg_union_of_seeds": 0.72
+ },
+ "sec-edgar": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.45,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.94,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.9,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.09,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.67,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.81,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.58,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.5,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.88,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.99,
+    "edges": 67,
+    "recall_pycg": 0.2683,
+    "recall_union": 0.4878
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 67,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 123,
+  "recall_pycg": [
+   0.2683,
+   0.2683,
+   0.2683
+  ],
+  "recall_union": [
+   0.4878,
+   0.4878,
+   0.4878
+  ],
+  "recall_pycg_union_of_seeds": 0.2683
+ },
+ "slippers": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.59,
+    "edges": 21
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.61,
+    "edges": 21
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.54,
+    "edges": 21
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.7,
+    "edges": 21
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.6,
+    "edges": 21
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.55,
+    "edges": 21
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.51,
+    "edges": 21
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.5,
+    "edges": 21
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.46,
+    "edges": 21
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.36,
+    "edges": 21
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 21,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "sqllineage": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 8.06,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 6.94,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 35.79,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 8.9,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 9.93,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 7.55,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 6.76,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 34.43,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 10.44,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 7.83,
+    "edges": 321,
+    "recall_pycg": 0.2891,
+    "recall_union": 0.452
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 321,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 761,
+  "recall_pycg": [
+   0.2891,
+   0.2891,
+   0.2891
+  ],
+  "recall_union": [
+   0.452,
+   0.452,
+   0.452
+  ],
+  "recall_pycg_union_of_seeds": 0.2891
+ },
+ "sqlmodel": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 14.08,
+    "edges": 673
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 19.19,
+    "edges": 673
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 19.63,
+    "edges": 673
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 20.32,
+    "edges": 673
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 13.99,
+    "edges": 673
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 19.3,
+    "edges": 673
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 12.73,
+    "edges": 673
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 19.31,
+    "edges": 673
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 15.24,
+    "edges": 673
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 12.91,
+    "edges": 673
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 673,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "tensortrade-ng": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 16.22,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 21.32,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 19.35,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 20.14,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 20.93,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 19.76,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 19.5,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 17.1,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 22.44,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 19.86,
+    "edges": 199,
+    "recall_pycg": 0.1499,
+    "recall_union": 0.4388
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 199,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 834,
+  "recall_pycg": [
+   0.1499,
+   0.1499,
+   0.1499
+  ],
+  "recall_union": [
+   0.4388,
+   0.4388,
+   0.4388
+  ],
+  "recall_pycg_union_of_seeds": 0.1499
+ },
+ "term-image": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 135.02,
+    "edges": 257,
+    "recall_pycg": 0.4315,
+    "recall_union": 0.6518
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 5.72,
+    "edges": 257,
+    "recall_pycg": 0.4286,
+    "recall_union": 0.6518
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 8.6,
+    "edges": 210,
+    "recall_pycg": 0.3363,
+    "recall_union": 0.6458
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 6.26,
+    "edges": 258,
+    "recall_pycg": 0.4315,
+    "recall_union": 0.6518
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 7.11,
+    "edges": 252,
+    "recall_pycg": 0.4137,
+    "recall_union": 0.6518
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 9.6,
+    "edges": 258,
+    "recall_pycg": 0.4315,
+    "recall_union": 0.6518
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 7.04,
+    "edges": 256,
+    "recall_pycg": 0.4315,
+    "recall_union": 0.6518
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 7.22,
+    "edges": 252,
+    "recall_pycg": 0.4137,
+    "recall_union": 0.6518
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 6.61,
+    "edges": 249,
+    "recall_pycg": 0.4137,
+    "recall_union": 0.6518
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 10.39,
+    "edges": 258,
+    "recall_pycg": 0.4315,
+    "recall_union": 0.6518
+   }
+  },
+  "jaccard_min": 0.814,
+  "jaccard_median": 0.9767,
+  "distinct_graphs": 7,
+  "varying_edges": 48,
+  "varying_observed": 32,
+  "always_edges": 210,
+  "vs_seed0": {
+   "3": {
+    "added": 1,
+    "removed": 1
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 47
+   },
+   "5": {
+    "added": 1,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 5
+   },
+   "4": {
+    "added": 1,
+    "removed": 0
+   },
+   "7": {
+    "added": 1,
+    "removed": 2
+   },
+   "8": {
+    "added": 0,
+    "removed": 5
+   },
+   "9": {
+    "added": 0,
+    "removed": 8
+   },
+   "2": {
+    "added": 1,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [
+    "src/term_image/widget/_urwid.py::UrwidImage.__init__->src/term_image/image/common.py::BaseImage._check_format_spec"
+   ],
+   "removed": [
+    "src/term_image/image/common.py::BaseImage.__del__->src/term_image/image/common.py::BaseImage.close",
+    "src/term_image/image/common.py::BaseImage.__exit__->src/term_image/image/common.py::BaseImage.close",
+    "src/term_image/image/common.py::BaseImage.__format__->src/term_image/image/common.py::BaseImage._check_format_spec"
+   ],
+   "varying_observed": [
+    "src/term_image/image/common.py::BaseImage.__del__->src/term_image/image/common.py::BaseImage.close",
+    "src/term_image/image/common.py::BaseImage.__exit__->src/term_image/image/common.py::BaseImage.close",
+    "src/term_image/image/common.py::BaseImage.__format__->src/term_image/image/common.py::BaseImage._check_format_spec"
+   ]
+  },
+  "observed": 336,
+  "recall_pycg": [
+   0.3363,
+   0.43005,
+   0.4315
+  ],
+  "recall_union": [
+   0.6458,
+   0.6518,
+   0.6518
+  ],
+  "recall_pycg_union_of_seeds": 0.4315
+ },
+ "thrift-tools": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 2.3,
+    "edges": 115
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 2.23,
+    "edges": 115
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.33,
+    "edges": 115
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.18,
+    "edges": 115
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.99,
+    "edges": 115
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 2.5,
+    "edges": 115
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 2.44,
+    "edges": 115
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 2.24,
+    "edges": 115
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 2.04,
+    "edges": 115
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 2.54,
+    "edges": 115
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 115,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "throttled": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.63,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.69,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 1.8,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 1.79,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 1.63,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 1.66,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.74,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.61,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.7,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.61,
+    "edges": 144,
+    "recall_pycg": 1.0,
+    "recall_union": 1.0
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 144,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 13,
+  "recall_pycg": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "recall_union": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "recall_pycg_union_of_seeds": 1.0
+ },
+ "trigger": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 125.65,
+    "edges": 1628
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 128.56,
+    "edges": 1628
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 122.45,
+    "edges": 1628
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 121.05,
+    "edges": 1628
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 144.79,
+    "edges": 1628
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 123.29,
+    "edges": 1628
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 102.17,
+    "edges": 1628
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 104.36,
+    "edges": 1628
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 95.57,
+    "edges": 1628
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 126.72,
+    "edges": 1628
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": null,
+  "always_edges": 1628,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  }
+ },
+ "voidaccess": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 355.88,
+    "edges": 2309
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 323.85,
+    "edges": 2313
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 374.3,
+    "edges": 2308
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 385.58,
+    "edges": 2310
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 359.28,
+    "edges": 2309
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 359.02,
+    "edges": 2307
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 359.5,
+    "edges": 2311
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 361.72,
+    "edges": 2309
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 374.42,
+    "edges": 2308
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 353.92,
+    "edges": 2310
+   }
+  },
+  "jaccard_min": 0.997,
+  "jaccard_median": 0.9987,
+  "distinct_graphs": 9,
+  "varying_edges": 7,
+  "varying_observed": null,
+  "always_edges": 2306,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 4
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 5
+   },
+   "5": {
+    "added": 0,
+    "removed": 3
+   },
+   "1": {
+    "added": 0,
+    "removed": 4
+   },
+   "4": {
+    "added": 0,
+    "removed": 6
+   },
+   "7": {
+    "added": 0,
+    "removed": 2
+   },
+   "8": {
+    "added": 0,
+    "removed": 4
+   },
+   "9": {
+    "added": 0,
+    "removed": 5
+   },
+   "2": {
+    "added": 0,
+    "removed": 3
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [
+    "api/routes/entities.py::_resolve_graph_node_id->export/stix.py::_load_entities_for_investigation",
+    "api/routes/investigations.py::_run_investigation_task.run_search_and_filter.search_single_language->search/search.py::_search_async",
+    "export/ioc_package.py::_entity_value->export/stix.py::_load_entities_for_investigation"
+   ],
+   "varying_observed": []
+  }
+ },
+ "wsgidav": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 8.14,
+    "edges": 595
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 8.58,
+    "edges": 596
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 6.86,
+    "edges": 595
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 6.5,
+    "edges": 595
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 9.72,
+    "edges": 596
+   },
+   "4": {
+    "status": "timeout",
+    "seconds": 1800,
+    "edges": 0
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 7.38,
+    "edges": 595
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 8.27,
+    "edges": 596
+   }
+  },
+  "jaccard_min": 0.9983,
+  "jaccard_median": 0.9983,
+  "distinct_graphs": 2,
+  "varying_edges": 1,
+  "varying_observed": null,
+  "always_edges": 595,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 1
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 1
+   },
+   "5": {
+    "added": 0,
+    "removed": 1
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 1
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [
+    "wsgidav/wsgidav_app.py::WsgiDAVApp.__init__->wsgidav/dc/simple_dc.py::SimpleDomainController.__init__"
+   ],
+   "varying_observed": []
+  }
+ },
+ "xacro": {
+  "seeds": {
+   "3": {
+    "status": "ok",
+    "seconds": 1.99,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   },
+   "0": {
+    "status": "ok",
+    "seconds": 1.77,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   },
+   "6": {
+    "status": "ok",
+    "seconds": 2.01,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   },
+   "5": {
+    "status": "ok",
+    "seconds": 2.04,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   },
+   "1": {
+    "status": "ok",
+    "seconds": 2.02,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   },
+   "4": {
+    "status": "ok",
+    "seconds": 2.04,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   },
+   "7": {
+    "status": "ok",
+    "seconds": 1.89,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   },
+   "8": {
+    "status": "ok",
+    "seconds": 1.99,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   },
+   "9": {
+    "status": "ok",
+    "seconds": 1.69,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   },
+   "2": {
+    "status": "ok",
+    "seconds": 1.6,
+    "edges": 157,
+    "recall_pycg": 0.8357,
+    "recall_union": 0.85
+   }
+  },
+  "jaccard_min": 1.0,
+  "jaccard_median": 1.0,
+  "distinct_graphs": 1,
+  "varying_edges": 0,
+  "varying_observed": 0,
+  "always_edges": 157,
+  "vs_seed0": {
+   "3": {
+    "added": 0,
+    "removed": 0
+   },
+   "0": {
+    "added": 0,
+    "removed": 0
+   },
+   "6": {
+    "added": 0,
+    "removed": 0
+   },
+   "5": {
+    "added": 0,
+    "removed": 0
+   },
+   "1": {
+    "added": 0,
+    "removed": 0
+   },
+   "4": {
+    "added": 0,
+    "removed": 0
+   },
+   "7": {
+    "added": 0,
+    "removed": 0
+   },
+   "8": {
+    "added": 0,
+    "removed": 0
+   },
+   "9": {
+    "added": 0,
+    "removed": 0
+   },
+   "2": {
+    "added": 0,
+    "removed": 0
+   }
+  },
+  "examples": {
+   "added": [],
+   "removed": [],
+   "varying_observed": []
+  },
+  "observed": 140,
+  "recall_pycg": [
+   0.8357,
+   0.8357,
+   0.8357
+  ],
+  "recall_union": [
+   0.85,
+   0.85,
+   0.85
+  ],
+  "recall_pycg_union_of_seeds": 0.8357
+ }
+}

@@ -260,3 +260,5 @@ pyrlp: 246 items, 105 real calls; 23 real calls whose target is never named
   Pyright                        sample   0.89   0.52   0.65   0.26
   PyCG ∪ Pyright                 sample   0.89   0.52   0.65   0.26
 ===== bench rc=0 in 1 s
+
+===== 2026-10-19T08:18:50Z pyrlp clone

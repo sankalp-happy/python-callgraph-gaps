@@ -286,3 +286,5 @@ rlm: 606 items, 125 real calls; 18 real calls whose target is never named
   Pyright                        sample   0.75   0.88   0.81   0.90
   PyCG ∪ Pyright                 sample   0.75   0.88   0.81   0.90
 ===== bench rc=0 in 2 s
+
+===== 2026-10-19T08:18:50Z rlm clone

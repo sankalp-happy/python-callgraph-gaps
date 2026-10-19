@@ -575,3 +575,5 @@ sqllineage: 1199 items, 512 real calls; 257 real calls whose target is never nam
   Pyright                        sample   0.85   0.66   0.74   0.41
   PyCG ∪ Pyright                 sample   0.85   0.66   0.74   0.41
 ===== bench rc=0 in 2 s
+
+===== 2026-10-19T08:18:50Z sqllineage clone

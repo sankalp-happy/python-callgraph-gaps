@@ -566,3 +566,5 @@ apiflask: 316 items, 108 real calls; 34 real calls whose target is never named
 ===== bench rc=0 in 2 s
 
 ===== 2026-10-19T06:53:37Z apiflask clone
+
+===== 2026-10-19T08:18:50Z apiflask clone

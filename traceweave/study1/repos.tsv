@@ -30,3 +30,27 @@ ShivyC	LOW	https://github.com/ShivamSarodia/ShivyC	93aee27c83fd2d01335f9ebe35f5f
 wsgidav	LOW	https://github.com/mar10/wsgidav	82e984dc09be4cc31f12deb214fd323ee12b8c65	.	wsgidav	98	0	false	3.2	PERMISSIVE	5d5bf810d21a49a98e43b56b898dc6e6310bf252876873674982d3da4388dfd9
 rlm	LOW	https://github.com/alexzhang13/rlm	72d6940142ddfb84ee6be573dc999a37e633e671	.	rlm	333	0	false	0.3	PERMISSIVE	e4f889d7955445b6c2d4000eb86c2bdb9a65afb5b1f33ed73f76e8bcf4448d76
 pr-agent	LOW	https://github.com/The-PR-Agent/pr-agent	8242ce581dc237774409212c84ee87d081cdac7e	.	pr_agent	1718	3	false	0.6	PERMISSIVE	0ece2712ebd9722b97fa092fd082b88fd71ddcb7641ce035cc3c69d6d27c9a8f
+# --- Extension, added 2026-10-19 BEFORE tracing any of these rows: every remaining static-ok repo
+# admitted on 3.12 with >=20 tests collected (relaxed from 50), one package, redistribution pass.
+# Heavy native stacks are no longer excluded (the amd64 VM installs torch/jax wheels). Left out:
+#   bitmapist (tests need a live redis); mininet (needs root and kernel network namespaces). pycg_seed_spread_pct here = (max-min raw seed edges)/union raw edges.
+aws-dynamodb-encryption-python	HIGH	https://github.com/aws/aws-dynamodb-encryption-python	fbdf52978e99f06b1b513b4be33d826c5ac5ada1	src	src/dynamodb_encryption_sdk	78	28	false	20.0	PERMISSIVE	4c6b87c19d125fb9466226f9881bbdedfbcebb490d431fc5b6ce69845e87a0e8
+compressed-tensors	HIGH	https://github.com/vllm-project/compressed-tensors	ac8e2ba82f4e0d5eaa40069f8fc642738f124cd4	src	src/compressed_tensors	1145	97	false	7.9	PERMISSIVE	77b3fba4aafde198fda4f9e337054ecffe54c0f28aa17e5379bca0dab9f7f2c9
+deepblast	HIGH	https://github.com/flatironinstitute/deepblast	ec661fa4c63d6acdef0f2854c7284814a26111a4	.	deepblast	62	9	false	7.5	PERMISSIVE	724725afcb97078fbb786efcab4b267ca124f60d22f3f105fd2e440515f8f25c
+django-ses	HIGH	https://github.com/django-ses/django-ses	f49e8978ea8b19a8d70117ecf5db6c24f7670038	.	django_ses	38	2	true	0.0	PERMISSIVE	6c2d98fac1097e0ef46d34cb1d34eeeb0cb48458e24c4e1d4630a8933ec50145
+geocube	HIGH	https://github.com/corteva/geocube	48fce2ec25aee8d02af4dde8185c2524e1b5110f	.	geocube	89	58	true	0.0	PERMISSIVE	0085e9069470d4597f26a37714a8101115b40b200af38ea8c50b0c0f21e971f0
+json-logging-python	HIGH	https://github.com/bobbui/json-logging-python	ac68fce623b7cd1c2c2c0177d55ab7e7055a268d	.	json_logging	27	1	true	0.0	PERMISSIVE	b8a271d86bf2fc8fa970f67d06e1d56d81bf8062731846eff3f3ae7cb59b14fd
+jsonapi-requests	HIGH	https://github.com/socialwifi/jsonapi-requests	796f59bde721baa5c57f2c3ab92c33b287dc6b41	.	jsonapi_requests	34	1	true	0.0	PERMISSIVE	7551dddcee6fb551d6d4de09408af807f82c77f5883e089f5e9c0b632fd90219
+puncover	HIGH	https://github.com/HBehrens/puncover	971cbfd89d1d430d3bd23c023cbbbf121490899a	.	puncover	49	3	false	0.3	PERMISSIVE	9313c1ea7652b765193dc8f3a6045d8a4690345523ad8a6a82ef4823aed72769
+python-lazy-object-proxy	HIGH	https://github.com/ionelmc/python-lazy-object-proxy	f970e323d03bfd974bf11f342236b06163ac398f	src	src/lazy_object_proxy	1686	2	false	19.3	PERMISSIVE	eb984e9c1fb9eabb2fbc5b746e92da12389f687c95dac951f4ce11f82810e89e
+recurrentgemma	HIGH	https://github.com/google-deepmind/recurrentgemma	2efa84dac0e68e63547a27a18fa943c98f1c312e	.	recurrentgemma	142	0	true	0.0	PERMISSIVE	c85f9f62af7551dd31a38c2990dcf674404b41d30b664294737f55774bf0d81e
+rejax	HIGH	https://github.com/keraJLi/rejax	d7510951b7a89ca8463cb2a6d18e21750ec454ff	src	src/rejax	57	47	false	1.6	PERMISSIVE	4c8666461513f4337f4b6e72802b8cef3a682b21558dfe444ef9a48fa4c22caf
+tensortrade-ng	HIGH	https://github.com/erhardtconsulting/tensortrade-ng	ec6552e3cdbf64ad05c58955d26c207dda825df3	src	src/tensortrade	281	2	false	0.3	PERMISSIVE	92308de00c69c81831fc37aac0af2f369232c3e2d7902d46ff50777b756c9396
+PyFunceble	MED	https://github.com/funilrys/PyFunceble	849e52d69872a68d0b2ac15a46c97420575e3b61	.	PyFunceble	916	0	false	1.1	PERMISSIVE	f0578ccd207ae23a071dd55493d33adf3ca5be405663c47c05420f55ed47d6c2
+fastapi-injectable	MED	https://github.com/JasperSui/fastapi-injectable	28f26098eb1831a94a22f4d3bdd730eb0cde2d7a	src	src/fastapi_injectable	155	45	false	2.5	PERMISSIVE	a78515923089f1a1f1b4c52b4d6eb07bed27a4a4d36ac435221f73901899e36f
+pykwalify	MED	https://github.com/Grokzen/pykwalify	ba66b488dd0ccf3acac97e42b21254abd2134181	.	pykwalify	48	3	true	0.0	PERMISSIVE	cf43f38037c7da5300eba17b13a1deb5f4a2a23dcbf3ee8306128e229e7c850f
+pysui	MED	https://github.com/FrankC01/pysui	aadb4c77e36ae9fca0cf26e2e7be5123284c62fb	.	pysui	1168	121	false	1.1	PERMISSIVE	99b95112296028ba30930b514e86cdde2353d890363403bfebf5ad40dfc9376e
+term-image	MED	https://github.com/AnonymouX47/term-image	a40a12bb0a12944b7d7a182e93f1caad4261693a	src	src/term_image	1210	0	false	13.6	PERMISSIVE	be3dccfb0eff9332f34578d35cecd1d69af07abe1d9167ca4854b6c7fa2c6d24
+TradingView-Screener	LOW	https://github.com/shner-elmo/TradingView-Screener	f5349f1b0d3598fd513a05dc3aa3ce172396e2e9	src	src/tradingview_screener	44	0	true	0.0	PERMISSIVE	3619c5c0db269c215e34c7f0692fc99c8c8329a0af02293b809297c06411eda3
+movingpandas	LOW	https://github.com/movingpandas/movingpandas	b136ce4e07113980b27c58f27cbd15370e8d7e4a	.	movingpandas	403	3	false	63.4	PERMISSIVE	0b22f273b996ec7bb54a8371b1a2639d6c71a99573c834522044a4ca72cc7925
+throttled	LOW	https://github.com/erpalma/throttled	8c98bdc355c103a4ca740308ea4c98b057db0af9	.	.	51	0	true	0.0	PERMISSIVE	5b6a9b6024f7d13fc04c81be69ade6830d5ec5a4e1855d0cf872e3208c226874

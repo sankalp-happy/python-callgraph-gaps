@@ -1,0 +1,275 @@
+
+===== 2026-10-19T08:44:16Z python-lazy-object-proxy clone
+
+===== 2026-10-19T08:44:17Z python-lazy-object-proxy repo
+
+===== 2026-10-19T08:44:17Z python-lazy-object-proxy env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy
++ python -m venv /home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy
++ . /home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(python-lazy-object-proxy) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((python-lazy-object-proxy) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/python-lazy-object-proxy
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+WARNING: lazy-object-proxy 1.12.1.dev1 does not provide the extra 'test'
+Building wheels for collected packages: lazy-object-proxy
+  Building wheel for lazy-object-proxy (pyproject.toml): started
+  Building wheel for lazy-object-proxy (pyproject.toml): finished with status 'done'
+  Created wheel for lazy-object-proxy: filename=lazy_object_proxy-1.12.1.dev1-cp312-cp312-linux_x86_64.whl size=69922 sha256=ad2e5e77b65b590cfc6012c12fa571f0f05fbdf03d15dc0a7e6bdedc0d5f25a6
+  Stored in directory: /tmp/pip-ephem-wheel-cache-pew2_4pv/wheels/60/89/a9/ab16e931f569f715a74d542f4207eb3c6a071991218484d5be
+Successfully built lazy-object-proxy
+Installing collected packages: lazy-object-proxy
+Successfully installed lazy-object-proxy-1.12.1.dev1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Installing collected packages: pygments, pluggy, iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pygments-2.21.0 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/python-lazy-object-proxy
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: lazy-object-proxy
+  Building editable for lazy-object-proxy (pyproject.toml): started
+  Building editable for lazy-object-proxy (pyproject.toml): finished with status 'done'
+  Created wheel for lazy-object-proxy: filename=lazy_object_proxy-1.12.1.dev1-0.editable-cp312-cp312-linux_x86_64.whl size=3872 sha256=01e2a4fbdaa0bf1dd8c9516d1304cbe56f72c073b7429283044492a4ee2e9d73
+  Stored in directory: /tmp/pip-ephem-wheel-cache-tzhbmnaw/wheels/60/89/a9/ab16e931f569f715a74d542f4207eb3c6a071991218484d5be
+Successfully built lazy-object-proxy
+Installing collected packages: lazy-object-proxy
+  Attempting uninstall: lazy-object-proxy
+    Found existing installation: lazy-object-proxy 1.12.1.dev1
+    Uninstalling lazy-object-proxy-1.12.1.dev1:
+      Successfully uninstalled lazy-object-proxy-1.12.1.dev1
+Successfully installed lazy-object-proxy-1.12.1.dev1
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 35 s
+
+===== 2026-10-19T08:44:52Z python-lazy-object-proxy trace
++ cd /home/azureuser/traceweave-harness/work/python-lazy-object-proxy
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/python-lazy-object-proxy/src
++ /home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/python-lazy-object-proxy/src --package /home/azureuser/traceweave-harness/work/python-lazy-object-proxy/src/lazy_object_proxy --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id python-lazy-object-proxy-2026-10-19T08:44:52Z --out /home/azureuser/traceweave-harness/bundles/python-lazy-object-proxy/trace.json
+........................................................................ [  4%]
+.............XXXX..XX.....X.X.X......................................... [  8%]
+.....xx..............................................xxx.x.............. [ 12%]
+........................................................................ [ 17%]
+........................................................................ [ 21%]
+......xxxx..xx.....X.X.X..............................................XX [ 25%]
+..............................................xxx.x..................... [ 29%]
+...................................................s.................... [ 34%]
+.......................................................................X [ 38%]
+XXX..XX.....X.X.X..............................................XX....... [ 42%]
+.......................................xxx.x............................ [ 46%]
+............................................s........................... [ 51%]
+................................................................XXXX..XX [ 55%]
+.....X.X.X..............................................xx.............. [ 59%]
+................................xxx.x................................... [ 64%]
+........................................................................ [ 68%]
+.........................................................XXXX..XX.....x. [ 72%]
+x.x..............................................xx..................... [ 76%]
+.........................xxx.x.......................................... [ 81%]
+........................................................................ [ 85%]
+..................................................XXXX..XX.....x.x.x.... [ 89%]
+..........................................xx............................ [ 93%]
+..................xxx.x................................................. [ 98%]
+..............................                                           [100%]
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_perf.py ______________________
+'benchmark' not found in `markers` configuration option
+_____________________ ERROR collecting tests/test_perf.py ______________________
+'benchmark' not found in `markers` configuration option
+=================================== XPASSES ====================================
+=========================== short test summary info ============================
+SKIPPED [2] tests/test_lazy_object_proxy.py:1833: Not possible.
+XFAIL tests/test_lazy_object_proxy.py::test_pow_ternary[subclassed-slots]
+XFAIL tests/test_lazy_object_proxy.py::test_rpow_ternary[subclassed-slots]
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_hasattr_call[subclassed-slots] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_getattr_call[subclassed-slots] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_is_callable[subclassed-slots] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_callable_proxy_getattr_call[subclassed-slots] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_class_module_name[subclassed-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XFAIL tests/test_lazy_object_proxy.py::test_class_doc_string[subclassed-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XFAIL tests/test_lazy_object_proxy.py::test_instance_module_name[subclassed-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XFAIL tests/test_lazy_object_proxy.py::test_instance_doc_string[subclassed-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XFAIL tests/test_lazy_object_proxy.py::test_function_module_name[subclassed-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XFAIL tests/test_lazy_object_proxy.py::test_function_doc_string[subclassed-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_hasattr_call[subclassed-cext] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_getattr_call[subclassed-cext] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_is_callable[subclassed-cext] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_callable_proxy_getattr_call[subclassed-cext] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_hasattr_call[normal-cext] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_getattr_call[normal-cext] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_is_callable[normal-cext] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_callable_proxy_getattr_call[normal-cext] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_pow_ternary[normal-slots]
+XFAIL tests/test_lazy_object_proxy.py::test_rpow_ternary[normal-slots]
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_hasattr_call[normal-slots] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_getattr_call[normal-slots] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_is_callable[normal-slots] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_callable_proxy_getattr_call[normal-slots] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_vars_of_class[normal-simple] - The lazy_object_proxy.simple.Proxy has some limitations.
+XFAIL tests/test_lazy_object_proxy.py::test_vars_of_instance[normal-simple] - The lazy_object_proxy.simple.Proxy has some limitations.
+XFAIL tests/test_lazy_object_proxy.py::test_vars_of_function[normal-simple] - The lazy_object_proxy.simple.Proxy has some limitations.
+XFAIL tests/test_lazy_object_proxy.py::test_pow_ternary[normal-simple]
+XFAIL tests/test_lazy_object_proxy.py::test_rpow_ternary[normal-simple]
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_hasattr_call[normal-simple] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_getattr_call[normal-simple] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_is_callable[normal-simple] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_callable_proxy_getattr_call[normal-simple] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_vars_of_class[subclassed-simple] - The lazy_object_proxy.simple.Proxy has some limitations.
+XFAIL tests/test_lazy_object_proxy.py::test_vars_of_instance[subclassed-simple] - The lazy_object_proxy.simple.Proxy has some limitations.
+XFAIL tests/test_lazy_object_proxy.py::test_vars_of_function[subclassed-simple] - The lazy_object_proxy.simple.Proxy has some limitations.
+XFAIL tests/test_lazy_object_proxy.py::test_pow_ternary[subclassed-simple]
+XFAIL tests/test_lazy_object_proxy.py::test_rpow_ternary[subclassed-simple]
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_hasattr_call[subclassed-simple] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_getattr_call[subclassed-simple] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_proxy_is_callable[subclassed-simple] - Don't know how to make this work. This tests the existence of the __call__ method.
+XFAIL tests/test_lazy_object_proxy.py::test_callable_proxy_getattr_call[subclassed-simple] - Don't know how to make this work. This tests the existence of the __call__ method.
+XPASS tests/test_lazy_object_proxy.py::test_class_module_name[subclassed-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_class_doc_string[subclassed-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_module_name[subclassed-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_doc_string[subclassed-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_module_name[subclassed-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_doc_string[subclassed-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_class[subclassed-slots] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_instance[subclassed-slots] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_function[subclassed-slots] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_class[subclassed-cext] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_instance[subclassed-cext] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_function[subclassed-cext] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_pow_ternary[subclassed-cext]
+XPASS tests/test_lazy_object_proxy.py::test_rpow_ternary[subclassed-cext]
+XPASS tests/test_lazy_object_proxy.py::test_class_module_name[normal-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_class_doc_string[normal-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_module_name[normal-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_doc_string[normal-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_module_name[normal-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_doc_string[normal-cext] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_class[normal-cext] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_instance[normal-cext] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_function[normal-cext] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_pow_ternary[normal-cext]
+XPASS tests/test_lazy_object_proxy.py::test_rpow_ternary[normal-cext]
+XPASS tests/test_lazy_object_proxy.py::test_class_module_name[normal-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_class_doc_string[normal-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_module_name[normal-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_doc_string[normal-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_module_name[normal-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_doc_string[normal-slots] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_class[normal-slots] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_instance[normal-slots] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_vars_of_function[normal-slots] - The lazy_object_proxy.simple.Proxy has some limitations.
+XPASS tests/test_lazy_object_proxy.py::test_class_module_name[normal-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_class_doc_string[normal-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_module_name[normal-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_doc_string[normal-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_module_name[normal-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_doc_string[normal-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_class_module_name[subclassed-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_class_doc_string[subclassed-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_module_name[subclassed-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_instance_doc_string[subclassed-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_module_name[subclassed-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+XPASS tests/test_lazy_object_proxy.py::test_function_doc_string[subclassed-simple] - This test can't work because subclassing disables certain features like __doc__ and __module__ proxying.
+ERROR tests/test_perf.py - Failed: 'benchmark' not found in `markers` configu...
+ERROR tests/test_perf.py - Failed: 'benchmark' not found in `markers` configu...
+1594 passed, 2 skipped, 44 xfailed, 46 xpassed, 2 errors in 19.46s
+wrote 323 edges (194 internal, 129 entry) over 6 modules -> /home/azureuser/traceweave-harness/bundles/python-lazy-object-proxy/trace.json
+===== trace rc=0 in 22 s
+
+===== 2026-10-19T08:45:14Z python-lazy-object-proxy bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy/bin/python build_bundle.py python-lazy-object-proxy --static /home/azureuser/traceweave-data/static/python-lazy-object-proxy --runtime /home/azureuser/traceweave-harness/bundles/python-lazy-object-proxy/trace.json
+python-lazy-object-proxy: 167 nodes, pycg 15 / pyright 20 static edges, 323 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T08:45:16Z python-lazy-object-proxy truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy/bin/python tw.py truth python-lazy-object-proxy
+python-lazy-object-proxy: 261 in-package call sites, 200 caller->callee pairs, 507 package lines ran; suite 1594 passed in 4.89 s -> bundles/python-lazy-object-proxy/truth.json
+===== truth rc=0 in 11 s
+
+===== 2026-10-19T08:45:27Z python-lazy-object-proxy bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/python-lazy-object-proxy/bin/python tw.py bench python-lazy-object-proxy
++ mv /home/azureuser/traceweave-data/study1/bench/python-lazy-object-proxy.txt.tmp /home/azureuser/traceweave-data/study1/bench/python-lazy-object-proxy.txt
++ cat /home/azureuser/traceweave-data/study1/bench/python-lazy-object-proxy.txt
+
+python-lazy-object-proxy: 23 items, 4 real calls; 183 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.17   1.00   0.30   0.00
+  PyCG                              all   0.50   0.50   0.50   0.00
+  Pyright                           all   0.67   1.00   0.80   0.00
+  PyCG ∪ Pyright                    all   0.67   1.00   0.80   0.00
+  name match                     sample   0.14   1.00   0.25   0.00
+  PyCG                           sample   0.33   0.33   0.33   0.00
+  Pyright                        sample   0.60   1.00   0.75   0.00
+  PyCG ∪ Pyright                 sample   0.60   1.00   0.75   0.00
+===== bench rc=0 in 2 s

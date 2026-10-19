@@ -1,0 +1,649 @@
+
+===== 2026-10-19T09:02:21Z pykwalify clone
+
+===== 2026-10-19T09:02:22Z pykwalify repo
+
+===== 2026-10-19T09:02:22Z pykwalify env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/pykwalify
++ python -m venv /home/azureuser/traceweave-data/study1/venv/pykwalify
++ . /home/azureuser/traceweave-data/study1/venv/pykwalify/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/pykwalify
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/pykwalify
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/pykwalify/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(pykwalify) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((pykwalify) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/pykwalify
++ '[' -f pyproject.toml ']'
++ '[' -f setup.py ']'
++ pip install .
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting docopt>=0.6.2 (from pykwalify==1.8.0)
+  Downloading docopt-0.6.2.tar.gz (25 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting ruamel.yaml>=0.16.0 (from pykwalify==1.8.0)
+  Using cached ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+Collecting python-dateutil>=2.8.0 (from pykwalify==1.8.0)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.0->pykwalify==1.8.0)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: pykwalify, docopt
+  Building wheel for pykwalify (pyproject.toml): started
+  Building wheel for pykwalify (pyproject.toml): finished with status 'done'
+  Created wheel for pykwalify: filename=pykwalify-1.8.0-py2.py3-none-any.whl size=25309 sha256=2d7ed958fb7173252cf90fa97c175953bbf0f0ac5b1cc068b8129056ffb7bc6c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-p2w00qde/wheels/91/42/da/bd634d0cc747812b30e0ef0e18907895f41f73d0b0403af5dc
+  Building wheel for docopt (pyproject.toml): started
+  Building wheel for docopt (pyproject.toml): finished with status 'done'
+  Created wheel for docopt: filename=docopt-0.6.2-py2.py3-none-any.whl size=13783 sha256=2948c15b0ec1e00691da081f144ed50ef63b2dbbbfe61d771d88d08beeef6854
+  Stored in directory: /home/azureuser/traceweave-data/study1/pip-cache/wheels/1a/bf/a1/4cee4f7678c68c5875ca89eaccf460593539805c3906722228
+Successfully built pykwalify docopt
+Installing collected packages: docopt, six, ruamel.yaml, python-dateutil, pykwalify
+
+Successfully installed docopt-0.6.2 pykwalify-1.8.0 python-dateutil-2.9.0.post0 ruamel.yaml-0.19.1 six-1.17.0
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ pip install -r requirements.txt
+Requirement already satisfied: docopt>=0.6.2 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (0.6.2)
+Requirement already satisfied: ruamel.yaml>=0.16.0 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (0.19.1)
+Requirement already satisfied: python-dateutil>=2.8.0 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from python-dateutil>=2.8.0->-r requirements.txt (line 3)) (1.17.0)
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ pip install -r dev-requirements.txt
+Requirement already satisfied: docopt>=0.6.2 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/pykwalify/requirements.txt (line 1)) (0.6.2)
+Requirement already satisfied: ruamel.yaml>=0.16.0 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/pykwalify/requirements.txt (line 2)) (0.19.1)
+Requirement already satisfied: python-dateutil>=2.8.0 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/pykwalify/requirements.txt (line 3)) (2.9.0.post0)
+Collecting coverage (from -r dev-requirements.txt (line 3))
+  Using cached coverage-7.16.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.2 kB)
+Collecting pytest (from -r dev-requirements.txt (line 4))
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting testfixtures (from -r dev-requirements.txt (line 5))
+  Downloading testfixtures-12.4.0-py3-none-any.whl.metadata (5.6 kB)
+Collecting mock (from -r dev-requirements.txt (line 6))
+  Downloading mock-5.2.0-py3-none-any.whl.metadata (3.1 kB)
+Collecting tox (from -r dev-requirements.txt (line 7))
+  Using cached tox-4.67.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting python-coveralls (from -r dev-requirements.txt (line 8))
+  Downloading python_coveralls-2.9.3-py2.py3-none-any.whl.metadata (6.1 kB)
+Collecting ptpdb (from -r dev-requirements.txt (line 9))
+  Downloading ptpdb-0.17-py3-none-any.whl.metadata (337 bytes)
+Collecting ptpython (from -r dev-requirements.txt (line 10))
+  Downloading ptpython-3.0.32-py3-none-any.whl.metadata (10 kB)
+Collecting pysnooper (from -r dev-requirements.txt (line 11))
+  Downloading PySnooper-1.2.3-py2.py3-none-any.whl.metadata (5.6 kB)
+Requirement already satisfied: setuptools in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from -r dev-requirements.txt (line 12)) (84.0.0)
+Requirement already satisfied: six>=1.5 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from python-dateutil>=2.8.0->-r /home/azureuser/traceweave-harness/work/pykwalify/requirements.txt (line 3)) (1.17.0)
+Collecting iniconfig>=1.0.1 (from pytest->-r dev-requirements.txt (line 4))
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from pytest->-r dev-requirements.txt (line 4)) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest->-r dev-requirements.txt (line 4))
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest->-r dev-requirements.txt (line 4))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting typing-extensions>=4.12 (from testfixtures->-r dev-requirements.txt (line 5))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting cachetools>=7.0.3 (from tox->-r dev-requirements.txt (line 7))
+  Using cached cachetools-7.2.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting colorama>=0.4.6 (from tox->-r dev-requirements.txt (line 7))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting filelock>=3.25 (from tox->-r dev-requirements.txt (line 7))
+  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting platformdirs>=4.9.4 (from tox->-r dev-requirements.txt (line 7))
+  Using cached platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting pyproject-api>=1.10 (from tox->-r dev-requirements.txt (line 7))
+  Using cached pyproject_api-1.12.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting python-discovery>=1.4.4 (from tox->-r dev-requirements.txt (line 7))
+  Using cached python_discovery-1.6.4-py3-none-any.whl.metadata (5.1 kB)
+Collecting tomli-w>=1.2 (from tox->-r dev-requirements.txt (line 7))
+  Using cached tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting virtualenv>=21.1 (from tox->-r dev-requirements.txt (line 7))
+  Using cached virtualenv-21.14.11-py3-none-any.whl.metadata (4.1 kB)
+Collecting PyYAML (from python-coveralls->-r dev-requirements.txt (line 8))
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting requests (from python-coveralls->-r dev-requirements.txt (line 8))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting ptpython (from -r dev-requirements.txt (line 10))
+  Downloading ptpython-0.33-py3-none-any.whl.metadata (5.8 kB)
+Collecting prompt-toolkit<2.0.0,>=1.0.0 (from ptpdb->-r dev-requirements.txt (line 9))
+  Downloading prompt_toolkit-1.0.18-py3-none-any.whl.metadata (7.9 kB)
+Collecting jedi>=0.9.0 (from ptpython->-r dev-requirements.txt (line 10))
+  Using cached jedi-0.20.1-py2.py3-none-any.whl.metadata (23 kB)
+Collecting wcwidth (from prompt-toolkit<2.0.0,>=1.0.0->ptpdb->-r dev-requirements.txt (line 9))
+  Using cached wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Collecting parso<0.9.0,>=0.8.7 (from jedi>=0.9.0->ptpython->-r dev-requirements.txt (line 10))
+  Using cached parso-0.8.7-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting distlib<1,>=0.4.3 (from virtualenv>=21.1->tox->-r dev-requirements.txt (line 7))
+  Using cached distlib-0.4.4-py2.py3-none-any.whl.metadata (5.3 kB)
+Collecting charset_normalizer<4,>=2 (from requests->python-coveralls->-r dev-requirements.txt (line 8))
+  Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests->python-coveralls->-r dev-requirements.txt (line 8))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->python-coveralls->-r dev-requirements.txt (line 8))
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->python-coveralls->-r dev-requirements.txt (line 8))
+  Using cached certifi-2026.10.18-py3-none-any.whl.metadata (2.5 kB)
+Using cached coverage-7.16.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (258 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Downloading testfixtures-12.4.0-py3-none-any.whl (69 kB)
+Downloading mock-5.2.0-py3-none-any.whl (31 kB)
+Using cached tox-4.67.1-py3-none-any.whl (238 kB)
+Downloading python_coveralls-2.9.3-py2.py3-none-any.whl (9.9 kB)
+Downloading ptpdb-0.17-py3-none-any.whl (16 kB)
+Downloading ptpython-0.33-py3-none-any.whl (45 kB)
+Downloading prompt_toolkit-1.0.18-py3-none-any.whl (245 kB)
+Downloading PySnooper-1.2.3-py2.py3-none-any.whl (15 kB)
+Using cached cachetools-7.2.3-py3-none-any.whl (18 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached filelock-4.2.4-py3-none-any.whl (162 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached jedi-0.20.1-py2.py3-none-any.whl (4.9 MB)
+Using cached parso-0.8.7-py2.py3-none-any.whl (107 kB)
+Using cached platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached pyproject_api-1.12.0-py3-none-any.whl (14 kB)
+Using cached python_discovery-1.6.4-py3-none-any.whl (39 kB)
+Using cached tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached virtualenv-21.14.11-py3-none-any.whl (5.5 MB)
+Using cached distlib-0.4.4-py2.py3-none-any.whl (472 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached certifi-2026.10.18-py3-none-any.whl (134 kB)
+Using cached wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (769 kB)
+Installing collected packages: pysnooper, distlib, wcwidth, urllib3, typing-extensions, tomli-w, PyYAML, pyproject-api, pygments, pluggy, platformdirs, parso, mock, iniconfig, idna, filelock, coverage, colorama, charset_normalizer, certifi, cachetools, testfixtures, requests, python-discovery, pytest, prompt-toolkit, jedi, virtualenv, python-coveralls, ptpython, tox, ptpdb
+
+Successfully installed PyYAML-6.0.3 cachetools-7.2.3 certifi-2026.10.18 charset_normalizer-3.5.2 colorama-0.4.6 coverage-7.16.2 distlib-0.4.4 filelock-4.2.4 idna-3.20 iniconfig-2.3.1 jedi-0.20.1 mock-5.2.0 parso-0.8.7 platformdirs-4.13.5 pluggy-1.7.0 prompt-toolkit-1.0.18 ptpdb-0.17 ptpython-0.33 pygments-2.21.0 pyproject-api-1.12.0 pysnooper-1.2.3 pytest-9.1.1 python-coveralls-2.9.3 python-discovery-1.6.4 requests-2.34.2 testfixtures-12.4.0 tomli-w-1.2.0 tox-4.67.1 typing-extensions-4.16.0 urllib3-2.8.0 virtualenv-21.14.11 wcwidth-0.9.2
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Requirement already satisfied: pytest in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (9.1.1)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: iniconfig>=1.0.1 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from pytest) (2.3.1)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from pytest) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages (from pytest) (2.21.0)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Installing collected packages: pytest-timeout
+Successfully installed pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/pykwalify
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: pykwalify
+  Building editable for pykwalify (pyproject.toml): started
+  Building editable for pykwalify (pyproject.toml): finished with status 'done'
+  Created wheel for pykwalify: filename=pykwalify-1.8.0-0.editable-py2.py3-none-any.whl size=5794 sha256=0e27b5b9c33470653c8f078081c0ace3738a109ac57474f1d784caa22b47292a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-6a3eo3x3/wheels/91/42/da/bd634d0cc747812b30e0ef0e18907895f41f73d0b0403af5dc
+Successfully built pykwalify
+Installing collected packages: pykwalify
+  Attempting uninstall: pykwalify
+    Found existing installation: pykwalify 1.8.0
+    Uninstalling pykwalify-1.8.0:
+      Successfully uninstalled pykwalify-1.8.0
+Successfully installed pykwalify-1.8.0
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 57 s
+
+===== 2026-10-19T09:03:19Z pykwalify trace
++ cd /home/azureuser/traceweave-harness/work/pykwalify
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/pykwalify
++ /home/azureuser/traceweave-data/study1/venv/pykwalify/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/pykwalify --package /home/azureuser/traceweave-harness/work/pykwalify/pykwalify --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id pykwalify-2026-10-19T09:03:19Z --out /home/azureuser/traceweave-harness/bundles/pykwalify/trace.json
+...............F..............................FF                         [100%]
+=================================== FAILURES ===================================
+___________________________ TestCore.test_core_files ___________________________
+
+self = <tests.test_core.TestCore object at 0x73b1225539b0>
+
+    def test_core_files(self):
+        # These tests should pass with no exception raised
+        pass_tests = [
+            # All tests for keyword assert
+            "test_assert.yaml",
+            # All tests for keyword default
+            "test_default.yaml",
+            # All tests for keyword desc
+            "test_desc.yaml",
+            # All tests for keyword enum
+            "test_enum.yaml",
+            # All tests for keyword example
+            "test_example.yaml",
+            # All tests for keyword extensions
+            "test_extensions.yaml",
+            # All tests for keyword func
+            "test_func.yaml",
+            # All tests for keyword ident
+            "test_ident.yaml",
+            # All tests for keyword include
+            "test_include.yaml",
+            # All tests for keyword length
+            "test_length.yaml",
+            # All tests for keyword mapping
+            "test_mapping.yaml",
+            # All tests for keyword matching
+            "test_matching.yaml",
+            # All tests for keyword name
+            "test_name.yaml",
+            # All tests for keyword nullable
+            "test_nullable.yaml",
+            # All tests for keyword pattern
+            "test_pattern.yaml",
+            # All tests for keyword range
+            "test_range.yaml",
+            # All tests for keyword required
+            "test_required.yaml",
+            # All tests for keyword schema
+            "test_schema.yaml",
+            # All tests for keyword sequence
+            "test_sequence.yaml",
+            # All tests for keyword unique
+            "test_unique.yaml",
+            # All tests for keyword version
+            "test_version.yaml",
+    
+            # All test cases for Multiple sequence checks
+            "test_sequence_multi.yaml",
+            # All test cases for merging
+            "test_merge.yaml",
+            # All test cases for yaml anchors
+            "test_anchor.yaml",
+    
+            # All tests for TYPE: any
+            "test_type_any.yaml",
+            # All tests for TYPE: bool
+            "test_type_bool.yaml",
+            # All tests for TYPE: date
+            "test_type_date.yaml",
+            # All tests for TYPE: enum
+            "test_type_enum.yaml",
+            # All tests for TYPE: float
+            "test_type_float.yaml",
+            # All tests for TYPE: int
+            "test_type_int.yaml",
+            # All tests for TYPE: map
+            "test_type_map.yaml",
+            # All tests for TYPE: none
+            "test_type_none.yaml",
+            # All tests for TYPE: number
+            "test_type_number.yaml",
+            # All tests for TYPE: scalar
+            "test_type_scalar.yaml",
+            # All tests for TYPE: seq
+            "test_type_seq.yaml",
+            # All tests for TYPE: str
+            "test_type_str.yaml",
+            # All tests for TYPE: symbol
+            "test_type_symbol.yaml",
+            # All tests for TYPE: text
+            "test_type_text.yaml",
+            # All tests for TYPE: timestamp
+            "test_type_timestamp.yaml",
+            # All tests for TYPE: email
+            "test_type_email.yaml",
+            # All tests for TYPE: url
+            "test_type_url.yaml",
+            # All tests for TYPE: ip
+            "test_type_ip.yaml",
+            "test_type_ipv4.yaml",
+            "test_type_ipv6.yaml",
+            # All tests for TYPE: ip_cidr
+            "test_type_ip_cidr.yaml",
+            "test_type_ipv4_cidr.yaml",
+            "test_type_ipv6_cidr.yaml",
+        ]
+    
+        _fail_tests = [
+            # All tests for keyword assert
+            ("test_assert.yaml", SchemaError),
+            # All tests for keyword default
+            ("test_default.yaml", SchemaError),
+            # All tests for keyword desc
+            ("test_desc.yaml", SchemaError),
+            # All tests for keyword enum
+            ("test_enum.yaml", SchemaError),
+            # All tests for keyword example
+            ("test_example.yaml", SchemaError),
+            # All tests for keyword extensions
+            ("test_extensions.yaml", SchemaError),
+            # All tests for keyword func
+            ("test_func.yaml", SchemaError),
+            # All tests for keyword ident
+            ("test_ident.yaml", SchemaError),
+            # All tests for keyword include
+            ("test_include.yaml", SchemaError),
+            # All tests for keyword length
+            ("test_length.yaml", SchemaError),
+            # All tests for keyword mapping
+            ("test_mapping.yaml", SchemaError),
+            # All tests for keyword matching
+            ("test_matching.yaml", SchemaError),
+            # All tests for keyword name
+            ("test_name.yaml", SchemaError),
+            # All tests for keyword nullable
+            ("test_nullable.yaml", SchemaError),
+            # All tests for keyword pattern
+            ("test_pattern.yaml", SchemaError),
+            # All tests for keyword range
+            ("test_range.yaml", SchemaError),
+            # All tests for keyword required
+            ("test_required.yaml", SchemaError),
+            # All tests for keyword schema
+            ("test_schema.yaml", SchemaError),
+            # All tests for keyword sequence
+            ("test_sequence.yaml", SchemaError),
+            # All tests for keyword unique
+            ("test_unique.yaml", SchemaError),
+            # All tests for keyword version
+            ("test_version.yaml", SchemaError),
+    
+            # All test cases for Multiple sequence checks
+            ("test_sequence_multi.yaml", SchemaError),
+            # All test cases for merging
+            ("test_merge.yaml", SchemaError),
+            # All test cases for yaml anchors
+            ("test_anchor.yaml", SchemaError),
+    
+            # All tests for TYPE: any
+            ("test_type_any.yaml", SchemaError),
+            # All tests for TYPE: bool
+            ("test_type_bool.yaml", SchemaError),
+            # All tests for TYPE: date
+            ("test_type_date.yaml", SchemaError),
+            # All tests for TYPE: float
+            ("test_type_float.yaml", SchemaError),
+            # All tests for TYPE: int
+            ("test_type_int.yaml", SchemaError),
+            # All tests for TYPE: map
+            ("test_type_map.yaml", SchemaError),
+            # All tests for TYPE: none
+            ("test_type_none.yaml", SchemaError),
+            # All tests for TYPE: number
+            ("test_type_number.yaml", SchemaError),
+            # All tests for TYPE: scalar
+            ("test_type_scalar.yaml", SchemaError),
+            # All tests for TYPE: seq
+            ("test_type_seq.yaml", SchemaError),
+            # All tests for TYPE: str
+            ("test_type_str.yaml", SchemaError),
+            # All tests for TYPE: symbol
+            ("test_type_symbol.yaml", SchemaError),
+            # All tests for TYPE: text
+            ("test_type_text.yaml", SchemaError),
+            # All tests for TYPE: timestamp
+            ("test_type_timestamp.yaml", SchemaError),
+            # All tests for TYPE: email
+            ("test_type_email.yaml", SchemaError),
+            # All tests for TYPE: url
+            ("test_type_url.yaml", SchemaError),
+            # All tests for TYPE: ip
+            ("test_type_ip.yaml", SchemaError),
+            ("test_type_ipv4.yaml", SchemaError),
+            ("test_type_ipv6.yaml", SchemaError),
+        ]
+    
+        # Add override magic to make it easier to test a specific file
+        if "S" in os.environ:
+            pass_tests = [os.environ["S"]]
+            _fail_tests = []
+        elif "F" in os.environ:
+            pass_tests = []
+            _fail_tests = [(os.environ["F"], SchemaError)]
+    
+        for passing_test_file in pass_tests:
+            f = self.f(os.path.join("success", passing_test_file))
+            with open(f, "r") as stream:
+>               yaml_data = yaml.safe_load_all(stream)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_core.py:582: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages/ruamel/yaml/main.py:1118: in safe_load_all
+    error_deprecation('safe_load_all', 'load_all', arg="typ='safe', pure=True")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fun = 'safe_load_all', method = 'load_all', arg = "typ='safe', pure=True"
+comment = 'instead of'
+
+    def error_deprecation(fun: Any, method: Any, arg: str = '', comment: str = 'instead of') -> None:  # NOQA
+        import inspect
+    
+        s = f'\n"{fun}()" has been removed, use\n\n  yaml = YAML({arg})\n  yaml.{method}(...)\n\n{comment}'  # NOQA
+        try:
+            info = inspect.getframeinfo(inspect.stack()[2][0])
+            context = '' if info.code_context is None else "".join(info.code_context)
+            s += f' file "{info.filename}", line {info.lineno}\n\n{context}'
+        except Exception as e:
+            _ = e
+        s += '\n'
+        if sys.version_info < (3, 10):
+            raise AttributeError(s)
+        else:
+>           raise AttributeError(s, name=None)
+E           AttributeError: 
+E           "safe_load_all()" has been removed, use
+E           
+E             yaml = YAML(typ='safe', pure=True)
+E             yaml.load_all(...)
+E           
+E           instead of file "/home/azureuser/traceweave-harness/work/pykwalify/tests/test_core.py", line 582
+E           
+E                           yaml_data = yaml.safe_load_all(stream)
+
+../../../traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages/ruamel/yaml/main.py:1043: AttributeError
+_____________ TestUnicode.test_files_with_unicode_content_success ______________
+
+self = <tests.test_unicode.TestUnicode object at 0x73b122468f50>
+tmpdir = local('/tmp/pytest-of-unknown/pytest-0/test_files_with_unicode_conten0')
+
+    def test_files_with_unicode_content_success(self, tmpdir):
+        """
+        These tests should pass with no exception raised
+        """
+        fail_data_2s_yaml = {
+            'schema': {
+                'type': 'map',
+                'mapping': {
+                    'msg': {
+                        'type': 'int',
+                    },
+                }
+            },
+            'data': {
+                'msg': 123,
+            },
+            'errors': []
+        }
+    
+        source_f = tmpdir.join(u"2så.json")
+>       source_f.write(yaml.safe_dump(fail_data_2s_yaml, allow_unicode=True))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_unicode.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages/ruamel/yaml/main.py:1264: in safe_dump
+    error_deprecation('safe_dump', 'dump', arg="typ='safe', pure=True")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fun = 'safe_dump', method = 'dump', arg = "typ='safe', pure=True"
+comment = 'instead of'
+
+    def error_deprecation(fun: Any, method: Any, arg: str = '', comment: str = 'instead of') -> None:  # NOQA
+        import inspect
+    
+        s = f'\n"{fun}()" has been removed, use\n\n  yaml = YAML({arg})\n  yaml.{method}(...)\n\n{comment}'  # NOQA
+        try:
+            info = inspect.getframeinfo(inspect.stack()[2][0])
+            context = '' if info.code_context is None else "".join(info.code_context)
+            s += f' file "{info.filename}", line {info.lineno}\n\n{context}'
+        except Exception as e:
+            _ = e
+        s += '\n'
+        if sys.version_info < (3, 10):
+            raise AttributeError(s)
+        else:
+>           raise AttributeError(s, name=None)
+E           AttributeError: 
+E           "safe_dump()" has been removed, use
+E           
+E             yaml = YAML(typ='safe', pure=True)
+E             yaml.dump(...)
+E           
+E           instead of file "/home/azureuser/traceweave-harness/work/pykwalify/tests/test_unicode.py", line 50
+E           
+E                   source_f.write(yaml.safe_dump(fail_data_2s_yaml, allow_unicode=True))
+
+../../../traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages/ruamel/yaml/main.py:1043: AttributeError
+_____________ TestUnicode.test_files_with_unicode_content_failing ______________
+
+self = <tests.test_unicode.TestUnicode object at 0x73b122468380>
+tmpdir = local('/tmp/pytest-of-unknown/pytest-0/test_files_with_unicode_conten1')
+
+    def test_files_with_unicode_content_failing(self, tmpdir):
+        """
+        These tests should fail with the specified exception
+        """
+        # To trigger schema exception we must pass in a source file
+        fail_data_2f_yaml = {
+            'schema': {
+                'type': 'map',
+                'mapping': {
+                    'msg': {
+                        'type': 'int',
+                    },
+                }
+            },
+            'data': {
+                'msg': 'Foobar',
+            },
+            'errors': ["Value 'Foobar' is not of type 'int'. Path: '/msg'"]
+        }
+    
+        source_f = tmpdir.join(u"2få.json")
+>       source_f.write(yaml.safe_dump(fail_data_2f_yaml, allow_unicode=True))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_unicode.py:105: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages/ruamel/yaml/main.py:1264: in safe_dump
+    error_deprecation('safe_dump', 'dump', arg="typ='safe', pure=True")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fun = 'safe_dump', method = 'dump', arg = "typ='safe', pure=True"
+comment = 'instead of'
+
+    def error_deprecation(fun: Any, method: Any, arg: str = '', comment: str = 'instead of') -> None:  # NOQA
+        import inspect
+    
+        s = f'\n"{fun}()" has been removed, use\n\n  yaml = YAML({arg})\n  yaml.{method}(...)\n\n{comment}'  # NOQA
+        try:
+            info = inspect.getframeinfo(inspect.stack()[2][0])
+            context = '' if info.code_context is None else "".join(info.code_context)
+            s += f' file "{info.filename}", line {info.lineno}\n\n{context}'
+        except Exception as e:
+            _ = e
+        s += '\n'
+        if sys.version_info < (3, 10):
+            raise AttributeError(s)
+        else:
+>           raise AttributeError(s, name=None)
+E           AttributeError: 
+E           "safe_dump()" has been removed, use
+E           
+E             yaml = YAML(typ='safe', pure=True)
+E             yaml.dump(...)
+E           
+E           instead of file "/home/azureuser/traceweave-harness/work/pykwalify/tests/test_unicode.py", line 105
+E           
+E                   source_f.write(yaml.safe_dump(fail_data_2f_yaml, allow_unicode=True))
+
+../../../traceweave-data/study1/venv/pykwalify/lib/python3.12/site-packages/ruamel/yaml/main.py:1043: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_core.py::TestCore::test_core_files - AttributeError: 
+FAILED tests/test_unicode.py::TestUnicode::test_files_with_unicode_content_success
+FAILED tests/test_unicode.py::TestUnicode::test_files_with_unicode_content_failing
+3 failed, 45 passed in 2.98s
+wrote 253 edges (194 internal, 59 entry) over 7 modules -> /home/azureuser/traceweave-harness/bundles/pykwalify/trace.json
+===== trace rc=0 in 6 s
+
+===== 2026-10-19T09:03:24Z pykwalify bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/pykwalify/bin/python build_bundle.py pykwalify --static /home/azureuser/traceweave-data/static/pykwalify --runtime /home/azureuser/traceweave-harness/bundles/pykwalify/trace.json
+pykwalify: 190 nodes, pycg 132 / pyright 139 static edges, 250 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 2 s
+
+===== 2026-10-19T09:03:26Z pykwalify truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/pykwalify/bin/python tw.py truth pykwalify
+pykwalify: 323 in-package call sites, 211 caller->callee pairs, 1343 package lines ran; suite 45 passed in 1.81 s -> bundles/pykwalify/truth.json
+===== truth rc=0 in 5 s
+
+===== 2026-10-19T09:03:31Z pykwalify bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/pykwalify/bin/python tw.py bench pykwalify
++ mv /home/azureuser/traceweave-data/study1/bench/pykwalify.txt.tmp /home/azureuser/traceweave-data/study1/bench/pykwalify.txt
++ cat /home/azureuser/traceweave-data/study1/bench/pykwalify.txt
+
+pykwalify: 311 items, 161 real calls; 31 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.52   1.00   0.68   1.00
+  PyCG                              all   1.00   0.46   0.63   0.33
+  Pyright                           all   1.00   0.53   0.69   0.33
+  PyCG ∪ Pyright                    all   1.00   0.54   0.70   0.67
+  name match                     sample   0.47   1.00   0.64   1.00
+  PyCG                           sample   1.00   0.38   0.55   0.00
+  Pyright                        sample   1.00   0.41   0.58   0.00
+  PyCG ∪ Pyright                 sample   1.00   0.41   0.58   0.00
+===== bench rc=0 in 2 s

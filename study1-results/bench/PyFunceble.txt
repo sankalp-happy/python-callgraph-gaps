@@ -1,0 +1,11 @@
+
+PyFunceble: 6242 items, 740 real calls; 309 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.12   1.00   0.21   1.00
+  PyCG                              all   0.77   0.17   0.28   0.18
+  Pyright                           all   0.82   0.53   0.64   0.43
+  PyCG ∪ Pyright                    all   0.82   0.55   0.66   0.44
+  name match                     sample   0.11   1.00   0.20   1.00
+  PyCG                           sample   1.00   0.22   0.36   0.11
+  Pyright                        sample   0.96   0.48   0.64   0.11
+  PyCG ∪ Pyright                 sample   0.96   0.48   0.64   0.11

@@ -1,5 +1,71 @@
 {
  "repos": {
+  "PyFunceble": {
+   "stratum": "MED",
+   "observed_edges": 1045,
+   "edge_recall": {
+    "pycg": 0.249,
+    "pyright": 0.475,
+    "union": 0.541
+   },
+   "items": 6242,
+   "real": 740,
+   "unnamed": 309,
+   "scores": {
+    "PyCG": {
+     "tp": 128,
+     "fp": 39,
+     "fn": 612,
+     "n": 6242,
+     "precision": 0.766,
+     "recall": 0.173,
+     "f1": 0.282
+    },
+    "Pyright": {
+     "tp": 392,
+     "fp": 85,
+     "fn": 348,
+     "n": 6242,
+     "precision": 0.822,
+     "recall": 0.53,
+     "f1": 0.644
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 405,
+     "fp": 86,
+     "fn": 335,
+     "n": 6242,
+     "precision": 0.825,
+     "recall": 0.547,
+     "f1": 0.658
+    },
+    "name match": {
+     "tp": 740,
+     "fp": 5502,
+     "fn": 0,
+     "n": 6242,
+     "precision": 0.119,
+     "recall": 1.0,
+     "f1": 0.212
+    },
+    "shared-name union": {
+     "tp": 137,
+     "fp": 41,
+     "fn": 174,
+     "n": 5074,
+     "precision": 0.77,
+     "recall": 0.441,
+     "f1": 0.56
+    }
+   },
+   "tests_passed": 748,
+   "line_coverage": 0.3794,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
   "ShivyC": {
    "stratum": "LOW",
    "observed_edges": 1459,
@@ -57,6 +123,79 @@
      "recall": 0.119,
      "f1": 0.21
     }
+   },
+   "tests_passed": 94,
+   "line_coverage": 0.8877,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "TradingView-Screener": {
+   "stratum": "LOW",
+   "observed_edges": 19,
+   "edge_recall": {
+    "pycg": 0.105,
+    "pyright": 1.0,
+    "union": 1.0
+   },
+   "items": 54,
+   "real": 19,
+   "unnamed": 0,
+   "scores": {
+    "PyCG": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 17,
+     "n": 54,
+     "precision": 1.0,
+     "recall": 0.105,
+     "f1": 0.19
+    },
+    "Pyright": {
+     "tp": 19,
+     "fp": 0,
+     "fn": 0,
+     "n": 54,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 19,
+     "fp": 0,
+     "fn": 0,
+     "n": 54,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "name match": {
+     "tp": 19,
+     "fp": 35,
+     "fn": 0,
+     "n": 54,
+     "precision": 0.352,
+     "recall": 1.0,
+     "f1": 0.521
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "tests_passed": 44,
+   "line_coverage": 0.5863,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "all-repos": {
@@ -116,6 +255,13 @@
      "recall": 0.723,
      "f1": 0.773
     }
+   },
+   "tests_passed": 168,
+   "line_coverage": 0.9814,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "apiflask": {
@@ -175,6 +321,13 @@
      "recall": 0.261,
      "f1": 0.333
     }
+   },
+   "tests_passed": 402,
+   "line_coverage": 0.8823,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "autoray": {
@@ -234,6 +387,79 @@
      "recall": 0.0,
      "f1": 0.0
     }
+   },
+   "tests_passed": 1,
+   "line_coverage": 0.2628,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "aws-dynamodb-encryption-python": {
+   "stratum": "HIGH",
+   "observed_edges": 74,
+   "edge_recall": {
+    "pycg": 0.581,
+    "pyright": 0.608,
+    "union": 0.676
+   },
+   "items": 369,
+   "real": 42,
+   "unnamed": 32,
+   "scores": {
+    "PyCG": {
+     "tp": 35,
+     "fp": 0,
+     "fn": 7,
+     "n": 369,
+     "precision": 1.0,
+     "recall": 0.833,
+     "f1": 0.909
+    },
+    "Pyright": {
+     "tp": 37,
+     "fp": 0,
+     "fn": 5,
+     "n": 369,
+     "precision": 1.0,
+     "recall": 0.881,
+     "f1": 0.937
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 37,
+     "fp": 0,
+     "fn": 5,
+     "n": 369,
+     "precision": 1.0,
+     "recall": 0.881,
+     "f1": 0.937
+    },
+    "name match": {
+     "tp": 42,
+     "fp": 327,
+     "fn": 0,
+     "n": 369,
+     "precision": 0.114,
+     "recall": 1.0,
+     "f1": 0.204
+    },
+    "shared-name union": {
+     "tp": 4,
+     "fp": 0,
+     "fn": 5,
+     "n": 121,
+     "precision": 1.0,
+     "recall": 0.444,
+     "f1": 0.615
+    }
+   },
+   "tests_passed": 78,
+   "line_coverage": 0.4614,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "bedrock-agentcore-sdk-python": {
@@ -293,6 +519,13 @@
      "recall": 0.895,
      "f1": 0.723
     }
+   },
+   "tests_passed": 1842,
+   "line_coverage": 0.5865,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "click": {
@@ -352,6 +585,74 @@
      "recall": 0.538,
      "f1": 0.665
     }
+   },
+   "tests_passed": 1939,
+   "line_coverage": 0.818
+  },
+  "compressed-tensors": {
+   "stratum": "HIGH",
+   "observed_edges": 413,
+   "edge_recall": {
+    "pycg": 0.504,
+    "pyright": 0.676,
+    "union": 0.697
+   },
+   "items": 1101,
+   "real": 294,
+   "unnamed": 123,
+   "scores": {
+    "PyCG": {
+     "tp": 195,
+     "fp": 18,
+     "fn": 99,
+     "n": 1101,
+     "precision": 0.915,
+     "recall": 0.663,
+     "f1": 0.769
+    },
+    "Pyright": {
+     "tp": 270,
+     "fp": 25,
+     "fn": 24,
+     "n": 1101,
+     "precision": 0.915,
+     "recall": 0.918,
+     "f1": 0.917
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 270,
+     "fp": 26,
+     "fn": 24,
+     "n": 1101,
+     "precision": 0.912,
+     "recall": 0.918,
+     "f1": 0.915
+    },
+    "name match": {
+     "tp": 294,
+     "fp": 807,
+     "fn": 0,
+     "n": 1101,
+     "precision": 0.267,
+     "recall": 1.0,
+     "f1": 0.422
+    },
+    "shared-name union": {
+     "tp": 35,
+     "fp": 17,
+     "fn": 23,
+     "n": 517,
+     "precision": 0.673,
+     "recall": 0.603,
+     "f1": 0.636
+    }
+   },
+   "tests_passed": 732,
+   "line_coverage": 0.6594,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "confluence-markdown-exporter": {
@@ -411,6 +712,13 @@
      "recall": 0.5,
      "f1": 0.541
     }
+   },
+   "tests_passed": 442,
+   "line_coverage": 0.5721,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "creosote": {
@@ -470,6 +778,409 @@
      "recall": 1.0,
      "f1": 1.0
     }
+   },
+   "tests_passed": 165,
+   "line_coverage": 0.8831,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "deepblast": {
+   "stratum": "HIGH",
+   "observed_edges": 29,
+   "edge_recall": {
+    "pycg": 0.69,
+    "pyright": 0.759,
+    "union": 0.759
+   },
+   "items": 122,
+   "real": 23,
+   "unnamed": 6,
+   "scores": {
+    "PyCG": {
+     "tp": 20,
+     "fp": 6,
+     "fn": 3,
+     "n": 122,
+     "precision": 0.769,
+     "recall": 0.87,
+     "f1": 0.816
+    },
+    "Pyright": {
+     "tp": 20,
+     "fp": 6,
+     "fn": 3,
+     "n": 122,
+     "precision": 0.769,
+     "recall": 0.87,
+     "f1": 0.816
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 20,
+     "fp": 6,
+     "fn": 3,
+     "n": 122,
+     "precision": 0.769,
+     "recall": 0.87,
+     "f1": 0.816
+    },
+    "name match": {
+     "tp": 23,
+     "fp": 99,
+     "fn": 0,
+     "n": 122,
+     "precision": 0.189,
+     "recall": 1.0,
+     "f1": 0.317
+    },
+    "shared-name union": {
+     "tp": 7,
+     "fp": 6,
+     "fn": 0,
+     "n": 44,
+     "precision": 0.538,
+     "recall": 1.0,
+     "f1": 0.7
+    }
+   },
+   "tests_passed": 11,
+   "line_coverage": 0.238,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "django-ses": {
+   "stratum": "HIGH",
+   "observed_edges": 3,
+   "edge_recall": {
+    "pycg": 0.667,
+    "pyright": 0.667,
+    "union": 0.667
+   },
+   "items": 13,
+   "real": 3,
+   "unnamed": 0,
+   "scores": {
+    "PyCG": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 1,
+     "n": 13,
+     "precision": 1.0,
+     "recall": 0.667,
+     "f1": 0.8
+    },
+    "Pyright": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 1,
+     "n": 13,
+     "precision": 1.0,
+     "recall": 0.667,
+     "f1": 0.8
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 1,
+     "n": 13,
+     "precision": 1.0,
+     "recall": 0.667,
+     "f1": 0.8
+    },
+    "name match": {
+     "tp": 3,
+     "fp": 10,
+     "fn": 0,
+     "n": 13,
+     "precision": 0.231,
+     "recall": 1.0,
+     "f1": 0.375
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "tests_passed": 2,
+   "line_coverage": 0.2655,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "fastapi-injectable": {
+   "stratum": "MED",
+   "observed_edges": 46,
+   "edge_recall": {
+    "pycg": 0.696,
+    "pyright": 0.826,
+    "union": 0.826
+   },
+   "items": 90,
+   "real": 39,
+   "unnamed": 7,
+   "scores": {
+    "PyCG": {
+     "tp": 32,
+     "fp": 5,
+     "fn": 7,
+     "n": 90,
+     "precision": 0.865,
+     "recall": 0.821,
+     "f1": 0.842
+    },
+    "Pyright": {
+     "tp": 38,
+     "fp": 5,
+     "fn": 1,
+     "n": 90,
+     "precision": 0.884,
+     "recall": 0.974,
+     "f1": 0.927
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 38,
+     "fp": 5,
+     "fn": 1,
+     "n": 90,
+     "precision": 0.884,
+     "recall": 0.974,
+     "f1": 0.927
+    },
+    "name match": {
+     "tp": 39,
+     "fp": 51,
+     "fn": 0,
+     "n": 90,
+     "precision": 0.433,
+     "recall": 1.0,
+     "f1": 0.605
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "tests_passed": 80,
+   "line_coverage": 0.6489,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "geocube": {
+   "stratum": "HIGH",
+   "observed_edges": 45,
+   "edge_recall": {
+    "pycg": 0.644,
+    "pyright": 0.867,
+    "union": 0.867
+   },
+   "items": 78,
+   "real": 40,
+   "unnamed": 5,
+   "scores": {
+    "PyCG": {
+     "tp": 29,
+     "fp": 0,
+     "fn": 11,
+     "n": 78,
+     "precision": 1.0,
+     "recall": 0.725,
+     "f1": 0.841
+    },
+    "Pyright": {
+     "tp": 39,
+     "fp": 0,
+     "fn": 1,
+     "n": 78,
+     "precision": 1.0,
+     "recall": 0.975,
+     "f1": 0.987
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 39,
+     "fp": 0,
+     "fn": 1,
+     "n": 78,
+     "precision": 1.0,
+     "recall": 0.975,
+     "f1": 0.987
+    },
+    "name match": {
+     "tp": 40,
+     "fp": 38,
+     "fn": 0,
+     "n": 78,
+     "precision": 0.513,
+     "recall": 1.0,
+     "f1": 0.678
+    },
+    "shared-name union": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 1,
+     "n": 13,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.667
+    }
+   },
+   "tests_passed": 31,
+   "line_coverage": 0.823,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "json-logging-python": {
+   "stratum": "HIGH",
+   "observed_edges": 86,
+   "edge_recall": {
+    "pycg": 0.291,
+    "pyright": 0.407,
+    "union": 0.407
+   },
+   "items": 208,
+   "real": 75,
+   "unnamed": 11,
+   "scores": {
+    "PyCG": {
+     "tp": 25,
+     "fp": 1,
+     "fn": 50,
+     "n": 208,
+     "precision": 0.962,
+     "recall": 0.333,
+     "f1": 0.495
+    },
+    "Pyright": {
+     "tp": 34,
+     "fp": 2,
+     "fn": 41,
+     "n": 208,
+     "precision": 0.944,
+     "recall": 0.453,
+     "f1": 0.613
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 34,
+     "fp": 2,
+     "fn": 41,
+     "n": 208,
+     "precision": 0.944,
+     "recall": 0.453,
+     "f1": 0.613
+    },
+    "name match": {
+     "tp": 75,
+     "fp": 133,
+     "fn": 0,
+     "n": 208,
+     "precision": 0.361,
+     "recall": 1.0,
+     "f1": 0.53
+    },
+    "shared-name union": {
+     "tp": 5,
+     "fp": 1,
+     "fn": 40,
+     "n": 146,
+     "precision": 0.833,
+     "recall": 0.111,
+     "f1": 0.196
+    }
+   },
+   "tests_passed": 26,
+   "line_coverage": 0.6935,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "jsonapi-requests": {
+   "stratum": "HIGH",
+   "observed_edges": 153,
+   "edge_recall": {
+    "pycg": 0.477,
+    "pyright": 0.497,
+    "union": 0.516
+   },
+   "items": 456,
+   "real": 133,
+   "unnamed": 20,
+   "scores": {
+    "PyCG": {
+     "tp": 71,
+     "fp": 9,
+     "fn": 62,
+     "n": 456,
+     "precision": 0.887,
+     "recall": 0.534,
+     "f1": 0.667
+    },
+    "Pyright": {
+     "tp": 76,
+     "fp": 7,
+     "fn": 57,
+     "n": 456,
+     "precision": 0.916,
+     "recall": 0.571,
+     "f1": 0.704
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 77,
+     "fp": 12,
+     "fn": 56,
+     "n": 456,
+     "precision": 0.865,
+     "recall": 0.579,
+     "f1": 0.694
+    },
+    "name match": {
+     "tp": 133,
+     "fp": 323,
+     "fn": 0,
+     "n": 456,
+     "precision": 0.292,
+     "recall": 1.0,
+     "f1": 0.452
+    },
+    "shared-name union": {
+     "tp": 14,
+     "fp": 12,
+     "fn": 29,
+     "n": 243,
+     "precision": 0.538,
+     "recall": 0.326,
+     "f1": 0.406
+    }
+   },
+   "tests_passed": 34,
+   "line_coverage": 0.8617,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "marshmallow-sqlalchemy": {
@@ -529,6 +1240,13 @@
      "recall": 0.5,
      "f1": 0.667
     }
+   },
+   "tests_passed": 61,
+   "line_coverage": 0.6468,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "mcp-sequential-thinking": {
@@ -588,6 +1306,79 @@
      "recall": 0.0,
      "f1": 0.0
     }
+   },
+   "tests_passed": 53,
+   "line_coverage": 0.7386,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "movingpandas": {
+   "stratum": "LOW",
+   "observed_edges": 382,
+   "edge_recall": {
+    "pycg": 0.479,
+    "pyright": 0.539,
+    "union": 0.568
+   },
+   "items": 698,
+   "real": 301,
+   "unnamed": 82,
+   "scores": {
+    "PyCG": {
+     "tp": 174,
+     "fp": 35,
+     "fn": 127,
+     "n": 698,
+     "precision": 0.833,
+     "recall": 0.578,
+     "f1": 0.682
+    },
+    "Pyright": {
+     "tp": 205,
+     "fp": 24,
+     "fn": 96,
+     "n": 698,
+     "precision": 0.895,
+     "recall": 0.681,
+     "f1": 0.774
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 207,
+     "fp": 36,
+     "fn": 94,
+     "n": 698,
+     "precision": 0.852,
+     "recall": 0.688,
+     "f1": 0.761
+    },
+    "name match": {
+     "tp": 301,
+     "fp": 397,
+     "fn": 0,
+     "n": 698,
+     "precision": 0.431,
+     "recall": 1.0,
+     "f1": 0.603
+    },
+    "shared-name union": {
+     "tp": 23,
+     "fp": 19,
+     "fn": 73,
+     "n": 349,
+     "precision": 0.548,
+     "recall": 0.24,
+     "f1": 0.333
+    }
+   },
+   "tests_passed": 209,
+   "line_coverage": 0.6673,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "pr-agent": {
@@ -647,6 +1438,145 @@
      "recall": 0.865,
      "f1": 0.845
     }
+   },
+   "tests_passed": 1710,
+   "line_coverage": 0.5445,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "puncover": {
+   "stratum": "HIGH",
+   "observed_edges": 22,
+   "edge_recall": {
+    "pycg": 0.682,
+    "pyright": 0.955,
+    "union": 0.955
+   },
+   "items": 65,
+   "real": 18,
+   "unnamed": 6,
+   "scores": {
+    "PyCG": {
+     "tp": 17,
+     "fp": 8,
+     "fn": 1,
+     "n": 65,
+     "precision": 0.68,
+     "recall": 0.944,
+     "f1": 0.791
+    },
+    "Pyright": {
+     "tp": 17,
+     "fp": 8,
+     "fn": 1,
+     "n": 65,
+     "precision": 0.68,
+     "recall": 0.944,
+     "f1": 0.791
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 17,
+     "fp": 8,
+     "fn": 1,
+     "n": 65,
+     "precision": 0.68,
+     "recall": 0.944,
+     "f1": 0.791
+    },
+    "name match": {
+     "tp": 18,
+     "fp": 47,
+     "fn": 0,
+     "n": 65,
+     "precision": 0.277,
+     "recall": 1.0,
+     "f1": 0.434
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "tests_passed": 49,
+   "line_coverage": 0.3825,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "pykwalify": {
+   "stratum": "MED",
+   "observed_edges": 192,
+   "edge_recall": {
+    "pycg": 0.427,
+    "pyright": 0.505,
+    "union": 0.526
+   },
+   "items": 311,
+   "real": 161,
+   "unnamed": 31,
+   "scores": {
+    "PyCG": {
+     "tp": 74,
+     "fp": 0,
+     "fn": 87,
+     "n": 311,
+     "precision": 1.0,
+     "recall": 0.46,
+     "f1": 0.63
+    },
+    "Pyright": {
+     "tp": 85,
+     "fp": 0,
+     "fn": 76,
+     "n": 311,
+     "precision": 1.0,
+     "recall": 0.528,
+     "f1": 0.691
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 87,
+     "fp": 0,
+     "fn": 74,
+     "n": 311,
+     "precision": 1.0,
+     "recall": 0.54,
+     "f1": 0.702
+    },
+    "name match": {
+     "tp": 161,
+     "fp": 150,
+     "fn": 0,
+     "n": 311,
+     "precision": 0.518,
+     "recall": 1.0,
+     "f1": 0.682
+    },
+    "shared-name union": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 1,
+     "n": 6,
+     "precision": 1.0,
+     "recall": 0.667,
+     "f1": 0.8
+    }
+   },
+   "tests_passed": 45,
+   "line_coverage": 0.6988,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "pyrlp": {
@@ -706,6 +1636,145 @@
      "recall": 0.263,
      "f1": 0.392
     }
+   },
+   "tests_passed": 241,
+   "line_coverage": 0.8713,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "pysui": {
+   "stratum": "MED",
+   "observed_edges": 1393,
+   "edge_recall": {
+    "pycg": 0.243,
+    "pyright": 0.268,
+    "union": 0.268
+   },
+   "items": 2999,
+   "real": 98,
+   "unnamed": 1296,
+   "scores": {
+    "PyCG": {
+     "tp": 48,
+     "fp": 163,
+     "fn": 50,
+     "n": 2999,
+     "precision": 0.227,
+     "recall": 0.49,
+     "f1": 0.311
+    },
+    "Pyright": {
+     "tp": 83,
+     "fp": 263,
+     "fn": 15,
+     "n": 2999,
+     "precision": 0.24,
+     "recall": 0.847,
+     "f1": 0.374
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 83,
+     "fp": 264,
+     "fn": 15,
+     "n": 2999,
+     "precision": 0.239,
+     "recall": 0.847,
+     "f1": 0.373
+    },
+    "name match": {
+     "tp": 98,
+     "fp": 2901,
+     "fn": 0,
+     "n": 2999,
+     "precision": 0.033,
+     "recall": 1.0,
+     "f1": 0.063
+    },
+    "shared-name union": {
+     "tp": 28,
+     "fp": 57,
+     "fn": 9,
+     "n": 2015,
+     "precision": 0.329,
+     "recall": 0.757,
+     "f1": 0.459
+    }
+   },
+   "tests_passed": 1041,
+   "line_coverage": 0.5633,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "python-lazy-object-proxy": {
+   "stratum": "HIGH",
+   "observed_edges": 187,
+   "edge_recall": {
+    "pycg": 0.016,
+    "pyright": 0.032,
+    "union": 0.032
+   },
+   "items": 23,
+   "real": 4,
+   "unnamed": 183,
+   "scores": {
+    "PyCG": {
+     "tp": 2,
+     "fp": 2,
+     "fn": 2,
+     "n": 23,
+     "precision": 0.5,
+     "recall": 0.5,
+     "f1": 0.5
+    },
+    "Pyright": {
+     "tp": 4,
+     "fp": 2,
+     "fn": 0,
+     "n": 23,
+     "precision": 0.667,
+     "recall": 1.0,
+     "f1": 0.8
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 4,
+     "fp": 2,
+     "fn": 0,
+     "n": 23,
+     "precision": 0.667,
+     "recall": 1.0,
+     "f1": 0.8
+    },
+    "name match": {
+     "tp": 4,
+     "fp": 19,
+     "fn": 0,
+     "n": 23,
+     "precision": 0.174,
+     "recall": 1.0,
+     "f1": 0.296
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "tests_passed": 1594,
+   "line_coverage": 0.9426,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "python-neutronclient": {
@@ -765,6 +1834,13 @@
      "recall": 1.0,
      "f1": 1.0
     }
+   },
+   "tests_passed": 154,
+   "line_coverage": 0.3445,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "redbeat": {
@@ -824,6 +1900,79 @@
      "recall": 0.0,
      "f1": 0.0
     }
+   },
+   "tests_passed": 87,
+   "line_coverage": 0.9019,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "rejax": {
+   "stratum": "HIGH",
+   "observed_edges": 174,
+   "edge_recall": {
+    "pycg": 0.276,
+    "pyright": 0.362,
+    "union": 0.362
+   },
+   "items": 516,
+   "real": 90,
+   "unnamed": 84,
+   "scores": {
+    "PyCG": {
+     "tp": 36,
+     "fp": 3,
+     "fn": 54,
+     "n": 516,
+     "precision": 0.923,
+     "recall": 0.4,
+     "f1": 0.558
+    },
+    "Pyright": {
+     "tp": 46,
+     "fp": 1,
+     "fn": 44,
+     "n": 516,
+     "precision": 0.979,
+     "recall": 0.511,
+     "f1": 0.672
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 46,
+     "fp": 3,
+     "fn": 44,
+     "n": 516,
+     "precision": 0.939,
+     "recall": 0.511,
+     "f1": 0.662
+    },
+    "name match": {
+     "tp": 90,
+     "fp": 426,
+     "fn": 0,
+     "n": 516,
+     "precision": 0.174,
+     "recall": 1.0,
+     "f1": 0.297
+    },
+    "shared-name union": {
+     "tp": 20,
+     "fp": 3,
+     "fn": 26,
+     "n": 400,
+     "precision": 0.87,
+     "recall": 0.435,
+     "f1": 0.58
+    }
+   },
+   "tests_passed": 37,
+   "line_coverage": 0.5652,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "rlm": {
@@ -883,6 +2032,13 @@
      "recall": 0.8,
      "f1": 0.741
     }
+   },
+   "tests_passed": 271,
+   "line_coverage": 0.3727,
+   "retrace": {
+    "jaccard": 0.986,
+    "only_first": 1,
+    "only_second": 1
    }
   },
   "scrapyrt": {
@@ -942,6 +2098,13 @@
      "recall": 1.0,
      "f1": 0.667
     }
+   },
+   "tests_passed": 58,
+   "line_coverage": 0.6377,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "sec-edgar": {
@@ -1001,6 +2164,13 @@
      "recall": 0.059,
      "f1": 0.108
     }
+   },
+   "tests_passed": 478,
+   "line_coverage": 0.8978,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "sqllineage": {
@@ -1060,6 +2230,211 @@
      "recall": 0.333,
      "f1": 0.429
     }
+   },
+   "tests_passed": 494,
+   "line_coverage": 0.9288,
+   "retrace": {
+    "jaccard": 0.9987,
+    "only_first": 1,
+    "only_second": 0
+   }
+  },
+  "tensortrade-ng": {
+   "stratum": "HIGH",
+   "observed_edges": 834,
+   "edge_recall": {
+    "pycg": 0.15,
+    "pyright": 0.423,
+    "union": 0.439
+   },
+   "items": 2370,
+   "real": 518,
+   "unnamed": 318,
+   "scores": {
+    "PyCG": {
+     "tp": 98,
+     "fp": 0,
+     "fn": 420,
+     "n": 2370,
+     "precision": 1.0,
+     "recall": 0.189,
+     "f1": 0.318
+    },
+    "Pyright": {
+     "tp": 297,
+     "fp": 18,
+     "fn": 221,
+     "n": 2370,
+     "precision": 0.943,
+     "recall": 0.573,
+     "f1": 0.713
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 297,
+     "fp": 18,
+     "fn": 221,
+     "n": 2370,
+     "precision": 0.943,
+     "recall": 0.573,
+     "f1": 0.713
+    },
+    "name match": {
+     "tp": 518,
+     "fp": 1852,
+     "fn": 0,
+     "n": 2370,
+     "precision": 0.219,
+     "recall": 1.0,
+     "f1": 0.359
+    },
+    "shared-name union": {
+     "tp": 68,
+     "fp": 16,
+     "fn": 122,
+     "n": 1364,
+     "precision": 0.81,
+     "recall": 0.358,
+     "f1": 0.496
+    }
+   },
+   "tests_passed": 278,
+   "line_coverage": 0.7525,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "term-image": {
+   "stratum": "MED",
+   "observed_edges": 336,
+   "edge_recall": {
+    "pycg": 0.432,
+    "pyright": 0.616,
+    "union": 0.652
+   },
+   "items": 744,
+   "real": 223,
+   "unnamed": 113,
+   "scores": {
+    "PyCG": {
+     "tp": 135,
+     "fp": 44,
+     "fn": 88,
+     "n": 744,
+     "precision": 0.754,
+     "recall": 0.605,
+     "f1": 0.672
+    },
+    "Pyright": {
+     "tp": 190,
+     "fp": 48,
+     "fn": 33,
+     "n": 744,
+     "precision": 0.798,
+     "recall": 0.852,
+     "f1": 0.824
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 194,
+     "fp": 53,
+     "fn": 29,
+     "n": 744,
+     "precision": 0.785,
+     "recall": 0.87,
+     "f1": 0.826
+    },
+    "name match": {
+     "tp": 223,
+     "fp": 521,
+     "fn": 0,
+     "n": 744,
+     "precision": 0.3,
+     "recall": 1.0,
+     "f1": 0.461
+    },
+    "shared-name union": {
+     "tp": 37,
+     "fp": 17,
+     "fn": 20,
+     "n": 300,
+     "precision": 0.685,
+     "recall": 0.649,
+     "f1": 0.667
+    }
+   },
+   "tests_passed": 1210,
+   "line_coverage": 0.8583,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
+   }
+  },
+  "throttled": {
+   "stratum": "LOW",
+   "observed_edges": 13,
+   "edge_recall": {
+    "pycg": 1.0,
+    "pyright": 1.0,
+    "union": 1.0
+   },
+   "items": 47,
+   "real": 13,
+   "unnamed": 0,
+   "scores": {
+    "PyCG": {
+     "tp": 13,
+     "fp": 27,
+     "fn": 0,
+     "n": 47,
+     "precision": 0.325,
+     "recall": 1.0,
+     "f1": 0.491
+    },
+    "Pyright": {
+     "tp": 13,
+     "fp": 27,
+     "fn": 0,
+     "n": 47,
+     "precision": 0.325,
+     "recall": 1.0,
+     "f1": 0.491
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 13,
+     "fp": 27,
+     "fn": 0,
+     "n": 47,
+     "precision": 0.325,
+     "recall": 1.0,
+     "f1": 0.491
+    },
+    "name match": {
+     "tp": 13,
+     "fp": 34,
+     "fn": 0,
+     "n": 47,
+     "precision": 0.277,
+     "recall": 1.0,
+     "f1": 0.433
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "tests_passed": 51,
+   "line_coverage": 0.4418,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   },
   "toolz": {
@@ -1119,7 +2494,9 @@
      "recall": 1.0,
      "f1": 0.8
     }
-   }
+   },
+   "tests_passed": 180,
+   "line_coverage": 0.8995
   },
   "xacro": {
    "stratum": "HIGH",
@@ -1178,397 +2555,3657 @@
      "recall": 0.0,
      "f1": 0.0
     }
+   },
+   "tests_passed": 119,
+   "line_coverage": 0.7752,
+   "retrace": {
+    "jaccard": 1.0,
+    "only_first": 0,
+    "only_second": 0
    }
   }
  },
  "pooled": {
   "PyCG": {
-   "tp": 2558,
-   "fp": 198,
-   "fn": 1890,
-   "n": 16514,
-   "precision": 0.928,
-   "recall": 0.575,
-   "f1": 0.71
+   "tp": 3694,
+   "fp": 558,
+   "fn": 3588,
+   "n": 33020,
+   "precision": 0.869,
+   "recall": 0.507,
+   "f1": 0.641
   },
   "Pyright": {
-   "tp": 3169,
-   "fp": 318,
-   "fn": 1279,
-   "n": 16514,
-   "precision": 0.909,
-   "recall": 0.712,
-   "f1": 0.799
+   "tp": 5036,
+   "fp": 839,
+   "fn": 2246,
+   "n": 33020,
+   "precision": 0.857,
+   "recall": 0.692,
+   "f1": 0.766
   },
   "PyCG ∪ Pyright": {
-   "tp": 3230,
-   "fp": 334,
-   "fn": 1218,
-   "n": 16514,
-   "precision": 0.906,
-   "recall": 0.726,
-   "f1": 0.806
+   "tp": 5119,
+   "fp": 882,
+   "fn": 2163,
+   "n": 33020,
+   "precision": 0.853,
+   "recall": 0.703,
+   "f1": 0.771
   },
   "name match": {
-   "tp": 4448,
-   "fp": 12066,
+   "tp": 7282,
+   "fp": 25738,
    "fn": 0,
-   "n": 16514,
-   "precision": 0.269,
+   "n": 33020,
+   "precision": 0.221,
    "recall": 1.0,
-   "f1": 0.424
+   "f1": 0.361
   }
  },
  "llm": {
   "gpt-oss-120b": {
    "model": {
-    "tp": 809,
-    "fp": 424,
-    "fn": 137,
-    "n": 3502,
-    "precision": 0.656,
-    "recall": 0.855,
-    "f1": 0.743
+    "tp": 1196,
+    "fp": 801,
+    "fn": 172,
+    "n": 5616,
+    "precision": 0.599,
+    "recall": 0.874,
+    "f1": 0.711
    },
    "static union, same items": {
-    "tp": 634,
-    "fp": 88,
-    "fn": 312,
-    "n": 3502,
-    "precision": 0.878,
-    "recall": 0.67,
-    "f1": 0.76
+    "tp": 885,
+    "fp": 186,
+    "fn": 483,
+    "n": 5616,
+    "precision": 0.826,
+    "recall": 0.647,
+    "f1": 0.726
    },
    "repos": [
+    "PyFunceble",
     "ShivyC",
+    "TradingView-Screener",
     "all-repos",
     "apiflask",
     "autoray",
+    "aws-dynamodb-encryption-python",
     "bedrock-agentcore-sdk-python",
     "click",
+    "compressed-tensors",
     "confluence-markdown-exporter",
     "creosote",
+    "deepblast",
+    "django-ses",
+    "fastapi-injectable",
+    "geocube",
+    "json-logging-python",
+    "jsonapi-requests",
     "marshmallow-sqlalchemy",
     "mcp-sequential-thinking",
+    "movingpandas",
     "pr-agent",
+    "puncover",
+    "pykwalify",
     "pyrlp",
+    "pysui",
+    "python-lazy-object-proxy",
     "python-neutronclient",
     "redbeat",
+    "rejax",
     "rlm",
     "scrapyrt",
     "sec-edgar",
     "sqllineage",
+    "tensortrade-ng",
+    "term-image",
+    "throttled",
     "toolz",
     "xacro"
    ]
   },
   "gpt-oss-20b": {
    "model": {
-    "tp": 776,
-    "fp": 345,
-    "fn": 170,
-    "n": 3498,
-    "precision": 0.692,
-    "recall": 0.82,
-    "f1": 0.751
+    "tp": 1135,
+    "fp": 679,
+    "fn": 233,
+    "n": 5611,
+    "precision": 0.626,
+    "recall": 0.83,
+    "f1": 0.713
    },
    "static union, same items": {
-    "tp": 634,
-    "fp": 88,
-    "fn": 312,
-    "n": 3498,
-    "precision": 0.878,
-    "recall": 0.67,
-    "f1": 0.76
+    "tp": 885,
+    "fp": 186,
+    "fn": 483,
+    "n": 5611,
+    "precision": 0.826,
+    "recall": 0.647,
+    "f1": 0.726
    },
    "repos": [
+    "PyFunceble",
     "ShivyC",
+    "TradingView-Screener",
     "all-repos",
     "apiflask",
     "autoray",
+    "aws-dynamodb-encryption-python",
     "bedrock-agentcore-sdk-python",
     "click",
+    "compressed-tensors",
     "confluence-markdown-exporter",
     "creosote",
+    "deepblast",
+    "django-ses",
+    "fastapi-injectable",
+    "geocube",
+    "json-logging-python",
+    "jsonapi-requests",
     "marshmallow-sqlalchemy",
     "mcp-sequential-thinking",
+    "movingpandas",
     "pr-agent",
+    "puncover",
+    "pykwalify",
     "pyrlp",
+    "pysui",
+    "python-lazy-object-proxy",
     "python-neutronclient",
     "redbeat",
+    "rejax",
     "rlm",
     "scrapyrt",
     "sec-edgar",
     "sqllineage",
+    "tensortrade-ng",
+    "term-image",
+    "throttled",
     "toolz",
     "xacro"
    ]
   },
   "qwen3.8-27b": {
    "model": {
-    "tp": 729,
-    "fp": 244,
-    "fn": 217,
-    "n": 3489,
-    "precision": 0.749,
-    "recall": 0.771,
-    "f1": 0.76
+    "tp": 1078,
+    "fp": 453,
+    "fn": 290,
+    "n": 5578,
+    "precision": 0.704,
+    "recall": 0.788,
+    "f1": 0.744
    },
    "static union, same items": {
-    "tp": 634,
-    "fp": 88,
-    "fn": 312,
-    "n": 3489,
-    "precision": 0.878,
-    "recall": 0.67,
-    "f1": 0.76
+    "tp": 885,
+    "fp": 186,
+    "fn": 483,
+    "n": 5578,
+    "precision": 0.826,
+    "recall": 0.647,
+    "f1": 0.726
    },
    "repos": [
+    "PyFunceble",
     "ShivyC",
+    "TradingView-Screener",
     "all-repos",
     "apiflask",
     "autoray",
+    "aws-dynamodb-encryption-python",
     "bedrock-agentcore-sdk-python",
     "click",
+    "compressed-tensors",
     "confluence-markdown-exporter",
     "creosote",
+    "deepblast",
+    "django-ses",
+    "fastapi-injectable",
+    "geocube",
+    "json-logging-python",
+    "jsonapi-requests",
     "marshmallow-sqlalchemy",
     "mcp-sequential-thinking",
+    "movingpandas",
     "pr-agent",
+    "puncover",
+    "pykwalify",
     "pyrlp",
+    "pysui",
+    "python-lazy-object-proxy",
     "python-neutronclient",
     "redbeat",
+    "rejax",
     "rlm",
     "scrapyrt",
     "sec-edgar",
     "sqllineage",
+    "tensortrade-ng",
+    "term-image",
+    "throttled",
     "toolz",
     "xacro"
    ]
   }
  },
  "misses": {
-  "call/shared": 882,
-  "call/unique": 72,
-  "constructor/unique": 19,
-  "reference/unique": 157,
-  "reference/shared": 88
+  "constructor/unique": 33,
+  "reference/unique": 501,
+  "reference/shared": 321,
+  "call/shared": 1172,
+  "call/unique": 136
  },
- "unnamed": 1033,
- "real_items": 4448,
+ "unnamed": 3659,
+ "real_items": 7282,
  "by_stratum": {
-  "LOW/PyCG": {
-   "tp": 938,
-   "fp": 98,
-   "fn": 947,
-   "n": 5661,
-   "precision": 0.905,
-   "recall": 0.498,
-   "f1": 0.642
-  },
-  "LOW/Pyright": {
-   "tp": 1114,
-   "fp": 154,
-   "fn": 771,
-   "n": 5661,
-   "precision": 0.879,
-   "recall": 0.591,
-   "f1": 0.707
-  },
-  "LOW/PyCG ∪ Pyright": {
-   "tp": 1170,
-   "fp": 156,
-   "fn": 715,
-   "n": 5661,
-   "precision": 0.882,
-   "recall": 0.621,
-   "f1": 0.729
-  },
-  "LOW/name match": {
-   "tp": 1885,
-   "fp": 3776,
-   "fn": 0,
-   "n": 5661,
-   "precision": 0.333,
-   "recall": 1.0,
-   "f1": 0.5
-  },
   "MED/PyCG": {
-   "tp": 907,
-   "fp": 76,
-   "fn": 560,
-   "n": 4268,
-   "precision": 0.923,
-   "recall": 0.618,
-   "f1": 0.74
+   "tp": 1324,
+   "fp": 327,
+   "fn": 1404,
+   "n": 14654,
+   "precision": 0.802,
+   "recall": 0.485,
+   "f1": 0.605
   },
   "MED/Pyright": {
-   "tp": 1158,
-   "fp": 127,
-   "fn": 309,
-   "n": 4268,
-   "precision": 0.901,
-   "recall": 0.789,
-   "f1": 0.842
+   "tp": 1946,
+   "fp": 528,
+   "fn": 782,
+   "n": 14654,
+   "precision": 0.787,
+   "recall": 0.713,
+   "f1": 0.748
   },
   "MED/PyCG ∪ Pyright": {
-   "tp": 1160,
-   "fp": 136,
-   "fn": 307,
-   "n": 4268,
-   "precision": 0.895,
-   "recall": 0.791,
-   "f1": 0.84
+   "tp": 1967,
+   "fp": 544,
+   "fn": 761,
+   "n": 14654,
+   "precision": 0.783,
+   "recall": 0.721,
+   "f1": 0.751
   },
   "MED/name match": {
-   "tp": 1467,
-   "fp": 2801,
+   "tp": 2728,
+   "fp": 11926,
    "fn": 0,
-   "n": 4268,
-   "precision": 0.344,
+   "n": 14654,
+   "precision": 0.186,
    "recall": 1.0,
-   "f1": 0.512
+   "f1": 0.314
+  },
+  "LOW/PyCG": {
+   "tp": 1127,
+   "fp": 160,
+   "fn": 1091,
+   "n": 6460,
+   "precision": 0.876,
+   "recall": 0.508,
+   "f1": 0.643
+  },
+  "LOW/Pyright": {
+   "tp": 1351,
+   "fp": 205,
+   "fn": 867,
+   "n": 6460,
+   "precision": 0.868,
+   "recall": 0.609,
+   "f1": 0.716
+  },
+  "LOW/PyCG ∪ Pyright": {
+   "tp": 1409,
+   "fp": 219,
+   "fn": 809,
+   "n": 6460,
+   "precision": 0.865,
+   "recall": 0.635,
+   "f1": 0.733
+  },
+  "LOW/name match": {
+   "tp": 2218,
+   "fp": 4242,
+   "fn": 0,
+   "n": 6460,
+   "precision": 0.343,
+   "recall": 1.0,
+   "f1": 0.511
   },
   "HIGH/PyCG": {
-   "tp": 713,
-   "fp": 24,
-   "fn": 383,
-   "n": 6585,
-   "precision": 0.967,
-   "recall": 0.651,
-   "f1": 0.778
+   "tp": 1243,
+   "fp": 71,
+   "fn": 1093,
+   "n": 11906,
+   "precision": 0.946,
+   "recall": 0.532,
+   "f1": 0.681
   },
   "HIGH/Pyright": {
-   "tp": 897,
-   "fp": 37,
-   "fn": 199,
-   "n": 6585,
-   "precision": 0.96,
-   "recall": 0.818,
-   "f1": 0.884
+   "tp": 1739,
+   "fp": 106,
+   "fn": 597,
+   "n": 11906,
+   "precision": 0.943,
+   "recall": 0.744,
+   "f1": 0.832
   },
   "HIGH/PyCG ∪ Pyright": {
-   "tp": 900,
-   "fp": 42,
-   "fn": 196,
-   "n": 6585,
-   "precision": 0.955,
-   "recall": 0.821,
-   "f1": 0.883
+   "tp": 1743,
+   "fp": 119,
+   "fn": 593,
+   "n": 11906,
+   "precision": 0.936,
+   "recall": 0.746,
+   "f1": 0.83
   },
   "HIGH/name match": {
-   "tp": 1096,
-   "fp": 5489,
+   "tp": 2336,
+   "fp": 9570,
    "fn": 0,
-   "n": 6585,
-   "precision": 0.166,
+   "n": 11906,
+   "precision": 0.196,
    "recall": 1.0,
-   "f1": 0.285
+   "f1": 0.328
   }
  },
- "edge_recall_union_median": 0.776,
+ "llm_by_repo": {
+  "gpt-oss-120b": {
+   "PyFunceble": {
+    "model": {
+     "tp": 32,
+     "fp": 14,
+     "fn": 14,
+     "n": 416,
+     "precision": 0.696,
+     "recall": 0.696,
+     "f1": 0.696
+    },
+    "static union, same items": {
+     "tp": 22,
+     "fp": 1,
+     "fn": 24,
+     "n": 416,
+     "precision": 0.957,
+     "recall": 0.478,
+     "f1": 0.638
+    }
+   },
+   "ShivyC": {
+    "model": {
+     "tp": 101,
+     "fp": 60,
+     "fn": 77,
+     "n": 495,
+     "precision": 0.627,
+     "recall": 0.567,
+     "f1": 0.596
+    },
+    "static union, same items": {
+     "tp": 63,
+     "fp": 6,
+     "fn": 115,
+     "n": 495,
+     "precision": 0.913,
+     "recall": 0.354,
+     "f1": 0.51
+    }
+   },
+   "TradingView-Screener": {
+    "model": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 18,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "static union, same items": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 18,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "all-repos": {
+    "model": {
+     "tp": 35,
+     "fp": 13,
+     "fn": 8,
+     "n": 169,
+     "precision": 0.729,
+     "recall": 0.814,
+     "f1": 0.769
+    },
+    "static union, same items": {
+     "tp": 32,
+     "fp": 2,
+     "fn": 11,
+     "n": 169,
+     "precision": 0.941,
+     "recall": 0.744,
+     "f1": 0.831
+    }
+   },
+   "apiflask": {
+    "model": {
+     "tp": 29,
+     "fp": 8,
+     "fn": 0,
+     "n": 104,
+     "precision": 0.784,
+     "recall": 1.0,
+     "f1": 0.879
+    },
+    "static union, same items": {
+     "tp": 22,
+     "fp": 1,
+     "fn": 7,
+     "n": 104,
+     "precision": 0.957,
+     "recall": 0.759,
+     "f1": 0.846
+    }
+   },
+   "autoray": {
+    "model": {
+     "tp": 18,
+     "fp": 5,
+     "fn": 0,
+     "n": 220,
+     "precision": 0.783,
+     "recall": 1.0,
+     "f1": 0.878
+    },
+    "static union, same items": {
+     "tp": 18,
+     "fp": 0,
+     "fn": 0,
+     "n": 220,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "aws-dynamodb-encryption-python": {
+    "model": {
+     "tp": 9,
+     "fp": 50,
+     "fn": 0,
+     "n": 136,
+     "precision": 0.153,
+     "recall": 1.0,
+     "f1": 0.265
+    },
+    "static union, same items": {
+     "tp": 9,
+     "fp": 0,
+     "fn": 0,
+     "n": 136,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "bedrock-agentcore-sdk-python": {
+    "model": {
+     "tp": 20,
+     "fp": 17,
+     "fn": 1,
+     "n": 81,
+     "precision": 0.541,
+     "recall": 0.952,
+     "f1": 0.69
+    },
+    "static union, same items": {
+     "tp": 13,
+     "fp": 6,
+     "fn": 8,
+     "n": 81,
+     "precision": 0.684,
+     "recall": 0.619,
+     "f1": 0.65
+    }
+   },
+   "click": {
+    "model": {
+     "tp": 200,
+     "fp": 55,
+     "fn": 10,
+     "n": 906,
+     "precision": 0.784,
+     "recall": 0.952,
+     "f1": 0.86
+    },
+    "static union, same items": {
+     "tp": 159,
+     "fp": 13,
+     "fn": 51,
+     "n": 906,
+     "precision": 0.924,
+     "recall": 0.757,
+     "f1": 0.832
+    }
+   },
+   "compressed-tensors": {
+    "model": {
+     "tp": 23,
+     "fp": 53,
+     "fn": 0,
+     "n": 192,
+     "precision": 0.303,
+     "recall": 1.0,
+     "f1": 0.465
+    },
+    "static union, same items": {
+     "tp": 20,
+     "fp": 6,
+     "fn": 3,
+     "n": 192,
+     "precision": 0.769,
+     "recall": 0.87,
+     "f1": 0.816
+    }
+   },
+   "confluence-markdown-exporter": {
+    "model": {
+     "tp": 32,
+     "fp": 21,
+     "fn": 0,
+     "n": 148,
+     "precision": 0.604,
+     "recall": 1.0,
+     "f1": 0.753
+    },
+    "static union, same items": {
+     "tp": 21,
+     "fp": 8,
+     "fn": 11,
+     "n": 148,
+     "precision": 0.724,
+     "recall": 0.656,
+     "f1": 0.689
+    }
+   },
+   "creosote": {
+    "model": {
+     "tp": 7,
+     "fp": 2,
+     "fn": 1,
+     "n": 15,
+     "precision": 0.778,
+     "recall": 0.875,
+     "f1": 0.824
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 0,
+     "fn": 1,
+     "n": 15,
+     "precision": 1.0,
+     "recall": 0.875,
+     "f1": 0.933
+    }
+   },
+   "deepblast": {
+    "model": {
+     "tp": 16,
+     "fp": 20,
+     "fn": 0,
+     "n": 87,
+     "precision": 0.444,
+     "recall": 1.0,
+     "f1": 0.615
+    },
+    "static union, same items": {
+     "tp": 13,
+     "fp": 6,
+     "fn": 3,
+     "n": 87,
+     "precision": 0.684,
+     "recall": 0.812,
+     "f1": 0.743
+    }
+   },
+   "django-ses": {
+    "model": {
+     "tp": 2,
+     "fp": 2,
+     "fn": 0,
+     "n": 6,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.667
+    },
+    "static union, same items": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 1,
+     "n": 6,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.667
+    }
+   },
+   "fastapi-injectable": {
+    "model": {
+     "tp": 13,
+     "fp": 11,
+     "fn": 0,
+     "n": 52,
+     "precision": 0.542,
+     "recall": 1.0,
+     "f1": 0.703
+    },
+    "static union, same items": {
+     "tp": 12,
+     "fp": 5,
+     "fn": 1,
+     "n": 52,
+     "precision": 0.706,
+     "recall": 0.923,
+     "f1": 0.8
+    }
+   },
+   "geocube": {
+    "model": {
+     "tp": 9,
+     "fp": 6,
+     "fn": 0,
+     "n": 39,
+     "precision": 0.6,
+     "recall": 1.0,
+     "f1": 0.75
+    },
+    "static union, same items": {
+     "tp": 8,
+     "fp": 0,
+     "fn": 1,
+     "n": 39,
+     "precision": 1.0,
+     "recall": 0.889,
+     "f1": 0.941
+    }
+   },
+   "json-logging-python": {
+    "model": {
+     "tp": 34,
+     "fp": 36,
+     "fn": 0,
+     "n": 101,
+     "precision": 0.486,
+     "recall": 1.0,
+     "f1": 0.654
+    },
+    "static union, same items": {
+     "tp": 16,
+     "fp": 2,
+     "fn": 18,
+     "n": 101,
+     "precision": 0.889,
+     "recall": 0.471,
+     "f1": 0.615
+    }
+   },
+   "jsonapi-requests": {
+    "model": {
+     "tp": 37,
+     "fp": 25,
+     "fn": 6,
+     "n": 113,
+     "precision": 0.597,
+     "recall": 0.86,
+     "f1": 0.705
+    },
+    "static union, same items": {
+     "tp": 15,
+     "fp": 1,
+     "fn": 28,
+     "n": 113,
+     "precision": 0.938,
+     "recall": 0.349,
+     "f1": 0.508
+    }
+   },
+   "marshmallow-sqlalchemy": {
+    "model": {
+     "tp": 14,
+     "fp": 4,
+     "fn": 0,
+     "n": 48,
+     "precision": 0.778,
+     "recall": 1.0,
+     "f1": 0.875
+    },
+    "static union, same items": {
+     "tp": 11,
+     "fp": 1,
+     "fn": 3,
+     "n": 48,
+     "precision": 0.917,
+     "recall": 0.786,
+     "f1": 0.846
+    }
+   },
+   "mcp-sequential-thinking": {
+    "model": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "n": 7,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "static union, same items": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "n": 7,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "movingpandas": {
+    "model": {
+     "tp": 42,
+     "fp": 20,
+     "fn": 0,
+     "n": 128,
+     "precision": 0.677,
+     "recall": 1.0,
+     "f1": 0.808
+    },
+    "static union, same items": {
+     "tp": 25,
+     "fp": 9,
+     "fn": 17,
+     "n": 128,
+     "precision": 0.735,
+     "recall": 0.595,
+     "f1": 0.658
+    }
+   },
+   "pr-agent": {
+    "model": {
+     "tp": 43,
+     "fp": 85,
+     "fn": 1,
+     "n": 180,
+     "precision": 0.336,
+     "recall": 0.977,
+     "f1": 0.5
+    },
+    "static union, same items": {
+     "tp": 41,
+     "fp": 21,
+     "fn": 3,
+     "n": 180,
+     "precision": 0.661,
+     "recall": 0.932,
+     "f1": 0.774
+    }
+   },
+   "puncover": {
+    "model": {
+     "tp": 8,
+     "fp": 9,
+     "fn": 0,
+     "n": 27,
+     "precision": 0.471,
+     "recall": 1.0,
+     "f1": 0.64
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 8,
+     "fn": 1,
+     "n": 27,
+     "precision": 0.467,
+     "recall": 0.875,
+     "f1": 0.609
+    }
+   },
+   "pykwalify": {
+    "model": {
+     "tp": 56,
+     "fp": 3,
+     "fn": 8,
+     "n": 135,
+     "precision": 0.949,
+     "recall": 0.875,
+     "f1": 0.911
+    },
+    "static union, same items": {
+     "tp": 26,
+     "fp": 0,
+     "fn": 38,
+     "n": 135,
+     "precision": 1.0,
+     "recall": 0.406,
+     "f1": 0.578
+    }
+   },
+   "pyrlp": {
+    "model": {
+     "tp": 43,
+     "fp": 34,
+     "fn": 19,
+     "n": 164,
+     "precision": 0.558,
+     "recall": 0.694,
+     "f1": 0.619
+    },
+    "static union, same items": {
+     "tp": 32,
+     "fp": 4,
+     "fn": 30,
+     "n": 164,
+     "precision": 0.889,
+     "recall": 0.516,
+     "f1": 0.653
+    }
+   },
+   "pysui": {
+    "model": {
+     "tp": 5,
+     "fp": 18,
+     "fn": 0,
+     "n": 133,
+     "precision": 0.217,
+     "recall": 1.0,
+     "f1": 0.357
+    },
+    "static union, same items": {
+     "tp": 5,
+     "fp": 16,
+     "fn": 0,
+     "n": 133,
+     "precision": 0.238,
+     "recall": 1.0,
+     "f1": 0.385
+    }
+   },
+   "python-lazy-object-proxy": {
+    "model": {
+     "tp": 3,
+     "fp": 6,
+     "fn": 0,
+     "n": 21,
+     "precision": 0.333,
+     "recall": 1.0,
+     "f1": 0.5
+    },
+    "static union, same items": {
+     "tp": 3,
+     "fp": 2,
+     "fn": 0,
+     "n": 21,
+     "precision": 0.6,
+     "recall": 1.0,
+     "f1": 0.75
+    }
+   },
+   "python-neutronclient": {
+    "model": {
+     "tp": 25,
+     "fp": 23,
+     "fn": 2,
+     "n": 130,
+     "precision": 0.521,
+     "recall": 0.926,
+     "f1": 0.667
+    },
+    "static union, same items": {
+     "tp": 25,
+     "fp": 2,
+     "fn": 2,
+     "n": 130,
+     "precision": 0.926,
+     "recall": 0.926,
+     "f1": 0.926
+    }
+   },
+   "redbeat": {
+    "model": {
+     "tp": 44,
+     "fp": 7,
+     "fn": 0,
+     "n": 84,
+     "precision": 0.863,
+     "recall": 1.0,
+     "f1": 0.926
+    },
+    "static union, same items": {
+     "tp": 29,
+     "fp": 0,
+     "fn": 15,
+     "n": 84,
+     "precision": 1.0,
+     "recall": 0.659,
+     "f1": 0.795
+    }
+   },
+   "rejax": {
+    "model": {
+     "tp": 16,
+     "fp": 25,
+     "fn": 0,
+     "n": 117,
+     "precision": 0.39,
+     "recall": 1.0,
+     "f1": 0.561
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 0,
+     "fn": 9,
+     "n": 117,
+     "precision": 1.0,
+     "recall": 0.438,
+     "f1": 0.609
+    }
+   },
+   "rlm": {
+    "model": {
+     "tp": 17,
+     "fp": 32,
+     "fn": 0,
+     "n": 136,
+     "precision": 0.347,
+     "recall": 1.0,
+     "f1": 0.515
+    },
+    "static union, same items": {
+     "tp": 15,
+     "fp": 5,
+     "fn": 2,
+     "n": 136,
+     "precision": 0.75,
+     "recall": 0.882,
+     "f1": 0.811
+    }
+   },
+   "scrapyrt": {
+    "model": {
+     "tp": 9,
+     "fp": 10,
+     "fn": 0,
+     "n": 31,
+     "precision": 0.474,
+     "recall": 1.0,
+     "f1": 0.643
+    },
+    "static union, same items": {
+     "tp": 8,
+     "fp": 3,
+     "fn": 1,
+     "n": 31,
+     "precision": 0.727,
+     "recall": 0.889,
+     "f1": 0.8
+    }
+   },
+   "sec-edgar": {
+    "model": {
+     "tp": 28,
+     "fp": 6,
+     "fn": 8,
+     "n": 164,
+     "precision": 0.824,
+     "recall": 0.778,
+     "f1": 0.8
+    },
+    "static union, same items": {
+     "tp": 16,
+     "fp": 3,
+     "fn": 20,
+     "n": 164,
+     "precision": 0.842,
+     "recall": 0.444,
+     "f1": 0.582
+    }
+   },
+   "sqllineage": {
+    "model": {
+     "tp": 83,
+     "fp": 5,
+     "fn": 9,
+     "n": 214,
+     "precision": 0.943,
+     "recall": 0.902,
+     "f1": 0.922
+    },
+    "static union, same items": {
+     "tp": 61,
+     "fp": 11,
+     "fn": 31,
+     "n": 214,
+     "precision": 0.847,
+     "recall": 0.663,
+     "f1": 0.744
+    }
+   },
+   "tensortrade-ng": {
+    "model": {
+     "tp": 34,
+     "fp": 24,
+     "fn": 2,
+     "n": 208,
+     "precision": 0.586,
+     "recall": 0.944,
+     "f1": 0.723
+    },
+    "static union, same items": {
+     "tp": 14,
+     "fp": 3,
+     "fn": 22,
+     "n": 208,
+     "precision": 0.824,
+     "recall": 0.389,
+     "f1": 0.528
+    }
+   },
+   "term-image": {
+    "model": {
+     "tp": 37,
+     "fp": 28,
+     "fn": 5,
+     "n": 142,
+     "precision": 0.569,
+     "recall": 0.881,
+     "f1": 0.692
+    },
+    "static union, same items": {
+     "tp": 37,
+     "fp": 12,
+     "fn": 5,
+     "n": 142,
+     "precision": 0.755,
+     "recall": 0.881,
+     "f1": 0.813
+    }
+   },
+   "throttled": {
+    "model": {
+     "tp": 11,
+     "fp": 27,
+     "fn": 0,
+     "n": 43,
+     "precision": 0.289,
+     "recall": 1.0,
+     "f1": 0.449
+    },
+    "static union, same items": {
+     "tp": 11,
+     "fp": 27,
+     "fn": 0,
+     "n": 43,
+     "precision": 0.289,
+     "recall": 1.0,
+     "f1": 0.449
+    }
+   },
+   "toolz": {
+    "model": {
+     "tp": 30,
+     "fp": 27,
+     "fn": 0,
+     "n": 130,
+     "precision": 0.526,
+     "recall": 1.0,
+     "f1": 0.69
+    },
+    "static union, same items": {
+     "tp": 29,
+     "fp": 0,
+     "fn": 1,
+     "n": 130,
+     "precision": 1.0,
+     "recall": 0.967,
+     "f1": 0.983
+    }
+   },
+   "xacro": {
+    "model": {
+     "tp": 30,
+     "fp": 10,
+     "fn": 1,
+     "n": 76,
+     "precision": 0.75,
+     "recall": 0.968,
+     "f1": 0.845
+    },
+    "static union, same items": {
+     "tp": 31,
+     "fp": 2,
+     "fn": 0,
+     "n": 76,
+     "precision": 0.939,
+     "recall": 1.0,
+     "f1": 0.969
+    }
+   }
+  },
+  "gpt-oss-20b": {
+   "PyFunceble": {
+    "model": {
+     "tp": 30,
+     "fp": 10,
+     "fn": 16,
+     "n": 416,
+     "precision": 0.75,
+     "recall": 0.652,
+     "f1": 0.698
+    },
+    "static union, same items": {
+     "tp": 22,
+     "fp": 1,
+     "fn": 24,
+     "n": 416,
+     "precision": 0.957,
+     "recall": 0.478,
+     "f1": 0.638
+    }
+   },
+   "ShivyC": {
+    "model": {
+     "tp": 98,
+     "fp": 34,
+     "fn": 80,
+     "n": 495,
+     "precision": 0.742,
+     "recall": 0.551,
+     "f1": 0.632
+    },
+    "static union, same items": {
+     "tp": 63,
+     "fp": 6,
+     "fn": 115,
+     "n": 495,
+     "precision": 0.913,
+     "recall": 0.354,
+     "f1": 0.51
+    }
+   },
+   "TradingView-Screener": {
+    "model": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 18,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "static union, same items": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 18,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "all-repos": {
+    "model": {
+     "tp": 35,
+     "fp": 16,
+     "fn": 8,
+     "n": 169,
+     "precision": 0.686,
+     "recall": 0.814,
+     "f1": 0.745
+    },
+    "static union, same items": {
+     "tp": 32,
+     "fp": 2,
+     "fn": 11,
+     "n": 169,
+     "precision": 0.941,
+     "recall": 0.744,
+     "f1": 0.831
+    }
+   },
+   "apiflask": {
+    "model": {
+     "tp": 27,
+     "fp": 2,
+     "fn": 2,
+     "n": 104,
+     "precision": 0.931,
+     "recall": 0.931,
+     "f1": 0.931
+    },
+    "static union, same items": {
+     "tp": 22,
+     "fp": 1,
+     "fn": 7,
+     "n": 104,
+     "precision": 0.957,
+     "recall": 0.759,
+     "f1": 0.846
+    }
+   },
+   "autoray": {
+    "model": {
+     "tp": 15,
+     "fp": 7,
+     "fn": 3,
+     "n": 220,
+     "precision": 0.682,
+     "recall": 0.833,
+     "f1": 0.75
+    },
+    "static union, same items": {
+     "tp": 18,
+     "fp": 0,
+     "fn": 0,
+     "n": 220,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "aws-dynamodb-encryption-python": {
+    "model": {
+     "tp": 9,
+     "fp": 40,
+     "fn": 0,
+     "n": 136,
+     "precision": 0.184,
+     "recall": 1.0,
+     "f1": 0.31
+    },
+    "static union, same items": {
+     "tp": 9,
+     "fp": 0,
+     "fn": 0,
+     "n": 136,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "bedrock-agentcore-sdk-python": {
+    "model": {
+     "tp": 18,
+     "fp": 16,
+     "fn": 3,
+     "n": 81,
+     "precision": 0.529,
+     "recall": 0.857,
+     "f1": 0.655
+    },
+    "static union, same items": {
+     "tp": 13,
+     "fp": 6,
+     "fn": 8,
+     "n": 81,
+     "precision": 0.684,
+     "recall": 0.619,
+     "f1": 0.65
+    }
+   },
+   "click": {
+    "model": {
+     "tp": 188,
+     "fp": 44,
+     "fn": 22,
+     "n": 906,
+     "precision": 0.81,
+     "recall": 0.895,
+     "f1": 0.851
+    },
+    "static union, same items": {
+     "tp": 159,
+     "fp": 13,
+     "fn": 51,
+     "n": 906,
+     "precision": 0.924,
+     "recall": 0.757,
+     "f1": 0.832
+    }
+   },
+   "compressed-tensors": {
+    "model": {
+     "tp": 20,
+     "fp": 53,
+     "fn": 3,
+     "n": 192,
+     "precision": 0.274,
+     "recall": 0.87,
+     "f1": 0.417
+    },
+    "static union, same items": {
+     "tp": 20,
+     "fp": 6,
+     "fn": 3,
+     "n": 192,
+     "precision": 0.769,
+     "recall": 0.87,
+     "f1": 0.816
+    }
+   },
+   "confluence-markdown-exporter": {
+    "model": {
+     "tp": 31,
+     "fp": 19,
+     "fn": 1,
+     "n": 148,
+     "precision": 0.62,
+     "recall": 0.969,
+     "f1": 0.756
+    },
+    "static union, same items": {
+     "tp": 21,
+     "fp": 8,
+     "fn": 11,
+     "n": 148,
+     "precision": 0.724,
+     "recall": 0.656,
+     "f1": 0.689
+    }
+   },
+   "creosote": {
+    "model": {
+     "tp": 8,
+     "fp": 2,
+     "fn": 0,
+     "n": 15,
+     "precision": 0.8,
+     "recall": 1.0,
+     "f1": 0.889
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 0,
+     "fn": 1,
+     "n": 15,
+     "precision": 1.0,
+     "recall": 0.875,
+     "f1": 0.933
+    }
+   },
+   "deepblast": {
+    "model": {
+     "tp": 16,
+     "fp": 22,
+     "fn": 0,
+     "n": 87,
+     "precision": 0.421,
+     "recall": 1.0,
+     "f1": 0.593
+    },
+    "static union, same items": {
+     "tp": 13,
+     "fp": 6,
+     "fn": 3,
+     "n": 87,
+     "precision": 0.684,
+     "recall": 0.812,
+     "f1": 0.743
+    }
+   },
+   "django-ses": {
+    "model": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "n": 6,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "static union, same items": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 1,
+     "n": 6,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.667
+    }
+   },
+   "fastapi-injectable": {
+    "model": {
+     "tp": 11,
+     "fp": 9,
+     "fn": 2,
+     "n": 52,
+     "precision": 0.55,
+     "recall": 0.846,
+     "f1": 0.667
+    },
+    "static union, same items": {
+     "tp": 12,
+     "fp": 5,
+     "fn": 1,
+     "n": 52,
+     "precision": 0.706,
+     "recall": 0.923,
+     "f1": 0.8
+    }
+   },
+   "geocube": {
+    "model": {
+     "tp": 9,
+     "fp": 9,
+     "fn": 0,
+     "n": 39,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.667
+    },
+    "static union, same items": {
+     "tp": 8,
+     "fp": 0,
+     "fn": 1,
+     "n": 39,
+     "precision": 1.0,
+     "recall": 0.889,
+     "f1": 0.941
+    }
+   },
+   "json-logging-python": {
+    "model": {
+     "tp": 22,
+     "fp": 13,
+     "fn": 12,
+     "n": 101,
+     "precision": 0.629,
+     "recall": 0.647,
+     "f1": 0.638
+    },
+    "static union, same items": {
+     "tp": 16,
+     "fp": 2,
+     "fn": 18,
+     "n": 101,
+     "precision": 0.889,
+     "recall": 0.471,
+     "f1": 0.615
+    }
+   },
+   "jsonapi-requests": {
+    "model": {
+     "tp": 34,
+     "fp": 16,
+     "fn": 9,
+     "n": 112,
+     "precision": 0.68,
+     "recall": 0.791,
+     "f1": 0.731
+    },
+    "static union, same items": {
+     "tp": 15,
+     "fp": 1,
+     "fn": 28,
+     "n": 112,
+     "precision": 0.938,
+     "recall": 0.349,
+     "f1": 0.508
+    }
+   },
+   "marshmallow-sqlalchemy": {
+    "model": {
+     "tp": 13,
+     "fp": 2,
+     "fn": 1,
+     "n": 48,
+     "precision": 0.867,
+     "recall": 0.929,
+     "f1": 0.897
+    },
+    "static union, same items": {
+     "tp": 11,
+     "fp": 1,
+     "fn": 3,
+     "n": 48,
+     "precision": 0.917,
+     "recall": 0.786,
+     "f1": 0.846
+    }
+   },
+   "mcp-sequential-thinking": {
+    "model": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "n": 7,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "static union, same items": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "n": 7,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "movingpandas": {
+    "model": {
+     "tp": 40,
+     "fp": 24,
+     "fn": 2,
+     "n": 128,
+     "precision": 0.625,
+     "recall": 0.952,
+     "f1": 0.755
+    },
+    "static union, same items": {
+     "tp": 25,
+     "fp": 9,
+     "fn": 17,
+     "n": 128,
+     "precision": 0.735,
+     "recall": 0.595,
+     "f1": 0.658
+    }
+   },
+   "pr-agent": {
+    "model": {
+     "tp": 38,
+     "fp": 83,
+     "fn": 6,
+     "n": 180,
+     "precision": 0.314,
+     "recall": 0.864,
+     "f1": 0.461
+    },
+    "static union, same items": {
+     "tp": 41,
+     "fp": 21,
+     "fn": 3,
+     "n": 180,
+     "precision": 0.661,
+     "recall": 0.932,
+     "f1": 0.774
+    }
+   },
+   "puncover": {
+    "model": {
+     "tp": 7,
+     "fp": 8,
+     "fn": 1,
+     "n": 27,
+     "precision": 0.467,
+     "recall": 0.875,
+     "f1": 0.609
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 8,
+     "fn": 1,
+     "n": 27,
+     "precision": 0.467,
+     "recall": 0.875,
+     "f1": 0.609
+    }
+   },
+   "pykwalify": {
+    "model": {
+     "tp": 58,
+     "fp": 5,
+     "fn": 6,
+     "n": 135,
+     "precision": 0.921,
+     "recall": 0.906,
+     "f1": 0.913
+    },
+    "static union, same items": {
+     "tp": 26,
+     "fp": 0,
+     "fn": 38,
+     "n": 135,
+     "precision": 1.0,
+     "recall": 0.406,
+     "f1": 0.578
+    }
+   },
+   "pyrlp": {
+    "model": {
+     "tp": 40,
+     "fp": 11,
+     "fn": 22,
+     "n": 164,
+     "precision": 0.784,
+     "recall": 0.645,
+     "f1": 0.708
+    },
+    "static union, same items": {
+     "tp": 32,
+     "fp": 4,
+     "fn": 30,
+     "n": 164,
+     "precision": 0.889,
+     "recall": 0.516,
+     "f1": 0.653
+    }
+   },
+   "pysui": {
+    "model": {
+     "tp": 5,
+     "fp": 19,
+     "fn": 0,
+     "n": 133,
+     "precision": 0.208,
+     "recall": 1.0,
+     "f1": 0.345
+    },
+    "static union, same items": {
+     "tp": 5,
+     "fp": 16,
+     "fn": 0,
+     "n": 133,
+     "precision": 0.238,
+     "recall": 1.0,
+     "f1": 0.385
+    }
+   },
+   "python-lazy-object-proxy": {
+    "model": {
+     "tp": 2,
+     "fp": 6,
+     "fn": 1,
+     "n": 21,
+     "precision": 0.25,
+     "recall": 0.667,
+     "f1": 0.364
+    },
+    "static union, same items": {
+     "tp": 3,
+     "fp": 2,
+     "fn": 0,
+     "n": 21,
+     "precision": 0.6,
+     "recall": 1.0,
+     "f1": 0.75
+    }
+   },
+   "python-neutronclient": {
+    "model": {
+     "tp": 25,
+     "fp": 19,
+     "fn": 2,
+     "n": 130,
+     "precision": 0.568,
+     "recall": 0.926,
+     "f1": 0.704
+    },
+    "static union, same items": {
+     "tp": 25,
+     "fp": 2,
+     "fn": 2,
+     "n": 130,
+     "precision": 0.926,
+     "recall": 0.926,
+     "f1": 0.926
+    }
+   },
+   "redbeat": {
+    "model": {
+     "tp": 44,
+     "fp": 2,
+     "fn": 0,
+     "n": 84,
+     "precision": 0.957,
+     "recall": 1.0,
+     "f1": 0.978
+    },
+    "static union, same items": {
+     "tp": 29,
+     "fp": 0,
+     "fn": 15,
+     "n": 84,
+     "precision": 1.0,
+     "recall": 0.659,
+     "f1": 0.795
+    }
+   },
+   "rejax": {
+    "model": {
+     "tp": 16,
+     "fp": 15,
+     "fn": 0,
+     "n": 117,
+     "precision": 0.516,
+     "recall": 1.0,
+     "f1": 0.681
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 0,
+     "fn": 9,
+     "n": 117,
+     "precision": 1.0,
+     "recall": 0.438,
+     "f1": 0.609
+    }
+   },
+   "rlm": {
+    "model": {
+     "tp": 16,
+     "fp": 26,
+     "fn": 1,
+     "n": 135,
+     "precision": 0.381,
+     "recall": 0.941,
+     "f1": 0.542
+    },
+    "static union, same items": {
+     "tp": 15,
+     "fp": 5,
+     "fn": 2,
+     "n": 135,
+     "precision": 0.75,
+     "recall": 0.882,
+     "f1": 0.811
+    }
+   },
+   "scrapyrt": {
+    "model": {
+     "tp": 9,
+     "fp": 5,
+     "fn": 0,
+     "n": 31,
+     "precision": 0.643,
+     "recall": 1.0,
+     "f1": 0.783
+    },
+    "static union, same items": {
+     "tp": 8,
+     "fp": 3,
+     "fn": 1,
+     "n": 31,
+     "precision": 0.727,
+     "recall": 0.889,
+     "f1": 0.8
+    }
+   },
+   "sec-edgar": {
+    "model": {
+     "tp": 29,
+     "fp": 4,
+     "fn": 7,
+     "n": 164,
+     "precision": 0.879,
+     "recall": 0.806,
+     "f1": 0.841
+    },
+    "static union, same items": {
+     "tp": 16,
+     "fp": 3,
+     "fn": 20,
+     "n": 164,
+     "precision": 0.842,
+     "recall": 0.444,
+     "f1": 0.582
+    }
+   },
+   "sqllineage": {
+    "model": {
+     "tp": 81,
+     "fp": 18,
+     "fn": 11,
+     "n": 214,
+     "precision": 0.818,
+     "recall": 0.88,
+     "f1": 0.848
+    },
+    "static union, same items": {
+     "tp": 61,
+     "fp": 11,
+     "fn": 31,
+     "n": 214,
+     "precision": 0.847,
+     "recall": 0.663,
+     "f1": 0.744
+    }
+   },
+   "tensortrade-ng": {
+    "model": {
+     "tp": 32,
+     "fp": 36,
+     "fn": 4,
+     "n": 208,
+     "precision": 0.471,
+     "recall": 0.889,
+     "f1": 0.615
+    },
+    "static union, same items": {
+     "tp": 14,
+     "fp": 3,
+     "fn": 22,
+     "n": 208,
+     "precision": 0.824,
+     "recall": 0.389,
+     "f1": 0.528
+    }
+   },
+   "term-image": {
+    "model": {
+     "tp": 35,
+     "fp": 22,
+     "fn": 7,
+     "n": 142,
+     "precision": 0.614,
+     "recall": 0.833,
+     "f1": 0.707
+    },
+    "static union, same items": {
+     "tp": 37,
+     "fp": 12,
+     "fn": 5,
+     "n": 142,
+     "precision": 0.755,
+     "recall": 0.881,
+     "f1": 0.813
+    }
+   },
+   "throttled": {
+    "model": {
+     "tp": 11,
+     "fp": 27,
+     "fn": 0,
+     "n": 43,
+     "precision": 0.289,
+     "recall": 1.0,
+     "f1": 0.449
+    },
+    "static union, same items": {
+     "tp": 11,
+     "fp": 27,
+     "fn": 0,
+     "n": 43,
+     "precision": 0.289,
+     "recall": 1.0,
+     "f1": 0.449
+    }
+   },
+   "toolz": {
+    "model": {
+     "tp": 30,
+     "fp": 24,
+     "fn": 0,
+     "n": 128,
+     "precision": 0.556,
+     "recall": 1.0,
+     "f1": 0.714
+    },
+    "static union, same items": {
+     "tp": 29,
+     "fp": 0,
+     "fn": 1,
+     "n": 128,
+     "precision": 1.0,
+     "recall": 0.967,
+     "f1": 0.983
+    }
+   },
+   "xacro": {
+    "model": {
+     "tp": 30,
+     "fp": 11,
+     "fn": 1,
+     "n": 75,
+     "precision": 0.732,
+     "recall": 0.968,
+     "f1": 0.833
+    },
+    "static union, same items": {
+     "tp": 31,
+     "fp": 2,
+     "fn": 0,
+     "n": 75,
+     "precision": 0.939,
+     "recall": 1.0,
+     "f1": 0.969
+    }
+   }
+  },
+  "qwen3.8-27b": {
+   "PyFunceble": {
+    "model": {
+     "tp": 29,
+     "fp": 4,
+     "fn": 17,
+     "n": 395,
+     "precision": 0.879,
+     "recall": 0.63,
+     "f1": 0.734
+    },
+    "static union, same items": {
+     "tp": 22,
+     "fp": 1,
+     "fn": 24,
+     "n": 395,
+     "precision": 0.957,
+     "recall": 0.478,
+     "f1": 0.638
+    }
+   },
+   "ShivyC": {
+    "model": {
+     "tp": 92,
+     "fp": 16,
+     "fn": 86,
+     "n": 495,
+     "precision": 0.852,
+     "recall": 0.517,
+     "f1": 0.643
+    },
+    "static union, same items": {
+     "tp": 63,
+     "fp": 6,
+     "fn": 115,
+     "n": 495,
+     "precision": 0.913,
+     "recall": 0.354,
+     "f1": 0.51
+    }
+   },
+   "TradingView-Screener": {
+    "model": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 18,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    "static union, same items": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 18,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "all-repos": {
+    "model": {
+     "tp": 35,
+     "fp": 13,
+     "fn": 8,
+     "n": 169,
+     "precision": 0.729,
+     "recall": 0.814,
+     "f1": 0.769
+    },
+    "static union, same items": {
+     "tp": 32,
+     "fp": 2,
+     "fn": 11,
+     "n": 169,
+     "precision": 0.941,
+     "recall": 0.744,
+     "f1": 0.831
+    }
+   },
+   "apiflask": {
+    "model": {
+     "tp": 24,
+     "fp": 8,
+     "fn": 5,
+     "n": 104,
+     "precision": 0.75,
+     "recall": 0.828,
+     "f1": 0.787
+    },
+    "static union, same items": {
+     "tp": 22,
+     "fp": 1,
+     "fn": 7,
+     "n": 104,
+     "precision": 0.957,
+     "recall": 0.759,
+     "f1": 0.846
+    }
+   },
+   "autoray": {
+    "model": {
+     "tp": 18,
+     "fp": 40,
+     "fn": 0,
+     "n": 220,
+     "precision": 0.31,
+     "recall": 1.0,
+     "f1": 0.474
+    },
+    "static union, same items": {
+     "tp": 18,
+     "fp": 0,
+     "fn": 0,
+     "n": 220,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "aws-dynamodb-encryption-python": {
+    "model": {
+     "tp": 9,
+     "fp": 20,
+     "fn": 0,
+     "n": 136,
+     "precision": 0.31,
+     "recall": 1.0,
+     "f1": 0.474
+    },
+    "static union, same items": {
+     "tp": 9,
+     "fp": 0,
+     "fn": 0,
+     "n": 136,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "bedrock-agentcore-sdk-python": {
+    "model": {
+     "tp": 18,
+     "fp": 6,
+     "fn": 3,
+     "n": 77,
+     "precision": 0.75,
+     "recall": 0.857,
+     "f1": 0.8
+    },
+    "static union, same items": {
+     "tp": 13,
+     "fp": 6,
+     "fn": 8,
+     "n": 77,
+     "precision": 0.684,
+     "recall": 0.619,
+     "f1": 0.65
+    }
+   },
+   "click": {
+    "model": {
+     "tp": 167,
+     "fp": 31,
+     "fn": 43,
+     "n": 906,
+     "precision": 0.843,
+     "recall": 0.795,
+     "f1": 0.819
+    },
+    "static union, same items": {
+     "tp": 159,
+     "fp": 13,
+     "fn": 51,
+     "n": 906,
+     "precision": 0.924,
+     "recall": 0.757,
+     "f1": 0.832
+    }
+   },
+   "compressed-tensors": {
+    "model": {
+     "tp": 20,
+     "fp": 13,
+     "fn": 3,
+     "n": 192,
+     "precision": 0.606,
+     "recall": 0.87,
+     "f1": 0.714
+    },
+    "static union, same items": {
+     "tp": 20,
+     "fp": 6,
+     "fn": 3,
+     "n": 192,
+     "precision": 0.769,
+     "recall": 0.87,
+     "f1": 0.816
+    }
+   },
+   "confluence-markdown-exporter": {
+    "model": {
+     "tp": 30,
+     "fp": 20,
+     "fn": 2,
+     "n": 148,
+     "precision": 0.6,
+     "recall": 0.938,
+     "f1": 0.732
+    },
+    "static union, same items": {
+     "tp": 21,
+     "fp": 8,
+     "fn": 11,
+     "n": 148,
+     "precision": 0.724,
+     "recall": 0.656,
+     "f1": 0.689
+    }
+   },
+   "creosote": {
+    "model": {
+     "tp": 7,
+     "fp": 0,
+     "fn": 1,
+     "n": 15,
+     "precision": 1.0,
+     "recall": 0.875,
+     "f1": 0.933
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 0,
+     "fn": 1,
+     "n": 15,
+     "precision": 1.0,
+     "recall": 0.875,
+     "f1": 0.933
+    }
+   },
+   "deepblast": {
+    "model": {
+     "tp": 16,
+     "fp": 7,
+     "fn": 0,
+     "n": 87,
+     "precision": 0.696,
+     "recall": 1.0,
+     "f1": 0.821
+    },
+    "static union, same items": {
+     "tp": 13,
+     "fp": 6,
+     "fn": 3,
+     "n": 87,
+     "precision": 0.684,
+     "recall": 0.812,
+     "f1": 0.743
+    }
+   },
+   "django-ses": {
+    "model": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "n": 6,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "static union, same items": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 1,
+     "n": 6,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.667
+    }
+   },
+   "fastapi-injectable": {
+    "model": {
+     "tp": 13,
+     "fp": 10,
+     "fn": 0,
+     "n": 52,
+     "precision": 0.565,
+     "recall": 1.0,
+     "f1": 0.722
+    },
+    "static union, same items": {
+     "tp": 12,
+     "fp": 5,
+     "fn": 1,
+     "n": 52,
+     "precision": 0.706,
+     "recall": 0.923,
+     "f1": 0.8
+    }
+   },
+   "geocube": {
+    "model": {
+     "tp": 9,
+     "fp": 4,
+     "fn": 0,
+     "n": 39,
+     "precision": 0.692,
+     "recall": 1.0,
+     "f1": 0.818
+    },
+    "static union, same items": {
+     "tp": 8,
+     "fp": 0,
+     "fn": 1,
+     "n": 39,
+     "precision": 1.0,
+     "recall": 0.889,
+     "f1": 0.941
+    }
+   },
+   "json-logging-python": {
+    "model": {
+     "tp": 20,
+     "fp": 11,
+     "fn": 14,
+     "n": 101,
+     "precision": 0.645,
+     "recall": 0.588,
+     "f1": 0.615
+    },
+    "static union, same items": {
+     "tp": 16,
+     "fp": 2,
+     "fn": 18,
+     "n": 101,
+     "precision": 0.889,
+     "recall": 0.471,
+     "f1": 0.615
+    }
+   },
+   "jsonapi-requests": {
+    "model": {
+     "tp": 34,
+     "fp": 14,
+     "fn": 9,
+     "n": 113,
+     "precision": 0.708,
+     "recall": 0.791,
+     "f1": 0.747
+    },
+    "static union, same items": {
+     "tp": 15,
+     "fp": 1,
+     "fn": 28,
+     "n": 113,
+     "precision": 0.938,
+     "recall": 0.349,
+     "f1": 0.508
+    }
+   },
+   "marshmallow-sqlalchemy": {
+    "model": {
+     "tp": 12,
+     "fp": 1,
+     "fn": 2,
+     "n": 48,
+     "precision": 0.923,
+     "recall": 0.857,
+     "f1": 0.889
+    },
+    "static union, same items": {
+     "tp": 11,
+     "fp": 1,
+     "fn": 3,
+     "n": 48,
+     "precision": 0.917,
+     "recall": 0.786,
+     "f1": 0.846
+    }
+   },
+   "mcp-sequential-thinking": {
+    "model": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "n": 7,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "static union, same items": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "n": 7,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "movingpandas": {
+    "model": {
+     "tp": 40,
+     "fp": 19,
+     "fn": 2,
+     "n": 128,
+     "precision": 0.678,
+     "recall": 0.952,
+     "f1": 0.792
+    },
+    "static union, same items": {
+     "tp": 25,
+     "fp": 9,
+     "fn": 17,
+     "n": 128,
+     "precision": 0.735,
+     "recall": 0.595,
+     "f1": 0.658
+    }
+   },
+   "pr-agent": {
+    "model": {
+     "tp": 41,
+     "fp": 22,
+     "fn": 3,
+     "n": 180,
+     "precision": 0.651,
+     "recall": 0.932,
+     "f1": 0.766
+    },
+    "static union, same items": {
+     "tp": 41,
+     "fp": 21,
+     "fn": 3,
+     "n": 180,
+     "precision": 0.661,
+     "recall": 0.932,
+     "f1": 0.774
+    }
+   },
+   "puncover": {
+    "model": {
+     "tp": 8,
+     "fp": 9,
+     "fn": 0,
+     "n": 27,
+     "precision": 0.471,
+     "recall": 1.0,
+     "f1": 0.64
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 8,
+     "fn": 1,
+     "n": 27,
+     "precision": 0.467,
+     "recall": 0.875,
+     "f1": 0.609
+    }
+   },
+   "pykwalify": {
+    "model": {
+     "tp": 57,
+     "fp": 1,
+     "fn": 7,
+     "n": 135,
+     "precision": 0.983,
+     "recall": 0.891,
+     "f1": 0.934
+    },
+    "static union, same items": {
+     "tp": 26,
+     "fp": 0,
+     "fn": 38,
+     "n": 135,
+     "precision": 1.0,
+     "recall": 0.406,
+     "f1": 0.578
+    }
+   },
+   "pyrlp": {
+    "model": {
+     "tp": 31,
+     "fp": 5,
+     "fn": 31,
+     "n": 164,
+     "precision": 0.861,
+     "recall": 0.5,
+     "f1": 0.633
+    },
+    "static union, same items": {
+     "tp": 32,
+     "fp": 4,
+     "fn": 30,
+     "n": 164,
+     "precision": 0.889,
+     "recall": 0.516,
+     "f1": 0.653
+    }
+   },
+   "pysui": {
+    "model": {
+     "tp": 5,
+     "fp": 20,
+     "fn": 0,
+     "n": 133,
+     "precision": 0.2,
+     "recall": 1.0,
+     "f1": 0.333
+    },
+    "static union, same items": {
+     "tp": 5,
+     "fp": 16,
+     "fn": 0,
+     "n": 133,
+     "precision": 0.238,
+     "recall": 1.0,
+     "f1": 0.385
+    }
+   },
+   "python-lazy-object-proxy": {
+    "model": {
+     "tp": 1,
+     "fp": 5,
+     "fn": 2,
+     "n": 21,
+     "precision": 0.167,
+     "recall": 0.333,
+     "f1": 0.222
+    },
+    "static union, same items": {
+     "tp": 3,
+     "fp": 2,
+     "fn": 0,
+     "n": 21,
+     "precision": 0.6,
+     "recall": 1.0,
+     "f1": 0.75
+    }
+   },
+   "python-neutronclient": {
+    "model": {
+     "tp": 23,
+     "fp": 21,
+     "fn": 4,
+     "n": 130,
+     "precision": 0.523,
+     "recall": 0.852,
+     "f1": 0.648
+    },
+    "static union, same items": {
+     "tp": 25,
+     "fp": 2,
+     "fn": 2,
+     "n": 130,
+     "precision": 0.926,
+     "recall": 0.926,
+     "f1": 0.926
+    }
+   },
+   "redbeat": {
+    "model": {
+     "tp": 43,
+     "fp": 1,
+     "fn": 1,
+     "n": 84,
+     "precision": 0.977,
+     "recall": 0.977,
+     "f1": 0.977
+    },
+    "static union, same items": {
+     "tp": 29,
+     "fp": 0,
+     "fn": 15,
+     "n": 84,
+     "precision": 1.0,
+     "recall": 0.659,
+     "f1": 0.795
+    }
+   },
+   "rejax": {
+    "model": {
+     "tp": 16,
+     "fp": 24,
+     "fn": 0,
+     "n": 117,
+     "precision": 0.4,
+     "recall": 1.0,
+     "f1": 0.571
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 0,
+     "fn": 9,
+     "n": 117,
+     "precision": 1.0,
+     "recall": 0.438,
+     "f1": 0.609
+    }
+   },
+   "rlm": {
+    "model": {
+     "tp": 17,
+     "fp": 9,
+     "fn": 0,
+     "n": 136,
+     "precision": 0.654,
+     "recall": 1.0,
+     "f1": 0.791
+    },
+    "static union, same items": {
+     "tp": 15,
+     "fp": 5,
+     "fn": 2,
+     "n": 136,
+     "precision": 0.75,
+     "recall": 0.882,
+     "f1": 0.811
+    }
+   },
+   "scrapyrt": {
+    "model": {
+     "tp": 8,
+     "fp": 3,
+     "fn": 1,
+     "n": 31,
+     "precision": 0.727,
+     "recall": 0.889,
+     "f1": 0.8
+    },
+    "static union, same items": {
+     "tp": 8,
+     "fp": 3,
+     "fn": 1,
+     "n": 31,
+     "precision": 0.727,
+     "recall": 0.889,
+     "f1": 0.8
+    }
+   },
+   "sec-edgar": {
+    "model": {
+     "tp": 28,
+     "fp": 6,
+     "fn": 8,
+     "n": 164,
+     "precision": 0.824,
+     "recall": 0.778,
+     "f1": 0.8
+    },
+    "static union, same items": {
+     "tp": 16,
+     "fp": 3,
+     "fn": 20,
+     "n": 164,
+     "precision": 0.842,
+     "recall": 0.444,
+     "f1": 0.582
+    }
+   },
+   "sqllineage": {
+    "model": {
+     "tp": 74,
+     "fp": 11,
+     "fn": 18,
+     "n": 205,
+     "precision": 0.871,
+     "recall": 0.804,
+     "f1": 0.836
+    },
+    "static union, same items": {
+     "tp": 61,
+     "fp": 11,
+     "fn": 31,
+     "n": 205,
+     "precision": 0.847,
+     "recall": 0.663,
+     "f1": 0.744
+    }
+   },
+   "tensortrade-ng": {
+    "model": {
+     "tp": 24,
+     "fp": 8,
+     "fn": 12,
+     "n": 208,
+     "precision": 0.75,
+     "recall": 0.667,
+     "f1": 0.706
+    },
+    "static union, same items": {
+     "tp": 14,
+     "fp": 3,
+     "fn": 22,
+     "n": 208,
+     "precision": 0.824,
+     "recall": 0.389,
+     "f1": 0.528
+    }
+   },
+   "term-image": {
+    "model": {
+     "tp": 35,
+     "fp": 13,
+     "fn": 7,
+     "n": 138,
+     "precision": 0.729,
+     "recall": 0.833,
+     "f1": 0.778
+    },
+    "static union, same items": {
+     "tp": 37,
+     "fp": 12,
+     "fn": 5,
+     "n": 138,
+     "precision": 0.755,
+     "recall": 0.881,
+     "f1": 0.813
+    }
+   },
+   "throttled": {
+    "model": {
+     "tp": 11,
+     "fp": 27,
+     "fn": 0,
+     "n": 43,
+     "precision": 0.289,
+     "recall": 1.0,
+     "f1": 0.449
+    },
+    "static union, same items": {
+     "tp": 11,
+     "fp": 27,
+     "fn": 0,
+     "n": 43,
+     "precision": 0.289,
+     "recall": 1.0,
+     "f1": 0.449
+    }
+   },
+   "toolz": {
+    "model": {
+     "tp": 30,
+     "fp": 19,
+     "fn": 0,
+     "n": 130,
+     "precision": 0.612,
+     "recall": 1.0,
+     "f1": 0.759
+    },
+    "static union, same items": {
+     "tp": 29,
+     "fp": 0,
+     "fn": 1,
+     "n": 130,
+     "precision": 1.0,
+     "recall": 0.967,
+     "f1": 0.983
+    }
+   },
+   "xacro": {
+    "model": {
+     "tp": 30,
+     "fp": 12,
+     "fn": 1,
+     "n": 76,
+     "precision": 0.714,
+     "recall": 0.968,
+     "f1": 0.822
+    },
+    "static union, same items": {
+     "tp": 31,
+     "fp": 2,
+     "fn": 0,
+     "n": 76,
+     "precision": 0.939,
+     "recall": 1.0,
+     "f1": 0.969
+    }
+   }
+  }
+ },
+ "llm_by_kind": {
+  "gpt-oss-120b": {
+   "call/unique": {
+    "model": {
+     "tp": 560,
+     "fp": 133,
+     "fn": 12,
+     "n": 801,
+     "precision": 0.808,
+     "recall": 0.979,
+     "f1": 0.885
+    },
+    "static union, same items": {
+     "tp": 544,
+     "fp": 104,
+     "fn": 28,
+     "n": 801,
+     "precision": 0.84,
+     "recall": 0.951,
+     "f1": 0.892
+    }
+   },
+   "reference/unique": {
+    "model": {
+     "tp": 115,
+     "fp": 249,
+     "fn": 19,
+     "n": 1143,
+     "precision": 0.316,
+     "recall": 0.858,
+     "f1": 0.462
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 1,
+     "fn": 127,
+     "n": 1143,
+     "precision": 0.875,
+     "recall": 0.052,
+     "f1": 0.099
+    }
+   },
+   "constructor/unique": {
+    "model": {
+     "tp": 114,
+     "fp": 81,
+     "fn": 12,
+     "n": 418,
+     "precision": 0.585,
+     "recall": 0.905,
+     "f1": 0.71
+    },
+    "static union, same items": {
+     "tp": 116,
+     "fp": 5,
+     "fn": 10,
+     "n": 418,
+     "precision": 0.959,
+     "recall": 0.921,
+     "f1": 0.939
+    }
+   },
+   "reference/shared": {
+    "model": {
+     "tp": 38,
+     "fp": 62,
+     "fn": 8,
+     "n": 1456,
+     "precision": 0.38,
+     "recall": 0.826,
+     "f1": 0.521
+    },
+    "static union, same items": {
+     "tp": 0,
+     "fp": 1,
+     "fn": 46,
+     "n": 1456,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "call/shared": {
+    "model": {
+     "tp": 369,
+     "fp": 276,
+     "fn": 121,
+     "n": 1798,
+     "precision": 0.572,
+     "recall": 0.753,
+     "f1": 0.65
+    },
+    "static union, same items": {
+     "tp": 218,
+     "fp": 75,
+     "fn": 272,
+     "n": 1798,
+     "precision": 0.744,
+     "recall": 0.445,
+     "f1": 0.557
+    }
+   }
+  },
+  "gpt-oss-20b": {
+   "call/unique": {
+    "model": {
+     "tp": 544,
+     "fp": 133,
+     "fn": 28,
+     "n": 801,
+     "precision": 0.804,
+     "recall": 0.951,
+     "f1": 0.871
+    },
+    "static union, same items": {
+     "tp": 544,
+     "fp": 104,
+     "fn": 28,
+     "n": 801,
+     "precision": 0.84,
+     "recall": 0.951,
+     "f1": 0.892
+    }
+   },
+   "reference/unique": {
+    "model": {
+     "tp": 115,
+     "fp": 215,
+     "fn": 19,
+     "n": 1139,
+     "precision": 0.348,
+     "recall": 0.858,
+     "f1": 0.496
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 1,
+     "fn": 127,
+     "n": 1139,
+     "precision": 0.875,
+     "recall": 0.052,
+     "f1": 0.099
+    }
+   },
+   "constructor/unique": {
+    "model": {
+     "tp": 114,
+     "fp": 63,
+     "fn": 12,
+     "n": 417,
+     "precision": 0.644,
+     "recall": 0.905,
+     "f1": 0.752
+    },
+    "static union, same items": {
+     "tp": 116,
+     "fp": 5,
+     "fn": 10,
+     "n": 417,
+     "precision": 0.959,
+     "recall": 0.921,
+     "f1": 0.939
+    }
+   },
+   "reference/shared": {
+    "model": {
+     "tp": 35,
+     "fp": 46,
+     "fn": 11,
+     "n": 1456,
+     "precision": 0.432,
+     "recall": 0.761,
+     "f1": 0.551
+    },
+    "static union, same items": {
+     "tp": 0,
+     "fp": 1,
+     "fn": 46,
+     "n": 1456,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "call/shared": {
+    "model": {
+     "tp": 327,
+     "fp": 222,
+     "fn": 163,
+     "n": 1798,
+     "precision": 0.596,
+     "recall": 0.667,
+     "f1": 0.629
+    },
+    "static union, same items": {
+     "tp": 218,
+     "fp": 75,
+     "fn": 272,
+     "n": 1798,
+     "precision": 0.744,
+     "recall": 0.445,
+     "f1": 0.557
+    }
+   }
+  },
+  "qwen3.8-27b": {
+   "call/unique": {
+    "model": {
+     "tp": 563,
+     "fp": 126,
+     "fn": 9,
+     "n": 800,
+     "precision": 0.817,
+     "recall": 0.984,
+     "f1": 0.893
+    },
+    "static union, same items": {
+     "tp": 544,
+     "fp": 104,
+     "fn": 28,
+     "n": 800,
+     "precision": 0.84,
+     "recall": 0.951,
+     "f1": 0.892
+    }
+   },
+   "reference/unique": {
+    "model": {
+     "tp": 112,
+     "fp": 155,
+     "fn": 22,
+     "n": 1134,
+     "precision": 0.419,
+     "recall": 0.836,
+     "f1": 0.559
+    },
+    "static union, same items": {
+     "tp": 7,
+     "fp": 1,
+     "fn": 127,
+     "n": 1134,
+     "precision": 0.875,
+     "recall": 0.052,
+     "f1": 0.099
+    }
+   },
+   "constructor/unique": {
+    "model": {
+     "tp": 112,
+     "fp": 19,
+     "fn": 14,
+     "n": 409,
+     "precision": 0.855,
+     "recall": 0.889,
+     "f1": 0.872
+    },
+    "static union, same items": {
+     "tp": 116,
+     "fp": 5,
+     "fn": 10,
+     "n": 409,
+     "precision": 0.959,
+     "recall": 0.921,
+     "f1": 0.939
+    }
+   },
+   "reference/shared": {
+    "model": {
+     "tp": 34,
+     "fp": 47,
+     "fn": 12,
+     "n": 1440,
+     "precision": 0.42,
+     "recall": 0.739,
+     "f1": 0.535
+    },
+    "static union, same items": {
+     "tp": 0,
+     "fp": 1,
+     "fn": 46,
+     "n": 1440,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "call/shared": {
+    "model": {
+     "tp": 257,
+     "fp": 106,
+     "fn": 233,
+     "n": 1795,
+     "precision": 0.708,
+     "recall": 0.524,
+     "f1": 0.603
+    },
+    "static union, same items": {
+     "tp": 218,
+     "fp": 75,
+     "fn": 272,
+     "n": 1795,
+     "precision": 0.744,
+     "recall": 0.445,
+     "f1": 0.557
+    }
+   }
+  }
+ },
+ "llm_beats_static_f1": {
+  "gpt-oss-120b": 16,
+  "gpt-oss-20b": 18,
+  "qwen3.8-27b": 15
+ },
+ "static_by_kind": {
+  "constructor/unique": {
+   "PyCG": {
+    "tp": 387,
+    "fp": 40,
+    "fn": 401,
+    "n": 4169,
+    "precision": 0.906,
+    "recall": 0.491,
+    "f1": 0.637
+   },
+   "Pyright": {
+    "tp": 751,
+    "fp": 60,
+    "fn": 37,
+    "n": 4169,
+    "precision": 0.926,
+    "recall": 0.953,
+    "f1": 0.939
+   },
+   "PyCG ∪ Pyright": {
+    "tp": 755,
+    "fp": 60,
+    "fn": 33,
+    "n": 4169,
+    "precision": 0.926,
+    "recall": 0.958,
+    "f1": 0.942
+   }
+  },
+  "reference/shared": {
+   "PyCG": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 321,
+    "n": 8751,
+    "precision": 1.0,
+    "recall": 0.009,
+    "f1": 0.018
+   },
+   "Pyright": {
+    "tp": 0,
+    "fp": 2,
+    "fn": 324,
+    "n": 8751,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "PyCG ∪ Pyright": {
+    "tp": 3,
+    "fp": 2,
+    "fn": 321,
+    "n": 8751,
+    "precision": 0.6,
+    "recall": 0.009,
+    "f1": 0.018
+   }
+  },
+  "reference/unique": {
+   "PyCG": {
+    "tp": 36,
+    "fp": 3,
+    "fn": 506,
+    "n": 3598,
+    "precision": 0.923,
+    "recall": 0.066,
+    "f1": 0.124
+   },
+   "Pyright": {
+    "tp": 34,
+    "fp": 2,
+    "fn": 508,
+    "n": 3598,
+    "precision": 0.944,
+    "recall": 0.063,
+    "f1": 0.118
+   },
+   "PyCG ∪ Pyright": {
+    "tp": 41,
+    "fp": 3,
+    "fn": 501,
+    "n": 3598,
+    "precision": 0.932,
+    "recall": 0.076,
+    "f1": 0.14
+   }
+  },
+  "call/unique": {
+   "PyCG": {
+    "tp": 2708,
+    "fp": 368,
+    "fn": 822,
+    "n": 4798,
+    "precision": 0.88,
+    "recall": 0.767,
+    "f1": 0.82
+   },
+   "Pyright": {
+    "tp": 3374,
+    "fp": 465,
+    "fn": 156,
+    "n": 4798,
+    "precision": 0.879,
+    "recall": 0.956,
+    "f1": 0.916
+   },
+   "PyCG ∪ Pyright": {
+    "tp": 3394,
+    "fp": 468,
+    "fn": 136,
+    "n": 4798,
+    "precision": 0.879,
+    "recall": 0.961,
+    "f1": 0.918
+   }
+  },
+  "call/shared": {
+   "PyCG": {
+    "tp": 560,
+    "fp": 147,
+    "fn": 1538,
+    "n": 11704,
+    "precision": 0.792,
+    "recall": 0.267,
+    "f1": 0.399
+   },
+   "Pyright": {
+    "tp": 877,
+    "fp": 310,
+    "fn": 1221,
+    "n": 11704,
+    "precision": 0.739,
+    "recall": 0.418,
+    "f1": 0.534
+   },
+   "PyCG ∪ Pyright": {
+    "tp": 926,
+    "fp": 349,
+    "fn": 1172,
+    "n": 11704,
+    "precision": 0.726,
+    "recall": 0.441,
+    "f1": 0.549
+   }
+  }
+ },
+ "llm_complementarity": {
+  "gpt-oss-120b": {
+   "static missed": {
+    "tp": 338,
+    "fp": 0,
+    "fn": 145,
+    "n": 483,
+    "precision": 1.0,
+    "recall": 0.7,
+    "f1": 0.823
+   },
+   "static found": {
+    "tp": 858,
+    "fp": 0,
+    "fn": 27,
+    "n": 885,
+    "precision": 1.0,
+    "recall": 0.969,
+    "f1": 0.985
+   }
+  },
+  "gpt-oss-20b": {
+   "static missed": {
+    "tp": 304,
+    "fp": 0,
+    "fn": 179,
+    "n": 483,
+    "precision": 1.0,
+    "recall": 0.629,
+    "f1": 0.773
+   },
+   "static found": {
+    "tp": 831,
+    "fp": 0,
+    "fn": 54,
+    "n": 885,
+    "precision": 1.0,
+    "recall": 0.939,
+    "f1": 0.969
+   }
+  },
+  "qwen3.8-27b": {
+   "static missed": {
+    "tp": 222,
+    "fp": 0,
+    "fn": 261,
+    "n": 483,
+    "precision": 1.0,
+    "recall": 0.46,
+    "f1": 0.63
+   },
+   "static found": {
+    "tp": 856,
+    "fp": 0,
+    "fn": 29,
+    "n": 885,
+    "precision": 1.0,
+    "recall": 0.967,
+    "f1": 0.983
+   }
+  }
+ },
+ "bootstrap": {
+  "gpt-oss-120b": {
+   "model": {
+    "precision": [
+     0.511,
+     0.673
+    ],
+    "recall": [
+     0.781,
+     0.947
+    ],
+    "f1": [
+     0.644,
+     0.772
+    ]
+   },
+   "static union, same items": {
+    "precision": [
+     0.752,
+     0.881
+    ],
+    "recall": [
+     0.551,
+     0.742
+    ],
+    "f1": [
+     0.663,
+     0.784
+    ]
+   }
+  },
+  "gpt-oss-20b": {
+   "model": {
+    "precision": [
+     0.532,
+     0.703
+    ],
+    "recall": [
+     0.745,
+     0.899
+    ],
+    "f1": [
+     0.645,
+     0.769
+    ]
+   },
+   "static union, same items": {
+    "precision": [
+     0.752,
+     0.881
+    ],
+    "recall": [
+     0.551,
+     0.742
+    ],
+    "f1": [
+     0.663,
+     0.784
+    ]
+   }
+  },
+  "qwen3.8-27b": {
+   "model": {
+    "precision": [
+     0.626,
+     0.764
+    ],
+    "recall": [
+     0.707,
+     0.871
+    ],
+    "f1": [
+     0.696,
+     0.783
+    ]
+   },
+   "static union, same items": {
+    "precision": [
+     0.752,
+     0.881
+    ],
+    "recall": [
+     0.551,
+     0.742
+    ],
+    "f1": [
+     0.663,
+     0.784
+    ]
+   }
+  }
+ },
+ "coverage_vs_recall_spearman": -0.325,
+ "tests_vs_recall_spearman": -0.231,
+ "retrace": {
+  "repos": 37,
+  "jaccard_min": 0.986,
+  "jaccard_median": 1.0
+ },
+ "edge_recall_union_median": 0.69,
  "combiner": {
   "repos": [
+   "PyFunceble",
    "ShivyC",
+   "TradingView-Screener",
    "all-repos",
    "apiflask",
    "autoray",
+   "aws-dynamodb-encryption-python",
    "bedrock-agentcore-sdk-python",
    "click",
+   "compressed-tensors",
    "confluence-markdown-exporter",
    "creosote",
+   "deepblast",
+   "django-ses",
+   "fastapi-injectable",
+   "geocube",
+   "json-logging-python",
+   "jsonapi-requests",
    "marshmallow-sqlalchemy",
    "mcp-sequential-thinking",
+   "movingpandas",
    "pr-agent",
+   "puncover",
+   "pykwalify",
    "pyrlp",
+   "pysui",
+   "python-lazy-object-proxy",
    "python-neutronclient",
    "redbeat",
+   "rejax",
    "rlm",
    "scrapyrt",
    "sec-edgar",
    "sqllineage",
+   "tensortrade-ng",
+   "term-image",
+   "throttled",
    "toolz",
    "xacro"
   ],
-  "items": 3485,
+  "items": 5573,
   "grouped_by_caller": {
    "PyCG ∪ Pyright": {
-    "tp": 634,
-    "fp": 88,
-    "fn": 312,
-    "precision": 0.878,
-    "recall": 0.67,
-    "f1": 0.76
+    "tp": 885,
+    "fp": 186,
+    "fn": 483,
+    "precision": 0.826,
+    "recall": 0.647,
+    "f1": 0.726
    },
    "gpt-oss-20b": {
-    "tp": 776,
-    "fp": 345,
-    "fn": 170,
-    "precision": 0.692,
-    "recall": 0.82,
-    "f1": 0.751
+    "tp": 1135,
+    "fp": 679,
+    "fn": 233,
+    "precision": 0.626,
+    "recall": 0.83,
+    "f1": 0.713
    },
    "gpt-oss-120b": {
-    "tp": 809,
-    "fp": 424,
-    "fn": 137,
-    "precision": 0.656,
-    "recall": 0.855,
-    "f1": 0.743
+    "tp": 1196,
+    "fp": 798,
+    "fn": 172,
+    "precision": 0.6,
+    "recall": 0.874,
+    "f1": 0.711
    },
    "qwen3.8-27b": {
-    "tp": 729,
-    "fp": 244,
-    "fn": 217,
-    "precision": 0.749,
-    "recall": 0.771,
-    "f1": 0.76
+    "tp": 1078,
+    "fp": 453,
+    "fn": 290,
+    "precision": 0.704,
+    "recall": 0.788,
+    "f1": 0.744
    },
    "majority of the 3 LLMs": {
-    "tp": 786,
-    "fp": 306,
-    "fn": 160,
-    "precision": 0.72,
-    "recall": 0.831,
-    "f1": 0.771
+    "tp": 1160,
+    "fp": 608,
+    "fn": 208,
+    "precision": 0.656,
+    "recall": 0.848,
+    "f1": 0.74
    },
    "static ∪ any LLM": {
-    "tp": 841,
-    "fp": 601,
-    "fn": 105,
-    "precision": 0.583,
-    "recall": 0.889,
-    "f1": 0.704
+    "tp": 1250,
+    "fp": 1068,
+    "fn": 118,
+    "precision": 0.539,
+    "recall": 0.914,
+    "f1": 0.678
    },
    "learned combiner": {
-    "tp": 694,
-    "fp": 131,
-    "fn": 252,
-    "precision": 0.841,
-    "recall": 0.734,
-    "f1": 0.784
+    "tp": 1014,
+    "fp": 322,
+    "fn": 354,
+    "precision": 0.759,
+    "recall": 0.741,
+    "f1": 0.75
    }
   },
   "weights": {
-   "bias": -2.71,
-   "PyCG says yes": 1.14,
-   "Pyright says yes": 0.74,
-   "gpt-oss-20b says yes": 0.95,
-   "gpt-oss-120b says yes": 1.24,
-   "qwen3.8-27b says yes": 1.44,
-   "written as a call": -0.18,
-   "written as a reference": -1.65,
-   "written as a class name": -0.58,
-   "name shared with other functions": 0.58,
-   "method of the caller's own class": 0.5
+   "bias": -2.67,
+   "PyCG says yes": 0.18,
+   "Pyright says yes": 1.02,
+   "gpt-oss-20b says yes": 0.84,
+   "gpt-oss-120b says yes": 1.36,
+   "qwen3.8-27b says yes": 1.39,
+   "written as a call": -0.42,
+   "written as a reference": -1.55,
+   "written as a class name": -0.51,
+   "name shared with other functions": 0.4,
+   "method of the caller's own class": 0.86
   },
   "leave_one_repo_out": {
-   "tp": 673,
-   "fp": 154,
-   "fn": 273,
-   "precision": 0.814,
-   "recall": 0.711,
-   "f1": 0.759
+   "tp": 997,
+   "fp": 242,
+   "fn": 371,
+   "precision": 0.805,
+   "recall": 0.729,
+   "f1": 0.765
+  },
+  "loro_all": {
+   "PyCG": {
+    "tp": 676,
+    "fp": 127,
+    "fn": 692,
+    "precision": 0.842,
+    "recall": 0.494,
+    "f1": 0.623
+   },
+   "Pyright": {
+    "tp": 879,
+    "fp": 176,
+    "fn": 489,
+    "precision": 0.833,
+    "recall": 0.643,
+    "f1": 0.726
+   },
+   "PyCG ∪ Pyright": {
+    "tp": 885,
+    "fp": 186,
+    "fn": 483,
+    "precision": 0.826,
+    "recall": 0.647,
+    "f1": 0.726
+   },
+   "majority of the 3 LLMs": {
+    "tp": 1160,
+    "fp": 608,
+    "fn": 208,
+    "precision": 0.656,
+    "recall": 0.848,
+    "f1": 0.74
+   },
+   "static ∪ any LLM": {
+    "tp": 1250,
+    "fp": 1068,
+    "fn": 118,
+    "precision": 0.539,
+    "recall": 0.914,
+    "f1": 0.678
+   },
+   "learned combiner": {
+    "tp": 997,
+    "fp": 242,
+    "fn": 371,
+    "precision": 0.805,
+    "recall": 0.729,
+    "f1": 0.765
+   }
+  },
+  "loro_by_repo": {
+   "PyFunceble": {
+    "learned combiner": 0.703,
+    "PyCG ∪ Pyright": 0.638
+   },
+   "ShivyC": {
+    "learned combiner": 0.625,
+    "PyCG ∪ Pyright": 0.51
+   },
+   "TradingView-Screener": {
+    "learned combiner": 0.0,
+    "PyCG ∪ Pyright": 0.0
+   },
+   "all-repos": {
+    "learned combiner": 0.831,
+    "PyCG ∪ Pyright": 0.831
+   },
+   "apiflask": {
+    "learned combiner": 0.868,
+    "PyCG ∪ Pyright": 0.846
+   },
+   "autoray": {
+    "learned combiner": 0.973,
+    "PyCG ∪ Pyright": 1.0
+   },
+   "aws-dynamodb-encryption-python": {
+    "learned combiner": 1.0,
+    "PyCG ∪ Pyright": 1.0
+   },
+   "bedrock-agentcore-sdk-python": {
+    "learned combiner": 0.791,
+    "PyCG ∪ Pyright": 0.65
+   },
+   "click": {
+    "learned combiner": 0.872,
+    "PyCG ∪ Pyright": 0.832
+   },
+   "compressed-tensors": {
+    "learned combiner": 0.816,
+    "PyCG ∪ Pyright": 0.816
+   },
+   "confluence-markdown-exporter": {
+    "learned combiner": 0.72,
+    "PyCG ∪ Pyright": 0.689
+   },
+   "creosote": {
+    "learned combiner": 0.933,
+    "PyCG ∪ Pyright": 0.933
+   },
+   "deepblast": {
+    "learned combiner": 0.743,
+    "PyCG ∪ Pyright": 0.743
+   },
+   "django-ses": {
+    "learned combiner": 0.667,
+    "PyCG ∪ Pyright": 0.667
+   },
+   "fastapi-injectable": {
+    "learned combiner": 0.828,
+    "PyCG ∪ Pyright": 0.8
+   },
+   "geocube": {
+    "learned combiner": 0.947,
+    "PyCG ∪ Pyright": 0.941
+   },
+   "json-logging-python": {
+    "learned combiner": 0.677,
+    "PyCG ∪ Pyright": 0.615
+   },
+   "jsonapi-requests": {
+    "learned combiner": 0.769,
+    "PyCG ∪ Pyright": 0.508
+   },
+   "marshmallow-sqlalchemy": {
+    "learned combiner": 0.929,
+    "PyCG ∪ Pyright": 0.846
+   },
+   "mcp-sequential-thinking": {
+    "learned combiner": 1.0,
+    "PyCG ∪ Pyright": 1.0
+   },
+   "movingpandas": {
+    "learned combiner": 0.821,
+    "PyCG ∪ Pyright": 0.658
+   },
+   "pr-agent": {
+    "learned combiner": 0.781,
+    "PyCG ∪ Pyright": 0.774
+   },
+   "puncover": {
+    "learned combiner": 0.609,
+    "PyCG ∪ Pyright": 0.609
+   },
+   "pykwalify": {
+    "learned combiner": 0.593,
+    "PyCG ∪ Pyright": 0.578
+   },
+   "pyrlp": {
+    "learned combiner": 0.638,
+    "PyCG ∪ Pyright": 0.653
+   },
+   "pysui": {
+    "learned combiner": 0.37,
+    "PyCG ∪ Pyright": 0.385
+   },
+   "python-lazy-object-proxy": {
+    "learned combiner": 0.286,
+    "PyCG ∪ Pyright": 0.75
+   },
+   "python-neutronclient": {
+    "learned combiner": 0.667,
+    "PyCG ∪ Pyright": 0.926
+   },
+   "redbeat": {
+    "learned combiner": 0.966,
+    "PyCG ∪ Pyright": 0.795
+   },
+   "rejax": {
+    "learned combiner": 0.476,
+    "PyCG ∪ Pyright": 0.609
+   },
+   "rlm": {
+    "learned combiner": 0.944,
+    "PyCG ∪ Pyright": 0.811
+   },
+   "scrapyrt": {
+    "learned combiner": 0.842,
+    "PyCG ∪ Pyright": 0.8
+   },
+   "sec-edgar": {
+    "learned combiner": 0.818,
+    "PyCG ∪ Pyright": 0.582
+   },
+   "sqllineage": {
+    "learned combiner": 0.815,
+    "PyCG ∪ Pyright": 0.744
+   },
+   "tensortrade-ng": {
+    "learned combiner": 0.607,
+    "PyCG ∪ Pyright": 0.528
+   },
+   "term-image": {
+    "learned combiner": 0.767,
+    "PyCG ∪ Pyright": 0.813
+   },
+   "throttled": {
+    "learned combiner": 0.449,
+    "PyCG ∪ Pyright": 0.449
+   },
+   "toolz": {
+    "learned combiner": 0.806,
+    "PyCG ∪ Pyright": 0.983
+   },
+   "xacro": {
+    "learned combiner": 0.968,
+    "PyCG ∪ Pyright": 0.969
+   }
   }
  }
 }

@@ -1,0 +1,163 @@
+
+===== 2026-10-19T09:18:09Z throttled clone
+
+===== 2026-10-19T09:18:10Z throttled repo
+
+===== 2026-10-19T09:18:10Z throttled env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/throttled
++ python -m venv /home/azureuser/traceweave-data/study1/venv/throttled
++ . /home/azureuser/traceweave-data/study1/venv/throttled/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/throttled
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/throttled
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/throttled/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(throttled) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((throttled) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/throttled
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting configparser==7.2.0 (from throttled==0.12.2)
+  Downloading configparser-7.2.0-py3-none-any.whl.metadata (5.5 kB)
+Collecting dbus-fast==5.0.22 (from throttled==0.12.2)
+  Downloading dbus_fast-5.0.22-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+WARNING: throttled 0.12.2 does not provide the extra 'test'
+Downloading configparser-7.2.0-py3-none-any.whl (17 kB)
+Downloading dbus_fast-5.0.22-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (852 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 852.7/852.7 kB 16.5 MB/s  0:00:00
+Building wheels for collected packages: throttled
+  Building wheel for throttled (pyproject.toml): started
+  Building wheel for throttled (pyproject.toml): finished with status 'done'
+  Created wheel for throttled: filename=throttled-0.12.2-py3-none-any.whl size=22121 sha256=a7ad772a9f989bdbcf1c6e7444e670305f6a44e2d1916282a3d8877080b40c05
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_te8eg_s/wheels/8f/33/59/1cecdf630f95a24559eb8b9224aed56bc4c0724292119093da
+Successfully built throttled
+Installing collected packages: dbus-fast, configparser, throttled
+
+Successfully installed configparser-7.2.0 dbus-fast-5.0.22 throttled-0.12.2
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ pip install -r requirements.txt
+Requirement already satisfied: configparser==7.2.0 in /home/azureuser/traceweave-data/study1/venv/throttled/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (7.2.0)
+Requirement already satisfied: dbus-fast==5.0.22 in /home/azureuser/traceweave-data/study1/venv/throttled/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (5.0.22)
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/throttled/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Installing collected packages: pygments, pluggy, iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pygments-2.21.0 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/throttled
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: throttled
+  Building editable for throttled (pyproject.toml): started
+  Building editable for throttled (pyproject.toml): finished with status 'done'
+  Created wheel for throttled: filename=throttled-0.12.2-0.editable-py3-none-any.whl size=8503 sha256=02ce3056a7d04434d335ad185c4df1a79ef69dea173deae6ccfb630dc4a8f940
+  Stored in directory: /tmp/pip-ephem-wheel-cache-48pqz0h5/wheels/8f/33/59/1cecdf630f95a24559eb8b9224aed56bc4c0724292119093da
+Successfully built throttled
+Installing collected packages: throttled
+  Attempting uninstall: throttled
+    Found existing installation: throttled 0.12.2
+    Uninstalling throttled-0.12.2:
+      Successfully uninstalled throttled-0.12.2
+Successfully installed throttled-0.12.2
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 36 s
+
+===== 2026-10-19T09:18:45Z throttled trace
++ cd /home/azureuser/traceweave-harness/work/throttled
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/throttled
++ /home/azureuser/traceweave-data/study1/venv/throttled/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/throttled --package /home/azureuser/traceweave-harness/work/throttled --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id throttled-2026-10-19T09:18:45Z --out /home/azureuser/traceweave-harness/bundles/throttled/trace.json
+...................................................                      [100%]
+51 passed in 1.22s
+wrote 171 edges (119 internal, 52 entry) over 17 modules -> /home/azureuser/traceweave-harness/bundles/throttled/trace.json
+===== trace rc=0 in 4 s
+
+===== 2026-10-19T09:18:49Z throttled bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/throttled/bin/python build_bundle.py throttled --static /home/azureuser/traceweave-data/static/throttled --runtime /home/azureuser/traceweave-harness/bundles/throttled/trace.json
+throttled: 76 nodes, pycg 144 / pyright 145 static edges, 49 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T09:18:50Z throttled truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/throttled/bin/python tw.py truth throttled
+throttled: 17 in-package call sites, 17 caller->callee pairs, 1288 package lines ran; suite 51 passed in 2.03 s -> bundles/throttled/truth.json
+===== truth rc=0 in 6 s
+
+===== 2026-10-19T09:18:56Z throttled bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/throttled/bin/python tw.py bench throttled
++ mv /home/azureuser/traceweave-data/study1/bench/throttled.txt.tmp /home/azureuser/traceweave-data/study1/bench/throttled.txt
++ cat /home/azureuser/traceweave-data/study1/bench/throttled.txt
+
+throttled: 47 items, 13 real calls; 0 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.28   1.00   0.43   0.00
+  PyCG                              all   0.33   1.00   0.49   0.00
+  Pyright                           all   0.33   1.00   0.49   0.00
+  PyCG ∪ Pyright                    all   0.33   1.00   0.49   0.00
+  name match                     sample   0.26   1.00   0.41   0.00
+  PyCG                           sample   0.29   1.00   0.45   0.00
+  Pyright                        sample   0.29   1.00   0.45   0.00
+  PyCG ∪ Pyright                 sample   0.29   1.00   0.45   0.00
+===== bench rc=0 in 2 s

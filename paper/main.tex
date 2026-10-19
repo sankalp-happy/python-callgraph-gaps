@@ -4,6 +4,8 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{xspace}
+\usepackage{graphicx}
+\usepackage{array}
 % ponytail: BasicTeX here lacks Courier; on Overleaf this line can go
 \renewcommand{\ttdefault}{cmtt}
 
@@ -19,11 +21,34 @@
 \providecommand{\rqDiscussionLlm}{\pending}
 \providecommand{\rqConclusion}{\pending}
 \IfFileExists{rq34.tex}{\input{rq34}}{}
+\ifdefined\nMixedTermination
+  \newcommand{\mixedTerminationSentence}{, and in the ten-seed sweep \nMixedTermination{} repositories
+  finished on some seeds and ran past 30 minutes on others (e.g., \texttt{\mixedTerminationRepo}).}
+\else\newcommand{\mixedTerminationSentence}{.}\fi
+\ifdefined\nSetNondet
+  \newcommand{\sweepSetLevel}{Comparing exact in-universe edge sets over ten seeds, the repository's
+  own call graph changed on \nSetNondet{} of \nSetSwept{} repositories (minimum pairwise Jaccard
+  \setJacMin, \texttt{\setJacMinRepo}). The count check misleads both ways: \nRawOnly{} of the
+  \nCountNondetSwept{} it flagged kept identical in-universe edges, and \ifnum\nHiddenByCount=0 none it
+  passed changed\else \nHiddenByCount{} it passed did change\fi.}
+\else
+  \newcommand{\sweepSetLevel}{}
+\fi
+\ifdefined\sweepMaxPts
+  \newcommand{\sweepAbstract}{; across ten seeds the repository's own call graph changed on
+  \nSetNondet{} of \nSetSwept{} repositories, moving PyCG's recall by up to \sweepMaxDelta.}
+  \newcommand{\sweepContribution}{. Comparing exact edge sets over ten seeds, the repository's own
+  call graph changes on \nSetNondet{} of \nSetSwept{} repositories, and PyCG's recall against observed
+  calls moves by up to \sweepMaxDelta{} (\texttt{\sweepWorstRepo}: \sweepWorstLo--\sweepWorstHi).}
+\else
+  \newcommand{\sweepAbstract}{.}
+  \newcommand{\sweepContribution}{.}
+\fi
 
 \begin{document}
 
-\title{How Far Can We Trust Python Call Graphs?\\
-Static Analysers, LLMs and Runtime Ground Truth on Real Repositories}
+\title{Shared Names, Not Reflection: What Python Call\\
+Graphs Miss on Real Code, and Whether LLMs Can Find It}
 
 % TODO: add the remaining co-authors and confirm order.
 \author{\IEEEauthorblockN{Sankalp Shankar}
@@ -33,17 +58,19 @@ sankalps.23.beai@acharya.ac.in}}
 \maketitle
 
 \begin{abstract}
-Call graphs underpin code navigation, refactoring tools and, increasingly, the retrieval layer of
-LLM coding assistants. For Python they come from static analysers whose accuracy is mostly
-reported on micro-benchmarks. We measure two static analysers, PyCG and a Pyright-based
-extractor, on real repositories sampled from GitHub, and score them, together with three
-open-weight LLMs, against the calls each project's own test suite actually makes. On
-\nStaticAttempted{} repositories, PyCG exceeded a 30-minute budget on \pctPycgFail{} of them and,
-on \pctNondet{} of those it finished, produced a different call graph for a different hash seed, with edge
-counts varying by up to \maxSpread{}; Pyright completed every repository it was run on. The two analysers share
-a median of \jacMed{} of their edges. Against runtime ground truth on \nRuntimeRepos{}
-repositories, \rqThreeAbstract{} LLM resolvers \rqFourAbstract{} We release the pinned corpus, the
-pipelines and all measurements.
+Which calls do Python static call graphs miss on real code, and is the standard tool a stable
+instrument? Prior answers come from micro-benchmarks or count calls into built-in types that no
+analyser models. We run two static analysers, PyCG and a Pyright-based extractor, on repositories
+sampled from GitHub and score them, with three open-weight LLMs, against the calls each project's
+own test suite makes, excluding built-in calls and naming mismatches by construction. PyCG, the
+usual baseline, failed on \pctPycgFail{} of \nStaticAttempted{} repositories (timeouts, crashes,
+out of memory), and on \pctNondet{} of those it finished its raw output varied in size with the hash seed,
+by up to \maxSpread{} of edges\sweepAbstract{} On \nRuntimeRepos{} traced repositories, the union
+of both analysers has a median recall of \edgeUnionMed{}; \pctMissShared{} of its misses go
+through method names shared by several functions, not reflection, and a reflection-based
+dynamism score predicts recall only weakly. Pyright finds more observed calls than PyCG in
+\nPyrightBeatsPycg{} of \nRuntimeRepos{} repositories. LLM resolvers \rqFourAbstract{} We release
+the pinned corpus, the pipelines and all measurements.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -66,12 +93,15 @@ analysers~\cite{venkatesh2025llmcg}. Its accuracy, like that of its successors~\
 is mostly reported on hand-written micro-benchmarks, where every call has a known answer. Real
 repositories are larger, messier and have no answer key. For Java, executing programs to bound
 the recall of static call graphs is established practice~\cite{sui2020recall,helm2024totalrecall};
-for Python, DyPyBench compared PyCG with dynamic call graphs on 50 projects and found 51\% of the
-dynamic edges missing~\cite{bouzenia2024dypybench}, but attributed 59\% of the missing callees to
+for Python, DyPyBench compared PyCG with dynamic call graphs on 50 projects and found only 49\% of
+the dynamic edges in PyCG's output~\cite{bouzenia2024dypybench}, but attributed 59\% of the missing callees to
 methods of built-in types and about 12\% to naming differences, rather than to analysis gaps.
-We exclude both by construction (Section~III-B).
+We exclude both by construction (Section~\ref{sec:nodes}).
 
-This paper asks how far Python call graphs can be trusted on real code, in four questions:
+This paper asks what static analysers miss on real Python code once those artifacts are removed,
+whether the standard tool is a stable instrument, and whether LLMs recover the misses. Our numbers
+are not a correction of DyPyBench's: the corpus, the tracer and the edge definition all differ.
+We ask four questions:
 \begin{itemize}
 \item \textbf{RQ1 (reliability):} Does a widely used analyser produce a call graph at all, and the
 same one twice?
@@ -82,16 +112,26 @@ analysers find, and where do they miss?
 false claims?
 \end{itemize}
 
-\noindent Our contributions are:
+\noindent Our findings and contributions are:
 \begin{enumerate}
-\item A reliability study of PyCG on \nStaticAttempted{} real repositories: it fails on
-\pctPycgFail{} within 30 minutes, and its output depends on \texttt{PYTHONHASHSEED} on
-\pctNondet{} of the rest.
-\item An agreement study of PyCG and a Pyright-based extractor, mapped onto one shared node set.
-\item A runtime-grounded evaluation of static and LLM call resolution on real repositories, in
-which every label is an observed call, not a judgement.
-\item A pinned, stratified corpus pipeline (discovery, dynamism scoring, automated build triage
-with recorded image digests and dependency locks) and all data, released for re-measurement.
+\item \textbf{PyCG is not a fixed instrument.} The baseline of recent Python call-graph studies
+returns output of a different size per \texttt{PYTHONHASHSEED} on \pctNondet{} of the repositories
+it finishes, by up to \maxSpread{} of edges\sweepContribution{} It fails outright on
+\pctPycgFail{} of the corpus, and on the timed-out repositories we probed its fixpoint diverges.
+\item \textbf{Shared names, not reflection.} With calls into built-in types and naming mismatches
+excluded by construction, the union of two static analysers still misses a median of
+\edgeUnionMissMed{} of observed calls. Of the misses, \pctMissShared{} go through method names
+shared by several functions, and a dynamism score built on reflective constructs predicts recall only
+weakly ($\rho = \densitySpearman$).
+\item \textbf{A type checker is the better call resolver.} Pyright finds more observed calls than
+PyCG in \nPyrightBeatsPycg{} of \nRuntimeRepos{} repositories, at similar precision
+(\itemPyrightP{} against \itemPycgP{}).
+\item \textbf{LLMs reverse the micro-benchmark verdict on recall, not on precision.} On real code
+with execution labels, LLMs find more observed calls than static analysis (\llmQwenR--\llmOneTwentyR{}
+against \llmTwentyStaticR{}) but claim calls the tests never made. A static-plus-LLM combiner
+trained on other projects raises F1 on an unseen one from \loroUnionFone{} to \loroCombFone.
+\item \textbf{A pinned corpus pipeline and all data:} discovery, dynamism scoring, automated build
+triage with recorded image digests and dependency locks, traces and every measurement.
 \end{enumerate}
 
 % ---------------------------------------------------------------------------------------------
@@ -106,13 +146,34 @@ PyCG because it remains the most common baseline, and we report its failure mode
 \textbf{Static versus dynamic call graphs.} Sui et al.~\cite{sui2020recall} and Helm et
 al.~\cite{helm2024totalrecall} execute Java programs to bound the recall of static call graphs
 and attribute misses to language features. DyPyBench~\cite{bouzenia2024dypybench} provides 50
-executable Python projects and compares PyCG to DynaPyt-based dynamic call graphs. We differ in
-measuring a second static analyser on the same node set, in stratifying the corpus by dynamism
-before sampling, and in evaluating LLM resolvers against the same runtime labels.
+executable Python projects and compares PyCG to DynaPyt-based dynamic call graphs.
 
 \textbf{LLMs as static analysers.} Venkatesh et al.~\cite{venkatesh2025llmcg} evaluate 24 LLMs on
 call-graph and type-inference micro-benchmarks and find PyCG ahead of every LLM on call graphs.
 We revisit the question on real code with execution-derived labels.
+
+\textbf{What is new here.} Table~\ref{tab:compare} sets this study against the two closest Python
+studies: a second static analyser on the same node set, a determinism check, known artifact classes
+removed before measuring, and LLMs scored against execution rather than benchmark labels.
+
+\begin{table}[t]
+\caption{The closest Python studies and this one}\label{tab:compare}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\begin{tabular}{L{2.05cm}L{1.75cm}L{1.75cm}L{2.0cm}}
+\toprule
+ & DyPyBench~\cite{bouzenia2024dypybench} & Venkatesh et al.~\cite{venkatesh2025llmcg} & This paper \\
+\midrule
+Code & 50 real projects & micro-benchmark & \nStaticAttempted{} real repos, \nRuntimeRepos{} traced \\
+Static tools & PyCG & PyCG & PyCG, Pyright \\
+Seed determinism & not reported & not reported & 3 seeds on all, 10 on \nTenSeed \\
+Built-in and naming artifacts & reported after measuring & not applicable & excluded by construction \\
+Misses attributed to & built-in types, naming, \texttt{super()} & benchmark categories & shared method names, references \\
+LLMs scored on execution & --- & no & yes \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 % ---------------------------------------------------------------------------------------------
 \section{Study Design}
@@ -120,12 +181,12 @@ We revisit the question on real code with execution-derived labels.
 \subsection{Corpus}
 
 We searched GitHub for Python repositories with at least 50 stars, a push after August 2023, a
-\texttt{pyproject.toml} or \texttt{setup.py}, and a test suite. From the 98{,}416 matches we drew
+\texttt{pyproject.toml} or \texttt{setup.py}, and a test suite. From the \nPoolMatched{} matches we drew
 a seeded random sample (not ranked by stars), froze each repository's commit on the day of
 discovery, and scored its source with an AST-based dynamism score: weighted counts of dynamic
 constructs (\texttt{getattr} with a non-literal name, dynamic imports, \texttt{eval}/\texttt{exec},
-registries, decorators) per thousand lines, with thresholds calibrated on a 14-repository
-reference set. Repositories were binned LOW, MED or HIGH and interleaved into a 558-repository
+registries, decorators) per thousand lines, with thresholds calibrated on a \nRefSet-repository
+reference set. Repositories were binned LOW, MED or HIGH and interleaved into a \nQueued-repository
 queue, so that stopping early still leaves balanced strata.
 
 An automated triage worked the first \nTriaged{} repositories of the queue. Each was installed
@@ -135,7 +196,7 @@ attempt records the resolved commit, the image digest and a hash of the frozen d
 \nAdmissible{} repositories built and collected at least one test; \nCollectEmpty{} built but
 collected none. After a licence gate, \nStaticAttempted{} entered static extraction.
 
-\subsection{Nodes and edges}
+\subsection{Nodes and edges}\label{sec:nodes}
 
 Both analysers are mapped onto one node set, inventoried from the AST: modules, classes'
 bodies, functions, methods and lambdas, identified by file path and qualified name (line numbers
@@ -145,7 +206,7 @@ when both caller and callee are callables of the repository itself; calls into b
 standard library and third-party packages are excluded, because no call-graph tool claims to
 model them and including them would inflate every miss rate.
 
-\subsection{Static analysers}
+\subsection{Static analysers}\label{sec:static}
 
 \textbf{PyCG} 0.0.8 runs three times per repository, with \texttt{PYTHONHASHSEED} set to 0, 1
 and 42. Each run uses its own container, an 8\,GB memory cap and a 1800\,s timeout, with the
@@ -159,23 +220,29 @@ only weaken it.
 
 \subsection{Runtime ground truth}
 
-For RQ3 and RQ4 we drew 20 of the \nStaticOk{} repositories where both analysers finished (8
-HIGH, 7 MED, 5 LOW): admitted on Python 3.12, at least 50 tests collected, a single top-level
-package, no heavy native stack, a test suite that needs no external service, and preferably a deterministic PyCG (7 of the 20 are
-not; their PyCG graph is the union of the three seeds). Each repository's
-own test suite runs under a tracer built on Python 3.12's
+For RQ3 and RQ4 we drew repositories from the \nStaticOk{} where both analysers finished, in two
+rounds whose rules were written down before either round was traced. The first took \nRoundOne{} (\roundOneStrata): admitted on Python 3.12, at least 50 tests collected, a single top-level package,
+no heavy native stack and no external service. The second took every remaining repository with at
+least 20 tests, a single package and redistribution clearance, allowing native stacks, except two
+that need root or a live service (\nRoundTwo{} more). Of these, \nRuntimeExcluded{} could not be traced (Section~\ref{sec:rq3}).
+Where PyCG is seed-dependent, its graph here is the union of the three seeds of Section~\ref{sec:static}. Each
+repository's own test suite runs under a tracer built on Python 3.12's
 \texttt{sys.monitoring}~\cite{pep669}. It records every call between callables of the package,
 with the line it came from; calls from test code are attributed to a synthetic entry node, and a
 call that passes through library code (a callback handed to the standard library) is charged to
-the nearest package frame. The labels are therefore a lower bound on the program's behaviour:
-they cover what the tests execute and nothing else.
+the nearest package frame. We call these \emph{observed calls}: they cover what one run of the tests executes and nothing
+else.
 
 \subsection{Call-resolution items}
 
 An \emph{item} is a pair (caller, candidate) in which the candidate's name appears on a line of
 the caller that executed under the tests: as a call, as a bare reference (a property read, a
-function passed on) or as a class name (reaching its constructor). The label is whether the call
-was observed. A resolver answers yes or no for each item: \emph{name match} (every candidate is a
+function passed on) or as a class name (reaching its constructor). The label is whether the runtime call graph contains the edge caller$\to$candidate: a property
+read counts through the getter it invokes, a class name through its \texttt{\_\_init\_\_}, and a
+bare reference only if a frame of this caller, or a library frame it called, made the call. Static
+tools are scored by the same edge test. For a uniquely named candidate on a line that executed, an
+unobserved claim is strong evidence of a false claim; for a shared name it is weaker, since
+another run could dispatch to it, so we report precision separately for the two. A resolver answers yes or no for each item: \emph{name match} (every candidate is a
 call, as a text search would assume), PyCG, Pyright, their union, and the LLMs. Calls whose
 target never appears by name in the caller cannot be items; they are counted separately so they
 do not disappear from anyone's recall.
@@ -183,17 +250,22 @@ do not disappear from anyone's recall.
 \subsection{LLM resolvers and a combiner}
 
 We query gpt-oss-20b, gpt-oss-120b and qwen3.8-27b, open-weight models served by Groq, at
-temperature 0. Each prompt shows one caller's executed lines, the definitions of all its
-candidates and the class hierarchy among them, and a JSON schema restricts the answer to
-candidate identifiers. Because of API rate limits, the LLMs answer a seeded sample of callers
+temperature 0. Each prompt shows the caller's whole function body (its own lines, without
+nested definitions), the definitions of its candidates and the class hierarchy among them, and a
+JSON schema restricts the answer to candidate identifiers. The candidate list holds only names on
+lines that executed, the same filter that defines items; the models never see static analysis
+output. Every answer records the serving model, the prompt's SHA-256, temperature 0, seed 0 and
+reasoning effort \emph{low}. Because of API rate limits, the LLMs answer a seeded sample of callers
 that contain at least one hard item (a name shared by several functions, a bare reference, or a
 pair the static analysers get wrong); every resolver is scored on the same sample.
 \rqFourSampleNote{}
 
 A logistic-regression combiner uses ten features: each static analyser's and each LLM's answer,
 how the name is written (call, reference, class name), whether it is shared by several
-functions, and whether the candidate is a method of the caller's own class. It is scored
-out-of-fold, \rqFourCvNote{}
+functions, and whether the candidate is a method of the caller's own class. There is no preprocessing or
+feature selection, and the hyperparameters (L2 penalty 0.5, 3000 epochs, learning rate 0.3) were
+fixed while developing on \texttt{click} and \texttt{toolz}, before any corpus repository was
+traced. It is scored out-of-fold, \rqFourCvNote{} Leave-one-repository-out is the primary result.
 
 % ---------------------------------------------------------------------------------------------
 \section{Results}
@@ -202,9 +274,12 @@ out-of-fold, \rqFourCvNote{}
 
 Table~\ref{tab:outcomes} summarises static extraction. Pyright finished every repository whose
 package layout was detected. PyCG failed on \nPycgFail{} of \nStaticAttempted{}
-(\pctPycgFail{}): on each, all three seeds hit the 1800\,s timeout. When PyCG finishes it is fast
-(median \pycgMedSec{}\,s per run, maximum \pycgMaxSec{}\,s), so the failures are not slow runs
-cut short; PyCG either converges quickly or not within half an hour. Size is part of the
+(\pctPycgFail{}): \nFailTimeout{} hit the 1800\,s timeout on every seed,
+\nFailCrash{} crashed on every seed (an \texttt{IndexError} while reading default arguments, or an
+\texttt{AttributeError}, both inside PyCG), \nFailOom{} exhausted 8\,GB, and on \nFailMixed{} the
+failure mode itself changed with the seed (a timeout on one seed, a crash or out-of-memory on
+another). When PyCG finishes it is fast (median \pycgMedSec{}\,s per run, maximum
+\pycgMaxSec{}\,s), so the timeouts are not slow runs cut short. Size is part of the
 explanation, since failed repositories are larger (median \medNodesFail{} callable nodes against
 \medNodesOk{}), but not all of it: \texttt{\minNodesFailRepo}, with \minNodesFail{} callable
 nodes, timed out on every seed. The failure rate matches DyPyBench, where PyCG produced a call
@@ -217,10 +292,12 @@ graph for 39 of 50 projects~\cite{bouzenia2024dypybench}.
 \toprule
 Repositories attempted & \nStaticAttempted \\
 \quad both analysers finished & \nStaticOk \\
-\quad PyCG timed out on all three seeds & \nPycgFail \\
+\quad PyCG failed & \nPycgFail \\
+\qquad timeout / crash / out of memory, every seed & \nFailTimeout{} / \nFailCrash{} / \nFailOom \\
+\qquad failure mode varied by seed & \nFailMixed \\
 \quad package layout not detected & \nLayoutFail \\
 \midrule
-PyCG output depends on hash seed (of \nStaticOk) & \nNondet{} (\pctNondet) \\
+PyCG raw output size depends on seed (of \nStaticOk) & \nNondet{} (\pctNondet) \\
 \quad LOW / MED / HIGH dynamism & \nondetLow{} / \nondetMed{} / \nondetHigh \\
 \quad median / maximum edge-count spread & \medSpread{} / \maxSpread \\
 \quad repositories with spread $\geq$ 10\% & \nSpreadTen \\
@@ -228,20 +305,36 @@ PyCG output depends on hash seed (of \nStaticOk) & \nNondet{} (\pctNondet) \\
 \end{tabular}
 \end{table}
 
-On \nNondet{} of the \nStaticOk{} repositories where PyCG finished (\pctNondet{}), the three
-seeds produced different in-universe edge sets. Because the repository path, image and tool
-version were identical across runs, the hash seed alone is responsible: PyCG's fixpoint iterates
-over hash-ordered sets, and set iteration order in Python depends on \texttt{PYTHONHASHSEED},
-which is random per process unless pinned. The effect is usually small (median spread
-\medSpread{} of edges) but has a long tail: \nSpreadTen{} repositories vary by 10\% or more, and
-on \texttt{\maxSpreadRepo} the edge count varies by \maxSpread{} between seeds. The problem
-occurs in every stratum, so it is not confined to highly dynamic code. It had been noticed
-informally by tool builders~\cite{codeanalyzer2025seed}; we are not aware of a measurement of how
-often it occurs.
+On \nNondet{} of the \nStaticOk{} repositories where PyCG finished (\pctNondet{}), its raw output
+differed in size between the three seeds. For the raw output this count-based check is a lower bound:
+two runs can return different edges in equal numbers. Because the counts of unique edges differ, output order or
+serialisation cannot explain it, and since repository path, image and tool version were identical
+across runs, the seed alone is responsible. The spread is usually small (median \medSpread{}) but
+has a long tail: \nSpreadTen{} repositories vary by 10\% or more, and on \texttt{\maxSpreadRepo}
+the edge count varies by \maxSpread{} between seeds. It occurs in every stratum. It had been
+noticed informally by tool builders~\cite{codeanalyzer2025seed}; we are not aware of a measurement
+of how often it occurs.
 
-\textbf{Implication.} A PyCG call graph is a sample from a distribution. Studies that use PyCG
-should pin and report \texttt{PYTHONHASHSEED}, or run several seeds and report the spread, and
-should budget for PyCG not terminating on roughly one repository in five.
+\textbf{Mechanism.} PyCG computes its graph with a fixpoint whose passes walk hash-ordered sets,
+and runs it with no iteration cap; set iteration order depends on \texttt{PYTHONHASHSEED}, which is
+random per process unless pinned. The seed therefore changes which fixpoint is reached, not only
+the order of the output. \sweepSetLevel{}
+
+\textbf{Timeouts are non-convergence.} Replaying PyCG's own loop on \texttt{chevron}
+(\minNodesFail{} callable nodes) with an iteration cap and a log per pass, its abstract state grew
+by \chevGrowth{} definitions on every pass, from \chevDefsFirst{} to \chevDefsLast{} over \chevPasses{}
+passes, without converging or revisiting a state: each pass adds definitions under a freshly
+numbered lambda (\texttt{render.<lambda192>} by pass~50), so the convergence check can never
+succeed. On \texttt{muscriptor} the state exploded instead: the names it tracks grew from
+\muscNamesFirst{} to \muscNamesLast{} in \muscPasses{} passes as attributes accumulated on imported
+names, and the last pass alone took \muscLastPassMin{} minutes. Neither is a slow run that a larger
+budget would finish. Termination itself can depend on the seed: in the three-seed run the failure mode changed with
+the seed on \nFailMixed{} repositories\mixedTerminationSentence{}
+
+\textbf{Implication.} PyCG's output is seed-dependent. Studies that use it should pin and report
+\texttt{PYTHONHASHSEED} or run several seeds and report the spread; a study that runs it unpinned
+inherits run-to-run variation in its results. They should also expect it to fail on roughly one
+repository in five.
 
 \subsection{RQ2: Agreement between static analysers}
 
@@ -253,7 +346,14 @@ PyCG and \pyrightOnlyShare{} only by Pyright. Two analysers reading identical so
 disagree on roughly a third of the call graph. Agreement says nothing about which tool is right;
 that requires the runtime labels of RQ3.
 
-\subsection{RQ3: Static recall against runtime calls}
+\begin{figure}[t]
+\centering\includegraphics[width=\columnwidth]{fig_recall}
+\caption{Recall against observed calls, one point per repository. (a) Pyright against PyCG; points
+above the diagonal are repositories where Pyright finds more. (b) Union recall against the dynamism
+score used to stratify the corpus.}\label{fig:recall}
+\end{figure}
+
+\subsection{RQ3: Static recall against runtime calls}\label{sec:rq3}
 
 \rqThreeBody{}
 
@@ -265,18 +365,20 @@ that requires the runtime labels of RQ3.
 \section{Discussion}
 
 \textbf{Static call graphs are less settled than their benchmarks suggest.} On micro-benchmarks
-PyCG is precise; on real repositories it fails to
-terminate on a fifth of the corpus and is seed-dependent on nearly half of the rest. Tools that
-consume call graphs should treat them as one noisy view, and taking the union of two analysers
-is cheap.
+PyCG is precise; on real repositories it fails on a fifth of the corpus and its output is
+seed-dependent on nearly half of the rest\ifdefined\sweepMaxDelta. The seed costs accuracy on some
+repositories (PyCG's recall moved by up to \sweepMaxDelta{} across seeds), but the union with Pyright
+damps it to at most \sweepUnionMaxDelta; the failures and the disagreement between analysers matter
+more\fi. Tools that consume call graphs should treat each as one noisy
+view, and taking the union of two analysers is cheap.
 
 \textbf{LLMs are recall tools, not replacements.} \rqDiscussionLlm{}
 
 \textbf{Call graphs are not reference graphs.} In a small pilot on repository-wide renames in
-\texttt{click}, every rename that failed even with runtime-derived callers in context (8 of 8,
-with an editor that applies exactly what the context shows) failed on a line that names the function without calling it: an entry in a dispatch dictionary, a callback
-registration, a monkey-patch. A call graph, static or dynamic, does not hold these lines. Code
-assistants that retrieve context through call graphs need reference edges as well.
+\texttt{click}, every rename that failed even with runtime-derived callers in context (\pilotFusedFails{} of \pilotFusedFails)
+failed on a line that names the function without calling it: a dispatch-table entry, a callback
+registration, a monkey-patch. No call graph, static or dynamic, holds these lines; code assistants
+that retrieve context through call graphs need reference edges as well.
 
 % ---------------------------------------------------------------------------------------------
 \section{Threats to Validity}
@@ -293,9 +395,16 @@ dependency versions may differ; the static graphs are computed from source and a
 measured earlier, were extracted and traced on an arm64 development machine; both are pure-Python
 packages, so no compiled dependency enters their graphs.
 
+\textbf{Choice of analysers.} PyCG's repository is archived and no longer developed, but PyCG is
+still the baseline in 2024--25 studies~\cite{bouzenia2024dypybench,venkatesh2025llmcg}, so its
+seed dependence bears on their numbers. We did not evaluate Jarvis~\cite{huang2023jarvis}, whose
+gains are reported on micro-benchmarks and a handful of applications; measuring it on the same
+traces is the obvious next step.
+
 \textbf{Tool versions and configuration.} We measure one version of each analyser. Pyright ran
-without dependencies installed. PyCG's 30-minute budget is a choice; a larger budget would finish
-more repositories, at a cost no interactive tool can pay.
+without dependencies installed. PyCG's 30-minute budget is a choice; on the two timed-out repositories we probed, the fixpoint
+diverged, so a larger budget would not have helped there, but we did not probe all
+\nFailTimeout{}.
 
 \textbf{LLM sample and serving.} The LLMs answered a sample of callers, enriched for hard items,
 so their scores are not directly comparable to the static scores on all items; we report every
@@ -305,23 +414,20 @@ model per answer.
 \textbf{Corpus.} The corpus excludes repositories that cannot be installed from their root with
 \texttt{pip} or that collect no tests, which biases it against applications and monorepos. The
 runtime subset favours small, pure-Python packages whose test suites need no external services.
-The LOW stratum of the runtime subset has only three repositories.
+The LOW stratum of the runtime subset is the thinnest, with \nLowRuntime{} repositories.
 
 % ---------------------------------------------------------------------------------------------
 \section{Conclusion}
 
-On real Python repositories, the standard static call-graph generator fails to terminate on a
-fifth of the corpus and is non-deterministic on nearly half of the rest, and two static analysers
+On real Python repositories, the standard static call-graph generator fails on a fifth of the corpus
+and its output depends on the hash seed on nearly half of the rest, and two static analysers
 disagree on a third of the edges. Measured against the calls tests actually make, \rqConclusion{}
-We release the corpus pins, the extraction and tracing pipelines, and every measurement, so that
-the numbers can be re-measured as tools change.
+The pinned repository list, image digests,
+dependency-lock hashes, extraction and tracing code, and all results will be released upon
+publication, so that the numbers can be re-measured as tools change.
 
 \section*{Acknowledgment}
 LLM queries were made through the co-authors' Groq API accounts, with Groq's permission.
-
-\section*{Data Availability}
-Pinned repository list, image digests, dependency-lock hashes, extraction and tracing code, and
-all results will be released upon publication.
 
 \bibliographystyle{IEEEtran}
 \bibliography{refs}

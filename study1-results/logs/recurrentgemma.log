@@ -1,0 +1,515 @@
+
+===== 2026-10-19T08:45:29Z recurrentgemma clone
+
+===== 2026-10-19T08:45:30Z recurrentgemma repo
+
+===== 2026-10-19T09:19:23Z recurrentgemma clone
+
+===== 2026-10-19T09:19:23Z recurrentgemma repo
+
+===== 2026-10-19T09:19:23Z recurrentgemma env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/recurrentgemma
++ python -m venv /home/azureuser/traceweave-data/study1/venv/recurrentgemma
++ . /home/azureuser/traceweave-data/study1/venv/recurrentgemma/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/recurrentgemma
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/recurrentgemma
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/recurrentgemma/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(recurrentgemma) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((recurrentgemma) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/recurrentgemma
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting absl-py<2,>=1 (from recurrentgemma==1.0.1)
+  Downloading absl_py-1.4.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting einops<1,>=0 (from recurrentgemma==1.0.1)
+  Downloading einops-0.8.2-py3-none-any.whl.metadata (13 kB)
+Collecting jaxtyping<1,>=0 (from recurrentgemma==1.0.1)
+  Downloading jaxtyping-0.3.11-py3-none-any.whl.metadata (6.2 kB)
+Collecting numpy<2.4.0,>=1.26.0 (from recurrentgemma==1.0.1)
+  Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting sentencepiece>=0.2.0 (from recurrentgemma==1.0.1)
+  Using cached sentencepiece-0.2.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (33 kB)
+Collecting typeguard<3,>=2 (from recurrentgemma==1.0.1)
+  Downloading typeguard-2.13.3-py3-none-any.whl.metadata (3.6 kB)
+Collecting flax>=0.12.0 (from recurrentgemma==1.0.1)
+  Using cached flax-0.12.10-py3-none-any.whl.metadata (11 kB)
+Collecting jax>=0.9.0 (from recurrentgemma==1.0.1)
+  Using cached jax-0.11.2-py3-none-any.whl.metadata (13 kB)
+Collecting orbax-checkpoint>=0.1.7 (from recurrentgemma==1.0.1)
+  Using cached orbax_checkpoint-0.12.7-py3-none-any.whl.metadata (3.3 kB)
+Collecting pytest<9,>=8 (from recurrentgemma==1.0.1)
+  Using cached pytest-8.4.2-py3-none-any.whl.metadata (7.7 kB)
+Collecting torch<3,>=2 (from recurrentgemma==1.0.1)
+  Using cached torch-2.14.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (37 kB)
+Collecting wadler-lindig>=0.1.3 (from jaxtyping<1,>=0->recurrentgemma==1.0.1)
+  Downloading wadler_lindig-0.1.7-py3-none-any.whl.metadata (17 kB)
+Collecting iniconfig>=1 (from pytest<9,>=8->recurrentgemma==1.0.1)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=20 in /home/azureuser/traceweave-data/study1/venv/recurrentgemma/lib/python3.12/site-packages (from pytest<9,>=8->recurrentgemma==1.0.1) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest<9,>=8->recurrentgemma==1.0.1)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest<9,>=8->recurrentgemma==1.0.1)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting filelock (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.10.0 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: setuptools>=77.0.3 in /home/azureuser/traceweave-data/study1/venv/recurrentgemma/lib/python3.12/site-packages (from torch<3,>=2->recurrentgemma==1.0.1) (84.0.0)
+Collecting sympy>=1.13.3 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting jinja2 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec>=0.8.5 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting cuda-toolkit==13.0.3 (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached cuda_toolkit-13.0.3.0-py2.py3-none-any.whl.metadata (17 kB)
+Collecting cuda-bindings<14,>=13.0.3 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached cuda_bindings-13.4.4-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting nvidia-cudnn-cu13==9.24.0.43 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cudnn_cu13-9.24.0.43-py3-none-manylinux_2_27_x86_64.whl.metadata (1.9 kB)
+Collecting nvidia-cusparselt-cu13==0.8.1 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting nvidia-nccl-cu13==2.30.7 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_nccl_cu13-2.30.7-py3-none-manylinux_2_18_x86_64.whl.metadata (2.1 kB)
+Collecting nvidia-nvshmem-cu13==3.4.5 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.1 kB)
+Collecting triton~=3.8.0 (from torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached triton-3.8.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (978 bytes)
+Collecting nvidia-cublas==13.1.1.3.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cuda-nvrtc==13.0.88.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cuda-runtime==13.0.96.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cufft==12.0.0.61.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-nvjitlink<14,>=13.0.88 (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_nvjitlink-13.4.92-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cufile==1.15.1.6.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cuda-cupti==13.0.85.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-curand==10.4.0.35.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cusolver==12.0.4.66.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cusparse==12.6.3.3.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-nvtx==13.0.85.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl.metadata (1.8 kB)
+Collecting cuda-pathfinder>=1.4.2 (from cuda-bindings<14,>=13.0.3->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached cuda_pathfinder-1.8.3-py3-none-any.whl.metadata (1.9 kB)
+Collecting msgpack (from flax>=0.12.0->recurrentgemma==1.0.1)
+  Using cached msgpack-1.2.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+Collecting optax (from flax>=0.12.0->recurrentgemma==1.0.1)
+  Using cached optax-0.2.8-py3-none-any.whl.metadata (7.9 kB)
+Collecting tensorstore (from flax>=0.12.0->recurrentgemma==1.0.1)
+  Using cached tensorstore-0.1.85-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting rich>=11.1 (from flax>=0.12.0->recurrentgemma==1.0.1)
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting PyYAML>=5.4.1 (from flax>=0.12.0->recurrentgemma==1.0.1)
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting treescope>=0.1.7 (from flax>=0.12.0->recurrentgemma==1.0.1)
+  Using cached treescope-0.1.10-py3-none-any.whl.metadata (6.6 kB)
+Collecting jaxlib<=0.11.2,>=0.11.2 (from jax>=0.9.0->recurrentgemma==1.0.1)
+  Using cached jaxlib-0.11.2-cp312-cp312-manylinux_2_27_x86_64.whl.metadata (1.3 kB)
+Collecting ml_dtypes>=0.5.0 (from jax>=0.9.0->recurrentgemma==1.0.1)
+  Using cached ml_dtypes-0.6.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting opt_einsum (from jax>=0.9.0->recurrentgemma==1.0.1)
+  Using cached opt_einsum-3.4.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting scipy>=1.15 (from jax>=0.9.0->recurrentgemma==1.0.1)
+  Using cached scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting etils[epath,epy] (from orbax-checkpoint>=0.1.7->recurrentgemma==1.0.1)
+  Using cached etils-1.14.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting prometheus-client>=0.20.0 (from orbax-checkpoint>=0.1.7->recurrentgemma==1.0.1)
+  Using cached prometheus_client-0.26.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting aiofiles (from orbax-checkpoint>=0.1.7->recurrentgemma==1.0.1)
+  Using cached aiofiles-25.1.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting protobuf (from orbax-checkpoint>=0.1.7->recurrentgemma==1.0.1)
+  Using cached protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+Collecting humanize (from orbax-checkpoint>=0.1.7->recurrentgemma==1.0.1)
+  Using cached humanize-4.16.0-py3-none-any.whl.metadata (8.0 kB)
+Collecting simplejson>=3.16.0 (from orbax-checkpoint>=0.1.7->recurrentgemma==1.0.1)
+  Using cached simplejson-4.2.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.8 kB)
+Collecting psutil (from orbax-checkpoint>=0.1.7->recurrentgemma==1.0.1)
+  Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting uvloop (from orbax-checkpoint>=0.1.7->recurrentgemma==1.0.1)
+  Using cached uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=11.1->flax>=0.12.0->recurrentgemma==1.0.1)
+  Using cached markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=11.1->flax>=0.12.0->recurrentgemma==1.0.1)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting zipp (from etils[epath,epy]->orbax-checkpoint>=0.1.7->recurrentgemma==1.0.1)
+  Using cached zipp-4.1.1-py3-none-any.whl.metadata (3.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch<3,>=2->recurrentgemma==1.0.1)
+  Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Downloading absl_py-1.4.0-py3-none-any.whl (126 kB)
+Downloading einops-0.8.2-py3-none-any.whl (65 kB)
+Downloading jaxtyping-0.3.11-py3-none-any.whl (56 kB)
+Downloading numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 76.6 MB/s  0:00:00
+Using cached pytest-8.4.2-py3-none-any.whl (365 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached torch-2.14.1-cp312-cp312-manylinux_2_28_x86_64.whl (554.6 MB)
+Using cached cuda_toolkit-13.0.3.0-py2.py3-none-any.whl (2.5 kB)
+Using cached nvidia_cudnn_cu13-9.24.0.43-py3-none-manylinux_2_27_x86_64.whl (553.1 MB)
+Using cached nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_x86_64.whl (170.1 MB)
+Using cached nvidia_nccl_cu13-2.30.7-py3-none-manylinux_2_18_x86_64.whl (216.0 MB)
+Using cached nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (60.4 MB)
+Using cached cuda_bindings-13.4.4-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (7.2 MB)
+Using cached nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_x86_64.whl (423.1 MB)
+Using cached nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl (10.7 MB)
+Using cached nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (90.2 MB)
+Using cached nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+Using cached nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (214.1 MB)
+Using cached nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.2 MB)
+Using cached nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl (59.5 MB)
+Using cached nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl (200.9 MB)
+Using cached nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (145.9 MB)
+Using cached nvidia_nvjitlink-13.4.92-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (42.5 MB)
+Using cached nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl (148 kB)
+Using cached triton-3.8.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (248.0 MB)
+Downloading typeguard-2.13.3-py3-none-any.whl (17 kB)
+Using cached cuda_pathfinder-1.8.3-py3-none-any.whl (62 kB)
+Using cached flax-0.12.10-py3-none-any.whl (532 kB)
+Using cached fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached jax-0.11.2-py3-none-any.whl (3.3 MB)
+Using cached jaxlib-0.11.2-cp312-cp312-manylinux_2_27_x86_64.whl (89.9 MB)
+Using cached ml_dtypes-0.6.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (409 kB)
+Using cached networkx-3.7-py3-none-any.whl (2.1 MB)
+Using cached orbax_checkpoint-0.12.7-py3-none-any.whl (1.4 MB)
+Using cached prometheus_client-0.26.0-py3-none-any.whl (64 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Using cached scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+Using cached sentencepiece-0.2.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (1.4 MB)
+Using cached simplejson-4.2.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (198 kB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached tensorstore-0.1.85-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (21.6 MB)
+Using cached treescope-0.1.10-py3-none-any.whl (182 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading wadler_lindig-0.1.7-py3-none-any.whl (20 kB)
+Using cached aiofiles-25.1.0-py3-none-any.whl (14 kB)
+Using cached etils-1.14.0-py3-none-any.whl (172 kB)
+Using cached filelock-4.2.4-py3-none-any.whl (162 kB)
+Using cached humanize-4.16.0-py3-none-any.whl (137 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Using cached msgpack-1.2.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (472 kB)
+Using cached opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+Using cached optax-0.2.8-py3-none-any.whl (402 kB)
+Using cached protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Using cached uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.5 MB)
+Using cached zipp-4.1.1-py3-none-any.whl (10 kB)
+Building wheels for collected packages: recurrentgemma
+  Building wheel for recurrentgemma (pyproject.toml): started
+  Building wheel for recurrentgemma (pyproject.toml): finished with status 'done'
+  Created wheel for recurrentgemma: filename=recurrentgemma-1.0.1-py3-none-any.whl size=87732 sha256=07eb260fa7e6ef7f02b1f4a758eca58a94886fa193078c231f135fc85daf3c4c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-uhy1c_zt/wheels/88/18/5b/c9877904ab6538e7ec71f9338acf7119ef495bd12485ffb165
+Successfully built recurrentgemma
+Installing collected packages: nvidia-cusparselt-cu13, mpmath, cuda-toolkit, zipp, wadler-lindig, uvloop, typing-extensions, typeguard, triton, sympy, simplejson, sentencepiece, PyYAML, pygments, psutil, protobuf, prometheus-client, pluggy, opt_einsum, nvidia-nvtx, nvidia-nvshmem-cu13, nvidia-nvjitlink, nvidia-nccl-cu13, nvidia-curand, nvidia-cufile, nvidia-cuda-runtime, nvidia-cuda-nvrtc, nvidia-cuda-cupti, numpy, networkx, msgpack, mdurl, MarkupSafe, iniconfig, humanize, fsspec, filelock, etils, einops, cuda-pathfinder, aiofiles, absl-py, treescope, scipy, pytest, nvidia-cusparse, nvidia-cufft, nvidia-cublas, ml_dtypes, markdown-it-py, jinja2, jaxtyping, cuda-bindings, tensorstore, rich, recurrentgemma, nvidia-cusolver, nvidia-cudnn-cu13, jaxlib, jax, torch, orbax-checkpoint, optax, flax
+
+Successfully installed MarkupSafe-3.0.4 PyYAML-6.0.3 absl-py-1.4.0 aiofiles-25.1.0 cuda-bindings-13.4.4 cuda-pathfinder-1.8.3 cuda-toolkit-13.0.3.0 einops-0.8.2 etils-1.14.0 filelock-4.2.4 flax-0.12.10 fsspec-2026.9.0 humanize-4.16.0 iniconfig-2.3.1 jax-0.11.2 jaxlib-0.11.2 jaxtyping-0.3.11 jinja2-3.1.6 markdown-it-py-4.2.0 mdurl-0.1.2 ml_dtypes-0.6.0 mpmath-1.3.0 msgpack-1.2.3 networkx-3.7 numpy-2.3.5 nvidia-cublas-13.1.1.3 nvidia-cuda-cupti-13.0.85 nvidia-cuda-nvrtc-13.0.88 nvidia-cuda-runtime-13.0.96 nvidia-cudnn-cu13-9.24.0.43 nvidia-cufft-12.0.0.61 nvidia-cufile-1.15.1.6 nvidia-curand-10.4.0.35 nvidia-cusolver-12.0.4.66 nvidia-cusparse-12.6.3.3 nvidia-cusparselt-cu13-0.8.1 nvidia-nccl-cu13-2.30.7 nvidia-nvjitlink-13.4.92 nvidia-nvshmem-cu13-3.4.5 nvidia-nvtx-13.0.85 opt_einsum-3.4.0 optax-0.2.8 orbax-checkpoint-0.12.7 pluggy-1.7.0 prometheus-client-0.26.0 protobuf-7.36.2 psutil-7.2.2 pygments-2.21.0 pytest-8.4.2 recurrentgemma-1.0.1 rich-15.0.0 scipy-1.18.1 sentencepiece-0.2.2 simplejson-4.2.0 sympy-1.14.0 tensorstore-0.1.85 torch-2.14.1 treescope-0.1.10 triton-3.8.0 typeguard-2.13.3 typing-extensions-4.16.0 uvloop-0.23.0 wadler-lindig-0.1.7 zipp-4.1.1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Requirement already satisfied: pytest in /home/azureuser/traceweave-data/study1/venv/recurrentgemma/lib/python3.12/site-packages (8.4.2)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: iniconfig>=1 in /home/azureuser/traceweave-data/study1/venv/recurrentgemma/lib/python3.12/site-packages (from pytest) (2.3.1)
+Requirement already satisfied: packaging>=20 in /home/azureuser/traceweave-data/study1/venv/recurrentgemma/lib/python3.12/site-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/recurrentgemma/lib/python3.12/site-packages (from pytest) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/recurrentgemma/lib/python3.12/site-packages (from pytest) (2.21.0)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Installing collected packages: pytest-timeout
+Successfully installed pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/recurrentgemma
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: recurrentgemma
+  Building editable for recurrentgemma (pyproject.toml): started
+  Building editable for recurrentgemma (pyproject.toml): finished with status 'done'
+  Created wheel for recurrentgemma: filename=recurrentgemma-1.0.1-py3-none-any.whl size=7817 sha256=1adc707ce8e85432d2954dd43e6b70348c8d90d5d71f3d1c3874f66721ca4637
+  Stored in directory: /tmp/pip-ephem-wheel-cache-wggbqdat/wheels/88/18/5b/c9877904ab6538e7ec71f9338acf7119ef495bd12485ffb165
+Successfully built recurrentgemma
+Installing collected packages: recurrentgemma
+  Attempting uninstall: recurrentgemma
+    Found existing installation: recurrentgemma 1.0.1
+    Uninstalling recurrentgemma-1.0.1:
+      Successfully uninstalled recurrentgemma-1.0.1
+Successfully installed recurrentgemma-1.0.1
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 204 s
+
+===== 2026-10-19T09:22:47Z recurrentgemma trace
++ cd /home/azureuser/traceweave-harness/work/recurrentgemma
++ TW_PYTEST_ARGS=recurrentgemma
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/recurrentgemma
++ /home/azureuser/traceweave-data/study1/venv/recurrentgemma/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/recurrentgemma --package /home/azureuser/traceweave-harness/work/recurrentgemma/recurrentgemma --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id recurrentgemma-2026-10-19T09:22:47Z --out /home/azureuser/traceweave-harness/bundles/recurrentgemma/trace.json
+........................................................................ [ 50%]
+........F...F.........................................................   [100%]
+=================================== FAILURES ===================================
+_______________ BlockDiagonalLinearTest.test_numerically_to_jax3 _______________
+
+self = <recurrentgemma.torch.layers_test.BlockDiagonalLinearTest testMethod=test_numerically_to_jax3>
+width = 128, num_blocks = 16, dtype = 'bfloat16', seed = 9018323
+
+    @parameterized.product(
+        width=[128, 1024],
+        num_blocks=[1, 16],
+        dtype=["float32", "bfloat16"],
+        seed=[9018323],
+    )
+    def test_numerically_to_jax(
+        self,
+        width: int,
+        num_blocks: int,
+        dtype: str,
+        seed: int,
+    ):
+>     test_utils.numerically_compare_modules(
+          jax_module=jax_layers.BlockDiagonalLinear(
+              width_input=width,
+              num_blocks=num_blocks,
+              param_dtype=dtype,
+          ),
+          torch_module=layers.BlockDiagonalLinear(
+              width=width,
+              num_blocks=num_blocks,
+              dtype=getattr(torch, dtype),
+          ),
+          uses_segment_pos=False,
+          has_cache=False,
+          input_shape=[1, 2, width],
+          dtype=dtype,
+          seed=seed,
+      )
+
+recurrentgemma/torch/layers_test.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+recurrentgemma/torch/test_utils.py:87: in numerically_compare_modules
+    compare_jax_to_torch(jax_outputs, torch_outputs, tols)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+jax_outputs = Array([[[-0.0986328, 0.118164, 0.208984, 0.164062, 0.251953, 0.188477,
+         0.0698242, -0.0166016, 0.060791, 0.375...     -0.408203, -0.217773, -0.142578, -0.300781, 0.237305,
+         -0.0319824, 0.0456543, 0.494141]]], dtype=bfloat16)
+torch_outputs = tensor([[[-9.8145e-02,  1.1816e-01,  2.0898e-01,  1.6406e-01,  2.5195e-01,
+           1.8750e-01,  7.0312e-02, -1.6479...26e-01,
+          -3.1982e-02,  4.5654e-02,  4.9219e-01]]], dtype=torch.bfloat16,
+       grad_fn=<UnsafeViewBackward0>)
+tols = {}
+
+    def compare_jax_to_torch(
+        jax_outputs: Any,
+        torch_outputs: Any,
+        tols: dict[str, float] | None = None,
+    ) -> None:
+      """Compares numerically Jax values to PyTorch values."""
+      tols = tols or {}
+      jax_leaves = jax.tree_util.tree_leaves(jax_outputs)
+      torch_leaves = jax.tree_util.tree_leaves(
+          torch_outputs,
+          is_leaf=lambda x: isinstance(x, torch.Tensor),
+      )
+      assert len(jax_outputs) == len(torch_outputs)
+    
+      for jax_array, torch_array in zip(jax_leaves, torch_leaves):
+        converted_array = conversion.jax_array_to_torch_tensor(jax_array)
+>       torch.testing.assert_close(torch_array, converted_array, **tols)
+E       AssertionError: Tensor-likes are not close!
+E       
+E       Mismatched elements: 21 / 256 (8.2%)
+E       Greatest absolute difference: 0.00146484375 at index (0, 1, 16) (up to 1e-05 allowed)
+E       Greatest relative difference: 7.40625 at index (0, 0, 36) (up to 0.016 allowed)
+
+recurrentgemma/torch/test_utils.py:56: AssertionError
+_______________ BlockDiagonalLinearTest.test_numerically_to_jax7 _______________
+
+self = <recurrentgemma.torch.layers_test.BlockDiagonalLinearTest testMethod=test_numerically_to_jax7>
+width = 1024, num_blocks = 16, dtype = 'bfloat16', seed = 9018323
+
+    @parameterized.product(
+        width=[128, 1024],
+        num_blocks=[1, 16],
+        dtype=["float32", "bfloat16"],
+        seed=[9018323],
+    )
+    def test_numerically_to_jax(
+        self,
+        width: int,
+        num_blocks: int,
+        dtype: str,
+        seed: int,
+    ):
+>     test_utils.numerically_compare_modules(
+          jax_module=jax_layers.BlockDiagonalLinear(
+              width_input=width,
+              num_blocks=num_blocks,
+              param_dtype=dtype,
+          ),
+          torch_module=layers.BlockDiagonalLinear(
+              width=width,
+              num_blocks=num_blocks,
+              dtype=getattr(torch, dtype),
+          ),
+          uses_segment_pos=False,
+          has_cache=False,
+          input_shape=[1, 2, width],
+          dtype=dtype,
+          seed=seed,
+      )
+
+recurrentgemma/torch/layers_test.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+recurrentgemma/torch/test_utils.py:87: in numerically_compare_modules
+    compare_jax_to_torch(jax_outputs, torch_outputs, tols)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+jax_outputs = Array([[[0.322266, -0.0708008, -0.205078, ..., -0.419922, -0.0751953,
+         0.090332],
+        [0.180664, 0.123535, 0.185547, ..., -0.181641, -0.357422,
+         0.139648]]], dtype=bfloat16)
+torch_outputs = tensor([[[ 0.3164, -0.0708, -0.2070,  ..., -0.4258, -0.0776,  0.0898],
+         [ 0.1787,  0.1279,  0.1895,  ..., -0.1816, -0.3594,  0.1426]]],
+       dtype=torch.bfloat16, grad_fn=<UnsafeViewBackward0>)
+tols = {}
+
+    def compare_jax_to_torch(
+        jax_outputs: Any,
+        torch_outputs: Any,
+        tols: dict[str, float] | None = None,
+    ) -> None:
+      """Compares numerically Jax values to PyTorch values."""
+      tols = tols or {}
+      jax_leaves = jax.tree_util.tree_leaves(jax_outputs)
+      torch_leaves = jax.tree_util.tree_leaves(
+          torch_outputs,
+          is_leaf=lambda x: isinstance(x, torch.Tensor),
+      )
+      assert len(jax_outputs) == len(torch_outputs)
+    
+      for jax_array, torch_array in zip(jax_leaves, torch_leaves):
+        converted_array = conversion.jax_array_to_torch_tensor(jax_array)
+>       torch.testing.assert_close(torch_array, converted_array, **tols)
+E       AssertionError: Tensor-likes are not close!
+E       
+E       Mismatched elements: 499 / 2048 (24.4%)
+E       Greatest absolute difference: 0.015625 at index (0, 0, 868) (up to 1e-05 allowed)
+E       Greatest relative difference: 23.5 at index (0, 1, 12) (up to 0.016 allowed)
+
+recurrentgemma/torch/test_utils.py:56: AssertionError
+=============================== warnings summary ===============================
+recurrentgemma/jax/complex_lib_test.py:44
+  /home/azureuser/traceweave-harness/work/recurrentgemma/recurrentgemma/jax/complex_lib_test.py:44: PytestCollectionWarning: cannot collect test class 'TestForwardCase' because it has a __new__ constructor (from: recurrentgemma/jax/complex_lib_test.py)
+    class TestForwardCase(NamedTuple):
+
+recurrentgemma/jax/sampler_test.py::SamplerTest::test_forward_equivalence0
+recurrentgemma/jax/sampler_test.py::SamplerTest::test_forward_equivalence1
+recurrentgemma/jax/sampler_test.py::SamplerTest::test_output_shapes0
+recurrentgemma/jax/sampler_test.py::SamplerTest::test_output_shapes1
+recurrentgemma/jax/sampler_test.py::SamplerTest::test_output_shapes2
+recurrentgemma/jax/sampler_test.py::SamplerTest::test_output_shapes3
+  /home/azureuser/traceweave-data/study1/venv/recurrentgemma/lib/python3.12/site-packages/jax/_src/interpreters/mlir.py:1453: UserWarning: Some donated buffers were not usable: int32[1,6].
+  See an explanation at https://docs.jax.dev/en/latest/faq.html#buffer-donation.
+    warnings.warn("Some donated buffers were not usable:"
+
+recurrentgemma/jax/sampler_test.py::SamplerTest::test_samples
+  /home/azureuser/traceweave-data/study1/venv/recurrentgemma/lib/python3.12/site-packages/jax/_src/interpreters/mlir.py:1453: UserWarning: Some donated buffers were not usable: int32[2,3].
+  See an explanation at https://docs.jax.dev/en/latest/faq.html#buffer-donation.
+    warnings.warn("Some donated buffers were not usable:"
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED recurrentgemma/torch/layers_test.py::BlockDiagonalLinearTest::test_numerically_to_jax3
+FAILED recurrentgemma/torch/layers_test.py::BlockDiagonalLinearTest::test_numerically_to_jax7
+2 failed, 140 passed, 8 warnings in 533.79s (0:08:53)
+wrote 434 edges (398 internal, 36 entry) over 30 modules -> /home/azureuser/traceweave-harness/bundles/recurrentgemma/trace.json
+===== trace rc=0 in 549 s
+
+===== 2026-10-19T09:31:56Z recurrentgemma bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/recurrentgemma/bin/python build_bundle.py recurrentgemma --static /home/azureuser/traceweave-data/static/recurrentgemma --runtime /home/azureuser/traceweave-harness/bundles/recurrentgemma/trace.json
+recurrentgemma: 0 nodes, pycg 0 / pyright 0 static edges, 0 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T09:31:57Z recurrentgemma truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/recurrentgemma/bin/python tw.py truth recurrentgemma
+recurrentgemma: 0 in-package call sites, 0 caller->callee pairs, 4748 package lines ran; suite 140 passed in 407.39 s -> bundles/recurrentgemma/truth.json
+===== truth rc=0 in 859 s
+
+===== 2026-10-19T09:46:17Z recurrentgemma bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/recurrentgemma/bin/python tw.py bench recurrentgemma
++ mv /home/azureuser/traceweave-data/study1/bench/recurrentgemma.txt.tmp /home/azureuser/traceweave-data/study1/bench/recurrentgemma.txt
++ cat /home/azureuser/traceweave-data/study1/bench/recurrentgemma.txt
+
+recurrentgemma: 0 items, 0 real calls; 0 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.00   0.00   0.00   0.00
+  PyCG                              all   0.00   0.00   0.00   0.00
+  Pyright                           all   0.00   0.00   0.00   0.00
+  PyCG ∪ Pyright                    all   0.00   0.00   0.00   0.00
+  name match                     sample   0.00   0.00   0.00   0.00
+  PyCG                           sample   0.00   0.00   0.00   0.00
+  Pyright                        sample   0.00   0.00   0.00   0.00
+  PyCG ∪ Pyright                 sample   0.00   0.00   0.00   0.00
+===== bench rc=0 in 2 s
