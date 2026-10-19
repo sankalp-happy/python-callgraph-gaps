@@ -1,0 +1,11 @@
+
+creosote: 74 items, 60 real calls; 4 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.81   1.00   0.90   1.00
+  PyCG                              all   1.00   0.98   0.99   1.00
+  Pyright                           all   1.00   0.98   0.99   1.00
+  PyCG ∪ Pyright                    all   1.00   0.98   0.99   1.00
+  name match                     sample   0.53   1.00   0.70   1.00
+  PyCG                           sample   1.00   0.88   0.93   1.00
+  Pyright                        sample   1.00   0.88   0.93   1.00
+  PyCG ∪ Pyright                 sample   1.00   0.88   0.93   1.00

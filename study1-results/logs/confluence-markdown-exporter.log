@@ -1,0 +1,267 @@
+
+===== 2026-10-19T07:05:16Z confluence-markdown-exporter clone
+
+===== 2026-10-19T07:05:17Z confluence-markdown-exporter repo
+
+===== 2026-10-19T07:05:17Z confluence-markdown-exporter env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter
++ python -m venv /home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter
++ . /home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(confluence-markdown-exporter) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((confluence-markdown-exporter) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/confluence-markdown-exporter
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting atlassian-python-api (from confluence-markdown-exporter==5.3.0)
+  Downloading atlassian_python_api-5.0.5-py3-none-any.whl.metadata (13 kB)
+Collecting jmespath (from confluence-markdown-exporter==5.3.0)
+  Using cached jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting lxml>=6.0.2 (from confluence-markdown-exporter==5.3.0)
+  Using cached lxml-6.1.3-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting markdownify (from confluence-markdown-exporter==5.3.0)
+  Downloading markdownify-1.2.3-py3-none-any.whl.metadata (9.9 kB)
+Collecting pydantic-settings (from confluence-markdown-exporter==5.3.0)
+  Downloading pydantic_settings-2.16.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting python-dateutil (from confluence-markdown-exporter==5.3.0)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pyyaml (from confluence-markdown-exporter==5.3.0)
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting questionary (from confluence-markdown-exporter==5.3.0)
+  Downloading questionary-2.1.1-py3-none-any.whl.metadata (5.4 kB)
+Collecting rich (from confluence-markdown-exporter==5.3.0)
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting tabulate (from confluence-markdown-exporter==5.3.0)
+  Downloading tabulate-0.10.0-py3-none-any.whl.metadata (40 kB)
+Collecting typer (from confluence-markdown-exporter==5.3.0)
+  Using cached typer-0.27.3-py3-none-any.whl.metadata (16 kB)
+WARNING: confluence-markdown-exporter 5.3.0 does not provide the extra 'test'
+Collecting deprecated (from atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Downloading deprecated-3.0.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting requests (from atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting oauthlib (from atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Downloading oauthlib-4.0.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting requests_oauthlib (from atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting beautifulsoup4 (from atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Using cached beautifulsoup4-4.15.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting typing-extensions (from atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4->atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Using cached soupsieve-3.0.3-py3-none-any.whl.metadata (4.4 kB)
+Collecting wrapt<3,>=1.16 (from deprecated->atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Using cached wrapt-2.5.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+Collecting six<2,>=1.15 (from markdownify->confluence-markdown-exporter==5.3.0)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting pydantic>=2.7.0 (from pydantic-settings->confluence-markdown-exporter==5.3.0)
+  Using cached pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+Collecting python-dotenv>=1.2.2 (from pydantic-settings->confluence-markdown-exporter==5.3.0)
+  Using cached python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+Collecting typing-inspection>=0.4.0 (from pydantic-settings->confluence-markdown-exporter==5.3.0)
+  Using cached typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.7.0->pydantic-settings->confluence-markdown-exporter==5.3.0)
+  Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.50.1 (from pydantic>=2.7.0->pydantic-settings->confluence-markdown-exporter==5.3.0)
+  Using cached pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+Collecting prompt_toolkit<4.0,>=2.0 (from questionary->confluence-markdown-exporter==5.3.0)
+  Using cached prompt_toolkit-3.0.53-py3-none-any.whl.metadata (6.4 kB)
+Collecting wcwidth>=0.1.4 (from prompt_toolkit<4.0,>=2.0->questionary->confluence-markdown-exporter==5.3.0)
+  Using cached wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Collecting charset_normalizer<4,>=2 (from requests->atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests->atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->atlassian-python-api->confluence-markdown-exporter==5.3.0)
+  Using cached certifi-2026.10.18-py3-none-any.whl.metadata (2.5 kB)
+Collecting markdown-it-py>=2.2.0 (from rich->confluence-markdown-exporter==5.3.0)
+  Using cached markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich->confluence-markdown-exporter==5.3.0)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->confluence-markdown-exporter==5.3.0)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting shellingham>=1.3.0 (from typer->confluence-markdown-exporter==5.3.0)
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting annotated-doc>=0.0.2 (from typer->confluence-markdown-exporter==5.3.0)
+  Using cached annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Using cached lxml-6.1.3-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.2 MB)
+Downloading atlassian_python_api-5.0.5-py3-none-any.whl (346 kB)
+Using cached beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+Using cached soupsieve-3.0.3-py3-none-any.whl (41 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading deprecated-3.0.0-py3-none-any.whl (21 kB)
+Using cached wrapt-2.5.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (250 kB)
+Using cached jmespath-1.1.0-py3-none-any.whl (20 kB)
+Downloading markdownify-1.2.3-py3-none-any.whl (15 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading oauthlib-4.0.0-py3-none-any.whl (159 kB)
+Downloading pydantic_settings-2.16.0-py3-none-any.whl (80 kB)
+Using cached pydantic-2.14.1-py3-none-any.whl (488 kB)
+Using cached pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Using cached python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+Using cached typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Downloading questionary-2.1.1-py3-none-any.whl (36 kB)
+Using cached prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Using cached wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (769 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached certifi-2026.10.18-py3-none-any.whl (134 kB)
+Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading tabulate-0.10.0-py3-none-any.whl (39 kB)
+Using cached typer-0.27.3-py3-none-any.whl (123 kB)
+Using cached annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Building wheels for collected packages: confluence-markdown-exporter
+  Building wheel for confluence-markdown-exporter (pyproject.toml): started
+  Building wheel for confluence-markdown-exporter (pyproject.toml): finished with status 'done'
+  Created wheel for confluence-markdown-exporter: filename=confluence_markdown_exporter-5.3.0-py3-none-any.whl size=80062 sha256=d2e3cdce1dec61a5f2e17cddd16fc92c13137ae981711899062667aac93b72e4
+  Stored in directory: /tmp/pip-ephem-wheel-cache-47d6dm79/wheels/df/58/ae/ac54457cb1f9d7547e2418524688077b8a0cb9ecf8586775f2
+Successfully built confluence-markdown-exporter
+Installing collected packages: wrapt, wcwidth, urllib3, typing-extensions, tabulate, soupsieve, six, shellingham, pyyaml, python-dotenv, pygments, oauthlib, mdurl, lxml, jmespath, idna, charset_normalizer, certifi, annotated-types, annotated-doc, typing-inspection, requests, python-dateutil, pydantic-core, prompt_toolkit, markdown-it-py, deprecated, beautifulsoup4, rich, requests_oauthlib, questionary, pydantic, markdownify, typer, pydantic-settings, atlassian-python-api, confluence-markdown-exporter
+
+Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 atlassian-python-api-5.0.5 beautifulsoup4-4.15.0 certifi-2026.10.18 charset_normalizer-3.5.2 confluence-markdown-exporter-5.3.0 deprecated-3.0.0 idna-3.20 jmespath-1.1.0 lxml-6.1.3 markdown-it-py-4.2.0 markdownify-1.2.3 mdurl-0.1.2 oauthlib-4.0.0 prompt_toolkit-3.0.53 pydantic-2.14.1 pydantic-core-2.50.1 pydantic-settings-2.16.0 pygments-2.21.0 python-dateutil-2.9.0.post0 python-dotenv-1.2.4 pyyaml-6.0.3 questionary-2.1.1 requests-2.34.2 requests_oauthlib-2.0.0 rich-15.0.0 shellingham-1.5.4 six-1.17.0 soupsieve-3.0.3 tabulate-0.10.0 typer-0.27.3 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 wcwidth-0.9.2 wrapt-2.5.1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter/lib/python3.12/site-packages (from pytest) (2.21.0)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Installing collected packages: pluggy, iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/confluence-markdown-exporter
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: confluence-markdown-exporter
+  Building editable for confluence-markdown-exporter (pyproject.toml): started
+  Building editable for confluence-markdown-exporter (pyproject.toml): finished with status 'done'
+  Created wheel for confluence-markdown-exporter: filename=confluence_markdown_exporter-5.3.0-py3-none-any.whl size=4449 sha256=61aba80c9fec482f768d90345a74a1ed3209d025b0a93367f707c03cfd038636
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ka_r7564/wheels/df/58/ae/ac54457cb1f9d7547e2418524688077b8a0cb9ecf8586775f2
+Successfully built confluence-markdown-exporter
+Installing collected packages: confluence-markdown-exporter
+  Attempting uninstall: confluence-markdown-exporter
+    Found existing installation: confluence-markdown-exporter 5.3.0
+    Uninstalling confluence-markdown-exporter-5.3.0:
+      Successfully uninstalled confluence-markdown-exporter-5.3.0
+Successfully installed confluence-markdown-exporter-5.3.0
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 26 s
+
+===== 2026-10-19T07:05:43Z confluence-markdown-exporter trace
++ cd /home/azureuser/traceweave-harness/work/confluence-markdown-exporter
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/confluence-markdown-exporter
++ /home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/confluence-markdown-exporter --package /home/azureuser/traceweave-harness/work/confluence-markdown-exporter/confluence_markdown_exporter --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id confluence-markdown-exporter-2026-10-19T07:05:43Z --out /home/azureuser/traceweave-harness/bundles/confluence-markdown-exporter/trace.json
+........................................................................ [ 16%]
+........................................................................ [ 32%]
+........................................................................ [ 48%]
+........................................................................ [ 65%]
+........................................................................ [ 81%]
+........................................................................ [ 97%]
+..........                                                               [100%]
+442 passed in 8.21s
+wrote 320 edges (224 internal, 96 entry) over 16 modules -> /home/azureuser/traceweave-harness/bundles/confluence-markdown-exporter/trace.json
+===== trace rc=0 in 11 s
+
+===== 2026-10-19T07:05:54Z confluence-markdown-exporter bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter/bin/python build_bundle.py confluence-markdown-exporter --static /home/azureuser/traceweave-data/static/confluence-markdown-exporter --runtime /home/azureuser/traceweave-harness/bundles/confluence-markdown-exporter/trace.json
+confluence-markdown-exporter: 364 nodes, pycg 362 / pyright 409 static edges, 303 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T07:05:55Z confluence-markdown-exporter truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter/bin/python tw.py truth confluence-markdown-exporter
+confluence-markdown-exporter: 270 in-package call sites, 253 caller->callee pairs, 2917 package lines ran; suite 442 passed in 6.93 s -> bundles/confluence-markdown-exporter/truth.json
+===== truth rc=0 in 14 s
+
+===== 2026-10-19T07:06:10Z confluence-markdown-exporter bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/confluence-markdown-exporter/bin/python tw.py bench confluence-markdown-exporter
++ mv /home/azureuser/traceweave-data/study1/bench/confluence-markdown-exporter.txt.tmp /home/azureuser/traceweave-data/study1/bench/confluence-markdown-exporter.txt
++ cat /home/azureuser/traceweave-data/study1/bench/confluence-markdown-exporter.txt
+
+confluence-markdown-exporter: 553 items, 150 real calls; 56 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.27   1.00   0.43   1.00
+  PyCG                              all   0.81   0.69   0.75   0.25
+  Pyright                           all   0.80   0.78   0.79   0.50
+  PyCG ∪ Pyright                    all   0.80   0.78   0.79   0.50
+  name match                     sample   0.22   1.00   0.36   1.00
+  PyCG                           sample   0.73   0.59   0.66   0.33
+  Pyright                        sample   0.72   0.66   0.69   0.44
+  PyCG ∪ Pyright                 sample   0.72   0.66   0.69   0.44
+===== bench rc=0 in 3 s

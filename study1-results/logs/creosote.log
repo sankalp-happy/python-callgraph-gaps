@@ -1,0 +1,265 @@
+
+===== 2026-10-19T06:46:47Z creosote clone
+
+===== 2026-10-19T06:46:48Z creosote repo
+
+===== 2026-10-19T06:46:48Z creosote env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/creosote
++ python -m venv /home/azureuser/traceweave-data/study1/venv/creosote
++ . /home/azureuser/traceweave-data/study1/venv/creosote/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/creosote
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/creosote
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/creosote/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(creosote) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((creosote) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/creosote
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting dotty-dict<1.4,>=1.3.1 (from creosote==5.2.0)
+  Downloading dotty_dict-1.3.1-py3-none-any.whl.metadata (5.3 kB)
+Collecting loguru<0.8,>=0.6.0 (from creosote==5.2.0)
+  Downloading loguru-0.7.3-py3-none-any.whl.metadata (22 kB)
+Collecting nbconvert<8.0,>=7.16.4 (from creosote==5.2.0)
+  Downloading nbconvert-7.17.2-py3-none-any.whl.metadata (8.4 kB)
+Collecting nbformat<6.0,>=5.10.4 (from creosote==5.2.0)
+  Downloading nbformat-5.11.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting pip-requirements-parser<33.1,>=32.0.1 (from creosote==5.2.0)
+  Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+WARNING: creosote 5.2.0 does not provide the extra 'test'
+Collecting beautifulsoup4 (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading beautifulsoup4-4.15.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting bleach!=5.0.0 (from bleach[css]!=5.0.0->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading bleach-6.4.0-py3-none-any.whl.metadata (32 kB)
+Collecting defusedxml (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+Collecting jinja2>=3.0 (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jupyter-core>=4.7 (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading jupyter_core-5.9.1-py3-none-any.whl.metadata (1.5 kB)
+Collecting jupyterlab-pygments (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading jupyterlab_pygments-0.3.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting markupsafe>=2.0 (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting mistune<4,>=2.0.3 (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading mistune-3.3.4-py3-none-any.whl.metadata (1.9 kB)
+Collecting nbclient>=0.5.0 (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading nbclient-0.11.0-py3-none-any.whl.metadata (7.3 kB)
+Requirement already satisfied: packaging in /home/azureuser/traceweave-data/study1/venv/creosote/lib/python3.12/site-packages (from nbconvert<8.0,>=7.16.4->creosote==5.2.0) (26.3)
+Collecting pandocfilters>=1.4.1 (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading pandocfilters-1.5.1-py2.py3-none-any.whl.metadata (9.0 kB)
+Collecting pygments>=2.4.1 (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting traitlets>=5.1 (from nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading traitlets-5.16.1-py3-none-any.whl.metadata (10 kB)
+Collecting fastjsonschema>=2.15 (from nbformat<6.0,>=5.10.4->creosote==5.2.0)
+  Downloading fastjsonschema-2.22.2-py3-none-any.whl.metadata (2.1 kB)
+Collecting jsonschema>=2.6 (from nbformat<6.0,>=5.10.4->creosote==5.2.0)
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting pyparsing (from pip-requirements-parser<33.1,>=32.0.1->creosote==5.2.0)
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting webencodings (from bleach!=5.0.0->bleach[css]!=5.0.0->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading webencodings-0.6.1-py3-none-any.whl.metadata (3.4 kB)
+Collecting tinycss2>=1.1.0 (from bleach[css]!=5.0.0->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading tinycss2-1.5.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=2.6->nbformat<6.0,>=5.10.4->creosote==5.2.0)
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=2.6->nbformat<6.0,>=5.10.4->creosote==5.2.0)
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=2.6->nbformat<6.0,>=5.10.4->creosote==5.2.0)
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=2.6->nbformat<6.0,>=5.10.4->creosote==5.2.0)
+  Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting platformdirs>=2.5 (from jupyter-core>=4.7->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting jupyter-client>=7.0.0 (from nbclient>=0.5.0->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading jupyter_client-8.10.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting python-dateutil>=2.8.2 (from jupyter-client>=7.0.0->nbclient>=0.5.0->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pyzmq>=25.0 (from jupyter-client>=7.0.0->nbclient>=0.5.0->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading pyzmq-27.2.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting tornado>=6.4.1 (from jupyter-client>=7.0.0->nbclient>=0.5.0->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading tornado-6.5.10-cp39-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (2.8 kB)
+Collecting typing-extensions>=4.13.0 (from jupyter-client>=7.0.0->nbclient>=0.5.0->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->jupyter-client>=7.0.0->nbclient>=0.5.0->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4->nbconvert<8.0,>=7.16.4->creosote==5.2.0)
+  Downloading soupsieve-3.0.3-py3-none-any.whl.metadata (4.4 kB)
+Downloading dotty_dict-1.3.1-py3-none-any.whl (7.0 kB)
+Downloading loguru-0.7.3-py3-none-any.whl (61 kB)
+Downloading nbconvert-7.17.2-py3-none-any.whl (262 kB)
+Downloading mistune-3.3.4-py3-none-any.whl (66 kB)
+Downloading nbformat-5.11.1-py3-none-any.whl (79 kB)
+Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+Downloading bleach-6.4.0-py3-none-any.whl (165 kB)
+Downloading fastjsonschema-2.22.2-py3-none-any.whl (27 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading jupyter_core-5.9.1-py3-none-any.whl (29 kB)
+Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading nbclient-0.11.0-py3-none-any.whl (25 kB)
+Downloading jupyter_client-8.10.0-py3-none-any.whl (110 kB)
+Downloading pandocfilters-1.5.1-py2.py3-none-any.whl (8.7 kB)
+Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 34.0 MB/s  0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pyzmq-27.2.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (872 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 872.3/872.3 kB 23.8 MB/s  0:00:00
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading tinycss2-1.5.1-py3-none-any.whl (28 kB)
+Downloading tornado-6.5.10-cp39-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (467 kB)
+Downloading traitlets-5.16.1-py3-none-any.whl (86 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading webencodings-0.6.1-py3-none-any.whl (8.7 kB)
+Downloading beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+Downloading soupsieve-3.0.3-py3-none-any.whl (41 kB)
+Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Downloading jupyterlab_pygments-0.3.0-py3-none-any.whl (15 kB)
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Building wheels for collected packages: creosote
+  Building wheel for creosote (pyproject.toml): started
+  Building wheel for creosote (pyproject.toml): finished with status 'done'
+  Created wheel for creosote: filename=creosote-5.2.0-py3-none-any.whl size=21661 sha256=43d6f59880cbfb5c035bc5ebef6dc0616075d837e6839999fcd96e47f480aba7
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ivda2nx1/wheels/ea/dd/80/bde5eecfd5421fa9d01f58764540fd2aea562449604bc9b7f3
+Successfully built creosote
+Installing collected packages: webencodings, typing-extensions, traitlets, tornado, soupsieve, six, rpds-py, pyzmq, pyparsing, pygments, platformdirs, pandocfilters, mistune, markupsafe, loguru, jupyterlab-pygments, fastjsonschema, dotty-dict, defusedxml, attrs, tinycss2, referencing, python-dateutil, pip-requirements-parser, jupyter-core, jinja2, bleach, beautifulsoup4, jupyter-client, jsonschema-specifications, jsonschema, nbformat, nbclient, nbconvert, creosote
+
+Successfully installed attrs-26.1.0 beautifulsoup4-4.15.0 bleach-6.4.0 creosote-5.2.0 defusedxml-0.7.1 dotty-dict-1.3.1 fastjsonschema-2.22.2 jinja2-3.1.6 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 jupyter-client-8.10.0 jupyter-core-5.9.1 jupyterlab-pygments-0.3.0 loguru-0.7.3 markupsafe-3.0.4 mistune-3.3.4 nbclient-0.11.0 nbconvert-7.17.2 nbformat-5.11.1 pandocfilters-1.5.1 pip-requirements-parser-32.0.1 platformdirs-4.13.5 pygments-2.21.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 pyzmq-27.2.0 referencing-0.37.0 rpds-py-2026.9.1 six-1.17.0 soupsieve-3.0.3 tinycss2-1.5.1 tornado-6.5.10 traitlets-5.16.1 typing-extensions-4.16.0 webencodings-0.6.1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Downloading pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/creosote/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/creosote/lib/python3.12/site-packages (from pytest) (2.21.0)
+Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+Downloading pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Installing collected packages: pluggy, iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/creosote
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: creosote
+  Building editable for creosote (pyproject.toml): started
+  Building editable for creosote (pyproject.toml): finished with status 'done'
+  Created wheel for creosote: filename=creosote-5.2.0-0.editable-py3-none-any.whl size=7711 sha256=c413fab508db04b03a4870da35c62b4611f756b54f01dd2972868cad03cf2f04
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ee4sqv1u/wheels/ea/dd/80/bde5eecfd5421fa9d01f58764540fd2aea562449604bc9b7f3
+Successfully built creosote
+Installing collected packages: creosote
+  Attempting uninstall: creosote
+    Found existing installation: creosote 5.2.0
+    Uninstalling creosote-5.2.0:
+      Successfully uninstalled creosote-5.2.0
+Successfully installed creosote-5.2.0
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 32 s
+
+===== 2026-10-19T06:47:20Z creosote trace
++ cd /home/azureuser/traceweave-harness/work/creosote
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/creosote/src
++ /home/azureuser/traceweave-data/study1/venv/creosote/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/creosote/src --package /home/azureuser/traceweave-harness/work/creosote/src/creosote --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id creosote-2026-10-19T06:47:20Z --out /home/azureuser/traceweave-harness/bundles/creosote/trace.json
+........................................................................ [ 43%]
+........................................................................ [ 87%]
+.....................                                                    [100%]
+=============================== warnings summary ===============================
+tests/test_integration_notebook.py::test_jupyter_ok
+  /home/azureuser/traceweave-data/study1/venv/creosote/share/jupyter/nbconvert/templates/python/index.py.j2:61: UserWarning: IPython is needed to transform IPython syntax to pure Python. Install ipython if you need this functionality.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+165 passed, 1 warning in 4.62s
+wrote 79 edges (68 internal, 11 entry) over 9 modules -> /home/azureuser/traceweave-harness/bundles/creosote/trace.json
+===== trace rc=0 in 7 s
+
+===== 2026-10-19T06:47:27Z creosote bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/creosote/bin/python build_bundle.py creosote --static /home/azureuser/traceweave-data/static/creosote --runtime /home/azureuser/traceweave-harness/bundles/creosote/trace.json
+creosote: 77 nodes, pycg 62 / pyright 63 static edges, 76 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T06:47:28Z creosote truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/creosote/bin/python tw.py truth creosote
+creosote: 90 in-package call sites, 79 caller->callee pairs, 775 package lines ran; suite 165 passed in 3.54 s -> bundles/creosote/truth.json
+===== truth rc=0 in 8 s
+
+===== 2026-10-19T06:47:37Z creosote bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/creosote/bin/python tw.py bench creosote
++ mv /home/azureuser/traceweave-data/study1/bench/creosote.txt.tmp /home/azureuser/traceweave-data/study1/bench/creosote.txt
++ cat /home/azureuser/traceweave-data/study1/bench/creosote.txt
+
+creosote: 74 items, 60 real calls; 4 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.81   1.00   0.90   1.00
+  PyCG                              all   1.00   0.98   0.99   1.00
+  Pyright                           all   1.00   0.98   0.99   1.00
+  PyCG ∪ Pyright                    all   1.00   0.98   0.99   1.00
+  name match                     sample   0.53   1.00   0.70   1.00
+  PyCG                           sample   1.00   0.88   0.93   1.00
+  Pyright                        sample   1.00   0.88   0.93   1.00
+  PyCG ∪ Pyright                 sample   1.00   0.88   0.93   1.00
+===== bench rc=0 in 2 s
+
+===== 2026-10-19T06:59:30Z creosote clone

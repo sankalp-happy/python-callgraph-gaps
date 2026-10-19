@@ -1,0 +1,405 @@
+
+===== 2026-10-19T07:12:46Z wsgidav clone
+
+===== 2026-10-19T07:12:48Z wsgidav repo
+
+===== 2026-10-19T07:12:48Z wsgidav env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/wsgidav
++ python -m venv /home/azureuser/traceweave-data/study1/venv/wsgidav
++ . /home/azureuser/traceweave-data/study1/venv/wsgidav/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/wsgidav
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/wsgidav
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/wsgidav/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(wsgidav) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((wsgidav) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/wsgidav
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting defusedxml (from wsgidav==4.3.6a1)
+  Using cached defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+Collecting Jinja2 (from wsgidav==4.3.6a1)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting json5 (from wsgidav==4.3.6a1)
+  Downloading json5-0.17.3-py3-none-any.whl.metadata (27 kB)
+Collecting PyYAML (from wsgidav==4.3.6a1)
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting passlib (from wsgidav==4.3.6a1)
+  Downloading passlib-1.7.4-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting bcrypt<5,>=4.0 (from wsgidav==4.3.6a1)
+  Downloading bcrypt-4.3.0-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (10 kB)
+WARNING: wsgidav 4.3.6a1 does not provide the extra 'test'
+Collecting MarkupSafe>=2.0 (from Jinja2->wsgidav==4.3.6a1)
+  Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Downloading bcrypt-4.3.0-cp39-abi3-manylinux_2_34_x86_64.whl (284 kB)
+Using cached defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading json5-0.17.3-py3-none-any.whl (34 kB)
+Downloading passlib-1.7.4-py2.py3-none-any.whl (525 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 525.6/525.6 kB 12.1 MB/s  0:00:00
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Building wheels for collected packages: wsgidav
+  Building wheel for wsgidav (pyproject.toml): started
+  Building wheel for wsgidav (pyproject.toml): finished with status 'done'
+  Created wheel for wsgidav: filename=wsgidav-4.3.6a1-py3-none-any.whl size=168025 sha256=cc6013920d5d61cb9f48bd99f2eb7c0b73511fe79f4d371d952464c2fec6ef68
+  Stored in directory: /tmp/pip-ephem-wheel-cache-pfbhemej/wheels/21/f0/53/22a46fb28ea94fdedc6927bb7bba3e195c34989c4f9bb2e756
+Successfully built wsgidav
+Installing collected packages: passlib, PyYAML, MarkupSafe, json5, defusedxml, bcrypt, Jinja2, wsgidav
+
+Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.4 PyYAML-6.0.3 bcrypt-4.3.0 defusedxml-0.7.1 json5-0.17.3 passlib-1.7.4 wsgidav-4.3.6a1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ pip install -r requirements.txt
+Requirement already satisfied: defusedxml~=0.7.1 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (0.7.1)
+Requirement already satisfied: Jinja2~=3.1 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (3.1.6)
+Requirement already satisfied: json5~=0.14 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (0.17.3)
+Collecting python-pam~=2.0 (from -r requirements.txt (line 4))
+  Downloading python_pam-2.1.0-py3-none-any.whl.metadata (4.7 kB)
+Requirement already satisfied: PyYAML~=6.0 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (6.0.3)
+Requirement already satisfied: passlib~=1.7 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (1.7.4)
+Requirement already satisfied: bcrypt~=4.3 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (4.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from Jinja2~=3.1->-r requirements.txt (line 2)) (3.0.4)
+Downloading python_pam-2.1.0-py3-none-any.whl (13 kB)
+Installing collected packages: python-pam
+Successfully installed python-pam-2.1.0
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ pip install -r requirements-dev.txt
+Requirement already satisfied: defusedxml~=0.7.1 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/wsgidav/requirements.txt (line 1)) (0.7.1)
+Requirement already satisfied: Jinja2~=3.1 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/wsgidav/requirements.txt (line 2)) (3.1.6)
+Requirement already satisfied: json5~=0.14 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/wsgidav/requirements.txt (line 3)) (0.17.3)
+Requirement already satisfied: python-pam~=2.0 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/wsgidav/requirements.txt (line 4)) (2.1.0)
+Requirement already satisfied: PyYAML~=6.0 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/wsgidav/requirements.txt (line 5)) (6.0.3)
+Requirement already satisfied: passlib~=1.7 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/wsgidav/requirements.txt (line 6)) (1.7.4)
+Requirement already satisfied: bcrypt~=4.3 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r /home/azureuser/traceweave-harness/work/wsgidav/requirements.txt (line 7)) (4.3.0)
+Collecting cheroot~=10.0 (from -r requirements-dev.txt (line 5))
+  Downloading cheroot-10.0.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting Paste~=3.0 (from -r requirements-dev.txt (line 6))
+  Downloading Paste-3.10.1-py3-none-any.whl.metadata (5.3 kB)
+Collecting pytest~=8.2 (from -r requirements-dev.txt (line 7))
+  Using cached pytest-8.4.2-py3-none-any.whl.metadata (7.7 kB)
+Collecting pytest-cov~=5.0 (from -r requirements-dev.txt (line 8))
+  Downloading pytest_cov-5.0.0-py3-none-any.whl.metadata (27 kB)
+Collecting requests (from -r requirements-dev.txt (line 10))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting ruff (from -r requirements-dev.txt (line 11))
+  Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting setuptools~=69.5 (from -r requirements-dev.txt (line 12))
+  Downloading setuptools-69.5.1-py3-none-any.whl.metadata (6.2 kB)
+Collecting stressor (from -r requirements-dev.txt (line 13))
+  Downloading stressor-0.6.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting tox~=4.15 (from -r requirements-dev.txt (line 14))
+  Downloading tox-4.67.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting twine~=5.0 (from -r requirements-dev.txt (line 15))
+  Downloading twine-5.1.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting WebTest~=3.0 (from -r requirements-dev.txt (line 16))
+  Downloading webtest-3.0.7-py3-none-any.whl.metadata (2.0 kB)
+Requirement already satisfied: wheel in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from -r requirements-dev.txt (line 17)) (0.48.0)
+Collecting yabs>=0.6 (from -r requirements-dev.txt (line 18))
+  Downloading yabs-0.6.1-py3-none-any.whl.metadata (4.7 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from Jinja2~=3.1->-r /home/azureuser/traceweave-harness/work/wsgidav/requirements.txt (line 2)) (3.0.4)
+Collecting more-itertools>=2.6 (from cheroot~=10.0->-r requirements-dev.txt (line 5))
+  Downloading more_itertools-11.2.1-py3-none-any.whl.metadata (42 kB)
+Collecting jaraco.functools (from cheroot~=10.0->-r requirements-dev.txt (line 5))
+  Downloading jaraco_functools-4.6.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting iniconfig>=1 (from pytest~=8.2->-r requirements-dev.txt (line 7))
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=20 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from pytest~=8.2->-r requirements-dev.txt (line 7)) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest~=8.2->-r requirements-dev.txt (line 7))
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest~=8.2->-r requirements-dev.txt (line 7))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting coverage>=5.2.1 (from coverage[toml]>=5.2.1->pytest-cov~=5.0->-r requirements-dev.txt (line 8))
+  Using cached coverage-7.16.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.2 kB)
+Collecting cachetools>=7.0.3 (from tox~=4.15->-r requirements-dev.txt (line 14))
+  Downloading cachetools-7.2.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting colorama>=0.4.6 (from tox~=4.15->-r requirements-dev.txt (line 14))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting filelock>=3.25 (from tox~=4.15->-r requirements-dev.txt (line 14))
+  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting platformdirs>=4.9.4 (from tox~=4.15->-r requirements-dev.txt (line 14))
+  Using cached platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting pyproject-api>=1.10 (from tox~=4.15->-r requirements-dev.txt (line 14))
+  Downloading pyproject_api-1.12.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting python-discovery>=1.4.4 (from tox~=4.15->-r requirements-dev.txt (line 14))
+  Using cached python_discovery-1.6.4-py3-none-any.whl.metadata (5.1 kB)
+Collecting tomli-w>=1.2 (from tox~=4.15->-r requirements-dev.txt (line 14))
+  Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting typing-extensions>=4.15 (from tox~=4.15->-r requirements-dev.txt (line 14))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting virtualenv>=21.1 (from tox~=4.15->-r requirements-dev.txt (line 14))
+  Using cached virtualenv-21.14.11-py3-none-any.whl.metadata (4.1 kB)
+Collecting pkginfo>=1.8.1 (from twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading pkginfo-1.13.3-py3-none-any.whl.metadata (14 kB)
+Collecting readme-renderer>=35.0 (from twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading readme_renderer-46.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting requests-toolbelt!=0.9.0,>=0.8.0 (from twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+Collecting urllib3>=1.26.0 (from twine~=5.0->-r requirements-dev.txt (line 15))
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting importlib-metadata>=3.6 (from twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading importlib_metadata-9.0.1-py3-none-any.whl.metadata (4.5 kB)
+Collecting keyring>=15.1 (from twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading keyring-25.7.0-py3-none-any.whl.metadata (21 kB)
+Collecting rfc3986>=1.4.0 (from twine~=5.0->-r requirements-dev.txt (line 15))
+  Using cached rfc3986-2.0.0-py2.py3-none-any.whl.metadata (6.6 kB)
+Collecting rich>=12.0.0 (from twine~=5.0->-r requirements-dev.txt (line 15))
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting pkginfo>=1.8.1 (from twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading pkginfo-1.10.0-py3-none-any.whl.metadata (11 kB)
+Collecting WebOb>=1.2 (from WebTest~=3.0->-r requirements-dev.txt (line 16))
+  Using cached webob-1.8.11-py2.py3-none-any.whl.metadata (13 kB)
+Collecting waitress>=3.0.2 (from WebTest~=3.0->-r requirements-dev.txt (line 16))
+  Downloading waitress-3.0.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting beautifulsoup4 (from WebTest~=3.0->-r requirements-dev.txt (line 16))
+  Using cached beautifulsoup4-4.15.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting charset_normalizer<4,>=2 (from requests->-r requirements-dev.txt (line 10))
+  Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests->-r requirements-dev.txt (line 10))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting certifi>=2023.5.7 (from requests->-r requirements-dev.txt (line 10))
+  Using cached certifi-2026.10.18-py3-none-any.whl.metadata (2.5 kB)
+Collecting fabulist (from stressor->-r requirements-dev.txt (line 13))
+  Downloading fabulist-2.0.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting lxml (from stressor->-r requirements-dev.txt (line 13))
+  Using cached lxml-6.1.3-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting python-dateutil (from stressor->-r requirements-dev.txt (line 13))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting snazzy (from stressor->-r requirements-dev.txt (line 13))
+  Downloading snazzy-0.2.2-py3-none-any.whl.metadata (5.7 kB)
+Collecting click (from yabs>=0.6->-r requirements-dev.txt (line 18))
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting GitPython (from yabs>=0.6->-r requirements-dev.txt (line 18))
+  Downloading gitpython-3.2.1-py3-none-any.whl.metadata (13 kB)
+Collecting PyGithub (from yabs>=0.6->-r requirements-dev.txt (line 18))
+  Downloading pygithub-2.10.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting semantic-version (from yabs>=0.6->-r requirements-dev.txt (line 18))
+  Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+Collecting toml (from yabs>=0.6->-r requirements-dev.txt (line 18))
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting zipp>=3.20 (from importlib-metadata>=3.6->twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading zipp-4.1.1-py3-none-any.whl.metadata (3.6 kB)
+Collecting SecretStorage>=3.2 (from keyring>=15.1->twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading secretstorage-3.5.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting jeepney>=0.4.2 (from keyring>=15.1->twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading jeepney-0.9.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting jaraco.classes (from keyring>=15.1->twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting jaraco.context (from keyring>=15.1->twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading jaraco_context-6.1.2-py3-none-any.whl.metadata (4.2 kB)
+Collecting nh3>=0.2.14 (from readme-renderer>=35.0->twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading nh3-0.3.7-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.0 kB)
+Collecting docutils>=0.21.2 (from readme-renderer>=35.0->twine~=5.0->-r requirements-dev.txt (line 15))
+  Downloading docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=12.0.0->twine~=5.0->-r requirements-dev.txt (line 15))
+  Using cached markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.0.0->twine~=5.0->-r requirements-dev.txt (line 15))
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting cryptography>=2.0 (from SecretStorage>=3.2->keyring>=15.1->twine~=5.0->-r requirements-dev.txt (line 15))
+  Using cached cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+Collecting cffi>=2.0.0 (from cryptography>=2.0->SecretStorage>=3.2->keyring>=15.1->twine~=5.0->-r requirements-dev.txt (line 15))
+  Using cached cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=2.0->SecretStorage>=3.2->keyring>=15.1->twine~=5.0->-r requirements-dev.txt (line 15))
+  Using cached pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Collecting distlib<1,>=0.4.3 (from virtualenv>=21.1->tox~=4.15->-r requirements-dev.txt (line 14))
+  Using cached distlib-0.4.4-py2.py3-none-any.whl.metadata (5.3 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4->WebTest~=3.0->-r requirements-dev.txt (line 16))
+  Using cached soupsieve-3.0.3-py3-none-any.whl.metadata (4.4 kB)
+Collecting gitdb<5,>=4.0.1 (from GitPython->yabs>=0.6->-r requirements-dev.txt (line 18))
+  Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython->yabs>=0.6->-r requirements-dev.txt (line 18))
+  Downloading smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting pynacl>=1.4.0 (from PyGithub->yabs>=0.6->-r requirements-dev.txt (line 18))
+  Downloading pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl.metadata (10.0 kB)
+Collecting pyjwt>=2.4.0 (from pyjwt[crypto]>=2.4.0->PyGithub->yabs>=0.6->-r requirements-dev.txt (line 18))
+  Using cached pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting six>=1.5 (from python-dateutil->stressor->-r requirements-dev.txt (line 13))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading cheroot-10.0.1-py3-none-any.whl (104 kB)
+Downloading Paste-3.10.1-py3-none-any.whl (289 kB)
+Using cached pytest-8.4.2-py3-none-any.whl (365 kB)
+Downloading pytest_cov-5.0.0-py3-none-any.whl (21 kB)
+Downloading setuptools-69.5.1-py3-none-any.whl (894 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 894.6/894.6 kB 21.7 MB/s  0:00:00
+Downloading tox-4.67.1-py3-none-any.whl (238 kB)
+Downloading twine-5.1.1-py3-none-any.whl (38 kB)
+Downloading webtest-3.0.7-py3-none-any.whl (32 kB)
+Downloading pkginfo-1.10.0-py3-none-any.whl (30 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 97.5 MB/s  0:00:00
+Downloading stressor-0.6.0-py3-none-any.whl (457 kB)
+Downloading yabs-0.6.1-py3-none-any.whl (55 kB)
+Downloading cachetools-7.2.3-py3-none-any.whl (18 kB)
+Using cached certifi-2026.10.18-py3-none-any.whl (134 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached coverage-7.16.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (258 kB)
+Using cached filelock-4.2.4-py3-none-any.whl (162 kB)
+Downloading importlib_metadata-9.0.1-py3-none-any.whl (27 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Downloading keyring-25.7.0-py3-none-any.whl (39 kB)
+Downloading jeepney-0.9.0-py3-none-any.whl (49 kB)
+Downloading more_itertools-11.2.1-py3-none-any.whl (74 kB)
+Using cached platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Downloading pyproject_api-1.12.0-py3-none-any.whl (14 kB)
+Using cached python_discovery-1.6.4-py3-none-any.whl (39 kB)
+Downloading readme_renderer-46.0-py3-none-any.whl (14 kB)
+Downloading docutils-0.23-py3-none-any.whl (634 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 634.7/634.7 kB 18.1 MB/s  0:00:00
+Downloading nh3-0.3.7-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (832 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 832.2/832.2 kB 25.4 MB/s  0:00:00
+Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+Using cached rfc3986-2.0.0-py2.py3-none-any.whl (31 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading secretstorage-3.5.0-py3-none-any.whl (15 kB)
+Using cached cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+Using cached cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached virtualenv-21.14.11-py3-none-any.whl (5.5 MB)
+Using cached distlib-0.4.4-py2.py3-none-any.whl (472 kB)
+Downloading waitress-3.0.2-py3-none-any.whl (56 kB)
+Using cached webob-1.8.11-py2.py3-none-any.whl (118 kB)
+Downloading zipp-4.1.1-py3-none-any.whl (10 kB)
+Using cached beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+Using cached soupsieve-3.0.3-py3-none-any.whl (41 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Downloading fabulist-2.0.1-py3-none-any.whl (67 kB)
+Downloading gitpython-3.2.1-py3-none-any.whl (231 kB)
+Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+Downloading smmap-5.0.3-py3-none-any.whl (24 kB)
+Downloading jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+Downloading jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
+Downloading jaraco_functools-4.6.0-py3-none-any.whl (11 kB)
+Using cached lxml-6.1.3-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.2 MB)
+Using cached pycparser-3.11-py3-none-any.whl (51 kB)
+Downloading pygithub-2.10.0-py3-none-any.whl (455 kB)
+Using cached pyjwt-2.15.1-py3-none-any.whl (33 kB)
+Downloading pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 40.3 MB/s  0:00:00
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+Downloading snazzy-0.2.2-py3-none-any.whl (7.7 kB)
+Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Installing collected packages: snazzy, fabulist, distlib, zipp, WebOb, waitress, urllib3, typing-extensions, tomli-w, toml, soupsieve, smmap, six, setuptools, semantic-version, ruff, rfc3986, pyproject-api, pyjwt, pygments, pycparser, pluggy, platformdirs, pkginfo, nh3, more-itertools, mdurl, lxml, jeepney, jaraco.context, iniconfig, idna, filelock, docutils, coverage, colorama, click, charset_normalizer, certifi, cachetools, requests, readme-renderer, python-discovery, python-dateutil, pytest, Paste, markdown-it-py, jaraco.functools, jaraco.classes, importlib-metadata, gitdb, cffi, beautifulsoup4, WebTest, virtualenv, stressor, rich, requests-toolbelt, pytest-cov, pynacl, GitPython, cryptography, cheroot, tox, SecretStorage, PyGithub, keyring, twine, yabs
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 84.0.0
+    Uninstalling setuptools-84.0.0:
+      Successfully uninstalled setuptools-84.0.0
+
+Successfully installed GitPython-3.2.1 Paste-3.10.1 PyGithub-2.10.0 SecretStorage-3.5.0 WebOb-1.8.11 WebTest-3.0.7 beautifulsoup4-4.15.0 cachetools-7.2.3 certifi-2026.10.18 cffi-2.1.1 charset_normalizer-3.5.2 cheroot-10.0.1 click-8.5.0 colorama-0.4.6 coverage-7.16.2 cryptography-50.0.2 distlib-0.4.4 docutils-0.23 fabulist-2.0.1 filelock-4.2.4 gitdb-4.0.12 idna-3.20 importlib-metadata-9.0.1 iniconfig-2.3.1 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.6.0 jeepney-0.9.0 keyring-25.7.0 lxml-6.1.3 markdown-it-py-4.2.0 mdurl-0.1.2 more-itertools-11.2.1 nh3-0.3.7 pkginfo-1.10.0 platformdirs-4.13.5 pluggy-1.7.0 pycparser-3.11 pygments-2.21.0 pyjwt-2.15.1 pynacl-1.6.2 pyproject-api-1.12.0 pytest-8.4.2 pytest-cov-5.0.0 python-dateutil-2.9.0.post0 python-discovery-1.6.4 readme-renderer-46.0 requests-2.34.2 requests-toolbelt-1.0.0 rfc3986-2.0.0 rich-15.0.0 ruff-0.17.1 semantic-version-2.10.0 setuptools-69.5.1 six-1.17.0 smmap-5.0.3 snazzy-0.2.2 soupsieve-3.0.3 stressor-0.6.0 toml-0.10.2 tomli-w-1.2.0 tox-4.67.1 twine-5.1.1 typing-extensions-4.16.0 urllib3-2.8.0 virtualenv-21.14.11 waitress-3.0.2 yabs-0.6.1 zipp-4.1.1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Requirement already satisfied: pytest in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (8.4.2)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: iniconfig>=1 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from pytest) (2.3.1)
+Requirement already satisfied: packaging>=20 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from pytest) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages (from pytest) (2.21.0)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Installing collected packages: pytest-timeout
+Successfully installed pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/wsgidav
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: wsgidav
+  Building editable for wsgidav (pyproject.toml): started
+  Building editable for wsgidav (pyproject.toml): finished with status 'done'
+  Created wheel for wsgidav: filename=wsgidav-4.3.6a1-0.editable-py3-none-any.whl size=5065 sha256=28d40f46b6b806e9f35377a8163a3f8768da58041cbac691c390bbd85c4dcee9
+  Stored in directory: /tmp/pip-ephem-wheel-cache-sszhxpg7/wheels/21/f0/53/22a46fb28ea94fdedc6927bb7bba3e195c34989c4f9bb2e756
+Successfully built wsgidav
+Installing collected packages: wsgidav
+  Attempting uninstall: wsgidav
+    Found existing installation: wsgidav 4.3.6a1
+    Uninstalling wsgidav-4.3.6a1:
+      Successfully uninstalled wsgidav-4.3.6a1
+Successfully installed wsgidav-4.3.6a1
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 39 s
+
+===== 2026-10-19T07:13:27Z wsgidav trace
++ cd /home/azureuser/traceweave-harness/work/wsgidav
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/wsgidav
++ /home/azureuser/traceweave-data/study1/venv/wsgidav/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/wsgidav --package /home/azureuser/traceweave-harness/work/wsgidav/wsgidav --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id wsgidav-2026-10-19T07:13:27Z --out /home/azureuser/traceweave-harness/bundles/wsgidav/trace.json
+........s...........s.....ss......s.ss..........sss..........sssss...... [ 73%]
+..........................                                               [100%]
+=============================== warnings summary ===============================
+../../../traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages/webob/compat.py:5
+  /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages/webob/compat.py:5: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    from cgi import parse_header
+
+tests/test_imports.py::test_module_is_importable[wsgidav.dc.htdigest_dc]
+  /home/azureuser/traceweave-data/study1/venv/wsgidav/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+    from crypt import crypt as _crypt
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+83 passed, 15 skipped, 2 warnings in 8.86s
+wrote 377 edges (329 internal, 48 entry) over 47 modules -> /home/azureuser/traceweave-harness/bundles/wsgidav/trace.json
+Stopping WsgiDavTestServer... done.
+===== trace rc=0 in 11 s
+
+===== 2026-10-19T07:13:38Z wsgidav bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/wsgidav/bin/python build_bundle.py wsgidav --static /home/azureuser/traceweave-data/static/wsgidav --runtime /home/azureuser/traceweave-harness/bundles/wsgidav/trace.json
+wsgidav: 571 nodes, pycg 596 / pyright 647 static edges, 377 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T07:13:40Z wsgidav truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/wsgidav/bin/python tw.py truth wsgidav
+wsgidav: the untouched suite does not run (rc=0); fix the environment before scoring anything
+===== truth rc=1 in 18 s

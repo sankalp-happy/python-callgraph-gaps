@@ -1,0 +1,103 @@
+\newcommand{\nTriaged}{240}
+\newcommand{\nAdmissible}{118}
+\newcommand{\nCollectEmpty}{64}
+\newcommand{\nStaticAttempted}{105}
+\newcommand{\nStaticOk}{78}
+\newcommand{\nPycgFail}{22}
+\newcommand{\pctPycgFail}{21\%}
+\newcommand{\nLayoutFail}{5}
+\newcommand{\nPyrightOk}{100}
+\newcommand{\nWithArtifacts}{100}
+\newcommand{\medNodesOk}{181}
+\newcommand{\medNodesFail}{935}
+\newcommand{\minNodesFail}{16}
+\newcommand{\minNodesFailRepo}{chevron}
+\newcommand{\nNondet}{36}
+\newcommand{\pctNondet}{46\%}
+\newcommand{\medSpread}{1.0\%}
+\newcommand{\nSpreadTen}{7}
+\newcommand{\maxSpread}{65\%}
+\newcommand{\maxSpreadRepo}{movingpandas}
+\newcommand{\nondetLow}{9/22}
+\newcommand{\nondetMed}{13/23}
+\newcommand{\nondetHigh}{14/33}
+\newcommand{\pycgMedSec}{0.7}
+\newcommand{\pycgMaxSec}{582}
+\newcommand{\jacMed}{0.65}
+\newcommand{\jacQone}{0.56}
+\newcommand{\jacQthree}{0.80}
+\newcommand{\nJacBelowHalf}{16}
+\newcommand{\nJacAboveEight}{19}
+\newcommand{\pycgOnlyShare}{11\%}
+\newcommand{\pyrightOnlyShare}{27\%}
+\newcommand{\nEdgesUnion}{33{,}368}
+\newcommand{\pending}{\textbf{[pending]}}
+\newcommand{\nRuntimeRepos}{20}
+\newcommand{\nRuntimeExcluded}{2}
+\newcommand{\edgeUnionMed}{0.78}
+\newcommand{\edgeUnionMin}{0.45}
+\newcommand{\edgeUnionMax}{0.94}
+\newcommand{\edgePycgMed}{0.62}
+\newcommand{\edgePyrightMed}{0.75}
+\newcommand{\nPyrightBeatsPycg}{16}
+\newcommand{\nObservedPairs}{5{,}436}
+\newcommand{\edgeMedLow}{0.79 ($n{=}3$)}
+\newcommand{\edgeMedMed}{0.75 ($n{=}8$)}
+\newcommand{\edgeMedHigh}{0.76 ($n{=}9$)}
+\newcommand{\itemPycgP}{0.93}
+\newcommand{\itemPycgR}{0.57}
+\newcommand{\itemPyrightP}{0.91}
+\newcommand{\itemPyrightR}{0.71}
+\newcommand{\itemUnionP}{0.91}
+\newcommand{\itemUnionR}{0.73}
+\newcommand{\itemNameP}{0.27}
+\newcommand{\itemNameR}{1.00}
+\newcommand{\nItems}{16{,}514}
+\newcommand{\nRealItems}{4{,}448}
+\newcommand{\nMissed}{1{,}218}
+\newcommand{\pctMissShared}{80\%}
+\newcommand{\pctMissReference}{20\%}
+\newcommand{\pctUnnamed}{19\%}
+\newcommand{\nUnnamed}{1{,}033}
+\newcommand{\llmOneTwentyP}{0.66}
+\newcommand{\llmOneTwentyR}{0.85}
+\newcommand{\llmOneTwentyStaticP}{0.88}
+\newcommand{\llmOneTwentyStaticR}{0.67}
+\newcommand{\llmOneTwentyN}{3{,}502}
+\newcommand{\llmTwentyP}{0.69}
+\newcommand{\llmTwentyR}{0.82}
+\newcommand{\llmTwentyStaticP}{0.88}
+\newcommand{\llmTwentyStaticR}{0.67}
+\newcommand{\llmTwentyN}{3{,}498}
+\newcommand{\llmQwenP}{0.75}
+\newcommand{\llmQwenR}{0.77}
+\newcommand{\llmQwenStaticP}{0.88}
+\newcommand{\llmQwenStaticR}{0.67}
+\newcommand{\llmQwenN}{3{,}489}
+\newcommand{\cvComb}{0.84 & 0.73 & 0.78}
+\newcommand{\cvCombUnion}{0.88 & 0.67 & 0.76}
+\newcommand{\cvMajority}{0.72 & 0.83 & 0.77}
+\newcommand{\cvAnyLlm}{0.58 & 0.89 & 0.70}
+\newcommand{\nCombItems}{3{,}485}
+\newcommand{\nCombRepos}{20}
+\newcommand{\loroComb}{0.81 & 0.71 & 0.76}
+\newcommand{\rqThreeRows}{\texttt{ShivyC} & L & 1459 & 0.34 & 0.41 & 0.45 & 0.46 \\
+\texttt{rlm} & L & 142 & 0.34 & 0.79 & 0.79 & 0.85 \\
+\texttt{pr-agent} & L & 619 & 0.66 & 0.79 & 0.79 & 0.95 \\
+\texttt{sqllineage} & M & 761 & 0.29 & 0.44 & 0.45 & 0.65 \\
+\texttt{sec-edgar} & M & 123 & 0.27 & 0.46 & 0.49 & 0.48 \\
+\texttt{confluence-md-exporter} & M & 206 & 0.51 & 0.58 & 0.58 & 0.78 \\
+\texttt{toolz} & M & 121 & 0.56 & 0.61 & 0.67 & 0.97 \\
+\texttt{all-repos} & M & 221 & 0.80 & 0.82 & 0.83 & 0.90 \\
+\texttt{mcp-seq-thinking} & M & 36 & 0.72 & 0.89 & 0.89 & 1.00 \\
+\texttt{bedrock-agentcore-sdk} & M & 356 & 0.68 & 0.92 & 0.92 & 0.95 \\
+\texttt{creosote} & M & 63 & 0.92 & 0.92 & 0.92 & 0.98 \\
+\texttt{redbeat} & H & 63 & 0.59 & 0.59 & 0.60 & 0.71 \\
+\texttt{pyrlp} & H & 120 & 0.53 & 0.64 & 0.65 & 0.71 \\
+\texttt{apiflask} & H & 142 & 0.47 & 0.68 & 0.69 & 0.81 \\
+\texttt{click} & H & 704 & 0.46 & 0.68 & 0.69 & 0.79 \\
+\texttt{marshmallow-sqlalchemy} & H & 38 & 0.68 & 0.76 & 0.76 & 0.90 \\
+\texttt{scrapyrt} & H & 25 & 0.72 & 0.80 & 0.80 & 0.95 \\
+\texttt{xacro} & H & 140 & 0.84 & 0.84 & 0.85 & 1.00 \\
+\texttt{autoray} & H & 50 & 0.86 & 0.74 & 0.88 & 0.97 \\
+\texttt{python-neutronclient} & H & 47 & 0.92 & 0.94 & 0.94 & 0.96 \\}

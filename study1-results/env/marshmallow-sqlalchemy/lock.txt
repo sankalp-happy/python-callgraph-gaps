@@ -1,0 +1,12 @@
+iniconfig==2.3.1
+marshmallow==4.3.1
+marshmallow-sqlalchemy @ file:///home/azureuser/traceweave-harness/work/marshmallow-sqlalchemy
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.1.1
+pytest-timeout==2.4.0
+setuptools==84.0.0
+SQLAlchemy==2.1.5
+typing_extensions==4.16.0
+wheel==0.48.0

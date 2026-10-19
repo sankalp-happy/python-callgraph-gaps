@@ -1,0 +1,11 @@
+
+apiflask: 316 items, 108 real calls; 34 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.34   1.00   0.51   1.00
+  PyCG                              all   1.00   0.59   0.74   0.13
+  Pyright                           all   0.93   0.81   0.87   0.26
+  PyCG ∪ Pyright                    all   0.93   0.81   0.87   0.26
+  name match                     sample   0.28   1.00   0.44   1.00
+  PyCG                           sample   1.00   0.45   0.62   0.11
+  Pyright                        sample   0.96   0.76   0.85   0.44
+  PyCG ∪ Pyright                 sample   0.96   0.76   0.85   0.44

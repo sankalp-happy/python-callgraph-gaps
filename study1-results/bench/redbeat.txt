@@ -1,0 +1,11 @@
+
+redbeat: 110 items, 52 real calls; 11 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.47   1.00   0.64   1.00
+  PyCG                              all   1.00   0.69   0.82   0.00
+  Pyright                           all   1.00   0.71   0.83   0.00
+  PyCG ∪ Pyright                    all   1.00   0.71   0.83   0.00
+  name match                     sample   0.52   1.00   0.69   1.00
+  PyCG                           sample   1.00   0.64   0.78   0.00
+  Pyright                        sample   1.00   0.66   0.80   0.00
+  PyCG ∪ Pyright                 sample   1.00   0.66   0.80   0.00

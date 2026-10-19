@@ -1,0 +1,11 @@
+
+sqllineage: 1199 items, 512 real calls; 257 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.43   1.00   0.60   1.00
+  PyCG                              all   0.99   0.42   0.59   0.24
+  Pyright                           all   0.89   0.65   0.75   0.33
+  PyCG ∪ Pyright                    all   0.89   0.65   0.75   0.33
+  name match                     sample   0.43   1.00   0.60   1.00
+  PyCG                           sample   0.98   0.47   0.63   0.29
+  Pyright                        sample   0.85   0.66   0.74   0.41
+  PyCG ∪ Pyright                 sample   0.85   0.66   0.74   0.41

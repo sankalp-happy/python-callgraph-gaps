@@ -1,0 +1,11 @@
+
+pyrlp: 246 items, 105 real calls; 23 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.43   1.00   0.60   1.00
+  PyCG                              all   0.98   0.60   0.75   0.13
+  Pyright                           all   0.95   0.71   0.81   0.26
+  PyCG ∪ Pyright                    all   0.95   0.71   0.81   0.26
+  name match                     sample   0.38   1.00   0.55   1.00
+  PyCG                           sample   0.96   0.40   0.57   0.13
+  Pyright                        sample   0.89   0.52   0.65   0.26
+  PyCG ∪ Pyright                 sample   0.89   0.52   0.65   0.26

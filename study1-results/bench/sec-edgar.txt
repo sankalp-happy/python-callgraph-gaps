@@ -1,0 +1,11 @@
+
+sec-edgar: 489 items, 112 real calls; 11 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.23   1.00   0.37   1.00
+  PyCG                              all   0.91   0.26   0.40   0.03
+  Pyright                           all   0.86   0.48   0.62   0.06
+  PyCG ∪ Pyright                    all   0.86   0.48   0.62   0.06
+  name match                     sample   0.22   1.00   0.36   1.00
+  PyCG                           sample   0.83   0.14   0.24   0.00
+  Pyright                        sample   0.84   0.44   0.58   0.00
+  PyCG ∪ Pyright                 sample   0.84   0.44   0.58   0.00

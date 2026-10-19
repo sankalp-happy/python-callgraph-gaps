@@ -1,0 +1,153 @@
+
+===== 2026-10-19T07:11:20Z ShivyC clone
+
+===== 2026-10-19T07:11:21Z ShivyC repo
+
+===== 2026-10-19T07:11:21Z ShivyC env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/ShivyC
++ python -m venv /home/azureuser/traceweave-data/study1/venv/ShivyC
++ . /home/azureuser/traceweave-data/study1/venv/ShivyC/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/ShivyC
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/ShivyC
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/ShivyC/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(ShivyC) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((ShivyC) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/ShivyC
++ '[' -f pyproject.toml ']'
++ '[' -f setup.py ']'
++ pip install .
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: shivyc
+  Building wheel for shivyc (pyproject.toml): started
+  Building wheel for shivyc (pyproject.toml): finished with status 'done'
+  Created wheel for shivyc: filename=shivyc-0.5.0-py3-none-any.whl size=88041 sha256=e35127c394841f5af772171dd0f7de9805235ed348d32ba48bf29ad75b30cfed
+  Stored in directory: /tmp/pip-ephem-wheel-cache-iy7x_cne/wheels/95/a9/1b/253fe0d1a0fc23d4fcd3889d45d6ac166c1407030056168e0a
+Successfully built shivyc
+Installing collected packages: shivyc
+Successfully installed shivyc-0.5.0
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/ShivyC/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Installing collected packages: pygments, pluggy, iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pygments-2.21.0 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/ShivyC
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: shivyc
+  Building editable for shivyc (pyproject.toml): started
+  Building editable for shivyc (pyproject.toml): finished with status 'done'
+  Created wheel for shivyc: filename=shivyc-0.5.0-0.editable-py3-none-any.whl size=6171 sha256=4cb2eea0448114bc98d824b7ff796e56b99d61c5e1e752af7f0f466788bb3a6f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-6t9geazl/wheels/95/a9/1b/253fe0d1a0fc23d4fcd3889d45d6ac166c1407030056168e0a
+Successfully built shivyc
+Installing collected packages: shivyc
+  Attempting uninstall: shivyc
+    Found existing installation: shivyc 0.5.0
+    Uninstalling shivyc-0.5.0:
+      Successfully uninstalled shivyc-0.5.0
+Successfully installed shivyc-0.5.0
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 20 s
+
+===== 2026-10-19T07:11:42Z ShivyC trace
++ cd /home/azureuser/traceweave-harness/work/ShivyC
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/ShivyC
++ /home/azureuser/traceweave-data/study1/venv/ShivyC/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/ShivyC --package /home/azureuser/traceweave-harness/work/ShivyC/shivyc --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id ShivyC-2026-10-19T07:11:42Z --out /home/azureuser/traceweave-harness/bundles/ShivyC/trace.json
+........................................................................ [ 76%]
+......................                                                   [100%]
+94 passed in 37.12s
+wrote 1492 edges (1483 internal, 9 entry) over 40 modules -> /home/azureuser/traceweave-harness/bundles/ShivyC/trace.json
+===== trace rc=0 in 39 s
+
+===== 2026-10-19T07:12:21Z ShivyC bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/ShivyC/bin/python build_bundle.py ShivyC --static /home/azureuser/traceweave-data/static/ShivyC --runtime /home/azureuser/traceweave-harness/bundles/ShivyC/trace.json
+ShivyC: 797 nodes, pycg 610 / pyright 681 static edges, 1482 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T07:12:22Z ShivyC truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/ShivyC/bin/python tw.py truth ShivyC
+ShivyC: 2355 in-package call sites, 1710 caller->callee pairs, 4352 package lines ran; suite 94 passed in 15.46 s -> bundles/ShivyC/truth.json
+===== truth rc=0 in 23 s
+
+===== 2026-10-19T07:12:44Z ShivyC bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/ShivyC/bin/python tw.py bench ShivyC
++ mv /home/azureuser/traceweave-data/study1/bench/ShivyC.txt.tmp /home/azureuser/traceweave-data/study1/bench/ShivyC.txt
++ cat /home/azureuser/traceweave-data/study1/bench/ShivyC.txt
+
+ShivyC: 3379 items, 1252 real calls; 221 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.37   1.00   0.54   1.00
+  PyCG                              all   0.91   0.38   0.54   0.10
+  Pyright                           all   0.91   0.42   0.57   0.06
+  PyCG ∪ Pyright                    all   0.92   0.46   0.62   0.12
+  name match                     sample   0.36   1.00   0.53   1.00
+  PyCG                           sample   0.92   0.30   0.46   0.07
+  Pyright                        sample   0.92   0.33   0.49   0.04
+  PyCG ∪ Pyright                 sample   0.91   0.35   0.51   0.08
+===== bench rc=0 in 2 s

@@ -1,0 +1,577 @@
+
+===== 2026-10-19T07:06:12Z sqllineage clone
+
+===== 2026-10-19T07:06:13Z sqllineage repo
+
+===== 2026-10-19T07:06:13Z sqllineage env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/sqllineage
++ python -m venv /home/azureuser/traceweave-data/study1/venv/sqllineage
++ . /home/azureuser/traceweave-data/study1/venv/sqllineage/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/sqllineage
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/sqllineage
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/sqllineage/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(sqllineage) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((sqllineage) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/sqllineage
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting networkx>=2.4 (from sqllineage==1.5.8)
+  Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting rustworkx<0.18.0,>=0.16.0 (from sqllineage==1.5.8)
+  Downloading rustworkx-0.17.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+Collecting sqlalchemy>=1.4.0 (from sqllineage==1.5.8)
+  Using cached sqlalchemy-2.1.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.7 kB)
+Collecting sqlfluff>=3.2.0 (from sqllineage==1.5.8)
+  Downloading sqlfluff-4.4.0-py3-none-any.whl.metadata (13 kB)
+Collecting sqlparse>=0.5.4 (from sqllineage==1.5.8)
+  Downloading sqlparse-0.6.0-py3-none-any.whl.metadata (6.0 kB)
+WARNING: sqllineage 1.5.8 does not provide the extra 'test'
+Collecting numpy<3,>=1.16.0 (from rustworkx<0.18.0,>=0.16.0->sqllineage==1.5.8)
+  Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting typing-extensions>=4.6.0 (from sqlalchemy>=1.4.0->sqllineage==1.5.8)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting platformdirs (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Using cached platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting chardet (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Downloading chardet-7.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Collecting click<8.5.0 (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting colorama>=0.3 (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting diff-cover>=2.5.0 (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Downloading diff_cover-10.6.0-py3-none-any.whl.metadata (22 kB)
+Collecting Jinja2 (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting pathspec (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Using cached pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Collecting pyyaml>=5.1 (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting regex (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting tblib (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Downloading tblib-3.2.2-py3-none-any.whl.metadata (27 kB)
+Collecting tqdm (from sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Using cached tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting pluggy<2,>=0.13.1 (from diff-cover>=2.5.0->sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments<3,>=2.19.1 (from diff-cover>=2.5.0->sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2->sqlfluff>=3.2.0->sqllineage==1.5.8)
+  Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Downloading rustworkx-0.17.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 50.0 MB/s  0:00:00
+Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 74.8 MB/s  0:00:00
+Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 57.8 MB/s  0:00:00
+Using cached sqlalchemy-2.1.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.7 MB)
+Downloading sqlfluff-4.4.0-py3-none-any.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 26.2 MB/s  0:00:00
+Downloading click-8.4.2-py3-none-any.whl (119 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading diff_cover-10.6.0-py3-none-any.whl (63 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Downloading chardet-7.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 47.2 MB/s  0:00:00
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Downloading sqlparse-0.6.0-py3-none-any.whl (50 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached pathspec-1.1.1-py3-none-any.whl (57 kB)
+Using cached platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.8/807.8 kB 24.7 MB/s  0:00:00
+Downloading tblib-3.2.2-py3-none-any.whl (12 kB)
+Using cached tqdm-4.70.1-py3-none-any.whl (80 kB)
+Building wheels for collected packages: sqllineage
+  Building wheel for sqllineage (pyproject.toml): started
+  Building wheel for sqllineage (pyproject.toml): finished with status 'done'
+  Created wheel for sqllineage: filename=sqllineage-1.5.8-py3-none-any.whl size=134562 sha256=d24614f327c56bc5d8ccc1206c915d9e26fe622edc3a9dac41b2eb5d936aabbf
+  Stored in directory: /tmp/pip-ephem-wheel-cache-wfy72vf6/wheels/f2/a9/ee/7f582a6e769fa9c61b64d6714d520671a7c9809da5f493ae86
+Successfully built sqllineage
+Installing collected packages: typing-extensions, tqdm, tblib, sqlparse, regex, pyyaml, pygments, pluggy, platformdirs, pathspec, numpy, networkx, MarkupSafe, colorama, click, chardet, sqlalchemy, rustworkx, Jinja2, diff-cover, sqlfluff, sqllineage
+
+Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.4 chardet-7.7.0 click-8.4.2 colorama-0.4.6 diff-cover-10.6.0 networkx-3.7 numpy-2.5.4 pathspec-1.1.1 platformdirs-4.13.5 pluggy-1.7.0 pygments-2.21.0 pyyaml-6.0.3 regex-2026.9.29 rustworkx-0.17.1 sqlalchemy-2.1.5 sqlfluff-4.4.0 sqllineage-1.5.8 sqlparse-0.6.0 tblib-3.2.2 tqdm-4.70.1 typing-extensions-4.16.0
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/sqllineage/lib/python3.12/site-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/sqllineage/lib/python3.12/site-packages (from pytest) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/sqllineage/lib/python3.12/site-packages (from pytest) (2.21.0)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Installing collected packages: iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/sqllineage
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: sqllineage
+  Building editable for sqllineage (pyproject.toml): started
+  Building editable for sqllineage (pyproject.toml): finished with status 'done'
+  Created wheel for sqllineage: filename=sqllineage-1.5.8-py3-none-any.whl size=5530 sha256=8d712d16ad0d8790bb88f2f7b89817d3bcced3be39204bbd51c9d0c29fd8b142
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ysbfofwj/wheels/f2/a9/ee/7f582a6e769fa9c61b64d6714d520671a7c9809da5f493ae86
+Successfully built sqllineage
+Installing collected packages: sqllineage
+  Attempting uninstall: sqllineage
+    Found existing installation: sqllineage 1.5.8
+    Uninstalling sqllineage-1.5.8:
+      Successfully uninstalled sqllineage-1.5.8
+Successfully installed sqllineage-1.5.8
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 30 s
+
+===== 2026-10-19T07:06:43Z sqllineage trace
++ cd /home/azureuser/traceweave-harness/work/sqllineage
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/sqllineage
++ /home/azureuser/traceweave-data/study1/venv/sqllineage/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/sqllineage --package /home/azureuser/traceweave-harness/work/sqllineage/sqllineage --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id sqllineage-2026-10-19T07:06:43Z --out /home/azureuser/traceweave-harness/bundles/sqllineage/trace.json
+..........F............................................................. [ 14%]
+........................................................................ [ 29%]
+........................................................................ [ 43%]
+........................................................................ [ 58%]
+........................................................................ [ 72%]
+........................................................................ [ 87%]
+...............................................................          [100%]
+=================================== FAILURES ===================================
+_________________________________ test_handler _________________________________
+
+    def test_handler():
+        container = namedtuple("response", ["status", "header"])
+    
+        def start_response(status, header):
+            container.status = status
+            container.header = header
+    
+        def mock_request(method, path, body=None):
+            if isinstance(body, dict):
+                body = json.dumps(body)
+            environ = {"REQUEST_METHOD": method, "PATH_INFO": path}
+            if body:
+                with StringIO() as f:
+                    length = f.write(body)
+                    f.seek(0)
+                    environ["CONTENT_LENGTH"] = length
+                    environ["wsgi.input"] = f
+                    app(environ, start_response)
+            else:
+                app(environ, start_response)
+    
+        # 200
+        mock_request("GET", "/")
+>       assert container.status.startswith(str(HTTPStatus.OK.value))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x7b44d30e2d70>('200')
+E        +    where <built-in method startswith of str object at 0x7b44d30e2d70> = '404 Not Found'.startswith
+E        +      where '404 Not Found' = <class 'tests.core.test_drawing.response'>.status
+E        +    and   '200' = str(200)
+E        +      where 200 = <HTTPStatus.OK: 200>.value
+E        +        where <HTTPStatus.OK: 200> = HTTPStatus.OK
+
+tests/core/test_drawing.py:38: AssertionError
+=============================== warnings summary ===============================
+tests/core/test_cli.py::test_cli_dummy
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/cli.py:112: UserWarning: Both -e and -f options are specified. -e option will be ignored
+    warnings.warn("Both -e and -f options are specified. -e option will be ignored")
+
+tests/core/test_config.py::test_config_parallel[ProcessPoolExecutor]
+tests/core/test_config.py::test_config_parallel[ProcessPoolExecutor]
+tests/core/test_config.py::test_config_parallel[ProcessPoolExecutor]
+tests/core/test_config.py::test_config_parallel[ProcessPoolExecutor]
+  /usr/local/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=7) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+tests/core/test_exception.py::test_select_without_table
+  /home/azureuser/traceweave-harness/work/sqllineage/tests/core/test_exception.py:16: DeprecationWarning: dialect `non-validating` is deprecated, use `ansi` or dialect of your SQL instead. `non-validating` will be completely removed in v1.6.x
+    LineageRunner("select * from where foo='bar'", dialect=SQLPARSE_DIALECT)._eval()
+
+tests/core/test_runner.py::test_silent_mode
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/analyzer.py:88: UserWarning: SQLLineage doesn't support analyzing statement type [transaction_statement] for SQL:begin;
+    warnings.warn(
+
+tests/sql/column/multiple_statements/test_session_metadata.py: 4 warnings
+tests/sql/column/test_metadata_target_column.py: 8 warnings
+tests/sql/column/test_metadata_unqualified_column.py: 28 warnings
+tests/sql/column/test_metadata_wildcard.py: 60 warnings
+tests/sql/column/test_column_merge.py: 20 warnings
+tests/sql/column/test_column_select_case_when.py: 8 warnings
+tests/sql/column/test_column_select_cast.py: 62 warnings
+tests/sql/column/test_column_select_column.py: 40 warnings
+tests/sql/column/test_column_select_expression.py: 16 warnings
+tests/sql/column/test_column_select_from_cte.py: 20 warnings
+tests/sql/column/test_column_select_from_join.py: 18 warnings
+tests/sql/column/test_column_select_from_subquery.py: 24 warnings
+tests/sql/column/test_column_select_function.py: 12 warnings
+tests/sql/column/test_column_select_union.py: 8 warnings
+  /home/azureuser/traceweave-harness/work/sqllineage/tests/helpers.py:104: DeprecationWarning: dialect `non-validating` is deprecated, use `ansi` or dialect of your SQL instead. `non-validating` will be completely removed in v1.6.x
+    lr = LineageRunner(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column[tsql]
+tests/sql/table/test_procedure_dialect_specific.py::test_procedure_with_select_and_insert[tsql]
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [begin_end_block] for SQL Segment: 'BEGIN
+  INSERT INTO tab2 (col1)
+  SELECT col1 FROM tab1;
+  END' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_multiple_statements[tsql]
+tests/sql/table/test_procedure_dialect_specific.py::test_procedure_multiple_statements[tsql]
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [begin_end_block] for SQL Segment: 'BEGIN
+  INSERT INTO tab2 (col1)
+  SELECT col1 FROM tab1;
+  INSERT INTO tab3 (col2)
+  SELECT col2 FROM tab2;
+  END' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_bigquery
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [set_segment] for SQL Segment: 'SET param_a = 0' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_bigquery
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [set_segment] for SQL Segment: 'SET param_a = ABS(param_a)' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_bigquery
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [set_segment] for SQL Segment: 'SET param_b = COALESCE(param_b, CURRENT_DATE('Asia/Shanghai'))' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_bigquery
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [set_segment] for SQL Segment: 'SET var_a = var_a + 1' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_bigquery
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [leave_statement] for SQL Segment: 'LEAVE' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_bigquery
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_oracle
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [raise_statement] for SQL Segment: 'RAISE' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_oracle
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [if_then_statement] for SQL Segment: 'IF param_a IS NULL THEN
+      param_a := 0;
+    ELSIF param_a < 0 THEN
+      param_a := ABS(param_a);
+    END IF' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_oracle
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [assignment_segment_statement] for SQL Segment: 'param_a := 0' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_oracle
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [assignment_segment_statement] for SQL Segment: 'param_a := ABS(param_a)' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_oracle
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [assignment_segment_statement] for SQL Segment: 'param_b := COALESCE(param_b, CURRENT_DATE('Asia/Shanghai'))' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_oracle
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [loop_statement] for SQL Segment: 'LOOP
+      var_a := var_a + 1;
+      INSERT INTO schema_a.table_c
+      SELECT
+        a.col1 AS id_pk,
+        a.col2 AS updated,
+        b.col2 AS pet
+      FROM schema_a.table_a AS a
+      LEFT JOIN schema_a.table_b AS b
+        ON a.col1 = b.col1
+      WHERE DATE(a.col2) >= param_b;
+      SELECT SQL%ROWCOUNT AS aff_rows;
+      EXIT WHEN var_a >= param_a;
+    END LOOP' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_oracle
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [assignment_segment_statement] for SQL Segment: 'var_a := var_a + 1' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_oracle
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [exit_statement] for SQL Segment: 'EXIT WHEN var_a >= param_a' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [begin_end_block] for SQL Segment: 'BEGIN
+    SET NOCOUNT ON;
+    BEGIN TRY
+      DECLARE @var_a BIGINT = 0;
+      IF @param_a IS NULL
+        SET @param_a = 0;
+      ELSE IF @param_a < 0
+        SET @param_a = ABS(@param_a);
+      SET
+        @param_b = COALESCE(
+          @param_b,
+          CAST(SYSDATETIMEOFFSET() AT TIME ZONE 'China Standard Time' AS DATE)
+        );
+      WHILE @var_a >= @param_a
+        BEGIN
+          SET @var_a = @var_a + 1;
+          INSERT INTO schema_a.table_c
+          SELECT
+            a.col1 AS id_pk,
+            a.col2 AS updated,
+            b.col2 AS pet
+          FROM schema_a.table_a AS a
+          LEFT JOIN schema_a.table_b AS b
+            ON a.col1 = b.col1
+          WHERE DATE(a.col2) >= @param_b;
+          SELECT @@ROWCOUNT AS aff_rows;
+        END
+    END TRY
+    BEGIN CATCH
+      SELECT ERROR_MESSAGE() AS error_info;
+      THROW;
+    END CATCH
+  END' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [set_segment] for SQL Segment: 'SET NOCOUNT ON' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [try_catch] for SQL Segment: 'BEGIN TRY
+      DECLARE @var_a BIGINT = 0;
+      IF @param_a IS NULL
+        SET @param_a = 0;
+      ELSE IF @param_a < 0
+        SET @param_a = ABS(@param_a);
+      SET
+        @param_b = COALESCE(
+          @param_b,
+          CAST(SYSDATETIMEOFFSET() AT TIME ZONE 'China Standard Time' AS DATE)
+        );
+      WHILE @var_a >= @param_a
+        BEGIN
+          SET @var_a = @var_a + 1;
+          INSERT INTO schema_a.table_c
+          SELECT
+            a.col1 AS id_pk,
+            a.col2 AS updated,
+            b.col2 AS pet
+          FROM schema_a.table_a AS a
+          LEFT JOIN schema_a.table_b AS b
+            ON a.col1 = b.col1
+          WHERE DATE(a.col2) >= @param_b;
+          SELECT @@ROWCOUNT AS aff_rows;
+        END
+    END TRY
+    BEGIN CATCH
+      SELECT ERROR_MESSAGE() AS error_info;
+      THROW;
+    END CATCH' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [if_then_statement] for SQL Segment: 'IF @param_a IS NULL
+        SET @param_a = 0;
+      ELSE IF @param_a < 0
+        SET @param_a = ABS(@param_a);' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [set_local_variable_segment] for SQL Segment: 'SET @param_a = 0' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [set_local_variable_segment] for SQL Segment: 'SET @param_a = ABS(@param_a)' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [set_local_variable_segment] for SQL Segment: 'SET
+        @param_b = COALESCE(
+          @param_b,
+          CAST(SYSDATETIMEOFFSET() AT TIME ZONE 'China Standard Time' AS DATE)
+        )' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [while_statement] for SQL Segment: 'WHILE @var_a >= @param_a
+        BEGIN
+          SET @var_a = @var_a + 1;
+          INSERT INTO schema_a.table_c
+          SELECT
+            a.col1 AS id_pk,
+            a.col2 AS updated,
+            b.col2 AS pet
+          FROM schema_a.table_a AS a
+          LEFT JOIN schema_a.table_b AS b
+            ON a.col1 = b.col1
+          WHERE DATE(a.col2) >= @param_b;
+          SELECT @@ROWCOUNT AS aff_rows;
+        END' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [begin_end_block] for SQL Segment: 'BEGIN
+          SET @var_a = @var_a + 1;
+          INSERT INTO schema_a.table_c
+          SELECT
+            a.col1 AS id_pk,
+            a.col2 AS updated,
+            b.col2 AS pet
+          FROM schema_a.table_a AS a
+          LEFT JOIN schema_a.table_b AS b
+            ON a.col1 = b.col1
+          WHERE DATE(a.col2) >= @param_b;
+          SELECT @@ROWCOUNT AS aff_rows;
+        END' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [set_local_variable_segment] for SQL Segment: 'SET @var_a = @var_a + 1' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_procedure_dialect_specific.py::test_procedure_column_tsql
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [throw_statement] for SQL Segment: 'THROW' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/column/test_column_select_case_when.py: 12 warnings
+tests/sql/column/test_column_select_expression.py: 2 warnings
+tests/sql/table/test_select.py: 38 warnings
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/models.py:217: DeprecationWarning: dialect `non-validating` is deprecated, use `ansi` or dialect of your SQL instead. `non-validating` will be completely removed in v1.6.x
+    for lineage in LineageRunner(
+
+tests/sql/column/test_column_select_case_when.py: 12 warnings
+tests/sql/column/test_column_select_expression.py: 2 warnings
+tests/sql/table/test_select.py: 26 warnings
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlparse/models.py:124: DeprecationWarning: dialect `non-validating` is deprecated, use `ansi` or dialect of your SQL instead. `non-validating` will be completely removed in v1.6.x
+    for lineage in LineageRunner(
+
+tests/sql/table/multiple_statements/test_tmp_table.py: 10 warnings
+tests/sql/table/multiple_statements/test_variable.py: 2 warnings
+tests/sql/table/test_create.py: 10 warnings
+tests/sql/table/test_create_dialect_specific.py: 24 warnings
+tests/sql/table/test_cte.py: 26 warnings
+tests/sql/table/test_cte_dialect_specific.py: 20 warnings
+tests/sql/table/test_insert.py: 10 warnings
+tests/sql/table/test_insert_dialect_specific.py: 60 warnings
+tests/sql/table/test_merge.py: 10 warnings
+tests/sql/table/test_merge_dialect_specific.py: 4 warnings
+tests/sql/table/test_other_with_lineage_dialect_specific.py: 4 warnings
+tests/sql/table/test_other_without_lineage.py: 14 warnings
+tests/sql/table/test_other_without_lineage_dialect_specific.py: 78 warnings
+tests/sql/table/test_path_dialect_specific.py: 26 warnings
+tests/sql/table/test_select.py: 126 warnings
+tests/sql/table/test_select_dialect_specific.py: 86 warnings
+tests/sql/table/test_update.py: 4 warnings
+tests/sql/table/test_update_dialect_specific.py: 2 warnings
+  /home/azureuser/traceweave-harness/work/sqllineage/tests/helpers.py:86: DeprecationWarning: dialect `non-validating` is deprecated, use `ansi` or dialect of your SQL instead. `non-validating` will be completely removed in v1.6.x
+    lr = LineageRunner(sql, dialect=dialect_)
+
+tests/sql/table/multiple_statements/test_tsql_no_semicolon.py::test_tsql_multi_statement_no_semicolon[tsql]
+tests/sql/table/multiple_statements/test_variable.py::test_tsql_declare[tsql]
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/analyzer.py:52: SyntaxWarning: SQL statements is not split by semicolon. SQLLineage is not guaranteed to generate correct result under this circumstances.
+    segments = self._list_specific_statement_segment(stripped)
+
+tests/sql/table/test_procedure_dialect_specific.py::test_procedure_with_select[tsql]
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [begin_end_block] for SQL Segment: 'BEGIN
+  SELECT col1 FROM tab1;
+  END' embedding in procedure, skipping it.
+    warnings.warn(
+
+tests/sql/table/test_procedure_dialect_specific.py::test_procedure_with_insert[tsql]
+  /home/azureuser/traceweave-harness/work/sqllineage/sqllineage/core/parser/sqlfluff/extractors/procedure.py:37: UserWarning: SQLLineage doesn't support analyzing statement type [begin_end_block] for SQL Segment: 'BEGIN
+  INSERT INTO tab1 (col1) VALUES (1);
+  END' embedding in procedure, skipping it.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/core/test_drawing.py::test_handler - AssertionError: assert False
+1 failed, 494 passed, 976 warnings in 140.76s (0:02:20)
+wrote 849 edges (790 internal, 59 entry) over 51 modules -> /home/azureuser/traceweave-harness/bundles/sqllineage/trace.json
+===== trace rc=0 in 146 s
+
+===== 2026-10-19T07:09:09Z sqllineage bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/sqllineage/bin/python build_bundle.py sqllineage --static /home/azureuser/traceweave-data/static/sqllineage --runtime /home/azureuser/traceweave-harness/bundles/sqllineage/trace.json
+sqllineage: 406 nodes, pycg 321 / pyright 406 static edges, 825 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T07:09:10Z sqllineage truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/sqllineage/bin/python tw.py truth sqllineage
+sqllineage: 1225 in-package call sites, 880 caller->callee pairs, 3473 package lines ran; suite 494 passed in 47.36 s -> bundles/sqllineage/truth.json
+===== truth rc=0 in 87 s
+
+===== 2026-10-19T07:10:37Z sqllineage bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/sqllineage/bin/python tw.py bench sqllineage
++ mv /home/azureuser/traceweave-data/study1/bench/sqllineage.txt.tmp /home/azureuser/traceweave-data/study1/bench/sqllineage.txt
++ cat /home/azureuser/traceweave-data/study1/bench/sqllineage.txt
+
+sqllineage: 1199 items, 512 real calls; 257 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.43   1.00   0.60   1.00
+  PyCG                              all   0.99   0.42   0.59   0.24
+  Pyright                           all   0.89   0.65   0.75   0.33
+  PyCG ∪ Pyright                    all   0.89   0.65   0.75   0.33
+  name match                     sample   0.43   1.00   0.60   1.00
+  PyCG                           sample   0.98   0.47   0.63   0.29
+  Pyright                        sample   0.85   0.66   0.74   0.41
+  PyCG ∪ Pyright                 sample   0.85   0.66   0.74   0.41
+===== bench rc=0 in 2 s

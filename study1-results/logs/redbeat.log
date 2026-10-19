@@ -1,0 +1,431 @@
+
+===== 2026-10-19T06:52:13Z redbeat clone
+
+===== 2026-10-19T06:52:13Z redbeat repo
+
+===== 2026-10-19T06:52:13Z redbeat env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/redbeat
++ python -m venv /home/azureuser/traceweave-data/study1/venv/redbeat
++ . /home/azureuser/traceweave-data/study1/venv/redbeat/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/redbeat
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/redbeat
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/redbeat/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(redbeat) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((redbeat) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/redbeat
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting redis>=3.2 (from celery-redbeat==0.0.0)
+  Downloading redis-8.1.0-py3-none-any.whl.metadata (16 kB)
+Collecting celery>=5.0 (from celery-redbeat==0.0.0)
+  Downloading celery-5.6.3-py3-none-any.whl.metadata (23 kB)
+Collecting python-dateutil (from celery-redbeat==0.0.0)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting tenacity (from celery-redbeat==0.0.0)
+  Downloading tenacity-9.2.1-py3-none-any.whl.metadata (1.4 kB)
+WARNING: celery-redbeat 0.0.0 does not provide the extra 'test'
+Collecting billiard<5.0,>=4.2.1 (from celery>=5.0->celery-redbeat==0.0.0)
+  Downloading billiard-4.3.1-py3-none-any.whl.metadata (5.0 kB)
+Collecting kombu>=5.6.0 (from celery>=5.0->celery-redbeat==0.0.0)
+  Downloading kombu-5.6.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting vine<6.0,>=5.1.0 (from celery>=5.0->celery-redbeat==0.0.0)
+  Downloading vine-5.1.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting click<9.0,>=8.1.2 (from celery>=5.0->celery-redbeat==0.0.0)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting click-didyoumean>=0.3.0 (from celery>=5.0->celery-redbeat==0.0.0)
+  Downloading click_didyoumean-0.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting click-repl>=0.2.0 (from celery>=5.0->celery-redbeat==0.0.0)
+  Downloading click_repl-0.4.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting click-plugins>=1.1.1 (from celery>=5.0->celery-redbeat==0.0.0)
+  Downloading click_plugins-1.1.1.2-py2.py3-none-any.whl.metadata (6.5 kB)
+Collecting tzlocal (from celery>=5.0->celery-redbeat==0.0.0)
+  Downloading tzlocal-5.4.4-py3-none-any.whl.metadata (7.7 kB)
+Collecting prompt_toolkit>=3.0.36 (from click-repl>=0.2.0->celery>=5.0->celery-redbeat==0.0.0)
+  Using cached prompt_toolkit-3.0.53-py3-none-any.whl.metadata (6.4 kB)
+Collecting typing-extensions>=4.7.0 (from click-repl>=0.2.0->celery>=5.0->celery-redbeat==0.0.0)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting amqp<6.0.0,>=5.1.1 (from kombu>=5.6.0->celery>=5.0->celery-redbeat==0.0.0)
+  Downloading amqp-5.4.1-py3-none-any.whl.metadata (9.4 kB)
+Collecting tzdata>=2025.2 (from kombu>=5.6.0->celery>=5.0->celery-redbeat==0.0.0)
+  Downloading tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)
+Requirement already satisfied: packaging in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from kombu>=5.6.0->celery>=5.0->celery-redbeat==0.0.0) (26.3)
+Collecting wcwidth>=0.1.4 (from prompt_toolkit>=3.0.36->click-repl>=0.2.0->celery>=5.0->celery-redbeat==0.0.0)
+  Using cached wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Collecting six>=1.5 (from python-dateutil->celery-redbeat==0.0.0)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading celery-5.6.3-py3-none-any.whl (451 kB)
+Downloading billiard-4.3.1-py3-none-any.whl (90 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Downloading vine-5.1.0-py3-none-any.whl (9.6 kB)
+Downloading click_didyoumean-0.3.1-py3-none-any.whl (3.6 kB)
+Downloading click_plugins-1.1.1.2-py2.py3-none-any.whl (11 kB)
+Downloading click_repl-0.4.1-py3-none-any.whl (14 kB)
+Downloading kombu-5.6.2-py3-none-any.whl (214 kB)
+Downloading amqp-5.4.1-py3-none-any.whl (51 kB)
+Using cached prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading redis-8.1.0-py3-none-any.whl (560 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 560.6/560.6 kB 14.7 MB/s  0:00:00
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+Using cached wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (769 kB)
+Downloading tenacity-9.2.1-py3-none-any.whl (32 kB)
+Downloading tzlocal-5.4.4-py3-none-any.whl (18 kB)
+Building wheels for collected packages: celery-redbeat
+  Building wheel for celery-redbeat (pyproject.toml): started
+  Building wheel for celery-redbeat (pyproject.toml): finished with status 'done'
+  Created wheel for celery-redbeat: filename=celery_redbeat-0.0.0-py2.py3-none-any.whl size=16268 sha256=b327d1e161e1d35d7881bacf70d196a0da9e8fc1e500103512543ede007a043f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-bad34j8n/wheels/f6/cf/14/4c452a1e875c8b1d69ee3430a52bc29e7eb35249fcef3c1ed3
+Successfully built celery-redbeat
+Installing collected packages: wcwidth, vine, tzlocal, tzdata, typing-extensions, tenacity, six, redis, click, billiard, python-dateutil, prompt_toolkit, click-plugins, click-didyoumean, amqp, kombu, click-repl, celery, celery-redbeat
+
+Successfully installed amqp-5.4.1 billiard-4.3.1 celery-5.6.3 celery-redbeat-0.0.0 click-8.5.0 click-didyoumean-0.3.1 click-plugins-1.1.1.2 click-repl-0.4.1 kombu-5.6.2 prompt_toolkit-3.0.53 python-dateutil-2.9.0.post0 redis-8.1.0 six-1.17.0 tenacity-9.2.1 typing-extensions-4.16.0 tzdata-2026.5 tzlocal-5.4.4 vine-5.1.0 wcwidth-0.9.2
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ pip install -r requirements-dev.txt
+Ignoring backports.zoneinfo: markers 'python_version < "3.9.0"' don't match your environment
+Requirement already satisfied: celery>=5.0 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from -r requirements-dev.txt (line 2)) (5.6.3)
+Requirement already satisfied: python-dateutil in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from -r requirements-dev.txt (line 3)) (2.9.0.post0)
+Requirement already satisfied: redis>=3.2 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from -r requirements-dev.txt (line 4)) (8.1.0)
+Requirement already satisfied: tenacity in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from -r requirements-dev.txt (line 5)) (9.2.1)
+Collecting pytz (from -r requirements-dev.txt (line 7))
+  Downloading pytz-2026.5-py2.py3-none-any.whl.metadata (22 kB)
+Collecting black (from -r requirements-dev.txt (line 10))
+  Downloading black-26.10.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (108 kB)
+Collecting flake8 (from -r requirements-dev.txt (line 11))
+  Downloading flake8-7.4.1-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting flake8-black (from -r requirements-dev.txt (line 12))
+  Downloading flake8_black-0.4.0-py3-none-any.whl.metadata (12 kB)
+Collecting flake8-isort (from -r requirements-dev.txt (line 13))
+  Downloading flake8_isort-7.0.0-py3-none-any.whl.metadata (25 kB)
+Collecting fakeredis>=2.27.0 (from fakeredis[lua]>=2.27.0->-r requirements-dev.txt (line 16))
+  Downloading fakeredis-2.40.0-py3-none-any.whl.metadata (9.3 kB)
+Collecting pbr (from -r requirements-dev.txt (line 18))
+  Using cached pbr-7.1.3-py2.py3-none-any.whl.metadata (4.1 kB)
+Requirement already satisfied: billiard<5.0,>=4.2.1 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from celery>=5.0->-r requirements-dev.txt (line 2)) (4.3.1)
+Requirement already satisfied: kombu>=5.6.0 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from celery>=5.0->-r requirements-dev.txt (line 2)) (5.6.2)
+Requirement already satisfied: vine<6.0,>=5.1.0 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from celery>=5.0->-r requirements-dev.txt (line 2)) (5.1.0)
+Requirement already satisfied: click<9.0,>=8.1.2 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from celery>=5.0->-r requirements-dev.txt (line 2)) (8.5.0)
+Requirement already satisfied: click-didyoumean>=0.3.0 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from celery>=5.0->-r requirements-dev.txt (line 2)) (0.3.1)
+Requirement already satisfied: click-repl>=0.2.0 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from celery>=5.0->-r requirements-dev.txt (line 2)) (0.4.1)
+Requirement already satisfied: click-plugins>=1.1.1 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from celery>=5.0->-r requirements-dev.txt (line 2)) (1.1.1.2)
+Requirement already satisfied: tzlocal in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from celery>=5.0->-r requirements-dev.txt (line 2)) (5.4.4)
+Requirement already satisfied: six>=1.5 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from python-dateutil->-r requirements-dev.txt (line 3)) (1.17.0)
+Collecting mypy-extensions>=0.4.3 (from black->-r requirements-dev.txt (line 10))
+  Using cached mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Requirement already satisfied: packaging>=22.0 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from black->-r requirements-dev.txt (line 10)) (26.3)
+Collecting pathspec>=1.0.0 (from black->-r requirements-dev.txt (line 10))
+  Using cached pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Collecting platformdirs>=2 (from black->-r requirements-dev.txt (line 10))
+  Using cached platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting pytokens~=0.4.0 (from black->-r requirements-dev.txt (line 10))
+  Downloading pytokens-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting mccabe<0.8.0,>=0.7.0 (from flake8->-r requirements-dev.txt (line 11))
+  Using cached mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting pycodestyle<2.16.0,>=2.15.0 (from flake8->-r requirements-dev.txt (line 11))
+  Using cached pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)
+Collecting pyflakes<4.1.0,>=4.0.0 (from flake8->-r requirements-dev.txt (line 11))
+  Downloading pyflakes-4.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+Collecting isort>=5.0.0 (from flake8-isort->-r requirements-dev.txt (line 13))
+  Downloading isort-9.0.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+Collecting sortedcontainers>=2 (from fakeredis>=2.27.0->fakeredis[lua]>=2.27.0->-r requirements-dev.txt (line 16))
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: setuptools in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from pbr->-r requirements-dev.txt (line 18)) (84.0.0)
+Requirement already satisfied: prompt_toolkit>=3.0.36 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from click-repl>=0.2.0->celery>=5.0->-r requirements-dev.txt (line 2)) (3.0.53)
+Requirement already satisfied: typing-extensions>=4.7.0 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from click-repl>=0.2.0->celery>=5.0->-r requirements-dev.txt (line 2)) (4.16.0)
+Collecting lupa>=2.1 (from fakeredis[lua]>=2.27.0->-r requirements-dev.txt (line 16))
+  Downloading lupa-2.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (60 kB)
+Requirement already satisfied: amqp<6.0.0,>=5.1.1 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from kombu>=5.6.0->celery>=5.0->-r requirements-dev.txt (line 2)) (5.4.1)
+Requirement already satisfied: tzdata>=2025.2 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from kombu>=5.6.0->celery>=5.0->-r requirements-dev.txt (line 2)) (2026.5)
+Requirement already satisfied: wcwidth>=0.1.4 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from prompt_toolkit>=3.0.36->click-repl>=0.2.0->celery>=5.0->-r requirements-dev.txt (line 2)) (0.9.2)
+Downloading pytz-2026.5-py2.py3-none-any.whl (506 kB)
+Downloading black-26.10.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 41.9 MB/s  0:00:00
+Downloading pytokens-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+Downloading flake8-7.4.1-py2.py3-none-any.whl (57 kB)
+Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Downloading pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)
+Downloading pyflakes-4.0.3-py2.py3-none-any.whl (66 kB)
+Downloading flake8_black-0.4.0-py3-none-any.whl (10 kB)
+Downloading flake8_isort-7.0.0-py3-none-any.whl (18 kB)
+Downloading fakeredis-2.40.0-py3-none-any.whl (204 kB)
+Using cached pbr-7.1.3-py2.py3-none-any.whl (136 kB)
+Downloading isort-9.0.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 44.8 MB/s  0:00:00
+Downloading lupa-2.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (2.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 56.7 MB/s  0:00:00
+Using cached mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Using cached pathspec-1.1.1-py3-none-any.whl (57 kB)
+Using cached platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Installing collected packages: sortedcontainers, pytz, pytokens, pyflakes, pycodestyle, platformdirs, pbr, pathspec, mypy-extensions, mccabe, lupa, fakeredis, isort, flake8, black, flake8-isort, flake8-black
+
+Successfully installed black-26.10.1 fakeredis-2.40.0 flake8-7.4.1 flake8-black-0.4.0 flake8-isort-7.0.0 isort-9.0.2 lupa-2.8 mccabe-0.7.0 mypy-extensions-1.1.0 pathspec-1.1.1 pbr-7.1.3 platformdirs-4.13.5 pycodestyle-2.15.0 pyflakes-4.0.3 pytokens-0.4.1 pytz-2026.5 sortedcontainers-2.4.0
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Installing collected packages: pygments, pluggy, iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pygments-2.21.0 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/redbeat
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: celery-redbeat
+  Building editable for celery-redbeat (pyproject.toml): started
+  Building editable for celery-redbeat (pyproject.toml): finished with status 'done'
+  Created wheel for celery-redbeat: filename=celery_redbeat-0.0.0-0.editable-py2.py3-none-any.whl size=8974 sha256=5b66a46c16de4f748bb06758304099023a65c1296b28d801d86f34276ba76231
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ii_zt8gl/wheels/f6/cf/14/4c452a1e875c8b1d69ee3430a52bc29e7eb35249fcef3c1ed3
+Successfully built celery-redbeat
+Installing collected packages: celery-redbeat
+  Attempting uninstall: celery-redbeat
+    Found existing installation: celery-redbeat 0.0.0
+    Uninstalling celery-redbeat-0.0.0:
+      Successfully uninstalled celery-redbeat-0.0.0
+Successfully installed celery-redbeat-0.0.0
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 31 s
+
+===== 2026-10-19T06:52:45Z redbeat trace
++ cd /home/azureuser/traceweave-harness/work/redbeat
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/redbeat
++ /home/azureuser/traceweave-data/study1/venv/redbeat/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/redbeat --package /home/azureuser/traceweave-harness/work/redbeat/redbeat --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id redbeat-2026-10-19T06:52:45Z --out /home/azureuser/traceweave-harness/bundles/redbeat/trace.json
+...............................................ss....................... [ 80%]
+.................                                                        [100%]
+=============================== warnings summary ===============================
+tests/test_config.py::test_RedBeatConfig::test_app
+tests/test_config.py::test_RedBeatConfig::test_either_or
+tests/test_config.py::test_RedBeatConfig::test_key_prefix_default
+tests/test_config.py::test_RedBeatConfig::test_key_prefix_override
+tests/test_config.py::test_RedBeatConfig::test_lock_key_might_be_set_to_none
+tests/test_config.py::test_RedBeatConfig::test_lock_key_override
+tests/test_config.py::test_RedBeatConfig::test_lock_timeout
+tests/test_config.py::test_RedBeatConfig::test_other_keys
+tests/test_config.py::test_RedBeatConfig::test_schedule
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_config.py:12: DeprecationWarning: RedBeat will stop falling back to broker_url in version 2.5.0, set redbeat_redis_url explicitly
+    self.conf = RedBeatConfig(self.app)
+
+tests/test_config.py::test_RedBeatConfig::test_key_prefix_override
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_config.py:32: DeprecationWarning: RedBeat will stop falling back to broker_url in version 2.5.0, set redbeat_redis_url explicitly
+    self.conf = RedBeatConfig(self.app)
+
+tests/test_config.py::test_RedBeatConfig::test_lock_key_might_be_set_to_none
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_config.py:37: DeprecationWarning: RedBeat will stop falling back to broker_url in version 2.5.0, set redbeat_redis_url explicitly
+    self.conf = RedBeatConfig(self.app)
+
+tests/test_config.py::test_RedBeatConfig::test_lock_key_override
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_config.py:42: DeprecationWarning: RedBeat will stop falling back to broker_url in version 2.5.0, set redbeat_redis_url explicitly
+    self.conf = RedBeatConfig(self.app)
+
+tests/test_entry.py: 12 warnings
+tests/test_scheduler.py: 32 warnings
+  /home/azureuser/traceweave-harness/work/redbeat/redbeat/schedulers.py:113: DeprecationWarning: RedBeat will stop falling back to broker_url in version 2.5.0, set redbeat_redis_url explicitly
+    config = RedBeatConfig(app)
+
+tests/test_json.py::RedBeatJSONEncoderTestCase::test_rrule
+tests/test_json.py::RedBeatJSONDecoderTestCase::test_rrule
+  /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages/dateutil/rrule.py:476: DeprecationWarning: Using both 'count' and 'until' is inconsistent with RFC 5545 and has been deprecated in dateutil. Future versions will raise an error.
+    warn("Using both 'count' and 'until' is inconsistent with RFC 5545"
+
+tests/test_scheduler.py: 12 warnings
+  /home/azureuser/traceweave-data/study1/venv/redbeat/lib/python3.12/site-packages/celery/schedules.py:72: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    return (self.nowfun or self.app.now)()
+
+tests/test_scheduler.py::test_RedBeatScheduler_tick::test_due_now
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_scheduler.py:189: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    last_run_at=datetime.utcnow() - timedelta(seconds=1),
+
+tests/test_scheduler.py::InheritedBrokerOptionsRedBeatCase::test_inherited_options_not_forwarded_to_redis
+tests/test_scheduler.py::InheritedClusterOptionsRedBeatCase::test_no_skip_log_when_options_are_forwarded
+tests/test_scheduler.py::InheritedClusterOptionsRedBeatCase::test_startup_nodes_preserved_options_forwarded
+tests/test_scheduler.py::SentinelRedBeatCase::test_sentinel_scheduler
+tests/test_scheduler.py::SentinelRedBeatCase::test_sentinel_scheduler_options
+tests/test_scheduler.py::SentinelRedBeatCase::test_sentinel_scheduler_with_retry_period
+tests/test_scheduler.py::SentinelRedBeatCase::test_sentinel_scheduler_with_username
+  /home/azureuser/traceweave-harness/work/redbeat/redbeat/schedulers.py:113: DeprecationWarning: RedBeat will stop falling back to broker_transport_options in version 2.5.0, set redbeat_redis_options explicitly
+    config = RedBeatConfig(app)
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:15: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    r = rrule('MINUTELY', dtstart=datetime.utcnow() + timedelta(minutes=1))
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:16: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    eta_from_now = r.remaining_estimate(datetime.utcnow())
+
+tests/test_schedules.py: 12 warnings
+  /home/azureuser/traceweave-harness/work/redbeat/redbeat/schedules.py:96: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    now = self.maybe_make_aware(self.now())
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:17: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    eta_after_one_minute = r.remaining_estimate(datetime.utcnow() + timedelta(minutes=1))
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq__with_multiple_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:29: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    r = rrule('MINUTELY', dtstart=datetime.utcnow() + timedelta(minutes=1), count=2)
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq__with_multiple_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:30: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    eta_from_now = r.remaining_estimate(datetime.utcnow())
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq__with_multiple_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:31: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    eta_after_one_minute = r.remaining_estimate(datetime.utcnow() + timedelta(minutes=1))
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq__with_multiple_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:32: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    eta_after_two_minutes = r.remaining_estimate(datetime.utcnow() + timedelta(minutes=2))
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq__with_single_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:22: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    r = rrule('MINUTELY', dtstart=datetime.utcnow() + timedelta(minutes=1), count=1)
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq__with_single_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:23: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    eta_from_now = r.remaining_estimate(datetime.utcnow())
+
+tests/test_schedules.py::test_rrule_remaining_estimate::test_freq__with_single_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:24: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    eta_after_one_minute = r.remaining_estimate(datetime.utcnow() + timedelta(minutes=1))
+
+tests/test_schedules.py::test_rrule_is_due::test_freq__starting_now
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:43: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    r = rrule('MINUTELY', dtstart=datetime.utcnow())
+
+tests/test_schedules.py::test_rrule_is_due::test_freq__starting_now
+tests/test_schedules.py::test_rrule_is_due::test_freq__with_multiple_count
+tests/test_schedules.py::test_rrule_is_due::test_freq__with_single_count
+  /home/azureuser/traceweave-harness/work/redbeat/redbeat/schedules.py:107: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    rem_delta = self.remaining_estimate(self.now())
+
+tests/test_schedules.py::test_rrule_is_due::test_freq__starts_after_one_minute
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:50: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    r = rrule('MINUTELY', dtstart=datetime.utcnow() + timedelta(minutes=1))
+
+tests/test_schedules.py::test_rrule_is_due::test_freq__starts_after_one_minute
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:51: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    is_due, next = r.is_due(datetime.utcnow())
+
+tests/test_schedules.py::test_rrule_is_due::test_freq__with_multiple_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:68: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    r = rrule('MINUTELY', dtstart=datetime.utcnow(), count=2)
+
+tests/test_schedules.py::test_rrule_is_due::test_freq__with_multiple_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:74: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    is_due, next = r.is_due(datetime.utcnow())
+
+tests/test_schedules.py::test_rrule_is_due::test_freq__with_multiple_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:78: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    is_due, next = r.is_due(datetime.utcnow() + timedelta(minutes=1))
+
+tests/test_schedules.py::test_rrule_is_due::test_freq__with_single_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:56: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    r = rrule('MINUTELY', dtstart=datetime.utcnow(), count=1)
+
+tests/test_schedules.py::test_rrule_is_due::test_freq__with_single_count
+  /home/azureuser/traceweave-harness/work/redbeat/tests/test_schedules.py:63: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    is_due, next = r.is_due(datetime.utcnow())
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+87 passed, 2 skipped, 111 warnings in 2.45s
+wrote 95 edges (64 internal, 31 entry) over 4 modules -> /home/azureuser/traceweave-harness/bundles/redbeat/trace.json
+===== trace rc=0 in 5 s
+
+===== 2026-10-19T06:52:49Z redbeat bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/redbeat/bin/python build_bundle.py redbeat --static /home/azureuser/traceweave-data/static/redbeat --runtime /home/azureuser/traceweave-harness/bundles/redbeat/trace.json
+redbeat: 63 nodes, pycg 43 / pyright 44 static edges, 95 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T06:52:51Z redbeat truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/redbeat/bin/python tw.py truth redbeat
+redbeat: 98 in-package call sites, 74 caller->callee pairs, 578 package lines ran; suite 87 passed in 2.1 s -> bundles/redbeat/truth.json
+===== truth rc=0 in 5 s
+
+===== 2026-10-19T06:52:56Z redbeat bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/redbeat/bin/python tw.py bench redbeat
++ mv /home/azureuser/traceweave-data/study1/bench/redbeat.txt.tmp /home/azureuser/traceweave-data/study1/bench/redbeat.txt
++ cat /home/azureuser/traceweave-data/study1/bench/redbeat.txt
+
+redbeat: 110 items, 52 real calls; 11 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.47   1.00   0.64   1.00
+  PyCG                              all   1.00   0.69   0.82   0.00
+  Pyright                           all   1.00   0.71   0.83   0.00
+  PyCG ∪ Pyright                    all   1.00   0.71   0.83   0.00
+  name match                     sample   0.52   1.00   0.69   1.00
+  PyCG                           sample   1.00   0.64   0.78   0.00
+  Pyright                        sample   1.00   0.66   0.80   0.00
+  PyCG ∪ Pyright                 sample   1.00   0.66   0.80   0.00
+===== bench rc=0 in 1 s
+
+===== 2026-10-19T06:54:00Z redbeat clone

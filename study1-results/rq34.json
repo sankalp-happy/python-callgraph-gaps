@@ -1,0 +1,1574 @@
+{
+ "repos": {
+  "ShivyC": {
+   "stratum": "LOW",
+   "observed_edges": 1459,
+   "edge_recall": {
+    "pycg": 0.337,
+    "pyright": 0.406,
+    "union": 0.445
+   },
+   "items": 3379,
+   "real": 1252,
+   "unnamed": 221,
+   "scores": {
+    "PyCG": {
+     "tp": 478,
+     "fp": 49,
+     "fn": 774,
+     "n": 3379,
+     "precision": 0.907,
+     "recall": 0.382,
+     "f1": 0.537
+    },
+    "Pyright": {
+     "tp": 524,
+     "fp": 49,
+     "fn": 728,
+     "n": 3379,
+     "precision": 0.914,
+     "recall": 0.419,
+     "f1": 0.574
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 580,
+     "fp": 51,
+     "fn": 672,
+     "n": 3379,
+     "precision": 0.919,
+     "recall": 0.463,
+     "f1": 0.616
+    },
+    "name match": {
+     "tp": 1252,
+     "fp": 2127,
+     "fn": 0,
+     "n": 3379,
+     "precision": 0.371,
+     "recall": 1.0,
+     "f1": 0.541
+    },
+    "shared-name union": {
+     "tp": 82,
+     "fp": 9,
+     "fn": 609,
+     "n": 2188,
+     "precision": 0.901,
+     "recall": 0.119,
+     "f1": 0.21
+    }
+   }
+  },
+  "all-repos": {
+   "stratum": "MED",
+   "observed_edges": 221,
+   "edge_recall": {
+    "pycg": 0.796,
+    "pyright": 0.824,
+    "union": 0.828
+   },
+   "items": 618,
+   "real": 204,
+   "unnamed": 19,
+   "scores": {
+    "PyCG": {
+     "tp": 177,
+     "fp": 12,
+     "fn": 27,
+     "n": 618,
+     "precision": 0.937,
+     "recall": 0.868,
+     "f1": 0.901
+    },
+    "Pyright": {
+     "tp": 183,
+     "fp": 5,
+     "fn": 21,
+     "n": 618,
+     "precision": 0.973,
+     "recall": 0.897,
+     "f1": 0.934
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 184,
+     "fp": 12,
+     "fn": 20,
+     "n": 618,
+     "precision": 0.939,
+     "recall": 0.902,
+     "f1": 0.92
+    },
+    "name match": {
+     "tp": 204,
+     "fp": 414,
+     "fn": 0,
+     "n": 618,
+     "precision": 0.33,
+     "recall": 1.0,
+     "f1": 0.496
+    },
+    "shared-name union": {
+     "tp": 34,
+     "fp": 7,
+     "fn": 13,
+     "n": 362,
+     "precision": 0.829,
+     "recall": 0.723,
+     "f1": 0.773
+    }
+   }
+  },
+  "apiflask": {
+   "stratum": "HIGH",
+   "observed_edges": 142,
+   "edge_recall": {
+    "pycg": 0.472,
+    "pyright": 0.676,
+    "union": 0.69
+   },
+   "items": 316,
+   "real": 108,
+   "unnamed": 34,
+   "scores": {
+    "PyCG": {
+     "tp": 64,
+     "fp": 0,
+     "fn": 44,
+     "n": 316,
+     "precision": 1.0,
+     "recall": 0.593,
+     "f1": 0.744
+    },
+    "Pyright": {
+     "tp": 88,
+     "fp": 7,
+     "fn": 20,
+     "n": 316,
+     "precision": 0.926,
+     "recall": 0.815,
+     "f1": 0.867
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 88,
+     "fp": 7,
+     "fn": 20,
+     "n": 316,
+     "precision": 0.926,
+     "recall": 0.815,
+     "f1": 0.867
+    },
+    "name match": {
+     "tp": 108,
+     "fp": 208,
+     "fn": 0,
+     "n": 316,
+     "precision": 0.342,
+     "recall": 1.0,
+     "f1": 0.509
+    },
+    "shared-name union": {
+     "tp": 6,
+     "fp": 7,
+     "fn": 17,
+     "n": 119,
+     "precision": 0.462,
+     "recall": 0.261,
+     "f1": 0.333
+    }
+   }
+  },
+  "autoray": {
+   "stratum": "HIGH",
+   "observed_edges": 50,
+   "edge_recall": {
+    "pycg": 0.86,
+    "pyright": 0.74,
+    "union": 0.88
+   },
+   "items": 331,
+   "real": 32,
+   "unnamed": 18,
+   "scores": {
+    "PyCG": {
+     "tp": 30,
+     "fp": 0,
+     "fn": 2,
+     "n": 331,
+     "precision": 1.0,
+     "recall": 0.938,
+     "f1": 0.968
+    },
+    "Pyright": {
+     "tp": 31,
+     "fp": 0,
+     "fn": 1,
+     "n": 331,
+     "precision": 1.0,
+     "recall": 0.969,
+     "f1": 0.984
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 31,
+     "fp": 0,
+     "fn": 1,
+     "n": 331,
+     "precision": 1.0,
+     "recall": 0.969,
+     "f1": 0.984
+    },
+    "name match": {
+     "tp": 32,
+     "fp": 299,
+     "fn": 0,
+     "n": 331,
+     "precision": 0.097,
+     "recall": 1.0,
+     "f1": 0.176
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 1,
+     "n": 76,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  "bedrock-agentcore-sdk-python": {
+   "stratum": "MED",
+   "observed_edges": 356,
+   "edge_recall": {
+    "pycg": 0.683,
+    "pyright": 0.916,
+    "union": 0.916
+   },
+   "items": 986,
+   "real": 333,
+   "unnamed": 24,
+   "scores": {
+    "PyCG": {
+     "tp": 243,
+     "fp": 30,
+     "fn": 90,
+     "n": 986,
+     "precision": 0.89,
+     "recall": 0.73,
+     "f1": 0.802
+    },
+    "Pyright": {
+     "tp": 317,
+     "fp": 40,
+     "fn": 16,
+     "n": 986,
+     "precision": 0.888,
+     "recall": 0.952,
+     "f1": 0.919
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 317,
+     "fp": 40,
+     "fn": 16,
+     "n": 986,
+     "precision": 0.888,
+     "recall": 0.952,
+     "f1": 0.919
+    },
+    "name match": {
+     "tp": 333,
+     "fp": 653,
+     "fn": 0,
+     "n": 986,
+     "precision": 0.338,
+     "recall": 1.0,
+     "f1": 0.505
+    },
+    "shared-name union": {
+     "tp": 34,
+     "fp": 22,
+     "fn": 4,
+     "n": 261,
+     "precision": 0.607,
+     "recall": 0.895,
+     "f1": 0.723
+    }
+   }
+  },
+  "click": {
+   "stratum": "HIGH",
+   "observed_edges": 704,
+   "edge_recall": {
+    "pycg": 0.459,
+    "pyright": 0.682,
+    "union": 0.692
+   },
+   "items": 2071,
+   "real": 586,
+   "unnamed": 121,
+   "scores": {
+    "PyCG": {
+     "tp": 316,
+     "fp": 16,
+     "fn": 270,
+     "n": 2071,
+     "precision": 0.952,
+     "recall": 0.539,
+     "f1": 0.688
+    },
+    "Pyright": {
+     "tp": 461,
+     "fp": 19,
+     "fn": 125,
+     "n": 2071,
+     "precision": 0.96,
+     "recall": 0.787,
+     "f1": 0.865
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 462,
+     "fp": 23,
+     "fn": 124,
+     "n": 2071,
+     "precision": 0.953,
+     "recall": 0.788,
+     "f1": 0.863
+    },
+    "name match": {
+     "tp": 586,
+     "fp": 1485,
+     "fn": 0,
+     "n": 2071,
+     "precision": 0.283,
+     "recall": 1.0,
+     "f1": 0.441
+    },
+    "shared-name union": {
+     "tp": 112,
+     "fp": 17,
+     "fn": 96,
+     "n": 1280,
+     "precision": 0.868,
+     "recall": 0.538,
+     "f1": 0.665
+    }
+   }
+  },
+  "confluence-markdown-exporter": {
+   "stratum": "MED",
+   "observed_edges": 206,
+   "edge_recall": {
+    "pycg": 0.51,
+    "pyright": 0.583,
+    "union": 0.583
+   },
+   "items": 553,
+   "real": 150,
+   "unnamed": 56,
+   "scores": {
+    "PyCG": {
+     "tp": 104,
+     "fp": 25,
+     "fn": 46,
+     "n": 553,
+     "precision": 0.806,
+     "recall": 0.693,
+     "f1": 0.746
+    },
+    "Pyright": {
+     "tp": 117,
+     "fp": 29,
+     "fn": 33,
+     "n": 553,
+     "precision": 0.801,
+     "recall": 0.78,
+     "f1": 0.791
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 117,
+     "fp": 29,
+     "fn": 33,
+     "n": 553,
+     "precision": 0.801,
+     "recall": 0.78,
+     "f1": 0.791
+    },
+    "name match": {
+     "tp": 150,
+     "fp": 403,
+     "fn": 0,
+     "n": 553,
+     "precision": 0.271,
+     "recall": 1.0,
+     "f1": 0.427
+    },
+    "shared-name union": {
+     "tp": 10,
+     "fp": 7,
+     "fn": 10,
+     "n": 251,
+     "precision": 0.588,
+     "recall": 0.5,
+     "f1": 0.541
+    }
+   }
+  },
+  "creosote": {
+   "stratum": "MED",
+   "observed_edges": 63,
+   "edge_recall": {
+    "pycg": 0.921,
+    "pyright": 0.921,
+    "union": 0.921
+   },
+   "items": 74,
+   "real": 60,
+   "unnamed": 4,
+   "scores": {
+    "PyCG": {
+     "tp": 59,
+     "fp": 0,
+     "fn": 1,
+     "n": 74,
+     "precision": 1.0,
+     "recall": 0.983,
+     "f1": 0.992
+    },
+    "Pyright": {
+     "tp": 59,
+     "fp": 0,
+     "fn": 1,
+     "n": 74,
+     "precision": 1.0,
+     "recall": 0.983,
+     "f1": 0.992
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 59,
+     "fp": 0,
+     "fn": 1,
+     "n": 74,
+     "precision": 1.0,
+     "recall": 0.983,
+     "f1": 0.992
+    },
+    "name match": {
+     "tp": 60,
+     "fp": 14,
+     "fn": 0,
+     "n": 74,
+     "precision": 0.811,
+     "recall": 1.0,
+     "f1": 0.896
+    },
+    "shared-name union": {
+     "tp": 4,
+     "fp": 0,
+     "fn": 0,
+     "n": 8,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   }
+  },
+  "marshmallow-sqlalchemy": {
+   "stratum": "HIGH",
+   "observed_edges": 38,
+   "edge_recall": {
+    "pycg": 0.684,
+    "pyright": 0.763,
+    "union": 0.763
+   },
+   "items": 75,
+   "real": 31,
+   "unnamed": 8,
+   "scores": {
+    "PyCG": {
+     "tp": 26,
+     "fp": 0,
+     "fn": 5,
+     "n": 75,
+     "precision": 1.0,
+     "recall": 0.839,
+     "f1": 0.912
+    },
+    "Pyright": {
+     "tp": 28,
+     "fp": 1,
+     "fn": 3,
+     "n": 75,
+     "precision": 0.966,
+     "recall": 0.903,
+     "f1": 0.933
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 28,
+     "fp": 1,
+     "fn": 3,
+     "n": 75,
+     "precision": 0.966,
+     "recall": 0.903,
+     "f1": 0.933
+    },
+    "name match": {
+     "tp": 31,
+     "fp": 44,
+     "fn": 0,
+     "n": 75,
+     "precision": 0.413,
+     "recall": 1.0,
+     "f1": 0.585
+    },
+    "shared-name union": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 1,
+     "n": 6,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.667
+    }
+   }
+  },
+  "mcp-sequential-thinking": {
+   "stratum": "MED",
+   "observed_edges": 36,
+   "edge_recall": {
+    "pycg": 0.722,
+    "pyright": 0.889,
+    "union": 0.889
+   },
+   "items": 39,
+   "real": 32,
+   "unnamed": 4,
+   "scores": {
+    "PyCG": {
+     "tp": 26,
+     "fp": 0,
+     "fn": 6,
+     "n": 39,
+     "precision": 1.0,
+     "recall": 0.812,
+     "f1": 0.897
+    },
+    "Pyright": {
+     "tp": 32,
+     "fp": 0,
+     "fn": 0,
+     "n": 39,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 32,
+     "fp": 0,
+     "fn": 0,
+     "n": 39,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "name match": {
+     "tp": 32,
+     "fp": 7,
+     "fn": 0,
+     "n": 39,
+     "precision": 0.821,
+     "recall": 1.0,
+     "f1": 0.901
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  "pr-agent": {
+   "stratum": "LOW",
+   "observed_edges": 619,
+   "edge_recall": {
+    "pycg": 0.661,
+    "pyright": 0.792,
+    "union": 0.792
+   },
+   "items": 1676,
+   "real": 508,
+   "unnamed": 113,
+   "scores": {
+    "PyCG": {
+     "tp": 410,
+     "fp": 46,
+     "fn": 98,
+     "n": 1676,
+     "precision": 0.899,
+     "recall": 0.807,
+     "f1": 0.851
+    },
+    "Pyright": {
+     "tp": 484,
+     "fp": 86,
+     "fn": 24,
+     "n": 1676,
+     "precision": 0.849,
+     "recall": 0.953,
+     "f1": 0.898
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 484,
+     "fp": 86,
+     "fn": 24,
+     "n": 1676,
+     "precision": 0.849,
+     "recall": 0.953,
+     "f1": 0.898
+    },
+    "name match": {
+     "tp": 508,
+     "fp": 1168,
+     "fn": 0,
+     "n": 1676,
+     "precision": 0.303,
+     "recall": 1.0,
+     "f1": 0.465
+    },
+    "shared-name union": {
+     "tp": 128,
+     "fp": 27,
+     "fn": 20,
+     "n": 821,
+     "precision": 0.826,
+     "recall": 0.865,
+     "f1": 0.845
+    }
+   }
+  },
+  "pyrlp": {
+   "stratum": "HIGH",
+   "observed_edges": 120,
+   "edge_recall": {
+    "pycg": 0.533,
+    "pyright": 0.642,
+    "union": 0.65
+   },
+   "items": 246,
+   "real": 105,
+   "unnamed": 23,
+   "scores": {
+    "PyCG": {
+     "tp": 63,
+     "fp": 1,
+     "fn": 42,
+     "n": 246,
+     "precision": 0.984,
+     "recall": 0.6,
+     "f1": 0.746
+    },
+    "Pyright": {
+     "tp": 75,
+     "fp": 4,
+     "fn": 30,
+     "n": 246,
+     "precision": 0.949,
+     "recall": 0.714,
+     "f1": 0.815
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 75,
+     "fp": 4,
+     "fn": 30,
+     "n": 246,
+     "precision": 0.949,
+     "recall": 0.714,
+     "f1": 0.815
+    },
+    "name match": {
+     "tp": 105,
+     "fp": 141,
+     "fn": 0,
+     "n": 246,
+     "precision": 0.427,
+     "recall": 1.0,
+     "f1": 0.598
+    },
+    "shared-name union": {
+     "tp": 10,
+     "fp": 3,
+     "fn": 28,
+     "n": 94,
+     "precision": 0.769,
+     "recall": 0.263,
+     "f1": 0.392
+    }
+   }
+  },
+  "python-neutronclient": {
+   "stratum": "HIGH",
+   "observed_edges": 47,
+   "edge_recall": {
+    "pycg": 0.915,
+    "pyright": 0.936,
+    "union": 0.936
+   },
+   "items": 3200,
+   "real": 45,
+   "unnamed": 2,
+   "scores": {
+    "PyCG": {
+     "tp": 43,
+     "fp": 2,
+     "fn": 2,
+     "n": 3200,
+     "precision": 0.956,
+     "recall": 0.956,
+     "f1": 0.956
+    },
+    "Pyright": {
+     "tp": 43,
+     "fp": 2,
+     "fn": 2,
+     "n": 3200,
+     "precision": 0.956,
+     "recall": 0.956,
+     "f1": 0.956
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 43,
+     "fp": 2,
+     "fn": 2,
+     "n": 3200,
+     "precision": 0.956,
+     "recall": 0.956,
+     "f1": 0.956
+    },
+    "name match": {
+     "tp": 45,
+     "fp": 3155,
+     "fn": 0,
+     "n": 3200,
+     "precision": 0.014,
+     "recall": 1.0,
+     "f1": 0.028
+    },
+    "shared-name union": {
+     "tp": 19,
+     "fp": 0,
+     "fn": 0,
+     "n": 3070,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   }
+  },
+  "redbeat": {
+   "stratum": "HIGH",
+   "observed_edges": 63,
+   "edge_recall": {
+    "pycg": 0.587,
+    "pyright": 0.587,
+    "union": 0.603
+   },
+   "items": 110,
+   "real": 52,
+   "unnamed": 11,
+   "scores": {
+    "PyCG": {
+     "tp": 36,
+     "fp": 0,
+     "fn": 16,
+     "n": 110,
+     "precision": 1.0,
+     "recall": 0.692,
+     "f1": 0.818
+    },
+    "Pyright": {
+     "tp": 37,
+     "fp": 0,
+     "fn": 15,
+     "n": 110,
+     "precision": 1.0,
+     "recall": 0.712,
+     "f1": 0.831
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 37,
+     "fp": 0,
+     "fn": 15,
+     "n": 110,
+     "precision": 1.0,
+     "recall": 0.712,
+     "f1": 0.831
+    },
+    "name match": {
+     "tp": 52,
+     "fp": 58,
+     "fn": 0,
+     "n": 110,
+     "precision": 0.473,
+     "recall": 1.0,
+     "f1": 0.642
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 3,
+     "n": 26,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  "rlm": {
+   "stratum": "LOW",
+   "observed_edges": 142,
+   "edge_recall": {
+    "pycg": 0.345,
+    "pyright": 0.789,
+    "union": 0.789
+   },
+   "items": 606,
+   "real": 125,
+   "unnamed": 18,
+   "scores": {
+    "PyCG": {
+     "tp": 50,
+     "fp": 3,
+     "fn": 75,
+     "n": 606,
+     "precision": 0.943,
+     "recall": 0.4,
+     "f1": 0.562
+    },
+    "Pyright": {
+     "tp": 106,
+     "fp": 19,
+     "fn": 19,
+     "n": 606,
+     "precision": 0.848,
+     "recall": 0.848,
+     "f1": 0.848
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 106,
+     "fp": 19,
+     "fn": 19,
+     "n": 606,
+     "precision": 0.848,
+     "recall": 0.848,
+     "f1": 0.848
+    },
+    "name match": {
+     "tp": 125,
+     "fp": 481,
+     "fn": 0,
+     "n": 606,
+     "precision": 0.206,
+     "recall": 1.0,
+     "f1": 0.342
+    },
+    "shared-name union": {
+     "tp": 40,
+     "fp": 18,
+     "fn": 10,
+     "n": 406,
+     "precision": 0.69,
+     "recall": 0.8,
+     "f1": 0.741
+    }
+   }
+  },
+  "scrapyrt": {
+   "stratum": "HIGH",
+   "observed_edges": 25,
+   "edge_recall": {
+    "pycg": 0.72,
+    "pyright": 0.8,
+    "union": 0.8
+   },
+   "items": 59,
+   "real": 20,
+   "unnamed": 5,
+   "scores": {
+    "PyCG": {
+     "tp": 18,
+     "fp": 3,
+     "fn": 2,
+     "n": 59,
+     "precision": 0.857,
+     "recall": 0.9,
+     "f1": 0.878
+    },
+    "Pyright": {
+     "tp": 19,
+     "fp": 2,
+     "fn": 1,
+     "n": 59,
+     "precision": 0.905,
+     "recall": 0.95,
+     "f1": 0.927
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 19,
+     "fp": 3,
+     "fn": 1,
+     "n": 59,
+     "precision": 0.864,
+     "recall": 0.95,
+     "f1": 0.905
+    },
+    "name match": {
+     "tp": 20,
+     "fp": 39,
+     "fn": 0,
+     "n": 59,
+     "precision": 0.339,
+     "recall": 1.0,
+     "f1": 0.506
+    },
+    "shared-name union": {
+     "tp": 1,
+     "fp": 1,
+     "fn": 0,
+     "n": 4,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.667
+    }
+   }
+  },
+  "sec-edgar": {
+   "stratum": "MED",
+   "observed_edges": 123,
+   "edge_recall": {
+    "pycg": 0.268,
+    "pyright": 0.455,
+    "union": 0.488
+   },
+   "items": 489,
+   "real": 112,
+   "unnamed": 11,
+   "scores": {
+    "PyCG": {
+     "tp": 29,
+     "fp": 3,
+     "fn": 83,
+     "n": 489,
+     "precision": 0.906,
+     "recall": 0.259,
+     "f1": 0.403
+    },
+    "Pyright": {
+     "tp": 54,
+     "fp": 9,
+     "fn": 58,
+     "n": 489,
+     "precision": 0.857,
+     "recall": 0.482,
+     "f1": 0.617
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 54,
+     "fp": 9,
+     "fn": 58,
+     "n": 489,
+     "precision": 0.857,
+     "recall": 0.482,
+     "f1": 0.617
+    },
+    "name match": {
+     "tp": 112,
+     "fp": 377,
+     "fn": 0,
+     "n": 489,
+     "precision": 0.229,
+     "recall": 1.0,
+     "f1": 0.373
+    },
+    "shared-name union": {
+     "tp": 2,
+     "fp": 1,
+     "fn": 32,
+     "n": 293,
+     "precision": 0.667,
+     "recall": 0.059,
+     "f1": 0.108
+    }
+   }
+  },
+  "sqllineage": {
+   "stratum": "MED",
+   "observed_edges": 761,
+   "edge_recall": {
+    "pycg": 0.289,
+    "pyright": 0.442,
+    "union": 0.452
+   },
+   "items": 1199,
+   "real": 512,
+   "unnamed": 257,
+   "scores": {
+    "PyCG": {
+     "tp": 215,
+     "fp": 3,
+     "fn": 297,
+     "n": 1199,
+     "precision": 0.986,
+     "recall": 0.42,
+     "f1": 0.589
+    },
+    "Pyright": {
+     "tp": 334,
+     "fp": 41,
+     "fn": 178,
+     "n": 1199,
+     "precision": 0.891,
+     "recall": 0.652,
+     "f1": 0.753
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 335,
+     "fp": 42,
+     "fn": 177,
+     "n": 1199,
+     "precision": 0.889,
+     "recall": 0.654,
+     "f1": 0.754
+    },
+    "name match": {
+     "tp": 512,
+     "fp": 687,
+     "fn": 0,
+     "n": 1199,
+     "precision": 0.427,
+     "recall": 1.0,
+     "f1": 0.598
+    },
+    "shared-name union": {
+     "tp": 63,
+     "fp": 42,
+     "fn": 126,
+     "n": 572,
+     "precision": 0.6,
+     "recall": 0.333,
+     "f1": 0.429
+    }
+   }
+  },
+  "toolz": {
+   "stratum": "MED",
+   "observed_edges": 121,
+   "edge_recall": {
+    "pycg": 0.562,
+    "pyright": 0.612,
+    "union": 0.669
+   },
+   "items": 310,
+   "real": 64,
+   "unnamed": 60,
+   "scores": {
+    "PyCG": {
+     "tp": 54,
+     "fp": 3,
+     "fn": 10,
+     "n": 310,
+     "precision": 0.947,
+     "recall": 0.844,
+     "f1": 0.893
+    },
+    "Pyright": {
+     "tp": 62,
+     "fp": 3,
+     "fn": 2,
+     "n": 310,
+     "precision": 0.954,
+     "recall": 0.969,
+     "f1": 0.961
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 62,
+     "fp": 4,
+     "fn": 2,
+     "n": 310,
+     "precision": 0.939,
+     "recall": 0.969,
+     "f1": 0.954
+    },
+    "name match": {
+     "tp": 64,
+     "fp": 246,
+     "fn": 0,
+     "n": 310,
+     "precision": 0.206,
+     "recall": 1.0,
+     "f1": 0.342
+    },
+    "shared-name union": {
+     "tp": 2,
+     "fp": 1,
+     "fn": 0,
+     "n": 16,
+     "precision": 0.667,
+     "recall": 1.0,
+     "f1": 0.8
+    }
+   }
+  },
+  "xacro": {
+   "stratum": "HIGH",
+   "observed_edges": 140,
+   "edge_recall": {
+    "pycg": 0.836,
+    "pyright": 0.836,
+    "union": 0.85
+   },
+   "items": 177,
+   "real": 117,
+   "unnamed": 24,
+   "scores": {
+    "PyCG": {
+     "tp": 117,
+     "fp": 2,
+     "fn": 0,
+     "n": 177,
+     "precision": 0.983,
+     "recall": 1.0,
+     "f1": 0.992
+    },
+    "Pyright": {
+     "tp": 115,
+     "fp": 2,
+     "fn": 2,
+     "n": 177,
+     "precision": 0.983,
+     "recall": 0.983,
+     "f1": 0.983
+    },
+    "PyCG ∪ Pyright": {
+     "tp": 117,
+     "fp": 2,
+     "fn": 0,
+     "n": 177,
+     "precision": 0.983,
+     "recall": 1.0,
+     "f1": 0.992
+    },
+    "name match": {
+     "tp": 117,
+     "fp": 60,
+     "fn": 0,
+     "n": 177,
+     "precision": 0.661,
+     "recall": 1.0,
+     "f1": 0.796
+    },
+    "shared-name union": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "n": 8,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  }
+ },
+ "pooled": {
+  "PyCG": {
+   "tp": 2558,
+   "fp": 198,
+   "fn": 1890,
+   "n": 16514,
+   "precision": 0.928,
+   "recall": 0.575,
+   "f1": 0.71
+  },
+  "Pyright": {
+   "tp": 3169,
+   "fp": 318,
+   "fn": 1279,
+   "n": 16514,
+   "precision": 0.909,
+   "recall": 0.712,
+   "f1": 0.799
+  },
+  "PyCG ∪ Pyright": {
+   "tp": 3230,
+   "fp": 334,
+   "fn": 1218,
+   "n": 16514,
+   "precision": 0.906,
+   "recall": 0.726,
+   "f1": 0.806
+  },
+  "name match": {
+   "tp": 4448,
+   "fp": 12066,
+   "fn": 0,
+   "n": 16514,
+   "precision": 0.269,
+   "recall": 1.0,
+   "f1": 0.424
+  }
+ },
+ "llm": {
+  "gpt-oss-120b": {
+   "model": {
+    "tp": 809,
+    "fp": 424,
+    "fn": 137,
+    "n": 3502,
+    "precision": 0.656,
+    "recall": 0.855,
+    "f1": 0.743
+   },
+   "static union, same items": {
+    "tp": 634,
+    "fp": 88,
+    "fn": 312,
+    "n": 3502,
+    "precision": 0.878,
+    "recall": 0.67,
+    "f1": 0.76
+   },
+   "repos": [
+    "ShivyC",
+    "all-repos",
+    "apiflask",
+    "autoray",
+    "bedrock-agentcore-sdk-python",
+    "click",
+    "confluence-markdown-exporter",
+    "creosote",
+    "marshmallow-sqlalchemy",
+    "mcp-sequential-thinking",
+    "pr-agent",
+    "pyrlp",
+    "python-neutronclient",
+    "redbeat",
+    "rlm",
+    "scrapyrt",
+    "sec-edgar",
+    "sqllineage",
+    "toolz",
+    "xacro"
+   ]
+  },
+  "gpt-oss-20b": {
+   "model": {
+    "tp": 776,
+    "fp": 345,
+    "fn": 170,
+    "n": 3498,
+    "precision": 0.692,
+    "recall": 0.82,
+    "f1": 0.751
+   },
+   "static union, same items": {
+    "tp": 634,
+    "fp": 88,
+    "fn": 312,
+    "n": 3498,
+    "precision": 0.878,
+    "recall": 0.67,
+    "f1": 0.76
+   },
+   "repos": [
+    "ShivyC",
+    "all-repos",
+    "apiflask",
+    "autoray",
+    "bedrock-agentcore-sdk-python",
+    "click",
+    "confluence-markdown-exporter",
+    "creosote",
+    "marshmallow-sqlalchemy",
+    "mcp-sequential-thinking",
+    "pr-agent",
+    "pyrlp",
+    "python-neutronclient",
+    "redbeat",
+    "rlm",
+    "scrapyrt",
+    "sec-edgar",
+    "sqllineage",
+    "toolz",
+    "xacro"
+   ]
+  },
+  "qwen3.8-27b": {
+   "model": {
+    "tp": 729,
+    "fp": 244,
+    "fn": 217,
+    "n": 3489,
+    "precision": 0.749,
+    "recall": 0.771,
+    "f1": 0.76
+   },
+   "static union, same items": {
+    "tp": 634,
+    "fp": 88,
+    "fn": 312,
+    "n": 3489,
+    "precision": 0.878,
+    "recall": 0.67,
+    "f1": 0.76
+   },
+   "repos": [
+    "ShivyC",
+    "all-repos",
+    "apiflask",
+    "autoray",
+    "bedrock-agentcore-sdk-python",
+    "click",
+    "confluence-markdown-exporter",
+    "creosote",
+    "marshmallow-sqlalchemy",
+    "mcp-sequential-thinking",
+    "pr-agent",
+    "pyrlp",
+    "python-neutronclient",
+    "redbeat",
+    "rlm",
+    "scrapyrt",
+    "sec-edgar",
+    "sqllineage",
+    "toolz",
+    "xacro"
+   ]
+  }
+ },
+ "misses": {
+  "call/shared": 882,
+  "call/unique": 72,
+  "constructor/unique": 19,
+  "reference/unique": 157,
+  "reference/shared": 88
+ },
+ "unnamed": 1033,
+ "real_items": 4448,
+ "by_stratum": {
+  "LOW/PyCG": {
+   "tp": 938,
+   "fp": 98,
+   "fn": 947,
+   "n": 5661,
+   "precision": 0.905,
+   "recall": 0.498,
+   "f1": 0.642
+  },
+  "LOW/Pyright": {
+   "tp": 1114,
+   "fp": 154,
+   "fn": 771,
+   "n": 5661,
+   "precision": 0.879,
+   "recall": 0.591,
+   "f1": 0.707
+  },
+  "LOW/PyCG ∪ Pyright": {
+   "tp": 1170,
+   "fp": 156,
+   "fn": 715,
+   "n": 5661,
+   "precision": 0.882,
+   "recall": 0.621,
+   "f1": 0.729
+  },
+  "LOW/name match": {
+   "tp": 1885,
+   "fp": 3776,
+   "fn": 0,
+   "n": 5661,
+   "precision": 0.333,
+   "recall": 1.0,
+   "f1": 0.5
+  },
+  "MED/PyCG": {
+   "tp": 907,
+   "fp": 76,
+   "fn": 560,
+   "n": 4268,
+   "precision": 0.923,
+   "recall": 0.618,
+   "f1": 0.74
+  },
+  "MED/Pyright": {
+   "tp": 1158,
+   "fp": 127,
+   "fn": 309,
+   "n": 4268,
+   "precision": 0.901,
+   "recall": 0.789,
+   "f1": 0.842
+  },
+  "MED/PyCG ∪ Pyright": {
+   "tp": 1160,
+   "fp": 136,
+   "fn": 307,
+   "n": 4268,
+   "precision": 0.895,
+   "recall": 0.791,
+   "f1": 0.84
+  },
+  "MED/name match": {
+   "tp": 1467,
+   "fp": 2801,
+   "fn": 0,
+   "n": 4268,
+   "precision": 0.344,
+   "recall": 1.0,
+   "f1": 0.512
+  },
+  "HIGH/PyCG": {
+   "tp": 713,
+   "fp": 24,
+   "fn": 383,
+   "n": 6585,
+   "precision": 0.967,
+   "recall": 0.651,
+   "f1": 0.778
+  },
+  "HIGH/Pyright": {
+   "tp": 897,
+   "fp": 37,
+   "fn": 199,
+   "n": 6585,
+   "precision": 0.96,
+   "recall": 0.818,
+   "f1": 0.884
+  },
+  "HIGH/PyCG ∪ Pyright": {
+   "tp": 900,
+   "fp": 42,
+   "fn": 196,
+   "n": 6585,
+   "precision": 0.955,
+   "recall": 0.821,
+   "f1": 0.883
+  },
+  "HIGH/name match": {
+   "tp": 1096,
+   "fp": 5489,
+   "fn": 0,
+   "n": 6585,
+   "precision": 0.166,
+   "recall": 1.0,
+   "f1": 0.285
+  }
+ },
+ "edge_recall_union_median": 0.776,
+ "combiner": {
+  "repos": [
+   "ShivyC",
+   "all-repos",
+   "apiflask",
+   "autoray",
+   "bedrock-agentcore-sdk-python",
+   "click",
+   "confluence-markdown-exporter",
+   "creosote",
+   "marshmallow-sqlalchemy",
+   "mcp-sequential-thinking",
+   "pr-agent",
+   "pyrlp",
+   "python-neutronclient",
+   "redbeat",
+   "rlm",
+   "scrapyrt",
+   "sec-edgar",
+   "sqllineage",
+   "toolz",
+   "xacro"
+  ],
+  "items": 3485,
+  "grouped_by_caller": {
+   "PyCG ∪ Pyright": {
+    "tp": 634,
+    "fp": 88,
+    "fn": 312,
+    "precision": 0.878,
+    "recall": 0.67,
+    "f1": 0.76
+   },
+   "gpt-oss-20b": {
+    "tp": 776,
+    "fp": 345,
+    "fn": 170,
+    "precision": 0.692,
+    "recall": 0.82,
+    "f1": 0.751
+   },
+   "gpt-oss-120b": {
+    "tp": 809,
+    "fp": 424,
+    "fn": 137,
+    "precision": 0.656,
+    "recall": 0.855,
+    "f1": 0.743
+   },
+   "qwen3.8-27b": {
+    "tp": 729,
+    "fp": 244,
+    "fn": 217,
+    "precision": 0.749,
+    "recall": 0.771,
+    "f1": 0.76
+   },
+   "majority of the 3 LLMs": {
+    "tp": 786,
+    "fp": 306,
+    "fn": 160,
+    "precision": 0.72,
+    "recall": 0.831,
+    "f1": 0.771
+   },
+   "static ∪ any LLM": {
+    "tp": 841,
+    "fp": 601,
+    "fn": 105,
+    "precision": 0.583,
+    "recall": 0.889,
+    "f1": 0.704
+   },
+   "learned combiner": {
+    "tp": 694,
+    "fp": 131,
+    "fn": 252,
+    "precision": 0.841,
+    "recall": 0.734,
+    "f1": 0.784
+   }
+  },
+  "weights": {
+   "bias": -2.71,
+   "PyCG says yes": 1.14,
+   "Pyright says yes": 0.74,
+   "gpt-oss-20b says yes": 0.95,
+   "gpt-oss-120b says yes": 1.24,
+   "qwen3.8-27b says yes": 1.44,
+   "written as a call": -0.18,
+   "written as a reference": -1.65,
+   "written as a class name": -0.58,
+   "name shared with other functions": 0.58,
+   "method of the caller's own class": 0.5
+  },
+  "leave_one_repo_out": {
+   "tp": 673,
+   "fp": 154,
+   "fn": 273,
+   "precision": 0.814,
+   "recall": 0.711,
+   "f1": 0.759
+  }
+ }
+}

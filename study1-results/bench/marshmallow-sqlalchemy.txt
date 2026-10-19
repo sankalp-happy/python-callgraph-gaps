@@ -1,0 +1,11 @@
+
+marshmallow-sqlalchemy: 75 items, 31 real calls; 8 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.41   1.00   0.58   1.00
+  PyCG                              all   1.00   0.84   0.91   0.50
+  Pyright                           all   0.97   0.90   0.93   0.50
+  PyCG ∪ Pyright                    all   0.97   0.90   0.93   0.50
+  name match                     sample   0.29   1.00   0.45   1.00
+  PyCG                           sample   1.00   0.71   0.83   0.50
+  Pyright                        sample   0.92   0.79   0.85   0.50
+  PyCG ∪ Pyright                 sample   0.92   0.79   0.85   0.50

@@ -1,0 +1,463 @@
+
+===== 2026-10-19T07:00:25Z sec-edgar clone
+
+===== 2026-10-19T07:00:26Z sec-edgar repo
+
+===== 2026-10-19T07:00:26Z sec-edgar env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/sec-edgar
++ python -m venv /home/azureuser/traceweave-data/study1/venv/sec-edgar
++ . /home/azureuser/traceweave-data/study1/venv/sec-edgar/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/sec-edgar
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/sec-edgar
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/sec-edgar/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(sec-edgar) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((sec-edgar) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/sec-edgar
++ '[' -f pyproject.toml ']'
++ '[' -f setup.py ']'
++ pip install .
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting beautifulsoup4 (from secedgar==0.6.0)
+  Using cached beautifulsoup4-4.15.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting aiohttp (from secedgar==0.6.0)
+  Using cached aiohttp-3.14.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+Collecting urllib3 (from secedgar==0.6.0)
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting requests (from secedgar==0.6.0)
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting lxml (from secedgar==0.6.0)
+  Using cached lxml-6.1.3-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting tqdm (from secedgar==0.6.0)
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp->secedgar==0.6.0)
+  Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp->secedgar==0.6.0)
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp->secedgar==0.6.0)
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp->secedgar==0.6.0)
+  Using cached frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+Collecting multidict<8.0,>=4.5 (from aiohttp->secedgar==0.6.0)
+  Using cached multidict-7.1.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (6.2 kB)
+Collecting propcache>=0.2.0 (from aiohttp->secedgar==0.6.0)
+  Using cached propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (25 kB)
+Collecting typing_extensions>=4.4 (from aiohttp->secedgar==0.6.0)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting yarl<2.0,>=1.25.1 (from aiohttp->secedgar==0.6.0)
+  Using cached yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (111 kB)
+Collecting idna>=2.0 (from yarl<2.0,>=1.25.1->aiohttp->secedgar==0.6.0)
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4->secedgar==0.6.0)
+  Using cached soupsieve-3.0.3-py3-none-any.whl.metadata (4.4 kB)
+Collecting charset_normalizer<4,>=2 (from requests->secedgar==0.6.0)
+  Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting certifi>=2023.5.7 (from requests->secedgar==0.6.0)
+  Using cached certifi-2026.10.18-py3-none-any.whl.metadata (2.5 kB)
+Using cached aiohttp-3.14.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
+Using cached multidict-7.1.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (483 kB)
+Using cached yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (117 kB)
+Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+Using cached aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Using cached frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (242 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (250 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+Using cached soupsieve-3.0.3-py3-none-any.whl (41 kB)
+Using cached lxml-6.1.3-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.2 MB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached certifi-2026.10.18-py3-none-any.whl (134 kB)
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+Building wheels for collected packages: secedgar
+  Building wheel for secedgar (pyproject.toml): started
+  Building wheel for secedgar (pyproject.toml): finished with status 'done'
+  Created wheel for secedgar: filename=secedgar-0.6.0-py3-none-any.whl size=62653 sha256=9be84c406e0a97bf825212bc18fb2bafaa5a15e35376705347f5d82eeb46c2ea
+  Stored in directory: /tmp/pip-ephem-wheel-cache-br6o4ctx/wheels/f6/6f/df/6ae74f3629e80be0d3f33e8cfaf163e191603b83e0af93eae5
+Successfully built secedgar
+Installing collected packages: urllib3, typing_extensions, tqdm, soupsieve, propcache, multidict, lxml, idna, frozenlist, charset_normalizer, certifi, attrs, aiohappyeyeballs, yarl, requests, beautifulsoup4, aiosignal, aiohttp, secedgar
+
+Successfully installed aiohappyeyeballs-2.7.1 aiohttp-3.14.5 aiosignal-1.4.0 attrs-26.1.0 beautifulsoup4-4.15.0 certifi-2026.10.18 charset_normalizer-3.5.2 frozenlist-1.8.0 idna-3.20 lxml-6.1.3 multidict-7.1.0 propcache-0.5.4 requests-2.34.2 secedgar-0.6.0 soupsieve-3.0.3 tqdm-4.70.1 typing_extensions-4.16.0 urllib3-2.8.0 yarl-1.25.1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ pip install -r requirements.txt
+Requirement already satisfied: beautifulsoup4 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: aiohttp in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (3.14.5)
+Requirement already satisfied: urllib3 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (2.8.0)
+Requirement already satisfied: requests in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (2.34.2)
+Requirement already satisfied: lxml in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (6.1.3)
+Requirement already satisfied: tqdm in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (4.70.1)
+Requirement already satisfied: soupsieve>=1.6.1 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from beautifulsoup4->-r requirements.txt (line 1)) (3.0.3)
+Requirement already satisfied: typing-extensions>=4.0.0 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from beautifulsoup4->-r requirements.txt (line 1)) (4.16.0)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from aiohttp->-r requirements.txt (line 2)) (2.7.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from aiohttp->-r requirements.txt (line 2)) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from aiohttp->-r requirements.txt (line 2)) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from aiohttp->-r requirements.txt (line 2)) (1.8.0)
+Requirement already satisfied: multidict<8.0,>=4.5 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from aiohttp->-r requirements.txt (line 2)) (7.1.0)
+Requirement already satisfied: propcache>=0.2.0 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from aiohttp->-r requirements.txt (line 2)) (0.5.4)
+Requirement already satisfied: yarl<2.0,>=1.25.1 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from aiohttp->-r requirements.txt (line 2)) (1.25.1)
+Requirement already satisfied: idna>=2.0 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from yarl<2.0,>=1.25.1->aiohttp->-r requirements.txt (line 2)) (3.20)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from requests->-r requirements.txt (line 4)) (3.5.2)
+Requirement already satisfied: certifi>=2023.5.7 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from requests->-r requirements.txt (line 4)) (2026.10.18)
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ pip install -r requirements-dev.txt
+Collecting click (from -r requirements-dev.txt (line 1))
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting flake8 (from -r requirements-dev.txt (line 2))
+  Using cached flake8-7.4.1-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting pydocstyle (from -r requirements-dev.txt (line 3))
+  Downloading pydocstyle-6.3.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting pytest (from -r requirements-dev.txt (line 4))
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-asyncio (from -r requirements-dev.txt (line 5))
+  Downloading pytest_asyncio-1.4.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting mccabe<0.8.0,>=0.7.0 (from flake8->-r requirements-dev.txt (line 2))
+  Using cached mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting pycodestyle<2.16.0,>=2.15.0 (from flake8->-r requirements-dev.txt (line 2))
+  Using cached pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)
+Collecting pyflakes<4.1.0,>=4.0.0 (from flake8->-r requirements-dev.txt (line 2))
+  Using cached pyflakes-4.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+Collecting snowballstemmer>=2.2.0 (from pydocstyle->-r requirements-dev.txt (line 3))
+  Downloading snowballstemmer-3.1.1-py3-none-any.whl.metadata (7.9 kB)
+Collecting iniconfig>=1.0.1 (from pytest->-r requirements-dev.txt (line 4))
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from pytest->-r requirements-dev.txt (line 4)) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest->-r requirements-dev.txt (line 4))
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest->-r requirements-dev.txt (line 4))
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: typing-extensions>=4.12 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from pytest-asyncio->-r requirements-dev.txt (line 5)) (4.16.0)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached flake8-7.4.1-py2.py3-none-any.whl (57 kB)
+Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Using cached pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)
+Using cached pyflakes-4.0.3-py2.py3-none-any.whl (66 kB)
+Downloading pydocstyle-6.3.0-py3-none-any.whl (38 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Downloading pytest_asyncio-1.4.0-py3-none-any.whl (16 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Downloading snowballstemmer-3.1.1-py3-none-any.whl (104 kB)
+Installing collected packages: snowballstemmer, pygments, pyflakes, pycodestyle, pluggy, mccabe, iniconfig, click, pytest, pydocstyle, flake8, pytest-asyncio
+
+Successfully installed click-8.5.0 flake8-7.4.1 iniconfig-2.3.1 mccabe-0.7.0 pluggy-1.7.0 pycodestyle-2.15.0 pydocstyle-6.3.0 pyflakes-4.0.3 pygments-2.21.0 pytest-9.1.1 pytest-asyncio-1.4.0 snowballstemmer-3.1.1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Requirement already satisfied: pytest in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (9.1.1)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: iniconfig>=1.0.1 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from pytest) (2.3.1)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from pytest) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages (from pytest) (2.21.0)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Installing collected packages: pytest-timeout
+Successfully installed pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/sec-edgar
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: secedgar
+  Building editable for secedgar (pyproject.toml): started
+  Building editable for secedgar (pyproject.toml): finished with status 'done'
+  Created wheel for secedgar: filename=secedgar-0.6.0-0.editable-py3-none-any.whl size=8204 sha256=a2140b30d9ea28dc4211aecce2e1c3beaa474a590abee459c640f07586541bbc
+  Stored in directory: /tmp/pip-ephem-wheel-cache-dy041zh4/wheels/f6/6f/df/6ae74f3629e80be0d3f33e8cfaf163e191603b83e0af93eae5
+Successfully built secedgar
+Installing collected packages: secedgar
+  Attempting uninstall: secedgar
+    Found existing installation: secedgar 0.6.0
+    Uninstalling secedgar-0.6.0:
+      Successfully uninstalled secedgar-0.6.0
+Successfully installed secedgar-0.6.0
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 28 s
+
+===== 2026-10-19T07:00:53Z sec-edgar trace
++ cd /home/azureuser/traceweave-harness/work/sec-edgar
++ TW_PYTEST_ARGS=secedgar/tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/sec-edgar
++ /home/azureuser/traceweave-data/study1/venv/sec-edgar/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/sec-edgar --package /home/azureuser/traceweave-harness/work/sec-edgar/secedgar --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id sec-edgar-2026-10-19T07:00:53Z --out /home/azureuser/traceweave-harness/bundles/sec-edgar/trace.json
+........................................................................ [ 14%]
+........................................................................ [ 29%]
+........................................................................ [ 44%]
+...............................................................FF....... [ 59%]
+.......................................................FF............... [ 74%]
+........................................................................ [ 89%]
+..................................................                       [100%]
+=================================== FAILURES ===================================
+_____________________ TestRest.test_get_submissions[True] ______________________
+
+self = <secedgar.tests.core.test_rest.TestRest object at 0x7bf40d7c2b70>
+mock_user_agent = 'Example (me@example.com)', recent = True
+
+    @pytest.mark.parametrize(
+        "recent",
+        [True, False]
+    )
+    @pytest.mark.smoke
+    def test_get_submissions(self, mock_user_agent, recent):
+        submissions = get_submissions(lookups=["aapl"],
+                                      user_agent=mock_user_agent,
+                                      recent=recent)
+        assert submissions
+        # Make sure Apple's CIK shows up properly
+>       assert str(submissions["aapl"]["cik"]) == "320193"
+E       AssertionError: assert '0000320193' == '320193'
+E         
+E         - 320193
+E         + 0000320193
+E         ? ++++
+
+secedgar/tests/core/test_rest.py:35: AssertionError
+_____________________ TestRest.test_get_submissions[False] _____________________
+
+self = <secedgar.tests.core.test_rest.TestRest object at 0x7bf40d7c2cf0>
+mock_user_agent = 'Example (me@example.com)', recent = False
+
+    @pytest.mark.parametrize(
+        "recent",
+        [True, False]
+    )
+    @pytest.mark.smoke
+    def test_get_submissions(self, mock_user_agent, recent):
+        submissions = get_submissions(lookups=["aapl"],
+                                      user_agent=mock_user_agent,
+                                      recent=recent)
+        assert submissions
+        # Make sure Apple's CIK shows up properly
+>       assert str(submissions["aapl"]["cik"]) == "320193"
+E       AssertionError: assert '0000320193' == '320193'
+E         
+E         - 320193
+E         + 0000320193
+E         ? ++++
+
+secedgar/tests/core/test_rest.py:35: AssertionError
+___________ TestCLI.test_cli_requires_user_agent[daily -d 20201113] ____________
+
+self = <secedgar.tests.test_cli.TestCLI object at 0x7bf40d681eb0>
+user_input = 'daily -d 20201113'
+tmp_data_directory = '/tmp/pytest-of-unknown/pytest-0/tmp_data51'
+
+    @pytest.mark.parametrize(
+        "user_input",
+        [
+            "daily -d 20201113",
+            "filing -l aapl -l msft -l amzn -t FILING_10Q -n 10"
+        ]
+    )
+    def test_cli_requires_user_agent(self, user_input, tmp_data_directory):
+>       check_bad_inputs(cli, user_input, SystemExit, tmp_data_directory, user_agent=None)
+
+secedgar/tests/test_cli.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+secedgar/tests/test_cli.py:34: in check_bad_inputs
+    result = run_cli_command(cli_instance=cli_instance,
+secedgar/tests/test_cli.py:24: in run_cli_command
+    return runner.invoke(cli_instance, user_input, catch_exceptions=catch_exceptions)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/testing.py:687: in invoke
+    return_value = cli.main(args=args or (), prog_name=prog_name, **extra)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/core.py:1552: in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/core.py:2032: in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/core.py:1415: in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/core.py:910: in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/decorators.py:34: in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+secedgar/cli.py:125: in daily
+    d = DailyFilings(date=date_cleanup(date), user_agent=ctx.obj['user_agent'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+secedgar/core/daily.py:63: in __init__
+    super().__init__(user_agent=user_agent,
+secedgar/core/_index.py:38: in __init__
+    self._client = client or NetworkClient(user_agent=user_agent, **kwargs)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+secedgar/client.py:74: in __init__
+    self.user_agent = user_agent
+    ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <secedgar.client.NetworkClient object at 0x7bf40d360c20>, value = None
+
+    @user_agent.setter
+    def user_agent(self, value):
+        if not isinstance(value, str):
+>           raise TypeError("user_agent must be str. Given type {0}.".format(type(value)))
+E           TypeError: user_agent must be str. Given type <class 'NoneType'>.
+
+secedgar/client.py:139: TypeError
+_ TestCLI.test_cli_requires_user_agent[filing -l aapl -l msft -l amzn -t FILING_10Q -n 10] _
+
+self = <secedgar.tests.test_cli.TestCLI object at 0x7bf40d682000>
+user_input = 'filing -l aapl -l msft -l amzn -t FILING_10Q -n 10'
+tmp_data_directory = '/tmp/pytest-of-unknown/pytest-0/tmp_data52'
+
+    @pytest.mark.parametrize(
+        "user_input",
+        [
+            "daily -d 20201113",
+            "filing -l aapl -l msft -l amzn -t FILING_10Q -n 10"
+        ]
+    )
+    def test_cli_requires_user_agent(self, user_input, tmp_data_directory):
+>       check_bad_inputs(cli, user_input, SystemExit, tmp_data_directory, user_agent=None)
+
+secedgar/tests/test_cli.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+secedgar/tests/test_cli.py:34: in check_bad_inputs
+    result = run_cli_command(cli_instance=cli_instance,
+secedgar/tests/test_cli.py:24: in run_cli_command
+    return runner.invoke(cli_instance, user_input, catch_exceptions=catch_exceptions)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/testing.py:687: in invoke
+    return_value = cli.main(args=args or (), prog_name=prog_name, **extra)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/core.py:1552: in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/core.py:2032: in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/core.py:1415: in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/core.py:910: in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../traceweave-data/study1/venv/sec-edgar/lib/python3.12/site-packages/click/decorators.py:34: in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+secedgar/cli.py:95: in filing
+    f = CompanyFilings(cik_lookup=lookups,
+secedgar/core/company.py:121: in __init__
+    self._client = client or NetworkClient(user_agent=user_agent, **kwargs)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+secedgar/client.py:74: in __init__
+    self.user_agent = user_agent
+    ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <secedgar.client.NetworkClient object at 0x7bf40d11e3c0>, value = None
+
+    @user_agent.setter
+    def user_agent(self, value):
+        if not isinstance(value, str):
+>           raise TypeError("user_agent must be str. Given type {0}.".format(type(value)))
+E           TypeError: user_agent must be str. Given type <class 'NoneType'>.
+
+secedgar/client.py:139: TypeError
+=============================== warnings summary ===============================
+secedgar/tests/core/test_company.py: 16 warnings
+secedgar/tests/test_cli.py: 2 warnings
+  /home/azureuser/traceweave-harness/work/sec-edgar/secedgar/client.py:218: XMLParsedAsHTMLWarning: It looks like you're using an HTML parser to parse an XML document.
+  
+  Assuming this really is an XML document, what you're doing might work, but you should know that using an XML parser will be more reliable. To parse this document as XML, make sure you have the Python package 'lxml' installed, and pass the keyword argument `features="xml"` into the BeautifulSoup constructor.
+  
+  If you want or need to use an HTML parser on this document, you can make this warning go away by filtering it. To do that, run this code before calling the BeautifulSoup constructor:
+  
+      from bs4 import XMLParsedAsHTMLWarning
+      import warnings
+  
+      warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
+  
+    return BeautifulSoup(self.get_response(path, params, **kwargs).text,
+
+secedgar/tests/core/test_company.py::TestCompanyFilings::test_filing_company_none_filing_type
+  secedgar/tests/core/test_company.py:362: PytestWarning: The test <Function test_filing_company_none_filing_type> is marked with '@pytest.mark.asyncio' but it is not an async function. Please remove the asyncio mark. If the test is not marked explicitly, check for global marks applied via 'pytestmark'.
+    @pytest.mark.asyncio
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED secedgar/tests/core/test_rest.py::TestRest::test_get_submissions[True]
+FAILED secedgar/tests/core/test_rest.py::TestRest::test_get_submissions[False]
+FAILED secedgar/tests/test_cli.py::TestCLI::test_cli_requires_user_agent[daily -d 20201113]
+FAILED secedgar/tests/test_cli.py::TestCLI::test_cli_requires_user_agent[filing -l aapl -l msft -l amzn -t FILING_10Q -n 10]
+4 failed, 478 passed, 19 warnings in 86.38s (0:01:26)
+wrote 634 edges (449 internal, 185 entry) over 31 modules -> /home/azureuser/traceweave-harness/bundles/sec-edgar/trace.json
+===== trace rc=0 in 89 s
+
+===== 2026-10-19T07:02:23Z sec-edgar bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/sec-edgar/bin/python build_bundle.py sec-edgar --static /home/azureuser/traceweave-data/static/sec-edgar --runtime /home/azureuser/traceweave-harness/bundles/sec-edgar/trace.json
+sec-edgar: 173 nodes, pycg 67 / pyright 90 static edges, 390 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T07:02:24Z sec-edgar truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/sec-edgar/bin/python tw.py truth sec-edgar
+sec-edgar: 172 in-package call sites, 150 caller->callee pairs, 3282 package lines ran; suite 478 passed in 84.53 s -> bundles/sec-edgar/truth.json
+===== truth rc=0 in 170 s
+
+===== 2026-10-19T07:05:14Z sec-edgar bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/sec-edgar/bin/python tw.py bench sec-edgar
++ mv /home/azureuser/traceweave-data/study1/bench/sec-edgar.txt.tmp /home/azureuser/traceweave-data/study1/bench/sec-edgar.txt
++ cat /home/azureuser/traceweave-data/study1/bench/sec-edgar.txt
+
+sec-edgar: 489 items, 112 real calls; 11 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.23   1.00   0.37   1.00
+  PyCG                              all   0.91   0.26   0.40   0.03
+  Pyright                           all   0.86   0.48   0.62   0.06
+  PyCG ∪ Pyright                    all   0.86   0.48   0.62   0.06
+  name match                     sample   0.22   1.00   0.36   1.00
+  PyCG                           sample   0.83   0.14   0.24   0.00
+  Pyright                        sample   0.84   0.44   0.58   0.00
+  PyCG ∪ Pyright                 sample   0.84   0.44   0.58   0.00
+===== bench rc=0 in 2 s

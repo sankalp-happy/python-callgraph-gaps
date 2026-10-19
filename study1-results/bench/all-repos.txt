@@ -1,0 +1,11 @@
+
+all-repos: 618 items, 204 real calls; 19 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.33   1.00   0.50   1.00
+  PyCG                              all   0.94   0.87   0.90   0.72
+  Pyright                           all   0.97   0.90   0.93   0.70
+  PyCG ∪ Pyright                    all   0.94   0.90   0.92   0.72
+  name match                     sample   0.25   1.00   0.41   1.00
+  PyCG                           sample   0.94   0.74   0.83   0.57
+  Pyright                        sample   0.94   0.74   0.83   0.57
+  PyCG ∪ Pyright                 sample   0.94   0.74   0.83   0.57

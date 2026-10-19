@@ -1,0 +1,2951 @@
+
+===== 2026-10-19T06:54:27Z xacro clone
+
+===== 2026-10-19T06:54:28Z xacro repo
+
+===== 2026-10-19T06:54:28Z xacro env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/xacro
++ python -m venv /home/azureuser/traceweave-data/study1/venv/xacro
++ . /home/azureuser/traceweave-data/study1/venv/xacro/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/xacro
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/xacro
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/xacro/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(xacro) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((xacro) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/xacro
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting pyyaml (from xacro==0.1.dev1+gda4b3849f)
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+WARNING: xacro 0.1.dev1+gda4b3849f does not provide the extra 'test'
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Building wheels for collected packages: xacro
+  Building wheel for xacro (pyproject.toml): started
+  Building wheel for xacro (pyproject.toml): finished with status 'done'
+  Created wheel for xacro: filename=xacro-0.1.dev1+gda4b3849f-py3-none-any.whl size=27288 sha256=a7aa1514abb27dc4d05e2777000f0ed1ea2b0c303fdd41fc7385eca3eaa13e27
+  Stored in directory: /tmp/pip-ephem-wheel-cache-c791et95/wheels/0b/11/f8/647f4f8b584bad429fe53fa73aa4c7ca76eed89560bdab71d8
+Successfully built xacro
+Installing collected packages: pyyaml, xacro
+
+Successfully installed pyyaml-6.0.3 xacro-0.1.dev1+gda4b3849f
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/xacro/lib/python3.12/site-packages (from pytest) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Installing collected packages: pygments, pluggy, iniconfig, pytest, pytest-timeout
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pygments-2.21.0 pytest-9.1.1 pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/xacro
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: xacro
+  Building editable for xacro (pyproject.toml): started
+  Building editable for xacro (pyproject.toml): finished with status 'done'
+  Created wheel for xacro: filename=xacro-0.1.dev1+gda4b3849f-0.editable-py3-none-any.whl size=5238 sha256=766f63c20760d8acc3a3904381bdb3437678fe31f5819cc46dd035e6358eebd2
+  Stored in directory: /tmp/pip-ephem-wheel-cache-fu8qqotd/wheels/0b/11/f8/647f4f8b584bad429fe53fa73aa4c7ca76eed89560bdab71d8
+Successfully built xacro
+Installing collected packages: xacro
+  Attempting uninstall: xacro
+    Found existing installation: xacro 0.1.dev1+gda4b3849f
+    Uninstalling xacro-0.1.dev1+gda4b3849f:
+      Successfully uninstalled xacro-0.1.dev1+gda4b3849f
+Successfully installed xacro-0.1.dev1+gda4b3849f
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 22 s
+
+===== 2026-10-19T06:54:50Z xacro trace
++ cd /home/azureuser/traceweave-harness/work/xacro
++ TW_PYTEST_ARGS=test
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/xacro
++ /home/azureuser/traceweave-data/study1/venv/xacro/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/xacro --package /home/azureuser/traceweave-harness/work/xacro/xacro --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id xacro-2026-10-19T06:54:50Z --out /home/azureuser/traceweave-harness/bundles/xacro/trace.json
+....................F..FF....F................F........F.FFF..FF........ [ 48%]
+...................F....FF......F..F.........F..F.....F.........FF.FFFF. [ 97%]
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+______________________ TestXacroCommentsIgnored.test_pr2 _______________________
+
+s = '$(find xacro)'
+
+    def eval_extension(s):
+        if s == '$(cwd)':
+            # In the case that root_dir is '.' this will expand to the full
+            # current working directory, identical to os.getcwd()
+            return os.path.abspath(root_dir)
+        try:
+            from .substitution_args import resolve_args, ArgException
+>           return resolve_args(s, context=substitution_args_context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:303: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/substitution_args.py:321: in resolve_args
+    resolved = _resolve_args(arg_str, context, commands)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/substitution_args.py:342: in _resolve_args
+    resolved = commands[command](resolved, a, args, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/substitution_args.py:155: in _find
+    return resolved.replace('$(%s)' % a, _eval_find(args[0]))
+                                         ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+pkg = 'xacro'
+
+    def _eval_find(pkg):
+>       from ament_index_python.packages import get_package_share_directory
+E       ModuleNotFoundError: No module named 'ament_index_python'
+
+xacro/substitution_args.py:140: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacroCommentsIgnored testMethod=test_pr2>
+
+    @unittest.skipIf(BAZEL_TEST, "Bazel build does not support $(find pkg)")
+    def test_pr2(self):
+        # run xacro on the pr2 tree snapshot
+        test_dir = os.path.abspath(os.path.dirname(__file__))
+        pr2_xacro_path = os.path.join(test_dir, 'robots', 'pr2', 'pr2.urdf.xacro')
+        pr2_golden_parse_path = os.path.join(test_dir, 'robots', 'pr2', 'pr2_1.11.4.xml')
+        self.assert_matches(
+            xml.dom.minidom.parse(pr2_golden_parse_path),
+>           self.quick_xacro(open(pr2_xacro_path)))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:417: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:529: in process_include
+    for filename in get_include_files(filename_spec, symbols):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:472: in get_include_files
+    filename_spec = abs_filename_spec(eval_text(filename_spec, symbols))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:720: in eval_text
+    results.append(handle_extension(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:710: in handle_extension
+    return eval_extension("$(%s)" % eval_text(s, symbols))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = '$(find xacro)'
+
+    def eval_extension(s):
+        if s == '$(cwd)':
+            # In the case that root_dir is '.' this will expand to the full
+            # current working directory, identical to os.getcwd()
+            return os.path.abspath(root_dir)
+        try:
+            from .substitution_args import resolve_args, ArgException
+            return resolve_args(s, context=substitution_args_context)
+        except ImportError as e:
+>           raise XacroException("substitution args not supported: ", exc=e)
+E           xacro.XacroException: substitution args not supported:  No module named 'ament_index_python'
+
+xacro/__init__.py:305: XacroException
+________________ TestXacro.test_broken_include_error_reporting _________________
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././broken.xacro'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_broken_include_error_reporting>
+
+    def test_broken_include_error_reporting(self):
+>       self.assertRaises(xml.parsers.expat.ExpatError, self.quick_xacro,
+        '''<a xmlns:xacro="http://www.ros.org/wiki/xacro">
+           <xacro:include filename="broken.xacro"/></a>''')
+
+test/test_xacro.py:1128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././broken.xacro [Errno 2] No such file or directory: '././broken.xacro'
+
+xacro/__init__.py:1031: XacroException
+_________ TestXacro.test_broken_input_doesnt_create_empty_output_file __________
+
+self = <test_xacro.TestXacro testMethod=test_broken_input_doesnt_create_empty_output_file>
+
+    def test_broken_input_doesnt_create_empty_output_file(self):
+        # run xacro on broken input file to make sure we don't create an
+        # empty output file
+        tmp_dir_name = tempfile.mkdtemp()  # create directory we can trash
+        output_path = os.path.join(tmp_dir_name, "should_not_exist")
+>       self.run_xacro('broken.xacro', '-o', output_path)
+
+test/test_xacro.py:1138: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:400: in run_xacro
+    subprocess.call([XACRO_EXECUTABLE, input_path] + args)
+/usr/local/lib/python3.12/subprocess.py:389: in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: 255 args: ['xacro', 'broken.xacro', '-o', '/tmp/tmpzwwt9...>
+args = ['xacro', 'broken.xacro', '-o', '/tmp/tmpzwwt90de/should_not_exist']
+executable = b'xacro', preexec_fn = None, close_fds = True, pass_fds = ()
+cwd = None, env = None, startupinfo = None, creationflags = 0, shell = False
+p2cread = -1, p2cwrite = -1, c2pread = -1, c2pwrite = -1, errread = -1
+errwrite = -1, restore_signals = True, gid = None, gids = None, uid = None
+umask = -1, start_new_session = False, process_group = -1
+
+    def _execute_child(self, args, executable, preexec_fn, close_fds,
+                       pass_fds, cwd, env,
+                       startupinfo, creationflags, shell,
+                       p2cread, p2cwrite,
+                       c2pread, c2pwrite,
+                       errread, errwrite,
+                       restore_signals,
+                       gid, gids, uid, umask,
+                       start_new_session, process_group):
+        """Execute program (POSIX version)"""
+    
+        if isinstance(args, (str, bytes)):
+            args = [args]
+        elif isinstance(args, os.PathLike):
+            if shell:
+                raise TypeError('path-like args is not allowed when '
+                                'shell is true')
+            args = [args]
+        else:
+            args = list(args)
+    
+        if shell:
+            # On Android the default shell is at '/system/bin/sh'.
+            unix_shell = ('/system/bin/sh' if
+                      hasattr(sys, 'getandroidapilevel') else '/bin/sh')
+            args = [unix_shell, "-c"] + args
+            if executable:
+                args[0] = executable
+    
+        if executable is None:
+            executable = args[0]
+    
+        sys.audit("subprocess.Popen", executable, args, cwd, env)
+    
+        if (_USE_POSIX_SPAWN
+                and os.path.dirname(executable)
+                and preexec_fn is None
+                and not close_fds
+                and not pass_fds
+                and cwd is None
+                and (p2cread == -1 or p2cread > 2)
+                and (c2pwrite == -1 or c2pwrite > 2)
+                and (errwrite == -1 or errwrite > 2)
+                and not start_new_session
+                and process_group == -1
+                and gid is None
+                and gids is None
+                and uid is None
+                and umask < 0):
+            self._posix_spawn(args, executable, env, restore_signals,
+                              p2cread, p2cwrite,
+                              c2pread, c2pwrite,
+                              errread, errwrite)
+            return
+    
+        orig_executable = executable
+    
+        # For transferring possible exec failure from child to parent.
+        # Data format: "exception name:hex errno:description"
+        # Pickle is not used; it is complex and involves memory allocation.
+        errpipe_read, errpipe_write = os.pipe()
+        # errpipe_write must not be in the standard io 0, 1, or 2 fd range.
+        low_fds_to_close = []
+        while errpipe_write < 3:
+            low_fds_to_close.append(errpipe_write)
+            errpipe_write = os.dup(errpipe_write)
+        for low_fd in low_fds_to_close:
+            os.close(low_fd)
+        try:
+            try:
+                # We must avoid complex work that could involve
+                # malloc or free in the child process to avoid
+                # potential deadlocks, thus we do all this here.
+                # and pass it to fork_exec()
+    
+                if env is not None:
+                    env_list = []
+                    for k, v in env.items():
+                        k = os.fsencode(k)
+                        if b'=' in k:
+                            raise ValueError("illegal environment variable name")
+                        env_list.append(k + b'=' + os.fsencode(v))
+                else:
+                    env_list = None  # Use execv instead of execve.
+                executable = os.fsencode(executable)
+                if os.path.dirname(executable):
+                    executable_list = (executable,)
+                else:
+                    # This matches the behavior of os._execvpe().
+                    executable_list = tuple(
+                        os.path.join(os.fsencode(dir), executable)
+                        for dir in os.get_exec_path(env))
+                fds_to_keep = set(pass_fds)
+                fds_to_keep.add(errpipe_write)
+                self.pid = _fork_exec(
+                        args, executable_list,
+                        close_fds, tuple(sorted(map(int, fds_to_keep))),
+                        cwd, env_list,
+                        p2cread, p2cwrite, c2pread, c2pwrite,
+                        errread, errwrite,
+                        errpipe_read, errpipe_write,
+                        restore_signals, start_new_session,
+                        process_group, gid, gids, uid, umask,
+                        preexec_fn, _USE_VFORK)
+                self._child_created = True
+            finally:
+                # be sure the FD is closed no matter what
+                os.close(errpipe_write)
+    
+            self._close_pipe_fds(p2cread, p2cwrite,
+                                 c2pread, c2pwrite,
+                                 errread, errwrite)
+    
+            # Wait for exec to fail or succeed; possibly raising an
+            # exception (limited in size)
+            errpipe_data = bytearray()
+            while True:
+                part = os.read(errpipe_read, 50000)
+                errpipe_data += part
+                if not part or len(errpipe_data) > 50000:
+                    break
+        finally:
+            # be sure the FD is closed no matter what
+            os.close(errpipe_read)
+    
+        if errpipe_data:
+            try:
+                pid, sts = os.waitpid(self.pid, 0)
+                if pid == self.pid:
+                    self._handle_exitstatus(sts)
+                else:
+                    self.returncode = sys.maxsize
+            except ChildProcessError:
+                pass
+    
+            try:
+                exception_name, hex_errno, err_msg = (
+                        errpipe_data.split(b':', 2))
+                # The encoding here should match the encoding
+                # written in by the subprocess implementations
+                # like _posixsubprocess
+                err_msg = err_msg.decode()
+            except ValueError:
+                exception_name = b'SubprocessError'
+                hex_errno = b'0'
+                err_msg = 'Bad exception data from child: {!r}'.format(
+                              bytes(errpipe_data))
+            child_exception_type = getattr(
+                    builtins, exception_name.decode('ascii'),
+                    SubprocessError)
+            if issubclass(child_exception_type, OSError) and hex_errno:
+                errno_num = int(hex_errno, 16)
+                if err_msg == "noexec:chdir":
+                    err_msg = ""
+                    # The error must be from chdir(cwd).
+                    err_filename = cwd
+                elif err_msg == "noexec":
+                    err_msg = ""
+                    err_filename = None
+                else:
+                    err_filename = orig_executable
+                if errno_num != 0:
+                    err_msg = os.strerror(errno_num)
+                if err_filename is not None:
+>                   raise child_exception_type(errno_num, err_msg, err_filename)
+E                   FileNotFoundError: [Errno 2] No such file or directory: 'xacro'
+
+/usr/local/lib/python3.12/subprocess.py:1955: FileNotFoundError
+________________________ TestXacro.test_create_subdirs _________________________
+
+self = <test_xacro.TestXacro testMethod=test_create_subdirs>
+
+    def test_create_subdirs(self):
+        # run xacro to create output file in non-existent directory
+        # to make sure this directory will be created by xacro
+        tmp_dir_name = tempfile.mkdtemp()  # create directory we can trash
+        shutil.rmtree(tmp_dir_name)  # ensure directory is removed
+        output_path = os.path.join(tmp_dir_name, "out")
+>       self.run_xacro('include1.xml', '-o', output_path)
+
+test/test_xacro.py:1151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:400: in run_xacro
+    subprocess.call([XACRO_EXECUTABLE, input_path] + args)
+/usr/local/lib/python3.12/subprocess.py:389: in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: 255 args: ['xacro', 'include1.xml', '-o', '/tmp/tmpo0780...>
+args = ['xacro', 'include1.xml', '-o', '/tmp/tmpo07807ko/out']
+executable = b'xacro', preexec_fn = None, close_fds = True, pass_fds = ()
+cwd = None, env = None, startupinfo = None, creationflags = 0, shell = False
+p2cread = -1, p2cwrite = -1, c2pread = -1, c2pwrite = -1, errread = -1
+errwrite = -1, restore_signals = True, gid = None, gids = None, uid = None
+umask = -1, start_new_session = False, process_group = -1
+
+    def _execute_child(self, args, executable, preexec_fn, close_fds,
+                       pass_fds, cwd, env,
+                       startupinfo, creationflags, shell,
+                       p2cread, p2cwrite,
+                       c2pread, c2pwrite,
+                       errread, errwrite,
+                       restore_signals,
+                       gid, gids, uid, umask,
+                       start_new_session, process_group):
+        """Execute program (POSIX version)"""
+    
+        if isinstance(args, (str, bytes)):
+            args = [args]
+        elif isinstance(args, os.PathLike):
+            if shell:
+                raise TypeError('path-like args is not allowed when '
+                                'shell is true')
+            args = [args]
+        else:
+            args = list(args)
+    
+        if shell:
+            # On Android the default shell is at '/system/bin/sh'.
+            unix_shell = ('/system/bin/sh' if
+                      hasattr(sys, 'getandroidapilevel') else '/bin/sh')
+            args = [unix_shell, "-c"] + args
+            if executable:
+                args[0] = executable
+    
+        if executable is None:
+            executable = args[0]
+    
+        sys.audit("subprocess.Popen", executable, args, cwd, env)
+    
+        if (_USE_POSIX_SPAWN
+                and os.path.dirname(executable)
+                and preexec_fn is None
+                and not close_fds
+                and not pass_fds
+                and cwd is None
+                and (p2cread == -1 or p2cread > 2)
+                and (c2pwrite == -1 or c2pwrite > 2)
+                and (errwrite == -1 or errwrite > 2)
+                and not start_new_session
+                and process_group == -1
+                and gid is None
+                and gids is None
+                and uid is None
+                and umask < 0):
+            self._posix_spawn(args, executable, env, restore_signals,
+                              p2cread, p2cwrite,
+                              c2pread, c2pwrite,
+                              errread, errwrite)
+            return
+    
+        orig_executable = executable
+    
+        # For transferring possible exec failure from child to parent.
+        # Data format: "exception name:hex errno:description"
+        # Pickle is not used; it is complex and involves memory allocation.
+        errpipe_read, errpipe_write = os.pipe()
+        # errpipe_write must not be in the standard io 0, 1, or 2 fd range.
+        low_fds_to_close = []
+        while errpipe_write < 3:
+            low_fds_to_close.append(errpipe_write)
+            errpipe_write = os.dup(errpipe_write)
+        for low_fd in low_fds_to_close:
+            os.close(low_fd)
+        try:
+            try:
+                # We must avoid complex work that could involve
+                # malloc or free in the child process to avoid
+                # potential deadlocks, thus we do all this here.
+                # and pass it to fork_exec()
+    
+                if env is not None:
+                    env_list = []
+                    for k, v in env.items():
+                        k = os.fsencode(k)
+                        if b'=' in k:
+                            raise ValueError("illegal environment variable name")
+                        env_list.append(k + b'=' + os.fsencode(v))
+                else:
+                    env_list = None  # Use execv instead of execve.
+                executable = os.fsencode(executable)
+                if os.path.dirname(executable):
+                    executable_list = (executable,)
+                else:
+                    # This matches the behavior of os._execvpe().
+                    executable_list = tuple(
+                        os.path.join(os.fsencode(dir), executable)
+                        for dir in os.get_exec_path(env))
+                fds_to_keep = set(pass_fds)
+                fds_to_keep.add(errpipe_write)
+                self.pid = _fork_exec(
+                        args, executable_list,
+                        close_fds, tuple(sorted(map(int, fds_to_keep))),
+                        cwd, env_list,
+                        p2cread, p2cwrite, c2pread, c2pwrite,
+                        errread, errwrite,
+                        errpipe_read, errpipe_write,
+                        restore_signals, start_new_session,
+                        process_group, gid, gids, uid, umask,
+                        preexec_fn, _USE_VFORK)
+                self._child_created = True
+            finally:
+                # be sure the FD is closed no matter what
+                os.close(errpipe_write)
+    
+            self._close_pipe_fds(p2cread, p2cwrite,
+                                 c2pread, c2pwrite,
+                                 errread, errwrite)
+    
+            # Wait for exec to fail or succeed; possibly raising an
+            # exception (limited in size)
+            errpipe_data = bytearray()
+            while True:
+                part = os.read(errpipe_read, 50000)
+                errpipe_data += part
+                if not part or len(errpipe_data) > 50000:
+                    break
+        finally:
+            # be sure the FD is closed no matter what
+            os.close(errpipe_read)
+    
+        if errpipe_data:
+            try:
+                pid, sts = os.waitpid(self.pid, 0)
+                if pid == self.pid:
+                    self._handle_exitstatus(sts)
+                else:
+                    self.returncode = sys.maxsize
+            except ChildProcessError:
+                pass
+    
+            try:
+                exception_name, hex_errno, err_msg = (
+                        errpipe_data.split(b':', 2))
+                # The encoding here should match the encoding
+                # written in by the subprocess implementations
+                # like _posixsubprocess
+                err_msg = err_msg.decode()
+            except ValueError:
+                exception_name = b'SubprocessError'
+                hex_errno = b'0'
+                err_msg = 'Bad exception data from child: {!r}'.format(
+                              bytes(errpipe_data))
+            child_exception_type = getattr(
+                    builtins, exception_name.decode('ascii'),
+                    SubprocessError)
+            if issubclass(child_exception_type, OSError) and hex_errno:
+                errno_num = int(hex_errno, 16)
+                if err_msg == "noexec:chdir":
+                    err_msg = ""
+                    # The error must be from chdir(cwd).
+                    err_filename = cwd
+                elif err_msg == "noexec":
+                    err_msg = ""
+                    err_filename = None
+                else:
+                    err_filename = orig_executable
+                if errno_num != 0:
+                    err_msg = os.strerror(errno_num)
+                if err_filename is not None:
+>                   raise child_exception_type(errno_num, err_msg, err_filename)
+E                   FileNotFoundError: [Errno 2] No such file or directory: 'xacro'
+
+/usr/local/lib/python3.12/subprocess.py:1955: FileNotFoundError
+________________________ TestXacro.test_error_reporting ________________________
+
+self = <test_xacro.TestXacro testMethod=test_error_reporting>
+
+        def test_error_reporting(self):
+            src = '''<a xmlns:xacro="http://www.ros.org/wiki/xacro">
+            <xacro:include filename="raise.xacro"/>
+            <xacro:outer/>
+            </a>'''
+            with self.assertRaises(xacro.XacroException):
+                self.quick_xacro(src)
+            with capture_stderr(xacro.print_location) as (_, output):
+                expected = '''when instantiating macro: inner ({file})
+    instantiated from: outer ({file})
+    in file: string
+    '''.format(file="./raise.xacro")
+>               self.assertEqual(output, expected)
+E               AssertionError: 'when processing file: string\n' != 'when instantiating macro: inner (./raise.xacro[58 chars]ng\n'
+E               - when processing file: string
+E               + when instantiating macro: inner (./raise.xacro)
+E               + instantiated from: outer (./raise.xacro)
+E               + in file: string
+
+test/test_xacro.py:1353: AssertionError
+____________________________ TestXacro.test_include ____________________________
+
+inp = None, filename = './include1.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././include1.xml'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_include>
+
+    def test_include(self):
+        src = '''<a xmlns:xacro="http://www.ros.org/xacro"><xacro:include filename="include1.xml"/></a>'''
+>       self.assert_matches(self.quick_xacro(src), '''<a><inc1/></a>''')
+                            ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:648: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = './include1.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././include1.xml [Errno 2] No such file or directory: '././include1.xml'
+
+xacro/__init__.py:1031: XacroException
+______________________ TestXacro.test_include_from_macro _______________________
+
+inp = None, filename = './include1.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././include1.xml'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_include_from_macro>
+
+    def test_include_from_macro(self):
+        src = '''
+    <a xmlns:xacro="http://www.ros.org/xacro">
+      <xacro:macro name="foo" params="file:=include1.xml"><xacro:include filename="${file}"/></xacro:macro>
+      <xacro:foo/>
+      <xacro:foo file="${xacro.abs_filename('include1.xml')}"/>
+      <xacro:include filename="subdir/foo.xacro"/>
+      <xacro:foo file="$(cwd)/subdir/include1.xml"/>
+    </a>'''
+        res = '''<a><inc1/><inc1/><subdir_inc1/><subdir_inc1/></a>'''
+>       self.assert_matches(self.quick_xacro(src), res)
+                            ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1448: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:992: in eval_all
+    elif handle_macro_call(node, macros, symbols):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:838: in handle_macro_call
+    eval_all(body, scoped_macros, scoped_symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = './include1.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././include1.xml [Errno 2] No such file or directory: '././include1.xml'
+
+xacro/__init__.py:1031: XacroException
+_____________________ TestXacro.test_include_from_variable _____________________
+
+inp = None, filename = './include1.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././include1.xml'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_include_from_variable>
+
+    def test_include_from_variable(self):
+        doc = '''<a xmlns:xacro="http://www.ros.org/xacro">
+        <xacro:property name="file" value="include1.xml"/>
+        <xacro:include filename="${file}" /></a>'''
+>       self.assert_matches(self.quick_xacro(doc), '''<a><inc1/></a>''')
+                            ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:672: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = './include1.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././include1.xml [Errno 2] No such file or directory: '././include1.xml'
+
+xacro/__init__.py:1031: XacroException
+_________________________ TestXacro.test_include_glob __________________________
+
+self = <test_xacro.TestXacro testMethod=test_include_glob>
+
+    def test_include_glob(self):
+        src = '''<a xmlns:xacro="http://www.ros.org/xacro"><xacro:include filename="include{glob}.xml"/></a>'''
+        res = '<a><inc1/><inc2/></a>'
+        for pattern in ['*', '?', '[1-2]']:
+>           self.assert_matches(self.quick_xacro(src.format(glob=pattern)), res)
+
+test/test_xacro.py:654: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:384: in assert_matches
+    self.assertTrue(xml_matches(a, b, self.ignore_nodes))
+E   AssertionError: False is not true
+----------------------------- Captured stdout call -----------------------------
+Match failed:
+<a/>
+==============================================================================
+<a><inc1/><inc2/></a>
+----------------------------- Captured stderr call -----------------------------
+warning: Include tag's filename spec "./include*.xml" matched no files.
+_______________________ TestXacro.test_include_recursive _______________________
+
+inp = None, filename = './include1.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././include1.xml'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_include_recursive>
+
+        def test_include_recursive(self):
+>           self.assert_matches(self.quick_xacro('''
+    <a xmlns:xacro="http://www.ros.org/xacro">
+        <xacro:include filename="include1.xml"/>
+        <xacro:include filename="./include1.xml"/>
+        <xacro:include filename="subdir/include-recursive.xacro"/>
+    </a>'''), '''
+    <a><inc1/><inc1/><subdir_inc1/><subdir_inc1/><inc1/></a>''')
+
+test/test_xacro.py:675: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = './include1.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././include1.xml [Errno 2] No such file or directory: '././include1.xml'
+
+xacro/__init__.py:1031: XacroException
+____________________ TestXacro.test_include_with_namespace _____________________
+
+inp = None, filename = './include1.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././include1.xacro'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_include_with_namespace>
+
+        def test_include_with_namespace(self):
+            src = '''
+    <a xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:property name="var" value="main"/>
+      <xacro:include filename="include1.xacro" ns="A"/>
+      <xacro:include filename="include2.xacro" ns="B"/>
+      <xacro:A.foo/><xacro:B.foo/>
+      <main var="${var}" A="${2*A.var}" B="${B.var+1}"/>
+    </a>'''
+            res = '''
+    <a>
+        <inc1/><inc2/><main var="main" A="2" B="3"/>
+    </a>'''
+>           self.assert_matches(self.quick_xacro(src), res)
+                                ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:696: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = './include1.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././include1.xacro [Errno 2] No such file or directory: '././include1.xacro'
+
+xacro/__init__.py:1031: XacroException
+_____________________ TestXacro.test_namespace_propagation _____________________
+
+inp = None, filename = './include3.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././include3.xacro'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_namespace_propagation>
+
+    def test_namespace_propagation(self):
+        src = '''<a xmlns:xacro="http://www.ros.org/wiki/xacro">
+          <xacro:include filename="include3.xacro" ns="C"/><xacro:C.foo/></a>'''
+        res = '''<a><inc3 included="inner"/><inner/></a>'''
+>       self.assert_matches(self.quick_xacro(src), res)
+                            ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1454: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = './include3.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././include3.xacro [Errno 2] No such file or directory: '././include3.xacro'
+
+xacro/__init__.py:1031: XacroException
+______________________________ TestXacro.test_pr2 ______________________________
+
+s = '$(find xacro)'
+
+    def eval_extension(s):
+        if s == '$(cwd)':
+            # In the case that root_dir is '.' this will expand to the full
+            # current working directory, identical to os.getcwd()
+            return os.path.abspath(root_dir)
+        try:
+            from .substitution_args import resolve_args, ArgException
+>           return resolve_args(s, context=substitution_args_context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:303: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/substitution_args.py:321: in resolve_args
+    resolved = _resolve_args(arg_str, context, commands)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/substitution_args.py:342: in _resolve_args
+    resolved = commands[command](resolved, a, args, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/substitution_args.py:155: in _find
+    return resolved.replace('$(%s)' % a, _eval_find(args[0]))
+                                         ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+pkg = 'xacro'
+
+    def _eval_find(pkg):
+>       from ament_index_python.packages import get_package_share_directory
+E       ModuleNotFoundError: No module named 'ament_index_python'
+
+xacro/substitution_args.py:140: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_pr2>
+
+    @unittest.skipIf(BAZEL_TEST, "Bazel build does not support $(find pkg)")
+    def test_pr2(self):
+        # run xacro on the pr2 tree snapshot
+        test_dir = os.path.abspath(os.path.dirname(__file__))
+        pr2_xacro_path = os.path.join(test_dir, 'robots', 'pr2', 'pr2.urdf.xacro')
+        pr2_golden_parse_path = os.path.join(test_dir, 'robots', 'pr2', 'pr2_1.11.4.xml')
+        self.assert_matches(
+            xml.dom.minidom.parse(pr2_golden_parse_path),
+>           self.quick_xacro(open(pr2_xacro_path)))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:417: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:529: in process_include
+    for filename in get_include_files(filename_spec, symbols):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:472: in get_include_files
+    filename_spec = abs_filename_spec(eval_text(filename_spec, symbols))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:720: in eval_text
+    results.append(handle_extension(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:710: in handle_extension
+    return eval_extension("$(%s)" % eval_text(s, symbols))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = '$(find xacro)'
+
+    def eval_extension(s):
+        if s == '$(cwd)':
+            # In the case that root_dir is '.' this will expand to the full
+            # current working directory, identical to os.getcwd()
+            return os.path.abspath(root_dir)
+        try:
+            from .substitution_args import resolve_args, ArgException
+            return resolve_args(s, context=substitution_args_context)
+        except ImportError as e:
+>           raise XacroException("substitution args not supported: ", exc=e)
+E           xacro.XacroException: substitution args not supported:  No module named 'ament_index_python'
+
+xacro/__init__.py:305: XacroException
+________________________ TestXacro.test_print_location _________________________
+
+inp = None, filename = './location.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././location.xacro'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_print_location>
+
+    def test_print_location(self):
+        src = '''<a xmlns:xacro="http://www.ros.org/wiki/xacro">
+        <xacro:macro name="scope"><xacro:include filename="location.xacro"/></xacro:macro>
+        <xacro:scope/>
+        </a>'''
+        res = '''<a/>'''
+>       with capture_stderr(self.quick_xacro, src) as (result, output):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1393: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/local/lib/python3.12/contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+test/test_xacro.py:212: in capture_stderr
+    result = function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:992: in eval_all
+    elif handle_macro_call(node, macros, symbols):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:838: in handle_macro_call
+    eval_all(body, scoped_macros, scoped_symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = './location.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././location.xacro [Errno 2] No such file or directory: '././location.xacro'
+
+xacro/__init__.py:1031: XacroException
+__________ TestXacro.test_property_resolution_with_namespaced_include __________
+
+inp = None, filename = '././include2.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: './././include2.xacro'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_property_resolution_with_namespaced_include>
+
+        def test_property_resolution_with_namespaced_include(self):
+          src = '''<a version="1.0" xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:include filename="./include2.xacro" ns="B"/>
+      <xacro:property name="ext" value="main"/>
+      <xacro:property name="var" value="main"/>
+      <xacro:B.bar arg="${ext}"/>
+      <xacro:B.bar arg="${var}"/>
+    </a>'''
+          res = '''<a version="1.0">
+      <a arg="main" ext="main" var="2"/>
+      <a arg="main" ext="main" var="2"/>
+    </a>'''
+>         self.assert_matches(self.quick_xacro(src), res)
+                              ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1436: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = '././include2.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ./././include2.xacro [Errno 2] No such file or directory: './././include2.xacro'
+
+xacro/__init__.py:1031: XacroException
+_______________ TestXacro.test_property_scope_parent_namespaced ________________
+
+inp = None, filename = './A.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././A.xacro'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_property_scope_parent_namespaced>
+
+        def test_property_scope_parent_namespaced(self):
+            src = '''<a xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:property name="prop" value="root"/>
+      <root prop="${prop}"/>
+    
+      <xacro:include filename="A.xacro" ns="A"/>
+      <root prop="${prop}" A.prop="${A.prop}" A.B.prop="${A.B.prop}" />
+    
+      <xacro:A.B.set/>
+      <root prop="${prop}"/>
+    </a>'''
+            res = '''<a>
+      <root prop="root"/>
+      <A prop="B"/>
+      <root A.B.prop="b" A.prop="B" prop="root"/>
+      <root prop="macro"/>
+    </a>'''
+>           self.assert_matches(self.quick_xacro(src), res)
+                                ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1482: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = './A.xacro'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././A.xacro [Errno 2] No such file or directory: '././A.xacro'
+
+xacro/__init__.py:1031: XacroException
+______________________ TestXacro.test_set_root_directory _______________________
+
+self = <test_xacro.TestXacro testMethod=test_set_root_directory>
+
+        def test_set_root_directory(self):
+            # Run xacro in one directory, but specify the directory to resolve
+            # filenames in.
+            tmp_dir_name = tempfile.mkdtemp()  # create directory we can trash
+    
+            output_path = os.path.join(tmp_dir_name, "out")
+    
+            # Generate a pair of files to be parsed by xacro, outside of the
+            # test directory, to ensure the root-dir argument works
+            file_foo = os.path.join(tmp_dir_name, 'foo.xml.xacro')
+            file_bar = os.path.join(tmp_dir_name, 'bar.xml.xacro')
+            with open(file_foo, 'w') as f:
+                f.write('''<?xml version="1.0"?>
+    <robot xmlns:xacro="http://ros.org/wiki/xacro">
+    	<xacro:include filename="bar.xml.xacro"/>
+    </robot>
+    ''')
+            with open(file_bar, 'w') as f:
+                f.write('''<?xml version="1.0"?>
+    <robot xmlns:xacro="http://ros.org/wiki/xacro">
+        <link name="my_link"/>
+    </robot>
+    ''')
+    
+            # Run xacro with no --root-dir arg, which will then use the
+            # current path as the path to resolveto
+>           self.run_xacro('foo.xml.xacro', '-o', output_path)
+
+test/test_xacro.py:1184: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:400: in run_xacro
+    subprocess.call([XACRO_EXECUTABLE, input_path] + args)
+/usr/local/lib/python3.12/subprocess.py:389: in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: 255 args: ['xacro', 'foo.xml.xacro', '-o', '/tmp/tmpfxky...>
+args = ['xacro', 'foo.xml.xacro', '-o', '/tmp/tmpfxkyez1j/out']
+executable = b'xacro', preexec_fn = None, close_fds = True, pass_fds = ()
+cwd = None, env = None, startupinfo = None, creationflags = 0, shell = False
+p2cread = -1, p2cwrite = -1, c2pread = -1, c2pwrite = -1, errread = -1
+errwrite = -1, restore_signals = True, gid = None, gids = None, uid = None
+umask = -1, start_new_session = False, process_group = -1
+
+    def _execute_child(self, args, executable, preexec_fn, close_fds,
+                       pass_fds, cwd, env,
+                       startupinfo, creationflags, shell,
+                       p2cread, p2cwrite,
+                       c2pread, c2pwrite,
+                       errread, errwrite,
+                       restore_signals,
+                       gid, gids, uid, umask,
+                       start_new_session, process_group):
+        """Execute program (POSIX version)"""
+    
+        if isinstance(args, (str, bytes)):
+            args = [args]
+        elif isinstance(args, os.PathLike):
+            if shell:
+                raise TypeError('path-like args is not allowed when '
+                                'shell is true')
+            args = [args]
+        else:
+            args = list(args)
+    
+        if shell:
+            # On Android the default shell is at '/system/bin/sh'.
+            unix_shell = ('/system/bin/sh' if
+                      hasattr(sys, 'getandroidapilevel') else '/bin/sh')
+            args = [unix_shell, "-c"] + args
+            if executable:
+                args[0] = executable
+    
+        if executable is None:
+            executable = args[0]
+    
+        sys.audit("subprocess.Popen", executable, args, cwd, env)
+    
+        if (_USE_POSIX_SPAWN
+                and os.path.dirname(executable)
+                and preexec_fn is None
+                and not close_fds
+                and not pass_fds
+                and cwd is None
+                and (p2cread == -1 or p2cread > 2)
+                and (c2pwrite == -1 or c2pwrite > 2)
+                and (errwrite == -1 or errwrite > 2)
+                and not start_new_session
+                and process_group == -1
+                and gid is None
+                and gids is None
+                and uid is None
+                and umask < 0):
+            self._posix_spawn(args, executable, env, restore_signals,
+                              p2cread, p2cwrite,
+                              c2pread, c2pwrite,
+                              errread, errwrite)
+            return
+    
+        orig_executable = executable
+    
+        # For transferring possible exec failure from child to parent.
+        # Data format: "exception name:hex errno:description"
+        # Pickle is not used; it is complex and involves memory allocation.
+        errpipe_read, errpipe_write = os.pipe()
+        # errpipe_write must not be in the standard io 0, 1, or 2 fd range.
+        low_fds_to_close = []
+        while errpipe_write < 3:
+            low_fds_to_close.append(errpipe_write)
+            errpipe_write = os.dup(errpipe_write)
+        for low_fd in low_fds_to_close:
+            os.close(low_fd)
+        try:
+            try:
+                # We must avoid complex work that could involve
+                # malloc or free in the child process to avoid
+                # potential deadlocks, thus we do all this here.
+                # and pass it to fork_exec()
+    
+                if env is not None:
+                    env_list = []
+                    for k, v in env.items():
+                        k = os.fsencode(k)
+                        if b'=' in k:
+                            raise ValueError("illegal environment variable name")
+                        env_list.append(k + b'=' + os.fsencode(v))
+                else:
+                    env_list = None  # Use execv instead of execve.
+                executable = os.fsencode(executable)
+                if os.path.dirname(executable):
+                    executable_list = (executable,)
+                else:
+                    # This matches the behavior of os._execvpe().
+                    executable_list = tuple(
+                        os.path.join(os.fsencode(dir), executable)
+                        for dir in os.get_exec_path(env))
+                fds_to_keep = set(pass_fds)
+                fds_to_keep.add(errpipe_write)
+                self.pid = _fork_exec(
+                        args, executable_list,
+                        close_fds, tuple(sorted(map(int, fds_to_keep))),
+                        cwd, env_list,
+                        p2cread, p2cwrite, c2pread, c2pwrite,
+                        errread, errwrite,
+                        errpipe_read, errpipe_write,
+                        restore_signals, start_new_session,
+                        process_group, gid, gids, uid, umask,
+                        preexec_fn, _USE_VFORK)
+                self._child_created = True
+            finally:
+                # be sure the FD is closed no matter what
+                os.close(errpipe_write)
+    
+            self._close_pipe_fds(p2cread, p2cwrite,
+                                 c2pread, c2pwrite,
+                                 errread, errwrite)
+    
+            # Wait for exec to fail or succeed; possibly raising an
+            # exception (limited in size)
+            errpipe_data = bytearray()
+            while True:
+                part = os.read(errpipe_read, 50000)
+                errpipe_data += part
+                if not part or len(errpipe_data) > 50000:
+                    break
+        finally:
+            # be sure the FD is closed no matter what
+            os.close(errpipe_read)
+    
+        if errpipe_data:
+            try:
+                pid, sts = os.waitpid(self.pid, 0)
+                if pid == self.pid:
+                    self._handle_exitstatus(sts)
+                else:
+                    self.returncode = sys.maxsize
+            except ChildProcessError:
+                pass
+    
+            try:
+                exception_name, hex_errno, err_msg = (
+                        errpipe_data.split(b':', 2))
+                # The encoding here should match the encoding
+                # written in by the subprocess implementations
+                # like _posixsubprocess
+                err_msg = err_msg.decode()
+            except ValueError:
+                exception_name = b'SubprocessError'
+                hex_errno = b'0'
+                err_msg = 'Bad exception data from child: {!r}'.format(
+                              bytes(errpipe_data))
+            child_exception_type = getattr(
+                    builtins, exception_name.decode('ascii'),
+                    SubprocessError)
+            if issubclass(child_exception_type, OSError) and hex_errno:
+                errno_num = int(hex_errno, 16)
+                if err_msg == "noexec:chdir":
+                    err_msg = ""
+                    # The error must be from chdir(cwd).
+                    err_filename = cwd
+                elif err_msg == "noexec":
+                    err_msg = ""
+                    err_filename = None
+                else:
+                    err_filename = orig_executable
+                if errno_num != 0:
+                    err_msg = os.strerror(errno_num)
+                if err_filename is not None:
+>                   raise child_exception_type(errno_num, err_msg, err_filename)
+E                   FileNotFoundError: [Errno 2] No such file or directory: 'xacro'
+
+/usr/local/lib/python3.12/subprocess.py:1955: FileNotFoundError
+____________________ TestXacro.test_substitution_args_find _____________________
+
+s = '$(find xacro)'
+
+    def eval_extension(s):
+        if s == '$(cwd)':
+            # In the case that root_dir is '.' this will expand to the full
+            # current working directory, identical to os.getcwd()
+            return os.path.abspath(root_dir)
+        try:
+            from .substitution_args import resolve_args, ArgException
+>           return resolve_args(s, context=substitution_args_context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:303: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/substitution_args.py:321: in resolve_args
+    resolved = _resolve_args(arg_str, context, commands)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/substitution_args.py:342: in _resolve_args
+    resolved = commands[command](resolved, a, args, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/substitution_args.py:155: in _find
+    return resolved.replace('$(%s)' % a, _eval_find(args[0]))
+                                         ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+pkg = 'xacro'
+
+    def _eval_find(pkg):
+>       from ament_index_python.packages import get_package_share_directory
+E       ModuleNotFoundError: No module named 'ament_index_python'
+
+xacro/substitution_args.py:140: ModuleNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_substitution_args_find>
+
+    @unittest.skipIf(BAZEL_TEST, "Bazel build does not support $(find pkg)")
+    def test_substitution_args_find(self):
+>       resolved = self.quick_xacro('''<a>$(find xacro)/test/test_xacro.py</a>''').firstChild.firstChild.data
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:571: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:999: in eval_all
+    node.data = str(eval_text(node.data, symbols))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:720: in eval_text
+    results.append(handle_extension(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:710: in handle_extension
+    return eval_extension("$(%s)" % eval_text(s, symbols))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = '$(find xacro)'
+
+    def eval_extension(s):
+        if s == '$(cwd)':
+            # In the case that root_dir is '.' this will expand to the full
+            # current working directory, identical to os.getcwd()
+            return os.path.abspath(root_dir)
+        try:
+            from .substitution_args import resolve_args, ArgException
+            return resolve_args(s, context=substitution_args_context)
+        except ImportError as e:
+>           raise XacroException("substitution args not supported: ", exc=e)
+E           xacro.XacroException: substitution args not supported:  No module named 'ament_index_python'
+
+xacro/__init__.py:305: XacroException
+_________________________ TestXacro.test_unicode_file __________________________
+
+self = <test_xacro.TestXacro testMethod=test_unicode_file>
+
+    def test_unicode_file(self):
+        # run the full xacro processing pipeline on a file with
+        # unicode characters in it and make sure the output is correct
+        test_dir = os.path.abspath(os.path.dirname(__file__))
+        input_path = os.path.join(test_dir, 'emoji.xacro')
+        tmp_dir_name = tempfile.mkdtemp()  # create directory we can trash
+        output_path = os.path.join(tmp_dir_name, "out.xml")
+>       self.run_xacro(input_path, '-o', output_path)
+
+test/test_xacro.py:1680: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:400: in run_xacro
+    subprocess.call([XACRO_EXECUTABLE, input_path] + args)
+/usr/local/lib/python3.12/subprocess.py:389: in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: 255 args: ['xacro', '/home/azureuser/traceweave-harness/...>
+args = ['xacro', '/home/azureuser/traceweave-harness/work/xacro/test/emoji.xacro', '-o', '/tmp/tmprrp_e8xg/out.xml']
+executable = b'xacro', preexec_fn = None, close_fds = True, pass_fds = ()
+cwd = None, env = None, startupinfo = None, creationflags = 0, shell = False
+p2cread = -1, p2cwrite = -1, c2pread = -1, c2pwrite = -1, errread = -1
+errwrite = -1, restore_signals = True, gid = None, gids = None, uid = None
+umask = -1, start_new_session = False, process_group = -1
+
+    def _execute_child(self, args, executable, preexec_fn, close_fds,
+                       pass_fds, cwd, env,
+                       startupinfo, creationflags, shell,
+                       p2cread, p2cwrite,
+                       c2pread, c2pwrite,
+                       errread, errwrite,
+                       restore_signals,
+                       gid, gids, uid, umask,
+                       start_new_session, process_group):
+        """Execute program (POSIX version)"""
+    
+        if isinstance(args, (str, bytes)):
+            args = [args]
+        elif isinstance(args, os.PathLike):
+            if shell:
+                raise TypeError('path-like args is not allowed when '
+                                'shell is true')
+            args = [args]
+        else:
+            args = list(args)
+    
+        if shell:
+            # On Android the default shell is at '/system/bin/sh'.
+            unix_shell = ('/system/bin/sh' if
+                      hasattr(sys, 'getandroidapilevel') else '/bin/sh')
+            args = [unix_shell, "-c"] + args
+            if executable:
+                args[0] = executable
+    
+        if executable is None:
+            executable = args[0]
+    
+        sys.audit("subprocess.Popen", executable, args, cwd, env)
+    
+        if (_USE_POSIX_SPAWN
+                and os.path.dirname(executable)
+                and preexec_fn is None
+                and not close_fds
+                and not pass_fds
+                and cwd is None
+                and (p2cread == -1 or p2cread > 2)
+                and (c2pwrite == -1 or c2pwrite > 2)
+                and (errwrite == -1 or errwrite > 2)
+                and not start_new_session
+                and process_group == -1
+                and gid is None
+                and gids is None
+                and uid is None
+                and umask < 0):
+            self._posix_spawn(args, executable, env, restore_signals,
+                              p2cread, p2cwrite,
+                              c2pread, c2pwrite,
+                              errread, errwrite)
+            return
+    
+        orig_executable = executable
+    
+        # For transferring possible exec failure from child to parent.
+        # Data format: "exception name:hex errno:description"
+        # Pickle is not used; it is complex and involves memory allocation.
+        errpipe_read, errpipe_write = os.pipe()
+        # errpipe_write must not be in the standard io 0, 1, or 2 fd range.
+        low_fds_to_close = []
+        while errpipe_write < 3:
+            low_fds_to_close.append(errpipe_write)
+            errpipe_write = os.dup(errpipe_write)
+        for low_fd in low_fds_to_close:
+            os.close(low_fd)
+        try:
+            try:
+                # We must avoid complex work that could involve
+                # malloc or free in the child process to avoid
+                # potential deadlocks, thus we do all this here.
+                # and pass it to fork_exec()
+    
+                if env is not None:
+                    env_list = []
+                    for k, v in env.items():
+                        k = os.fsencode(k)
+                        if b'=' in k:
+                            raise ValueError("illegal environment variable name")
+                        env_list.append(k + b'=' + os.fsencode(v))
+                else:
+                    env_list = None  # Use execv instead of execve.
+                executable = os.fsencode(executable)
+                if os.path.dirname(executable):
+                    executable_list = (executable,)
+                else:
+                    # This matches the behavior of os._execvpe().
+                    executable_list = tuple(
+                        os.path.join(os.fsencode(dir), executable)
+                        for dir in os.get_exec_path(env))
+                fds_to_keep = set(pass_fds)
+                fds_to_keep.add(errpipe_write)
+                self.pid = _fork_exec(
+                        args, executable_list,
+                        close_fds, tuple(sorted(map(int, fds_to_keep))),
+                        cwd, env_list,
+                        p2cread, p2cwrite, c2pread, c2pwrite,
+                        errread, errwrite,
+                        errpipe_read, errpipe_write,
+                        restore_signals, start_new_session,
+                        process_group, gid, gids, uid, umask,
+                        preexec_fn, _USE_VFORK)
+                self._child_created = True
+            finally:
+                # be sure the FD is closed no matter what
+                os.close(errpipe_write)
+    
+            self._close_pipe_fds(p2cread, p2cwrite,
+                                 c2pread, c2pwrite,
+                                 errread, errwrite)
+    
+            # Wait for exec to fail or succeed; possibly raising an
+            # exception (limited in size)
+            errpipe_data = bytearray()
+            while True:
+                part = os.read(errpipe_read, 50000)
+                errpipe_data += part
+                if not part or len(errpipe_data) > 50000:
+                    break
+        finally:
+            # be sure the FD is closed no matter what
+            os.close(errpipe_read)
+    
+        if errpipe_data:
+            try:
+                pid, sts = os.waitpid(self.pid, 0)
+                if pid == self.pid:
+                    self._handle_exitstatus(sts)
+                else:
+                    self.returncode = sys.maxsize
+            except ChildProcessError:
+                pass
+    
+            try:
+                exception_name, hex_errno, err_msg = (
+                        errpipe_data.split(b':', 2))
+                # The encoding here should match the encoding
+                # written in by the subprocess implementations
+                # like _posixsubprocess
+                err_msg = err_msg.decode()
+            except ValueError:
+                exception_name = b'SubprocessError'
+                hex_errno = b'0'
+                err_msg = 'Bad exception data from child: {!r}'.format(
+                              bytes(errpipe_data))
+            child_exception_type = getattr(
+                    builtins, exception_name.decode('ascii'),
+                    SubprocessError)
+            if issubclass(child_exception_type, OSError) and hex_errno:
+                errno_num = int(hex_errno, 16)
+                if err_msg == "noexec:chdir":
+                    err_msg = ""
+                    # The error must be from chdir(cwd).
+                    err_filename = cwd
+                elif err_msg == "noexec":
+                    err_msg = ""
+                    err_filename = None
+                else:
+                    err_filename = orig_executable
+                if errno_num != 0:
+                    err_msg = os.strerror(errno_num)
+                if err_filename is not None:
+>                   raise child_exception_type(errno_num, err_msg, err_filename)
+E                   FileNotFoundError: [Errno 2] No such file or directory: 'xacro'
+
+/usr/local/lib/python3.12/subprocess.py:1955: FileNotFoundError
+_____________________ TestXacro.test_xml_namespace_lifting _____________________
+
+inp = None, filename = './namespace.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+>               inp = f = open(os.path.join(root_dir, filename))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '././namespace.xml'
+
+xacro/__init__.py:1027: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_xml_namespace_lifting>
+
+        def test_xml_namespace_lifting(self):
+            src = '''<a xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns:a="http://www.ros.org/a">
+      <xacro:macro name="test">
+        <xacro:include filename="namespace.xml"></xacro:include>
+      </xacro:macro>
+      <xacro:test />
+    </a>'''
+            res = '''<a xmlns:a="http://www.ros.org/a" xmlns:b="http://www.ros.org/b" />'''
+>           self.assert_matches(self.quick_xacro(src), res)
+                                ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1363: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:992: in eval_all
+    elif handle_macro_call(node, macros, symbols):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:838: in handle_macro_call
+    eval_all(body, scoped_macros, scoped_symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:533: in process_include
+    include = parse(None, filename).documentElement
+              ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+inp = None, filename = './namespace.xml'
+
+    def parse(inp, filename=None):
+        """
+        Parse input or filename into a DOM tree.
+        If inp is None, open filename and load from there.
+        Otherwise, parse inp, either as string or file object.
+        If inp is already a DOM tree, this function is a noop.
+        :return:xml.dom.minidom.Document
+        :raise: xml.parsers.expat.ExpatError
+        """
+        f = None
+        if inp is None:
+            try:
+                inp = f = open(os.path.join(root_dir, filename))
+            except IOError as e:
+                # do not report currently processed file as "in file ..."
+                filestack.pop()
+>               raise XacroException(e.strerror + ": " + e.filename, exc=e)
+E               xacro.XacroException: No such file or directory: ././namespace.xml [Errno 2] No such file or directory: '././namespace.xml'
+
+xacro/__init__.py:1031: XacroException
+___________________ TestXacro.test_yaml_custom_constructors ____________________
+
+s = "xacro.load_yaml('constructors.yaml')"
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filename = './constructors.yaml'
+
+    def load_yaml(filename):
+        try:
+            import yaml
+            for unit in ConstructUnits:
+                yaml.SafeLoader.add_constructor(unit.value.tag, unit.constructor)
+        except Exception:
+            raise XacroException("yaml support not available; install python-yaml")
+    
+        filename = abs_filename_spec(filename)
+>       f = open(filename)
+            ^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: './constructors.yaml'
+
+xacro/__init__.py:143: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+s = 'values.no_tag'
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:367: in __getitem__
+    return self._resolve_(key)
+           ^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:354: in _resolve_
+    dict.__setitem__(self, key, self._eval_literal(eval_text(dict.__getitem__(self, key), self)))
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = "xacro.load_yaml('constructors.yaml')"
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './constructors.yaml' 
+E           when evaluating expression 'xacro.load_yaml('constructors.yaml')'
+
+xacro/__init__.py:706: XacroException
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_yaml_custom_constructors>
+
+        def test_yaml_custom_constructors(self):
+            src = '''
+    <a xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:property name="values" value="${xacro.load_yaml('constructors.yaml')}"/>
+      <values no_tag="${values.no_tag}" angles="${values.angles}" lengths="${values.lengths}"/>
+    </a>'''
+            res = '''<a><values no_tag="42" angles="{}" lengths="{}"/></a>'''.format([math.pi]*2, [25.0]*4)
+>           self.assert_matches(self.quick_xacro(src), res)
+                                ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1562: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:996: in eval_all
+    eval_all(node, macros, symbols)
+xacro/__init__.py:909: in eval_all
+    result = str(eval_text(value, symbols))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = 'values.no_tag'
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './constructors.yaml' 
+E           when evaluating expression 'xacro.load_yaml('constructors.yaml')' 
+E           when evaluating expression 'values.no_tag'
+
+xacro/__init__.py:706: XacroException
+_____________________ TestXacro.test_yaml_hasattr_support ______________________
+
+self = <test_xacro.TestXacro testMethod=test_yaml_hasattr_support>
+
+    def test_yaml_hasattr_support(self):
+>       yaml = xacro.load_yaml('settings.yaml')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1574: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filename = './settings.yaml'
+
+    def load_yaml(filename):
+        try:
+            import yaml
+            for unit in ConstructUnits:
+                yaml.SafeLoader.add_constructor(unit.value.tag, unit.constructor)
+        except Exception:
+            raise XacroException("yaml support not available; install python-yaml")
+    
+        filename = abs_filename_spec(filename)
+>       f = open(filename)
+            ^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: './settings.yaml'
+
+xacro/__init__.py:143: FileNotFoundError
+_________________________ TestXacro.test_yaml_support __________________________
+
+s = "xacro.load_yaml('settings.yaml')"
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filename = './settings.yaml'
+
+    def load_yaml(filename):
+        try:
+            import yaml
+            for unit in ConstructUnits:
+                yaml.SafeLoader.add_constructor(unit.value.tag, unit.constructor)
+        except Exception:
+            raise XacroException("yaml support not available; install python-yaml")
+    
+        filename = abs_filename_spec(filename)
+>       f = open(filename)
+            ^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: './settings.yaml'
+
+xacro/__init__.py:143: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+s = "settings['arms'][type]['file']"
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:367: in __getitem__
+    return self._resolve_(key)
+           ^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:354: in _resolve_
+    dict.__setitem__(self, key, self._eval_literal(eval_text(dict.__getitem__(self, key), self)))
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = "xacro.load_yaml('settings.yaml')"
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './settings.yaml' 
+E           when evaluating expression 'xacro.load_yaml('settings.yaml')'
+
+xacro/__init__.py:706: XacroException
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_yaml_support>
+
+        def test_yaml_support(self):
+            src = '''
+    <a xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:property name="settings" value="${xacro.load_yaml('settings.yaml')}"/>
+      <xacro:property name="type" value="$(arg type)"/>
+      <xacro:include filename="${settings['arms'][type]['file']}"/>
+      <xacro:call macro="${settings['arms'][type]['macro']}"/>
+    </a>'''
+            res = '''<a><{tag}/></a>'''
+            for i in ['inc1', 'inc2']:
+>               self.assert_matches(self.quick_xacro(src, cli=['type:=%s' % i]),
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                    res.format(tag=i))
+
+test/test_xacro.py:1494: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:529: in process_include
+    for filename in get_include_files(filename_spec, symbols):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:472: in get_include_files
+    filename_spec = abs_filename_spec(eval_text(filename_spec, symbols))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = "settings['arms'][type]['file']"
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './settings.yaml' 
+E           when evaluating expression 'xacro.load_yaml('settings.yaml')' 
+E           when evaluating expression 'settings['arms'][type]['file']'
+
+xacro/__init__.py:706: XacroException
+______________________ TestXacro.test_yaml_support_dotted ______________________
+
+s = "xacro.load_yaml('settings.yaml')"
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filename = './settings.yaml'
+
+    def load_yaml(filename):
+        try:
+            import yaml
+            for unit in ConstructUnits:
+                yaml.SafeLoader.add_constructor(unit.value.tag, unit.constructor)
+        except Exception:
+            raise XacroException("yaml support not available; install python-yaml")
+    
+        filename = abs_filename_spec(filename)
+>       f = open(filename)
+            ^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: './settings.yaml'
+
+xacro/__init__.py:143: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+s = 'settings.arms[type].file'
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:367: in __getitem__
+    return self._resolve_(key)
+           ^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:354: in _resolve_
+    dict.__setitem__(self, key, self._eval_literal(eval_text(dict.__getitem__(self, key), self)))
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = "xacro.load_yaml('settings.yaml')"
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './settings.yaml' 
+E           when evaluating expression 'xacro.load_yaml('settings.yaml')'
+
+xacro/__init__.py:706: XacroException
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_yaml_support_dotted>
+
+        def test_yaml_support_dotted(self):
+            src = '''
+    <a xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:property name="settings" value="${xacro.load_yaml('settings.yaml')}"/>
+      <xacro:property name="type" value="$(arg type)"/>
+      <xacro:include filename="${settings.arms[type].file}"/>
+      <xacro:call macro="${settings.arms[type].macro}"/>
+    </a>'''
+            res = '''<a><{tag}/></a>'''
+            for i in ['inc1', 'inc2']:
+>               self.assert_matches(self.quick_xacro(src, cli=['type:=%s' % i]),
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                    res.format(tag=i))
+
+test/test_xacro.py:1507: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:945: in eval_all
+    process_include(node, macros, symbols, eval_all)
+xacro/__init__.py:529: in process_include
+    for filename in get_include_files(filename_spec, symbols):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:472: in get_include_files
+    filename_spec = abs_filename_spec(eval_text(filename_spec, symbols))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = 'settings.arms[type].file'
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './settings.yaml' 
+E           when evaluating expression 'xacro.load_yaml('settings.yaml')' 
+E           when evaluating expression 'settings.arms[type].file'
+
+xacro/__init__.py:706: XacroException
+___________________ TestXacro.test_yaml_support_dotted_arith ___________________
+
+s = "xacro.load_yaml('settings.yaml')"
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filename = './settings.yaml'
+
+    def load_yaml(filename):
+        try:
+            import yaml
+            for unit in ConstructUnits:
+                yaml.SafeLoader.add_constructor(unit.value.tag, unit.constructor)
+        except Exception:
+            raise XacroException("yaml support not available; install python-yaml")
+    
+        filename = abs_filename_spec(filename)
+>       f = open(filename)
+            ^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: './settings.yaml'
+
+xacro/__init__.py:143: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+s = 'settings.arms.inc2.props.port + 1'
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:367: in __getitem__
+    return self._resolve_(key)
+           ^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:354: in _resolve_
+    dict.__setitem__(self, key, self._eval_literal(eval_text(dict.__getitem__(self, key), self)))
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = "xacro.load_yaml('settings.yaml')"
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './settings.yaml' 
+E           when evaluating expression 'xacro.load_yaml('settings.yaml')'
+
+xacro/__init__.py:706: XacroException
+
+During handling of the above exception, another exception occurred:
+
+s = 'bar'
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:367: in __getitem__
+    return self._resolve_(key)
+           ^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:354: in _resolve_
+    dict.__setitem__(self, key, self._eval_literal(eval_text(dict.__getitem__(self, key), self)))
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = 'settings.arms.inc2.props.port + 1'
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './settings.yaml' 
+E           when evaluating expression 'xacro.load_yaml('settings.yaml')' 
+E           when evaluating expression 'settings.arms.inc2.props.port + 1'
+
+xacro/__init__.py:706: XacroException
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_yaml_support_dotted_arith>
+
+        def test_yaml_support_dotted_arith(self):
+            src = '''
+    <a xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:property name="settings" value="${xacro.load_yaml('settings.yaml')}"/>
+      <xacro:property name="bar" value="${settings.arms.inc2.props.port + 1}"/>
+      ${bar}
+    </a>'''
+            res = '''<a>4243</a>'''
+>           self.assert_matches(self.quick_xacro(src), res)
+                                ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1527: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:999: in eval_all
+    node.data = str(eval_text(node.data, symbols))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = 'bar'
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './settings.yaml' 
+E           when evaluating expression 'xacro.load_yaml('settings.yaml')' 
+E           when evaluating expression 'settings.arms.inc2.props.port + 1' 
+E           when evaluating expression 'bar'
+
+xacro/__init__.py:706: XacroException
+_______________ TestXacro.test_yaml_support_dotted_list_iterator _______________
+
+s = "[2*item.val.x for item in xacro.load_yaml('list2.yaml')]"
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filename = './list2.yaml'
+
+    def load_yaml(filename):
+        try:
+            import yaml
+            for unit in ConstructUnits:
+                yaml.SafeLoader.add_constructor(unit.value.tag, unit.constructor)
+        except Exception:
+            raise XacroException("yaml support not available; install python-yaml")
+    
+        filename = abs_filename_spec(filename)
+>       f = open(filename)
+            ^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: './list2.yaml'
+
+xacro/__init__.py:143: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_yaml_support_dotted_list_iterator>
+
+    def test_yaml_support_dotted_list_iterator(self):
+        src = '''
+    <a xmlns:xacro="http://www.ros.org/wiki/xacro">
+      ${[2*item.val.x for item in xacro.load_yaml('list2.yaml')]}
+    </a>'''
+        res = '''<a>[2, 4]</a>'''
+>       self.assert_matches(self.quick_xacro(src), res)
+                            ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1553: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:999: in eval_all
+    node.data = str(eval_text(node.data, symbols))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = "[2*item.val.x for item in xacro.load_yaml('list2.yaml')]"
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './list2.yaml' 
+E           when evaluating expression '[2*item.val.x for item in xacro.load_yaml('list2.yaml')]'
+
+xacro/__init__.py:706: XacroException
+___________________ TestXacro.test_yaml_support_key_in_dict ____________________
+
+s = "xacro.load_yaml('settings.yaml')"
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filename = './settings.yaml'
+
+    def load_yaml(filename):
+        try:
+            import yaml
+            for unit in ConstructUnits:
+                yaml.SafeLoader.add_constructor(unit.value.tag, unit.constructor)
+        except Exception:
+            raise XacroException("yaml support not available; install python-yaml")
+    
+        filename = abs_filename_spec(filename)
+>       f = open(filename)
+            ^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: './settings.yaml'
+
+xacro/__init__.py:143: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+s = "'arms' in settings"
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:367: in __getitem__
+    return self._resolve_(key)
+           ^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:354: in _resolve_
+    dict.__setitem__(self, key, self._eval_literal(eval_text(dict.__getitem__(self, key), self)))
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = "xacro.load_yaml('settings.yaml')"
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './settings.yaml' 
+E           when evaluating expression 'xacro.load_yaml('settings.yaml')'
+
+xacro/__init__.py:706: XacroException
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_yaml_support_key_in_dict>
+
+        def test_yaml_support_key_in_dict(self):
+            src = '''
+    <a xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:property name="settings" value="${xacro.load_yaml('settings.yaml')}"/>
+      ${'arms' in settings} ${'baz' in settings}
+    </a>'''
+            res = '''<a>True False</a>'''
+>           self.assert_matches(self.quick_xacro(src), res)
+                                ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1536: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:999: in eval_all
+    node.data = str(eval_text(node.data, symbols))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = "'arms' in settings"
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './settings.yaml' 
+E           when evaluating expression 'xacro.load_yaml('settings.yaml')' 
+E           when evaluating expression ''arms' in settings'
+
+xacro/__init__.py:706: XacroException
+____________________ TestXacro.test_yaml_support_list_of_x _____________________
+
+s = "xacro.load_yaml('list.yaml')"
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+filename = './list.yaml'
+
+    def load_yaml(filename):
+        try:
+            import yaml
+            for unit in ConstructUnits:
+                yaml.SafeLoader.add_constructor(unit.value.tag, unit.constructor)
+        except Exception:
+            raise XacroException("yaml support not available; install python-yaml")
+    
+        filename = abs_filename_spec(filename)
+>       f = open(filename)
+            ^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: './list.yaml'
+
+xacro/__init__.py:143: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+s = 'l[0][1]'
+
+    def handle_expr(s):
+        try:
+>           return safe_eval(eval_text(s, symbols), symbols)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xacro/__init__.py:703: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+xacro/__init__.py:245: in safe_eval
+    return eval(code, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:367: in __getitem__
+    return self._resolve_(key)
+           ^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:354: in _resolve_
+    dict.__setitem__(self, key, self._eval_literal(eval_text(dict.__getitem__(self, key), self)))
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = "xacro.load_yaml('list.yaml')"
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './list.yaml' 
+E           when evaluating expression 'xacro.load_yaml('list.yaml')'
+
+xacro/__init__.py:706: XacroException
+
+During handling of the above exception, another exception occurred:
+
+self = <test_xacro.TestXacro testMethod=test_yaml_support_list_of_x>
+
+    def test_yaml_support_list_of_x(self):
+        src = '''
+    <a xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:property name="l" value="${xacro.load_yaml('list.yaml')}"/>
+      ${l[0][1]} ${l[1][0]} ${l[2].a.A} ${l[2].a.B[0]} ${l[2].a.B[1]} ${l[2].b[0]}
+    </a>'''
+        res = '''<a>A2 B1 1 2 3 4</a>'''
+>       self.assert_matches(self.quick_xacro(src), res)
+                            ^^^^^^^^^^^^^^^^^^^^^
+
+test/test_xacro.py:1545: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/test_xacro.py:395: in quick_xacro
+    xacro.process_doc(doc, **args)
+xacro/__init__.py:1065: in process_doc
+    eval_all(doc.documentElement, macros, symbols)
+xacro/__init__.py:999: in eval_all
+    node.data = str(eval_text(node.data, symbols))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xacro/__init__.py:718: in eval_text
+    results.append(handle_expr(lex.next()[1][2:-1]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+s = 'l[0][1]'
+
+    def handle_expr(s):
+        try:
+            return safe_eval(eval_text(s, symbols), symbols)
+        except Exception as e:
+            # re-raise as XacroException to add more context
+>           raise XacroException(exc=e,
+                                 suffix=os.linesep + "when evaluating expression '%s'" % s)
+E           xacro.XacroException: [Errno 2] No such file or directory: './list.yaml' 
+E           when evaluating expression 'xacro.load_yaml('list.yaml')' 
+E           when evaluating expression 'l[0][1]'
+
+xacro/__init__.py:706: XacroException
+=========================== short test summary info ============================
+FAILED test/test_xacro.py::TestXacroCommentsIgnored::test_pr2 - xacro.XacroEx...
+FAILED test/test_xacro.py::TestXacro::test_broken_include_error_reporting - x...
+FAILED test/test_xacro.py::TestXacro::test_broken_input_doesnt_create_empty_output_file
+FAILED test/test_xacro.py::TestXacro::test_create_subdirs - FileNotFoundError...
+FAILED test/test_xacro.py::TestXacro::test_error_reporting - AssertionError: ...
+FAILED test/test_xacro.py::TestXacro::test_include - xacro.XacroException: No...
+FAILED test/test_xacro.py::TestXacro::test_include_from_macro - xacro.XacroEx...
+FAILED test/test_xacro.py::TestXacro::test_include_from_variable - xacro.Xacr...
+FAILED test/test_xacro.py::TestXacro::test_include_glob - AssertionError: Fal...
+FAILED test/test_xacro.py::TestXacro::test_include_recursive - xacro.XacroExc...
+FAILED test/test_xacro.py::TestXacro::test_include_with_namespace - xacro.Xac...
+FAILED test/test_xacro.py::TestXacro::test_namespace_propagation - xacro.Xacr...
+FAILED test/test_xacro.py::TestXacro::test_pr2 - xacro.XacroException: substi...
+FAILED test/test_xacro.py::TestXacro::test_print_location - xacro.XacroExcept...
+FAILED test/test_xacro.py::TestXacro::test_property_resolution_with_namespaced_include
+FAILED test/test_xacro.py::TestXacro::test_property_scope_parent_namespaced
+FAILED test/test_xacro.py::TestXacro::test_set_root_directory - FileNotFoundE...
+FAILED test/test_xacro.py::TestXacro::test_substitution_args_find - xacro.Xac...
+FAILED test/test_xacro.py::TestXacro::test_unicode_file - FileNotFoundError: ...
+FAILED test/test_xacro.py::TestXacro::test_xml_namespace_lifting - xacro.Xacr...
+FAILED test/test_xacro.py::TestXacro::test_yaml_custom_constructors - xacro.X...
+FAILED test/test_xacro.py::TestXacro::test_yaml_hasattr_support - FileNotFoun...
+FAILED test/test_xacro.py::TestXacro::test_yaml_support - xacro.XacroExceptio...
+FAILED test/test_xacro.py::TestXacro::test_yaml_support_dotted - xacro.XacroE...
+FAILED test/test_xacro.py::TestXacro::test_yaml_support_dotted_arith - xacro....
+FAILED test/test_xacro.py::TestXacro::test_yaml_support_dotted_list_iterator
+FAILED test/test_xacro.py::TestXacro::test_yaml_support_key_in_dict - xacro.X...
+FAILED test/test_xacro.py::TestXacro::test_yaml_support_list_of_x - xacro.Xac...
+28 failed, 119 passed in 16.17s
+wrote 167 edges (146 internal, 21 entry) over 5 modules -> /home/azureuser/traceweave-harness/bundles/xacro/trace.json
+===== trace rc=0 in 18 s
+
+===== 2026-10-19T06:55:08Z xacro bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/xacro/bin/python build_bundle.py xacro --static /home/azureuser/traceweave-data/static/xacro --runtime /home/azureuser/traceweave-harness/bundles/xacro/trace.json
+xacro: 121 nodes, pycg 157 / pyright 160 static edges, 166 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T06:55:09Z xacro truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/xacro/bin/python tw.py truth xacro
+xacro: 213 in-package call sites, 164 caller->callee pairs, 882 package lines ran; suite 119 passed in 1.15 s -> bundles/xacro/truth.json
+===== truth rc=0 in 4 s
+
+===== 2026-10-19T06:55:13Z xacro bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/xacro/bin/python tw.py bench xacro
++ mv /home/azureuser/traceweave-data/study1/bench/xacro.txt.tmp /home/azureuser/traceweave-data/study1/bench/xacro.txt
++ cat /home/azureuser/traceweave-data/study1/bench/xacro.txt
+
+xacro: 177 items, 117 real calls; 24 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.66   1.00   0.80   0.00
+  PyCG                              all   0.98   1.00   0.99   0.00
+  Pyright                           all   0.98   0.98   0.98   0.00
+  PyCG ∪ Pyright                    all   0.98   1.00   0.99   0.00
+  name match                     sample   0.41   1.00   0.58   0.00
+  PyCG                           sample   0.94   1.00   0.97   0.00
+  Pyright                        sample   0.94   1.00   0.97   0.00
+  PyCG ∪ Pyright                 sample   0.94   1.00   0.97   0.00
+===== bench rc=0 in 1 s

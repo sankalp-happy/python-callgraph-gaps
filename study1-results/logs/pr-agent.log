@@ -1,0 +1,1792 @@
+
+===== 2026-10-19T07:16:25Z pr-agent clone
+
+===== 2026-10-19T07:16:26Z pr-agent repo
+
+===== 2026-10-19T07:16:26Z pr-agent env
++ rm -rf /home/azureuser/traceweave-data/study1/venv/pr-agent
++ python -m venv /home/azureuser/traceweave-data/study1/venv/pr-agent
++ . /home/azureuser/traceweave-data/study1/venv/pr-agent/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ case "$(uname)" in
++++ uname
+++ export VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/pr-agent
+++ VIRTUAL_ENV=/home/azureuser/traceweave-data/study1/venv/pr-agent
+++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/home/azureuser/traceweave-data/study1/venv/pr-agent/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
+++ VIRTUAL_ENV_PROMPT='(pr-agent) '
+++ export VIRTUAL_ENV_PROMPT
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='((pr-agent) ) '
+++ export PS1
+++ hash -r
++ pip install -q --upgrade pip setuptools wheel
++ cd /home/azureuser/traceweave-harness/work/pr-agent
++ '[' -f pyproject.toml ']'
++ pip install '.[test]'
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting aiohttp==3.13.4 (from pr-agent==0.41.0)
+  Downloading aiohttp-3.13.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting anthropic>=0.69.0 (from pr-agent==0.41.0)
+  Using cached anthropic-1.15.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting atlassian-python-api==3.41.4 (from pr-agent==0.41.0)
+  Downloading atlassian_python_api-3.41.4-py3-none-any.whl.metadata (8.7 kB)
+Collecting azure-devops==7.1.0b4 (from pr-agent==0.41.0)
+  Downloading azure_devops-7.1.0b4-py3-none-any.whl.metadata (1.0 kB)
+Collecting azure-identity==1.25.0 (from pr-agent==0.41.0)
+  Downloading azure_identity-1.25.0-py3-none-any.whl.metadata (87 kB)
+Collecting boto3==1.40.45 (from pr-agent==0.41.0)
+  Downloading boto3-1.40.45-py3-none-any.whl.metadata (6.7 kB)
+Collecting certifi==2024.8.30 (from pr-agent==0.41.0)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting dynaconf==3.2.4 (from pr-agent==0.41.0)
+  Downloading dynaconf-3.2.4-py2.py3-none-any.whl.metadata (9.3 kB)
+Collecting fastapi==0.118.0 (from pr-agent==0.41.0)
+  Downloading fastapi-0.118.0-py3-none-any.whl.metadata (28 kB)
+Collecting GitPython==3.1.41 (from pr-agent==0.41.0)
+  Downloading GitPython-3.1.41-py3-none-any.whl.metadata (14 kB)
+Collecting google-cloud-aiplatform==1.154.0 (from pr-agent==0.41.0)
+  Downloading google_cloud_aiplatform-1.154.0-py2.py3-none-any.whl.metadata (50 kB)
+Collecting google-cloud-storage==2.10.0 (from pr-agent==0.41.0)
+  Downloading google_cloud_storage-2.10.0-py2.py3-none-any.whl.metadata (6.0 kB)
+Collecting protobuf==6.33.6 (from pr-agent==0.41.0)
+  Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting Jinja2==3.1.6 (from pr-agent==0.41.0)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting litellm==1.94.0 (from pr-agent==0.41.0)
+  Downloading litellm-1.94.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting loguru==0.7.2 (from pr-agent==0.41.0)
+  Downloading loguru-0.7.2-py3-none-any.whl.metadata (23 kB)
+Collecting msrest==0.7.1 (from pr-agent==0.41.0)
+  Downloading msrest-0.7.1-py3-none-any.whl.metadata (21 kB)
+Collecting openai>=1.55.3 (from pr-agent==0.41.0)
+  Using cached openai-3.35.1-py3-none-any.whl.metadata (44 kB)
+Collecting pytest==9.0.2 (from pr-agent==0.41.0)
+  Downloading pytest-9.0.2-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-asyncio>=1.3.0 (from pr-agent==0.41.0)
+  Using cached pytest_asyncio-1.4.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting PyGithub==1.59.* (from pr-agent==0.41.0)
+  Downloading PyGithub-1.59.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting PyJWT==2.10.1 (from pr-agent==0.41.0)
+  Downloading PyJWT-2.10.1-py3-none-any.whl.metadata (4.0 kB)
+Collecting PyYAML==6.0.1 (from pr-agent==0.41.0)
+  Downloading PyYAML-6.0.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting python-gitlab==8.3.0 (from pr-agent==0.41.0)
+  Downloading python_gitlab-8.3.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting retry==0.9.2 (from pr-agent==0.41.0)
+  Downloading retry-0.9.2-py2.py3-none-any.whl.metadata (5.8 kB)
+Collecting starlette-context==0.3.6 (from pr-agent==0.41.0)
+  Downloading starlette_context-0.3.6-py3-none-any.whl.metadata (4.3 kB)
+Collecting tiktoken==0.12.0 (from pr-agent==0.41.0)
+  Downloading tiktoken-0.12.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (6.7 kB)
+Collecting ujson==5.8.0 (from pr-agent==0.41.0)
+  Downloading ujson-5.8.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.7 kB)
+Collecting unidiff==0.7.5 (from pr-agent==0.41.0)
+  Downloading unidiff-0.7.5-py2.py3-none-any.whl.metadata (4.6 kB)
+Collecting uvicorn==0.22.0 (from pr-agent==0.41.0)
+  Downloading uvicorn-0.22.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting tenacity==8.2.3 (from pr-agent==0.41.0)
+  Downloading tenacity-8.2.3-py3-none-any.whl.metadata (1.0 kB)
+Collecting a2a-sdk==1.0.3 (from a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Downloading a2a_sdk-1.0.3-py3-none-any.whl.metadata (9.3 kB)
+Collecting langfuse==3.14.5 (from pr-agent==0.41.0)
+  Downloading langfuse-3.14.5-py3-none-any.whl.metadata (2.4 kB)
+Collecting gunicorn==23.0.0 (from pr-agent==0.41.0)
+  Downloading gunicorn-23.0.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting pytest-cov==7.0.0 (from pr-agent==0.41.0)
+  Using cached pytest_cov-7.0.0-py3-none-any.whl.metadata (31 kB)
+Collecting pydantic==2.13.3 (from pr-agent==0.41.0)
+  Downloading pydantic-2.13.3-py3-none-any.whl.metadata (108 kB)
+Collecting pydantic-settings==2.14.2 (from pr-agent==0.41.0)
+  Downloading pydantic_settings-2.14.2-py3-none-any.whl.metadata (3.4 kB)
+Collecting html2text==2024.2.26 (from pr-agent==0.41.0)
+  Downloading html2text-2024.2.26.tar.gz (56 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting giteapy==1.0.8 (from pr-agent==0.41.0)
+  Downloading giteapy-1.0.8.tar.gz (124 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+WARNING: pr-agent 0.41.0 does not provide the extra 'test'
+Collecting culsans>=0.11.0 (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Downloading culsans-0.11.0-py3-none-any.whl.metadata (13 kB)
+Collecting google-api-core>=1.26.0 (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Downloading google_api_core-2.42.0-py3-none-any.whl.metadata (3.2 kB)
+Collecting googleapis-common-protos>=1.70.0 (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Downloading googleapis_common_protos-1.75.5-py3-none-any.whl.metadata (8.5 kB)
+Collecting httpx-sse>=0.4.0 (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+Collecting httpx>=0.28.1 (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting json-rpc>=1.15.0 (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Downloading json_rpc-1.15.0-py2.py3-none-any.whl.metadata (7.2 kB)
+Requirement already satisfied: packaging>=24.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0) (26.3)
+Collecting sse-starlette (from a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Using cached sse_starlette-3.5.0-py3-none-any.whl.metadata (15 kB)
+Collecting starlette (from a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Using cached starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp==3.13.4->pr-agent==0.41.0)
+  Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp==3.13.4->pr-agent==0.41.0)
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp==3.13.4->pr-agent==0.41.0)
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp==3.13.4->pr-agent==0.41.0)
+  Using cached frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp==3.13.4->pr-agent==0.41.0)
+  Downloading multidict-6.9.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp==3.13.4->pr-agent==0.41.0)
+  Using cached propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (25 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp==3.13.4->pr-agent==0.41.0)
+  Using cached yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (111 kB)
+Collecting deprecated (from atlassian-python-api==3.41.4->pr-agent==0.41.0)
+  Using cached deprecated-3.0.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting requests (from atlassian-python-api==3.41.4->pr-agent==0.41.0)
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting six (from atlassian-python-api==3.41.4->pr-agent==0.41.0)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting oauthlib (from atlassian-python-api==3.41.4->pr-agent==0.41.0)
+  Using cached oauthlib-4.0.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting requests-oauthlib (from atlassian-python-api==3.41.4->pr-agent==0.41.0)
+  Using cached requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting azure-core>=1.24.0 (from msrest==0.7.1->pr-agent==0.41.0)
+  Downloading azure_core-1.41.0-py3-none-any.whl.metadata (49 kB)
+Collecting isodate>=0.6.0 (from msrest==0.7.1->pr-agent==0.41.0)
+  Downloading isodate-0.7.2-py3-none-any.whl.metadata (11 kB)
+Collecting cryptography>=2.5 (from azure-identity==1.25.0->pr-agent==0.41.0)
+  Using cached cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+Collecting msal>=1.30.0 (from azure-identity==1.25.0->pr-agent==0.41.0)
+  Downloading msal-1.39.0-py3-none-any.whl.metadata (11 kB)
+Collecting msal-extensions>=1.2.0 (from azure-identity==1.25.0->pr-agent==0.41.0)
+  Downloading msal_extensions-1.3.1-py3-none-any.whl.metadata (7.8 kB)
+Collecting typing-extensions>=4.0.0 (from azure-identity==1.25.0->pr-agent==0.41.0)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting botocore<1.41.0,>=1.40.45 (from boto3==1.40.45->pr-agent==0.41.0)
+  Downloading botocore-1.40.76-py3-none-any.whl.metadata (5.9 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3==1.40.45->pr-agent==0.41.0)
+  Using cached jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.15.0,>=0.14.0 (from boto3==1.40.45->pr-agent==0.41.0)
+  Downloading s3transfer-0.14.0-py3-none-any.whl.metadata (1.7 kB)
+Collecting starlette (from a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Downloading starlette-0.48.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic==2.13.3->pr-agent==0.41.0)
+  Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.3 (from pydantic==2.13.3->pr-agent==0.41.0)
+  Downloading pydantic_core-2.46.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic==2.13.3->pr-agent==0.41.0)
+  Using cached typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting python-dateutil>=2.1 (from giteapy==1.0.8->pr-agent==0.41.0)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3>=1.23 (from giteapy==1.0.8->pr-agent==0.41.0)
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting gitdb<5,>=4.0.1 (from GitPython==3.1.41->pr-agent==0.41.0)
+  Using cached gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting google-auth<3.0.0,>=2.47.0 (from google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached google_auth-2.62.0-py3-none-any.whl.metadata (6.0 kB)
+Collecting proto-plus<2.0.0,>=1.22.3 (from google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Downloading proto_plus-1.29.0-py3-none-any.whl.metadata (2.2 kB)
+Collecting google-cloud-bigquery!=3.20.0,<4.0.0,>=1.15.0 (from google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Downloading google_cloud_bigquery-3.46.2-py3-none-any.whl.metadata (8.5 kB)
+Collecting google-cloud-resource-manager<3.0.0,>=1.3.3 (from google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Downloading google_cloud_resource_manager-1.19.0-py3-none-any.whl.metadata (9.7 kB)
+Collecting google-genai<3.0.0,>=1.66.0 (from google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached google_genai-2.31.0-py3-none-any.whl.metadata (58 kB)
+Collecting docstring_parser<1 (from google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached docstring_parser-0.18.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting google-cloud-core<3.0dev,>=2.3.0 (from google-cloud-storage==2.10.0->pr-agent==0.41.0)
+  Downloading google_cloud_core-2.8.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting google-resumable-media>=2.3.2 (from google-cloud-storage==2.10.0->pr-agent==0.41.0)
+  Downloading google_resumable_media-2.11.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2==3.1.6->pr-agent==0.41.0)
+  Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting backoff>=1.10.0 (from langfuse==3.14.5->pr-agent==0.41.0)
+  Downloading backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+Collecting opentelemetry-api<2.0.0,>=1.33.1 (from langfuse==3.14.5->pr-agent==0.41.0)
+  Using cached opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+Collecting opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1 (from langfuse==3.14.5->pr-agent==0.41.0)
+  Downloading opentelemetry_exporter_otlp_proto_http-1.45.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting opentelemetry-sdk<2.0.0,>=1.33.1 (from langfuse==3.14.5->pr-agent==0.41.0)
+  Downloading opentelemetry_sdk-1.45.1-py3-none-any.whl.metadata (1.6 kB)
+Collecting packaging>=24.0 (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting wrapt<2.0,>=1.14 (from langfuse==3.14.5->pr-agent==0.41.0)
+  Downloading wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+Collecting fastuuid<1.0,>=0.14.0 (from litellm==1.94.0->pr-agent==0.41.0)
+  Downloading fastuuid-0.14.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.1 kB)
+Collecting openai>=1.55.3 (from pr-agent==0.41.0)
+  Downloading openai-2.54.0-py3-none-any.whl.metadata (40 kB)
+Collecting python-dotenv<2.0,>=1.0.0 (from litellm==1.94.0->pr-agent==0.41.0)
+  Using cached python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+Collecting importlib-metadata<9.0,>=8.0.0 (from litellm==1.94.0->pr-agent==0.41.0)
+  Downloading importlib_metadata-8.9.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting tokenizers<1.0,>=0.21.0 (from litellm==1.94.0->pr-agent==0.41.0)
+  Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.8 kB)
+Collecting click<9.0,>=8.0.0 (from litellm==1.94.0->pr-agent==0.41.0)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting jsonschema<5.0,>=4.0.0 (from litellm==1.94.0->pr-agent==0.41.0)
+  Using cached jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting regex>=2022.1.18 (from tiktoken==0.12.0->pr-agent==0.41.0)
+  Using cached regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting iniconfig>=1.0.1 (from pytest==9.0.2->pr-agent==0.41.0)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting pluggy<2,>=1.5 (from pytest==9.0.2->pr-agent==0.41.0)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest==9.0.2->pr-agent==0.41.0)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting coverage>=7.10.6 (from coverage[toml]>=7.10.6->pytest-cov==7.0.0->pr-agent==0.41.0)
+  Using cached coverage-7.16.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.2 kB)
+Collecting requests-toolbelt>=1.0.0 (from python-gitlab==8.3.0->pr-agent==0.41.0)
+  Using cached requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+Collecting decorator>=3.4.2 (from retry==0.9.2->pr-agent==0.41.0)
+  Using cached decorator-5.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting py<2.0.0,>=1.4.26 (from retry==0.9.2->pr-agent==0.41.0)
+  Downloading py-1.11.0-py2.py3-none-any.whl.metadata (2.8 kB)
+Collecting h11>=0.8 (from uvicorn==0.22.0->pr-agent==0.41.0)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython==3.1.41->pr-agent==0.41.0)
+  Using cached smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting grpcio<2.0.0,>=1.59.0 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0,>=1.34.1->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Downloading grpcio-1.84.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
+Collecting grpcio-status<2.0.0,>=1.59.0 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0,>=1.34.1->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Downloading grpcio_status-1.84.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3.0.0,>=2.47.0->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting grpc-google-iam-v1<1.0.0,>=0.14.2 (from google-cloud-resource-manager<3.0.0,>=1.3.3->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Downloading grpc_google_iam_v1-0.14.5-py3-none-any.whl.metadata (8.8 kB)
+Collecting anyio<5.0.0,>=4.8.0 (from google-genai<3.0.0,>=1.66.0->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting websockets<17.0,>=13.0.0 (from google-genai<3.0.0,>=1.66.0->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached websockets-16.1.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
+Collecting distro<2,>=1.7.0 (from google-genai<3.0.0,>=1.66.0->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting sniffio (from google-genai<3.0.0,>=1.66.0->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting idna>=2.8 (from anyio<5.0.0,>=4.8.0->google-genai<3.0.0,>=1.66.0->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting google-crc32c<2.0.0,>=1.0.0 (from google-resumable-media>=2.3.2->google-cloud-storage==2.10.0->pr-agent==0.41.0)
+  Downloading google_crc32c-1.9.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.2 kB)
+Collecting httpcore==1.* (from httpx>=0.28.1->a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting zipp>=3.20 (from importlib-metadata<9.0,>=8.0.0->litellm==1.94.0->pr-agent==0.41.0)
+  Using cached zipp-4.1.1-py3-none-any.whl.metadata (3.6 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema<5.0,>=4.0.0->litellm==1.94.0->pr-agent==0.41.0)
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema<5.0,>=4.0.0->litellm==1.94.0->pr-agent==0.41.0)
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema<5.0,>=4.0.0->litellm==1.94.0->pr-agent==0.41.0)
+  Using cached rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting jiter<1,>=0.10.0 (from openai>=1.55.3->pr-agent==0.41.0)
+  Using cached jiter-0.17.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.2 kB)
+Collecting tqdm>4 (from openai>=1.55.3->pr-agent==0.41.0)
+  Using cached tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting opentelemetry-exporter-http-transport==0.66b1 (from opentelemetry-exporter-http-transport[requests]==0.66b1->opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1->langfuse==3.14.5->pr-agent==0.41.0)
+  Downloading opentelemetry_exporter_http_transport-0.66b1-py3-none-any.whl.metadata (2.3 kB)
+Collecting opentelemetry-exporter-otlp-common==0.66b1 (from opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1->langfuse==3.14.5->pr-agent==0.41.0)
+  Downloading opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl.metadata (1.9 kB)
+Collecting opentelemetry-exporter-otlp-proto-common==1.45.1 (from opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1->langfuse==3.14.5->pr-agent==0.41.0)
+  Downloading opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl.metadata (1.8 kB)
+Collecting opentelemetry-proto==1.45.1 (from opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1->langfuse==3.14.5->pr-agent==0.41.0)
+  Downloading opentelemetry_proto-1.45.1-py3-none-any.whl.metadata (2.3 kB)
+Collecting opentelemetry-semantic-conventions==0.66b1 (from opentelemetry-sdk<2.0.0,>=1.33.1->langfuse==3.14.5->pr-agent==0.41.0)
+  Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+Collecting pynacl>=1.4.0 (from PyGithub==1.59.*->pr-agent==0.41.0)
+  Using cached pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl.metadata (10.0 kB)
+Collecting charset_normalizer<4,>=2 (from requests->atlassian-python-api==3.41.4->pr-agent==0.41.0)
+  Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting huggingface-hub<3.0,>=0.16.4 (from tokenizers<1.0,>=0.21.0->litellm==1.94.0->pr-agent==0.41.0)
+  Downloading huggingface_hub-2.2.0-py3-none-any.whl.metadata (16 kB)
+Collecting filelock>=3.10.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->pr-agent==0.41.0)
+  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->pr-agent==0.41.0)
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->pr-agent==0.41.0)
+  Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+Collecting httpx2<3,>=2.0.0 (from huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->pr-agent==0.41.0)
+  Using cached httpx2-2.14.0-py3-none-any.whl.metadata (10 kB)
+Collecting httpcore2==2.14.0 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->pr-agent==0.41.0)
+  Using cached httpcore2-2.14.0-py3-none-any.whl.metadata (27 kB)
+Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->pr-agent==0.41.0)
+  Using cached truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+Collecting cffi>=2.0.0 (from cryptography>=2.5->azure-identity==1.25.0->pr-agent==0.41.0)
+  Using cached cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=2.5->azure-identity==1.25.0->pr-agent==0.41.0)
+  Using cached pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Collecting aiologic<0.18.0,>=0.16.0 (from culsans>=0.11.0->a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Downloading aiologic-0.17.1-py3-none-any.whl.metadata (10 kB)
+Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth<3.0.0,>=2.47.0->google-cloud-aiplatform==1.154.0->pr-agent==0.41.0)
+  Using cached pyasn1-0.6.4-py3-none-any.whl.metadata (8.4 kB)
+INFO: pip is looking at multiple versions of sse-starlette to determine which version is compatible with other requirements. This could take a while.
+Collecting sse-starlette (from a2a-sdk[http-server]==1.0.3->pr-agent==0.41.0)
+  Downloading sse_starlette-3.4.11-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.4.10-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.4.9-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.4.8-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.4.7-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.4.6-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.4.5-py3-none-any.whl.metadata (15 kB)
+INFO: pip is still looking at multiple versions of sse-starlette to determine which version is compatible with other requirements. This could take a while.
+  Downloading sse_starlette-3.4.4-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.4.3-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.4.2-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.4.1-py3-none-any.whl.metadata (15 kB)
+  Downloading sse_starlette-3.3.4-py3-none-any.whl.metadata (14 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Downloading sse_starlette-3.3.3-py3-none-any.whl.metadata (14 kB)
+  Downloading sse_starlette-3.3.2-py3-none-any.whl.metadata (14 kB)
+  Downloading sse_starlette-3.3.1-py3-none-any.whl.metadata (14 kB)
+  Downloading sse_starlette-3.3.0-py3-none-any.whl.metadata (14 kB)
+  Downloading sse_starlette-3.2.1-py3-none-any.whl.metadata (14 kB)
+  Downloading sse_starlette-3.2.0-py3-none-any.whl.metadata (12 kB)
+  Downloading sse_starlette-3.1.2-py3-none-any.whl.metadata (12 kB)
+  Downloading sse_starlette-3.1.1-py3-none-any.whl.metadata (12 kB)
+  Downloading sse_starlette-3.1.0-py3-none-any.whl.metadata (12 kB)
+  Downloading sse_starlette-3.0.4-py3-none-any.whl.metadata (12 kB)
+  Downloading sse_starlette-3.0.3-py3-none-any.whl.metadata (12 kB)
+Downloading a2a_sdk-1.0.3-py3-none-any.whl (235 kB)
+Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+Downloading aiohttp-3.13.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 36.4 MB/s  0:00:00
+Downloading atlassian_python_api-3.41.4-py3-none-any.whl (168 kB)
+Downloading azure_devops-7.1.0b4-py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 40.7 MB/s  0:00:00
+Downloading msrest-0.7.1-py3-none-any.whl (85 kB)
+Downloading azure_identity-1.25.0-py3-none-any.whl (190 kB)
+Downloading boto3-1.40.45-py3-none-any.whl (139 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading dynaconf-3.2.4-py2.py3-none-any.whl (223 kB)
+Downloading fastapi-0.118.0-py3-none-any.whl (97 kB)
+Downloading pydantic-2.13.3-py3-none-any.whl (471 kB)
+Downloading GitPython-3.1.41-py3-none-any.whl (196 kB)
+Downloading google_cloud_aiplatform-1.154.0-py2.py3-none-any.whl (9.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 88.7 MB/s  0:00:00
+Downloading google_cloud_storage-2.10.0-py2.py3-none-any.whl (114 kB)
+Downloading gunicorn-23.0.0-py3-none-any.whl (85 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading langfuse-3.14.5-py3-none-any.whl (421 kB)
+Downloading litellm-1.94.0-cp312-cp312-manylinux_2_28_x86_64.whl (20.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.7/20.7 MB 58.1 MB/s  0:00:00
+Downloading tiktoken-0.12.0-cp312-cp312-manylinux_2_28_x86_64.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 35.3 MB/s  0:00:00
+Downloading loguru-0.7.2-py3-none-any.whl (62 kB)
+Downloading pydantic_core-2.46.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 53.6 MB/s  0:00:00
+Downloading pydantic_settings-2.14.2-py3-none-any.whl (61 kB)
+Downloading PyJWT-2.10.1-py3-none-any.whl (22 kB)
+Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+Using cached pytest_cov-7.0.0-py3-none-any.whl (22 kB)
+Downloading python_gitlab-8.3.0-py3-none-any.whl (148 kB)
+Downloading PyYAML-6.0.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (724 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 725.0/725.0 kB 19.8 MB/s  0:00:00
+Downloading retry-0.9.2-py2.py3-none-any.whl (8.0 kB)
+Downloading starlette_context-0.3.6-py3-none-any.whl (12 kB)
+Downloading tenacity-8.2.3-py3-none-any.whl (24 kB)
+Downloading ujson-5.8.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (54 kB)
+Downloading unidiff-0.7.5-py2.py3-none-any.whl (14 kB)
+Downloading uvicorn-0.22.0-py3-none-any.whl (58 kB)
+Downloading botocore-1.40.76-py3-none-any.whl (14.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 90.6 MB/s  0:00:00
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached docstring_parser-0.18.0-py3-none-any.whl (22 kB)
+Downloading fastuuid-0.14.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (278 kB)
+Using cached gitdb-4.0.12-py3-none-any.whl (62 kB)
+Downloading google_api_core-2.42.0-py3-none-any.whl (221 kB)
+Using cached google_auth-2.62.0-py3-none-any.whl (267 kB)
+Downloading google_cloud_bigquery-3.46.2-py3-none-any.whl (269 kB)
+Downloading google_cloud_core-2.8.0-py3-none-any.whl (31 kB)
+Downloading google_cloud_resource_manager-1.19.0-py3-none-any.whl (395 kB)
+Using cached google_genai-2.31.0-py3-none-any.whl (1.2 MB)
+Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Downloading google_resumable_media-2.11.0-py3-none-any.whl (81 kB)
+Downloading google_crc32c-1.9.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (36 kB)
+Downloading googleapis_common_protos-1.75.5-py3-none-any.whl (307 kB)
+Downloading grpc_google_iam_v1-0.14.5-py3-none-any.whl (32 kB)
+Downloading grpcio-1.84.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.2/7.2 MB 103.6 MB/s  0:00:00
+Downloading grpcio_status-1.84.0-py3-none-any.whl (14 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading importlib_metadata-8.9.0-py3-none-any.whl (27 kB)
+Using cached jmespath-1.1.0-py3-none-any.whl (20 kB)
+Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Downloading multidict-6.9.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (336 kB)
+Downloading openai-2.54.0-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 48.9 MB/s  0:00:00
+Using cached jiter-0.17.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (345 kB)
+Using cached opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+Downloading opentelemetry_exporter_otlp_proto_http-1.45.1-py3-none-any.whl (22 kB)
+Downloading opentelemetry_exporter_http_transport-0.66b1-py3-none-any.whl (12 kB)
+Downloading opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl (12 kB)
+Downloading opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl (15 kB)
+Downloading opentelemetry_proto-1.45.1-py3-none-any.whl (72 kB)
+Downloading opentelemetry_sdk-1.45.1-py3-none-any.whl (140 kB)
+Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl (206 kB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Downloading proto_plus-1.29.0-py3-none-any.whl (50 kB)
+Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+Downloading PyGithub-1.59.1-py3-none-any.whl (342 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Downloading s3transfer-0.14.0-py3-none-any.whl (85 kB)
+Using cached smmap-5.0.3-py3-none-any.whl (24 kB)
+Downloading starlette-0.48.0-py3-none-any.whl (73 kB)
+Downloading tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 70.9 MB/s  0:00:00
+Downloading huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 839.9/839.9 kB 23.3 MB/s  0:00:00
+Downloading hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 3.4 MB/s  0:00:01
+Using cached httpx2-2.14.0-py3-none-any.whl (96 kB)
+Using cached httpcore2-2.14.0-py3-none-any.whl (84 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached websockets-16.1.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (187 kB)
+Downloading wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (88 kB)
+Using cached yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (117 kB)
+Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+Using cached aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Using cached anthropic-1.15.0-py3-none-any.whl (2.0 MB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading azure_core-1.41.0-py3-none-any.whl (220 kB)
+Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+Using cached coverage-7.16.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (258 kB)
+Using cached cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+Using cached cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+Downloading culsans-0.11.0-py3-none-any.whl (21 kB)
+Downloading aiologic-0.17.1-py3-none-any.whl (161 kB)
+Using cached decorator-5.3.1-py3-none-any.whl (10 kB)
+Using cached filelock-4.2.4-py3-none-any.whl (162 kB)
+Using cached frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (242 kB)
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Downloading isodate-0.7.2-py3-none-any.whl (22 kB)
+Downloading json_rpc-1.15.0-py2.py3-none-any.whl (39 kB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading msal-1.39.0-py3-none-any.whl (131 kB)
+Downloading msal_extensions-1.3.1-py3-none-any.whl (20 kB)
+Using cached propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (250 kB)
+Using cached pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Using cached pyasn1-0.6.4-py3-none-any.whl (84 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached pynacl-1.6.2-cp38-abi3-manylinux_2_34_x86_64.whl (1.4 MB)
+Using cached pytest_asyncio-1.4.0-py3-none-any.whl (16 kB)
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Using cached requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Using cached oauthlib-4.0.0-py3-none-any.whl (159 kB)
+Using cached requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+Using cached rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached tqdm-4.70.1-py3-none-any.whl (80 kB)
+Using cached truststore-0.10.5-py3-none-any.whl (19 kB)
+Using cached typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Using cached zipp-4.1.1-py3-none-any.whl (10 kB)
+Using cached deprecated-3.0.0-py3-none-any.whl (21 kB)
+Using cached pycparser-3.11-py3-none-any.whl (51 kB)
+Downloading sse_starlette-3.0.3-py3-none-any.whl (11 kB)
+Building wheels for collected packages: pr-agent, giteapy, html2text
+  Building wheel for pr-agent (pyproject.toml): started
+  Building wheel for pr-agent (pyproject.toml): finished with status 'done'
+  Created wheel for pr-agent: filename=pr_agent-0.41.0-py3-none-any.whl size=361044 sha256=ee0ce600b66227706ec6c0449e7061bf104d0ee0b7e26cbfce61e321b7b82a42
+  Stored in directory: /tmp/pip-ephem-wheel-cache-yrj1wtnf/wheels/8d/11/34/7e9bf982cffdd8b02e2fb6d4da52db61adfb642e2cce50298e
+  Building wheel for giteapy (pyproject.toml): started
+  Building wheel for giteapy (pyproject.toml): finished with status 'done'
+  Created wheel for giteapy: filename=giteapy-1.0.8-py3-none-any.whl size=286227 sha256=3ce8ab65a86c830a69fe9c61593b1bbef913acefdedfeab78f9fc19b54c05b04
+  Stored in directory: /home/azureuser/traceweave-data/study1/pip-cache/wheels/a3/39/3f/8c88b514c84a47bff1705885566c9e2410fc832e5bec6094b8
+  Building wheel for html2text (pyproject.toml): started
+  Building wheel for html2text (pyproject.toml): finished with status 'done'
+  Created wheel for html2text: filename=html2text-2024.2.26-py3-none-any.whl size=33168 sha256=cbf36215dd55e4ae8a5c3096f5600e67e1b0ec6c0c51cfd93ff88657ee5c8511
+  Stored in directory: /home/azureuser/traceweave-data/study1/pip-cache/wheels/2b/01/23/578505d65e2a97d78bf1fe3fc8256ecf37572dc1df598b0eaf
+Successfully built pr-agent giteapy html2text
+Installing collected packages: unidiff, json-rpc, zipp, wrapt, websockets, urllib3, ujson, typing-extensions, truststore, tqdm, tenacity, sniffio, smmap, six, rpds-py, regex, PyYAML, python-dotenv, PyJWT, pygments, pycparser, pyasn1, py, protobuf, propcache, pluggy, packaging, oauthlib, multidict, MarkupSafe, loguru, jmespath, jiter, isodate, iniconfig, idna, httpx-sse, html2text, hf-xet, h11, google-crc32c, fsspec, frozenlist, filelock, fastuuid, dynaconf, docstring_parser, distro, decorator, coverage, click, charset_normalizer, certifi, backoff, attrs, annotated-types, aiohappyeyeballs, yarl, uvicorn, typing-inspection, retry, requests, referencing, python-dateutil, pytest, pydantic-core, pyasn1-modules, proto-plus, opentelemetry-proto, opentelemetry-api, Jinja2, importlib-metadata, httpcore2, httpcore, gunicorn, grpcio, googleapis-common-protos, google-resumable-media, gitdb, deprecated, cffi, anyio, aiosignal, aiologic, tiktoken, starlette, sse-starlette, requests-toolbelt, requests-oauthlib, pytest-cov, pytest-asyncio, pynacl, pydantic, opentelemetry-semantic-conventions, opentelemetry-exporter-otlp-proto-common, opentelemetry-exporter-http-transport, jsonschema-specifications, httpx2, httpx, grpcio-status, GitPython, giteapy, culsans, cryptography, botocore, azure-core, aiohttp, starlette-context, s3transfer, python-gitlab, pydantic-settings, opentelemetry-sdk, openai, msrest, jsonschema, huggingface-hub, grpc-google-iam-v1, google-auth, fastapi, atlassian-python-api, anthropic, tokenizers, PyGithub, opentelemetry-exporter-otlp-common, msal, google-api-core, boto3, azure-devops, opentelemetry-exporter-otlp-proto-http, msal-extensions, litellm, google-genai, google-cloud-core, a2a-sdk, langfuse, google-cloud-storage, google-cloud-resource-manager, google-cloud-bigquery, azure-identity, google-cloud-aiplatform, pr-agent
+  Attempting uninstall: packaging
+    Found existing installation: packaging 26.3
+    Uninstalling packaging-26.3:
+      Successfully uninstalled packaging-26.3
+
+Successfully installed GitPython-3.1.41 Jinja2-3.1.6 MarkupSafe-3.0.4 PyGithub-1.59.1 PyJWT-2.10.1 PyYAML-6.0.1 a2a-sdk-1.0.3 aiohappyeyeballs-2.7.1 aiohttp-3.13.4 aiologic-0.17.1 aiosignal-1.4.0 annotated-types-0.8.0 anthropic-1.15.0 anyio-4.15.1 atlassian-python-api-3.41.4 attrs-26.1.0 azure-core-1.41.0 azure-devops-7.1.0b4 azure-identity-1.25.0 backoff-2.2.1 boto3-1.40.45 botocore-1.40.76 certifi-2024.8.30 cffi-2.1.1 charset_normalizer-3.5.2 click-8.5.0 coverage-7.16.2 cryptography-50.0.2 culsans-0.11.0 decorator-5.3.1 deprecated-3.0.0 distro-1.9.0 docstring_parser-0.18.0 dynaconf-3.2.4 fastapi-0.118.0 fastuuid-0.14.0 filelock-4.2.4 frozenlist-1.8.0 fsspec-2026.9.0 gitdb-4.0.12 giteapy-1.0.8 google-api-core-2.42.0 google-auth-2.62.0 google-cloud-aiplatform-1.154.0 google-cloud-bigquery-3.46.2 google-cloud-core-2.8.0 google-cloud-resource-manager-1.19.0 google-cloud-storage-2.10.0 google-crc32c-1.9.0 google-genai-2.31.0 google-resumable-media-2.11.0 googleapis-common-protos-1.75.5 grpc-google-iam-v1-0.14.5 grpcio-1.84.0 grpcio-status-1.84.0 gunicorn-23.0.0 h11-0.16.0 hf-xet-1.7.0 html2text-2024.2.26 httpcore-1.0.9 httpcore2-2.14.0 httpx-0.28.1 httpx-sse-0.4.3 httpx2-2.14.0 huggingface-hub-2.2.0 idna-3.20 importlib-metadata-8.9.0 iniconfig-2.3.1 isodate-0.7.2 jiter-0.17.0 jmespath-1.1.0 json-rpc-1.15.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 langfuse-3.14.5 litellm-1.94.0 loguru-0.7.2 msal-1.39.0 msal-extensions-1.3.1 msrest-0.7.1 multidict-6.9.1 oauthlib-4.0.0 openai-2.54.0 opentelemetry-api-1.45.1 opentelemetry-exporter-http-transport-0.66b1 opentelemetry-exporter-otlp-common-0.66b1 opentelemetry-exporter-otlp-proto-common-1.45.1 opentelemetry-exporter-otlp-proto-http-1.45.1 opentelemetry-proto-1.45.1 opentelemetry-sdk-1.45.1 opentelemetry-semantic-conventions-0.66b1 packaging-25.0 pluggy-1.7.0 pr-agent-0.41.0 propcache-0.5.4 proto-plus-1.29.0 protobuf-6.33.6 py-1.11.0 pyasn1-0.6.4 pyasn1-modules-0.4.2 pycparser-3.11 pydantic-2.13.3 pydantic-core-2.46.3 pydantic-settings-2.14.2 pygments-2.21.0 pynacl-1.6.2 pytest-9.0.2 pytest-asyncio-1.4.0 pytest-cov-7.0.0 python-dateutil-2.9.0.post0 python-dotenv-1.2.4 python-gitlab-8.3.0 referencing-0.37.0 regex-2026.9.29 requests-2.34.2 requests-oauthlib-2.0.0 requests-toolbelt-1.0.0 retry-0.9.2 rpds-py-2026.9.1 s3transfer-0.14.0 six-1.17.0 smmap-5.0.3 sniffio-1.3.1 sse-starlette-3.0.3 starlette-0.48.0 starlette-context-0.3.6 tenacity-8.2.3 tiktoken-0.12.0 tokenizers-0.23.3 tqdm-4.70.1 truststore-0.10.5 typing-extensions-4.16.0 typing-inspection-0.4.4 ujson-5.8.0 unidiff-0.7.5 urllib3-2.8.0 uvicorn-0.22.0 websockets-16.1.1 wrapt-1.17.3 yarl-1.25.1 zipp-4.1.1
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements.txt ']'
++ pip install -r requirements.txt
+Ignoring google-cloud-storage: markers 'python_version >= "3.13"' don't match your environment
+Requirement already satisfied: aiohttp==3.13.4 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (3.13.4)
+Requirement already satisfied: anthropic>=0.69.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (1.15.0)
+Requirement already satisfied: atlassian-python-api==3.41.4 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (3.41.4)
+Requirement already satisfied: azure-devops==7.1.0b4 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (7.1.0b4)
+Requirement already satisfied: azure-identity==1.25.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (1.25.0)
+Requirement already satisfied: boto3==1.40.45 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (1.40.45)
+Requirement already satisfied: certifi==2024.8.30 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 8)) (2024.8.30)
+Requirement already satisfied: dynaconf==3.2.4 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 9)) (3.2.4)
+Requirement already satisfied: fastapi==0.118.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 10)) (0.118.0)
+Requirement already satisfied: GitPython==3.1.41 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 11)) (3.1.41)
+Requirement already satisfied: google-cloud-aiplatform==1.154.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 12)) (1.154.0)
+Requirement already satisfied: google-cloud-storage==2.10.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 15)) (2.10.0)
+Requirement already satisfied: protobuf==6.33.6 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 17)) (6.33.6)
+Requirement already satisfied: Jinja2==3.1.6 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 18)) (3.1.6)
+Requirement already satisfied: litellm==1.94.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 19)) (1.94.0)
+Requirement already satisfied: loguru==0.7.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 20)) (0.7.2)
+Requirement already satisfied: msrest==0.7.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 21)) (0.7.1)
+Requirement already satisfied: openai>=1.55.3 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 22)) (2.54.0)
+Requirement already satisfied: pytest==9.0.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 23)) (9.0.2)
+Requirement already satisfied: pytest-asyncio>=1.3.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 24)) (1.4.0)
+Requirement already satisfied: PyGithub==1.59.* in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 25)) (1.59.1)
+Requirement already satisfied: PyJWT==2.10.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 26)) (2.10.1)
+Requirement already satisfied: PyYAML==6.0.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 27)) (6.0.1)
+Requirement already satisfied: python-gitlab==8.3.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 28)) (8.3.0)
+Requirement already satisfied: retry==0.9.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 29)) (0.9.2)
+Requirement already satisfied: starlette-context==0.3.6 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 30)) (0.3.6)
+Requirement already satisfied: tiktoken==0.12.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 31)) (0.12.0)
+Requirement already satisfied: ujson==5.8.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 32)) (5.8.0)
+Requirement already satisfied: unidiff==0.7.5 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 33)) (0.7.5)
+Requirement already satisfied: uvicorn==0.22.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 34)) (0.22.0)
+Requirement already satisfied: tenacity==8.2.3 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 35)) (8.2.3)
+Requirement already satisfied: a2a-sdk==1.0.3 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from a2a-sdk[http-server]==1.0.3->-r requirements.txt (line 36)) (1.0.3)
+Requirement already satisfied: langfuse==3.14.5 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 37)) (3.14.5)
+Requirement already satisfied: gunicorn==23.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 38)) (23.0.0)
+Requirement already satisfied: pytest-cov==7.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 39)) (7.0.0)
+Requirement already satisfied: pydantic==2.13.3 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 40)) (2.13.3)
+Requirement already satisfied: pydantic-settings==2.14.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 44)) (2.14.2)
+Requirement already satisfied: html2text==2024.2.26 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 45)) (2024.2.26)
+Requirement already satisfied: giteapy==1.0.8 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements.txt (line 46)) (1.0.8)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from aiohttp==3.13.4->-r requirements.txt (line 1)) (2.7.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from aiohttp==3.13.4->-r requirements.txt (line 1)) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from aiohttp==3.13.4->-r requirements.txt (line 1)) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from aiohttp==3.13.4->-r requirements.txt (line 1)) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from aiohttp==3.13.4->-r requirements.txt (line 1)) (6.9.1)
+Requirement already satisfied: propcache>=0.2.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from aiohttp==3.13.4->-r requirements.txt (line 1)) (0.5.4)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from aiohttp==3.13.4->-r requirements.txt (line 1)) (1.25.1)
+Requirement already satisfied: deprecated in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from atlassian-python-api==3.41.4->-r requirements.txt (line 4)) (3.0.0)
+Requirement already satisfied: requests in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from atlassian-python-api==3.41.4->-r requirements.txt (line 4)) (2.34.2)
+Requirement already satisfied: six in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from atlassian-python-api==3.41.4->-r requirements.txt (line 4)) (1.17.0)
+Requirement already satisfied: oauthlib in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from atlassian-python-api==3.41.4->-r requirements.txt (line 4)) (4.0.0)
+Requirement already satisfied: requests-oauthlib in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from atlassian-python-api==3.41.4->-r requirements.txt (line 4)) (2.0.0)
+Requirement already satisfied: azure-core>=1.24.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from msrest==0.7.1->-r requirements.txt (line 21)) (1.41.0)
+Requirement already satisfied: isodate>=0.6.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from msrest==0.7.1->-r requirements.txt (line 21)) (0.7.2)
+Requirement already satisfied: cryptography>=2.5 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from azure-identity==1.25.0->-r requirements.txt (line 6)) (50.0.2)
+Requirement already satisfied: msal>=1.30.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from azure-identity==1.25.0->-r requirements.txt (line 6)) (1.39.0)
+Requirement already satisfied: msal-extensions>=1.2.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from azure-identity==1.25.0->-r requirements.txt (line 6)) (1.3.1)
+Requirement already satisfied: typing-extensions>=4.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from azure-identity==1.25.0->-r requirements.txt (line 6)) (4.16.0)
+Requirement already satisfied: botocore<1.41.0,>=1.40.45 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from boto3==1.40.45->-r requirements.txt (line 7)) (1.40.76)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from boto3==1.40.45->-r requirements.txt (line 7)) (1.1.0)
+Requirement already satisfied: s3transfer<0.15.0,>=0.14.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from boto3==1.40.45->-r requirements.txt (line 7)) (0.14.0)
+Requirement already satisfied: starlette<0.49.0,>=0.40.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from fastapi==0.118.0->-r requirements.txt (line 10)) (0.48.0)
+Requirement already satisfied: annotated-types>=0.6.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pydantic==2.13.3->-r requirements.txt (line 40)) (0.8.0)
+Requirement already satisfied: pydantic-core==2.46.3 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pydantic==2.13.3->-r requirements.txt (line 40)) (2.46.3)
+Requirement already satisfied: typing-inspection>=0.4.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pydantic==2.13.3->-r requirements.txt (line 40)) (0.4.4)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from GitPython==3.1.41->-r requirements.txt (line 11)) (4.0.12)
+Requirement already satisfied: google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0,>=1.34.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0,>=1.34.1->google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (2.42.0)
+Requirement already satisfied: google-auth<3.0.0,>=2.47.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (2.62.0)
+Requirement already satisfied: proto-plus<2.0.0,>=1.22.3 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (1.29.0)
+Requirement already satisfied: packaging>=14.3 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (25.0)
+Requirement already satisfied: google-cloud-bigquery!=3.20.0,<4.0.0,>=1.15.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (3.46.2)
+Requirement already satisfied: google-cloud-resource-manager<3.0.0,>=1.3.3 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (1.19.0)
+Requirement already satisfied: google-genai<3.0.0,>=1.66.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (2.31.0)
+Requirement already satisfied: docstring_parser<1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (0.18.0)
+Requirement already satisfied: google-cloud-core<3.0dev,>=2.3.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-storage==2.10.0->-r requirements.txt (line 15)) (2.8.0)
+Requirement already satisfied: google-resumable-media>=2.3.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-storage==2.10.0->-r requirements.txt (line 15)) (2.11.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from Jinja2==3.1.6->-r requirements.txt (line 18)) (3.0.4)
+Requirement already satisfied: fastuuid<1.0,>=0.14.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from litellm==1.94.0->-r requirements.txt (line 19)) (0.14.0)
+Requirement already satisfied: httpx<1.0,>=0.28.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from litellm==1.94.0->-r requirements.txt (line 19)) (0.28.1)
+Requirement already satisfied: python-dotenv<2.0,>=1.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from litellm==1.94.0->-r requirements.txt (line 19)) (1.2.4)
+Requirement already satisfied: importlib-metadata<9.0,>=8.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from litellm==1.94.0->-r requirements.txt (line 19)) (8.9.0)
+Requirement already satisfied: tokenizers<1.0,>=0.21.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from litellm==1.94.0->-r requirements.txt (line 19)) (0.23.3)
+Requirement already satisfied: click<9.0,>=8.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from litellm==1.94.0->-r requirements.txt (line 19)) (8.5.0)
+Requirement already satisfied: jsonschema<5.0,>=4.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from litellm==1.94.0->-r requirements.txt (line 19)) (4.26.0)
+Requirement already satisfied: regex>=2022.1.18 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from tiktoken==0.12.0->-r requirements.txt (line 31)) (2026.9.29)
+Requirement already satisfied: iniconfig>=1.0.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest==9.0.2->-r requirements.txt (line 23)) (2.3.1)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest==9.0.2->-r requirements.txt (line 23)) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest==9.0.2->-r requirements.txt (line 23)) (2.21.0)
+Requirement already satisfied: requests-toolbelt>=1.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from python-gitlab==8.3.0->-r requirements.txt (line 28)) (1.0.0)
+Requirement already satisfied: decorator>=3.4.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from retry==0.9.2->-r requirements.txt (line 29)) (5.3.1)
+Requirement already satisfied: py<2.0.0,>=1.4.26 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from retry==0.9.2->-r requirements.txt (line 29)) (1.11.0)
+Requirement already satisfied: h11>=0.8 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from uvicorn==0.22.0->-r requirements.txt (line 34)) (0.16.0)
+Requirement already satisfied: culsans>=0.11.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->-r requirements.txt (line 36)) (0.11.0)
+Requirement already satisfied: googleapis-common-protos>=1.70.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->-r requirements.txt (line 36)) (1.75.5)
+Requirement already satisfied: httpx-sse>=0.4.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->-r requirements.txt (line 36)) (0.4.3)
+Requirement already satisfied: json-rpc>=1.15.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->-r requirements.txt (line 36)) (1.15.0)
+Requirement already satisfied: backoff>=1.10.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from langfuse==3.14.5->-r requirements.txt (line 37)) (2.2.1)
+Requirement already satisfied: opentelemetry-api<2.0.0,>=1.33.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from langfuse==3.14.5->-r requirements.txt (line 37)) (1.45.1)
+Requirement already satisfied: opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from langfuse==3.14.5->-r requirements.txt (line 37)) (1.45.1)
+Requirement already satisfied: opentelemetry-sdk<2.0.0,>=1.33.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from langfuse==3.14.5->-r requirements.txt (line 37)) (1.45.1)
+Requirement already satisfied: wrapt<2.0,>=1.14 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from langfuse==3.14.5->-r requirements.txt (line 37)) (1.17.3)
+Requirement already satisfied: coverage>=7.10.6 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from coverage[toml]>=7.10.6->pytest-cov==7.0.0->-r requirements.txt (line 39)) (7.16.2)
+Requirement already satisfied: python-dateutil>=2.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from giteapy==1.0.8->-r requirements.txt (line 46)) (2.9.0.post0)
+Requirement already satisfied: urllib3>=1.23 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from giteapy==1.0.8->-r requirements.txt (line 46)) (2.8.0)
+Requirement already satisfied: sse-starlette in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from a2a-sdk[http-server]==1.0.3->-r requirements.txt (line 36)) (3.0.3)
+Requirement already satisfied: anyio<5,>=3.5.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from openai>=1.55.3->-r requirements.txt (line 22)) (4.15.1)
+Requirement already satisfied: distro<2,>=1.7.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from openai>=1.55.3->-r requirements.txt (line 22)) (1.9.0)
+Requirement already satisfied: jiter<1,>=0.10.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from openai>=1.55.3->-r requirements.txt (line 22)) (0.17.0)
+Requirement already satisfied: sniffio in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from openai>=1.55.3->-r requirements.txt (line 22)) (1.3.1)
+Requirement already satisfied: tqdm>4 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from openai>=1.55.3->-r requirements.txt (line 22)) (4.70.1)
+Requirement already satisfied: pynacl>=1.4.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from PyGithub==1.59.*->-r requirements.txt (line 25)) (1.6.2)
+Requirement already satisfied: idna>=2.8 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from anyio<5,>=3.5.0->openai>=1.55.3->-r requirements.txt (line 22)) (3.20)
+Requirement already satisfied: smmap<6,>=3.0.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from gitdb<5,>=4.0.1->GitPython==3.1.41->-r requirements.txt (line 11)) (5.0.3)
+Requirement already satisfied: grpcio<2.0.0,>=1.59.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0,>=1.34.1->google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (1.84.0)
+Requirement already satisfied: grpcio-status<2.0.0,>=1.59.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0,>=1.34.1->google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (1.84.0)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-auth<3.0.0,>=2.47.0->google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (0.4.2)
+Requirement already satisfied: grpc-google-iam-v1<1.0.0,>=0.14.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-cloud-resource-manager<3.0.0,>=1.3.3->google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (0.14.5)
+Requirement already satisfied: websockets<17.0,>=13.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-genai<3.0.0,>=1.66.0->google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (16.1.1)
+Requirement already satisfied: google-crc32c<2.0.0,>=1.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from google-resumable-media>=2.3.2->google-cloud-storage==2.10.0->-r requirements.txt (line 15)) (1.9.0)
+Requirement already satisfied: httpcore==1.* in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from httpx<1.0,>=0.28.0->litellm==1.94.0->-r requirements.txt (line 19)) (1.0.9)
+Requirement already satisfied: zipp>=3.20 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from importlib-metadata<9.0,>=8.0.0->litellm==1.94.0->-r requirements.txt (line 19)) (4.1.1)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from jsonschema<5.0,>=4.0.0->litellm==1.94.0->-r requirements.txt (line 19)) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from jsonschema<5.0,>=4.0.0->litellm==1.94.0->-r requirements.txt (line 19)) (0.37.0)
+Requirement already satisfied: rpds-py>=0.25.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from jsonschema<5.0,>=4.0.0->litellm==1.94.0->-r requirements.txt (line 19)) (2026.9.1)
+Requirement already satisfied: opentelemetry-exporter-http-transport==0.66b1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from opentelemetry-exporter-http-transport[requests]==0.66b1->opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1->langfuse==3.14.5->-r requirements.txt (line 37)) (0.66b1)
+Requirement already satisfied: opentelemetry-exporter-otlp-common==0.66b1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1->langfuse==3.14.5->-r requirements.txt (line 37)) (0.66b1)
+Requirement already satisfied: opentelemetry-exporter-otlp-proto-common==1.45.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1->langfuse==3.14.5->-r requirements.txt (line 37)) (1.45.1)
+Requirement already satisfied: opentelemetry-proto==1.45.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.33.1->langfuse==3.14.5->-r requirements.txt (line 37)) (1.45.1)
+Requirement already satisfied: opentelemetry-semantic-conventions==0.66b1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from opentelemetry-sdk<2.0.0,>=1.33.1->langfuse==3.14.5->-r requirements.txt (line 37)) (0.66b1)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from requests->atlassian-python-api==3.41.4->-r requirements.txt (line 4)) (3.5.2)
+Requirement already satisfied: huggingface-hub<3.0,>=0.16.4 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from tokenizers<1.0,>=0.21.0->litellm==1.94.0->-r requirements.txt (line 19)) (2.2.0)
+Requirement already satisfied: filelock>=3.10.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->-r requirements.txt (line 19)) (4.2.4)
+Requirement already satisfied: fsspec>=2023.5.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->-r requirements.txt (line 19)) (2026.9.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.6.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->-r requirements.txt (line 19)) (1.7.0)
+Requirement already satisfied: httpx2<3,>=2.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->-r requirements.txt (line 19)) (2.14.0)
+Requirement already satisfied: httpcore2==2.14.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->-r requirements.txt (line 19)) (2.14.0)
+Requirement already satisfied: truststore>=0.10 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=0.16.4->tokenizers<1.0,>=0.21.0->litellm==1.94.0->-r requirements.txt (line 19)) (0.10.5)
+Requirement already satisfied: cffi>=2.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from cryptography>=2.5->azure-identity==1.25.0->-r requirements.txt (line 6)) (2.1.1)
+Requirement already satisfied: pycparser in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from cffi>=2.0.0->cryptography>=2.5->azure-identity==1.25.0->-r requirements.txt (line 6)) (3.11)
+Requirement already satisfied: aiologic<0.18.0,>=0.16.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from culsans>=0.11.0->a2a-sdk==1.0.3->a2a-sdk[http-server]==1.0.3->-r requirements.txt (line 36)) (0.17.1)
+Requirement already satisfied: pyasn1<0.7.0,>=0.6.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pyasn1-modules>=0.2.1->google-auth<3.0.0,>=2.47.0->google-cloud-aiplatform==1.154.0->-r requirements.txt (line 12)) (0.6.4)
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements-dev.txt ']'
++ pip install -r requirements-dev.txt
+Requirement already satisfied: pytest==9.0.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements-dev.txt (line 1)) (9.0.2)
+Requirement already satisfied: pytest-asyncio>=1.3.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements-dev.txt (line 2)) (1.4.0)
+Requirement already satisfied: httpx==0.28.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from -r requirements-dev.txt (line 3)) (0.28.1)
+Collecting poetry (from -r requirements-dev.txt (line 4))
+  Downloading poetry-2.5.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting twine (from -r requirements-dev.txt (line 5))
+  Downloading twine-7.0.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting pre-commit<5,>=4 (from -r requirements-dev.txt (line 6))
+  Using cached pre_commit-4.7.0-py2.py3-none-any.whl.metadata (1.2 kB)
+Collecting flake8==7.3.0 (from -r requirements-dev.txt (line 7))
+  Downloading flake8-7.3.0-py2.py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: iniconfig>=1.0.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest==9.0.2->-r requirements-dev.txt (line 1)) (2.3.1)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest==9.0.2->-r requirements-dev.txt (line 1)) (25.0)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest==9.0.2->-r requirements-dev.txt (line 1)) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest==9.0.2->-r requirements-dev.txt (line 1)) (2.21.0)
+Requirement already satisfied: anyio in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from httpx==0.28.1->-r requirements-dev.txt (line 3)) (4.15.1)
+Requirement already satisfied: certifi in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from httpx==0.28.1->-r requirements-dev.txt (line 3)) (2024.8.30)
+Requirement already satisfied: httpcore==1.* in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from httpx==0.28.1->-r requirements-dev.txt (line 3)) (1.0.9)
+Requirement already satisfied: idna in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from httpx==0.28.1->-r requirements-dev.txt (line 3)) (3.20)
+Collecting mccabe<0.8.0,>=0.7.0 (from flake8==7.3.0->-r requirements-dev.txt (line 7))
+  Using cached mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting pycodestyle<2.15.0,>=2.14.0 (from flake8==7.3.0->-r requirements-dev.txt (line 7))
+  Downloading pycodestyle-2.14.0-py2.py3-none-any.whl.metadata (4.5 kB)
+Collecting pyflakes<3.5.0,>=3.4.0 (from flake8==7.3.0->-r requirements-dev.txt (line 7))
+  Downloading pyflakes-3.4.0-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting cfgv>=2.0.0 (from pre-commit<5,>=4->-r requirements-dev.txt (line 6))
+  Using cached cfgv-3.5.0-py2.py3-none-any.whl.metadata (8.9 kB)
+Collecting identify>=1.0.0 (from pre-commit<5,>=4->-r requirements-dev.txt (line 6))
+  Using cached identify-2.6.20-py2.py3-none-any.whl.metadata (4.4 kB)
+Collecting nodeenv>=0.11.1 (from pre-commit<5,>=4->-r requirements-dev.txt (line 6))
+  Using cached nodeenv-1.11.0-py2.py3-none-any.whl.metadata (40 kB)
+Requirement already satisfied: pyyaml>=5.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pre-commit<5,>=4->-r requirements-dev.txt (line 6)) (6.0.1)
+Collecting virtualenv>=20.10.0 (from pre-commit<5,>=4->-r requirements-dev.txt (line 6))
+  Using cached virtualenv-21.14.11-py3-none-any.whl.metadata (4.1 kB)
+Requirement already satisfied: h11>=0.16 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from httpcore==1.*->httpx==0.28.1->-r requirements-dev.txt (line 3)) (0.16.0)
+Requirement already satisfied: typing-extensions>=4.12 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest-asyncio>=1.3.0->-r requirements-dev.txt (line 2)) (4.16.0)
+Collecting build<2.0.0,>=1.2.1 (from poetry->-r requirements-dev.txt (line 4))
+  Downloading build-1.6.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting cachecontrol<0.15.0,>=0.14.0 (from cachecontrol[filecache]<0.15.0,>=0.14.0->poetry->-r requirements-dev.txt (line 4))
+  Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+Collecting cleo<3.0.0,>=2.1.0 (from poetry->-r requirements-dev.txt (line 4))
+  Downloading cleo-2.1.0-py3-none-any.whl.metadata (12 kB)
+Collecting dulwich<2,>=0.25.0 (from poetry->-r requirements-dev.txt (line 4))
+  Downloading dulwich-1.2.17-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (6.0 kB)
+Collecting fastjsonschema<3.0.0,>=2.18.0 (from poetry->-r requirements-dev.txt (line 4))
+  Using cached fastjsonschema-2.22.2-py3-none-any.whl.metadata (2.1 kB)
+Collecting findpython<0.9.0,>=0.6.2 (from poetry->-r requirements-dev.txt (line 4))
+  Downloading findpython-0.8.0-py3-none-any.whl.metadata (5.4 kB)
+Collecting installer<2.0.0,>=0.7.0 (from poetry->-r requirements-dev.txt (line 4))
+  Downloading installer-1.1.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting keyring<26.0.0,>=25.1.0 (from poetry->-r requirements-dev.txt (line 4))
+  Using cached keyring-25.7.0-py3-none-any.whl.metadata (21 kB)
+Collecting pbs-installer>=2025.6.10 (from pbs-installer[download,install]>=2025.6.10->poetry->-r requirements-dev.txt (line 4))
+  Downloading pbs_installer-2026.10.13-py3-none-any.whl.metadata (1.2 kB)
+Collecting pkginfo<2.0,>=1.12 (from poetry->-r requirements-dev.txt (line 4))
+  Using cached pkginfo-1.13.3-py3-none-any.whl.metadata (14 kB)
+Collecting platformdirs<5,>=3.0.0 (from poetry->-r requirements-dev.txt (line 4))
+  Using cached platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting poetry-core==2.5.0 (from poetry->-r requirements-dev.txt (line 4))
+  Downloading poetry_core-2.5.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting pyproject-hooks<2.0.0,>=1.0.0 (from poetry->-r requirements-dev.txt (line 4))
+  Downloading pyproject_hooks-1.3.3-py3-none-any.whl.metadata (1.3 kB)
+Requirement already satisfied: requests<3.0,>=2.26 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from poetry->-r requirements-dev.txt (line 4)) (2.34.2)
+Requirement already satisfied: requests-toolbelt<2.0.0,>=1.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from poetry->-r requirements-dev.txt (line 4)) (1.0.0)
+Collecting shellingham<2.0,>=1.5 (from poetry->-r requirements-dev.txt (line 4))
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting tomlkit<1.0.0,>=0.11.4 (from poetry->-r requirements-dev.txt (line 4))
+  Using cached tomlkit-0.15.2-py3-none-any.whl.metadata (3.4 kB)
+Collecting trove-classifiers>=2022.5.19 (from poetry->-r requirements-dev.txt (line 4))
+  Using cached trove_classifiers-2026.9.21.13-py3-none-any.whl.metadata (2.4 kB)
+Collecting msgpack<2.0.0,>=0.5.2 (from cachecontrol<0.15.0,>=0.14.0->cachecontrol[filecache]<0.15.0,>=0.14.0->poetry->-r requirements-dev.txt (line 4))
+  Using cached msgpack-1.2.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+Requirement already satisfied: filelock>=3.8.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from cachecontrol[filecache]<0.15.0,>=0.14.0->poetry->-r requirements-dev.txt (line 4)) (4.2.4)
+Collecting crashtest<0.5.0,>=0.4.1 (from cleo<3.0.0,>=2.1.0->poetry->-r requirements-dev.txt (line 4))
+  Downloading crashtest-0.4.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting rapidfuzz<4.0.0,>=3.0.0 (from cleo<3.0.0,>=2.1.0->poetry->-r requirements-dev.txt (line 4))
+  Downloading rapidfuzz-3.14.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (12 kB)
+Requirement already satisfied: urllib3>=2.2.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from dulwich<2,>=0.25.0->poetry->-r requirements-dev.txt (line 4)) (2.8.0)
+Collecting SecretStorage>=3.2 (from keyring<26.0.0,>=25.1.0->poetry->-r requirements-dev.txt (line 4))
+  Using cached secretstorage-3.5.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting jeepney>=0.4.2 (from keyring<26.0.0,>=25.1.0->poetry->-r requirements-dev.txt (line 4))
+  Using cached jeepney-0.9.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting jaraco.classes (from keyring<26.0.0,>=25.1.0->poetry->-r requirements-dev.txt (line 4))
+  Using cached jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting jaraco.functools (from keyring<26.0.0,>=25.1.0->poetry->-r requirements-dev.txt (line 4))
+  Using cached jaraco_functools-4.6.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting jaraco.context (from keyring<26.0.0,>=25.1.0->poetry->-r requirements-dev.txt (line 4))
+  Using cached jaraco_context-6.1.2-py3-none-any.whl.metadata (4.2 kB)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from requests<3.0,>=2.26->poetry->-r requirements-dev.txt (line 4)) (3.5.2)
+Collecting readme-renderer>=35.0 (from twine->-r requirements-dev.txt (line 5))
+  Using cached readme_renderer-46.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting rfc3986>=1.4.0 (from twine->-r requirements-dev.txt (line 5))
+  Using cached rfc3986-2.0.0-py2.py3-none-any.whl.metadata (6.6 kB)
+Collecting rich>=14.3.3 (from twine->-r requirements-dev.txt (line 5))
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting packaging>=22 (from pytest==9.0.2->-r requirements-dev.txt (line 1))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting id (from twine->-r requirements-dev.txt (line 5))
+  Downloading id-1.6.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting backports.zstd>=1.0.0 (from pbs-installer[download,install]>=2025.6.10->poetry->-r requirements-dev.txt (line 4))
+  Using cached backports_zstd-1.8.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (6.8 kB)
+Collecting nh3>=0.2.14 (from readme-renderer>=35.0->twine->-r requirements-dev.txt (line 5))
+  Using cached nh3-0.3.7-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.0 kB)
+Collecting docutils>=0.21.2 (from readme-renderer>=35.0->twine->-r requirements-dev.txt (line 5))
+  Using cached docutils-0.23-py3-none-any.whl.metadata (15 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=14.3.3->twine->-r requirements-dev.txt (line 5))
+  Using cached markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=14.3.3->twine->-r requirements-dev.txt (line 5))
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Requirement already satisfied: cryptography>=2.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from SecretStorage>=3.2->keyring<26.0.0,>=25.1.0->poetry->-r requirements-dev.txt (line 4)) (50.0.2)
+Requirement already satisfied: cffi>=2.0.0 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from cryptography>=2.0->SecretStorage>=3.2->keyring<26.0.0,>=25.1.0->poetry->-r requirements-dev.txt (line 4)) (2.1.1)
+Requirement already satisfied: pycparser in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from cffi>=2.0.0->cryptography>=2.0->SecretStorage>=3.2->keyring<26.0.0,>=25.1.0->poetry->-r requirements-dev.txt (line 4)) (3.11)
+Collecting distlib<1,>=0.4.3 (from virtualenv>=20.10.0->pre-commit<5,>=4->-r requirements-dev.txt (line 6))
+  Using cached distlib-0.4.4-py2.py3-none-any.whl.metadata (5.3 kB)
+Collecting python-discovery>=1.6.1 (from virtualenv>=20.10.0->pre-commit<5,>=4->-r requirements-dev.txt (line 6))
+  Using cached python_discovery-1.6.4-py3-none-any.whl.metadata (5.1 kB)
+Collecting more-itertools (from jaraco.classes->keyring<26.0.0,>=25.1.0->poetry->-r requirements-dev.txt (line 4))
+  Using cached more_itertools-11.2.1-py3-none-any.whl.metadata (42 kB)
+Downloading flake8-7.3.0-py2.py3-none-any.whl (57 kB)
+Using cached pre_commit-4.7.0-py2.py3-none-any.whl (226 kB)
+Using cached mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Downloading pycodestyle-2.14.0-py2.py3-none-any.whl (31 kB)
+Downloading pyflakes-3.4.0-py2.py3-none-any.whl (63 kB)
+Downloading poetry-2.5.1-py3-none-any.whl (307 kB)
+Downloading poetry_core-2.5.0-py3-none-any.whl (413 kB)
+Downloading build-1.6.1-py3-none-any.whl (31 kB)
+Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+Downloading cleo-2.1.0-py3-none-any.whl (78 kB)
+Downloading crashtest-0.4.1-py3-none-any.whl (7.6 kB)
+Downloading dulwich-1.2.17-cp312-cp312-manylinux_2_28_x86_64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 46.1 MB/s  0:00:00
+Using cached fastjsonschema-2.22.2-py3-none-any.whl (27 kB)
+Downloading findpython-0.8.0-py3-none-any.whl (21 kB)
+Downloading installer-1.1.0-py3-none-any.whl (464 kB)
+Using cached keyring-25.7.0-py3-none-any.whl (39 kB)
+Using cached msgpack-1.2.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (472 kB)
+Downloading pkginfo-1.13.3-py3-none-any.whl (35 kB)
+Using cached platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Downloading pyproject_hooks-1.3.3-py3-none-any.whl (10 kB)
+Downloading rapidfuzz-3.14.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (3.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 79.3 MB/s  0:00:00
+Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Using cached tomlkit-0.15.2-py3-none-any.whl (52 kB)
+Downloading twine-7.0.0-py3-none-any.whl (43 kB)
+Using cached cfgv-3.5.0-py2.py3-none-any.whl (7.4 kB)
+Using cached identify-2.6.20-py2.py3-none-any.whl (99 kB)
+Using cached jeepney-0.9.0-py3-none-any.whl (49 kB)
+Using cached nodeenv-1.11.0-py2.py3-none-any.whl (34 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pbs_installer-2026.10.13-py3-none-any.whl (84 kB)
+Using cached backports_zstd-1.8.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (496 kB)
+Using cached readme_renderer-46.0-py3-none-any.whl (14 kB)
+Using cached docutils-0.23-py3-none-any.whl (634 kB)
+Using cached nh3-0.3.7-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (832 kB)
+Using cached rfc3986-2.0.0-py2.py3-none-any.whl (31 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Using cached secretstorage-3.5.0-py3-none-any.whl (15 kB)
+Using cached trove_classifiers-2026.9.21.13-py3-none-any.whl (14 kB)
+Using cached virtualenv-21.14.11-py3-none-any.whl (5.5 MB)
+Using cached distlib-0.4.4-py2.py3-none-any.whl (472 kB)
+Using cached python_discovery-1.6.4-py3-none-any.whl (39 kB)
+Downloading id-1.6.1-py3-none-any.whl (14 kB)
+Using cached jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+Using cached jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
+Using cached jaraco_functools-4.6.0-py3-none-any.whl (11 kB)
+Using cached more_itertools-11.2.1-py3-none-any.whl (74 kB)
+Installing collected packages: trove-classifiers, distlib, tomlkit, shellingham, rfc3986, rapidfuzz, python-discovery, pyproject-hooks, pyflakes, pycodestyle, poetry-core, platformdirs, pkginfo, pbs-installer, packaging, nodeenv, nh3, msgpack, more-itertools, mdurl, mccabe, jeepney, jaraco.context, installer, identify, id, fastjsonschema, dulwich, docutils, crashtest, cfgv, backports.zstd, virtualenv, readme-renderer, markdown-it-py, jaraco.functools, jaraco.classes, flake8, findpython, cleo, cachecontrol, build, SecretStorage, rich, pre-commit, keyring, twine, poetry
+  Attempting uninstall: packaging
+    Found existing installation: packaging 25.0
+    Uninstalling packaging-25.0:
+      Successfully uninstalled packaging-25.0
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+langfuse 3.14.5 requires packaging<26.0,>=23.2, but you have packaging 26.3 which is incompatible.
+Successfully installed SecretStorage-3.5.0 backports.zstd-1.8.0 build-1.6.1 cachecontrol-0.14.4 cfgv-3.5.0 cleo-2.1.0 crashtest-0.4.1 distlib-0.4.4 docutils-0.23 dulwich-1.2.17 fastjsonschema-2.22.2 findpython-0.8.0 flake8-7.3.0 id-1.6.1 identify-2.6.20 installer-1.1.0 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.6.0 jeepney-0.9.0 keyring-25.7.0 markdown-it-py-4.2.0 mccabe-0.7.0 mdurl-0.1.2 more-itertools-11.2.1 msgpack-1.2.3 nh3-0.3.7 nodeenv-1.11.0 packaging-26.3 pbs-installer-2026.10.13 pkginfo-1.13.3 platformdirs-4.13.5 poetry-2.5.1 poetry-core-2.5.0 pre-commit-4.7.0 pycodestyle-2.14.0 pyflakes-3.4.0 pyproject-hooks-1.3.3 python-discovery-1.6.4 rapidfuzz-3.14.6 readme-renderer-46.0 rfc3986-2.0.0 rich-15.0.0 shellingham-1.5.4 tomlkit-0.15.2 trove-classifiers-2026.9.21.13 twine-7.0.0 virtualenv-21.14.11
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f dev-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f test-requirements.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/dev.txt ']'
++ for r in requirements.txt requirements-dev.txt dev-requirements.txt test-requirements.txt requirements/dev.txt requirements/test.txt
++ '[' -f requirements/test.txt ']'
++ pip install pytest pytest-timeout
+Requirement already satisfied: pytest in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (9.0.2)
+Collecting pytest-timeout
+  Using cached pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: iniconfig>=1.0.1 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest) (2.3.1)
+Requirement already satisfied: packaging>=22 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest) (1.7.0)
+Requirement already satisfied: pygments>=2.7.2 in /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages (from pytest) (2.21.0)
+Using cached pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Installing collected packages: pytest-timeout
+Successfully installed pytest-timeout-2.4.0
++ pip freeze
++ pip install --no-deps -e .
+Obtaining file:///home/azureuser/traceweave-harness/work/pr-agent
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: pr-agent
+  Building editable for pr-agent (pyproject.toml): started
+  Building editable for pr-agent (pyproject.toml): finished with status 'done'
+  Created wheel for pr-agent: filename=pr_agent-0.41.0-0.editable-py3-none-any.whl size=9917 sha256=289bdcb3a25d569ca8f27902264ee8f2b05dc3da6014a4ed34e0e2a85066605b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-jt9ebjj_/wheels/8d/11/34/7e9bf982cffdd8b02e2fb6d4da52db61adfb642e2cce50298e
+Successfully built pr-agent
+Installing collected packages: pr-agent
+  Attempting uninstall: pr-agent
+    Found existing installation: pr-agent 0.41.0
+    Uninstalling pr-agent-0.41.0:
+      Successfully uninstalled pr-agent-0.41.0
+Successfully installed pr-agent-0.41.0
++ editable=true
+++ python -c 'import platform; print(platform.python_version())'
++ printf '{"source": "recipe", "editable": %s, "python": "%s"}\n' true 3.12.13
+===== env rc=0 in 95 s
+
+===== 2026-10-19T07:18:01Z pr-agent trace
++ cd /home/azureuser/traceweave-harness/work/pr-agent
++ TW_PYTEST_ARGS=tests
++ PYTHONPATH=/home/azureuser/traceweave-harness/work/pr-agent
++ /home/azureuser/traceweave-data/study1/venv/pr-agent/bin/python /home/azureuser/major/traceweave/demo/tracer.py trace-package --src-root /home/azureuser/traceweave-harness/work/pr-agent --package /home/azureuser/traceweave-harness/work/pr-agent/pr_agent --exclude '' --workload /home/azureuser/major/traceweave/dypybench/pytest_workload.py --entry entry --run-id pr-agent-2026-10-19T07:18:01Z --out /home/azureuser/traceweave-harness/bundles/pr-agent/trace.json
+[31mF[0m[32m.[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [  4%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [  8%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 12%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 16%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 20%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 25%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 29%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 33%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 37%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 41%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 46%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 50%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 54%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 58%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 62%]
+[0m[32m.[0m[32m.[0m[32m.[0m[33mx[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 67%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 71%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 75%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 79%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 83%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 88%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 92%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 96%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m           [100%][0m
+=================================== FAILURES ===================================
+[31m[1m__________________________ test_e2e_run_bitbucket_app __________________________[0m
+
+self = <Response [401]>, kwargs = {}
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mjson[39;49;00m([96mself[39;49;00m, **kwargs: Any) -> Any:[90m[39;49;00m
+    [90m    [39;49;00m[33mr[39;49;00m[33m"""Decodes the JSON response body (if any) as a Python object.[39;49;00m
+    [33m[39;49;00m
+    [33m    This may return a dictionary, list, etc. depending on what is in the response.[39;49;00m
+    [33m[39;49;00m
+    [33m    :param \*\*kwargs: Optional arguments that ``json.loads`` takes.[39;49;00m
+    [33m    :raises requests.exceptions.JSONDecodeError: If the response body does not[39;49;00m
+    [33m        contain valid json.[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mif[39;49;00m [95mnot[39;49;00m [96mself[39;49;00m.encoding [95mand[39;49;00m [96mself[39;49;00m.content [95mand[39;49;00m [96mlen[39;49;00m([96mself[39;49;00m.content) > [94m3[39;49;00m:[90m[39;49;00m
+            [90m# No encoding set. JSON RFC 4627 section 3 states we should expect[39;49;00m[90m[39;49;00m
+            [90m# UTF-8, -16 or -32. Detect which one to use; If the detection or[39;49;00m[90m[39;49;00m
+            [90m# decoding fails, fall back to `self.text` (using charset_normalizer to make[39;49;00m[90m[39;49;00m
+            [90m# a best guess).[39;49;00m[90m[39;49;00m
+            encoding = guess_json_utf([96mself[39;49;00m.content)[90m[39;49;00m
+            [94mif[39;49;00m encoding [95mis[39;49;00m [95mnot[39;49;00m [94mNone[39;49;00m:[90m[39;49;00m
+                [94mtry[39;49;00m:[90m[39;49;00m
+                    [94mreturn[39;49;00m complexjson.loads([96mself[39;49;00m.content.decode(encoding), **kwargs)[90m[39;49;00m
+                [94mexcept[39;49;00m [96mUnicodeDecodeError[39;49;00m:[90m[39;49;00m
+                    [90m# Wrong UTF codec detected; usually because it's not UTF-8[39;49;00m[90m[39;49;00m
+                    [90m# but some other 8-bit codec.  This is an RFC violation,[39;49;00m[90m[39;49;00m
+                    [90m# and the server didn't bother to tell us what codec *was*[39;49;00m[90m[39;49;00m
+                    [90m# used.[39;49;00m[90m[39;49;00m
+                    [94mpass[39;49;00m[90m[39;49;00m
+                [94mexcept[39;49;00m JSONDecodeError [94mas[39;49;00m e:[90m[39;49;00m
+                    [94mraise[39;49;00m RequestsJSONDecodeError(e.msg, e.doc, e.pos)[90m[39;49;00m
+    [90m[39;49;00m
+        [94mtry[39;49;00m:[90m[39;49;00m
+>           [94mreturn[39;49;00m complexjson.loads([96mself[39;49;00m.text, **kwargs)[90m[39;49;00m
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/requests/models.py[0m:1116: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31m/usr/local/lib/python3.12/json/__init__.py[0m:346: in loads
+    [0m[94mreturn[39;49;00m _default_decoder.decode(s)[90m[39;49;00m
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m/usr/local/lib/python3.12/json/decoder.py[0m:338: in decode
+    [0mobj, end = [96mself[39;49;00m.raw_decode(s, idx=_w(s, [94m0[39;49;00m).end())[90m[39;49;00m
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <json.decoder.JSONDecoder object at 0x788230a95940>, s = '', idx = 0
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mraw_decode[39;49;00m([96mself[39;49;00m, s, idx=[94m0[39;49;00m):[90m[39;49;00m
+    [90m    [39;49;00m[33m"""Decode a JSON document from ``s`` (a ``str`` beginning with[39;49;00m
+    [33m    a JSON document) and return a 2-tuple of the Python[39;49;00m
+    [33m    representation and the index in ``s`` where the document ended.[39;49;00m
+    [33m[39;49;00m
+    [33m    This can be used to decode a JSON document from a string that may[39;49;00m
+    [33m    have extraneous data at the end.[39;49;00m
+    [33m[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+        [94mtry[39;49;00m:[90m[39;49;00m
+            obj, end = [96mself[39;49;00m.scan_once(s, idx)[90m[39;49;00m
+        [94mexcept[39;49;00m [96mStopIteration[39;49;00m [94mas[39;49;00m err:[90m[39;49;00m
+>           [94mraise[39;49;00m JSONDecodeError([33m"[39;49;00m[33mExpecting value[39;49;00m[33m"[39;49;00m, s, err.value) [94mfrom[39;49;00m[90m [39;49;00m[94mNone[39;49;00m[90m[39;49;00m
+[1m[31mE           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)[0m
+
+[1m[31m/usr/local/lib/python3.12/json/decoder.py[0m:356: JSONDecodeError
+
+[33mDuring handling of the above exception, another exception occurred:[0m
+
+self = <atlassian.bitbucket.cloud.workspaces.Workspaces object at 0x788222b53650>
+response = <Response [401]>
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mraise_for_status[39;49;00m([96mself[39;49;00m, response):[90m[39;49;00m
+    [90m    [39;49;00m[33m"""[39;49;00m
+    [33m    Checks the response for errors and throws an exception if return code >= 400[39;49;00m
+    [33m[39;49;00m
+    [33m    Implementation for Bitbucket Cloud according to[39;49;00m
+    [33m    https://developer.atlassian.com/cloud/bitbucket/rest/intro/#standardized-error-responses[39;49;00m
+    [33m[39;49;00m
+    [33m    :param response:[39;49;00m
+    [33m    :return:[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+        [94mif[39;49;00m [94m400[39;49;00m <= response.status_code < [94m600[39;49;00m:[90m[39;49;00m
+            [94mtry[39;49;00m:[90m[39;49;00m
+>               j = response.json()[90m[39;49;00m
+                    ^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/atlassian/bitbucket/cloud/base.py[0m:112: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Response [401]>, kwargs = {}
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mjson[39;49;00m([96mself[39;49;00m, **kwargs: Any) -> Any:[90m[39;49;00m
+    [90m    [39;49;00m[33mr[39;49;00m[33m"""Decodes the JSON response body (if any) as a Python object.[39;49;00m
+    [33m[39;49;00m
+    [33m    This may return a dictionary, list, etc. depending on what is in the response.[39;49;00m
+    [33m[39;49;00m
+    [33m    :param \*\*kwargs: Optional arguments that ``json.loads`` takes.[39;49;00m
+    [33m    :raises requests.exceptions.JSONDecodeError: If the response body does not[39;49;00m
+    [33m        contain valid json.[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mif[39;49;00m [95mnot[39;49;00m [96mself[39;49;00m.encoding [95mand[39;49;00m [96mself[39;49;00m.content [95mand[39;49;00m [96mlen[39;49;00m([96mself[39;49;00m.content) > [94m3[39;49;00m:[90m[39;49;00m
+            [90m# No encoding set. JSON RFC 4627 section 3 states we should expect[39;49;00m[90m[39;49;00m
+            [90m# UTF-8, -16 or -32. Detect which one to use; If the detection or[39;49;00m[90m[39;49;00m
+            [90m# decoding fails, fall back to `self.text` (using charset_normalizer to make[39;49;00m[90m[39;49;00m
+            [90m# a best guess).[39;49;00m[90m[39;49;00m
+            encoding = guess_json_utf([96mself[39;49;00m.content)[90m[39;49;00m
+            [94mif[39;49;00m encoding [95mis[39;49;00m [95mnot[39;49;00m [94mNone[39;49;00m:[90m[39;49;00m
+                [94mtry[39;49;00m:[90m[39;49;00m
+                    [94mreturn[39;49;00m complexjson.loads([96mself[39;49;00m.content.decode(encoding), **kwargs)[90m[39;49;00m
+                [94mexcept[39;49;00m [96mUnicodeDecodeError[39;49;00m:[90m[39;49;00m
+                    [90m# Wrong UTF codec detected; usually because it's not UTF-8[39;49;00m[90m[39;49;00m
+                    [90m# but some other 8-bit codec.  This is an RFC violation,[39;49;00m[90m[39;49;00m
+                    [90m# and the server didn't bother to tell us what codec *was*[39;49;00m[90m[39;49;00m
+                    [90m# used.[39;49;00m[90m[39;49;00m
+                    [94mpass[39;49;00m[90m[39;49;00m
+                [94mexcept[39;49;00m JSONDecodeError [94mas[39;49;00m e:[90m[39;49;00m
+                    [94mraise[39;49;00m RequestsJSONDecodeError(e.msg, e.doc, e.pos)[90m[39;49;00m
+    [90m[39;49;00m
+        [94mtry[39;49;00m:[90m[39;49;00m
+            [94mreturn[39;49;00m complexjson.loads([96mself[39;49;00m.text, **kwargs)[90m[39;49;00m
+        [94mexcept[39;49;00m JSONDecodeError [94mas[39;49;00m e:[90m[39;49;00m
+            [90m# Catch JSON-related errors and raise as requests.JSONDecodeError[39;49;00m[90m[39;49;00m
+            [90m# This aliases json.JSONDecodeError and simplejson.JSONDecodeError[39;49;00m[90m[39;49;00m
+>           [94mraise[39;49;00m RequestsJSONDecodeError(e.msg, e.doc, e.pos)[90m[39;49;00m
+[1m[31mE           requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)[0m
+
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/requests/models.py[0m:1120: JSONDecodeError
+
+[33mDuring handling of the above exception, another exception occurred:[0m
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_e2e_run_bitbucket_app[39;49;00m():[90m[39;49;00m
+        repo_slug = [33m'[39;49;00m[33mpr-agent-tests[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+        project_key = [33m'[39;49;00m[33mcodiumai[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+        base_branch = [33m"[39;49;00m[33mmain[39;49;00m[33m"[39;49;00m  [90m# or any base branch you want[39;49;00m[90m[39;49;00m
+        new_branch = [33mf[39;49;00m[33m"[39;49;00m[33mbitbucket_app_e2e_test-[39;49;00m[33m{[39;49;00mdatetime.now().strftime([33m'[39;49;00m[33m%[39;49;00m[33mY-[39;49;00m[33m%[39;49;00m[33mm-[39;49;00m[33m%d[39;49;00m[33m-[39;49;00m[33m%[39;49;00m[33mH-[39;49;00m[33m%[39;49;00m[33mM-[39;49;00m[33m%[39;49;00m[33mS[39;49;00m[33m'[39;49;00m)[33m}[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+        get_settings().config.git_provider = [33m"[39;49;00m[33mbitbucket[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mtry[39;49;00m:[90m[39;49;00m
+            [90m# Add username and password for authentication[39;49;00m[90m[39;49;00m
+            username = get_settings().get([33m"[39;49;00m[33mBITBUCKET.USERNAME[39;49;00m[33m"[39;49;00m, [94mNone[39;49;00m)[90m[39;49;00m
+            password = get_settings().get([33m"[39;49;00m[33mBITBUCKET.PASSWORD[39;49;00m[33m"[39;49;00m, [94mNone[39;49;00m)[90m[39;49;00m
+            s = requests.Session()[90m[39;49;00m
+            s.auth = (username, password)  [90m# Use HTTP Basic Auth[39;49;00m[90m[39;49;00m
+            bitbucket_client = Cloud(session=s)[90m[39;49;00m
+>           repo = bitbucket_client.workspaces.get(workspace=project_key).repositories.get(repo_slug)[90m[39;49;00m
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31mtests/e2e_tests/test_bitbucket_app.py[0m:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/atlassian/bitbucket/cloud/workspaces/__init__.py[0m:64: in get
+    [0m[94mreturn[39;49;00m [96mself[39;49;00m.__get_object([96msuper[39;49;00m(Workspaces, [96mself[39;49;00m).get(workspace))[90m[39;49;00m
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/atlassian/rest_client.py[0m:288: in get
+    [0mresponse = [96mself[39;49;00m.request([90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/atlassian/rest_client.py[0m:260: in request
+    [0m[96mself[39;49;00m.raise_for_status(response)[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/atlassian/bitbucket/cloud/base.py[0m:119: in raise_for_status
+    [0mresponse.raise_for_status()[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Response [401]>
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mraise_for_status[39;49;00m([96mself[39;49;00m) -> [94mNone[39;49;00m:[90m[39;49;00m
+    [90m    [39;49;00m[33m"""Raises :class:`HTTPError`, if one occurred."""[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        http_error_msg = [33m"[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+        [94mif[39;49;00m [96misinstance[39;49;00m([96mself[39;49;00m.reason, [96mbytes[39;49;00m):[90m[39;49;00m
+            [90m# We attempt to decode utf-8 first because some servers[39;49;00m[90m[39;49;00m
+            [90m# choose to localize their reason strings. If the string[39;49;00m[90m[39;49;00m
+            [90m# isn't utf-8, we fall back to iso-8859-1 for all other[39;49;00m[90m[39;49;00m
+            [90m# encodings. (See PR #3538)[39;49;00m[90m[39;49;00m
+            [94mtry[39;49;00m:[90m[39;49;00m
+                reason = [96mself[39;49;00m.reason.decode([33m"[39;49;00m[33mutf-8[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+            [94mexcept[39;49;00m [96mUnicodeDecodeError[39;49;00m:[90m[39;49;00m
+                reason = [96mself[39;49;00m.reason.decode([33m"[39;49;00m[33miso-8859-1[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+        [94melse[39;49;00m:[90m[39;49;00m
+            reason = [96mself[39;49;00m.reason[90m[39;49;00m
+    [90m[39;49;00m
+        [94mif[39;49;00m [94m400[39;49;00m <= [96mself[39;49;00m.status_code < [94m500[39;49;00m:[90m[39;49;00m
+            http_error_msg = ([90m[39;49;00m
+                [33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00m[96mself[39;49;00m.status_code[33m}[39;49;00m[33m Client Error: [39;49;00m[33m{[39;49;00mreason[33m}[39;49;00m[33m for url: [39;49;00m[33m{[39;49;00m[96mself[39;49;00m.url[33m}[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+            )[90m[39;49;00m
+    [90m[39;49;00m
+        [94melif[39;49;00m [94m500[39;49;00m <= [96mself[39;49;00m.status_code < [94m600[39;49;00m:[90m[39;49;00m
+            http_error_msg = ([90m[39;49;00m
+                [33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00m[96mself[39;49;00m.status_code[33m}[39;49;00m[33m Server Error: [39;49;00m[33m{[39;49;00mreason[33m}[39;49;00m[33m for url: [39;49;00m[33m{[39;49;00m[96mself[39;49;00m.url[33m}[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+            )[90m[39;49;00m
+    [90m[39;49;00m
+        [94mif[39;49;00m http_error_msg:[90m[39;49;00m
+>           [94mraise[39;49;00m HTTPError(http_error_msg, response=[96mself[39;49;00m)[90m[39;49;00m
+[1m[31mE           requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.bitbucket.org/2.0/workspaces/codiumai[0m
+
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/requests/models.py[0m:1167: HTTPError
+
+[33mDuring handling of the above exception, another exception occurred:[0m
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_e2e_run_bitbucket_app[39;49;00m():[90m[39;49;00m
+        repo_slug = [33m'[39;49;00m[33mpr-agent-tests[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+        project_key = [33m'[39;49;00m[33mcodiumai[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+        base_branch = [33m"[39;49;00m[33mmain[39;49;00m[33m"[39;49;00m  [90m# or any base branch you want[39;49;00m[90m[39;49;00m
+        new_branch = [33mf[39;49;00m[33m"[39;49;00m[33mbitbucket_app_e2e_test-[39;49;00m[33m{[39;49;00mdatetime.now().strftime([33m'[39;49;00m[33m%[39;49;00m[33mY-[39;49;00m[33m%[39;49;00m[33mm-[39;49;00m[33m%d[39;49;00m[33m-[39;49;00m[33m%[39;49;00m[33mH-[39;49;00m[33m%[39;49;00m[33mM-[39;49;00m[33m%[39;49;00m[33mS[39;49;00m[33m'[39;49;00m)[33m}[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+        get_settings().config.git_provider = [33m"[39;49;00m[33mbitbucket[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mtry[39;49;00m:[90m[39;49;00m
+            [90m# Add username and password for authentication[39;49;00m[90m[39;49;00m
+            username = get_settings().get([33m"[39;49;00m[33mBITBUCKET.USERNAME[39;49;00m[33m"[39;49;00m, [94mNone[39;49;00m)[90m[39;49;00m
+            password = get_settings().get([33m"[39;49;00m[33mBITBUCKET.PASSWORD[39;49;00m[33m"[39;49;00m, [94mNone[39;49;00m)[90m[39;49;00m
+            s = requests.Session()[90m[39;49;00m
+            s.auth = (username, password)  [90m# Use HTTP Basic Auth[39;49;00m[90m[39;49;00m
+            bitbucket_client = Cloud(session=s)[90m[39;49;00m
+            repo = bitbucket_client.workspaces.get(workspace=project_key).repositories.get(repo_slug)[90m[39;49;00m
+    [90m[39;49;00m
+            [90m# Create a new branch from the base branch[39;49;00m[90m[39;49;00m
+            logger.info([33mf[39;49;00m[33m"[39;49;00m[33mCreating a new branch [39;49;00m[33m{[39;49;00mnew_branch[33m}[39;49;00m[33m from [39;49;00m[33m{[39;49;00mbase_branch[33m}[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+            source_branch = repo.branches.get(base_branch)[90m[39;49;00m
+            target_repo = repo.branches.create(new_branch,source_branch.hash)[90m[39;49;00m
+    [90m[39;49;00m
+            [90m# Update the file content[39;49;00m[90m[39;49;00m
+            url = [33mf[39;49;00m[33m"[39;49;00m[33mhttps://api.bitbucket.org/2.0/repositories/[39;49;00m[33m{[39;49;00mproject_key[33m}[39;49;00m[33m/[39;49;00m[33m{[39;49;00mrepo_slug[33m}[39;49;00m[33m/src[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+            files={FILE_PATH: NEW_FILE_CONTENT}[90m[39;49;00m
+            data={[90m[39;49;00m
+                [33m"[39;49;00m[33mmessage[39;49;00m[33m"[39;49;00m: [33m"[39;49;00m[33mupdate cli_pip.py[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+                [33m"[39;49;00m[33mbranch[39;49;00m[33m"[39;49;00m: new_branch,[90m[39;49;00m
+            }[90m[39;49;00m
+            requests.request([33m"[39;49;00m[33mPOST[39;49;00m[33m"[39;49;00m, url, auth=HTTPBasicAuth(username, password), data=data, files=files)[90m[39;49;00m
+    [90m[39;49;00m
+    [90m[39;49;00m
+            [90m# Create a pull request[39;49;00m[90m[39;49;00m
+            logger.info([33mf[39;49;00m[33m"[39;49;00m[33mCreating a pull request from [39;49;00m[33m{[39;49;00mnew_branch[33m}[39;49;00m[33m to [39;49;00m[33m{[39;49;00mbase_branch[33m}[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+            pr = repo.pullrequests.create([90m[39;49;00m
+                title=[33mf[39;49;00m[33m'[39;49;00m[33m{[39;49;00mnew_branch[33m}[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+                description=[33m"[39;49;00m[33mupdate cli_pip.py[39;49;00m[33m"[39;49;00m,[90m[39;49;00m
+                source_branch=new_branch,[90m[39;49;00m
+                destination_branch=base_branch[90m[39;49;00m
+            )[90m[39;49;00m
+    [90m[39;49;00m
+            [90m# check every 1 minute, for 5 minutes if the PR has all the tool results[39;49;00m[90m[39;49;00m
+            [94mfor[39;49;00m i [95min[39;49;00m [96mrange[39;49;00m(NUM_MINUTES):[90m[39;49;00m
+                logger.info([33mf[39;49;00m[33m"[39;49;00m[33mWaiting for the PR to get all the tool results...[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+                time.sleep([94m60[39;49;00m)[90m[39;49;00m
+                comments = [96mlist[39;49;00m(pr.comments())[90m[39;49;00m
+                comments_raw = [c.raw [94mfor[39;49;00m c [95min[39;49;00m comments][90m[39;49;00m
+                [94mif[39;49;00m [96mlen[39;49;00m(comments) >= [94m5[39;49;00m: [90m# header, 3 suggestions, 1 review[39;49;00m[90m[39;49;00m
+                    valid_review = [94mFalse[39;49;00m[90m[39;49;00m
+                    [94mfor[39;49;00m comment_raw [95min[39;49;00m comments_raw:[90m[39;49;00m
+                        [94mif[39;49;00m comment_raw.startswith([33m'[39;49;00m[33m## PR Reviewer Guide 🔍[39;49;00m[33m'[39;49;00m):[90m[39;49;00m
+                            valid_review = [94mTrue[39;49;00m[90m[39;49;00m
+                            [94mbreak[39;49;00m[90m[39;49;00m
+                    [94mif[39;49;00m valid_review:[90m[39;49;00m
+                        [94mbreak[39;49;00m[90m[39;49;00m
+                    [94melse[39;49;00m:[90m[39;49;00m
+                        logger.error([33mf[39;49;00m[33m"[39;49;00m[33mREVIEW feedback is invalid[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+                        [94mraise[39;49;00m [96mException[39;49;00m([33m"[39;49;00m[33mREVIEW feedback is invalid[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+                [94melse[39;49;00m:[90m[39;49;00m
+                    logger.info([33mf[39;49;00m[33m"[39;49;00m[33mWaiting for the PR to get all the tool results. [39;49;00m[33m{[39;49;00mi[90m [39;49;00m+[90m [39;49;00m[94m1[39;49;00m[33m}[39;49;00m[33m minute(s) passed[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+            [94melse[39;49;00m:[90m[39;49;00m
+                [94massert[39;49;00m [94mFalse[39;49;00m, [33mf[39;49;00m[33m"[39;49;00m[33mAfter [39;49;00m[33m{[39;49;00mNUM_MINUTES[33m}[39;49;00m[33m minutes, the PR did not get all the tool results[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+            [90m# cleanup - delete the branch[39;49;00m[90m[39;49;00m
+            pr.decline()[90m[39;49;00m
+            repo.branches.delete(new_branch)[90m[39;49;00m
+    [90m[39;49;00m
+            [90m# If we reach here, the test is successful[39;49;00m[90m[39;49;00m
+            logger.info([33mf[39;49;00m[33m"[39;49;00m[33mSucceeded in running e2e test for Bitbucket app on the PR[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+        [94mexcept[39;49;00m [96mException[39;49;00m [94mas[39;49;00m e:[90m[39;49;00m
+            logger.error([33mf[39;49;00m[33m"[39;49;00m[33mFailed to run e2e test for Bitbucket app: [39;49;00m[33m{[39;49;00me[33m}[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+            [90m# delete the branch[39;49;00m[90m[39;49;00m
+>           pr.decline()[90m[39;49;00m
+            ^^[90m[39;49;00m
+[1m[31mE           UnboundLocalError: cannot access local variable 'pr' where it is not associated with a value[0m
+
+[1m[31mtests/e2e_tests/test_bitbucket_app.py[0m:98: UnboundLocalError
+----------------------------- Captured stdout call -----------------------------
+{"text": "Failed to run e2e test for Bitbucket app: 401 Client Error: Unauthorized for url: https://api.bitbucket.org/2.0/workspaces/codiumai\n", "record": {"elapsed": {"repr": "0:00:24.215621", "seconds": 24.215621}, "exception": null, "extra": {}, "file": {"name": "test_bitbucket_app.py", "path": "/home/azureuser/traceweave-harness/work/pr-agent/tests/e2e_tests/test_bitbucket_app.py"}, "function": "test_e2e_run_bitbucket_app", "level": {"icon": "❌", "name": "ERROR", "no": 40}, "line": 96, "message": "Failed to run e2e test for Bitbucket app: 401 Client Error: Unauthorized for url: https://api.bitbucket.org/2.0/workspaces/codiumai", "module": "test_bitbucket_app", "name": "test_bitbucket_app", "process": {"id": 7, "name": "MainProcess"}, "thread": {"id": 132500560601984, "name": "MainThread"}, "time": {"repr": "2026-10-19 07:18:28.362335+00:00", "timestamp": 1792394308.362335}}}
+------------------------------ Captured log call -------------------------------
+[31m[1mERROR   [0m atlassian.bitbucket.cloud.base:base.py:118 Expecting value: line 1 column 1 (char 0)
+[31m[1m___________________________ test_e2e_run_github_app ____________________________[0m
+
+self = <pr_agent.git_providers.github_provider.GithubProvider object at 0x7882249f7a40>
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92m_get_github_client[39;49;00m([96mself[39;49;00m):[90m[39;49;00m
+        [96mself[39;49;00m.deployment_type = get_settings().get([33m"[39;49;00m[33mGITHUB.DEPLOYMENT_TYPE[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33muser[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+        [96mself[39;49;00m.auth = [94mNone[39;49;00m[90m[39;49;00m
+        [94mif[39;49;00m [96mself[39;49;00m.deployment_type == [33m'[39;49;00m[33mapp[39;49;00m[33m'[39;49;00m:[90m[39;49;00m
+            [94mtry[39;49;00m:[90m[39;49;00m
+>               private_key = get_settings().github.private_key[90m[39;49;00m
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31mpr_agent/git_providers/github_provider.py[0m:1097: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/dynaconf/utils/boxing.py[0m:21: in evaluate
+    [0mvalue = f(dynabox, item, *args, **kwargs)[90m[39;49;00m
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/dynaconf/utils/boxing.py[0m:44: in __getattr__
+    [0m[94mreturn[39;49;00m [96msuper[39;49;00m().[92m__getattr__[39;49;00m(n_item, *args, **kwargs)[90m[39;49;00m
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+A = <Box: {'deployment_type': 'app', 'ratelimit_retries': 5, 'base_url': 'https://api.github.com', 'publish_inline_comment...'try_fix_invalid_inline_comments': True, 'app_name': 'pr-agent', 'ignore_bot_pr': True, 'publish_as_check_run': False}>
+item = 'private_key'
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92m__getattr__[39;49;00m(A,item):[90m[39;49;00m
+    	B=item[90m[39;49;00m
+    	[94mtry[39;49;00m:[90m[39;49;00m
+    		[94mtry[39;49;00m:C=A.[92m__getitem__[39;49;00m(B,_ignore_default=_G)[90m[39;49;00m
+    		[94mexcept[39;49;00m [96mKeyError[39;49;00m:C=[96mobject[39;49;00m.[92m__getattribute__[39;49;00m(A,B)[90m[39;49;00m
+    	[94mexcept[39;49;00m [96mAttributeError[39;49;00m [94mas[39;49;00m E:[90m[39;49;00m
+    		[94mif[39;49;00m B==[33m'[39;49;00m[33m__getstate__[39;49;00m[33m'[39;49;00m:[94mraise[39;49;00m BoxKeyError(B)[94mfrom[39;49;00m[90m [39;49;00m[04m[96m_A[39;49;00m[90m[39;49;00m
+    		[94mif[39;49;00m B==_H:[94mraise[39;49;00m BoxError([33m'[39;49;00m[33m_box_config key must exist[39;49;00m[33m'[39;49;00m)[94mfrom[39;49;00m[90m [39;49;00m[04m[96m_A[39;49;00m[90m[39;49;00m
+    		[94mif[39;49;00m A._box_config[_E]:[90m[39;49;00m
+    			D=A._safe_attr(B)[90m[39;49;00m
+    			[94mif[39;49;00m D [95min[39;49;00m A._box_config[_C]:[94mreturn[39;49;00m A.[92m__getitem__[39;49;00m(A._box_config[_C][D])[90m[39;49;00m
+    		[94mif[39;49;00m A._box_config[_J]:[94mreturn[39;49;00m A.__get_default(B)[90m[39;49;00m
+>   		[94mraise[39;49;00m BoxKeyError([96mstr[39;49;00m(E))[94mfrom[39;49;00m[90m [39;49;00m[04m[96m_A[39;49;00m[90m[39;49;00m
+[1m[31mE     dynaconf.vendor.box.exceptions.BoxKeyError: "'DynaBox' object has no attribute 'private_key'"[0m
+
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/dynaconf/vendor/box/box.py[0m:176: BoxKeyError
+
+[33mThe above exception was the direct cause of the following exception:[0m
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_e2e_run_github_app[39;49;00m():[90m[39;49;00m
+    [90m    [39;49;00m[33m"""[39;49;00m
+    [33m    What we want to do:[39;49;00m
+    [33m    (1) open a PR in a repo 'https://github.com/Codium-ai/pr-agent-tests'[39;49;00m
+    [33m    (2) wait for 5 minutes until the PR is processed by the GitHub app[39;49;00m
+    [33m    (3) check that the relevant tools have been executed[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+        base_branch = [33m"[39;49;00m[33mmain[39;49;00m[33m"[39;49;00m  [90m# or any base branch you want[39;49;00m[90m[39;49;00m
+        new_branch = [33mf[39;49;00m[33m"[39;49;00m[33mgithub_app_e2e_test-[39;49;00m[33m{[39;49;00mdatetime.now().strftime([33m'[39;49;00m[33m%[39;49;00m[33mY-[39;49;00m[33m%[39;49;00m[33mm-[39;49;00m[33m%d[39;49;00m[33m-[39;49;00m[33m%[39;49;00m[33mH-[39;49;00m[33m%[39;49;00m[33mM-[39;49;00m[33m%[39;49;00m[33mS[39;49;00m[33m'[39;49;00m)[33m}[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+        repo_url = [33m'[39;49;00m[33mCodium-ai/pr-agent-tests[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+        get_settings().config.git_provider = [33m"[39;49;00m[33mgithub[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+>       git_provider = get_git_provider()()[90m[39;49;00m
+                       ^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31mtests/e2e_tests/test_github_app.py[0m:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31mpr_agent/git_providers/github_provider.py[0m:57: in __init__
+    [0m[96mself[39;49;00m.github_client = [96mself[39;49;00m._get_github_client()[90m[39;49;00m
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <pr_agent.git_providers.github_provider.GithubProvider object at 0x7882249f7a40>
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92m_get_github_client[39;49;00m([96mself[39;49;00m):[90m[39;49;00m
+        [96mself[39;49;00m.deployment_type = get_settings().get([33m"[39;49;00m[33mGITHUB.DEPLOYMENT_TYPE[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33muser[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+        [96mself[39;49;00m.auth = [94mNone[39;49;00m[90m[39;49;00m
+        [94mif[39;49;00m [96mself[39;49;00m.deployment_type == [33m'[39;49;00m[33mapp[39;49;00m[33m'[39;49;00m:[90m[39;49;00m
+            [94mtry[39;49;00m:[90m[39;49;00m
+                private_key = get_settings().github.private_key[90m[39;49;00m
+                app_id = get_settings().github.app_id[90m[39;49;00m
+            [94mexcept[39;49;00m [96mAttributeError[39;49;00m [94mas[39;49;00m e:[90m[39;49;00m
+>               [94mraise[39;49;00m [96mValueError[39;49;00m([33m"[39;49;00m[33mGitHub app ID and private key are required when using GitHub app deployment[39;49;00m[33m"[39;49;00m) [94mfrom[39;49;00m[90m [39;49;00m[04m[96me[39;49;00m[90m[39;49;00m
+[1m[31mE               ValueError: GitHub app ID and private key are required when using GitHub app deployment[0m
+
+[1m[31mpr_agent/git_providers/github_provider.py[0m:1100: ValueError
+[31m[1m___________________________ test_e2e_run_github_app ____________________________[0m
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_e2e_run_github_app[39;49;00m():[90m[39;49;00m
+        [90m# GitLab setup[39;49;00m[90m[39;49;00m
+        GITLAB_URL = [33m"[39;49;00m[33mhttps://gitlab.com[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+>       GITLAB_TOKEN = get_settings().gitlab.PERSONAL_ACCESS_TOKEN[90m[39;49;00m
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31mtests/e2e_tests/test_gitlab_webhook.py[0m:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/dynaconf/utils/boxing.py[0m:21: in evaluate
+    [0mvalue = f(dynabox, item, *args, **kwargs)[90m[39;49;00m
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/dynaconf/utils/boxing.py[0m:44: in __getattr__
+    [0m[94mreturn[39;49;00m [96msuper[39;49;00m().[92m__getattr__[39;49;00m(n_item, *args, **kwargs)[90m[39;49;00m
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+A = <Box: {'url': 'https://gitlab.com', 'expand_submodule_diffs': False, 'publish_review_as_thread': False, 'pr_commands':...pdate_message=false', '/review', '/improve'], 'handle_push_trigger': False, 'push_commands': ['/describe', '/review']}>
+item = 'PERSONAL_ACCESS_TOKEN'
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92m__getattr__[39;49;00m(A,item):[90m[39;49;00m
+    	B=item[90m[39;49;00m
+    	[94mtry[39;49;00m:[90m[39;49;00m
+    		[94mtry[39;49;00m:C=A.[92m__getitem__[39;49;00m(B,_ignore_default=_G)[90m[39;49;00m
+    		[94mexcept[39;49;00m [96mKeyError[39;49;00m:C=[96mobject[39;49;00m.[92m__getattribute__[39;49;00m(A,B)[90m[39;49;00m
+    	[94mexcept[39;49;00m [96mAttributeError[39;49;00m [94mas[39;49;00m E:[90m[39;49;00m
+    		[94mif[39;49;00m B==[33m'[39;49;00m[33m__getstate__[39;49;00m[33m'[39;49;00m:[94mraise[39;49;00m BoxKeyError(B)[94mfrom[39;49;00m[90m [39;49;00m[04m[96m_A[39;49;00m[90m[39;49;00m
+    		[94mif[39;49;00m B==_H:[94mraise[39;49;00m BoxError([33m'[39;49;00m[33m_box_config key must exist[39;49;00m[33m'[39;49;00m)[94mfrom[39;49;00m[90m [39;49;00m[04m[96m_A[39;49;00m[90m[39;49;00m
+    		[94mif[39;49;00m A._box_config[_E]:[90m[39;49;00m
+    			D=A._safe_attr(B)[90m[39;49;00m
+    			[94mif[39;49;00m D [95min[39;49;00m A._box_config[_C]:[94mreturn[39;49;00m A.[92m__getitem__[39;49;00m(A._box_config[_C][D])[90m[39;49;00m
+    		[94mif[39;49;00m A._box_config[_J]:[94mreturn[39;49;00m A.__get_default(B)[90m[39;49;00m
+>   		[94mraise[39;49;00m BoxKeyError([96mstr[39;49;00m(E))[94mfrom[39;49;00m[90m [39;49;00m[04m[96m_A[39;49;00m[90m[39;49;00m
+[1m[31mE     dynaconf.vendor.box.exceptions.BoxKeyError: "'DynaBox' object has no attribute 'PERSONAL_ACCESS_TOKEN'"[0m
+
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/dynaconf/vendor/box/box.py[0m:176: BoxKeyError
+[31m[1m__________________ test_get_languages_returns_language_names ___________________[0m
+
+cls = <class 'git.util.Actor'>, env_name = 'GIT_COMMITTER_NAME'
+env_email = 'GIT_COMMITTER_EMAIL'
+config_reader = <git.config.GitConfigParser object at 0x788221bf3260>
+
+    [0m[37m@classmethod[39;49;00m[90m[39;49;00m
+    [94mdef[39;49;00m[90m [39;49;00m[92m_main_actor[39;49;00m([90m[39;49;00m
+        [96mcls[39;49;00m,[90m[39;49;00m
+        env_name: [96mstr[39;49;00m,[90m[39;49;00m
+        env_email: [96mstr[39;49;00m,[90m[39;49;00m
+        config_reader: Union[[94mNone[39;49;00m, [33m"[39;49;00m[33mGitConfigParser[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33mSectionConstraint[39;49;00m[33m"[39;49;00m] = [94mNone[39;49;00m,[90m[39;49;00m
+    ) -> [33m"[39;49;00m[33mActor[39;49;00m[33m"[39;49;00m:[90m[39;49;00m
+        actor = Actor([33m"[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+        user_id = [94mNone[39;49;00m  [90m# We use this to avoid multiple calls to getpass.getuser().[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mdef[39;49;00m[90m [39;49;00m[92mdefault_email[39;49;00m() -> [96mstr[39;49;00m:[90m[39;49;00m
+            [94mnonlocal[39;49;00m user_id[90m[39;49;00m
+            [94mif[39;49;00m [95mnot[39;49;00m user_id:[90m[39;49;00m
+                user_id = get_user_id()[90m[39;49;00m
+            [94mreturn[39;49;00m user_id[90m[39;49;00m
+    [90m[39;49;00m
+        [94mdef[39;49;00m[90m [39;49;00m[92mdefault_name[39;49;00m() -> [96mstr[39;49;00m:[90m[39;49;00m
+            [94mreturn[39;49;00m default_email().split([33m"[39;49;00m[33m@[39;49;00m[33m"[39;49;00m)[[94m0[39;49;00m][90m[39;49;00m
+    [90m[39;49;00m
+        [94mfor[39;49;00m attr, evar, cvar, default [95min[39;49;00m ([90m[39;49;00m
+            ([33m"[39;49;00m[33mname[39;49;00m[33m"[39;49;00m, env_name, [96mcls[39;49;00m.conf_name, default_name),[90m[39;49;00m
+            ([33m"[39;49;00m[33memail[39;49;00m[33m"[39;49;00m, env_email, [96mcls[39;49;00m.conf_email, default_email),[90m[39;49;00m
+        ):[90m[39;49;00m
+            [94mtry[39;49;00m:[90m[39;49;00m
+                val = os.environ[evar][90m[39;49;00m
+                [96msetattr[39;49;00m(actor, attr, val)[90m[39;49;00m
+            [94mexcept[39;49;00m [96mKeyError[39;49;00m:[90m[39;49;00m
+                [94mif[39;49;00m config_reader [95mis[39;49;00m [95mnot[39;49;00m [94mNone[39;49;00m:[90m[39;49;00m
+                    [94mtry[39;49;00m:[90m[39;49;00m
+>                       val = config_reader.get([33m"[39;49;00m[33muser[39;49;00m[33m"[39;49;00m, cvar)[90m[39;49;00m
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:844: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/config.py[0m:113: in assure_data_present
+    [0m[94mreturn[39;49;00m func([96mself[39;49;00m, *args, **kwargs)[90m[39;49;00m
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m/usr/local/lib/python3.12/configparser.py[0m:759: in get
+    [0md = [96mself[39;49;00m._unify_values(section, [96mvars[39;49;00m)[90m[39;49;00m
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <git.config.GitConfigParser object at 0x788221bf3260>, section = 'user'
+vars = None
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92m_unify_values[39;49;00m([96mself[39;49;00m, section, [96mvars[39;49;00m):[90m[39;49;00m
+    [90m    [39;49;00m[33m"""Create a sequence of lookups with 'vars' taking priority over[39;49;00m
+    [33m    the 'section' which takes priority over the DEFAULTSECT.[39;49;00m
+    [33m[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+        sectiondict = {}[90m[39;49;00m
+        [94mtry[39;49;00m:[90m[39;49;00m
+            sectiondict = [96mself[39;49;00m._sections[section][90m[39;49;00m
+        [94mexcept[39;49;00m [96mKeyError[39;49;00m:[90m[39;49;00m
+            [94mif[39;49;00m section != [96mself[39;49;00m.default_section:[90m[39;49;00m
+>               [94mraise[39;49;00m NoSectionError(section) [94mfrom[39;49;00m[90m [39;49;00m[94mNone[39;49;00m[90m[39;49;00m
+[1m[31mE               configparser.NoSectionError: No section: 'user'[0m
+
+[1m[31m/usr/local/lib/python3.12/configparser.py[0m:1132: NoSectionError
+
+[33mDuring handling of the above exception, another exception occurred:[0m
+
+tmp_path = PosixPath('/tmp/pytest-of-unknown/pytest-0/test_get_languages_returns_lan0')
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_get_languages_returns_language_names[39;49;00m(tmp_path):[90m[39;49;00m
+        [90m# get_languages() must key on language NAMES (e.g. "Python"), not raw[39;49;00m[90m[39;49;00m
+        [90m# extensions ("py"): sort_files_by_main_languages() maps names back to[39;49;00m[90m[39;49;00m
+        [90m# extensions, so extension keys would drop every file into "Other" and[39;49;00m[90m[39;49;00m
+        [90m# defeat the hunk prioritisation this method exists for.[39;49;00m[90m[39;49;00m
+>       repo = _make_repo(tmp_path, [[33m"[39;49;00m[33ma.py[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33mb.py[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33mc.py[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33md.js[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33mweird.zzz[39;49;00m[33m"[39;49;00m])[90m[39;49;00m
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31mtests/unittest/test_local_git_provider.py[0m:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31mtests/unittest/test_local_git_provider.py[0m:14: in _make_repo
+    [0mrepo.index.commit([33m"[39;49;00m[33minit[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/index/base.py[0m:1108: in commit
+    [0mrval = Commit.create_from_tree([90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/objects/commit.py[0m:567: in create_from_tree
+    [0mcommitter = committer [95mor[39;49;00m Actor.committer(cr)[90m[39;49;00m
+                             ^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:866: in committer
+    [0m[94mreturn[39;49;00m [96mcls[39;49;00m._main_actor([96mcls[39;49;00m.env_committer_name, [96mcls[39;49;00m.env_committer_email, config_reader)[90m[39;49;00m
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:846: in _main_actor
+    [0mval = default()[90m[39;49;00m
+          ^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:832: in default_name
+    [0m[94mreturn[39;49;00m default_email().split([33m"[39;49;00m[33m@[39;49;00m[33m"[39;49;00m)[[94m0[39;49;00m][90m[39;49;00m
+           ^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:828: in default_email
+    [0muser_id = get_user_id()[90m[39;49;00m
+              ^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:477: in get_user_id
+    [0m[94mreturn[39;49;00m [33m"[39;49;00m[33m%s[39;49;00m[33m@[39;49;00m[33m%s[39;49;00m[33m"[39;49;00m % (getpass.getuser(), platform.node())[90m[39;49;00m
+                      ^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mgetuser[39;49;00m():[90m[39;49;00m
+    [90m    [39;49;00m[33m"""Get the username from the environment or password database.[39;49;00m
+    [33m[39;49;00m
+    [33m    First try various environment variables, then the password[39;49;00m
+    [33m    database.  This works on Windows as long as USERNAME is set.[39;49;00m
+    [33m[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mfor[39;49;00m name [95min[39;49;00m ([33m'[39;49;00m[33mLOGNAME[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mUSER[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mLNAME[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mUSERNAME[39;49;00m[33m'[39;49;00m):[90m[39;49;00m
+            user = os.environ.get(name)[90m[39;49;00m
+            [94mif[39;49;00m user:[90m[39;49;00m
+                [94mreturn[39;49;00m user[90m[39;49;00m
+    [90m[39;49;00m
+        [90m# If this fails, the exception will "explain" why[39;49;00m[90m[39;49;00m
+        [94mimport[39;49;00m[90m [39;49;00m[04m[96mpwd[39;49;00m[90m[39;49;00m
+>       [94mreturn[39;49;00m pwd.getpwuid(os.getuid())[[94m0[39;49;00m][90m[39;49;00m
+               ^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31mE       KeyError: 'getpwuid(): uid not found: 1000'[0m
+
+[1m[31m/usr/local/lib/python3.12/getpass.py[0m:169: KeyError
+[31m[1m________ test_get_languages_matches_full_names_and_multipart_extensions ________[0m
+
+cls = <class 'git.util.Actor'>, env_name = 'GIT_COMMITTER_NAME'
+env_email = 'GIT_COMMITTER_EMAIL'
+config_reader = <git.config.GitConfigParser object at 0x788221bf3d70>
+
+    [0m[37m@classmethod[39;49;00m[90m[39;49;00m
+    [94mdef[39;49;00m[90m [39;49;00m[92m_main_actor[39;49;00m([90m[39;49;00m
+        [96mcls[39;49;00m,[90m[39;49;00m
+        env_name: [96mstr[39;49;00m,[90m[39;49;00m
+        env_email: [96mstr[39;49;00m,[90m[39;49;00m
+        config_reader: Union[[94mNone[39;49;00m, [33m"[39;49;00m[33mGitConfigParser[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33mSectionConstraint[39;49;00m[33m"[39;49;00m] = [94mNone[39;49;00m,[90m[39;49;00m
+    ) -> [33m"[39;49;00m[33mActor[39;49;00m[33m"[39;49;00m:[90m[39;49;00m
+        actor = Actor([33m"[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+        user_id = [94mNone[39;49;00m  [90m# We use this to avoid multiple calls to getpass.getuser().[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mdef[39;49;00m[90m [39;49;00m[92mdefault_email[39;49;00m() -> [96mstr[39;49;00m:[90m[39;49;00m
+            [94mnonlocal[39;49;00m user_id[90m[39;49;00m
+            [94mif[39;49;00m [95mnot[39;49;00m user_id:[90m[39;49;00m
+                user_id = get_user_id()[90m[39;49;00m
+            [94mreturn[39;49;00m user_id[90m[39;49;00m
+    [90m[39;49;00m
+        [94mdef[39;49;00m[90m [39;49;00m[92mdefault_name[39;49;00m() -> [96mstr[39;49;00m:[90m[39;49;00m
+            [94mreturn[39;49;00m default_email().split([33m"[39;49;00m[33m@[39;49;00m[33m"[39;49;00m)[[94m0[39;49;00m][90m[39;49;00m
+    [90m[39;49;00m
+        [94mfor[39;49;00m attr, evar, cvar, default [95min[39;49;00m ([90m[39;49;00m
+            ([33m"[39;49;00m[33mname[39;49;00m[33m"[39;49;00m, env_name, [96mcls[39;49;00m.conf_name, default_name),[90m[39;49;00m
+            ([33m"[39;49;00m[33memail[39;49;00m[33m"[39;49;00m, env_email, [96mcls[39;49;00m.conf_email, default_email),[90m[39;49;00m
+        ):[90m[39;49;00m
+            [94mtry[39;49;00m:[90m[39;49;00m
+                val = os.environ[evar][90m[39;49;00m
+                [96msetattr[39;49;00m(actor, attr, val)[90m[39;49;00m
+            [94mexcept[39;49;00m [96mKeyError[39;49;00m:[90m[39;49;00m
+                [94mif[39;49;00m config_reader [95mis[39;49;00m [95mnot[39;49;00m [94mNone[39;49;00m:[90m[39;49;00m
+                    [94mtry[39;49;00m:[90m[39;49;00m
+>                       val = config_reader.get([33m"[39;49;00m[33muser[39;49;00m[33m"[39;49;00m, cvar)[90m[39;49;00m
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:844: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/config.py[0m:113: in assure_data_present
+    [0m[94mreturn[39;49;00m func([96mself[39;49;00m, *args, **kwargs)[90m[39;49;00m
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m/usr/local/lib/python3.12/configparser.py[0m:759: in get
+    [0md = [96mself[39;49;00m._unify_values(section, [96mvars[39;49;00m)[90m[39;49;00m
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <git.config.GitConfigParser object at 0x788221bf3d70>, section = 'user'
+vars = None
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92m_unify_values[39;49;00m([96mself[39;49;00m, section, [96mvars[39;49;00m):[90m[39;49;00m
+    [90m    [39;49;00m[33m"""Create a sequence of lookups with 'vars' taking priority over[39;49;00m
+    [33m    the 'section' which takes priority over the DEFAULTSECT.[39;49;00m
+    [33m[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+        sectiondict = {}[90m[39;49;00m
+        [94mtry[39;49;00m:[90m[39;49;00m
+            sectiondict = [96mself[39;49;00m._sections[section][90m[39;49;00m
+        [94mexcept[39;49;00m [96mKeyError[39;49;00m:[90m[39;49;00m
+            [94mif[39;49;00m section != [96mself[39;49;00m.default_section:[90m[39;49;00m
+>               [94mraise[39;49;00m NoSectionError(section) [94mfrom[39;49;00m[90m [39;49;00m[94mNone[39;49;00m[90m[39;49;00m
+[1m[31mE               configparser.NoSectionError: No section: 'user'[0m
+
+[1m[31m/usr/local/lib/python3.12/configparser.py[0m:1132: NoSectionError
+
+[33mDuring handling of the above exception, another exception occurred:[0m
+
+tmp_path = PosixPath('/tmp/pytest-of-unknown/pytest-0/test_get_languages_matches_ful0')
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_get_languages_matches_full_names_and_multipart_extensions[39;49;00m(tmp_path):[90m[39;49;00m
+        [90m# Beyond simple ".ext", the language map also has full-filename rules[39;49;00m[90m[39;49;00m
+        [90m# ("Dockerfile") and multi-part extensions (".cmake.in"); Path.suffix alone[39;49;00m[90m[39;49;00m
+        [90m# would miss both. Match on the whole filename and dotted-suffix fallbacks.[39;49;00m[90m[39;49;00m
+>       repo = _make_repo(tmp_path, [[33m"[39;49;00m[33mDockerfile[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33mbuild.cmake.in[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33mapp.py[39;49;00m[33m"[39;49;00m])[90m[39;49;00m
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31mtests/unittest/test_local_git_provider.py[0m:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31mtests/unittest/test_local_git_provider.py[0m:14: in _make_repo
+    [0mrepo.index.commit([33m"[39;49;00m[33minit[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/index/base.py[0m:1108: in commit
+    [0mrval = Commit.create_from_tree([90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/objects/commit.py[0m:567: in create_from_tree
+    [0mcommitter = committer [95mor[39;49;00m Actor.committer(cr)[90m[39;49;00m
+                             ^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:866: in committer
+    [0m[94mreturn[39;49;00m [96mcls[39;49;00m._main_actor([96mcls[39;49;00m.env_committer_name, [96mcls[39;49;00m.env_committer_email, config_reader)[90m[39;49;00m
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:846: in _main_actor
+    [0mval = default()[90m[39;49;00m
+          ^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:832: in default_name
+    [0m[94mreturn[39;49;00m default_email().split([33m"[39;49;00m[33m@[39;49;00m[33m"[39;49;00m)[[94m0[39;49;00m][90m[39;49;00m
+           ^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:828: in default_email
+    [0muser_id = get_user_id()[90m[39;49;00m
+              ^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:477: in get_user_id
+    [0m[94mreturn[39;49;00m [33m"[39;49;00m[33m%s[39;49;00m[33m@[39;49;00m[33m%s[39;49;00m[33m"[39;49;00m % (getpass.getuser(), platform.node())[90m[39;49;00m
+                      ^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mgetuser[39;49;00m():[90m[39;49;00m
+    [90m    [39;49;00m[33m"""Get the username from the environment or password database.[39;49;00m
+    [33m[39;49;00m
+    [33m    First try various environment variables, then the password[39;49;00m
+    [33m    database.  This works on Windows as long as USERNAME is set.[39;49;00m
+    [33m[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mfor[39;49;00m name [95min[39;49;00m ([33m'[39;49;00m[33mLOGNAME[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mUSER[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mLNAME[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mUSERNAME[39;49;00m[33m'[39;49;00m):[90m[39;49;00m
+            user = os.environ.get(name)[90m[39;49;00m
+            [94mif[39;49;00m user:[90m[39;49;00m
+                [94mreturn[39;49;00m user[90m[39;49;00m
+    [90m[39;49;00m
+        [90m# If this fails, the exception will "explain" why[39;49;00m[90m[39;49;00m
+        [94mimport[39;49;00m[90m [39;49;00m[04m[96mpwd[39;49;00m[90m[39;49;00m
+>       [94mreturn[39;49;00m pwd.getpwuid(os.getuid())[[94m0[39;49;00m][90m[39;49;00m
+               ^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31mE       KeyError: 'getpwuid(): uid not found: 1000'[0m
+
+[1m[31m/usr/local/lib/python3.12/getpass.py[0m:169: KeyError
+[31m[1m___________ test_get_diff_files_deleted_file_falls_back_to_old_path ____________[0m
+
+cls = <class 'git.util.Actor'>, env_name = 'GIT_COMMITTER_NAME'
+env_email = 'GIT_COMMITTER_EMAIL'
+config_reader = <git.config.GitConfigParser object at 0x7882218e3fb0>
+
+    [0m[37m@classmethod[39;49;00m[90m[39;49;00m
+    [94mdef[39;49;00m[90m [39;49;00m[92m_main_actor[39;49;00m([90m[39;49;00m
+        [96mcls[39;49;00m,[90m[39;49;00m
+        env_name: [96mstr[39;49;00m,[90m[39;49;00m
+        env_email: [96mstr[39;49;00m,[90m[39;49;00m
+        config_reader: Union[[94mNone[39;49;00m, [33m"[39;49;00m[33mGitConfigParser[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33mSectionConstraint[39;49;00m[33m"[39;49;00m] = [94mNone[39;49;00m,[90m[39;49;00m
+    ) -> [33m"[39;49;00m[33mActor[39;49;00m[33m"[39;49;00m:[90m[39;49;00m
+        actor = Actor([33m"[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+        user_id = [94mNone[39;49;00m  [90m# We use this to avoid multiple calls to getpass.getuser().[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mdef[39;49;00m[90m [39;49;00m[92mdefault_email[39;49;00m() -> [96mstr[39;49;00m:[90m[39;49;00m
+            [94mnonlocal[39;49;00m user_id[90m[39;49;00m
+            [94mif[39;49;00m [95mnot[39;49;00m user_id:[90m[39;49;00m
+                user_id = get_user_id()[90m[39;49;00m
+            [94mreturn[39;49;00m user_id[90m[39;49;00m
+    [90m[39;49;00m
+        [94mdef[39;49;00m[90m [39;49;00m[92mdefault_name[39;49;00m() -> [96mstr[39;49;00m:[90m[39;49;00m
+            [94mreturn[39;49;00m default_email().split([33m"[39;49;00m[33m@[39;49;00m[33m"[39;49;00m)[[94m0[39;49;00m][90m[39;49;00m
+    [90m[39;49;00m
+        [94mfor[39;49;00m attr, evar, cvar, default [95min[39;49;00m ([90m[39;49;00m
+            ([33m"[39;49;00m[33mname[39;49;00m[33m"[39;49;00m, env_name, [96mcls[39;49;00m.conf_name, default_name),[90m[39;49;00m
+            ([33m"[39;49;00m[33memail[39;49;00m[33m"[39;49;00m, env_email, [96mcls[39;49;00m.conf_email, default_email),[90m[39;49;00m
+        ):[90m[39;49;00m
+            [94mtry[39;49;00m:[90m[39;49;00m
+                val = os.environ[evar][90m[39;49;00m
+                [96msetattr[39;49;00m(actor, attr, val)[90m[39;49;00m
+            [94mexcept[39;49;00m [96mKeyError[39;49;00m:[90m[39;49;00m
+                [94mif[39;49;00m config_reader [95mis[39;49;00m [95mnot[39;49;00m [94mNone[39;49;00m:[90m[39;49;00m
+                    [94mtry[39;49;00m:[90m[39;49;00m
+>                       val = config_reader.get([33m"[39;49;00m[33muser[39;49;00m[33m"[39;49;00m, cvar)[90m[39;49;00m
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:844: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/config.py[0m:113: in assure_data_present
+    [0m[94mreturn[39;49;00m func([96mself[39;49;00m, *args, **kwargs)[90m[39;49;00m
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m/usr/local/lib/python3.12/configparser.py[0m:759: in get
+    [0md = [96mself[39;49;00m._unify_values(section, [96mvars[39;49;00m)[90m[39;49;00m
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <git.config.GitConfigParser object at 0x7882218e3fb0>, section = 'user'
+vars = None
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92m_unify_values[39;49;00m([96mself[39;49;00m, section, [96mvars[39;49;00m):[90m[39;49;00m
+    [90m    [39;49;00m[33m"""Create a sequence of lookups with 'vars' taking priority over[39;49;00m
+    [33m    the 'section' which takes priority over the DEFAULTSECT.[39;49;00m
+    [33m[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+        sectiondict = {}[90m[39;49;00m
+        [94mtry[39;49;00m:[90m[39;49;00m
+            sectiondict = [96mself[39;49;00m._sections[section][90m[39;49;00m
+        [94mexcept[39;49;00m [96mKeyError[39;49;00m:[90m[39;49;00m
+            [94mif[39;49;00m section != [96mself[39;49;00m.default_section:[90m[39;49;00m
+>               [94mraise[39;49;00m NoSectionError(section) [94mfrom[39;49;00m[90m [39;49;00m[94mNone[39;49;00m[90m[39;49;00m
+[1m[31mE               configparser.NoSectionError: No section: 'user'[0m
+
+[1m[31m/usr/local/lib/python3.12/configparser.py[0m:1132: NoSectionError
+
+[33mDuring handling of the above exception, another exception occurred:[0m
+
+tmp_path = PosixPath('/tmp/pytest-of-unknown/pytest-0/test_get_diff_files_deleted_fi0')
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_get_diff_files_deleted_file_falls_back_to_old_path[39;49;00m(tmp_path):[90m[39;49;00m
+        [90m# A plain deletion has no "new side": GitPython sets diff_item.b_path to None.[39;49;00m[90m[39;49;00m
+        [90m# The filename must fall back to a_path (the old path) instead of None, or[39;49;00m[90m[39;49;00m
+        [90m# downstream consumers keying on file.filename (e.g. set_file_languages'[39;49;00m[90m[39;49;00m
+        [90m# file.filename.rsplit('.')) hit AttributeError on NoneType. See issue #2580.[39;49;00m[90m[39;49;00m
+>       repo = _make_repo(tmp_path, [[33m"[39;49;00m[33mkeep.py[39;49;00m[33m"[39;49;00m, [33m"[39;49;00m[33mgone.py[39;49;00m[33m"[39;49;00m])[90m[39;49;00m
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+
+[1m[31mtests/unittest/test_local_git_provider.py[0m:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31mtests/unittest/test_local_git_provider.py[0m:14: in _make_repo
+    [0mrepo.index.commit([33m"[39;49;00m[33minit[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/index/base.py[0m:1108: in commit
+    [0mrval = Commit.create_from_tree([90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/objects/commit.py[0m:567: in create_from_tree
+    [0mcommitter = committer [95mor[39;49;00m Actor.committer(cr)[90m[39;49;00m
+                             ^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:866: in committer
+    [0m[94mreturn[39;49;00m [96mcls[39;49;00m._main_actor([96mcls[39;49;00m.env_committer_name, [96mcls[39;49;00m.env_committer_email, config_reader)[90m[39;49;00m
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:846: in _main_actor
+    [0mval = default()[90m[39;49;00m
+          ^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:832: in default_name
+    [0m[94mreturn[39;49;00m default_email().split([33m"[39;49;00m[33m@[39;49;00m[33m"[39;49;00m)[[94m0[39;49;00m][90m[39;49;00m
+           ^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:828: in default_email
+    [0muser_id = get_user_id()[90m[39;49;00m
+              ^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31m../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/git/util.py[0m:477: in get_user_id
+    [0m[94mreturn[39;49;00m [33m"[39;49;00m[33m%s[39;49;00m[33m@[39;49;00m[33m%s[39;49;00m[33m"[39;49;00m % (getpass.getuser(), platform.node())[90m[39;49;00m
+                      ^^^^^^^^^^^^^^^^^[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mgetuser[39;49;00m():[90m[39;49;00m
+    [90m    [39;49;00m[33m"""Get the username from the environment or password database.[39;49;00m
+    [33m[39;49;00m
+    [33m    First try various environment variables, then the password[39;49;00m
+    [33m    database.  This works on Windows as long as USERNAME is set.[39;49;00m
+    [33m[39;49;00m
+    [33m    """[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+        [94mfor[39;49;00m name [95min[39;49;00m ([33m'[39;49;00m[33mLOGNAME[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mUSER[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mLNAME[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mUSERNAME[39;49;00m[33m'[39;49;00m):[90m[39;49;00m
+            user = os.environ.get(name)[90m[39;49;00m
+            [94mif[39;49;00m user:[90m[39;49;00m
+                [94mreturn[39;49;00m user[90m[39;49;00m
+    [90m[39;49;00m
+        [90m# If this fails, the exception will "explain" why[39;49;00m[90m[39;49;00m
+        [94mimport[39;49;00m[90m [39;49;00m[04m[96mpwd[39;49;00m[90m[39;49;00m
+>       [94mreturn[39;49;00m pwd.getpwuid(os.getuid())[[94m0[39;49;00m][90m[39;49;00m
+               ^^^^^^^^^^^^^^^^^^^^^^^^^[90m[39;49;00m
+[1m[31mE       KeyError: 'getpwuid(): uid not found: 1000'[0m
+
+[1m[31m/usr/local/lib/python3.12/getpass.py[0m:169: KeyError
+[33m=============================== warnings summary ===============================[0m
+pr_agent/tools/pr_similar_issue.py:687
+  /home/azureuser/traceweave-harness/work/pr-agent/pr_agent/tools/pr_similar_issue.py:687: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class Metadata(BaseModel):
+
+tests/unittest/test_file_filter.py:44
+  /home/azureuser/traceweave-harness/work/pr-agent/tests/unittest/test_file_filter.py:44: SyntaxWarning: invalid escape sequence '\.'
+    monkeypatch.setattr(global_settings.ignore, 'regex', ['^file[2-4]\..*$'])
+
+tests/unittest/test_file_filter.py:65
+  /home/azureuser/traceweave-harness/work/pr-agent/tests/unittest/test_file_filter.py:65: SyntaxWarning: invalid escape sequence '\.'
+    monkeypatch.setattr(global_settings.ignore, 'regex', ['(((||', '^file[2-4]\..*$'])
+
+../../../traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/starlette/testclient.py:51
+  /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/starlette/testclient.py:51: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+tests/e2e_tests/test_bitbucket_app.py::test_e2e_run_bitbucket_app
+  /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/requests/auth.py:45: DeprecationWarning: Non-string usernames will no longer be supported in Requests 3.0.0. Please convert the object you've passed in (None) to a string or bytes object in the near future to avoid problems.
+    warnings.warn(
+
+tests/e2e_tests/test_bitbucket_app.py::test_e2e_run_bitbucket_app
+  /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/requests/auth.py:55: DeprecationWarning: Non-string passwords will no longer be supported in Requests 3.0.0. Please convert the object you've passed in (<class 'NoneType'>) to a string or bytes object in the near future to avoid problems.
+    warnings.warn(
+
+tests/unittest/test_litellm_callback_drain.py::test_drain_delivers_callbacks_before_the_loop_closes
+  /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/litellm/litellm_core_utils/logging_worker.py:74: RuntimeWarning: coroutine 'Logging.async_success_handler' was never awaited
+    self._queue = None
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/unittest/test_mosaico_a2a_roundtrip.py: 8 warnings
+tests/unittest/test_mosaico_smoke.py: 24 warnings
+  /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/a2a/utils/proto_utils.py:303: DeprecationWarning: label() is deprecated. Use is_required() or is_repeated() instead.
+    errors = _validate_proto_required_fields_internal(msg)
+
+tests/unittest/test_mosaico_a2a_roundtrip.py: 10 warnings
+tests/unittest/test_mosaico_smoke.py: 30 warnings
+  /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/a2a/utils/proto_utils.py:263: DeprecationWarning: label() is deprecated. Use is_required() or is_repeated() instead.
+    sub_errs = _validate_proto_required_fields_internal(val)
+
+tests/unittest/test_mosaico_a2a_roundtrip.py: 4 warnings
+tests/unittest/test_mosaico_smoke.py: 12 warnings
+  /home/azureuser/traceweave-data/study1/venv/pr-agent/lib/python3.12/site-packages/a2a/utils/proto_utils.py:272: DeprecationWarning: label() is deprecated. Use is_required() or is_repeated() instead.
+    sub_errs = _validate_proto_required_fields_internal(item)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m tests/e2e_tests/test_bitbucket_app.py::[1mtest_e2e_run_bitbucket_app[0m - UnboundLocalError: cannot access local variable 'pr' where it is not associ...
+[31mFAILED[0m tests/e2e_tests/test_github_app.py::[1mtest_e2e_run_github_app[0m - ValueError: GitHub app ID and private key are required when using GitHub ap...
+[31mFAILED[0m tests/e2e_tests/test_gitlab_webhook.py::[1mtest_e2e_run_github_app[0m - dynaconf.vendor.box.exceptions.BoxKeyError: "'DynaBox' object has no attrib...
+[31mFAILED[0m tests/unittest/test_local_git_provider.py::[1mtest_get_languages_returns_language_names[0m - KeyError: 'getpwuid(): uid not found: 1000'
+[31mFAILED[0m tests/unittest/test_local_git_provider.py::[1mtest_get_languages_matches_full_names_and_multipart_extensions[0m - KeyError: 'getpwuid(): uid not found: 1000'
+[31mFAILED[0m tests/unittest/test_local_git_provider.py::[1mtest_get_diff_files_deleted_file_falls_back_to_old_path[0m - KeyError: 'getpwuid(): uid not found: 1000'
+[31m[31m[1m6 failed[0m, [32m1710 passed[0m, [33m1 skipped[0m, [33m1 xfailed[0m, [33m95 warnings[0m[31m in 112.39s (0:01:52)[0m[0m
+wrote 1233 edges (903 internal, 330 entry) over 88 modules -> /home/azureuser/traceweave-harness/bundles/pr-agent/trace.json
+===== trace rc=0 in 118 s
+
+===== 2026-10-19T07:19:59Z pr-agent bundle
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/pr-agent/bin/python build_bundle.py pr-agent --static /home/azureuser/traceweave-data/static/pr-agent --runtime /home/azureuser/traceweave-harness/bundles/pr-agent/trace.json
+pr-agent: 1100 nodes, pycg 978 / pyright 1250 static edges, 1086 runtime edges (0 callees unmapped)
+===== bundle rc=0 in 1 s
+
+===== 2026-10-19T07:20:00Z pr-agent truth
++ cd /home/azureuser/traceweave-harness
++ TW_TIMEOUT=3000
++ /home/azureuser/traceweave-data/study1/venv/pr-agent/bin/python tw.py truth pr-agent
+pr-agent: 1135 in-package call sites, 731 caller->callee pairs, 9534 package lines ran; suite 1710 passed in 35.61 s -> bundles/pr-agent/truth.json
+===== truth rc=0 in 71 s
+
+===== 2026-10-19T07:21:11Z pr-agent bench
++ cd /home/azureuser/traceweave-harness
++ /home/azureuser/traceweave-data/study1/venv/pr-agent/bin/python tw.py bench pr-agent
++ mv /home/azureuser/traceweave-data/study1/bench/pr-agent.txt.tmp /home/azureuser/traceweave-data/study1/bench/pr-agent.txt
++ cat /home/azureuser/traceweave-data/study1/bench/pr-agent.txt
+
+pr-agent: 1676 items, 508 real calls; 113 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.30   1.00   0.47   1.00
+  PyCG                              all   0.90   0.81   0.85   0.71
+  Pyright                           all   0.85   0.95   0.90   0.86
+  PyCG ∪ Pyright                    all   0.85   0.95   0.90   0.86
+  name match                     sample   0.24   1.00   0.39   1.00
+  PyCG                           sample   0.87   0.89   0.88   0.81
+  Pyright                        sample   0.66   0.93   0.77   0.81
+  PyCG ∪ Pyright                 sample   0.66   0.93   0.77   0.81
+===== bench rc=0 in 3 s

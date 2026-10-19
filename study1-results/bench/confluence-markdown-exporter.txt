@@ -1,0 +1,11 @@
+
+confluence-markdown-exporter: 553 items, 150 real calls; 56 real calls whose target is never named
+  resolver                           on   prec recall     F1   shared-name recall
+  name match                        all   0.27   1.00   0.43   1.00
+  PyCG                              all   0.81   0.69   0.75   0.25
+  Pyright                           all   0.80   0.78   0.79   0.50
+  PyCG ∪ Pyright                    all   0.80   0.78   0.79   0.50
+  name match                     sample   0.22   1.00   0.36   1.00
+  PyCG                           sample   0.73   0.59   0.66   0.33
+  Pyright                        sample   0.72   0.66   0.69   0.44
+  PyCG ∪ Pyright                 sample   0.72   0.66   0.69   0.44
