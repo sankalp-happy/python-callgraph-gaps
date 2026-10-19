@@ -10,7 +10,7 @@
 | **created** | 2026-07-27 |
 | **project** | TraceWeave-Core — static-vs-runtime call-graph completeness on Python repositories (H2a) |
 | **internal deadline** | ~2026-10-26 (12 weeks) |
-| **scope** | Python only. H2a + DynBench-Core + feasibility survey; bounded H2b-lite/H2c-lite. See `../research_plans.md` D2 for the full program this is a slice of. |
+| **scope** | Python only. H2a + DynBench-Core + feasibility survey; bounded H2b-lite/H2c-lite. See `../docs/plan/research_plans.md` D2 for the full program this is a slice of. |
 | **host platform** | Linux 6.8.0-124-generic, x86_64, 16 cores, 38 GB RAM, 345 GB free |
 | **host python** | 3.10.12 — **note: no `sys.monitoring`.** All tracing runs inside containers; the host never traces. The density scorer must also be run containerised, or 3.11+ syntax silently fails to parse. |
 | **docker** | 29.5.3, context `desktop-linux` (**Docker Desktop**) |
@@ -76,7 +76,7 @@ Most Python dependencies are pure-Python wheels whose versions are platform-inde
 `lock_sha256` will often match across platforms — verified: re-running `click` on amd64 reproduced
 `lock_sha256=10dc90ae…` exactly. **But any repo with compiled extensions** (numpy, lxml,
 cryptography, pydantic-core) **can resolve different wheels and therefore a different
-`lock_sha256`.** Do not mix platforms within a corpus without re-triaging. See `../MIGRATION.md` §4.
+`lock_sha256`.** Do not mix platforms within a corpus without re-triaging. See `../docs/MIGRATION.md` §4.
 
 ### Consequence to carry into the paper
 Only repos that end up on **3.12** get `sys.monitoring`. Every repo rescued onto ≤3.11 by an
@@ -244,7 +244,7 @@ Recorded here so it is not relitigated mid-project. All are future work in the p
 | 1.0 | 2026-07-27 | Added §1.1 environment constraints (Docker Desktop `/tmp` unmountable; bind-mount overhead ⇒ report ratios not absolutes). Density scorer calibrated and frozen at 4.0/10.0. |
 | **1.1** | 2026-07-27 | **Added `linux/arm64` digests for all 5 images** (migration to Apple Silicon). `active_platform: auto` with daemon detection; `triage.sh` records `platform`/`host_arch`/`emulated` and warns on emulation. No amd64 digest changed — the 1.0 pins are preserved intact. |
 | **1.3** | 2026-08-17 | **Phase 1 §1.2 built: `static/`, both baselines.** Added **§2.2** — the static-extraction image, and the fact that **node is its one unpinned component** (recorded per build, not assumed). **Retired the unused `tree-sitter-python 0.25.0` pin**: baseline 2 parses with CPython's `ast`, because node identity must equal `co_qualname` and tree-sitter would mean reimplementing exactly that (§2, `docs/static_extraction_spec.md`). No image digest and no tool pin changed, so `config/base_images.json` stays at `manifest_version 1.1`. §7: the ins1 amendment **shipped** as SOP v1.2 (`docs/sop_v1.2_changelog.md`), and the **redistribution gate is decided** — PERMISSIVE + non-archived, with the ins3 Part 1-R licence review run first; enforced by `runner.py`'s `redistribution_verdict()` as a field beside `admit`, never merged into it. |
-| **1.2** | 2026-08-09 | **Pinned Pyright `1.1.411`** (published 2026-06-25), closing the last blank pin. Added **§2.1**: the **PyCG 0.0.8** sdist is unimportable on Linux and requires a `pycg`→`PyCG` symlink shim, and it does not run on Python 3.12 at all — so static extraction runs on ≤3.11 independently of a repo's triaged `pyver`. PyCG pin **unchanged**; measured parse-failure rate recorded per interpreter. **No image digest changed**, so `config/base_images.json` keeps `manifest_version 1.1` — it versions the image pins, and none moved. Host topology settled in `../MIGRATION.md` §4: Mac is the manager host, the x86_64 box is the execution host, and **the corpus is amd64**. |
+| **1.2** | 2026-08-09 | **Pinned Pyright `1.1.411`** (published 2026-06-25), closing the last blank pin. Added **§2.1**: the **PyCG 0.0.8** sdist is unimportable on Linux and requires a `pycg`→`PyCG` symlink shim, and it does not run on Python 3.12 at all — so static extraction runs on ≤3.11 independently of a repo's triaged `pyver`. PyCG pin **unchanged**; measured parse-failure rate recorded per interpreter. **No image digest changed**, so `config/base_images.json` keeps `manifest_version 1.1` — it versions the image pins, and none moved. Host topology settled in `../docs/MIGRATION.md` §4: Mac is the manager host, the x86_64 box is the execution host, and **the corpus is amd64**. |
 
 ## 7. Outstanding before Phase 1
 
@@ -287,7 +287,7 @@ definitions remain frozen in `docs/metric_spec_h2a.md`; nothing in `static/` may
 | **guards** | `tests/test_static.py`, 39 checks, wired into `tests/run_checks.sh` as check 7. Asserted on click as well as on fixtures — every invariant in there, when it broke, silently *deleted* edges rather than raising. |
 
 **Validated on the manager host** (arm64, `--seeds 0,42`; development output, **not** corpus records
-— §1 and `../MIGRATION.md` §4 put the corpus on the x86_64 box):
+— §1 and `../docs/MIGRATION.md` §4 put the corpus on the x86_64 box):
 
 | repo | callable nodes | call sites | PyCG `S` | Pyright `S` | Jaccard | unresolved sites |
 |---|---|---|---|---|---|---|

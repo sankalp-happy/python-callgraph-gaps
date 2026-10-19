@@ -83,7 +83,8 @@ collected, `lock_sha256=10dc90ae…` — which reproduces the committed
 `corpus.amd64-baseline` record byte for byte across architectures.
 
 **2. `triage.sh` v1.2 and the ins1 §6 amendment ship together or not at all.**
-See `traceweave/triage/triage_v1.2.patch` and `ins1_v1.1_amendment_draft.md`.
+See `traceweave/triage/triage.sh` (now at v1.2), `traceweave/docs/sop_v1.2_changelog.md`
+and `docs/sop/ins1_v1.1_amendment_draft.md`.
 v1.1 records a repo with one unimportable optional-extra test module as
 `COLLECT_FAIL` with an empty `n_collected` and never runs its suite; `psf/black`
 is 442-passing and was being filed that way. Sending the 558 out under v1.1 would

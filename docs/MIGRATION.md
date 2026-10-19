@@ -60,9 +60,11 @@ ls -lh traceweave-migrate.tar.gz     # ~1.6 MB
 
 That captures:
 - `traceweave/` — all code, specs, fixtures, pins
-- `ins1.md`, `ins2.md`, `ins3.md` — the annotator SOPs the whole design references
-- `research_plans.md`, `final_paper.pdf` — the parent research docs (`README.md` links to both by relative path, so keep them together)
-- `given-the-convo-history-cheerful-pizza.md` — the approved 12-week plan
+- `docs/sop/` — the annotator SOPs the whole design references (v1.1 sheets, plus
+  `v1.0-superseded/` which the changelogs still cite)
+- `docs/plan/research_plans.md` — the parent research doc (`traceweave/README.md` links to it
+  by relative path, so keep the tree intact)
+- `docs/plan/plan_12week_h2a.md` — the approved 12-week plan
 - `traceweave-data/out/` — the irreplaceable provenance
 
 ## 3. On the new machine

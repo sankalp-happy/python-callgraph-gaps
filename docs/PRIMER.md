@@ -1,17 +1,4 @@
-PRIMER — what to know before you start
-Read §1 before you touch anything. That's 30 minutes. The rest can wait until you hit it.
-
-Total if you read everything: ~2.5 hours. You do not need to.
-
-1. The 30-minute critical path
-1.1 docker run — the only Docker you need
-Everything in this project happens as: start a container from a pinned image, mount a folder into it, run one command, throw the container away.
-
-docker run --rm --network=none -v /host/path:/repo:ro python@sha256:55842c... python3 /s/script.py /repo
-Flag	What it does	Why it's here
---rm	delete the container when the command exits	nothing persists; state lives on disk outside
--v host:container	bind mount — makes a host folder visible inside	this is how the code being analysed gets in
-PRIMER — What to know before you start
+# PRIMER — What to know before you start
 
 Read §1 before you touch anything (about 30 minutes). The whole document is ~2.5 hours — you do not need to read everything up front.
 
@@ -170,7 +157,3 @@ This section saves time and late-night questions.
 Every pin, digest, and frozen threshold exists so published numbers are measurements, not the result of searching until something looked good.
 
 Report what actually happened, including failures and workarounds. A well-documented failure is more valuable than an unreported success. If following instructions forces you to break a rule, stop and ask — that's the correct action.
-
----
-
-If you'd like, I can also: add a short README snippet showing the exact `docker run` and `git fetch` commands to copy, or open a PR with this change. Which would you prefer?

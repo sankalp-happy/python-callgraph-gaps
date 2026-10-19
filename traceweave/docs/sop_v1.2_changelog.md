@@ -6,7 +6,7 @@
 | **Sheet version to write from now on** | **`v1.2`** |
 | **Affects** | anyone doing the daily 10% spot-check. ins2 and ins3 are unchanged. |
 | **Date** | 2026-08-17 |
-| **Supersedes** | the draft at `../../ins1_v1.1_amendment_draft.md`, now shipped |
+| **Supersedes** | the draft at `../../docs/sop/ins1_v1.1_amendment_draft.md`, now shipped |
 
 Everything in `ins1.md` and in `sop_v1.1_changelog.md` still applies. Only what is
 below changes, and only for the ins1 triage sheet.

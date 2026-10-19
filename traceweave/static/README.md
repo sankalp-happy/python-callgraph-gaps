@@ -40,7 +40,7 @@ python3 extract.py report
 ```
 
 The corpus run belongs on the **execution host** — see `run_corpus.sh` and
-`../../MIGRATION.md` §4.
+`../../docs/MIGRATION.md` §4.
 
 ---
 

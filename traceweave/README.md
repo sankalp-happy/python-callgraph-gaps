@@ -7,10 +7,10 @@
 | **Started** | 2026-07-27 |
 | **Deadline** | ~2026-10-26 (12 weeks) |
 | **Staffing** | 1 engineer + 2–3 annotators |
-| **Current state** | **Phase 0 complete. Phase 1 §1.1 and §1.2 built** — the triage queue runner and both static baselines. §1.3 (ins2 workload capture) is annotator work; the 558-repo triage and the corpus extraction are the two long unattended runs, both for the x86_64 execution host (`../MIGRATION.md` §4). |
-| **Approved plan** | `~/.claude/plans/given-the-convo-history-cheerful-pizza.md` |
-| **Parent research doc** | `../research_plans.md` (Direction 2) |
-| **Underlying review** | `../final_paper.pdf` |
+| **Current state** | **Phase 0 complete. Phase 1 §1.1 and §1.2 built** — the triage queue runner and both static baselines. §1.3 (ins2 workload capture) is annotator work; the 558-repo triage and the corpus extraction are the two long unattended runs, both for the x86_64 execution host (`../docs/MIGRATION.md` §4). |
+| **Approved plan** | `../docs/plan/plan_12week_h2a.md` |
+| **Parent research doc** | `../docs/plan/research_plans.md` (Direction 2) |
+| **Underlying review** | the team's earlier systematic review (not distributed in this repository) |
 
 ---
 
@@ -35,7 +35,7 @@
 
 ## 1. What this project claims
 
-The systematic review in `../final_paper.pdf` (§VIII.B) identifies static graph quality as a
+The team's earlier systematic review (§VIII.B; not distributed here) identifies static graph quality as a
 bottleneck for repository-level code modernization: dynamic languages and dynamic features break
 graph extraction, and the review argues "the bottleneck is therefore graph construction and the
 amount of information that can be represented."
