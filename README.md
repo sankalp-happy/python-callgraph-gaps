@@ -91,7 +91,9 @@ artifacts, 78 where both analysers finished).
 repository's `inventory.json`, `callsites.json` and `pyright.json` (about 200 MB unpacked), is the
 `phase1-results.tar.gz` asset on the
 [`v1.0-paper` release](https://github.com/sankalp-happy/python-callgraph-gaps/releases/tag/v1.0-paper).
-Unpack it over the clone with `tar xzf phase1-results.tar.gz -C phase1-results`.
+Unpack its `static/` tree over the clone with
+`tar xzf phase1-results.tar.gz -C phase1-results ./static`; the archive's top-level reports
+predate the committed `RUN_REPORT.md` erratum, so leave those as they are in git.
 
 ### Study 1: runtime traces and LLM resolution (RQ3, RQ4)
 
