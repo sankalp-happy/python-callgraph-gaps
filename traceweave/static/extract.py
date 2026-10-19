@@ -339,7 +339,7 @@ def targets_from_triage(ledger: Path, host_arch: str,
     rows = read_jsonl(ledger)
     if not rows:
         return []
-    arches = {r.get("host_arch", "") for r in rows if r.get("host_arch")}
+    arches = {norm_arch(r.get("host_arch", "")) for r in rows if r.get("host_arch")}
     foreign = arches - {host_arch}
     if foreign and arches - foreign == set():
         log(f"FATAL: ledger was built on {sorted(arches)}, this host is "
@@ -351,7 +351,7 @@ def targets_from_triage(ledger: Path, host_arch: str,
     for row in rows:
         if row.get("admit") != "yes":
             continue
-        if row.get("host_arch") and row["host_arch"] != host_arch:
+        if row.get("host_arch") and norm_arch(row["host_arch"]) != host_arch:
             continue
         # A ledger written before the gate existed has no `corpus_eligible`;
         # treat it as eligible rather than silently extracting nothing.
@@ -387,9 +387,25 @@ def targets_from_file(path: Path) -> list[dict]:
     return out
 
 
+# Docker reports amd64/arm64; platform.machine() reports x86_64/aarch64. The
+# triage ledger records Docker's spelling (runner.py detect_arch uses
+# `docker version --format {{.Server.Arch}}`), so both sides are normalised
+# before comparison. Without this, MANIFEST §1's guard fires on a corpus that
+# is in fact single-architecture, and the per-repo filter in
+# targets_from_triage silently skips every row -- a zero-repo run that looks
+# like a success.
+_ARCH_ALIASES = {"x86_64": "amd64", "amd64": "amd64",
+                 "aarch64": "arm64", "arm64": "arm64"}
+
+
+def norm_arch(a: str) -> str:
+    a = (a or "").strip().lower()
+    return _ARCH_ALIASES.get(a, a)
+
+
 def host_arch() -> str:
     import platform
-    return platform.machine()
+    return norm_arch(platform.machine())
 
 
 def cmd_run(args) -> int:
@@ -415,8 +431,43 @@ def cmd_run(args) -> int:
     done = {r["repo_url"] for r in read_jsonl(ledger)
             if r.get("status") == "ok"} if not args.force else set()
     todo = [t for t in targets if t["repo_url"] not in done]
+    if args.shard:
+        # i/n: split the REMAINING work n ways, deterministically. Round-robin
+        # over repo_url-sorted order rather than contiguous blocks, so the slow
+        # repos (a PyCG timeout costs ~90 min) spread evenly instead of piling
+        # into one shard. Each shard needs its own --data dir; merge the
+        # ledgers afterwards (run_corpus.sh header). Applied after the `done`
+        # filter so the split is even in work, not in nominal repo count.
+        try:
+            i, n = (int(x) for x in str(args.shard).split("/"))
+        except ValueError:
+            log(f"FATAL: --shard {args.shard!r}: expected the form i/n, e.g. 1/3")
+            return 2
+        if not 1 <= i <= n:
+            log(f"FATAL: --shard {args.shard}: need 1 <= i <= n")
+            return 2
+        # Deal most-expensive-first rather than by name. A repo already known
+        # to cost ~90 min (PyCG timing out on every seed) must not land three
+        # deep in one shard while another gets none -- wall clock is the
+        # slowest shard, not the average. Cost comes from any prior attempt in
+        # this ledger; unseen repos sort as 0 and spread round-robin.
+        cost: dict[str, float] = {}
+        for r in read_jsonl(ledger):
+            u = r.get("repo_url")
+            if not u:
+                continue
+            try:
+                sec = float(r.get("seconds_total") or 0)
+            except (TypeError, ValueError):
+                sec = 0.0
+            cost[u] = max(cost.get(u, 0.0), sec)
+        ordered = sorted(todo, key=lambda t: (-cost.get(t["repo_url"], 0.0),
+                                              t["repo_url"]))
+        todo = [t for k, t in enumerate(ordered) if k % n == i - 1]
+        log(f"[run] --shard {i}/{n}: this copy takes {len(todo)} of the "
+            f"remaining repos")
     log(f"[run] {len(todo)} repos to extract ({len(targets) - len(todo)} already "
-        f"in {ledger.name}), image={args.image}")
+        f"in {ledger.name} or another shard), image={args.image}")
 
     if args.dry_run:
         for t in todo:
@@ -592,6 +643,10 @@ def main() -> int:
     run.add_argument("--image", default=pycg_baseline.DEFAULT_IMAGE)
     run.add_argument("--seeds", default=",".join(pycg_baseline.DEFAULT_SEEDS))
     run.add_argument("--site-packages")
+    run.add_argument("--shard", default=None, metavar="i/n",
+                     help="process only shard i of n of the remaining repos "
+                          "(1-based). Each shard needs its own --data dir; "
+                          "merge the ledgers afterwards.")
     run.add_argument("--include-survey-only", action="store_true",
                      help="also extract repos the MANIFEST §7 redistribution gate "
                           "keeps out of the corpus (feasibility survey only)")

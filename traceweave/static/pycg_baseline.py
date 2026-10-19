@@ -93,6 +93,21 @@ HERE = Path(__file__).resolve().parent
 # Running PyCG
 # --------------------------------------------------------------------------
 
+def kill_container(name: str) -> None:
+    """Stop a container the timeout path abandoned.
+
+    subprocess's `timeout=` kills the `docker run` CLIENT, not the container:
+    the daemon keeps it running at 100% CPU indefinitely, and `--rm` only fires
+    when it exits, which it never does. Every timeout used to leak one core.
+    Best-effort and silent -- it may already have exited on its own.
+    """
+    try:
+        subprocess.run(["docker", "kill", name], capture_output=True,
+                       text=True, timeout=60)
+    except (OSError, subprocess.SubprocessError):
+        pass
+
+
 def run_pycg(repo: Path, rel_files: list[str], src_root_rel: str, seed: str,
              image: str = DEFAULT_IMAGE, memory: str = "8g",
              timeout: int = 1800) -> dict:
@@ -102,8 +117,10 @@ def run_pycg(repo: Path, rel_files: list[str], src_root_rel: str, seed: str,
     here rather than exceptional.
     """
     listing = "\n".join(f"/repo/{f}" for f in rel_files)
+    # --name so the timeout path below can actually stop the container.
+    name = f"tw-pycg-{os.getpid()}-{seed}-{time.time_ns():x}"
     argv = [
-        "docker", "run", "--rm", f"--memory={memory}",
+        "docker", "run", "--rm", f"--name={name}", f"--memory={memory}",
         "-e", f"PYTHONHASHSEED={seed}",
         "--entrypoint", "python3",
         "-v", f"{repo}:/repo:ro", "-v", f"{HERE}:/s:ro",
@@ -116,6 +133,7 @@ def run_pycg(repo: Path, rel_files: list[str], src_root_rel: str, seed: str,
         proc = subprocess.run(argv, input=listing, capture_output=True,
                               text=True, timeout=timeout)
     except subprocess.TimeoutExpired:
+        kill_container(name)
         return {"status": "timeout", "seed": seed, "wall_seconds": timeout}
     except FileNotFoundError:
         return {"status": "no_docker", "seed": seed, "wall_seconds": 0}
