@@ -1,0 +1,130 @@
+<!doctype html><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1600px; height: 1000px; background: #fff; font-family: "Times New Roman", Times, serif;
+         color: #000; padding: 40px 44px 32px; display: flex; flex-direction: column;
+         justify-content: space-between; }
+  h1 { font-size: 21px; letter-spacing: .4px; }
+  h1 small { font-weight: normal; font-size: 15px; }
+
+  .row { display: flex; align-items: stretch; justify-content: space-between; }
+  .row.rev { flex-direction: row-reverse; }
+  .box { border: 2px solid #1E252E; background: #fff; padding: 11px 14px; width: 268px;
+         display: flex; flex-direction: column; justify-content: center; }
+  .box.wide { width: 300px; }
+  .box.term { background: #ECECEC; }
+  .t { font-size: 17.5px; font-weight: bold; letter-spacing: .3px; line-height: 1.15; }
+  .d { font-size: 15px; line-height: 1.32; margin-top: 5px; }
+
+  .dia { width: 136px; height: 136px; border: 2px solid #1E252E; background: #F2F2F2;
+         transform: rotate(45deg); flex: 0 0 136px; align-self: center;
+         display: flex; align-items: center; justify-content: center; }
+  .dia > span { transform: rotate(-45deg); text-align: center; font-size: 15px; font-weight: bold;
+                line-height: 1.2; }
+
+  /* horizontal connector, arrowhead right (or left when .rev) */
+  .arr { flex: 1 1 auto; min-width: 58px; max-width: 132px; position: relative; align-self: center;
+         height: 44px; }
+  .arr::before { content: ""; position: absolute; left: 2px; right: 10px; top: 50%;
+                 border-top: 1.6px solid #1E252E; }
+  .arr::after { content: ""; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+                border-left: 10px solid #1E252E; border-top: 6px solid transparent;
+                border-bottom: 6px solid transparent; }
+  .arr.rev::before { left: 10px; right: 2px; }
+  .arr.rev::after { right: auto; left: 0; border-left: none; border-right: 10px solid #1E252E; }
+  .arr span { position: absolute; left: -14px; right: -14px; bottom: 50%; margin-bottom: 5px;
+              text-align: center; font-size: 13px; line-height: 1.2; }
+
+  /* fork into / join out of the stacked pair */
+  .fork { flex: 0 0 46px; position: relative; align-self: stretch; }
+  .fork .v  { position: absolute; left: 23px; top: 25%; bottom: 25%; border-left: 1.6px solid #1E252E; }
+  .fork .h1, .fork .h2 { position: absolute; left: 23px; right: 10px; border-top: 1.6px solid #1E252E; }
+  .fork .h1 { top: 25%; } .fork .h2 { bottom: 25%; }
+  .fork .a1, .fork .a2 { position: absolute; right: 0; border-left: 10px solid #1E252E;
+                         border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+  .fork .a1 { top: 25%; transform: translateY(-50%); }
+  .fork .a2 { bottom: 25%; transform: translateY(50%); }
+  .fork.rev .h1, .fork.rev .h2 { left: 10px; right: 23px; }
+  .fork.rev .a1, .fork.rev .a2 { right: auto; left: 0;
+                                 border-left: none; border-right: 10px solid #1E252E; }
+
+  /* band-to-band connector */
+  .link { position: relative; height: 66px; }
+  .link .v { position: absolute; top: 0; bottom: 13px; border-left: 1.6px solid #1E252E; }
+  .link .a { position: absolute; bottom: 0; border-top: 10px solid #1E252E;
+             border-left: 6px solid transparent; border-right: 6px solid transparent; }
+  .link.r .v { right: 68px; }  .link.r .a { right: 63px; }
+  .link.l .v { left: 150px; }  .link.l .a { left: 145px; }
+  .link span { position: absolute; top: 20px; font-size: 13.5px; }
+  .link.r span { right: 92px; text-align: right; }
+  .link.l span { left: 174px; }
+
+  .stack { display: flex; flex-direction: column; gap: 16px; }
+  .grp { display: flex; align-items: stretch; }
+  .grp.rev { flex-direction: row-reverse; }
+  .note { font-size: 13.5px; line-height: 1.4; border-left: 3px solid #1E252E; padding-left: 12px; }
+</style>
+
+<h1>TraceWeave-Core — the H2a measurement pipeline
+  <small>&nbsp;· six stages, every one inside a container pinned by digest</small></h1>
+
+<!-- BAND 1 -->
+<div class="row">
+  <div class="box"><div class="t">1. DISCOVER</div>
+    <div class="d">GitHub search over Python repositories that carry a build file</div></div>
+  <div class="arr"><span>558 candidates</span></div>
+  <div class="box"><div class="t">2. SCORE DENSITY</div>
+    <div class="d">Weighted dynamic constructs per KLOC — thousand source lines, tests excluded</div></div>
+  <div class="arr"><span>LOW / MED<br>/ HIGH stratum</span></div>
+  <div class="box"><div class="t">3. TRIAGE</div>
+    <div class="d">Containerised install and test run — one repo, one Python, one attempt</div></div>
+  <div class="arr"><span>GREEN / AMBER<br>/ RED + lockfile</span></div>
+  <div class="dia"><span>Admitted<br>to corpus?</span></div>
+</div>
+
+<div class="link r"><span>GREEN / AMBER — admitted<br>(RED is kept, in the feasibility survey)</span>
+  <i class="v"></i><i class="a"></i></div>
+
+<!-- BAND 2, read right to left -->
+<div class="row rev">
+  <div class="box"><div class="t">4. CAPTURE WORKLOADS</div>
+    <div class="d">Annotators record at least three replayable runs per repo, verified twice</div></div>
+  <div class="arr rev"><span>the execution<br>oracle</span></div>
+  <div class="box"><div class="t">5. EXTRACT BOTH GRAPHS</div>
+    <div class="d">Both extractions run inside the same pinned image</div></div>
+  <div class="grp rev">
+  <div class="fork rev"><i class="v"></i><i class="h1"></i><i class="h2"></i>
+    <i class="a1"></i><i class="a2"></i></div>
+  <div class="stack">
+    <div class="box wide"><div class="t">STATIC &nbsp;&rarr;&nbsp; S</div>
+      <div class="d">PyCG 0.0.8 + Pyright 1.1.411, on Python &le; 3.11</div></div>
+    <div class="box wide"><div class="t">DYNAMIC &nbsp;&rarr;&nbsp; R</div>
+      <div class="d">sys.monitoring tracer replays the recorded workloads</div></div>
+  </div>
+  </div>
+</div>
+
+<div class="link l"><span>S and R — same image, so a difference is a property of the code</span>
+  <i class="v"></i><i class="a"></i></div>
+
+<!-- BAND 3 -->
+<div class="row">
+  <div class="box wide"><div class="t">6. FUSE &amp; MEASURE</div>
+    <div class="d">Dual-state CPG, fused on read.<br>Recall = |S&cap;R| / |R| over the comparable universe</div></div>
+  <div class="arr"><span>the H2a number</span></div>
+  <div class="dia"><span>PHASE 3<br>GO / NO-GO</span></div>
+  <div class="grp">
+  <div class="fork"><i class="v"></i><i class="h1"></i><i class="h2"></i>
+    <i class="a1"></i><i class="a2"></i></div>
+  <div class="stack">
+    <div class="box term wide"><div class="t">GO — PAPER 2 + DynBench-Core</div>
+      <div class="d">H2a recall with per-stratum and per-edge-type breakdowns</div></div>
+    <div class="box term wide"><div class="t">NO-GO — NEGATIVE RESULT</div>
+      <div class="d">Still publishable: the conditional claim is the stronger one</div></div>
+  </div>
+  </div>
+</div>
+
+<div class="note"><b>The host never traces</b> — it only schedules, collects and verifies.
+  <b>R is a lower bound</b>, conditional on the recorded workloads.
+  RED repositories are not discarded: they are reported in the tracing-feasibility survey.</div>
