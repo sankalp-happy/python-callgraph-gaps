@@ -117,7 +117,9 @@ r1, r2 = body(tsv[:cut]), body(tsv[cut:])
 mac("nRoundOne", len(r1))
 mac("roundOneStrata", ", ".join(f"{sum(r[1] == k for r in r1)} {k}" for k in ("HIGH", "MED", "LOW")))
 mac("nRoundTwo", len(r2))
-HZ = Path(os.environ.get("TW_HARNESS", Path.home() / "Projects" / "traceweave-harness"))
+# the four harness outputs these macros need are vendored under paper/harness-inputs/ (same layout
+# as the private harness repo); TW_HARNESS points at a live harness checkout instead
+HZ = Path(os.environ.get("TW_HARNESS", ROOT / "paper" / "harness-inputs"))
 sg = HZ / "bundles" / "ShivyC" / "graph.json"
 if sg.exists():
     meth = Counter(v["qualname"].rsplit(".", 1)[-1] for v in json.loads(sg.read_text())["nodes"].values() if v["kind"] == "method")
