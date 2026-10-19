@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/aws/bedrock-agentcore-sdk-python",
+  "repo_name": "bedrock-agentcore-sdk-python",
+  "row_id": "C0104",
+  "stratum": "MED",
+  "sha_requested": "5d4ca0db88f782254e279dd8462c18f00023798f",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:21:51Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "5d4ca0db88f782254e279dd8462c18f00023798f",
+    "seconds_clone": 2.4
+  },
+  "layout": "src",
+  "src_root": "src",
+  "packages": [
+    "src/bedrock_agentcore"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 120,
+    "nodes": 1070,
+    "callable_nodes": 771,
+    "by_kind": {
+      "class_body": 179,
+      "function": 134,
+      "lambda": 57,
+      "method": 580,
+      "module": 120
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 4689,
+    "ast_resolved": 661,
+    "by_edge_type": {
+      "direct": 1977,
+      "method_static": 373,
+      "method_dynamic": 2110,
+      "super_dispatch": 19,
+      "reflective": 6,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 59,
+      "decorator_apply": 145,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 1584,
+      "in_repo": 815,
+      "unknown": 2290
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 591,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 65,
+    "namespace_merged": 15
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 725,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 1131
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 43,
+    "decorator_apply": 19,
+    "direct": 347,
+    "method_dynamic": 714,
+    "reflective": 1,
+    "super_dispatch": 7
+  },
+  "baseline_comparison": {
+    "pycg_only": 72,
+    "pyright_only": 206,
+    "agreed": 519,
+    "union": 797,
+    "jaccard": 0.6512
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 124.1
+}

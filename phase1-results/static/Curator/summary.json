@@ -1,0 +1,114 @@
+{
+  "repo_url": "https://github.com/NVIDIA-NeMo/Curator",
+  "repo_name": "Curator",
+  "row_id": "C0095",
+  "stratum": "LOW",
+  "sha_requested": "a4470c6fe9b20ec98eb0839939c5e89de8aca3e5",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T12:50:49Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "a4470c6fe9b20ec98eb0839939c5e89de8aca3e5",
+    "seconds_clone": 16.5
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "benchmarking",
+    "eval",
+    "nemo_curator"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 472,
+    "nodes": 3835,
+    "callable_nodes": 2893,
+    "by_kind": {
+      "class_body": 469,
+      "function": 674,
+      "lambda": 168,
+      "method": 2052,
+      "module": 472
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 3,
+    "overload_stubs": 1
+  },
+  "callsites": {
+    "call_sites": 15443,
+    "ast_resolved": 2005,
+    "by_edge_type": {
+      "direct": 7497,
+      "method_static": 896,
+      "method_dynamic": 6059,
+      "super_dispatch": 184,
+      "reflective": 6,
+      "dynamic_import": 3,
+      "eval_exec": 1,
+      "callback_dispatch": 248,
+      "decorator_apply": 508,
+      "subprocess_ipc": 41
+    },
+    "by_target_scope": {
+      "external": 7772,
+      "in_repo": 2425,
+      "unknown": 5246
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 1748,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 379,
+    "namespace_merged": 29
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 2264,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 4329
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 146,
+    "decorator_apply": 31,
+    "direct": 1207,
+    "method_dynamic": 2911,
+    "reflective": 6,
+    "subprocess_ipc": 1,
+    "super_dispatch": 27
+  },
+  "baseline_comparison": {
+    "pycg_only": 237,
+    "pyright_only": 753,
+    "agreed": 1511,
+    "union": 2501,
+    "jaccard": 0.6042
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 1799.2
+}

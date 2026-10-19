@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/HBehrens/puncover",
+  "repo_name": "puncover",
+  "row_id": "C0094",
+  "stratum": "HIGH",
+  "sha_requested": "971cbfd89d1d430d3bd23c023cbbbf121490899a",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T07:49:50Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "971cbfd89d1d430d3bd23c023cbbbf121490899a",
+    "seconds_clone": 1.4
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "puncover"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 9,
+    "nodes": 170,
+    "callable_nodes": 141,
+    "by_kind": {
+      "class_body": 20,
+      "function": 47,
+      "lambda": 12,
+      "method": 82,
+      "module": 9
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 554,
+    "ast_resolved": 142,
+    "by_edge_type": {
+      "direct": 212,
+      "method_static": 83,
+      "method_dynamic": 232,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 9,
+      "decorator_apply": 16,
+      "subprocess_ipc": 2
+    },
+    "by_target_scope": {
+      "external": 171,
+      "in_repo": 143,
+      "unknown": 240
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 130,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 15,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 133,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 155
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 7,
+    "decorator_apply": 14,
+    "direct": 8,
+    "method_dynamic": 126
+  },
+  "baseline_comparison": {
+    "pycg_only": 7,
+    "pyright_only": 10,
+    "agreed": 123,
+    "union": 140,
+    "jaccard": 0.8786
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 8.1
+}

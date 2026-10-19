@@ -1,0 +1,106 @@
+{
+  "repo_url": "https://github.com/shner-elmo/TradingView-Screener",
+  "repo_name": "TradingView-Screener",
+  "row_id": "C0127",
+  "stratum": "LOW",
+  "sha_requested": "f5349f1b0d3598fd513a05dc3aa3ce172396e2e9",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T15:43:24Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "f5349f1b0d3598fd513a05dc3aa3ce172396e2e9",
+    "seconds_clone": 12.0
+  },
+  "layout": "src",
+  "src_root": "src",
+  "packages": [
+    "src/tradingview_screener"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 6,
+    "nodes": 77,
+    "callable_nodes": 58,
+    "by_kind": {
+      "class_body": 13,
+      "function": 13,
+      "method": 45,
+      "module": 6
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 90,
+    "ast_resolved": 35,
+    "by_edge_type": {
+      "direct": 29,
+      "method_static": 37,
+      "method_dynamic": 23,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 0,
+      "decorator_apply": 1,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 16,
+      "in_repo": 50,
+      "unknown": 24
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 13,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 33,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 12
+  },
+  "unresolved_by_edge_type": {
+    "direct": 4,
+    "method_dynamic": 8
+  },
+  "baseline_comparison": {
+    "pycg_only": 11,
+    "pyright_only": 31,
+    "agreed": 2,
+    "union": 44,
+    "jaccard": 0.0455
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 15.2
+}

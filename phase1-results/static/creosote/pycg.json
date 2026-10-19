@@ -1,0 +1,152 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 138,
+        "edges": 207,
+        "seconds": 0.15,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 138,
+        "edges": 207,
+        "seconds": 0.15,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 138,
+        "edges": 207,
+        "seconds": 0.16,
+        "peak_rss_mb": 15,
+        "detail": null
+      }
+    ],
+    "union_nodes": 138,
+    "union_edges": 207,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 138,
+    "pycg_edges": 207,
+    "name_outcomes": {
+      "mapped": 69,
+      "namespace_merged": 0,
+      "external": 65,
+      "unmapped": 4
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 19,
+      "external_module": 46,
+      "synthesized_path": 4
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [
+      "creosote.config.Config.<lambda1>",
+      "creosote.config.Config.<lambda2>",
+      "creosote.config.Config.<lambda3>",
+      "creosote.config.Features.__members__.values"
+    ],
+    "unmapped_distinct": 4,
+    "inventory_nodes_covered": 69,
+    "inventory_nodes_total": 77
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 62,
+      "callers_with_external_edges": 49,
+      "dropped": {
+        "callee_external": 143,
+        "callee_unmapped": 1,
+        "caller_unmapped": 1
+      }
+    },
+    "in_universe_edges": [
+      "src/creosote/__main__.py::<module>->src/creosote/cli.py::main",
+      "src/creosote/cli.py::<module>->src/creosote/cli.py::main",
+      "src/creosote/cli.py::get_redundant_excludes->src/creosote/parsers.py::DependencyReader.read_all",
+      "src/creosote/cli.py::get_redundant_excludes->src/creosote/resolvers.py::DepsResolver.__init__",
+      "src/creosote/cli.py::get_redundant_excludes->src/creosote/resolvers.py::DepsResolver.resolve_unused_dependency_names",
+      "src/creosote/cli.py::main->src/creosote/cli.py::get_redundant_excludes",
+      "src/creosote/cli.py::main->src/creosote/config.py::fail_fast",
+      "src/creosote/cli.py::main->src/creosote/config.py::parse_args",
+      "src/creosote/cli.py::main->src/creosote/formatters.py::configure_logger",
+      "src/creosote/cli.py::main->src/creosote/formatters.py::print_results",
+      "src/creosote/cli.py::main->src/creosote/models.py::ImportInfo.from_module_name",
+      "src/creosote/cli.py::main->src/creosote/parsers.py::DependencyReader.__init__",
+      "src/creosote/cli.py::main->src/creosote/parsers.py::DependencyReader.read",
+      "src/creosote/cli.py::main->src/creosote/parsers.py::get_excluded_deps_which_are_not_installed",
+      "src/creosote/cli.py::main->src/creosote/parsers.py::get_module_names_from_code",
+      "src/creosote/cli.py::main->src/creosote/parsers.py::get_modules_from_django_settings",
+      "src/creosote/cli.py::main->src/creosote/resolvers.py::DepsResolver.__init__",
+      "src/creosote/cli.py::main->src/creosote/resolvers.py::DepsResolver.resolve_unused_dependency_names",
+      "src/creosote/config.py::fail_fast->src/creosote/config.py::is_missing_file",
+      "src/creosote/config.py::parse_args->src/creosote/config.py::load_defaults",
+      "src/creosote/config.py::parse_args->src/creosote/config.py::show_migration_message",
+      "src/creosote/parsers.py::DependencyReader.get_deps_from_pep621_toml->src/creosote/parsers.py::DependencyReader.parse_dep_string",
+      "src/creosote/parsers.py::DependencyReader.get_deps_from_pep621_toml->src/creosote/parsers.py::is_list_type",
+      "src/creosote/parsers.py::DependencyReader.get_deps_from_pep621_toml->src/creosote/parsers.py::is_pep621_dict_of_lists",
+      "src/creosote/parsers.py::DependencyReader.get_deps_from_pep735_toml->src/creosote/parsers.py::DependencyReader.parse_dep_string",
+      "src/creosote/parsers.py::DependencyReader.get_deps_from_pep735_toml->src/creosote/parsers.py::is_dict_of_lists",
+      "src/creosote/parsers.py::DependencyReader.get_deps_from_pep735_toml->src/creosote/parsers.py::is_list_type",
+      "src/creosote/parsers.py::DependencyReader.get_deps_from_toml_section_keys->src/creosote/parsers.py::DependencyReader.assert_is_dict",
+      "src/creosote/parsers.py::DependencyReader.parse_dep_string->src/creosote/parsers.py::DependencyReader.dependency_without_direct_reference",
+      "src/creosote/parsers.py::DependencyReader.parse_dep_string->src/creosote/parsers.py::DependencyReader.dependency_without_version_constraint",
+      "src/creosote/parsers.py::DependencyReader.read->src/creosote/parsers.py::DependencyReader.read_all",
+      "src/creosote/parsers.py::DependencyReader.read_all->src/creosote/parsers.py::DependencyReader.read_requirements",
+      "src/creosote/parsers.py::DependencyReader.read_all->src/creosote/parsers.py::DependencyReader.read_toml",
+      "src/creosote/parsers.py::DependencyReader.read_toml->src/creosote/parsers.py::DependencyReader.get_deps_from_pep621_toml",
+      "src/creosote/parsers.py::DependencyReader.read_toml->src/creosote/parsers.py::DependencyReader.get_deps_from_pep735_toml",
+      "src/creosote/parsers.py::DependencyReader.read_toml->src/creosote/parsers.py::DependencyReader.get_deps_from_toml_section_keys",
+      "src/creosote/parsers.py::DjangoSettingsVisitor.resolve_modules->src/creosote/parsers.py::_resolve_expression",
+      "src/creosote/parsers.py::DjangoSettingsVisitor.visit_Assign->src/creosote/parsers.py::DjangoSettingsVisitor._is_target_setting",
+      "src/creosote/parsers.py::DjangoSettingsVisitor.visit_Assign->src/creosote/parsers.py::_resolve_expression",
+      "src/creosote/parsers.py::DjangoSettingsVisitor.visit_AugAssign->src/creosote/parsers.py::DjangoSettingsVisitor._is_target_setting",
+      "src/creosote/parsers.py::DjangoSettingsVisitor.visit_Expr->src/creosote/parsers.py::DjangoSettingsVisitor._is_target_setting",
+      "src/creosote/parsers.py::_resolve_expression->src/creosote/parsers.py::_resolve_expression",
+      "src/creosote/parsers.py::get_excluded_deps_which_are_not_installed->src/creosote/parsers.py::canonicalize_module_name",
+      "src/creosote/parsers.py::get_excluded_deps_which_are_not_installed->src/creosote/parsers.py::get_installed_dependency_names",
+      "src/creosote/parsers.py::get_module_names_from_code->src/creosote/parsers.py::get_module_info_from_python_file",
+      "src/creosote/parsers.py::get_modules_from_django_settings->src/creosote/parsers.py::DjangoSettingsVisitor.__init__",
+      "src/creosote/parsers.py::get_modules_from_django_settings->src/creosote/parsers.py::DjangoSettingsVisitor.resolve_modules",
+      "src/creosote/resolvers.py::DepsResolver.gather_record_filepaths->src/creosote/resolvers.py::DepsResolver.gather_filepaths",
+      "src/creosote/resolvers.py::DepsResolver.gather_top_level_filepaths->src/creosote/resolvers.py::DepsResolver.gather_filepaths",
+      "src/creosote/resolvers.py::DepsResolver.is_importable->src/creosote/resolvers.py::DepsResolver.canonicalize_module_name",
+      "src/creosote/resolvers.py::DepsResolver.map_dep_to_canonical_name->src/creosote/resolvers.py::DepsResolver.canonicalize_module_name",
+      "src/creosote/resolvers.py::DepsResolver.map_dep_to_import_via_record_file->src/creosote/resolvers.py::DepsResolver.canonicalize_module_name",
+      "src/creosote/resolvers.py::DepsResolver.map_dep_to_import_via_top_level_txt_file->src/creosote/resolvers.py::DepsResolver.canonicalize_module_name",
+      "src/creosote/resolvers.py::DepsResolver.populate_dependency_info->src/creosote/resolvers.py::DepsResolver.map_dep_to_canonical_name",
+      "src/creosote/resolvers.py::DepsResolver.populate_dependency_info->src/creosote/resolvers.py::DepsResolver.map_dep_to_import_via_record_file",
+      "src/creosote/resolvers.py::DepsResolver.populate_dependency_info->src/creosote/resolvers.py::DepsResolver.map_dep_to_import_via_top_level_txt_file",
+      "src/creosote/resolvers.py::DepsResolver.resolve->src/creosote/resolvers.py::DepsResolver.associate_dep_with_import",
+      "src/creosote/resolvers.py::DepsResolver.resolve_unused_dependency_names->src/creosote/resolvers.py::DepsResolver.gather_record_filepaths",
+      "src/creosote/resolvers.py::DepsResolver.resolve_unused_dependency_names->src/creosote/resolvers.py::DepsResolver.gather_top_level_filepaths",
+      "src/creosote/resolvers.py::DepsResolver.resolve_unused_dependency_names->src/creosote/resolvers.py::DepsResolver.get_unused_dependencies",
+      "src/creosote/resolvers.py::DepsResolver.resolve_unused_dependency_names->src/creosote/resolvers.py::DepsResolver.populate_dependency_info",
+      "src/creosote/resolvers.py::DepsResolver.resolve_unused_dependency_names->src/creosote/resolvers.py::DepsResolver.resolve"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/ros/xacro",
+  "repo_name": "xacro",
+  "row_id": "C0202",
+  "stratum": "HIGH",
+  "sha_requested": "da4b3849f8320903d625250089f67f0632be86f2",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T15:43:16Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "da4b3849f8320903d625250089f67f0632be86f2",
+    "seconds_clone": 1.2
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "xacro"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 5,
+    "nodes": 121,
+    "callable_nodes": 103,
+    "by_kind": {
+      "class_body": 13,
+      "function": 72,
+      "lambda": 2,
+      "method": 29,
+      "module": 5
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 575,
+    "ast_resolved": 213,
+    "by_edge_type": {
+      "direct": 327,
+      "method_static": 20,
+      "method_dynamic": 196,
+      "super_dispatch": 6,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 3,
+      "callback_dispatch": 21,
+      "decorator_apply": 2,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 135,
+      "in_repo": 228,
+      "unknown": 212
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 157,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 1,
+    "namespace_merged": 11
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 160,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 110
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 7,
+    "direct": 17,
+    "method_dynamic": 86
+  },
+  "baseline_comparison": {
+    "pycg_only": 3,
+    "pyright_only": 6,
+    "agreed": 154,
+    "union": 163,
+    "jaccard": 0.9448
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 7.6
+}

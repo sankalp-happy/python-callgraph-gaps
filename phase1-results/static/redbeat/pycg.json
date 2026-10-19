@@ -1,0 +1,132 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 130,
+        "edges": 155,
+        "seconds": 0.1,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 130,
+        "edges": 155,
+        "seconds": 0.1,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 130,
+        "edges": 155,
+        "seconds": 0.11,
+        "peak_rss_mb": 15,
+        "detail": null
+      }
+    ],
+    "union_nodes": 130,
+    "union_edges": 155,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 130,
+    "pycg_edges": 155,
+    "name_outcomes": {
+      "mapped": 55,
+      "namespace_merged": 2,
+      "external": 72,
+      "unmapped": 1
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 17,
+      "external_module": 55,
+      "namespace_merged": 2,
+      "synthesized_path": 1
+    },
+    "namespace_merged_examples": [
+      "decoder.to_timestamp",
+      "schedules.rrule"
+    ],
+    "namespace_merged_distinct": 2,
+    "unmapped_examples": [
+      "redbeat.schedulers.RedBeatConfig.is_key_in_conf.<lambda1>"
+    ],
+    "unmapped_distinct": 1,
+    "inventory_nodes_covered": 56,
+    "inventory_nodes_total": 63
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 43,
+      "callers_with_external_edges": 40,
+      "dropped": {
+        "callee_external": 112
+      }
+    },
+    "in_universe_edges": [
+      "redbeat/decoder.py::RedBeatJSONDecoder.dict_to_object->redbeat/decoder.py::from_timestamp",
+      "redbeat/decoder.py::RedBeatJSONDecoder.dict_to_object->redbeat/schedules.py::rrule",
+      "redbeat/decoder.py::RedBeatJSONEncoder.default->redbeat/decoder.py::get_utcoffset_minutes",
+      "redbeat/decoder.py::RedBeatJSONEncoder.default->redbeat/decoder.py::to_timestamp",
+      "redbeat/schedulers.py::RedBeatConfig.__init__->redbeat/schedulers.py::RedBeatConfig.either_or",
+      "redbeat/schedulers.py::RedBeatConfig.__init__->redbeat/schedulers.py::RedBeatConfig.is_key_in_conf",
+      "redbeat/schedulers.py::RedBeatConfig.either_or->redbeat/schedulers.py::RedBeatConfig.is_key_in_conf",
+      "redbeat/schedulers.py::RedBeatScheduler.__init__->redbeat/schedulers.py::ensure_conf",
+      "redbeat/schedulers.py::RedBeatScheduler.schedule->redbeat/decoder.py::to_timestamp",
+      "redbeat/schedulers.py::RedBeatScheduler.schedule->redbeat/schedulers.py::RedBeatSchedulerEntry.from_key",
+      "redbeat/schedulers.py::RedBeatScheduler.schedule->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatScheduler.setup_schedule->redbeat/schedulers.py::RedBeatScheduler.update_from_dict",
+      "redbeat/schedulers.py::RedBeatScheduler.setup_schedule->redbeat/schedulers.py::RedBeatSchedulerEntry.__init__",
+      "redbeat/schedulers.py::RedBeatScheduler.setup_schedule->redbeat/schedulers.py::RedBeatSchedulerEntry.delete",
+      "redbeat/schedulers.py::RedBeatScheduler.setup_schedule->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatScheduler.tick->redbeat/schedulers.py::RedBeatScheduler.maybe_due",
+      "redbeat/schedulers.py::RedBeatScheduler.update_from_dict->redbeat/schedulers.py::RedBeatSchedulerEntry.from_key",
+      "redbeat/schedulers.py::RedBeatScheduler.update_from_dict->redbeat/schedulers.py::RedBeatSchedulerEntry.generate_key",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.__init__->redbeat/schedulers.py::ensure_conf",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry._next_instance->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.delete->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.from_key->redbeat/schedulers.py::RedBeatSchedulerEntry.__init__",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.from_key->redbeat/schedulers.py::RedBeatSchedulerEntry.decode_definition",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.from_key->redbeat/schedulers.py::RedBeatSchedulerEntry.decode_meta",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.from_key->redbeat/schedulers.py::ensure_conf",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.from_key->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.key->redbeat/schedulers.py::RedBeatSchedulerEntry.generate_key",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.load_definition->redbeat/schedulers.py::RedBeatSchedulerEntry.decode_definition",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.load_definition->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.load_meta->redbeat/schedulers.py::RedBeatSchedulerEntry.decode_meta",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.load_meta->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.rank->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.reschedule->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.save->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::RedBeatSchedulerEntry.score->redbeat/decoder.py::to_timestamp",
+      "redbeat/schedulers.py::_set_redbeat_connect->redbeat/schedulers.py::RetryingConnection.__init__",
+      "redbeat/schedulers.py::acquire_distributed_beat_lock->redbeat/schedulers.py::get_redis",
+      "redbeat/schedulers.py::ensure_conf->redbeat/schedulers.py::RedBeatConfig.__init__",
+      "redbeat/schedulers.py::get_redis->redbeat/schedulers.py::RedBeatConfig.is_key_in_conf",
+      "redbeat/schedulers.py::get_redis->redbeat/schedulers.py::_log_skipped_broker_options",
+      "redbeat/schedulers.py::get_redis->redbeat/schedulers.py::_set_redbeat_connect",
+      "redbeat/schedulers.py::get_redis->redbeat/schedulers.py::ensure_conf",
+      "redbeat/schedules.py::rrule.is_due->redbeat/schedules.py::rrule.remaining_estimate"
+    ]
+  }
+}

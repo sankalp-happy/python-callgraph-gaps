@@ -1,0 +1,167 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 206,
+        "edges": 238,
+        "seconds": 0.2,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 206,
+        "edges": 235,
+        "seconds": 0.19,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 207,
+        "edges": 241,
+        "seconds": 0.24,
+        "peak_rss_mb": 17,
+        "detail": null
+      }
+    ],
+    "union_nodes": 207,
+    "union_edges": 241,
+    "deterministic_across_seeds": false
+  },
+  "diagnostics": {
+    "pycg_nodes": 207,
+    "pycg_edges": 241,
+    "name_outcomes": {
+      "mapped": 92,
+      "namespace_merged": 8,
+      "external": 103,
+      "unmapped": 4
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 16,
+      "external_module": 87,
+      "namespace_merged": 8,
+      "redefinition_collapsed": 1,
+      "synthesized_path": 4
+    },
+    "namespace_merged_examples": [
+      "concurrency.run_coroutine_sync",
+      "decorator.injectable",
+      "exception.DependencyCleanupError",
+      "exception.FastAPICompatibilityError",
+      "exception.RunCoroutineSyncMaxRetriesError",
+      "main.resolve_dependencies",
+      "util.cleanup_all_exit_stacks",
+      "util.clear_dependency_cache"
+    ],
+    "namespace_merged_distinct": 8,
+    "unmapped_examples": [
+      "fastapi_injectable.decorator._override_func_dependency_signature.<lambda1>",
+      "fastapi_injectable.decorator.resolve_dependencies",
+      "fastapi_injectable.util._create_async_depends_function.<dict1>.get",
+      "fastapi_injectable.util._create_depends_function.<dict1>.get"
+    ],
+    "unmapped_distinct": 4,
+    "inventory_nodes_covered": 95,
+    "inventory_nodes_total": 116
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 67,
+      "callers_with_external_edges": 60,
+      "dropped": {
+        "callee_external": 169,
+        "callee_unmapped": 5
+      }
+    },
+    "in_universe_edges": [
+      "src/fastapi_injectable/async_exit_stack.py::<module>->src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager.__init__",
+      "src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager._close_stack->src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager._running_loop",
+      "src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager._owning_loop->src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager._running_loop",
+      "src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager.cleanup_all_stacks->src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager._close_stack",
+      "src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager.cleanup_all_stacks->src/fastapi_injectable/exception.py::DependencyCleanupError",
+      "src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager.cleanup_stack->src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager._close_stack",
+      "src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager.cleanup_stack->src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager._prune_empty_locked",
+      "src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager.cleanup_stack->src/fastapi_injectable/exception.py::DependencyCleanupError",
+      "src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager.get_stack->src/fastapi_injectable/async_exit_stack.py::AsyncExitStackManager._owning_loop",
+      "src/fastapi_injectable/cache.py::<module>->src/fastapi_injectable/cache.py::DependencyCache.__init__",
+      "src/fastapi_injectable/cache.py::DependencyCache.get->src/fastapi_injectable/cache.py::DependencyCache._isolation_loop",
+      "src/fastapi_injectable/concurrency.py::<module>->src/fastapi_injectable/concurrency.py::LoopManager.__init__",
+      "src/fastapi_injectable/concurrency.py::LoopManager._wait_with_retries->src/fastapi_injectable/exception.py::RunCoroutineSyncMaxRetriesError",
+      "src/fastapi_injectable/concurrency.py::LoopManager.get_loop->src/fastapi_injectable/concurrency.py::LoopManager._get_background_loop",
+      "src/fastapi_injectable/concurrency.py::LoopManager.get_loop->src/fastapi_injectable/concurrency.py::LoopManager._get_isolated_loop",
+      "src/fastapi_injectable/concurrency.py::LoopManager.get_loop->src/fastapi_injectable/concurrency.py::LoopManager._get_or_create_current_loop",
+      "src/fastapi_injectable/concurrency.py::LoopManager.in_loop->src/fastapi_injectable/concurrency.py::LoopManager.get_loop",
+      "src/fastapi_injectable/concurrency.py::LoopManager.run_in_loop->src/fastapi_injectable/concurrency.py::LoopManager._wait_with_retries",
+      "src/fastapi_injectable/concurrency.py::LoopManager.run_in_loop->src/fastapi_injectable/concurrency.py::LoopManager.get_loop",
+      "src/fastapi_injectable/concurrency.py::LoopManager.run_in_loop->src/fastapi_injectable/concurrency.py::LoopManager.run_in_loop._wrapper",
+      "src/fastapi_injectable/concurrency.py::run_coroutine_sync->src/fastapi_injectable/concurrency.py::LoopManager.run_in_loop",
+      "src/fastapi_injectable/decorator.py::injectable->src/fastapi_injectable/decorator.py::injectable.decorator",
+      "src/fastapi_injectable/decorator.py::injectable->src/fastapi_injectable/decorator.py::set_original_func#0",
+      "src/fastapi_injectable/decorator.py::injectable.decorator->src/fastapi_injectable/decorator.py::_override_func_dependency_signature",
+      "src/fastapi_injectable/decorator.py::injectable.decorator->src/fastapi_injectable/decorator.py::set_original_func#0",
+      "src/fastapi_injectable/decorator.py::injectable.decorator.async_gen_wrapper->src/fastapi_injectable/concurrency.py::run_coroutine_sync",
+      "src/fastapi_injectable/decorator.py::injectable.decorator.async_gen_wrapper->src/fastapi_injectable/decorator.py::injectable",
+      "src/fastapi_injectable/decorator.py::injectable.decorator.async_gen_wrapper->src/fastapi_injectable/main.py::resolve_dependencies",
+      "src/fastapi_injectable/decorator.py::injectable.decorator.async_wrapper->src/fastapi_injectable/concurrency.py::run_coroutine_sync",
+      "src/fastapi_injectable/decorator.py::injectable.decorator.async_wrapper->src/fastapi_injectable/decorator.py::injectable",
+      "src/fastapi_injectable/decorator.py::injectable.decorator.async_wrapper->src/fastapi_injectable/main.py::resolve_dependencies",
+      "src/fastapi_injectable/decorator.py::injectable.decorator.sync_wrapper->src/fastapi_injectable/concurrency.py::run_coroutine_sync",
+      "src/fastapi_injectable/decorator.py::injectable.decorator.sync_wrapper->src/fastapi_injectable/decorator.py::injectable",
+      "src/fastapi_injectable/decorator.py::injectable.decorator.sync_wrapper->src/fastapi_injectable/main.py::resolve_dependencies",
+      "src/fastapi_injectable/logging.py::configure_logging->src/fastapi_injectable/logging.py::reset_logger_handlers",
+      "src/fastapi_injectable/main.py::<module>->src/fastapi_injectable/main.py::_verify_fastapi_compatibility",
+      "src/fastapi_injectable/main.py::_build_dependency_only_callable->src/fastapi_injectable/main.py::_has_depends",
+      "src/fastapi_injectable/main.py::_verify_fastapi_compatibility->src/fastapi_injectable/exception.py::FastAPICompatibilityError",
+      "src/fastapi_injectable/main.py::resolve_dependencies->src/fastapi_injectable/main.py::_build_dependency_only_callable",
+      "src/fastapi_injectable/main.py::resolve_dependencies->src/fastapi_injectable/main.py::_get_app",
+      "src/fastapi_injectable/mypy.py::FastApiInjectablePlugin._is_injectable_decorator->src/fastapi_injectable/mypy.py::_is_injectable_fullname",
+      "src/fastapi_injectable/mypy.py::FastApiInjectablePlugin._modify_arg_kinds_for_dependencies->src/fastapi_injectable/mypy.py::FastApiInjectablePlugin._is_fastapi_depends_annotation",
+      "src/fastapi_injectable/mypy.py::FastApiInjectablePlugin._process_injectable_function_signature->src/fastapi_injectable/mypy.py::FastApiInjectablePlugin._modify_arg_kinds_for_dependencies",
+      "src/fastapi_injectable/mypy.py::FastApiInjectablePlugin.get_function_hook->src/fastapi_injectable/mypy.py::_is_injectable_fullname",
+      "src/fastapi_injectable/mypy.py::FastApiInjectablePlugin.get_function_signature_hook->src/fastapi_injectable/mypy.py::FastApiInjectablePlugin._is_injectable_decorator",
+      "src/fastapi_injectable/pytest_plugin.py::_areset_injectable_state->src/fastapi_injectable/util.py::cleanup_all_exit_stacks",
+      "src/fastapi_injectable/pytest_plugin.py::_areset_injectable_state->src/fastapi_injectable/util.py::clear_dependency_cache",
+      "src/fastapi_injectable/pytest_plugin.py::_cleanup_around_test->src/fastapi_injectable/pytest_plugin.py::reset_injectable_state",
+      "src/fastapi_injectable/pytest_plugin.py::_injectable_autouse_cleanup->src/fastapi_injectable/pytest_plugin.py::_cleanup_around_test",
+      "src/fastapi_injectable/pytest_plugin.py::injectable_cleanup->src/fastapi_injectable/pytest_plugin.py::_cleanup_around_test",
+      "src/fastapi_injectable/pytest_plugin.py::reset_injectable_state->src/fastapi_injectable/concurrency.py::run_coroutine_sync",
+      "src/fastapi_injectable/pytest_plugin.py::reset_injectable_state->src/fastapi_injectable/pytest_plugin.py::_areset_injectable_state",
+      "src/fastapi_injectable/scope.py::InjectableScope.get_cache->src/fastapi_injectable/scope.py::InjectableScope._current_loop",
+      "src/fastapi_injectable/scope.py::injectable_scope->src/fastapi_injectable/scope.py::InjectableScope.__init__",
+      "src/fastapi_injectable/util.py::_fix_partial_signature->src/fastapi_injectable/util.py::_fix_partial_signature.collect_bound_args",
+      "src/fastapi_injectable/util.py::_fix_partial_signature.collect_bound_args->src/fastapi_injectable/util.py::_fix_partial_signature.collect_bound_args",
+      "src/fastapi_injectable/util.py::async_get_injected_obj->src/fastapi_injectable/decorator.py::injectable",
+      "src/fastapi_injectable/util.py::async_get_injected_obj->src/fastapi_injectable/util.py::_create_async_depends_function",
+      "src/fastapi_injectable/util.py::async_get_injected_obj->src/fastapi_injectable/util.py::_fix_partial_signature",
+      "src/fastapi_injectable/util.py::get_injected_obj->src/fastapi_injectable/concurrency.py::run_coroutine_sync",
+      "src/fastapi_injectable/util.py::get_injected_obj->src/fastapi_injectable/decorator.py::injectable",
+      "src/fastapi_injectable/util.py::get_injected_obj->src/fastapi_injectable/util.py::_create_depends_function",
+      "src/fastapi_injectable/util.py::get_injected_obj->src/fastapi_injectable/util.py::_fix_partial_signature",
+      "src/fastapi_injectable/util.py::setup_graceful_shutdown->src/fastapi_injectable/util.py::setup_graceful_shutdown.build_handler",
+      "src/fastapi_injectable/util.py::setup_graceful_shutdown.build_handler.handler->src/fastapi_injectable/util.py::setup_graceful_shutdown.run_cleanup",
+      "src/fastapi_injectable/util.py::setup_graceful_shutdown.run_cleanup->src/fastapi_injectable/concurrency.py::run_coroutine_sync",
+      "src/fastapi_injectable/util.py::setup_graceful_shutdown.run_cleanup->src/fastapi_injectable/util.py::cleanup_all_exit_stacks"
+    ]
+  }
+}

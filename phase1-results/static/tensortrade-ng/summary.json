@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/erhardtconsulting/tensortrade-ng",
+  "repo_name": "tensortrade-ng",
+  "row_id": "C0162",
+  "stratum": "HIGH",
+  "sha_requested": "ec6552e3cdbf64ad05c58955d26c207dda825df3",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:05:08Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "ec6552e3cdbf64ad05c58955d26c207dda825df3",
+    "seconds_clone": 13.1
+  },
+  "layout": "src",
+  "src_root": "src",
+  "packages": [
+    "src/tensortrade"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 113,
+    "nodes": 873,
+    "callable_nodes": 628,
+    "by_kind": {
+      "class_body": 132,
+      "function": 75,
+      "lambda": 22,
+      "method": 531,
+      "module": 113
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 7,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1684,
+    "ast_resolved": 315,
+    "by_edge_type": {
+      "direct": 638,
+      "method_static": 161,
+      "method_dynamic": 525,
+      "super_dispatch": 79,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 106,
+      "decorator_apply": 175,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 495,
+      "in_repo": 372,
+      "unknown": 817
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 199,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 38,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 463,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 414
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 68,
+    "decorator_apply": 9,
+    "direct": 99,
+    "method_dynamic": 235,
+    "method_static": 1,
+    "super_dispatch": 2
+  },
+  "baseline_comparison": {
+    "pycg_only": 70,
+    "pyright_only": 334,
+    "agreed": 129,
+    "union": 533,
+    "jaccard": 0.242
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 68.4
+}

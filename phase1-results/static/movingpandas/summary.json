@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/movingpandas/movingpandas",
+  "repo_name": "movingpandas",
+  "row_id": "C0103",
+  "stratum": "LOW",
+  "sha_requested": "b136ce4e07113980b27c58f27cbd15370e8d7e4a",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:35:32Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "b136ce4e07113980b27c58f27cbd15370e8d7e4a",
+    "seconds_clone": 14.9
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "movingpandas"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 17,
+    "nodes": 345,
+    "callable_nodes": 293,
+    "by_kind": {
+      "class_body": 35,
+      "function": 48,
+      "lambda": 6,
+      "method": 239,
+      "module": 17
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1447,
+    "ast_resolved": 384,
+    "by_edge_type": {
+      "direct": 640,
+      "method_static": 207,
+      "method_dynamic": 543,
+      "super_dispatch": 1,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 5,
+      "decorator_apply": 48,
+      "subprocess_ipc": 3
+    },
+    "by_target_scope": {
+      "external": 488,
+      "in_repo": 405,
+      "unknown": 554
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 341,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 11,
+    "namespace_merged": 30
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 326,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 501
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 3,
+    "decorator_apply": 2,
+    "direct": 81,
+    "method_dynamic": 415
+  },
+  "baseline_comparison": {
+    "pycg_only": 66,
+    "pyright_only": 51,
+    "agreed": 275,
+    "union": 392,
+    "jaccard": 0.7015
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 33.6
+}

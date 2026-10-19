@@ -1,0 +1,107 @@
+{
+  "repo_url": "https://github.com/linsomniac/python-memcached",
+  "repo_name": "python-memcached",
+  "row_id": "C0227",
+  "stratum": "LOW",
+  "sha_requested": "c3a208abeae651b7eadd58a290eff0c5b2139d99",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-23T19:32:39Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "c3a208abeae651b7eadd58a290eff0c5b2139d99",
+    "seconds_clone": 1.1
+  },
+  "layout": "single-module",
+  "src_root": ".",
+  "packages": [
+    "."
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 2,
+    "nodes": 74,
+    "callable_nodes": 62,
+    "by_kind": {
+      "class_body": 10,
+      "function": 7,
+      "method": 55,
+      "module": 2
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 356,
+    "ast_resolved": 93,
+    "by_edge_type": {
+      "direct": 95,
+      "method_static": 85,
+      "method_dynamic": 144,
+      "super_dispatch": 1,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 30,
+      "decorator_apply": 0,
+      "subprocess_ipc": 1
+    },
+    "by_target_scope": {
+      "external": 87,
+      "in_repo": 96,
+      "unknown": 173
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 95,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 93,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 83
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 29,
+    "direct": 3,
+    "method_dynamic": 51
+  },
+  "baseline_comparison": {
+    "pycg_only": 16,
+    "pyright_only": 14,
+    "agreed": 79,
+    "union": 109,
+    "jaccard": 0.7248
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 5.4
+}

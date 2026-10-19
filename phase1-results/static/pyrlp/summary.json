@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/ApeWorX/pyrlp",
+  "repo_name": "pyrlp",
+  "row_id": "C0220",
+  "stratum": "HIGH",
+  "sha_requested": "21eb45696e84151c2fdd37b5d5ff6281a6d86fdd",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:00:21Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "21eb45696e84151c2fdd37b5d5ff6281a6d86fdd",
+    "seconds_clone": 1.4
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "rlp"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 14,
+    "nodes": 132,
+    "callable_nodes": 94,
+    "by_kind": {
+      "class_body": 24,
+      "function": 33,
+      "method": 61,
+      "module": 14
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 2,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 423,
+    "ast_resolved": 116,
+    "by_edge_type": {
+      "direct": 316,
+      "method_static": 18,
+      "method_dynamic": 54,
+      "super_dispatch": 9,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 12,
+      "decorator_apply": 14,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 221,
+      "in_repo": 117,
+      "unknown": 85
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 87,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 0,
+    "namespace_merged": 3
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 105,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 52
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 5,
+    "decorator_apply": 8,
+    "direct": 9,
+    "method_dynamic": 30
+  },
+  "baseline_comparison": {
+    "pycg_only": 11,
+    "pyright_only": 29,
+    "agreed": 76,
+    "union": 116,
+    "jaccard": 0.6552
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 11.3
+}

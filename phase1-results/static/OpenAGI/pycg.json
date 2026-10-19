@@ -1,0 +1,156 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 259,
+        "edges": 304,
+        "seconds": 0.31,
+        "peak_rss_mb": 19,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 259,
+        "edges": 304,
+        "seconds": 0.3,
+        "peak_rss_mb": 19,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 259,
+        "edges": 304,
+        "seconds": 0.31,
+        "peak_rss_mb": 19,
+        "detail": null
+      }
+    ],
+    "union_nodes": 259,
+    "union_edges": 304,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 259,
+    "pycg_edges": 304,
+    "name_outcomes": {
+      "mapped": 158,
+      "namespace_merged": 2,
+      "external": 96,
+      "unmapped": 3
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 15,
+      "external_module": 81,
+      "namespace_merged": 2,
+      "synthesized_path": 3
+    },
+    "namespace_merged_examples": [
+      "utils.chat_template.Query",
+      "utils.logger.AgentLogger"
+    ],
+    "namespace_merged_distinct": 2,
+    "unmapped_examples": [
+      "pyopenagi.agents.base_agent.BaseAgent.logger.log",
+      "pyopenagi.agents.call_core.CallCore.logger.log",
+      "pyopenagi.agents.react_agent.ReactAgent.logger.log"
+    ],
+    "unmapped_distinct": 3,
+    "inventory_nodes_covered": 160,
+    "inventory_nodes_total": 180
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 64,
+      "callers_with_external_edges": 82,
+      "dropped": {
+        "callee_external": 236,
+        "callee_unmapped": 4
+      }
+    },
+    "in_universe_edges": [
+      "pyopenagi/agents/agent_factory.py::AgentFactory.activate_agent->pyopenagi/agents/agent_factory.py::AgentFactory.load_agent_instance",
+      "pyopenagi/agents/agent_factory.py::AgentFactory.list_agents->pyopenagi/agents/agent_factory.py::AgentFactory.print",
+      "pyopenagi/agents/agent_factory.py::AgentFactory.load_agent_instance->pyopenagi/agents/agent_factory.py::AgentFactory.snake_to_camel",
+      "pyopenagi/agents/agent_factory.py::AgentFactory.print->pyopenagi/agents/agent_factory.py::AgentFactory.format_row",
+      "pyopenagi/agents/agent_factory.py::AgentFactory.print->pyopenagi/agents/agent_factory.py::AgentFactory.print",
+      "pyopenagi/agents/agent_factory.py::AgentFactory.print_agent->pyopenagi/agents/agent_factory.py::AgentFactory.print",
+      "pyopenagi/agents/agent_factory.py::AgentFactory.run_agent->pyopenagi/agents/agent_factory.py::AgentFactory.activate_agent",
+      "pyopenagi/agents/agent_factory.py::AgentFactory.run_agent->pyopenagi/agents/agent_factory.py::AgentFactory.deactivate_agent",
+      "pyopenagi/agents/agent_process.py::AgentProcessFactory.activate_agent_process->pyopenagi/agents/agent_process.py::AgentProcess.__init__",
+      "pyopenagi/agents/agent_process.py::AgentProcessFactory.activate_agent_process->pyopenagi/agents/agent_process.py::AgentProcess.set_pid",
+      "pyopenagi/agents/agent_process.py::AgentProcessFactory.activate_agent_process->pyopenagi/agents/agent_process.py::AgentProcess.set_status",
+      "pyopenagi/agents/agent_process.py::AgentProcessFactory.print->pyopenagi/agents/agent_process.py::AgentProcessFactory.format_row",
+      "pyopenagi/agents/agent_process.py::AgentProcessFactory.print->pyopenagi/agents/agent_process.py::AgentProcessFactory.print",
+      "pyopenagi/agents/agent_process.py::AgentProcessFactory.print_agent_process->pyopenagi/agents/agent_process.py::AgentProcessFactory.print",
+      "pyopenagi/agents/base_agent.py::BaseAgent.__init__->pyopenagi/agents/base_agent.py::BaseAgent.load_config",
+      "pyopenagi/agents/base_agent.py::BaseAgent.__init__->pyopenagi/agents/base_agent.py::BaseAgent.load_tools",
+      "pyopenagi/agents/base_agent.py::BaseAgent.__init__->pyopenagi/agents/base_agent.py::BaseAgent.set_created_time",
+      "pyopenagi/agents/base_agent.py::BaseAgent.__init__->pyopenagi/agents/base_agent.py::BaseAgent.set_status",
+      "pyopenagi/agents/base_agent.py::BaseAgent.__init__->pyopenagi/agents/base_agent.py::BaseAgent.setup_logger",
+      "pyopenagi/agents/base_agent.py::BaseAgent.automatic_workflow->pyopenagi/agents/base_agent.py::BaseAgent.check_workflow",
+      "pyopenagi/agents/base_agent.py::BaseAgent.automatic_workflow->pyopenagi/agents/base_agent.py::BaseAgent.get_response",
+      "pyopenagi/agents/base_agent.py::BaseAgent.automatic_workflow->pyopenagi/agents/base_agent.py::BaseAgent.set_start_time",
+      "pyopenagi/agents/base_agent.py::BaseAgent.automatic_workflow->pyopenagi/utils/chat_template.py::Query",
+      "pyopenagi/agents/base_agent.py::BaseAgent.get_response->pyopenagi/agents/base_agent.py::CustomizedThread.__init__",
+      "pyopenagi/agents/base_agent.py::BaseAgent.get_response->pyopenagi/agents/base_agent.py::CustomizedThread.join",
+      "pyopenagi/agents/base_agent.py::BaseAgent.load_tools->pyopenagi/agents/base_agent.py::BaseAgent.snake_to_camel",
+      "pyopenagi/agents/base_agent.py::BaseAgent.query_loop->pyopenagi/agents/base_agent.py::BaseAgent.create_agent_request",
+      "pyopenagi/agents/base_agent.py::BaseAgent.setup_logger->pyopenagi/utils/logger.py::AgentLogger",
+      "pyopenagi/agents/base_agent.py::CustomizedThread.run->pyopenagi/agents/base_agent.py::BaseAgent.query_loop",
+      "pyopenagi/agents/call_core.py::CallCore.__init__->pyopenagi/agents/call_core.py::CallCore.setup_logger",
+      "pyopenagi/agents/call_core.py::CallCore.get_response->pyopenagi/agents/call_core.py::CustomizedThread.__init__",
+      "pyopenagi/agents/call_core.py::CallCore.get_response->pyopenagi/agents/call_core.py::CustomizedThread.join",
+      "pyopenagi/agents/call_core.py::CallCore.query_loop->pyopenagi/agents/call_core.py::CallCore.create_agent_request",
+      "pyopenagi/agents/call_core.py::CallCore.setup_logger->pyopenagi/utils/logger.py::AgentLogger",
+      "pyopenagi/agents/call_core.py::CustomizedThread.run->pyopenagi/agents/call_core.py::CallCore.query_loop",
+      "pyopenagi/agents/interact.py::<module>->pyopenagi/agents/interact.py::Interactor.__init__",
+      "pyopenagi/agents/interact.py::<module>->pyopenagi/agents/interact.py::Interactor.download_agent",
+      "pyopenagi/agents/interact.py::<module>->pyopenagi/agents/interact.py::Interactor.upload_agent",
+      "pyopenagi/agents/interact.py::<module>->pyopenagi/agents/interact.py::parse_args",
+      "pyopenagi/agents/interact.py::Interactor.download_agent->pyopenagi/agents/interact.py::Interactor.decompress",
+      "pyopenagi/agents/interact.py::Interactor.download_agent->pyopenagi/agents/interact.py::Interactor.download_code",
+      "pyopenagi/agents/interact.py::Interactor.download_agent->pyopenagi/agents/interact.py::Interactor.download_config",
+      "pyopenagi/agents/interact.py::Interactor.download_agent->pyopenagi/agents/interact.py::Interactor.download_reqs",
+      "pyopenagi/agents/interact.py::Interactor.minify_config->pyopenagi/agents/interact.py::Interactor.compress",
+      "pyopenagi/agents/interact.py::Interactor.upload_agent->pyopenagi/agents/interact.py::Interactor.compress",
+      "pyopenagi/agents/interact.py::Interactor.upload_agent->pyopenagi/agents/interact.py::Interactor.minify_python_code",
+      "pyopenagi/agents/interact.py::Interactor.upload_agent->pyopenagi/agents/interact.py::Interactor.minify_reqs",
+      "pyopenagi/agents/react_agent.py::ReactAgent.run->pyopenagi/agents/react_agent.py::ReactAgent.automatic_workflow",
+      "pyopenagi/agents/react_agent.py::ReactAgent.run->pyopenagi/agents/react_agent.py::ReactAgent.build_system_instruction",
+      "pyopenagi/agents/react_agent.py::ReactAgent.run->pyopenagi/agents/react_agent.py::ReactAgent.call_tools",
+      "pyopenagi/agents/react_agent.py::ReactAgent.run->pyopenagi/agents/react_agent.py::ReactAgent.manual_workflow",
+      "pyopenagi/agents/react_agent.py::ReactAgent.run->pyopenagi/utils/chat_template.py::Query",
+      "pyopenagi/manager/manager.py::<module>->pyopenagi/manager/manager.py::AgentManager.__init__",
+      "pyopenagi/manager/manager.py::<module>->pyopenagi/manager/manager.py::AgentManager.download_agent",
+      "pyopenagi/manager/manager.py::AgentManager.download_agent->pyopenagi/manager/manager.py::AgentManager._get_cache_path",
+      "pyopenagi/manager/manager.py::AgentManager.download_agent->pyopenagi/manager/manager.py::AgentManager._save_agent_to_cache",
+      "pyopenagi/manager/manager.py::AgentManager.download_agent->pyopenagi/manager/manager.py::AgentManager.check_reqs_installed",
+      "pyopenagi/manager/manager.py::AgentManager.download_agent->pyopenagi/manager/manager.py::AgentManager.install_agent_reqs",
+      "pyopenagi/manager/manager.py::AgentManager.upload_agent->pyopenagi/manager/manager.py::AgentManager._get_agent_files",
+      "pyopenagi/manager/manager.py::AgentManager.upload_agent->pyopenagi/manager/manager.py::AgentManager._get_agent_metadata",
+      "pyopenagi/utils/logger.py::BaseLogger.__init__->pyopenagi/utils/logger.py::BaseLogger.load_log_file",
+      "pyopenagi/utils/logger.py::BaseLogger.log->pyopenagi/utils/logger.py::BaseLogger.log_to_console",
+      "pyopenagi/utils/logger.py::BaseLogger.log->pyopenagi/utils/logger.py::BaseLogger.log_to_file",
+      "pyopenagi/utils/utils.py::get_from_dict_or_env->pyopenagi/utils/utils.py::get_from_env"
+    ]
+  }
+}

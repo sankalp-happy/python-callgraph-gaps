@@ -1,0 +1,112 @@
+{
+  "repo_url": "https://github.com/The-PR-Agent/pr-agent",
+  "repo_name": "pr-agent",
+  "row_id": "C0019",
+  "stratum": "LOW",
+  "sha_requested": "8242ce581dc237774409212c84ee87d081cdac7e",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-22T12:48:56Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "8242ce581dc237774409212c84ee87d081cdac7e",
+    "seconds_clone": 24.8
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "pr_agent"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 73,
+    "nodes": 1100,
+    "callable_nodes": 960,
+    "by_kind": {
+      "class_body": 67,
+      "function": 316,
+      "lambda": 16,
+      "method": 628,
+      "module": 73
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 1,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 6879,
+    "ast_resolved": 2003,
+    "by_edge_type": {
+      "direct": 3211,
+      "method_static": 257,
+      "method_dynamic": 3259,
+      "super_dispatch": 8,
+      "reflective": 3,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 45,
+      "decorator_apply": 92,
+      "subprocess_ipc": 4
+    },
+    "by_target_scope": {
+      "external": 1533,
+      "in_repo": 2041,
+      "unknown": 3305
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 978,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 88,
+    "namespace_merged": 17
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 1250,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 2370
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 17,
+    "decorator_apply": 21,
+    "direct": 250,
+    "method_dynamic": 2078,
+    "method_static": 2,
+    "reflective": 1,
+    "super_dispatch": 1
+  },
+  "baseline_comparison": {
+    "pycg_only": 27,
+    "pyright_only": 299,
+    "agreed": 951,
+    "union": 1277,
+    "jaccard": 0.7447
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 108.1
+}

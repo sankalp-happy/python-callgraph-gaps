@@ -1,0 +1,44 @@
+--- pyright_baseline.py.bak	2026-08-22 22:39:02.128196252 +0530
++++ pyright_baseline.py	2026-08-22 22:39:02.141196219 +0530
+@@ -217,12 +217,31 @@
+     return spec, by_site
+ 
+ 
++def kill_container(name: str) -> None:
++    """Stop a container the timeout path abandoned.
++
++    subprocess's `timeout=` kills the `docker run` CLIENT, not the container:
++    the daemon keeps it running at 100% CPU indefinitely, and `--rm` only fires
++    when it exits, which it never does. Every timeout used to leak one core.
++    Best-effort and silent -- it may already have exited on its own.
++    """
++    try:
++        subprocess.run(["docker", "kill", name], capture_output=True,
++                       text=True, timeout=60)
++    except (OSError, subprocess.SubprocessError):
++        pass
++
++
+ def run_probe(repo: Path, work: Path, spec: dict, image: str,
+               site_packages: str | None, timeout: float,
+               stream_progress: bool = True) -> ProbeRun:
+     work.mkdir(parents=True, exist_ok=True)
+     (work / "requests.json").write_text(json.dumps(spec))
+-    argv, _, _ = probe_argv(repo, work, image, site_packages)
++    argv, _, in_docker = probe_argv(repo, work, image, site_packages)
++    # --name so the timeout path below can actually stop the container.
++    name = f"tw-pyright-{os.getpid()}-{time.time_ns():x}"
++    if in_docker:
++        argv = argv[:2] + [f"--name={name}"] + argv[2:]
+     env = dict(os.environ)
+     if image == "none":
+         env["WORK_DIR"] = str(work)
+@@ -233,6 +252,8 @@
+             stderr=None if stream_progress else subprocess.PIPE, text=True)
+         rc, err = proc.returncode, (proc.stderr or "")
+     except subprocess.TimeoutExpired as exc:
++        if in_docker:
++            kill_container(name)
+         rc, err = -1, f"probe timed out after {timeout}s: {exc}"
+     except FileNotFoundError as exc:
+         return ProbeRun(f"probe_unavailable: {exc}", {}, [], {})

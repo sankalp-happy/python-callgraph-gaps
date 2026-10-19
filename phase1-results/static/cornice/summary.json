@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/Cornices/cornice",
+  "repo_name": "cornice",
+  "row_id": "C0118",
+  "stratum": "HIGH",
+  "sha_requested": "1d398c78299b9f66da55e2233d873a9481d92478",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-23T12:48:27Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "1d398c78299b9f66da55e2233d873a9481d92478",
+    "seconds_clone": 2.2
+  },
+  "layout": "src",
+  "src_root": "src",
+  "packages": [
+    "src/cornice"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 11,
+    "nodes": 119,
+    "callable_nodes": 96,
+    "by_kind": {
+      "class_body": 12,
+      "function": 54,
+      "lambda": 1,
+      "method": 41,
+      "module": 11
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 1,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 409,
+    "ast_resolved": 70,
+    "by_edge_type": {
+      "direct": 191,
+      "method_static": 13,
+      "method_dynamic": 178,
+      "super_dispatch": 2,
+      "reflective": 5,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 14,
+      "decorator_apply": 6,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 132,
+      "in_repo": 73,
+      "unknown": 204
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 51,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 4,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 68,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 158
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 8,
+    "decorator_apply": 1,
+    "direct": 10,
+    "method_dynamic": 133,
+    "reflective": 5,
+    "super_dispatch": 1
+  },
+  "baseline_comparison": {
+    "pycg_only": 7,
+    "pyright_only": 24,
+    "agreed": 44,
+    "union": 75,
+    "jaccard": 0.5867
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 10.2
+}

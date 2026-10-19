@@ -1,0 +1,162 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 215,
+        "edges": 228,
+        "seconds": 0.32,
+        "peak_rss_mb": 20,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 215,
+        "edges": 228,
+        "seconds": 0.32,
+        "peak_rss_mb": 20,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 215,
+        "edges": 228,
+        "seconds": 0.31,
+        "peak_rss_mb": 20,
+        "detail": null
+      }
+    ],
+    "union_nodes": 215,
+    "union_edges": 228,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 215,
+    "pycg_edges": 228,
+    "name_outcomes": {
+      "mapped": 142,
+      "namespace_merged": 0,
+      "external": 64,
+      "unmapped": 9
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 19,
+      "external_module": 45,
+      "synthesized_path": 9
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [
+      "secedgar.core.combo.ComboFilings._get_quarterly_daily_date_lists.<lambda1>",
+      "secedgar.core.combo.ComboFilings._get_quarterly_daily_date_lists.<lambda2>",
+      "secedgar.core.combo.ComboFilings._get_quarterly_daily_date_lists.<lambda3>",
+      "secedgar.core.combo.ComboFilings._get_quarterly_daily_date_lists.<lambda4>",
+      "secedgar.core.combo.ComboFilings.get_urls.<lambda1>",
+      "secedgar.core.combo.ComboFilings.save.<lambda1>",
+      "secedgar.core.daily.DailyFilings.get_urls",
+      "secedgar.core.filings.<lambda1>",
+      "secedgar.core.quarterly.QuarterlyFilings.get_urls"
+    ],
+    "unmapped_distinct": 9,
+    "inventory_nodes_covered": 142,
+    "inventory_nodes_total": 173
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 67,
+      "callers_with_external_edges": 61,
+      "dropped": {
+        "callee_external": 156,
+        "callee_unmapped": 3,
+        "caller_unmapped": 2
+      }
+    },
+    "in_universe_edges": [
+      "secedgar/cik_lookup.py::CIKLookup.__init__->secedgar/client.py::NetworkClient",
+      "secedgar/cik_lookup.py::CIKLookup._get_cik_from_html->secedgar/cik_lookup.py::CIKLookup._get_cik_possibilities",
+      "secedgar/cik_lookup.py::CIKLookup._get_cik_from_html->secedgar/cik_lookup.py::CIKLookup._get_lookup_soup",
+      "secedgar/cik_lookup.py::CIKLookup._get_cik_from_html->secedgar/cik_lookup.py::CIKLookup._validate_lookup",
+      "secedgar/cik_lookup.py::CIKLookup._get_cik_possibilities->secedgar/exceptions.py::EDGARQueryError",
+      "secedgar/cik_lookup.py::CIKLookup._validate_cik->secedgar/exceptions.py::CIKError",
+      "secedgar/cik_lookup.py::CIKLookup.get_ciks->secedgar/cik_lookup.py::CIKLookup._get_cik_from_html",
+      "secedgar/cik_lookup.py::CIKLookup.get_ciks->secedgar/cik_lookup.py::CIKLookup._validate_cik",
+      "secedgar/cik_lookup.py::CIKLookup.get_ciks->secedgar/cik_lookup.py::get_cik_map",
+      "secedgar/cik_lookup.py::CIKLookup.lookup_dict->secedgar/cik_lookup.py::CIKLookup.get_ciks",
+      "secedgar/cli.py::daily->secedgar/cli.py::date_cleanup",
+      "secedgar/cli.py::daily->secedgar/core/daily.py::DailyFilings",
+      "secedgar/cli.py::daily->secedgar/core/daily.py::DailyFilings.save",
+      "secedgar/cli.py::filing->secedgar/cli.py::date_cleanup",
+      "secedgar/cli.py::filing->secedgar/core/company.py::CompanyFilings",
+      "secedgar/cli.py::filing->secedgar/core/company.py::CompanyFilings.save",
+      "secedgar/cli.py::filing->secedgar/exceptions.py::FilingTypeError",
+      "secedgar/client.py::NetworkClient._validate_response->secedgar/exceptions.py::EDGARQueryError",
+      "secedgar/client.py::NetworkClient.wait_for_download_async->secedgar/client.py::NetworkClient.wait_for_download_async.batch",
+      "secedgar/client.py::NetworkClient.wait_for_download_async->secedgar/client.py::NetworkClient.wait_for_download_async.fetch_and_save",
+      "secedgar/client.py::NetworkClient.wait_for_download_async.fetch_and_save->secedgar/utils.py::make_path",
+      "secedgar/core/_base.py::AbstractFiling.get_urls_safely->secedgar/core/_base.py::AbstractFiling.get_urls",
+      "secedgar/core/_base.py::AbstractFiling.get_urls_safely->secedgar/exceptions.py::NoFilingsError",
+      "secedgar/core/_index.py::IndexFilings.__init__->secedgar/client.py::NetworkClient",
+      "secedgar/core/_index.py::IndexFilings._do_create_and_copy->secedgar/utils.py::make_path",
+      "secedgar/core/_index.py::IndexFilings._get_master_idx_file->secedgar/core/_index.py::IndexFilings._get_listings_directory",
+      "secedgar/core/_index.py::IndexFilings._get_master_idx_file->secedgar/exceptions.py::EDGARQueryError",
+      "secedgar/core/_index.py::IndexFilings._move_to_dest->secedgar/core/_base.py::AbstractFiling.get_accession_number",
+      "secedgar/core/_index.py::IndexFilings._save_filings->secedgar/core/_base.py::AbstractFiling.get_accession_number",
+      "secedgar/core/_index.py::IndexFilings._save_filings->secedgar/core/_base.py::AbstractFiling.get_urls_safely",
+      "secedgar/core/_index.py::IndexFilings._save_filings->secedgar/core/_index.py::IndexFilings._move_to_dest",
+      "secedgar/core/_index.py::IndexFilings._save_filings->secedgar/core/_index.py::IndexFilings._unzip",
+      "secedgar/core/_index.py::IndexFilings._unzip->secedgar/core/_index.py::IndexFilings._get_tar_urls",
+      "secedgar/core/_index.py::IndexFilings.get_filings_dict->secedgar/core/_index.py::IndexFilings._get_master_idx_file",
+      "secedgar/core/_index.py::IndexFilings.get_urls->secedgar/core/_index.py::IndexFilings.get_filings_dict",
+      "secedgar/core/combo.py::ComboFilings.__init__->secedgar/client.py::NetworkClient",
+      "secedgar/core/combo.py::ComboFilings._get_quarterly_daily_date_lists->secedgar/core/combo.py::fill_days",
+      "secedgar/core/combo.py::ComboFilings._get_quarterly_daily_date_lists->secedgar/utils.py::add_quarter",
+      "secedgar/core/combo.py::ComboFilings._get_quarterly_daily_date_lists->secedgar/utils.py::get_month",
+      "secedgar/core/combo.py::ComboFilings._get_quarterly_daily_date_lists->secedgar/utils.py::get_quarter",
+      "secedgar/core/combo.py::ComboFilings.get_urls->secedgar/core/daily.py::DailyFilings",
+      "secedgar/core/combo.py::ComboFilings.get_urls->secedgar/core/quarterly.py::QuarterlyFilings",
+      "secedgar/core/combo.py::ComboFilings.save->secedgar/core/daily.py::DailyFilings",
+      "secedgar/core/combo.py::ComboFilings.save->secedgar/core/daily.py::DailyFilings.save",
+      "secedgar/core/combo.py::ComboFilings.save->secedgar/core/quarterly.py::QuarterlyFilings",
+      "secedgar/core/combo.py::ComboFilings.save->secedgar/core/quarterly.py::QuarterlyFilings.save",
+      "secedgar/core/company.py::CompanyFilings.__init__->secedgar/client.py::NetworkClient",
+      "secedgar/core/company.py::CompanyFilings.cik_lookup->secedgar/cik_lookup.py::CIKLookup.__init__",
+      "secedgar/core/company.py::CompanyFilings.end_date->secedgar/utils.py::sanitize_date",
+      "secedgar/core/company.py::CompanyFilings.filing_type->secedgar/exceptions.py::FilingTypeError",
+      "secedgar/core/company.py::CompanyFilings.params->secedgar/utils.py::sanitize_date",
+      "secedgar/core/company.py::CompanyFilings.start_date->secedgar/utils.py::sanitize_date",
+      "secedgar/core/daily.py::DailyFilings.quarter->secedgar/utils.py::get_quarter",
+      "secedgar/core/filings.py::filings->secedgar/core/combo.py::ComboFilings",
+      "secedgar/core/filings.py::filings->secedgar/core/company.py::CompanyFilings",
+      "secedgar/core/filings.py::filings->secedgar/core/daily.py::DailyFilings",
+      "secedgar/core/filings.py::filings->secedgar/core/quarterly.py::QuarterlyFilings",
+      "secedgar/core/filings.py::filings->secedgar/exceptions.py::FilingTypeError",
+      "secedgar/core/filings.py::filings->secedgar/utils.py::add_quarter",
+      "secedgar/core/filings.py::filings->secedgar/utils.py::get_month",
+      "secedgar/core/filings.py::filings->secedgar/utils.py::get_quarter",
+      "secedgar/core/quarterly.py::QuarterlyFilings.quarter->secedgar/utils.py::get_quarter",
+      "secedgar/core/rest.py::_get_lookup_dict->secedgar/cik_lookup.py::CIKLookup.__init__",
+      "secedgar/core/rest.py::get_company_concepts->secedgar/core/rest.py::_get_lookup_dict",
+      "secedgar/core/rest.py::get_company_facts->secedgar/core/rest.py::_get_lookup_dict",
+      "secedgar/core/rest.py::get_submissions->secedgar/core/rest.py::_combine_dicts",
+      "secedgar/core/rest.py::get_submissions->secedgar/core/rest.py::_get_lookup_dict"
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 225,
+        "edges": 113,
+        "seconds": 0.09,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 239,
+        "edges": 140,
+        "seconds": 0.15,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 233,
+        "edges": 131,
+        "seconds": 0.14,
+        "peak_rss_mb": 16,
+        "detail": null
+      }
+    ],
+    "union_nodes": 239,
+    "union_edges": 140,
+    "deterministic_across_seeds": false
+  },
+  "diagnostics": {
+    "pycg_nodes": 239,
+    "pycg_edges": 140,
+    "name_outcomes": {
+      "mapped": 153,
+      "namespace_merged": 1,
+      "external": 85,
+      "unmapped": 0
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 28,
+      "external_module": 57,
+      "namespace_merged": 1
+    },
+    "namespace_merged_examples": [
+      "utils.cached_property"
+    ],
+    "namespace_merged_distinct": 1,
+    "unmapped_examples": [],
+    "unmapped_distinct": 0,
+    "inventory_nodes_covered": 154,
+    "inventory_nodes_total": 167
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 15,
+      "callers_with_external_edges": 53,
+      "dropped": {
+        "callee_external": 125
+      }
+    },
+    "in_universe_edges": [
+      "src/lazy_object_proxy/simple.py::Proxy->src/lazy_object_proxy/simple.py::make_proxy_method",
+      "src/lazy_object_proxy/simple.py::Proxy->src/lazy_object_proxy/utils.py::cached_property",
+      "src/lazy_object_proxy/simple.py::Proxy.__call__->src/lazy_object_proxy/simple.py::Proxy.__wrapped__",
+      "src/lazy_object_proxy/simple.py::make_proxy_method.proxy_wrapper->src/lazy_object_proxy/slots.py::Proxy.__init__",
+      "src/lazy_object_proxy/simple.py::make_proxy_method.proxy_wrapper->src/lazy_object_proxy/slots.py::Proxy.__wrapped__",
+      "src/lazy_object_proxy/slots.py::Proxy.__call__->src/lazy_object_proxy/slots.py::Proxy.__init__",
+      "src/lazy_object_proxy/slots.py::Proxy.__call__->src/lazy_object_proxy/slots.py::Proxy.__wrapped__",
+      "src/lazy_object_proxy/slots.py::Proxy.__enter__->src/lazy_object_proxy/slots.py::Proxy.__enter__",
+      "src/lazy_object_proxy/slots.py::Proxy.__exit__->src/lazy_object_proxy/slots.py::Proxy.__exit__",
+      "src/lazy_object_proxy/slots.py::Proxy.__format__->src/lazy_object_proxy/slots.py::Proxy.__format__",
+      "src/lazy_object_proxy/slots.py::Proxy.__wrapped__->src/lazy_object_proxy/slots.py::Proxy.__init__",
+      "src/lazy_object_proxy/slots.py::Proxy.__wrapped__->src/lazy_object_proxy/slots.py::Proxy.__wrapped__",
+      "src/lazy_object_proxy/utils.py::__await__->src/lazy_object_proxy/utils.py::await_",
+      "src/lazy_object_proxy/utils.py::await_->src/lazy_object_proxy/utils.py::do_await",
+      "src/lazy_object_proxy/utils.py::await_->src/lazy_object_proxy/utils.py::do_yield_from"
+    ]
+  }
+}

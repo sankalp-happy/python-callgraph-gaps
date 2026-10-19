@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/OSU-NLP-Group/HippoRAG",
+  "repo_name": "HippoRAG",
+  "row_id": "C0020",
+  "stratum": "MED",
+  "sha_requested": "c617143f01477243992a63b2e2151cc003dd3b21",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-22T21:29:01Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "c617143f01477243992a63b2e2151cc003dd3b21",
+    "seconds_clone": 7.0
+  },
+  "layout": "src",
+  "src_root": "src",
+  "packages": [
+    "src/hipporag"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 58,
+    "nodes": 424,
+    "callable_nodes": 311,
+    "by_kind": {
+      "class_body": 55,
+      "function": 59,
+      "lambda": 5,
+      "method": 247,
+      "module": 58
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 2083,
+    "ast_resolved": 275,
+    "by_edge_type": {
+      "direct": 1053,
+      "method_static": 144,
+      "method_dynamic": 807,
+      "super_dispatch": 16,
+      "reflective": 1,
+      "dynamic_import": 2,
+      "eval_exec": 3,
+      "callback_dispatch": 19,
+      "decorator_apply": 37,
+      "subprocess_ipc": 1
+    },
+    "by_target_scope": {
+      "external": 960,
+      "in_repo": 302,
+      "unknown": 821
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 261,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 8,
+    "namespace_merged": 41
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 347,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 381
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 9,
+    "direct": 157,
+    "method_dynamic": 214,
+    "reflective": 1
+  },
+  "baseline_comparison": {
+    "pycg_only": 41,
+    "pyright_only": 127,
+    "agreed": 220,
+    "union": 388,
+    "jaccard": 0.567
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 39.5
+}

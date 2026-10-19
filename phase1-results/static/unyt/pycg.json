@@ -1,0 +1,72 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "error",
+        "nodes": null,
+        "edges": null,
+        "seconds": null,
+        "peak_rss_mb": null,
+        "detail": ", line 417, in visit_ClassDef\n    super().visit_ClassDef(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/base.py\", line 131, in visit_ClassDef\n    self.visit(stmt)\n  File \"/usr/local/lib/python3.10/ast.py\", line 418, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py\", line 341, in visit_FunctionDef\n    self._handle_function_def(node, node.name)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py\", line 258, in _handle_function_def\n    defaults = self._get_fun_defaults(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py\", line 59, in _get_fun_defaults\n    defaults[node.args.args[cnt].arg] = self.decode_node(d)\nIndexError: list index out of range"
+      },
+      {
+        "seed": "1",
+        "status": "error",
+        "nodes": null,
+        "edges": null,
+        "seconds": null,
+        "peak_rss_mb": null,
+        "detail": ", line 417, in visit_ClassDef\n    super().visit_ClassDef(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/base.py\", line 131, in visit_ClassDef\n    self.visit(stmt)\n  File \"/usr/local/lib/python3.10/ast.py\", line 418, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py\", line 341, in visit_FunctionDef\n    self._handle_function_def(node, node.name)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py\", line 258, in _handle_function_def\n    defaults = self._get_fun_defaults(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py\", line 59, in _get_fun_defaults\n    defaults[node.args.args[cnt].arg] = self.decode_node(d)\nIndexError: list index out of range"
+      },
+      {
+        "seed": "42",
+        "status": "error",
+        "nodes": null,
+        "edges": null,
+        "seconds": null,
+        "peak_rss_mb": null,
+        "detail": ", line 417, in visit_ClassDef\n    super().visit_ClassDef(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/base.py\", line 131, in visit_ClassDef\n    self.visit(stmt)\n  File \"/usr/local/lib/python3.10/ast.py\", line 418, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py\", line 341, in visit_FunctionDef\n    self._handle_function_def(node, node.name)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py\", line 258, in _handle_function_def\n    defaults = self._get_fun_defaults(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/preprocessor.py\", line 59, in _get_fun_defaults\n    defaults[node.args.args[cnt].arg] = self.decode_node(d)\nIndexError: list index out of range"
+      }
+    ],
+    "union_nodes": 0,
+    "union_edges": 0,
+    "deterministic_across_seeds": null
+  },
+  "diagnostics": {
+    "pycg_nodes": 0,
+    "pycg_edges": 0,
+    "name_outcomes": {
+      "mapped": 0,
+      "namespace_merged": 0,
+      "external": 0,
+      "unmapped": 0
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {},
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [],
+    "unmapped_distinct": 0,
+    "inventory_nodes_covered": 0,
+    "inventory_nodes_total": 497
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 0,
+      "callers_with_external_edges": 0,
+      "dropped": {}
+    },
+    "in_universe_edges": []
+  }
+}

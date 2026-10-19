@@ -1,0 +1,158 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 185,
+        "edges": 249,
+        "seconds": 0.3,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 185,
+        "edges": 249,
+        "seconds": 0.31,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 185,
+        "edges": 249,
+        "seconds": 0.34,
+        "peak_rss_mb": 16,
+        "detail": null
+      }
+    ],
+    "union_nodes": 185,
+    "union_edges": 249,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 185,
+    "pycg_edges": 249,
+    "name_outcomes": {
+      "mapped": 86,
+      "namespace_merged": 0,
+      "external": 82,
+      "unmapped": 17
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 18,
+      "external_module": 64,
+      "synthesized_path": 17
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [
+      "fpie.core_cuda.EquSolver",
+      "fpie.core_cuda.GridSolver",
+      "fpie.core_gcc.EquSolver",
+      "fpie.core_gcc.GridSolver",
+      "fpie.core_mpi.EquSolver",
+      "fpie.core_mpi.GridSolver",
+      "fpie.core_openmp.EquSolver",
+      "fpie.core_openmp.GridSolver",
+      "fpie.io.read_image.copy",
+      "fpie.io.read_image.core.reset",
+      "fpie.io.read_image.mask2index",
+      "fpie.io.read_image.mean",
+      "fpie.io.read_image.mixgrad",
+      "fpie.process.DEFAULT_BACKEND.split",
+      "fpie.process.DEFAULT_BACKEND.startswith",
+      "fpie.process.EquProcessor.sync",
+      "fpie.process.GridProcessor.sync"
+    ],
+    "unmapped_distinct": 17,
+    "inventory_nodes_covered": 86,
+    "inventory_nodes_total": 94
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 56,
+      "callers_with_external_edges": 57,
+      "dropped": {
+        "callee_external": 169,
+        "callee_unmapped": 24
+      }
+    },
+    "in_universe_edges": [
+      "fpie/cli.py::main->fpie/args.py::get_args",
+      "fpie/cli.py::main->fpie/io.py::read_images",
+      "fpie/cli.py::main->fpie/io.py::write_image",
+      "fpie/cli.py::main->fpie/process.py::EquProcessor",
+      "fpie/cli.py::main->fpie/process.py::EquProcessor.reset",
+      "fpie/cli.py::main->fpie/process.py::EquProcessor.step",
+      "fpie/cli.py::main->fpie/process.py::GridProcessor",
+      "fpie/cli.py::main->fpie/process.py::GridProcessor.reset",
+      "fpie/cli.py::main->fpie/process.py::GridProcessor.step",
+      "fpie/gui.py::GUI.__init__->fpie/io.py::read_image",
+      "fpie/gui.py::GUI.__init__->fpie/io.py::write_image",
+      "fpie/gui.py::GUI.target_callback->fpie/process.py::EquProcessor.reset",
+      "fpie/gui.py::GUI.target_callback->fpie/process.py::EquProcessor.step",
+      "fpie/gui.py::GUI.target_callback->fpie/process.py::GridProcessor.reset",
+      "fpie/gui.py::GUI.target_callback->fpie/process.py::GridProcessor.step",
+      "fpie/gui.py::main->fpie/args.py::get_args",
+      "fpie/gui.py::main->fpie/gui.py::GUI.__init__",
+      "fpie/gui.py::main->fpie/process.py::EquProcessor",
+      "fpie/gui.py::main->fpie/process.py::GridProcessor",
+      "fpie/io.py::read_images->fpie/io.py::read_image",
+      "fpie/numba_solver.py::EquSolver.reset->fpie/numba_solver.py::equ_iter",
+      "fpie/numba_solver.py::EquSolver.step->fpie/numba_solver.py::equ_iter",
+      "fpie/numba_solver.py::GridSolver.reset->fpie/numba_solver.py::grid_iter",
+      "fpie/numba_solver.py::GridSolver.step->fpie/numba_solver.py::grid_iter",
+      "fpie/process.py::<module>->fpie/process.py::_default_cpu_count",
+      "fpie/process.py::EquProcessor.__init__->fpie/np_solver.py::EquSolver.__init__",
+      "fpie/process.py::EquProcessor.__init__->fpie/numba_solver.py::EquSolver.__init__",
+      "fpie/process.py::EquProcessor.__init__->fpie/process.py::_ensure_mpi_initialized",
+      "fpie/process.py::EquProcessor.__init__->fpie/taichi_solver.py::EquSolver.__init__",
+      "fpie/process.py::GridProcessor.__init__->fpie/np_solver.py::GridSolver.__init__",
+      "fpie/process.py::GridProcessor.__init__->fpie/numba_solver.py::GridSolver.__init__",
+      "fpie/process.py::GridProcessor.__init__->fpie/process.py::_ensure_mpi_initialized",
+      "fpie/process.py::GridProcessor.__init__->fpie/taichi_solver.py::GridSolver.__init__",
+      "fpie/taichi_solver.py::EquSolver.step->fpie/taichi_solver.py::EquSolver.error_kernel",
+      "fpie/taichi_solver.py::EquSolver.step->fpie/taichi_solver.py::EquSolver.iter_kernel",
+      "fpie/taichi_solver.py::GridSolver.step->fpie/taichi_solver.py::GridSolver.error_kernel",
+      "fpie/taichi_solver.py::GridSolver.step->fpie/taichi_solver.py::GridSolver.iter_kernel",
+      "fpie/video.py::_FrameSource.__init__->fpie/video.py::_coerce_capture_source",
+      "fpie/video.py::_load_mask->fpie/io.py::read_image",
+      "fpie/video.py::blend_frame->fpie/video.py::create_processor",
+      "fpie/video.py::blend_frames->fpie/video.py::blend_frame",
+      "fpie/video.py::blend_frames->fpie/video.py::create_processor",
+      "fpie/video.py::blend_video->fpie/video.py::_FrameSource.__init__",
+      "fpie/video.py::blend_video->fpie/video.py::_FrameSource.read",
+      "fpie/video.py::blend_video->fpie/video.py::_FrameSource.release",
+      "fpie/video.py::blend_video->fpie/video.py::_coerce_capture_source",
+      "fpie/video.py::blend_video->fpie/video.py::_load_mask",
+      "fpie/video.py::blend_video->fpie/video.py::_pick_fourcc",
+      "fpie/video.py::blend_video->fpie/video.py::_resolve_fps",
+      "fpie/video.py::blend_video->fpie/video.py::blend_frame",
+      "fpie/video.py::blend_video->fpie/video.py::create_processor",
+      "fpie/video.py::create_processor->fpie/process.py::EquProcessor",
+      "fpie/video.py::create_processor->fpie/process.py::GridProcessor",
+      "fpie/video_cli.py::<module>->fpie/video_cli.py::main",
+      "fpie/video_cli.py::main->fpie/video.py::blend_video",
+      "fpie/video_cli.py::main->fpie/video_cli.py::get_args"
+    ]
+  }
+}

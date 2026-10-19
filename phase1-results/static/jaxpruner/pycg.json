@@ -1,0 +1,72 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "error",
+        "nodes": null,
+        "edges": null,
+        "seconds": null,
+        "peak_rss_mb": null,
+        "detail": "ocessor.analyze()\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/postprocessor.py\", line 341, in analyze\n    self.visit(ast.parse(self.contents, self.filename))\n  File \"/usr/local/lib/python3.10/ast.py\", line 418, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/base.py\", line 62, in visit_Module\n    self.generic_visit(node)\n  File \"/usr/local/lib/python3.10/ast.py\", line 426, in generic_visit\n    self.visit(item)\n  File \"/usr/local/lib/python3.10/ast.py\", line 418, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/postprocessor.py\", line 171, in visit_FunctionDef\n    arg_def.get_name_pointer().add(prev_name)\nAttributeError: 'NoneType' object has no attribute 'get_name_pointer'"
+      },
+      {
+        "seed": "1",
+        "status": "error",
+        "nodes": null,
+        "edges": null,
+        "seconds": null,
+        "peak_rss_mb": null,
+        "detail": "ocessor.analyze()\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/postprocessor.py\", line 341, in analyze\n    self.visit(ast.parse(self.contents, self.filename))\n  File \"/usr/local/lib/python3.10/ast.py\", line 418, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/base.py\", line 62, in visit_Module\n    self.generic_visit(node)\n  File \"/usr/local/lib/python3.10/ast.py\", line 426, in generic_visit\n    self.visit(item)\n  File \"/usr/local/lib/python3.10/ast.py\", line 418, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/postprocessor.py\", line 171, in visit_FunctionDef\n    arg_def.get_name_pointer().add(prev_name)\nAttributeError: 'NoneType' object has no attribute 'get_name_pointer'"
+      },
+      {
+        "seed": "42",
+        "status": "error",
+        "nodes": null,
+        "edges": null,
+        "seconds": null,
+        "peak_rss_mb": null,
+        "detail": "ocessor.analyze()\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/postprocessor.py\", line 341, in analyze\n    self.visit(ast.parse(self.contents, self.filename))\n  File \"/usr/local/lib/python3.10/ast.py\", line 418, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/base.py\", line 62, in visit_Module\n    self.generic_visit(node)\n  File \"/usr/local/lib/python3.10/ast.py\", line 426, in generic_visit\n    self.visit(item)\n  File \"/usr/local/lib/python3.10/ast.py\", line 418, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python3.10/site-packages/pycg/processing/postprocessor.py\", line 171, in visit_FunctionDef\n    arg_def.get_name_pointer().add(prev_name)\nAttributeError: 'NoneType' object has no attribute 'get_name_pointer'"
+      }
+    ],
+    "union_nodes": 0,
+    "union_edges": 0,
+    "deterministic_across_seeds": null
+  },
+  "diagnostics": {
+    "pycg_nodes": 0,
+    "pycg_edges": 0,
+    "name_outcomes": {
+      "mapped": 0,
+      "namespace_merged": 0,
+      "external": 0,
+      "unmapped": 0
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {},
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [],
+    "unmapped_distinct": 0,
+    "inventory_nodes_covered": 0,
+    "inventory_nodes_total": 404
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 0,
+      "callers_with_external_edges": 0,
+      "dropped": {}
+    },
+    "in_universe_edges": []
+  }
+}

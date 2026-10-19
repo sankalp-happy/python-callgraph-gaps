@@ -16,8 +16,18 @@ traces/
 # corpus/ (or traceweave-data/out) holds result.env + lock.txt + attempt.log.
 # ~4 MB at 450 candidates, and it CANNOT be regenerated: lock.txt records what
 # PyPI resolved on a specific date, and re-resolving changes lock_sha256 and
-# therefore the repo's identity 5-tuple. See MIGRATION.md §1.
+# therefore the repo's identity 5-tuple. See docs/MIGRATION.md §1.
 # Deliberately NOT ignored. Do not add corpus/ here.
+
+# --- Phase 1 static output: only what paper/make_numbers.py reads is in git ---
+# summary.json + pycg.json per repo and the ledgers are committed (~4 MB). The
+# bulky per-repo inventory/callsites/pyright JSON (~200 MB) ships as the
+# phase1-results.tar.gz asset on the v1.0-paper GitHub release; unpack it over
+# the clone to get the full tree.
+phase1-results/static/*/inventory.json
+phase1-results/static/*/callsites.json
+phase1-results/static/*/pyright.json
+phase1-results.tar.gz
 
 # --- python -----------------------------------------------------------------
 __pycache__/
@@ -33,6 +43,9 @@ venv/
 .vscode/
 .idea/
 *.swp
+*.bak
+*.orig
+*~
 .DS_Store
 
 # --- secrets ----------------------------------------------------------------

@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/muscriptor/muscriptor",
+  "repo_name": "muscriptor",
+  "row_id": "C0086",
+  "stratum": "MED",
+  "sha_requested": "d73147e75e5b9b0c0a79ebe154587db4fd603e0c",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T19:32:52Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "d73147e75e5b9b0c0a79ebe154587db4fd603e0c",
+    "seconds_clone": 1.7
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "muscriptor"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 26,
+    "nodes": 231,
+    "callable_nodes": 168,
+    "by_kind": {
+      "class_body": 37,
+      "function": 85,
+      "lambda": 5,
+      "method": 78,
+      "module": 26
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1229,
+    "ast_resolved": 156,
+    "by_edge_type": {
+      "direct": 761,
+      "method_static": 29,
+      "method_dynamic": 351,
+      "super_dispatch": 14,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 31,
+      "decorator_apply": 42,
+      "subprocess_ipc": 1
+    },
+    "by_target_scope": {
+      "external": 618,
+      "in_repo": 205,
+      "unknown": 406
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 154,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 492
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 29,
+    "decorator_apply": 10,
+    "direct": 254,
+    "method_dynamic": 188,
+    "super_dispatch": 11
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 154,
+    "agreed": 0,
+    "union": 154,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 5414.0
+}

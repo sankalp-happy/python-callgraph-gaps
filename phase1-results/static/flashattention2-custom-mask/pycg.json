@@ -1,0 +1,93 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 49,
+        "edges": 69,
+        "seconds": 0.06,
+        "peak_rss_mb": 14,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 49,
+        "edges": 69,
+        "seconds": 0.06,
+        "peak_rss_mb": 13,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 49,
+        "edges": 69,
+        "seconds": 0.06,
+        "peak_rss_mb": 13,
+        "detail": null
+      }
+    ],
+    "union_nodes": 49,
+    "union_edges": 69,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 49,
+    "pycg_edges": 69,
+    "name_outcomes": {
+      "mapped": 15,
+      "namespace_merged": 0,
+      "external": 32,
+      "unmapped": 2
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 4,
+      "external_module": 28,
+      "synthesized_path": 2
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [
+      "fa2_custom_mask.fa2_custom_mask._attention.forward.<lambda1>",
+      "fa2_custom_mask.fa2_fwd._attn_fwd.acc.to"
+    ],
+    "unmapped_distinct": 2,
+    "inventory_nodes_covered": 15,
+    "inventory_nodes_total": 17
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 5,
+      "callers_with_external_edges": 10,
+      "dropped": {
+        "callee_external": 62,
+        "callee_unmapped": 1,
+        "caller_unmapped": 1
+      }
+    },
+    "in_universe_edges": [
+      "fa2_custom_mask/fa2_bwd.py::_attn_bwd->fa2_custom_mask/fa2_bwd.py::_attn_bwd_dkdv",
+      "fa2_custom_mask/fa2_bwd.py::_attn_bwd->fa2_custom_mask/fa2_bwd.py::_attn_bwd_dq",
+      "fa2_custom_mask/fa2_custom_mask.py::_attention.forward->fa2_custom_mask/utils.py::is_hip",
+      "fa2_custom_mask/fa2_fwd.py::<module>->fa2_custom_mask/utils.py::is_hip",
+      "fa2_custom_mask/fa2_fwd.py::_attn_fwd->fa2_custom_mask/fa2_fwd.py::_attn_fwd_inner"
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 294,
+        "edges": 310,
+        "seconds": 0.56,
+        "peak_rss_mb": 24,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 294,
+        "edges": 310,
+        "seconds": 0.57,
+        "peak_rss_mb": 24,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 294,
+        "edges": 310,
+        "seconds": 0.56,
+        "peak_rss_mb": 24,
+        "detail": null
+      }
+    ],
+    "union_nodes": 294,
+    "union_edges": 310,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 294,
+    "pycg_edges": 310,
+    "name_outcomes": {
+      "mapped": 171,
+      "namespace_merged": 16,
+      "external": 105,
+      "unmapped": 2
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 25,
+      "external_module": 80,
+      "namespace_merged": 16,
+      "redefinition_collapsed": 1,
+      "synthesized_path": 2
+    },
+    "namespace_merged_examples": [
+      "exceptions.HTTPError",
+      "exceptions._ValidationError",
+      "helpers._get_fields_by_type",
+      "helpers._normalize_header_name",
+      "helpers.get_reason_phrase",
+      "openapi.get_argument",
+      "openapi.get_default_response",
+      "openapi.get_operation_tags",
+      "openapi.get_path_description",
+      "openapi.get_path_summary",
+      "openapi.get_security_and_security_schemes",
+      "openapi.get_tag",
+      "openapi_adapters.extract_pydantic_defs",
+      "openapi_adapters.get_unique_schema_name",
+      "schemas.EmptySchema",
+      "schemas.PaginationModel"
+    ],
+    "namespace_merged_distinct": 16,
+    "unmapped_examples": [
+      "apiflask.app.APIFlask._generate_spec.<lambda1>",
+      "apiflask.security._AuthBase.error_processor.<lambda1>"
+    ],
+    "unmapped_distinct": 2,
+    "inventory_nodes_covered": 175,
+    "inventory_nodes_total": 198
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 77,
+      "callers_with_external_edges": 99,
+      "dropped": {
+        "callee_external": 231,
+        "caller_unmapped": 2
+      }
+    },
+    "in_universe_edges": [
+      "src/apiflask/app.py::APIFlask.__init__->src/apiflask/app.py::APIFlask._register_error_handlers",
+      "src/apiflask/app.py::APIFlask.__init__->src/apiflask/app.py::APIFlask._register_openapi_blueprint",
+      "src/apiflask/app.py::APIFlask._add_response->src/apiflask/app.py::APIFlask._register_schema_and_get_ref",
+      "src/apiflask/app.py::APIFlask._add_response_with_schema->src/apiflask/app.py::APIFlask._add_response",
+      "src/apiflask/app.py::APIFlask._apply_error_callback_to_werkzeug_errors.handle_werkzeug_errors->src/apiflask/exceptions.py::HTTPError",
+      "src/apiflask/app.py::APIFlask._collect_security_info->src/apiflask/app.py::APIFlask._collect_security_info._update_auth_info",
+      "src/apiflask/app.py::APIFlask._collect_security_info._update_auth_info->src/apiflask/app.py::APIFlask._collect_security_info._register_base_auth",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/app.py::APIFlask._add_response",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/app.py::APIFlask._add_response_with_schema",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/app.py::APIFlask._collect_security_info",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/app.py::APIFlask._make_info",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/app.py::APIFlask._make_tags",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/app.py::APIFlask._register_schema_and_get_ref",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/helpers.py::get_reason_phrase",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/openapi.py::get_argument",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/openapi.py::get_default_response",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/openapi.py::get_operation_tags",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/openapi.py::get_path_summary",
+      "src/apiflask/app.py::APIFlask._generate_spec->src/apiflask/openapi.py::get_security_and_security_schemes",
+      "src/apiflask/app.py::APIFlask._get_spec->src/apiflask/app.py::APIFlask._generate_spec",
+      "src/apiflask/app.py::APIFlask._make_tags->src/apiflask/openapi.py::get_tag",
+      "src/apiflask/app.py::APIFlask._register_error_handlers->src/apiflask/app.py::APIFlask._apply_error_callback_to_werkzeug_errors",
+      "src/apiflask/app.py::APIFlask._register_openapi_blueprint->src/apiflask/app.py::APIFlask._apply_decorators",
+      "src/apiflask/app.py::APIFlask._register_openapi_blueprint->src/apiflask/app.py::APIFlask._apply_decorators.decorator",
+      "src/apiflask/app.py::APIFlask._register_openapi_blueprint.spec->src/apiflask/app.py::APIFlask._get_spec",
+      "src/apiflask/app.py::APIFlask._register_schema_and_get_ref->src/apiflask/app.py::APIFlask._schema_name_resolver",
+      "src/apiflask/app.py::APIFlask._register_schema_and_get_ref->src/apiflask/openapi_adapters.py::extract_pydantic_defs",
+      "src/apiflask/app.py::APIFlask._register_schema_and_get_ref->src/apiflask/openapi_adapters.py::get_unique_schema_name",
+      "src/apiflask/app.py::APIFlask.error_processor->src/apiflask/app.py::APIFlask._apply_error_callback_to_werkzeug_errors",
+      "src/apiflask/app.py::APIFlask.spec->src/apiflask/app.py::APIFlask._get_spec",
+      "src/apiflask/exceptions.py::HTTPError.__init__->src/apiflask/helpers.py::get_reason_phrase",
+      "src/apiflask/exceptions.py::abort->src/apiflask/exceptions.py::HTTPError.__init__",
+      "src/apiflask/helpers.py::_get_fields_by_type->src/apiflask/helpers.py::_is_same_type",
+      "src/apiflask/helpers.py::pagination_builder->src/apiflask/helpers.py::pagination_builder.get_page_url",
+      "src/apiflask/helpers.py::pagination_builder->src/apiflask/schemas.py::PaginationModel",
+      "src/apiflask/openapi_adapters.py::<module>->src/apiflask/openapi_adapters.py::OpenAPIHelper.__init__",
+      "src/apiflask/openapi_adapters.py::OpenAPIHelper._extract_marshmallow_parameters->src/apiflask/openapi_adapters.py::OpenAPIHelper.get_marshmallow_plugin",
+      "src/apiflask/openapi_adapters.py::OpenAPIHelper.schema_to_json_schema->src/apiflask/openapi_adapters.py::OpenAPIHelper.get_marshmallow_plugin",
+      "src/apiflask/openapi_adapters.py::OpenAPIHelper.schema_to_parameters->src/apiflask/helpers.py::_normalize_header_name",
+      "src/apiflask/openapi_adapters.py::OpenAPIHelper.schema_to_parameters->src/apiflask/openapi_adapters.py::OpenAPIHelper._extract_marshmallow_parameters",
+      "src/apiflask/route.py::route_patch.add_url_rule->src/apiflask/route.py::route_patch.record_spec_for_view_class",
+      "src/apiflask/route.py::route_patch.record_spec_for_view_class->src/apiflask/openapi.py::get_path_description",
+      "src/apiflask/route.py::route_patch.record_spec_for_view_class->src/apiflask/openapi.py::get_path_summary",
+      "src/apiflask/scaffold.py::APIScaffold.auth_required.decorator->src/apiflask/scaffold.py::_annotate",
+      "src/apiflask/scaffold.py::APIScaffold.auth_required.decorator->src/apiflask/scaffold.py::_ensure_sync",
+      "src/apiflask/scaffold.py::APIScaffold.delete->src/apiflask/scaffold.py::APIScaffold._method_route",
+      "src/apiflask/scaffold.py::APIScaffold.doc.decorator->src/apiflask/scaffold.py::_annotate",
+      "src/apiflask/scaffold.py::APIScaffold.doc.decorator->src/apiflask/scaffold.py::_ensure_sync",
+      "src/apiflask/scaffold.py::APIScaffold.get->src/apiflask/scaffold.py::APIScaffold._method_route",
+      "src/apiflask/scaffold.py::APIScaffold.input.decorator->src/apiflask/scaffold.py::_annotate",
+      "src/apiflask/scaffold.py::APIScaffold.input.decorator->src/apiflask/scaffold.py::_ensure_sync",
+      "src/apiflask/scaffold.py::APIScaffold.output.decorator->src/apiflask/scaffold.py::_annotate",
+      "src/apiflask/scaffold.py::APIScaffold.output.decorator->src/apiflask/scaffold.py::_ensure_sync",
+      "src/apiflask/scaffold.py::APIScaffold.output.decorator._response->src/apiflask/scaffold.py::APIScaffold.output.decorator._jsonify",
+      "src/apiflask/scaffold.py::APIScaffold.patch->src/apiflask/scaffold.py::APIScaffold._method_route",
+      "src/apiflask/scaffold.py::APIScaffold.post->src/apiflask/scaffold.py::APIScaffold._method_route",
+      "src/apiflask/scaffold.py::APIScaffold.put->src/apiflask/scaffold.py::APIScaffold._method_route",
+      "src/apiflask/schema_adapters/marshmallow.py::FlaskParser.handle_error->src/apiflask/exceptions.py::_ValidationError",
+      "src/apiflask/schema_adapters/marshmallow.py::MarshmallowAdapter.__init__->src/apiflask/schemas.py::EmptySchema",
+      "src/apiflask/schema_adapters/marshmallow.py::MarshmallowAdapter.get_schema_name->src/apiflask/schemas.py::EmptySchema",
+      "src/apiflask/schema_adapters/marshmallow.py::MarshmallowAdapter.validate_input->src/apiflask/exceptions.py::_ValidationError",
+      "src/apiflask/schema_adapters/marshmallow.py::MarshmallowAdapter.validate_input->src/apiflask/schema_adapters/marshmallow.py::_get_files_and_form",
+      "src/apiflask/schema_adapters/marshmallow.py::load_files->src/apiflask/schema_adapters/marshmallow.py::_get_files_and_form",
+      "src/apiflask/schema_adapters/marshmallow.py::load_form_and_files->src/apiflask/schema_adapters/marshmallow.py::_get_files_and_form",
+      "src/apiflask/schema_adapters/pydantic.py::PydanticAdapter.get_openapi_schema->src/apiflask/schema_adapters/pydantic.py::PydanticAdapter.get_schema_name",
+      "src/apiflask/schema_adapters/pydantic.py::PydanticAdapter.validate_input->src/apiflask/exceptions.py::_ValidationError",
+      "src/apiflask/schema_adapters/pydantic.py::PydanticAdapter.validate_input->src/apiflask/helpers.py::_get_fields_by_type",
+      "src/apiflask/schema_adapters/pydantic.py::PydanticAdapter.validate_input->src/apiflask/schema_adapters/pydantic.py::PydanticAdapter.handle_files",
+      "src/apiflask/schema_adapters/pydantic.py::PydanticAdapter.validate_input->src/apiflask/schema_adapters/pydantic.py::_format_pydantic_errors",
+      "src/apiflask/schema_adapters/registry.py::<module>->src/apiflask/schema_adapters/registry.py::SchemaRegistry.__init__",
+      "src/apiflask/schema_adapters/registry.py::SchemaRegistry.__init__->src/apiflask/schema_adapters/registry.py::SchemaRegistry._register_default_adapters",
+      "src/apiflask/schema_adapters/registry.py::SchemaRegistry._register_default_adapters->src/apiflask/schema_adapters/registry.py::SchemaRegistry.register",
+      "src/apiflask/schema_adapters/registry.py::SchemaRegistry.create_adapter->src/apiflask/schema_adapters/registry.py::SchemaRegistry.detect_schema_type",
+      "src/apiflask/schema_adapters/registry.py::SchemaRegistry.detect_schema_type->src/apiflask/schema_adapters/registry.py::SchemaRegistry.detect_schema_type",
+      "src/apiflask/security.py::_AuthBase._auth_error_handler->src/apiflask/exceptions.py::HTTPError",
+      "src/apiflask/validators.py::validate_file_size.validator->src/apiflask/validators.py::validate_file_size._format_error",
+      "src/apiflask/validators.py::validate_file_type.validator->src/apiflask/validators.py::validate_file_type._format_error"
+    ]
+  }
+}

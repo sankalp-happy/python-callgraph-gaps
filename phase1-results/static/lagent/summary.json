@@ -1,0 +1,110 @@
+{
+  "repo_url": "https://github.com/InternLM/lagent",
+  "repo_name": "lagent",
+  "row_id": "C0038",
+  "stratum": "MED",
+  "sha_requested": "0ab2e2f550477884743cd63fbca7bc4aa7b00290",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:00:38Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "0ab2e2f550477884743cd63fbca7bc4aa7b00290",
+    "seconds_clone": 1.9
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "lagent"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 62,
+    "nodes": 667,
+    "callable_nodes": 467,
+    "by_kind": {
+      "class_body": 138,
+      "function": 63,
+      "lambda": 13,
+      "method": 391,
+      "module": 62
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 6,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 3129,
+    "ast_resolved": 334,
+    "by_edge_type": {
+      "direct": 1626,
+      "method_static": 149,
+      "method_dynamic": 1070,
+      "super_dispatch": 67,
+      "reflective": 4,
+      "dynamic_import": 1,
+      "eval_exec": 4,
+      "callback_dispatch": 110,
+      "decorator_apply": 96,
+      "subprocess_ipc": 2
+    },
+    "by_target_scope": {
+      "external": 1429,
+      "in_repo": 448,
+      "unknown": 1252
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 298,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 28,
+    "namespace_merged": 1
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 389,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 767
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 87,
+    "decorator_apply": 21,
+    "direct": 201,
+    "method_dynamic": 454,
+    "reflective": 4
+  },
+  "baseline_comparison": {
+    "pycg_only": 67,
+    "pyright_only": 158,
+    "agreed": 231,
+    "union": 456,
+    "jaccard": 0.5066
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 73.4
+}

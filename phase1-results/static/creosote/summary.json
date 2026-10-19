@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/fredrikaverpil/creosote",
+  "repo_name": "creosote",
+  "row_id": "C0144",
+  "stratum": "MED",
+  "sha_requested": "7963948ff5d87d6b1dce53f196daf5aeb3eb8bd3",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:06:17Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "7963948ff5d87d6b1dce53f196daf5aeb3eb8bd3",
+    "seconds_clone": 10.8
+  },
+  "layout": "src",
+  "src_root": "src",
+  "packages": [
+    "src/creosote"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 9,
+    "nodes": 77,
+    "callable_nodes": 60,
+    "by_kind": {
+      "class_body": 8,
+      "function": 22,
+      "lambda": 3,
+      "method": 35,
+      "module": 9
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 380,
+    "ast_resolved": 71,
+    "by_edge_type": {
+      "direct": 153,
+      "method_static": 41,
+      "method_dynamic": 170,
+      "super_dispatch": 1,
+      "reflective": 0,
+      "dynamic_import": 1,
+      "eval_exec": 0,
+      "callback_dispatch": 3,
+      "decorator_apply": 11,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 171,
+      "in_repo": 75,
+      "unknown": 134
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 62,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 4,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 63,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 70
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 1,
+    "direct": 9,
+    "method_dynamic": 60
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 1,
+    "agreed": 62,
+    "union": 63,
+    "jaccard": 0.9841
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 18.5
+}

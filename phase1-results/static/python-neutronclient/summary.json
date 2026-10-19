@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/openstack/python-neutronclient",
+  "repo_name": "python-neutronclient",
+  "row_id": "C0181",
+  "stratum": "HIGH",
+  "sha_requested": "a12bb3c3109c3040e0f7822076886ac0a6cd2813",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T15:42:03Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "a12bb3c3109c3040e0f7822076886ac0a6cd2813",
+    "seconds_clone": 2.4
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "neutronclient"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 93,
+    "nodes": 1497,
+    "callable_nodes": 1041,
+    "by_kind": {
+      "class_body": 363,
+      "function": 170,
+      "lambda": 1,
+      "method": 870,
+      "module": 93
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 3443,
+    "ast_resolved": 1032,
+    "by_edge_type": {
+      "direct": 1548,
+      "method_static": 528,
+      "method_dynamic": 1081,
+      "super_dispatch": 122,
+      "reflective": 19,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 123,
+      "decorator_apply": 22,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 485,
+      "in_repo": 1717,
+      "unknown": 1241
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 1055,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 3,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 1133,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 1667
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 20,
+    "decorator_apply": 15,
+    "direct": 688,
+    "method_dynamic": 889,
+    "reflective": 18,
+    "super_dispatch": 37
+  },
+  "baseline_comparison": {
+    "pycg_only": 3,
+    "pyright_only": 81,
+    "agreed": 1052,
+    "union": 1136,
+    "jaccard": 0.9261
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 73.0
+}

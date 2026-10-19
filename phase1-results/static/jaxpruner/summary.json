@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/google-research/jaxpruner",
+  "repo_name": "jaxpruner",
+  "row_id": "C0218",
+  "stratum": "MED",
+  "sha_requested": "e7af4e4e4748782d6bc433249e359f74ffb845ba",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:30:59Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "e7af4e4e4748782d6bc433249e359f74ffb845ba",
+    "seconds_clone": 1.8
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "jaxpruner"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 52,
+    "nodes": 404,
+    "callable_nodes": 296,
+    "by_kind": {
+      "class_body": 56,
+      "function": 116,
+      "lambda": 52,
+      "method": 128,
+      "module": 52
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1856,
+    "ast_resolved": 170,
+    "by_edge_type": {
+      "direct": 855,
+      "method_static": 42,
+      "method_dynamic": 641,
+      "super_dispatch": 5,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 246,
+      "decorator_apply": 67,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 965,
+      "in_repo": 260,
+      "unknown": 631
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 184,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 1284
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 223,
+    "decorator_apply": 39,
+    "direct": 468,
+    "method_dynamic": 550,
+    "super_dispatch": 4
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 184,
+    "agreed": 0,
+    "union": 184,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 56.8
+}

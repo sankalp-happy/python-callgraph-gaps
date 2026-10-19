@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/ebranlard/matlab2python",
+  "repo_name": "matlab2python",
+  "row_id": "C0164",
+  "stratum": "MED",
+  "sha_requested": "2fd204515c056d1f4e8ce6cdfbbb97e9bcd7cc55",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:24:11Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "2fd204515c056d1f4e8ce6cdfbbb97e9bcd7cc55",
+    "seconds_clone": 1.2
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "matlabparser",
+    "smop"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 17,
+    "nodes": 381,
+    "callable_nodes": 318,
+    "by_kind": {
+      "class_body": 46,
+      "function": 272,
+      "lambda": 1,
+      "method": 45,
+      "module": 17
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 8,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1493,
+    "ast_resolved": 447,
+    "by_edge_type": {
+      "direct": 648,
+      "method_static": 3,
+      "method_dynamic": 624,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 2,
+      "callback_dispatch": 7,
+      "decorator_apply": 209,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 306,
+      "in_repo": 549,
+      "unknown": 638
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 82,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 653
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 5,
+    "decorator_apply": 11,
+    "direct": 141,
+    "method_dynamic": 496
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 82,
+    "agreed": 0,
+    "union": 82,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 131.1
+}

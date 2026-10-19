@@ -8,6 +8,7 @@
 candidates/** -text
 corpus/** -text
 corpus.amd64-baseline/** -text
+phase1-results/** -text
 
 # The paper is binary; never diff or munge it.
 *.pdf binary

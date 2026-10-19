@@ -1,0 +1,121 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 89,
+        "edges": 115,
+        "seconds": 0.09,
+        "peak_rss_mb": 14,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 89,
+        "edges": 115,
+        "seconds": 0.1,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 89,
+        "edges": 115,
+        "seconds": 0.15,
+        "peak_rss_mb": 15,
+        "detail": null
+      }
+    ],
+    "union_nodes": 89,
+    "union_edges": 115,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 89,
+    "pycg_edges": 115,
+    "name_outcomes": {
+      "mapped": 45,
+      "namespace_merged": 3,
+      "external": 39,
+      "unmapped": 2
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 12,
+      "external_module": 27,
+      "namespace_merged": 3,
+      "synthesized_path": 2
+    },
+    "namespace_merged_examples": [
+      "logger.log_with_meta",
+      "response_model.ResponseModel",
+      "rfc7807_model.RFC7807ResponseModel"
+    ],
+    "namespace_merged_distinct": 3,
+    "unmapped_examples": [
+      "api_exception.logger._fmt_kv_block.<lambda1>",
+      "api_exception.rfc7807_model.RFC7807ResponseModel.model_dump"
+    ],
+    "unmapped_distinct": 2,
+    "inventory_nodes_covered": 45,
+    "inventory_nodes_total": 52
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 28,
+      "callers_with_external_edges": 26,
+      "dropped": {
+        "callee_external": 85,
+        "callee_unmapped": 1,
+        "caller_unmapped": 1
+      }
+    },
+    "in_universe_edges": [
+      "api_exception/__init__.py::register_exception_handlers->api_exception/__init__.py::register_exception_handlers._resolve_response_headers_param",
+      "api_exception/__init__.py::register_exception_handlers->api_exception/__init__.py::register_exception_handlers._validate_header_keys",
+      "api_exception/__init__.py::register_exception_handlers._resolve_response_headers_param->api_exception/__init__.py::register_exception_handlers._validate_header_keys",
+      "api_exception/__init__.py::register_exception_handlers._response_headers->api_exception/__init__.py::register_exception_handlers._collect_headers",
+      "api_exception/__init__.py::register_exception_handlers.api_exception_handler->api_exception/__init__.py::register_exception_handlers._collect_headers",
+      "api_exception/__init__.py::register_exception_handlers.api_exception_handler->api_exception/__init__.py::register_exception_handlers._response_headers",
+      "api_exception/__init__.py::register_exception_handlers.api_exception_handler->api_exception/logger.py::log_with_meta",
+      "api_exception/__init__.py::register_exception_handlers.fallback_exception_middleware->api_exception/__init__.py::register_exception_handlers._collect_headers",
+      "api_exception/__init__.py::register_exception_handlers.fallback_exception_middleware->api_exception/__init__.py::register_exception_handlers._response_headers",
+      "api_exception/__init__.py::register_exception_handlers.fallback_exception_middleware->api_exception/logger.py::log_with_meta",
+      "api_exception/__init__.py::register_exception_handlers.fallback_exception_middleware->api_exception/response_model.py::ResponseModel",
+      "api_exception/__init__.py::register_exception_handlers.fallback_exception_middleware->api_exception/rfc7807_model.py::RFC7807ResponseModel",
+      "api_exception/__init__.py::register_exception_handlers.validation_exception_handler->api_exception/__init__.py::register_exception_handlers._collect_headers",
+      "api_exception/__init__.py::register_exception_handlers.validation_exception_handler->api_exception/__init__.py::register_exception_handlers._response_headers",
+      "api_exception/__init__.py::register_exception_handlers.validation_exception_handler->api_exception/logger.py::log_with_meta",
+      "api_exception/__init__.py::register_exception_handlers.validation_exception_handler->api_exception/response_model.py::ResponseModel",
+      "api_exception/__init__.py::register_exception_handlers.validation_exception_handler->api_exception/rfc7807_model.py::RFC7807ResponseModel",
+      "api_exception/__main__.py::<module>->api_exception/__main__.py::main",
+      "api_exception/exception.py::APIException.to_response_model->api_exception/response_model.py::ResponseModel",
+      "api_exception/exception.py::APIException.to_rfc7807_response->api_exception/rfc7807_model.py::RFC7807ResponseModel",
+      "api_exception/logger.py::_fmt_kv_block->api_exception/logger.py::_shorten",
+      "api_exception/logger.py::_format_meta->api_exception/logger.py::_fmt_kv_block",
+      "api_exception/logger.py::_format_meta->api_exception/logger.py::_fmt_pretty_json",
+      "api_exception/logger.py::log_with_meta->api_exception/logger.py::_format_meta",
+      "api_exception/logger.py::log_with_meta->api_exception/logger.py::_sanitize_extra",
+      "api_exception/response_utils.py::APIResponse.rfc7807->api_exception/response_utils.py::_is_item2",
+      "api_exception/response_utils.py::APIResponse.rfc7807->api_exception/response_utils.py::_is_item4",
+      "api_exception/response_utils.py::APIResponse.rfc7807->api_exception/rfc7807_model.py::RFC7807ResponseModel"
+    ]
+  }
+}

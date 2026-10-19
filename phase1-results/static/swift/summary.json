@@ -1,0 +1,110 @@
+{
+  "repo_url": "https://github.com/openstack/swift",
+  "repo_name": "swift",
+  "row_id": "C0063",
+  "stratum": "LOW",
+  "sha_requested": "b1ef9cca4cee73e8555533e2d9b59d5f5ad4cab3",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T03:37:19Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "b1ef9cca4cee73e8555533e2d9b59d5f5ad4cab3",
+    "seconds_clone": 7.3
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "swift"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 177,
+    "nodes": 4503,
+    "callable_nodes": 3791,
+    "by_kind": {
+      "class_body": 535,
+      "function": 1031,
+      "lambda": 107,
+      "method": 2653,
+      "module": 177
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 22,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 23978,
+    "ast_resolved": 6123,
+    "by_edge_type": {
+      "direct": 11584,
+      "method_static": 2384,
+      "method_dynamic": 8552,
+      "super_dispatch": 130,
+      "reflective": 30,
+      "dynamic_import": 3,
+      "eval_exec": 0,
+      "callback_dispatch": 742,
+      "decorator_apply": 518,
+      "subprocess_ipc": 35
+    },
+    "by_target_scope": {
+      "external": 6798,
+      "in_repo": 7881,
+      "unknown": 9299
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 6257,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 6109
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 306,
+    "decorator_apply": 22,
+    "direct": 1129,
+    "method_dynamic": 4521,
+    "method_static": 96,
+    "reflective": 26,
+    "super_dispatch": 9
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 6257,
+    "agreed": 0,
+    "union": 6257,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 5508.7
+}

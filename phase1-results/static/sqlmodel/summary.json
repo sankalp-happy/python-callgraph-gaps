@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/fastapi/sqlmodel",
+  "repo_name": "sqlmodel",
+  "row_id": "C0006",
+  "stratum": "HIGH",
+  "sha_requested": "f633c2a08fb2d6fa4ff6a7e54c8a948c73176d3f",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-22T12:47:38Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "f633c2a08fb2d6fa4ff6a7e54c8a948c73176d3f",
+    "seconds_clone": 4.0
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "docs_src",
+    "sqlmodel"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 159,
+    "nodes": 856,
+    "callable_nodes": 472,
+    "by_kind": {
+      "class_body": 184,
+      "function": 477,
+      "lambda": 1,
+      "method": 35,
+      "module": 159
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 41
+  },
+  "callsites": {
+    "call_sites": 3593,
+    "ast_resolved": 345,
+    "by_edge_type": {
+      "direct": 2071,
+      "method_static": 4,
+      "method_dynamic": 1347,
+      "super_dispatch": 17,
+      "reflective": 1,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 23,
+      "decorator_apply": 130,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 596,
+      "in_repo": 1487,
+      "unknown": 1510
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 673,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 5,
+    "namespace_merged": 17
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 663,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 2115
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 1,
+    "decorator_apply": 76,
+    "direct": 821,
+    "method_dynamic": 1202,
+    "super_dispatch": 15
+  },
+  "baseline_comparison": {
+    "pycg_only": 174,
+    "pyright_only": 164,
+    "agreed": 499,
+    "union": 837,
+    "jaccard": 0.5962
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 59.8
+}

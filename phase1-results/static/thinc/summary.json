@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/explosion/thinc",
+  "repo_name": "thinc",
+  "row_id": "C0022",
+  "stratum": "HIGH",
+  "sha_requested": "6c38b29924b218140e5c10c2cb77e3ff487b0ffa",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-22T17:11:15Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "6c38b29924b218140e5c10c2cb77e3ff487b0ffa",
+    "seconds_clone": 2.5
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "thinc"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 96,
+    "nodes": 1359,
+    "callable_nodes": 1109,
+    "by_kind": {
+      "class_body": 46,
+      "function": 525,
+      "lambda": 33,
+      "method": 659,
+      "module": 96
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 3,
+    "overload_stubs": 108
+  },
+  "callsites": {
+    "call_sites": 4336,
+    "ast_resolved": 940,
+    "by_edge_type": {
+      "direct": 1786,
+      "method_static": 283,
+      "method_dynamic": 1316,
+      "super_dispatch": 29,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 354,
+      "decorator_apply": 568,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 1065,
+      "in_repo": 1073,
+      "unknown": 2198
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 1292,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 1030
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 275,
+    "decorator_apply": 99,
+    "direct": 167,
+    "method_dynamic": 427,
+    "method_static": 60,
+    "super_dispatch": 2
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 1292,
+    "agreed": 0,
+    "union": 1292,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 5436.8
+}

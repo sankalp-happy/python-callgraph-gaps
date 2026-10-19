@@ -1,0 +1,153 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 239,
+        "edges": 278,
+        "seconds": 0.31,
+        "peak_rss_mb": 19,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 239,
+        "edges": 278,
+        "seconds": 0.32,
+        "peak_rss_mb": 19,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 239,
+        "edges": 278,
+        "seconds": 0.32,
+        "peak_rss_mb": 19,
+        "detail": null
+      }
+    ],
+    "union_nodes": 239,
+    "union_edges": 278,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 239,
+    "pycg_edges": 278,
+    "name_outcomes": {
+      "mapped": 130,
+      "namespace_merged": 0,
+      "external": 104,
+      "unmapped": 5
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 15,
+      "external_module": 89,
+      "redefinition_collapsed": 1,
+      "synthesized_path": 5
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [
+      "django_ses.models.SESStat.objects.get_or_create",
+      "django_ses.utils.get_emails_from_complaint_obj.lower",
+      "django_ses.utils.get_permanent_bounced_emails_from_bounce_obj.lower",
+      "django_ses.views.DashboardView.as_view",
+      "django_ses.views.stats_to_list.<lambda1>"
+    ],
+    "unmapped_distinct": 5,
+    "inventory_nodes_covered": 130,
+    "inventory_nodes_total": 148
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 62,
+      "callers_with_external_edges": 87,
+      "dropped": {
+        "callee_external": 212,
+        "callee_unmapped": 4
+      }
+    },
+    "in_universe_edges": [
+      "django_ses/__init__.py::SESBackend.__init__->django_ses/__init__.py::cast_nonzero_to_float",
+      "django_ses/__init__.py::SESBackend._get_send_email_parameters->django_ses/__init__.py::SESBackend._get_v1_parameters",
+      "django_ses/__init__.py::SESBackend._get_send_email_parameters->django_ses/__init__.py::SESBackend._get_v2_parameters",
+      "django_ses/__init__.py::SESBackend._update_throttling->django_ses/__init__.py::SESBackend.get_rate_limit",
+      "django_ses/__init__.py::SESBackend.get_rate_limit->django_ses/__init__.py::SESBackend._get_v1_send_quota",
+      "django_ses/__init__.py::SESBackend.get_rate_limit->django_ses/__init__.py::SESBackend._get_v2_send_quota",
+      "django_ses/__init__.py::SESBackend.get_rate_limit->django_ses/__init__.py::SESBackend.close",
+      "django_ses/__init__.py::SESBackend.get_rate_limit->django_ses/__init__.py::SESBackend.open",
+      "django_ses/__init__.py::SESBackend.open->django_ses/__init__.py::SESBackend.create_session",
+      "django_ses/__init__.py::SESBackend.send_messages->django_ses/__init__.py::SESBackend._get_send_email_parameters",
+      "django_ses/__init__.py::SESBackend.send_messages->django_ses/__init__.py::SESBackend._update_throttling",
+      "django_ses/__init__.py::SESBackend.send_messages->django_ses/__init__.py::SESBackend.close",
+      "django_ses/__init__.py::SESBackend.send_messages->django_ses/__init__.py::SESBackend.open",
+      "django_ses/__init__.py::SESBackend.send_messages->django_ses/conf.py::SesSettings.AWS_SES_CONFIGURATION_SET",
+      "django_ses/__init__.py::SESBackend.send_messages->django_ses/utils.py::filter_blacklisted_recipients",
+      "django_ses/inbound.py::BaseHandler.handle->django_ses/inbound.py::BaseHandler.check_action_compatibility",
+      "django_ses/inbound.py::BaseHandler.handle->django_ses/inbound.py::BaseHandler.parse_email",
+      "django_ses/inbound.py::BaseHandler.handle->django_ses/inbound.py::BaseHandler.prepare_content",
+      "django_ses/inbound.py::BaseHandler.handle->django_ses/inbound.py::BaseHandler.process",
+      "django_ses/management/commands/blacklist.py::Command.add_arguments->django_ses/management/commands/blacklist.py::_add_options",
+      "django_ses/management/commands/get_ses_statistics.py::Command.handle->django_ses/views.py::stats_to_list",
+      "django_ses/management/commands/ses_email_address.py::Command->django_ses/management/commands/ses_email_address.py::_add_options",
+      "django_ses/management/commands/ses_email_address.py::Command.add_arguments->django_ses/management/commands/ses_email_address.py::_add_options",
+      "django_ses/signals.py::bounce_handler->django_ses/signals.py::_blacklist_recipients",
+      "django_ses/signals.py::bounce_handler->django_ses/utils.py::get_permanent_bounced_emails_from_bounce_obj",
+      "django_ses/signals.py::complaint_handler->django_ses/signals.py::_blacklist_recipients",
+      "django_ses/signals.py::complaint_handler->django_ses/utils.py::get_emails_from_complaint_obj",
+      "django_ses/utils.py::BounceMessageVerifier->django_ses/utils.py::EventMessageVerifier.__init__",
+      "django_ses/utils.py::EventMessageVerifier.certificate->django_ses/utils.py::EventMessageVerifier._get_cert_url",
+      "django_ses/utils.py::EventMessageVerifier.is_verified->django_ses/utils.py::EventMessageVerifier._get_bytes_to_sign",
+      "django_ses/utils.py::verify_bounce_message->django_ses/utils.py::verify_event_message",
+      "django_ses/utils.py::verify_event_message->django_ses/utils.py::EventMessageVerifier.__init__",
+      "django_ses/utils.py::verify_event_message->django_ses/utils.py::EventMessageVerifier.is_verified",
+      "django_ses/views.py::<module>->django_ses/views.py::superuser_only",
+      "django_ses/views.py::DashboardView.get_context_data->django_ses/views.py::emails_parse",
+      "django_ses/views.py::DashboardView.get_context_data->django_ses/views.py::stats_to_list",
+      "django_ses/views.py::DashboardView.get_context_data->django_ses/views.py::sum_stats",
+      "django_ses/views.py::SESEventWebhookView.handle_bounce->django_ses/views.py::SESEventWebhookView._handle_event",
+      "django_ses/views.py::SESEventWebhookView.handle_click->django_ses/views.py::SESEventWebhookView._handle_event",
+      "django_ses/views.py::SESEventWebhookView.handle_complaint->django_ses/views.py::SESEventWebhookView._handle_event",
+      "django_ses/views.py::SESEventWebhookView.handle_delivery->django_ses/views.py::SESEventWebhookView._handle_event",
+      "django_ses/views.py::SESEventWebhookView.handle_open->django_ses/views.py::SESEventWebhookView._handle_event",
+      "django_ses/views.py::SESEventWebhookView.handle_send->django_ses/views.py::SESEventWebhookView._handle_event",
+      "django_ses/views.py::SESEventWebhookView.handle_subscription_confirmation->django_ses/utils.py::confirm_sns_subscription",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_bounce",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_click",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_complaint",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_delivery",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_open",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_received",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_send",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_subscription_confirmation",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_unknown_event_type",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_unknown_notification_type",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.handle_unsubscribe_confirmation",
+      "django_ses/views.py::SESEventWebhookView.post->django_ses/views.py::SESEventWebhookView.verify_event_message",
+      "django_ses/views.py::SESEventWebhookView.verify_event_message->django_ses/utils.py::verify_event_message",
+      "django_ses/views.py::dashboard->django_ses/views.py::emails_parse",
+      "django_ses/views.py::dashboard->django_ses/views.py::stats_to_list",
+      "django_ses/views.py::dashboard->django_ses/views.py::sum_stats",
+      "django_ses/views.py::handle_bounce->django_ses/utils.py::verify_bounce_message",
+      "django_ses/views.py::superuser_only._inner->django_ses/views.py::dashboard"
+    ]
+  }
+}

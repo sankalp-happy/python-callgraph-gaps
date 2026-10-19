@@ -1,0 +1,110 @@
+{
+  "repo_url": "https://github.com/pexpect/pexpect",
+  "repo_name": "pexpect",
+  "row_id": "C0059",
+  "stratum": "LOW",
+  "sha_requested": "fc8f062518b40bd0862aae870cdedf5d9c0c7fc3",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-23T06:40:27Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "fc8f062518b40bd0862aae870cdedf5d9c0c7fc3",
+    "seconds_clone": 1.6
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "pexpect"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 18,
+    "nodes": 290,
+    "callable_nodes": 250,
+    "by_kind": {
+      "class_body": 22,
+      "function": 55,
+      "lambda": 2,
+      "method": 193,
+      "module": 18
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 2,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 996,
+    "ast_resolved": 241,
+    "by_edge_type": {
+      "direct": 337,
+      "method_static": 175,
+      "method_dynamic": 386,
+      "super_dispatch": 8,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 80,
+      "decorator_apply": 8,
+      "subprocess_ipc": 2
+    },
+    "by_target_scope": {
+      "external": 270,
+      "in_repo": 262,
+      "unknown": 464
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 197,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 15,
+    "namespace_merged": 26
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 252,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 206
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 23,
+    "decorator_apply": 1,
+    "direct": 18,
+    "method_dynamic": 163,
+    "subprocess_ipc": 1
+  },
+  "baseline_comparison": {
+    "pycg_only": 23,
+    "pyright_only": 78,
+    "agreed": 174,
+    "union": 275,
+    "jaccard": 0.6327
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 13.9
+}

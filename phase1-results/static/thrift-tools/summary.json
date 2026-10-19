@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/pinterest/thrift-tools",
+  "repo_name": "thrift-tools",
+  "row_id": "C0216",
+  "stratum": "MED",
+  "sha_requested": "2958b96154e644c21c2ebc47481bd9cf16f9d953",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T15:06:11Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "2958b96154e644c21c2ebc47481bd9cf16f9d953",
+    "seconds_clone": 1.2
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "thrift_tools"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 14,
+    "nodes": 202,
+    "callable_nodes": 155,
+    "by_kind": {
+      "class_body": 33,
+      "function": 16,
+      "lambda": 9,
+      "method": 130,
+      "module": 14
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 569,
+    "ast_resolved": 106,
+    "by_edge_type": {
+      "direct": 260,
+      "method_static": 53,
+      "method_dynamic": 176,
+      "super_dispatch": 5,
+      "reflective": 1,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 26,
+      "decorator_apply": 47,
+      "subprocess_ipc": 1
+    },
+    "by_target_scope": {
+      "external": 214,
+      "in_repo": 113,
+      "unknown": 242
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 115,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 9,
+    "namespace_merged": 15
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 98,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 75
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 7,
+    "direct": 9,
+    "method_dynamic": 58,
+    "reflective": 1
+  },
+  "baseline_comparison": {
+    "pycg_only": 33,
+    "pyright_only": 16,
+    "agreed": 82,
+    "union": 131,
+    "jaccard": 0.626
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 11.5
+}

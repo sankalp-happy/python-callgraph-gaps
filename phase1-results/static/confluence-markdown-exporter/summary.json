@@ -1,0 +1,112 @@
+{
+  "repo_url": "https://github.com/Spenhouet/confluence-markdown-exporter",
+  "repo_name": "confluence-markdown-exporter",
+  "row_id": "C0122",
+  "stratum": "MED",
+  "sha_requested": "79c9289d50286492420e1ab3954aa4c15fdeedd7",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:13:46Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "79c9289d50286492420e1ab3954aa4c15fdeedd7",
+    "seconds_clone": 3.7
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "confluence_markdown_exporter"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 16,
+    "nodes": 364,
+    "callable_nodes": 312,
+    "by_kind": {
+      "class_body": 36,
+      "function": 118,
+      "lambda": 5,
+      "method": 189,
+      "module": 16
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 2538,
+    "ast_resolved": 401,
+    "by_edge_type": {
+      "direct": 1141,
+      "method_static": 163,
+      "method_dynamic": 1053,
+      "super_dispatch": 24,
+      "reflective": 1,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 61,
+      "decorator_apply": 95,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 899,
+      "in_repo": 437,
+      "unknown": 1202
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 362,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 44,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 409,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 840
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 42,
+    "decorator_apply": 20,
+    "direct": 343,
+    "method_dynamic": 404,
+    "method_static": 14,
+    "reflective": 1,
+    "super_dispatch": 16
+  },
+  "baseline_comparison": {
+    "pycg_only": 8,
+    "pyright_only": 55,
+    "agreed": 354,
+    "union": 417,
+    "jaccard": 0.8489
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 34.6
+}

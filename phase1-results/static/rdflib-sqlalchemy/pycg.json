@@ -1,0 +1,166 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 195,
+        "edges": 294,
+        "seconds": 0.21,
+        "peak_rss_mb": 18,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 195,
+        "edges": 294,
+        "seconds": 0.24,
+        "peak_rss_mb": 18,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 195,
+        "edges": 294,
+        "seconds": 0.24,
+        "peak_rss_mb": 18,
+        "detail": null
+      }
+    ],
+    "union_nodes": 195,
+    "union_edges": 294,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 195,
+    "pycg_edges": 294,
+    "name_outcomes": {
+      "mapped": 73,
+      "namespace_merged": 0,
+      "external": 85,
+      "unmapped": 37
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 17,
+      "external_module": 68,
+      "synthesized_path": 37
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [
+      "rdflib_sqlalchemy.base.SQLGeneratorMixin.build_object_clause.table.c.object.op",
+      "rdflib_sqlalchemy.base.SQLGeneratorMixin.build_predicate_clause.table.c.predicate.op",
+      "rdflib_sqlalchemy.base.SQLGeneratorMixin.build_subject_clause.table.c.subject.op",
+      "rdflib_sqlalchemy.base.SQLGeneratorMixin.build_type_class_clause.table.c.klass.op",
+      "rdflib_sqlalchemy.base.SQLGeneratorMixin.build_type_member_clause.table.c.member.op",
+      "rdflib_sqlalchemy.store.SQLAlchemy._remove_context.table.c.context.op",
+      "rdflib_sqlalchemy.store.SQLAlchemy.remove.table.c.context.op",
+      "rdflib_sqlalchemy.store.SQLAlchemy.remove.table.c.klass.op",
+      "rdflib_sqlalchemy.store.SQLAlchemy.remove.table.c.member.op",
+      "rdflib_sqlalchemy.store.SQLAlchemy.remove.table.c.object.op",
+      "rdflib_sqlalchemy.store.SQLAlchemy.remove.table.c.predicate.op",
+      "rdflib_sqlalchemy.store.SQLAlchemy.remove.table.c.subject.op",
+      "rdflib_sqlalchemy.tables.create_literal_statements_table.c.context.op",
+      "rdflib_sqlalchemy.tables.create_literal_statements_table.c.klass.op",
+      "rdflib_sqlalchemy.tables.create_literal_statements_table.c.member.op",
+      "rdflib_sqlalchemy.tables.create_literal_statements_table.c.object.op",
+      "rdflib_sqlalchemy.tables.create_literal_statements_table.c.predicate.op",
+      "rdflib_sqlalchemy.tables.create_literal_statements_table.c.subject.op",
+      "rdflib_sqlalchemy.tables.create_literal_statements_table.delete",
+      "rdflib_sqlalchemy.tables.create_literal_statements_table.insert"
+    ],
+    "unmapped_distinct": 37,
+    "inventory_nodes_covered": 73,
+    "inventory_nodes_total": 76
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 61,
+      "callers_with_external_edges": 59,
+      "dropped": {
+        "callee_external": 196,
+        "callee_unmapped": 37
+      }
+    },
+    "in_universe_edges": [
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin._build_literal_triple_sql_command->rdflib_sqlalchemy/termutils.py::statement_to_term_combination",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin._build_triple_sql_command->rdflib_sqlalchemy/termutils.py::statement_to_term_combination",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin._build_type_sql_command->rdflib_sqlalchemy/termutils.py::type_to_term_combination",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_context_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_literal_datatype_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_literal_language_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_object_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_predicate_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_subject_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_type_class_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_type_member_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_object_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_object_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_predicate_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_predicate_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_subject_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_subject_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_type_class_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_type_class_clause",
+      "rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_type_member_clause->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_type_member_clause",
+      "rdflib_sqlalchemy/statistics.py::StatisticsMixin.statistics->rdflib_sqlalchemy/statistics.py::get_group_by_count",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.__init__->rdflib_sqlalchemy/store.py::SQLAlchemy._create_table_definitions",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.__init__->rdflib_sqlalchemy/store.py::generate_interned_id",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.__len__->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_context_clause",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.__len__->rdflib_sqlalchemy/sql.py::union_select",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.__repr__->rdflib_sqlalchemy/sql.py::union_select",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.__repr__->rdflib_sqlalchemy/store.py::SQLAlchemy.contexts",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._create_table_definitions->rdflib_sqlalchemy/tables.py::create_asserted_statements_table",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._create_table_definitions->rdflib_sqlalchemy/tables.py::create_literal_statements_table",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._create_table_definitions->rdflib_sqlalchemy/tables.py::create_namespace_binds_table",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._create_table_definitions->rdflib_sqlalchemy/tables.py::create_quoted_statements_table",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._create_table_definitions->rdflib_sqlalchemy/tables.py::create_type_statements_table",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._do_triples_select->rdflib_sqlalchemy/sql.py::union_select",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._do_triples_select->rdflib_sqlalchemy/termutils.py::extract_triple",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._get_build_command->rdflib_sqlalchemy/base.py::SQLGeneratorMixin._build_literal_triple_sql_command",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._get_build_command->rdflib_sqlalchemy/base.py::SQLGeneratorMixin._build_triple_sql_command",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._get_build_command->rdflib_sqlalchemy/base.py::SQLGeneratorMixin._build_type_sql_command",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._remove_context->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_context_clause",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy._triples_helper->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.add->rdflib_sqlalchemy/store.py::SQLAlchemy._add_ignore_on_conflict",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.add->rdflib_sqlalchemy/store.py::SQLAlchemy._get_build_command",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.addN->rdflib_sqlalchemy/store.py::SQLAlchemy._add_ignore_on_conflict",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.addN->rdflib_sqlalchemy/store.py::SQLAlchemy._get_build_command",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.contexts->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.contexts->rdflib_sqlalchemy/sql.py::union_select",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.destroy->rdflib_sqlalchemy/store.py::SQLAlchemy.open",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.open->rdflib_sqlalchemy/store.py::SQLAlchemy._verify_store_exists",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.open->rdflib_sqlalchemy/store.py::SQLAlchemy.close",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.open->rdflib_sqlalchemy/store.py::SQLAlchemy.create_all",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.remove->rdflib_sqlalchemy/base.py::SQLGeneratorMixin.build_clause",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.remove->rdflib_sqlalchemy/store.py::SQLAlchemy._remove_context",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.table_names->rdflib_sqlalchemy/tables.py::get_table_names",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.triples->rdflib_sqlalchemy/store.py::SQLAlchemy._do_triples_select",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.triples->rdflib_sqlalchemy/store.py::SQLAlchemy._triples_helper",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.triples_choices->rdflib_sqlalchemy/store.py::SQLAlchemy._do_triples_select",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.triples_choices->rdflib_sqlalchemy/store.py::SQLAlchemy._triples_helper",
+      "rdflib_sqlalchemy/store.py::SQLAlchemy.triples_choices->rdflib_sqlalchemy/store.py::grouper",
+      "rdflib_sqlalchemy/termutils.py::extract_triple->rdflib_sqlalchemy/termutils.py::construct_graph",
+      "rdflib_sqlalchemy/termutils.py::extract_triple->rdflib_sqlalchemy/termutils.py::create_term",
+      "rdflib_sqlalchemy/termutils.py::normalize_graph->rdflib_sqlalchemy/termutils.py::term_to_letter",
+      "rdflib_sqlalchemy/termutils.py::statement_to_term_combination->rdflib_sqlalchemy/termutils.py::normalize_graph",
+      "rdflib_sqlalchemy/termutils.py::statement_to_term_combination->rdflib_sqlalchemy/termutils.py::term_to_letter",
+      "rdflib_sqlalchemy/termutils.py::term_to_letter->rdflib_sqlalchemy/termutils.py::term_to_letter",
+      "rdflib_sqlalchemy/termutils.py::type_to_term_combination->rdflib_sqlalchemy/termutils.py::normalize_graph",
+      "rdflib_sqlalchemy/termutils.py::type_to_term_combination->rdflib_sqlalchemy/termutils.py::term_to_letter"
+    ]
+  }
+}

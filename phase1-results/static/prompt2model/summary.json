@@ -1,0 +1,110 @@
+{
+  "repo_url": "https://github.com/neulab/prompt2model",
+  "repo_name": "prompt2model",
+  "row_id": "C0087",
+  "stratum": "LOW",
+  "sha_requested": "d4cd23d50c8f5edc5755ab487bcee18121d42a4f",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T15:41:31Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "d4cd23d50c8f5edc5755ab487bcee18121d42a4f",
+    "seconds_clone": 3.6
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "prompt2model",
+    "test_helpers"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 73,
+    "nodes": 292,
+    "callable_nodes": 174,
+    "by_kind": {
+      "class_body": 45,
+      "function": 48,
+      "lambda": 5,
+      "method": 121,
+      "module": 73
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1004,
+    "ast_resolved": 115,
+    "by_edge_type": {
+      "direct": 494,
+      "method_static": 65,
+      "method_dynamic": 402,
+      "super_dispatch": 2,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 9,
+      "decorator_apply": 30,
+      "subprocess_ipc": 2
+    },
+    "by_target_scope": {
+      "external": 468,
+      "in_repo": 164,
+      "unknown": 372
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 106,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 17,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 155,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 245
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 9,
+    "direct": 90,
+    "method_dynamic": 145,
+    "super_dispatch": 1
+  },
+  "baseline_comparison": {
+    "pycg_only": 26,
+    "pyright_only": 75,
+    "agreed": 80,
+    "union": 181,
+    "jaccard": 0.442
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 32.2
+}

@@ -1,0 +1,40 @@
+[report] 240 repos, 326 attempts
+
+[report] verified status:
+         AMBER/COLLECT_EMPTY          64
+         AMBER/PARTIAL_COLLECT        52
+         RED/OTHER                    38
+         AMBER/NONE                   34
+         GREEN/NONE                   32
+         RED/DEP_RESOLUTION           8
+         RED/PYTHON_VERSION           7
+         RED/KILLED                   4
+         RED/OOM                      1
+
+[report] triage.sh vs runner disagreement: 0/240 (0.0%) — reportable, not a bug to hide
+
+[report] corpus-admissible (MANIFEST §4 + amendment 2): 118/240
+         rejected: 0 tests collected: cannot supply an ins2 test_suite workload     64
+         rejected: status_verified=RED/OTHER                                        38
+         rejected: status_verified=RED/DEP_RESOLUTION                               8
+         rejected: status_verified=RED/PYTHON_VERSION                               7
+         rejected: status_verified=RED/KILLED                                       4
+         rejected: status_verified=RED/OOM                                          1
+
+[report] green-build floor is MANIFEST §4: ~120 target / 60 floor
+         GREEN 32   AMBER 86   admissible total 118
+
+[report] redistribution gate (MANIFEST §7, decided 2026-08-17): 91 eligible / 14 pending review / 13 survey-only, of 118 admissible
+         14 repos are admissible AND unresolved on licence. Run the ins3 Part 1-R review before freezing the corpus -- these are mostly a missing LICENSE file, not a restrictive one.
+         survey-only: redistribution_class=COPYLEFT: feasibility survey only, not  6
+         survey-only: archived upstream                                            5
+         survey-only: redistribution_class=WEAK_COPYLEFT: feasibility survey only, 2
+
+[report] per-stratum, against MANIFEST §4 floors:
+         (floors are on repos with >=3 ins2 workloads, which is DOWNSTREAM
+          of this table — these counts are the pool ins2 draws from.)
+         LOW  triaged   60  admissible   31 ( 51.7%)  floor 10 target 15  OK
+         MED  triaged   80  admissible   36 ( 45.0%)  floor 12 target 20  OK
+         HIGH triaged  100  admissible   51 ( 51.0%)  floor 15 target 25  OK
+
+[report] /home/sankalp.shankar/traceweave-data/triage/triage_results.csv

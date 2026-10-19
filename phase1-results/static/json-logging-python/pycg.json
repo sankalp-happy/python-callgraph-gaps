@@ -1,0 +1,135 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 223,
+        "edges": 149,
+        "seconds": 0.21,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 223,
+        "edges": 149,
+        "seconds": 0.25,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 223,
+        "edges": 149,
+        "seconds": 0.28,
+        "peak_rss_mb": 16,
+        "detail": null
+      }
+    ],
+    "union_nodes": 223,
+    "union_edges": 149,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 223,
+    "pycg_edges": 149,
+    "name_outcomes": {
+      "mapped": 177,
+      "namespace_merged": 0,
+      "external": 38,
+      "unmapped": 8
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 14,
+      "external_module": 24,
+      "synthesized_path": 8
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [
+      "json_logging.<lambda1>",
+      "json_logging.framework_base.BaseFrameworkConfigurator.__init__",
+      "json_logging.util.<lambda1>",
+      "json_logging.util.get_library_logger.debug",
+      "json_logging.util.get_library_logger.error",
+      "json_logging.util.get_library_logger.info",
+      "json_logging.util.get_library_logger.warning",
+      "json_logging.util.is_not_match_any_pattern.<lambda1>"
+    ],
+    "unmapped_distinct": 8,
+    "inventory_nodes_covered": 177,
+    "inventory_nodes_total": 207
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 41,
+      "callers_with_external_edges": 50,
+      "dropped": {
+        "callee_external": 97,
+        "callee_unmapped": 8,
+        "caller_unmapped": 3
+      }
+    },
+    "in_universe_edges": [
+      "json_logging/__init__.py::<module>->json_logging/util.py::get_library_logger",
+      "json_logging/__init__.py::<module>->json_logging/util.py::is_env_var_toggle",
+      "json_logging/__init__.py::__init->json_logging/util.py::update_formatter_for_loggers",
+      "json_logging/__init__.py::config_root_logger->json_logging/util.py::update_formatter_for_loggers",
+      "json_logging/__init__.py::init_connexion->json_logging/__init__.py::__init",
+      "json_logging/__init__.py::init_fastapi->json_logging/__init__.py::__init",
+      "json_logging/__init__.py::init_flask->json_logging/__init__.py::__init",
+      "json_logging/__init__.py::init_non_web->json_logging/__init__.py::__init",
+      "json_logging/__init__.py::init_quart->json_logging/__init__.py::__init",
+      "json_logging/__init__.py::init_request_instrument->json_logging/util.py::update_formatter_for_loggers",
+      "json_logging/__init__.py::init_sanic->json_logging/__init__.py::__init",
+      "json_logging/dto.py::DefaultRequestResponseDTO.__init__->json_logging/util.py::iso_time_format",
+      "json_logging/dto.py::DefaultRequestResponseDTO.on_request_complete->json_logging/util.py::iso_time_format",
+      "json_logging/formatters.py::BaseJSONFormatter._format_log_object->json_logging/formatters.py::BaseJSONFormatter._get_extra_fields",
+      "json_logging/formatters.py::BaseJSONFormatter._format_log_object->json_logging/util.py::epoch_nano_second",
+      "json_logging/formatters.py::BaseJSONFormatter._format_log_object->json_logging/util.py::iso_time_format",
+      "json_logging/formatters.py::BaseJSONFormatter.format->json_logging/formatters.py::BaseJSONFormatter._format_log_object",
+      "json_logging/framework/connexion/__init__.py::<module>->json_logging/framework/connexion/__init__.py::is_connexion_present",
+      "json_logging/framework/connexion/__init__.py::ConnexionAppRequestInstrumentationConfigurator.config->json_logging/framework/connexion/__init__.py::is_connexion_present",
+      "json_logging/framework/connexion/__init__.py::ConnexionAppRequestInstrumentationConfigurator.config->json_logging/util.py::update_formatter_for_loggers",
+      "json_logging/framework/connexion/__init__.py::ConnexionAppRequestInstrumentationConfigurator.config.before_request->json_logging/util.py::is_not_match_any_pattern",
+      "json_logging/framework/fastapi/__init__.py::<module>->json_logging/framework/fastapi/__init__.py::is_fastapi_present",
+      "json_logging/framework/fastapi/implementation.py::JSONLoggingASGIMiddleware.dispatch->json_logging/util.py::is_not_match_any_pattern",
+      "json_logging/framework/flask/__init__.py::<module>->json_logging/framework/flask/__init__.py::is_flask_present",
+      "json_logging/framework/flask/__init__.py::FlaskAppRequestInstrumentationConfigurator.config->json_logging/framework/flask/__init__.py::is_flask_present",
+      "json_logging/framework/flask/__init__.py::FlaskAppRequestInstrumentationConfigurator.config->json_logging/util.py::update_formatter_for_loggers",
+      "json_logging/framework/flask/__init__.py::FlaskAppRequestInstrumentationConfigurator.config.before_request->json_logging/util.py::is_not_match_any_pattern",
+      "json_logging/framework/quart/__init__.py::<module>->json_logging/framework/quart/__init__.py::is_quart_present",
+      "json_logging/framework/quart/__init__.py::QuartAppRequestInstrumentationConfigurator.config->json_logging/framework/quart/__init__.py::is_quart_present",
+      "json_logging/framework/quart/__init__.py::QuartAppRequestInstrumentationConfigurator.config->json_logging/util.py::update_formatter_for_loggers",
+      "json_logging/framework/quart/__init__.py::QuartAppRequestInstrumentationConfigurator.config.before_request->json_logging/util.py::is_not_match_any_pattern",
+      "json_logging/framework/sanic/__init__.py::SanicAppConfigurator.config->json_logging/framework/sanic/__init__.py::is_sanic_present",
+      "json_logging/framework/sanic/__init__.py::SanicAppRequestInstrumentationConfigurator.config->json_logging/framework/sanic/__init__.py::is_sanic_present",
+      "json_logging/framework/sanic/__init__.py::SanicAppRequestInstrumentationConfigurator.config.before_request->json_logging/util.py::is_not_match_any_pattern",
+      "json_logging/frameworks.py::<module>->json_logging/framework/fastapi/__init__.py::is_fastapi_present",
+      "json_logging/frameworks.py::<module>->json_logging/frameworks.py::register_framework_support",
+      "json_logging/frameworks.py::register_framework_support->json_logging/util.py::validate_subclass",
+      "json_logging/util.py::RequestUtil.__new__->json_logging/util.py::validate_subclass",
+      "json_logging/util.py::RequestUtil.get_correlation_id->json_logging/util.py::RequestUtil._get_correlation_id_in_request_header",
+      "json_logging/util.py::RequestUtil.get_correlation_id->json_logging/util.py::RequestUtil.get_request_from_call_stack",
+      "json_logging/util.py::update_formatter_for_loggers->json_logging/formatters.py::JSONLogWebFormatter"
+    ]
+  }
+}

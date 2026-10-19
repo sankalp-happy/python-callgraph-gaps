@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/akutayural/APIException",
+  "repo_name": "APIException",
+  "row_id": "C0153",
+  "stratum": "HIGH",
+  "sha_requested": "af369b440186a234bac7fc8744f8ba709ee6430b",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:14:21Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "af369b440186a234bac7fc8744f8ba709ee6430b",
+    "seconds_clone": 189.0
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "api_exception",
+    "custom_enum",
+    "schemas"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 10,
+    "nodes": 52,
+    "callable_nodes": 34,
+    "by_kind": {
+      "class_body": 8,
+      "function": 20,
+      "lambda": 1,
+      "method": 13,
+      "module": 10
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 279,
+    "ast_resolved": 24,
+    "by_edge_type": {
+      "direct": 179,
+      "method_static": 5,
+      "method_dynamic": 63,
+      "super_dispatch": 0,
+      "reflective": 9,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 11,
+      "decorator_apply": 12,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 147,
+      "in_repo": 37,
+      "unknown": 95
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 28,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 2,
+    "namespace_merged": 3
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 25,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 86
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 10,
+    "decorator_apply": 4,
+    "direct": 54,
+    "method_dynamic": 18
+  },
+  "baseline_comparison": {
+    "pycg_only": 7,
+    "pyright_only": 4,
+    "agreed": 21,
+    "union": 32,
+    "jaccard": 0.6562
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 195.5
+}

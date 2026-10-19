@@ -1,0 +1,103 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 94,
+        "edges": 79,
+        "seconds": 0.07,
+        "peak_rss_mb": 14,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 94,
+        "edges": 79,
+        "seconds": 0.08,
+        "peak_rss_mb": 14,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 94,
+        "edges": 79,
+        "seconds": 0.07,
+        "peak_rss_mb": 14,
+        "detail": null
+      }
+    ],
+    "union_nodes": 94,
+    "union_edges": 79,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 94,
+    "pycg_edges": 79,
+    "name_outcomes": {
+      "mapped": 47,
+      "namespace_merged": 0,
+      "external": 47,
+      "unmapped": 0
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 8,
+      "external_module": 39
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [],
+    "unmapped_distinct": 0,
+    "inventory_nodes_covered": 47,
+    "inventory_nodes_total": 57
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 21,
+      "callers_with_external_edges": 28,
+      "dropped": {
+        "callee_external": 58
+      }
+    },
+    "in_universe_edges": [
+      "slippers/apps.py::SlippersConfig.ready->slippers/apps.py::register_tags",
+      "slippers/apps.py::changed->slippers/apps.py::register_tags",
+      "slippers/apps.py::checks->slippers/apps.py::get_components_yaml",
+      "slippers/apps.py::register_tags->slippers/apps.py::get_components_yaml",
+      "slippers/apps.py::register_tags->slippers/templatetags/slippers.py::register_components",
+      "slippers/apps.py::watch->slippers/apps.py::get_components_yaml",
+      "slippers/props.py::Props.from_string->slippers/props.py::Props.__init__",
+      "slippers/template.py::slippers_token_kwargs->slippers/template.py::SlippersFilterExpression.__init__",
+      "slippers/templatetags/slippers.py::AttrsNode.render->slippers/templatetags/slippers.py::attr_string",
+      "slippers/templatetags/slippers.py::ComponentNode.render->slippers/props.py::Props.from_string",
+      "slippers/templatetags/slippers.py::ComponentNode.render->slippers/props.py::check_prop_types",
+      "slippers/templatetags/slippers.py::ComponentNode.render->slippers/props.py::render_error_html",
+      "slippers/templatetags/slippers.py::ComponentNode.render->slippers/templatetags/slippers.py::extract_template_parts",
+      "slippers/templatetags/slippers.py::create_component_tag.do_component->slippers/template.py::slippers_token_kwargs",
+      "slippers/templatetags/slippers.py::create_component_tag.do_component->slippers/templatetags/slippers.py::ComponentNode.__init__",
+      "slippers/templatetags/slippers.py::do_attrs->slippers/template.py::slippers_token_kwargs",
+      "slippers/templatetags/slippers.py::do_attrs->slippers/templatetags/slippers.py::AttrsNode.__init__",
+      "slippers/templatetags/slippers.py::do_fragment->slippers/templatetags/slippers.py::FragmentNode.__init__",
+      "slippers/templatetags/slippers.py::do_var->slippers/template.py::slippers_token_kwargs",
+      "slippers/templatetags/slippers.py::do_var->slippers/templatetags/slippers.py::VarNode.__init__",
+      "slippers/templatetags/slippers.py::register_components->slippers/templatetags/slippers.py::create_component_tag"
+    ]
+  }
+}

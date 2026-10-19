@@ -1,0 +1,110 @@
+{
+  "repo_url": "https://github.com/mininet/mininet",
+  "repo_name": "mininet",
+  "row_id": "C0017",
+  "stratum": "MED",
+  "sha_requested": "6eb8973c0bfd13c25c244a3871130c5e36b5fbd7",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-22T12:48:38Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "6eb8973c0bfd13c25c244a3871130c5e36b5fbd7",
+    "seconds_clone": 2.4
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "mininet"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 14,
+    "nodes": 448,
+    "callable_nodes": 393,
+    "by_kind": {
+      "class_body": 41,
+      "function": 79,
+      "lambda": 3,
+      "method": 311,
+      "module": 14
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 2,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1661,
+    "ast_resolved": 442,
+    "by_edge_type": {
+      "direct": 747,
+      "method_static": 263,
+      "method_dynamic": 493,
+      "super_dispatch": 11,
+      "reflective": 8,
+      "dynamic_import": 0,
+      "eval_exec": 4,
+      "callback_dispatch": 95,
+      "decorator_apply": 32,
+      "subprocess_ipc": 8
+    },
+    "by_target_scope": {
+      "external": 379,
+      "in_repo": 653,
+      "unknown": 629
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 203,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 35,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 399,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 439
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 25,
+    "direct": 208,
+    "method_dynamic": 198,
+    "method_static": 1,
+    "reflective": 7
+  },
+  "baseline_comparison": {
+    "pycg_only": 19,
+    "pyright_only": 215,
+    "agreed": 184,
+    "union": 418,
+    "jaccard": 0.4402
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 17.7
+}

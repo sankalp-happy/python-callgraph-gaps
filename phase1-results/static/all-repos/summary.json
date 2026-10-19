@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/asottile/all-repos",
+  "repo_name": "all-repos",
+  "row_id": "C0108",
+  "stratum": "MED",
+  "sha_requested": "49b451db21074f7b79be6f56dff005f61ce12739",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:21:30Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "49b451db21074f7b79be6f56dff005f61ce12739",
+    "seconds_clone": 1.4
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "all_repos"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 45,
+    "nodes": 216,
+    "callable_nodes": 147,
+    "by_kind": {
+      "class_body": 24,
+      "function": 122,
+      "method": 25,
+      "module": 45
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 701,
+    "ast_resolved": 227,
+    "by_edge_type": {
+      "direct": 410,
+      "method_static": 4,
+      "method_dynamic": 227,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 5,
+      "eval_exec": 0,
+      "callback_dispatch": 6,
+      "decorator_apply": 17,
+      "subprocess_ipc": 32
+    },
+    "by_target_scope": {
+      "external": 259,
+      "in_repo": 234,
+      "unknown": 208
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 206,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 3,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 205,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 28
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 5,
+    "direct": 12,
+    "dynamic_import": 2,
+    "method_dynamic": 9
+  },
+  "baseline_comparison": {
+    "pycg_only": 9,
+    "pyright_only": 8,
+    "agreed": 197,
+    "union": 214,
+    "jaccard": 0.9206
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 20.9
+}

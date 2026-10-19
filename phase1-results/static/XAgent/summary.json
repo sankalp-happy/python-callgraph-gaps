@@ -1,0 +1,110 @@
+{
+  "repo_url": "https://github.com/OpenBMB/XAgent",
+  "repo_name": "XAgent",
+  "row_id": "C0010",
+  "stratum": "HIGH",
+  "sha_requested": "0dea79924347fad46e114621d7334d1136b30691",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-22T14:21:54Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "0dea79924347fad46e114621d7334d1136b30691",
+    "seconds_clone": 15.0
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "XAgent"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 59,
+    "nodes": 390,
+    "callable_nodes": 272,
+    "by_kind": {
+      "class_body": 59,
+      "function": 37,
+      "lambda": 7,
+      "method": 228,
+      "module": 59
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 2,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1512,
+    "ast_resolved": 269,
+    "by_edge_type": {
+      "direct": 675,
+      "method_static": 154,
+      "method_dynamic": 610,
+      "super_dispatch": 8,
+      "reflective": 3,
+      "dynamic_import": 1,
+      "eval_exec": 0,
+      "callback_dispatch": 23,
+      "decorator_apply": 38,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 533,
+      "in_repo": 376,
+      "unknown": 603
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 214,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 16,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 321,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 319
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 4,
+    "decorator_apply": 4,
+    "direct": 78,
+    "method_dynamic": 230,
+    "reflective": 3
+  },
+  "baseline_comparison": {
+    "pycg_only": 21,
+    "pyright_only": 128,
+    "agreed": 193,
+    "union": 342,
+    "jaccard": 0.5643
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 41.4
+}

@@ -1,0 +1,112 @@
+{
+  "repo_url": "https://github.com/django-ses/django-ses",
+  "repo_name": "django-ses",
+  "row_id": "C0049",
+  "stratum": "HIGH",
+  "sha_requested": "f49e8978ea8b19a8d70117ecf5db6c24f7670038",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T00:35:13Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "f49e8978ea8b19a8d70117ecf5db6c24f7670038",
+    "seconds_clone": 1.2
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "django_ses"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 19,
+    "nodes": 148,
+    "callable_nodes": 108,
+    "by_kind": {
+      "class_body": 21,
+      "function": 25,
+      "lambda": 1,
+      "method": 82,
+      "module": 19
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 1,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 489,
+    "ast_resolved": 66,
+    "by_edge_type": {
+      "direct": 164,
+      "method_static": 40,
+      "method_dynamic": 232,
+      "super_dispatch": 3,
+      "reflective": 1,
+      "dynamic_import": 1,
+      "eval_exec": 0,
+      "callback_dispatch": 11,
+      "decorator_apply": 37,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 158,
+      "in_repo": 72,
+      "unknown": 259
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 62,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 5,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 70,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 194
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 1,
+    "decorator_apply": 4,
+    "direct": 33,
+    "method_dynamic": 150,
+    "method_static": 2,
+    "reflective": 1,
+    "super_dispatch": 3
+  },
+  "baseline_comparison": {
+    "pycg_only": 1,
+    "pyright_only": 9,
+    "agreed": 61,
+    "union": 71,
+    "jaccard": 0.8592
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 9.7
+}

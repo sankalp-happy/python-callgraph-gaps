@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/flatironinstitute/deepblast",
+  "repo_name": "deepblast",
+  "row_id": "C0193",
+  "stratum": "HIGH",
+  "sha_requested": "ec661fa4c63d6acdef0f2854c7284814a26111a4",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T17:30:50Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "ec661fa4c63d6acdef0f2854c7284814a26111a4",
+    "seconds_clone": 5.0
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "deepblast"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 27,
+    "nodes": 294,
+    "callable_nodes": 233,
+    "by_kind": {
+      "class_body": 34,
+      "function": 111,
+      "lambda": 22,
+      "method": 100,
+      "module": 27
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1832,
+    "ast_resolved": 158,
+    "by_edge_type": {
+      "direct": 1104,
+      "method_static": 25,
+      "method_dynamic": 552,
+      "super_dispatch": 13,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 79,
+      "decorator_apply": 57,
+      "subprocess_ipc": 2
+    },
+    "by_target_scope": {
+      "external": 1022,
+      "in_repo": 164,
+      "unknown": 646
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 154,
+    "seeds_completed": [
+      "0",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 24,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 154,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 917
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 79,
+    "decorator_apply": 34,
+    "direct": 396,
+    "method_dynamic": 396,
+    "super_dispatch": 12
+  },
+  "baseline_comparison": {
+    "pycg_only": 19,
+    "pyright_only": 19,
+    "agreed": 135,
+    "union": 173,
+    "jaccard": 0.7803
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 1851.5
+}

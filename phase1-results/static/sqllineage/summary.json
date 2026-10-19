@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/reata/sqllineage",
+  "repo_name": "sqllineage",
+  "row_id": "C0056",
+  "stratum": "MED",
+  "sha_requested": "e5ac9b268cb5f8a4597f36e9718f71ffae6da447",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T02:06:05Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "e5ac9b268cb5f8a4597f36e9718f71ffae6da447",
+    "seconds_clone": 2.2
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "sqllineage"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 51,
+    "nodes": 406,
+    "callable_nodes": 294,
+    "by_kind": {
+      "class_body": 61,
+      "function": 40,
+      "lambda": 9,
+      "method": 245,
+      "module": 51
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 1,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1600,
+    "ast_resolved": 402,
+    "by_edge_type": {
+      "direct": 717,
+      "method_static": 169,
+      "method_dynamic": 580,
+      "super_dispatch": 7,
+      "reflective": 0,
+      "dynamic_import": 3,
+      "eval_exec": 0,
+      "callback_dispatch": 46,
+      "decorator_apply": 78,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 450,
+      "in_repo": 456,
+      "unknown": 694
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 321,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 50,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 406,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 340
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 7,
+    "decorator_apply": 1,
+    "direct": 69,
+    "method_dynamic": 263
+  },
+  "baseline_comparison": {
+    "pycg_only": 89,
+    "pyright_only": 174,
+    "agreed": 232,
+    "union": 495,
+    "jaccard": 0.4687
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 30.8
+}

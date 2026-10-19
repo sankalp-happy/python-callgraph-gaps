@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/bridgecrewio/AirIAM",
+  "repo_name": "AirIAM",
+  "row_id": "C0163",
+  "stratum": "LOW",
+  "sha_requested": "d0e377c450b38d0fb814461011672913cab54329",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:23:55Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "d0e377c450b38d0fb814461011672913cab54329",
+    "seconds_clone": 2.6
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "airiam"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 28,
+    "nodes": 175,
+    "callable_nodes": 127,
+    "by_kind": {
+      "class_body": 20,
+      "function": 17,
+      "lambda": 30,
+      "method": 80,
+      "module": 28
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 687,
+    "ast_resolved": 115,
+    "by_edge_type": {
+      "direct": 354,
+      "method_static": 68,
+      "method_dynamic": 195,
+      "super_dispatch": 15,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 32,
+      "decorator_apply": 23,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 311,
+      "in_repo": 115,
+      "unknown": 261
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 93,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 47,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 133,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 143
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 6,
+    "direct": 42,
+    "method_dynamic": 95
+  },
+  "baseline_comparison": {
+    "pycg_only": 18,
+    "pyright_only": 58,
+    "agreed": 75,
+    "union": 151,
+    "jaccard": 0.4967
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 16.0
+}

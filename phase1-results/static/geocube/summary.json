@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/corteva/geocube",
+  "repo_name": "geocube",
+  "row_id": "C0124",
+  "stratum": "HIGH",
+  "sha_requested": "48fce2ec25aee8d02af4dde8185c2524e1b5110f",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T17:29:55Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "48fce2ec25aee8d02af4dde8185c2524e1b5110f",
+    "seconds_clone": 9.3
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "geocube"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 17,
+    "nodes": 69,
+    "callable_nodes": 45,
+    "by_kind": {
+      "class_body": 7,
+      "function": 29,
+      "lambda": 1,
+      "method": 15,
+      "module": 17
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 263,
+    "ast_resolved": 42,
+    "by_edge_type": {
+      "direct": 149,
+      "method_static": 10,
+      "method_dynamic": 81,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 5,
+      "decorator_apply": 18,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 132,
+      "in_repo": 45,
+      "unknown": 86
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 33,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 4,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 41,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 128
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 5,
+    "decorator_apply": 17,
+    "direct": 59,
+    "method_dynamic": 47
+  },
+  "baseline_comparison": {
+    "pycg_only": 2,
+    "pyright_only": 10,
+    "agreed": 31,
+    "union": 43,
+    "jaccard": 0.7209
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 15.5
+}

@@ -1,0 +1,72 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "timeout",
+        "nodes": null,
+        "edges": null,
+        "seconds": null,
+        "peak_rss_mb": null,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "timeout",
+        "nodes": null,
+        "edges": null,
+        "seconds": null,
+        "peak_rss_mb": null,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "timeout",
+        "nodes": null,
+        "edges": null,
+        "seconds": null,
+        "peak_rss_mb": null,
+        "detail": null
+      }
+    ],
+    "union_nodes": 0,
+    "union_edges": 0,
+    "deterministic_across_seeds": null
+  },
+  "diagnostics": {
+    "pycg_nodes": 0,
+    "pycg_edges": 0,
+    "name_outcomes": {
+      "mapped": 0,
+      "namespace_merged": 0,
+      "external": 0,
+      "unmapped": 0
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {},
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [],
+    "unmapped_distinct": 0,
+    "inventory_nodes_covered": 0,
+    "inventory_nodes_total": 231
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 0,
+      "callers_with_external_edges": 0,
+      "dropped": {}
+    },
+    "in_universe_edges": []
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/xdit-project/xDiT",
+  "repo_name": "xDiT",
+  "row_id": "C0025",
+  "stratum": "HIGH",
+  "sha_requested": "9cc5f9e061004b191f3e2b2b7296bda3a2c52f29",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-22T20:13:56Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "9cc5f9e061004b191f3e2b2b7296bda3a2c52f29",
+    "seconds_clone": 3.1
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "entrypoints",
+    "xfuser"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 161,
+    "nodes": 1751,
+    "callable_nodes": 1359,
+    "by_kind": {
+      "class_body": 231,
+      "function": 441,
+      "lambda": 19,
+      "method": 899,
+      "module": 161
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 2,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 11448,
+    "ast_resolved": 1873,
+    "by_edge_type": {
+      "direct": 5742,
+      "method_static": 508,
+      "method_dynamic": 3739,
+      "super_dispatch": 163,
+      "reflective": 7,
+      "dynamic_import": 4,
+      "eval_exec": 0,
+      "callback_dispatch": 872,
+      "decorator_apply": 407,
+      "subprocess_ipc": 6
+    },
+    "by_target_scope": {
+      "external": 3699,
+      "in_repo": 3083,
+      "unknown": 4666
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 2168,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 4998
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 684,
+    "decorator_apply": 50,
+    "direct": 1396,
+    "method_dynamic": 2797,
+    "method_static": 2,
+    "reflective": 6,
+    "super_dispatch": 63
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 2168,
+    "agreed": 0,
+    "union": 2168,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 4505.7
+}

@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/martinwoodward/PyFluff",
+  "repo_name": "PyFluff",
+  "row_id": "C0213",
+  "stratum": "HIGH",
+  "sha_requested": "f2df440a331f7124596ed4840d9f36dc7da3f978",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-23T19:32:44Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "f2df440a331f7124596ed4840d9f36dc7da3f978",
+    "seconds_clone": 1.3
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "pyfluff"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 10,
+    "nodes": 165,
+    "callable_nodes": 129,
+    "by_kind": {
+      "class_body": 26,
+      "function": 65,
+      "lambda": 1,
+      "method": 63,
+      "module": 10
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 811,
+    "ast_resolved": 141,
+    "by_edge_type": {
+      "direct": 318,
+      "method_static": 69,
+      "method_dynamic": 355,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 4,
+      "decorator_apply": 65,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 220,
+      "in_repo": 169,
+      "unknown": 422
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 108,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 3,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 159,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 318
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 3,
+    "decorator_apply": 47,
+    "direct": 118,
+    "method_dynamic": 150
+  },
+  "baseline_comparison": {
+    "pycg_only": 30,
+    "pyright_only": 81,
+    "agreed": 78,
+    "union": 189,
+    "jaccard": 0.4127
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 8.1
+}

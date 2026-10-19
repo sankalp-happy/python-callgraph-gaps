@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/Grokzen/pykwalify",
+  "repo_name": "pykwalify",
+  "row_id": "C0180",
+  "stratum": "MED",
+  "sha_requested": "ba66b488dd0ccf3acac97e42b21254abd2134181",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T12:32:57Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "ba66b488dd0ccf3acac97e42b21254abd2134181",
+    "seconds_clone": 1.7
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "pykwalify"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 7,
+    "nodes": 190,
+    "callable_nodes": 170,
+    "by_kind": {
+      "class_body": 13,
+      "function": 45,
+      "lambda": 2,
+      "method": 123,
+      "module": 7
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 34,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 880,
+    "ast_resolved": 252,
+    "by_edge_type": {
+      "direct": 344,
+      "method_static": 70,
+      "method_dynamic": 383,
+      "super_dispatch": 7,
+      "reflective": 1,
+      "dynamic_import": 0,
+      "eval_exec": 1,
+      "callback_dispatch": 12,
+      "decorator_apply": 62,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 160,
+      "in_repo": 269,
+      "unknown": 451
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 132,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 2,
+    "namespace_merged": 2
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 139,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 116
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 8,
+    "decorator_apply": 31,
+    "direct": 5,
+    "method_dynamic": 67,
+    "method_static": 4,
+    "reflective": 1
+  },
+  "baseline_comparison": {
+    "pycg_only": 22,
+    "pyright_only": 29,
+    "agreed": 110,
+    "union": 161,
+    "jaccard": 0.6832
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 11.0
+}

@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/alexzhang13/flashattention2-custom-mask",
+  "repo_name": "flashattention2-custom-mask",
+  "row_id": "C0174",
+  "stratum": "HIGH",
+  "sha_requested": "817091628883aab3d43c176218805fe16832aa04",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:21:25Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "817091628883aab3d43c176218805fe16832aa04",
+    "seconds_clone": 2.1
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "fa2_custom_mask"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 5,
+    "nodes": 17,
+    "callable_nodes": 11,
+    "by_kind": {
+      "class_body": 1,
+      "function": 8,
+      "lambda": 1,
+      "method": 2,
+      "module": 5
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 184,
+    "ast_resolved": 8,
+    "by_edge_type": {
+      "direct": 111,
+      "method_static": 0,
+      "method_dynamic": 60,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 4,
+      "decorator_apply": 9,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 108,
+      "in_repo": 8,
+      "unknown": 68
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 5,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 2,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 5,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 168
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 4,
+    "decorator_apply": 7,
+    "direct": 97,
+    "method_dynamic": 60
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 0,
+    "agreed": 5,
+    "union": 5,
+    "jaccard": 1.0
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 4.9
+}

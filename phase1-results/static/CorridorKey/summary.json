@@ -1,0 +1,112 @@
+{
+  "repo_url": "https://github.com/nikopueringer/CorridorKey",
+  "repo_name": "CorridorKey",
+  "row_id": "C0015",
+  "stratum": "LOW",
+  "sha_requested": "97e55a453060745bead1befd293f6e523c4b845c",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-22T15:54:53Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "97e55a453060745bead1befd293f6e523c4b845c",
+    "seconds_clone": 43.0
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "CorridorKeyModule",
+    "VideoMaMaInferenceModule",
+    "backend",
+    "gvm_core"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 27,
+    "nodes": 342,
+    "callable_nodes": 270,
+    "by_kind": {
+      "class_body": 45,
+      "function": 100,
+      "lambda": 1,
+      "method": 169,
+      "module": 27
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 2188,
+    "ast_resolved": 282,
+    "by_edge_type": {
+      "direct": 1042,
+      "method_static": 83,
+      "method_dynamic": 906,
+      "super_dispatch": 20,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 98,
+      "decorator_apply": 36,
+      "subprocess_ipc": 3
+    },
+    "by_target_scope": {
+      "external": 1016,
+      "in_repo": 318,
+      "unknown": 854
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 240,
+    "seeds_completed": [
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 14,
+    "namespace_merged": 54
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 250,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 892
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 95,
+    "decorator_apply": 5,
+    "direct": 319,
+    "method_dynamic": 463,
+    "super_dispatch": 10
+  },
+  "baseline_comparison": {
+    "pycg_only": 36,
+    "pyright_only": 46,
+    "agreed": 204,
+    "union": 286,
+    "jaccard": 0.7133
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 2080.0
+}

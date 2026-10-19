@@ -1,0 +1,122 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 153,
+        "edges": 158,
+        "seconds": 0.14,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 153,
+        "edges": 158,
+        "seconds": 0.14,
+        "peak_rss_mb": 14,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 153,
+        "edges": 158,
+        "seconds": 0.14,
+        "peak_rss_mb": 14,
+        "detail": null
+      }
+    ],
+    "union_nodes": 153,
+    "union_edges": 158,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 153,
+    "pycg_edges": 158,
+    "name_outcomes": {
+      "mapped": 63,
+      "namespace_merged": 0,
+      "external": 86,
+      "unmapped": 4
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 11,
+      "external_module": 75,
+      "synthesized_path": 4
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [
+      "geocube.cli.geocube.<dict1>.<lambda1>",
+      "geocube.geo_utils.geobox.load_vector_data.<RETURN>.columns.values.tolist",
+      "geocube.logger.get_logger.warning",
+      "geocube.vector_to_cube.VectorToCube.__init__.vector_data.columns.values.tolist"
+    ],
+    "unmapped_distinct": 4,
+    "inventory_nodes_covered": 63,
+    "inventory_nodes_total": 69
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 33,
+      "callers_with_external_edges": 39,
+      "dropped": {
+        "callee_external": 119,
+        "callee_unmapped": 6
+      }
+    },
+    "in_universe_edges": [
+      "geocube/_show_versions.py::_get_deps_info->geocube/_show_versions.py::_get_deps_info.get_version",
+      "geocube/_show_versions.py::show_versions->geocube/_show_versions.py::_get_deps_info",
+      "geocube/_show_versions.py::show_versions->geocube/_show_versions.py::_get_gdal_info",
+      "geocube/_show_versions.py::show_versions->geocube/_show_versions.py::_get_sys_info",
+      "geocube/_show_versions.py::show_versions->geocube/_show_versions.py::_print_info_dict",
+      "geocube/api/core.py::make_geocube->geocube/geo_utils/geobox.py::GeoBoxMaker",
+      "geocube/api/core.py::make_geocube->geocube/vector_to_cube.py::VectorToCube",
+      "geocube/api/core.py::make_geocube->geocube/vector_to_cube.py::VectorToCube.make_geocube",
+      "geocube/cli/commands/make_geocube.py::make_geocube->geocube/api/core.py::make_geocube",
+      "geocube/cli/geocube.py::<module>->geocube/cli/geocube.py::_add_subcommands",
+      "geocube/cli/geocube.py::cli_show_version->geocube/_show_versions.py::show_versions",
+      "geocube/geo_utils/geobox.py::GeoBoxMaker.from_vector->geocube/geo_utils/geobox.py::geobox_from_rio",
+      "geocube/geo_utils/geobox.py::GeoBoxMaker.from_vector->geocube/geo_utils/geobox.py::load_vector_data",
+      "geocube/geo_utils/geobox.py::load_vector_data->geocube/logger.py::get_logger",
+      "geocube/logger.py::log_to_console->geocube/logger.py::_remove_log_handler",
+      "geocube/logger.py::log_to_console->geocube/logger.py::set_log_level",
+      "geocube/logger.py::log_to_file->geocube/logger.py::_remove_log_handler",
+      "geocube/logger.py::log_to_file->geocube/logger.py::set_log_level",
+      "geocube/rasterize.py::rasterize_image->geocube/rasterize.py::_is_numeric",
+      "geocube/rasterize.py::rasterize_image->geocube/rasterize.py::_minimize_dtype",
+      "geocube/rasterize.py::rasterize_image->geocube/rasterize.py::_remove_missing_data",
+      "geocube/rasterize.py::rasterize_points_griddata->geocube/rasterize.py::_is_numeric",
+      "geocube/rasterize.py::rasterize_points_griddata->geocube/rasterize.py::_remove_missing_data",
+      "geocube/rasterize.py::rasterize_points_radial->geocube/rasterize.py::_is_numeric",
+      "geocube/rasterize.py::rasterize_points_radial->geocube/rasterize.py::_remove_missing_data",
+      "geocube/vector_to_cube.py::VectorToCube.__init__->geocube/geo_utils/geobox.py::load_vector_data",
+      "geocube/vector_to_cube.py::VectorToCube._get_grid->geocube/logger.py::get_logger",
+      "geocube/vector_to_cube.py::VectorToCube._get_grid->geocube/vector_to_cube.py::_format_series_data",
+      "geocube/vector_to_cube.py::VectorToCube._get_grouped_grid->geocube/logger.py::get_logger",
+      "geocube/vector_to_cube.py::VectorToCube._get_grouped_grid->geocube/vector_to_cube.py::_format_series_data",
+      "geocube/vector_to_cube.py::_format_series_data->geocube/logger.py::get_logger",
+      "geocube/xarray_extensions/vectorxarray.py::BaseVectorX.to_geodataframe->geocube/xarray_extensions/vectorxarray.py::BaseVectorX._validate_operation",
+      "geocube/xarray_extensions/vectorxarray.py::VectorArray.plot->geocube/xarray_extensions/vectorxarray.py::BaseVectorX.to_geodataframe"
+    ]
+  }
+}

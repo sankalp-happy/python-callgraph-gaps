@@ -1,0 +1,134 @@
+06:45:36 [report] 78/105 repos extracted
+repo                     stratum  nodes  sites   pycg pyright   jacc  unres
+APIException             HIGH        34    279     28      25 0.6562     86
+AirIAM                   LOW        127    687     93     133 0.4967    143
+AutoLens                 MED        529   5299    334     492 0.5763   2982
+CorridorKey              LOW        270   2188    240     250 0.7133    892
+Curator                  LOW       2893  15443   1748    2264 0.6042   4329
+DC3-MWCP                 HIGH       601   3243    390     522 0.5124    952
+EasyCV                   MED       3998  35533      0    3513    0.0  15304  PARTIAL(pycg)
+Fast-Poisson-Image-Editing MED         70    473     56      62 0.6389    232
+HippoRAG                 MED        311   2083    261     347  0.567    381
+OpenAGI                  LOW        139    502     64      84 0.5914     56
+PathPicker               LOW        188    666    105     275 0.3768     38
+PyFluff                  HIGH       129    811    108     159 0.4127    318
+PyFunceble               MED       1404   6022   1328    1753 0.3687   1167
+Pyneat                   HIGH       997   8200    660    1108 0.4155   2197
+SerpScrap                HIGH       352   2999    274     407 0.4551    708
+ShivyC                   LOW        566   2006    610     681 0.6362    521
+TradingView-Screener     LOW         58     90     13      33 0.0455     12
+VeOmni                   HIGH      4894  40909      0    4559    0.0  24150  PARTIAL(pycg)
+Vibe-Trading             LOW          -      -      -       -      -  no_python_package_found
+XAgent                   HIGH       272   1512    214     321 0.5643    319
+aitlas                   MED       2578  20245      0    1966    0.0  11844  PARTIAL(pycg)
+all-repos                MED        147    701    206     205 0.9206     28
+alphafold                LOW        806   5145      0     848    0.0   2545  PARTIAL(pycg)
+alphagenome_research     HIGH       527   4289      0     596    0.0   2824  PARTIAL(pycg)
+apiflask                 HIGH       147    688     77     110 0.5583    206
+asteroid                 MED        483   2714      0     335    0.0   1374  PARTIAL(pycg)
+autoray                  HIGH       566   2323    567     583 0.7611    423
+aws-dynamodb-encryption-python HIGH       308   1263    244     284 0.5668    489
+bedrock-agentcore-sdk-python MED        771   4689    591     725 0.6512   1131
+bitmapist                LOW         87    235     84      75 0.6224     35
+bitstring                LOW        585   2042      0     644    0.0    215  PARTIAL(pycg)
+borsa-mcp                LOW        471   7937    521     452   0.75   3473
+bt-ccxt-store            MED         44    180     28      27 0.8333     53
+chevron                  MED         16    119      0      15    0.0     30  PARTIAL(pycg)
+cloud-intelligence-dashboards-framework MED        569   5500    540     818  0.369   1332
+cocotbext-axi            HIGH         -      -      -       -      -  no_python_package_found
+compressed-tensors       HIGH       463   2582    371     482 0.6435    863
+confection               HIGH       115    704      0     126    0.0     75  PARTIAL(pycg)
+confluence-markdown-exporter MED        312   2538    362     409 0.8489    840
+cornice                  HIGH        96    409     51      68 0.5867    158
+creosote                 MED         60    380     62      63 0.9841     70
+deepblast                HIGH       233   1832    154     154 0.7803    917
+django-ses               HIGH       108    489     62      70 0.8592    194
+dnsrobocert              LOW         54    552     69      71 0.9718     76
+enterprise-deep-research MED        170   3874     88     127 0.6797    785
+excel-mcp-server         HIGH         -      -      -       -      -  no_python_package_found
+fastapi-injectable       MED         84    323     67      67 0.7632     27
+flashattention2-custom-mask HIGH        11    184      5       5    1.0    168
+free-python-games        LOW        149    839    130     162 0.5699     13
+geocube                  HIGH        45    263     33      41 0.7209    128
+jaxpruner                MED        296   1856      0     184    0.0   1284  PARTIAL(pycg)
+json-logging-python      HIGH       166    315     41      59 0.6667     80
+jsonapi-requests         HIGH       141    271    119     112 0.7368     63
+kolla-ansible            LOW         97    601    111     110 0.8889    183
+lagent                   MED        467   3129    298     389 0.5066    767
+marshmallow-sqlalchemy   HIGH        58    233     42      50 0.7358     53
+matlab2python            MED        318   1493      0      82    0.0    653  PARTIAL(pycg)
+mayavi                   HIGH      1928   9442      0    1726    0.0   5281  PARTIAL(pycg)
+mcp-sequential-thinking  MED         43    317     39      45 0.7872     41
+mininet                  MED        393   1661    203     399 0.4402    439
+movingpandas             LOW        293   1447    341     326 0.7015    501
+muscriptor               MED        168   1229      0     154    0.0    492  PARTIAL(pycg)
+paperseek                MED        464   4325    524     821  0.404    433
+pexpect                  LOW        250    996    197     252 0.6327    206
+pixivpy                  MED         70    212    101     104 0.8468     12
+pr-agent                 LOW        960   6879    978    1250 0.7447   2370
+prompt2model             LOW        174   1004    106     155  0.442    245
+ptlflow                  LOW       4119  37159      0    3131    0.0  25733  PARTIAL(pycg)
+puncover                 HIGH       141    554    130     133 0.8786    155
+py2app                   HIGH       351   3091    318     402 0.7308    504
+pykwalify                MED        170    880    132     139 0.6832    116
+pyrlp                    HIGH        94    423     87     105 0.6552     52
+pysui                    MED       1412  11033   1255    1601 0.6537   3369
+python-genai             MED          -      -      -       -      -  no_python_package_found
+python-lazy-object-proxy HIGH       155    200     15      20   0.25     28
+python-memcached         LOW         62    356     95      93 0.7248     83
+python-mysql-replication LOW        255   2379    174     233 0.6345    271
+python-neutronclient     HIGH      1041   3443   1055    1133 0.9261   1667
+rdflib-sqlalchemy        HIGH        62    533     61      61    1.0    266
+recurrentgemma           HIGH       310   1689    277     271 0.8962    918
+redbeat                  HIGH        52    309     43      44 0.8913    140
+rejax                    HIGH       306   1201    165     178 0.6333    825
+rlm                      LOW        319   1836    174     331 0.2916    379
+scrapyrt                 HIGH        67    312     44      46  0.875    128
+sec-edgar                MED        144    510     67      90 0.3534    102
+serverless-application-model LOW       1511  10377      0    2815    0.0   2153  PARTIAL(pycg)
+slippers                 HIGH        37    171     21      21 0.9091     77
+sqllineage               MED        294   1600    321     406 0.4687    340
+sqlmodel                 HIGH       472   3593    673     663 0.5962   2115
+swift                    LOW       3791  23978      0    6257    0.0   6109  PARTIAL(pycg)
+tensortrade-ng           HIGH       628   1684    199     463  0.242    414
+term-image               MED        322   1530    258     300 0.5852    199
+thinc                    HIGH      1109   4336      0    1292    0.0   1030  PARTIAL(pycg)
+thrift-tools             MED        155    569    115      98  0.626     75
+throttled                LOW         70    460    144     145 0.9931     58
+trigger                  HIGH      1891   7344   1628    1554 0.6276   1920
+ufo2ft                   HIGH         -      -      -       -      -  no_python_package_found
+ultravox                 LOW        616   3815      0     474    0.0   1949  PARTIAL(pycg)
+unyt                     HIGH       435   2026      0     269    0.0    736  PARTIAL(pycg)
+veriloggen               MED       3057  18813      0    5377    0.0   5259  PARTIAL(pycg)
+vllm-metal               MED       1064   5269      0    1085    0.0   1401  PARTIAL(pycg)
+voidaccess               LOW       1744  17031   2313    2372 0.9296   4369
+wsgidav                  LOW        489   2747    596     647 0.7656    642
+xDiT                     HIGH      1359  11448      0    2168    0.0   4998  PARTIAL(pycg)
+xacro                    HIGH       103    575    157     160 0.9448    110
+
+baseline agreement (Jaccard on in-universe edges): min 0.0455 / median 0.6537 / max 1.0 over 78 repos
+PyCG differed across seeds on 36 repos: sqlmodel, mininet, pr-agent, rlm, CorridorKey, HippoRAG, sqllineage, puncover ...
+
+22 repos have a FAILED baseline and are not done. Re-running picks them up:
+  thinc                    failed: pycg   pycg=[]
+  serverless-application-model failed: pycg   pycg=[]
+  xDiT                     failed: pycg   pycg=[]
+  VeOmni                   failed: pycg   pycg=[]
+  mayavi                   failed: pycg   pycg=[]
+  asteroid                 failed: pycg   pycg=[]
+  ultravox                 failed: pycg   pycg=[]
+  swift                    failed: pycg   pycg=[]
+  vllm-metal               failed: pycg   pycg=[]
+  alphagenome_research     failed: pycg   pycg=[]
+  ptlflow                  failed: pycg   pycg=[]
+  matlab2python            failed: pycg   pycg=[]
+  confection               failed: pycg   pycg=[]
+  jaxpruner                failed: pycg   pycg=[]
+  chevron                  failed: pycg   pycg=[]
+  unyt                     failed: pycg   pycg=[]
+  veriloggen               failed: pycg   pycg=[]
+  EasyCV                   failed: pycg   pycg=[]
+  aitlas                   failed: pycg   pycg=[]
+  alphafold                failed: pycg   pycg=[]
+  muscriptor               failed: pycg   pycg=[]
+  bitstring                failed: pycg   pycg=[]

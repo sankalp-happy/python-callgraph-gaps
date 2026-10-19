@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/google-deepmind/recurrentgemma",
+  "repo_name": "recurrentgemma",
+  "row_id": "C0082",
+  "stratum": "HIGH",
+  "sha_requested": "2efa84dac0e68e63547a27a18fa943c98f1c312e",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:06:35Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "2efa84dac0e68e63547a27a18fa943c98f1c312e",
+    "seconds_clone": 1.3
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "recurrentgemma"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 30,
+    "nodes": 436,
+    "callable_nodes": 310,
+    "by_kind": {
+      "class_body": 62,
+      "function": 92,
+      "lambda": 11,
+      "method": 241,
+      "module": 30
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 34
+  },
+  "callsites": {
+    "call_sites": 1689,
+    "ast_resolved": 322,
+    "by_edge_type": {
+      "direct": 873,
+      "method_static": 101,
+      "method_dynamic": 390,
+      "super_dispatch": 11,
+      "reflective": 17,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 114,
+      "decorator_apply": 183,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 741,
+      "in_repo": 458,
+      "unknown": 490
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 277,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 11,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 271,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 918
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 114,
+    "decorator_apply": 31,
+    "direct": 418,
+    "method_dynamic": 327,
+    "reflective": 17,
+    "super_dispatch": 11
+  },
+  "baseline_comparison": {
+    "pycg_only": 18,
+    "pyright_only": 12,
+    "agreed": 259,
+    "union": 289,
+    "jaccard": 0.8962
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 22.7
+}

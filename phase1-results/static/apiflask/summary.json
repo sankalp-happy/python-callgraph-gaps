@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/apiflask/apiflask",
+  "repo_name": "apiflask",
+  "row_id": "C0045",
+  "stratum": "HIGH",
+  "sha_requested": "f84d063c76c53c6950429f35a9e7bb7e0f0b6fff",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T00:34:55Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "f84d063c76c53c6950429f35a9e7bb7e0f0b6fff",
+    "seconds_clone": 1.4
+  },
+  "layout": "src",
+  "src_root": "src",
+  "packages": [
+    "src/apiflask"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 23,
+    "nodes": 198,
+    "callable_nodes": 147,
+    "by_kind": {
+      "class_body": 28,
+      "function": 51,
+      "lambda": 2,
+      "method": 94,
+      "module": 23
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 1,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 688,
+    "ast_resolved": 120,
+    "by_edge_type": {
+      "direct": 323,
+      "method_static": 50,
+      "method_dynamic": 228,
+      "super_dispatch": 12,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 31,
+      "decorator_apply": 44,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 258,
+      "in_repo": 140,
+      "unknown": 290
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 77,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 2,
+    "namespace_merged": 16
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 110,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 206
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 27,
+    "decorator_apply": 13,
+    "direct": 53,
+    "method_dynamic": 109,
+    "method_static": 1,
+    "super_dispatch": 3
+  },
+  "baseline_comparison": {
+    "pycg_only": 10,
+    "pyright_only": 43,
+    "agreed": 67,
+    "union": 120,
+    "jaccard": 0.5583
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 12.8
+}

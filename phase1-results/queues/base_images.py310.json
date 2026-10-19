@@ -1,0 +1,78 @@
+{
+  "_comment": "Frozen base-image pins for TraceWeave-Core, per platform. NEVER edit a digest in place: to change a pin, add a dated entry and bump manifest_version in MANIFEST.md. Every triaged repo records the pinned_ref and platform it actually ran under, so provenance is explicit even across machines.",
+  "manifest_version": "1.1",
+  "_active_platform_comment": "'auto' detects from the Docker daemon at runtime (see triage.sh). Set explicitly to 'linux/amd64' or 'linux/arm64' only to force a platform, which will emulate and INVALIDATE ALL TIMING MEASUREMENTS.",
+  "active_platform": "auto",
+  "_platform_warning": "A corpus must be built on ONE architecture. Most Python deps are pure-Python wheels whose versions are platform-independent, so lock_sha256 will often match across platforms -- but any repo with compiled extensions (numpy, lxml, cryptography, pydantic-core) can resolve different wheels and therefore a different lock_sha256. Do not mix platforms within a corpus without re-triaging.",
+  "platforms": {
+    "linux/amd64": {
+      "resolved_on": "2026-07-27",
+      "variant": null
+    },
+    "linux/arm64": {
+      "resolved_on": "2026-07-27",
+      "variant": "v8"
+    }
+  },
+  "images": {
+    "3.12": {
+      "tag": "python:3.12-slim",
+      "tracer": "sys.monitoring",
+      "notes": "Primary. PEP 669 sys.monitoring available. Default for all triage.",
+      "digests": {
+        "linux/amd64": "sha256:cab2dbf575e971934a81e4622f5aba17aa7929719bd7e31033a3a83b97fd0464",
+        "linux/arm64": "sha256:55842c72c6b3584d06ec84c731fc516b30b8a53ad262ebd085e47ab568b3bfc1"
+      }
+    },
+    "3.11": {
+      "tag": "python:3.11-slim",
+      "tracer": "sys.setprofile",
+      "notes": "ins1 Recipe 1 attempt 1. No sys.monitoring; fallback tracer, higher overhead.",
+      "digests": {
+        "linux/amd64": "sha256:00af38ae2ed311628970782e8a2d7f014d8909dbc63cb97bc0a158187f4db045",
+        "linux/arm64": "sha256:4fcdc7a15c936b4ffb35dac253215a8e679ea4d25d5e0ffa025fca0d6a702448"
+      }
+    },
+    "3.10": {
+      "tag": "python:3.10-slim",
+      "tracer": "sys.setprofile",
+      "notes": "ins1 Recipe 1 attempt 2 / Recipe 2 attempt 1.",
+      "digests": {
+        "linux/amd64": "sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+        "linux/arm64": "sha256:72b24f9186eb054b6de110a01e2fbb651932d43aa28b5d7e58b1d69364cef39b"
+      }
+    },
+    "3.9": {
+      "tag": "python:3.9-slim",
+      "tracer": "sys.setprofile",
+      "notes": "ins1 Recipe 1 attempt 3.",
+      "digests": {
+        "linux/amd64": "sha256:dad5b29e3506c35e0fd222736f4d4ef25d21b219acdd73f7bb41d59996ca8e0d",
+        "linux/arm64": "sha256:9a863b2cd2ae52d53feefd3af55ea9e3cf911d5fb252ed77a2618402d2703d74"
+      }
+    },
+    "3.8": {
+      "tag": "python:3.8-slim",
+      "tracer": "sys.setprofile",
+      "notes": "ins1 Recipe 2 attempt 2. EOL upstream; expect dependency-resolution noise.",
+      "digests": {
+        "linux/amd64": "sha256:314bc2fb0714b7807bf5699c98f0c73817e579799f2d91567ab7e9510f5601a5",
+        "linux/arm64": "sha256:c37419b5a020178521c2e451f44424a2c0bdf3498ff29dd2c9c9d26feffa517b"
+      }
+    }
+  },
+  "ladder": {
+    "_comment": "ins1 recipe order, as executable policy. runner.py walks this; annotators no longer do.",
+    "default": "3.10",
+    "PYTHON_VERSION": [
+      "3.11",
+      "3.10",
+      "3.9"
+    ],
+    "DEP_RESOLUTION": [
+      "3.10",
+      "3.8"
+    ]
+  },
+  "_recovery_note": "COPY of base_images.json with ladder.default=3.10 only. Digests untouched (MANIFEST freeze rule). For the 42 BUILD_FAIL/OTHER recovery pass, 2026-08-22."
+}

@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/fixie-ai/ultravox",
+  "repo_name": "ultravox",
+  "row_id": "C0039",
+  "stratum": "LOW",
+  "sha_requested": "69ddc63b2d72be5e9a86f818315da72cec55a876",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T02:06:36Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "69ddc63b2d72be5e9a86f818315da72cec55a876",
+    "seconds_clone": 7.5
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "ultravox"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 94,
+    "nodes": 835,
+    "callable_nodes": 616,
+    "by_kind": {
+      "class_body": 123,
+      "function": 217,
+      "lambda": 5,
+      "method": 396,
+      "module": 94
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 2
+  },
+  "callsites": {
+    "call_sites": 3815,
+    "ast_resolved": 507,
+    "by_edge_type": {
+      "direct": 2441,
+      "method_static": 154,
+      "method_dynamic": 927,
+      "super_dispatch": 49,
+      "reflective": 1,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 112,
+      "decorator_apply": 123,
+      "subprocess_ipc": 8
+    },
+    "by_target_scope": {
+      "external": 1208,
+      "in_repo": 1566,
+      "unknown": 1041
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 474,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 1949
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 98,
+    "decorator_apply": 19,
+    "direct": 1315,
+    "method_dynamic": 490,
+    "reflective": 1,
+    "super_dispatch": 26
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 474,
+    "agreed": 0,
+    "union": 474,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 5442.4
+}

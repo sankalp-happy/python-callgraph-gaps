@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/ShivamSarodia/ShivyC",
+  "repo_name": "ShivyC",
+  "row_id": "C0135",
+  "stratum": "LOW",
+  "sha_requested": "93aee27c83fd2d01335f9ebe35f5f814dc7e2ad0",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:20:48Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "93aee27c83fd2d01335f9ebe35f5f814dc7e2ad0",
+    "seconds_clone": 1.4
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "shivyc"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 40,
+    "nodes": 797,
+    "callable_nodes": 566,
+    "by_kind": {
+      "class_body": 191,
+      "function": 91,
+      "lambda": 8,
+      "method": 467,
+      "module": 40
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 2006,
+    "ast_resolved": 895,
+    "by_edge_type": {
+      "direct": 1053,
+      "method_static": 145,
+      "method_dynamic": 633,
+      "super_dispatch": 65,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 74,
+      "decorator_apply": 34,
+      "subprocess_ipc": 2
+    },
+    "by_target_scope": {
+      "external": 316,
+      "in_repo": 939,
+      "unknown": 751
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 610,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 28,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 681,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 521
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 31,
+    "direct": 2,
+    "method_dynamic": 488
+  },
+  "baseline_comparison": {
+    "pycg_only": 108,
+    "pyright_only": 179,
+    "agreed": 502,
+    "union": 789,
+    "jaccard": 0.6362
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 25.2
+}

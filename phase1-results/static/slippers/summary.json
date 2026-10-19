@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/mixxorz/slippers",
+  "repo_name": "slippers",
+  "row_id": "C0100",
+  "stratum": "HIGH",
+  "sha_requested": "5a855697b69856cf614915e5e6a9bc0a529cf7a2",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T15:41:24Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "5a855697b69856cf614915e5e6a9bc0a529cf7a2",
+    "seconds_clone": 1.7
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "pygments_slippers",
+    "slippers"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 8,
+    "nodes": 57,
+    "callable_nodes": 37,
+    "by_kind": {
+      "class_body": 12,
+      "function": 18,
+      "method": 19,
+      "module": 8
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 171,
+    "ast_resolved": 22,
+    "by_edge_type": {
+      "direct": 87,
+      "method_static": 1,
+      "method_dynamic": 70,
+      "super_dispatch": 1,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 1,
+      "callback_dispatch": 2,
+      "decorator_apply": 9,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 70,
+      "in_repo": 26,
+      "unknown": 75
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 21,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 21,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 77
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 1,
+    "decorator_apply": 5,
+    "direct": 24,
+    "method_dynamic": 47
+  },
+  "baseline_comparison": {
+    "pycg_only": 1,
+    "pyright_only": 1,
+    "agreed": 20,
+    "union": 22,
+    "jaccard": 0.9091
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 6.2
+}

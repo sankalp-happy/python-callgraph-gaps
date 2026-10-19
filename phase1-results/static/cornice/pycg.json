@@ -1,0 +1,140 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 152,
+        "edges": 164,
+        "seconds": 0.14,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 152,
+        "edges": 164,
+        "seconds": 0.13,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 152,
+        "edges": 164,
+        "seconds": 0.16,
+        "peak_rss_mb": 16,
+        "detail": null
+      }
+    ],
+    "union_nodes": 152,
+    "union_edges": 164,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 152,
+    "pycg_edges": 164,
+    "name_outcomes": {
+      "mapped": 108,
+      "namespace_merged": 0,
+      "external": 40,
+      "unmapped": 4
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 18,
+      "external_module": 22,
+      "synthesized_path": 4
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [
+      "cornice.pyramidhook._pop_predicate_definition.<lambda1>",
+      "cornice.util.current_service.cors_origins_for",
+      "cornice.util.current_service.cors_support_credentials_for",
+      "cornice.util.current_service.cors_supported_headers_for"
+    ],
+    "unmapped_distinct": 4,
+    "inventory_nodes_covered": 108,
+    "inventory_nodes_total": 119
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 51,
+      "callers_with_external_edges": 50,
+      "dropped": {
+        "callee_external": 109,
+        "callee_unmapped": 4
+      }
+    },
+    "in_universe_edges": [
+      "src/cornice/__init__.py::includeme->src/cornice/__init__.py::setup_localization",
+      "src/cornice/__init__.py::includeme->src/cornice/renderer.py::CorniceRenderer",
+      "src/cornice/cors.py::apply_cors_post_request->src/cornice/__init__.py::set_localizer_for_languages",
+      "src/cornice/cors.py::apply_cors_post_request->src/cornice/cors.py::_get_method",
+      "src/cornice/cors.py::ensure_origin->src/cornice/cors.py::_get_method",
+      "src/cornice/errors.py::Errors.from_json->src/cornice/errors.py::Errors.from_list",
+      "src/cornice/errors.py::Errors.from_list->src/cornice/errors.py::Errors",
+      "src/cornice/errors.py::Errors.from_list->src/cornice/errors.py::Errors.add",
+      "src/cornice/pyramidhook.py::_pop_complex_predicates->src/cornice/pyramidhook.py::_pop_predicate_definition",
+      "src/cornice/pyramidhook.py::_pop_predicate_definition->src/cornice/util.py::to_list",
+      "src/cornice/pyramidhook.py::apply_filters->src/cornice/cors.py::apply_cors_post_request",
+      "src/cornice/pyramidhook.py::apply_filters->src/cornice/util.py::current_service",
+      "src/cornice/pyramidhook.py::apply_filters->src/cornice/util.py::is_string",
+      "src/cornice/pyramidhook.py::get_fallback_view._fallback_view->src/cornice/util.py::content_type_matches",
+      "src/cornice/pyramidhook.py::handle_exceptions->src/cornice/pyramidhook.py::apply_filters",
+      "src/cornice/pyramidhook.py::register_service_views->src/cornice/cors.py::get_cors_preflight_view",
+      "src/cornice/pyramidhook.py::register_service_views->src/cornice/cors.py::get_cors_validator",
+      "src/cornice/pyramidhook.py::register_service_views->src/cornice/pyramidhook.py::_mungle_view_args",
+      "src/cornice/pyramidhook.py::register_service_views->src/cornice/pyramidhook.py::_pop_complex_predicates",
+      "src/cornice/pyramidhook.py::register_service_views->src/cornice/pyramidhook.py::get_fallback_view",
+      "src/cornice/pyramidhook.py::register_service_views->src/cornice/service.py::decorate_view",
+      "src/cornice/pyramidhook.py::wrap_request->src/cornice/errors.py::Errors",
+      "src/cornice/renderer.py::CorniceRenderer.render_errors->src/cornice/renderer.py::JSONError.__init__",
+      "src/cornice/resource.py::add_resource->src/cornice/service.py::Service",
+      "src/cornice/resource.py::add_resource->src/cornice/service.py::Service.add_view",
+      "src/cornice/resource.py::resource.wrapper->src/cornice/resource.py::add_resource",
+      "src/cornice/resource.py::view.wrapper->src/cornice/resource.py::add_view",
+      "src/cornice/service.py::Service.__init__->src/cornice/util.py::to_list",
+      "src/cornice/service.py::Service.add_view->src/cornice/service.py::_UnboundView.__init__",
+      "src/cornice/service.py::Service.filter_argumentlist->src/cornice/util.py::to_list",
+      "src/cornice/service.py::Service.get_arguments->src/cornice/util.py::to_list",
+      "src/cornice/service.py::_UnboundView.__init__->src/cornice/util.py::func_name",
+      "src/cornice/service.py::decorate_view->src/cornice/util.py::func_name",
+      "src/cornice/service.py::decorate_view->src/cornice/util.py::is_string",
+      "src/cornice/service.py::decorate_view.wrapper->src/cornice/util.py::is_string",
+      "src/cornice/service.py::get_services->src/cornice/service.py::get_services._keep",
+      "src/cornice/util.py::extract_json_data->src/cornice/validators/__init__.py::extract_cstruct",
+      "src/cornice/util.py::match_accept_header->src/cornice/util.py::to_list",
+      "src/cornice/util.py::match_content_type_header->src/cornice/util.py::content_type_matches",
+      "src/cornice/util.py::match_content_type_header->src/cornice/util.py::to_list",
+      "src/cornice/validators/_colander.py::<module>->src/cornice/validators/_colander.py::_generate_colander_validator",
+      "src/cornice/validators/_colander.py::_generate_colander_validator._validator->src/cornice/validators/_colander.py::_ensure_instantiated",
+      "src/cornice/validators/_colander.py::_generate_colander_validator._validator->src/cornice/validators/_colander.py::validator",
+      "src/cornice/validators/_colander.py::validator->src/cornice/validators/__init__.py::extract_cstruct",
+      "src/cornice/validators/_colander.py::validator->src/cornice/validators/_colander.py::_ensure_instantiated",
+      "src/cornice/validators/_marshmallow.py::<module>->src/cornice/validators/_marshmallow.py::_generate_marshmallow_validator",
+      "src/cornice/validators/_marshmallow.py::_generate_marshmallow_validator._validator->src/cornice/validators/_marshmallow.py::_instantiate_schema",
+      "src/cornice/validators/_marshmallow.py::_generate_marshmallow_validator._validator->src/cornice/validators/_marshmallow.py::validator",
+      "src/cornice/validators/_marshmallow.py::validator->src/cornice/validators/__init__.py::extract_cstruct",
+      "src/cornice/validators/_marshmallow.py::validator->src/cornice/validators/_marshmallow.py::_instantiate_schema",
+      "src/cornice/validators/_marshmallow.py::validator->src/cornice/validators/_marshmallow.py::_message_normalizer"
+    ]
+  }
+}

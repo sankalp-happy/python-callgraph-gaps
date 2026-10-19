@@ -1,0 +1,113 @@
+{
+  "repo_url": "https://github.com/khanhnam-nathan/Pyneat",
+  "repo_name": "Pyneat",
+  "row_id": "C0217",
+  "stratum": "HIGH",
+  "sha_requested": "de316e8d7d219ef0bc3aed9302939a94a0ae9352",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-23T13:32:03Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "de316e8d7d219ef0bc3aed9302939a94a0ae9352",
+    "seconds_clone": 32.1
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "pyneat",
+    "pyneat_cli",
+    "pyneat_rs"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 108,
+    "nodes": 1257,
+    "callable_nodes": 997,
+    "by_kind": {
+      "class_body": 152,
+      "function": 193,
+      "lambda": 17,
+      "method": 787,
+      "module": 108
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 1,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 8200,
+    "ast_resolved": 1039,
+    "by_edge_type": {
+      "direct": 4101,
+      "method_static": 591,
+      "method_dynamic": 2746,
+      "super_dispatch": 37,
+      "reflective": 2,
+      "dynamic_import": 15,
+      "eval_exec": 0,
+      "callback_dispatch": 217,
+      "decorator_apply": 477,
+      "subprocess_ipc": 14
+    },
+    "by_target_scope": {
+      "external": 3428,
+      "in_repo": 1358,
+      "unknown": 3414
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 660,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 85,
+    "namespace_merged": 23
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 1108,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 2197
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 5,
+    "decorator_apply": 298,
+    "direct": 1458,
+    "method_dynamic": 420,
+    "reflective": 2,
+    "super_dispatch": 14
+  },
+  "baseline_comparison": {
+    "pycg_only": 141,
+    "pyright_only": 589,
+    "agreed": 519,
+    "union": 1249,
+    "jaccard": 0.4155
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 203.3
+}

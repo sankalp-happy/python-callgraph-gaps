@@ -1,0 +1,129 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 104,
+        "edges": 134,
+        "seconds": 0.11,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 103,
+        "edges": 133,
+        "seconds": 0.12,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 103,
+        "edges": 133,
+        "seconds": 0.12,
+        "peak_rss_mb": 15,
+        "detail": null
+      }
+    ],
+    "union_nodes": 104,
+    "union_edges": 134,
+    "deterministic_across_seeds": false
+  },
+  "diagnostics": {
+    "pycg_nodes": 104,
+    "pycg_edges": 134,
+    "name_outcomes": {
+      "mapped": 64,
+      "namespace_merged": 3,
+      "external": 37,
+      "unmapped": 0
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 17,
+      "external_module": 20,
+      "namespace_merged": 3
+    },
+    "namespace_merged_examples": [
+      "exceptions.IncorrectSchemaTypeError",
+      "fields.RelatedList",
+      "fields.get_primary_keys"
+    ],
+    "namespace_merged_distinct": 3,
+    "unmapped_examples": [],
+    "unmapped_distinct": 0,
+    "inventory_nodes_covered": 66,
+    "inventory_nodes_total": 87
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 42,
+      "callers_with_external_edges": 41,
+      "dropped": {
+        "callee_external": 92
+      }
+    },
+    "in_universe_edges": [
+      "src/marshmallow_sqlalchemy/convert.py::<module>->src/marshmallow_sqlalchemy/convert.py::ModelConverter.__init__",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._add_column_kwargs->src/marshmallow_sqlalchemy/convert.py::_has_default",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_class_for_column->src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_class_for_data_type",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_class_for_data_type->src/marshmallow_sqlalchemy/convert.py::_is_field",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_class_for_property->src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_class_for_column",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_class_for_property->src/marshmallow_sqlalchemy/convert.py::_base_column",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_kwargs_for_property->src/marshmallow_sqlalchemy/convert.py::ModelConverter._add_column_kwargs",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_kwargs_for_property->src/marshmallow_sqlalchemy/convert.py::ModelConverter._add_relationship_kwargs",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_kwargs_for_property->src/marshmallow_sqlalchemy/convert.py::ModelConverter.get_base_kwargs",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_kwargs_for_property->src/marshmallow_sqlalchemy/convert.py::_base_column",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter._should_exclude_field->src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_name",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.column2field->src/marshmallow_sqlalchemy/convert.py::ModelConverter._add_column_kwargs",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.column2field->src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_class_for_column",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.column2field->src/marshmallow_sqlalchemy/convert.py::ModelConverter.get_base_kwargs",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.field_for->src/marshmallow_sqlalchemy/convert.py::ModelConverter.get_base_kwargs",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.field_for->src/marshmallow_sqlalchemy/convert.py::ModelConverter.property2field",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.field_for->src/marshmallow_sqlalchemy/fields.py::RelatedList",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.fields_for_model->src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_name",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.fields_for_model->src/marshmallow_sqlalchemy/convert.py::ModelConverter._should_exclude_field",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.fields_for_model->src/marshmallow_sqlalchemy/convert.py::ModelConverter.property2field",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.fields_for_table->src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_name",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.fields_for_table->src/marshmallow_sqlalchemy/convert.py::ModelConverter._should_exclude_field",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.fields_for_table->src/marshmallow_sqlalchemy/convert.py::ModelConverter.column2field",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.property2field->src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_class_for_property",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.property2field->src/marshmallow_sqlalchemy/convert.py::ModelConverter._get_field_kwargs_for_property",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.property2field->src/marshmallow_sqlalchemy/convert.py::ModelConverter.get_base_kwargs",
+      "src/marshmallow_sqlalchemy/convert.py::ModelConverter.property2field->src/marshmallow_sqlalchemy/fields.py::RelatedList",
+      "src/marshmallow_sqlalchemy/convert.py::_has_default->src/marshmallow_sqlalchemy/convert.py::_is_auto_increment",
+      "src/marshmallow_sqlalchemy/fields.py::Related.__init__->src/marshmallow_sqlalchemy/fields.py::ensure_list",
+      "src/marshmallow_sqlalchemy/fields.py::Related._deserialize->src/marshmallow_sqlalchemy/fields.py::Related._get_existing_instance",
+      "src/marshmallow_sqlalchemy/fields.py::Related._deserialize->src/marshmallow_sqlalchemy/fields.py::Related.related_model",
+      "src/marshmallow_sqlalchemy/fields.py::Related.related_keys->src/marshmallow_sqlalchemy/fields.py::get_primary_keys",
+      "src/marshmallow_sqlalchemy/load_instance_mixin.py::LoadInstanceMixin.Schema.get_instance->src/marshmallow_sqlalchemy/fields.py::get_primary_keys",
+      "src/marshmallow_sqlalchemy/load_instance_mixin.py::LoadInstanceMixin.Schema.load->src/marshmallow_sqlalchemy/load_instance_mixin.py::_cast_data",
+      "src/marshmallow_sqlalchemy/load_instance_mixin.py::LoadInstanceMixin.Schema.make_instance->src/marshmallow_sqlalchemy/load_instance_mixin.py::LoadInstanceMixin.Schema._split_model_kwargs_association",
+      "src/marshmallow_sqlalchemy/load_instance_mixin.py::LoadInstanceMixin.Schema.make_instance->src/marshmallow_sqlalchemy/load_instance_mixin.py::LoadInstanceMixin.Schema.get_instance",
+      "src/marshmallow_sqlalchemy/load_instance_mixin.py::LoadInstanceMixin.Schema.validate->src/marshmallow_sqlalchemy/load_instance_mixin.py::_cast_data",
+      "src/marshmallow_sqlalchemy/schema.py::SQLAlchemyAutoField._bind_to_schema->src/marshmallow_sqlalchemy/exceptions.py::IncorrectSchemaTypeError",
+      "src/marshmallow_sqlalchemy/schema.py::SQLAlchemySchemaMeta.get_declared_fields->src/marshmallow_sqlalchemy/schema.py::SQLAlchemySchemaMeta._maybe_filter_foreign_keys",
+      "src/marshmallow_sqlalchemy/schema.py::SQLAlchemySchemaMeta.get_declared_fields->src/marshmallow_sqlalchemy/schema.py::SQLAlchemySchemaMeta.get_auto_fields",
+      "src/marshmallow_sqlalchemy/schema.py::SQLAlchemySchemaMeta.get_declared_fields->src/marshmallow_sqlalchemy/schema.py::SQLAlchemySchemaMeta.get_declared_sqla_fields",
+      "src/marshmallow_sqlalchemy/schema.py::auto_field->src/marshmallow_sqlalchemy/schema.py::SQLAlchemyAutoField.__init__"
+    ]
+  }
+}

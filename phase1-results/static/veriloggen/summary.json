@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/PyHDI/veriloggen",
+  "repo_name": "veriloggen",
+  "row_id": "C0170",
+  "stratum": "MED",
+  "sha_requested": "47eae17dd9015d63b3530537d705f0b315cae773",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T12:42:38Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "47eae17dd9015d63b3530537d705f0b315cae773",
+    "seconds_clone": 4.4
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "veriloggen"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 77,
+    "nodes": 3582,
+    "callable_nodes": 3057,
+    "by_kind": {
+      "class_body": 448,
+      "function": 301,
+      "lambda": 64,
+      "method": 2692,
+      "module": 77
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 30,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 18813,
+    "ast_resolved": 5829,
+    "by_edge_type": {
+      "direct": 7359,
+      "method_static": 3076,
+      "method_dynamic": 6148,
+      "super_dispatch": 0,
+      "reflective": 29,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 2044,
+      "decorator_apply": 154,
+      "subprocess_ipc": 3
+    },
+    "by_target_scope": {
+      "external": 4261,
+      "in_repo": 6204,
+      "unknown": 8348
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 5377,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 5259
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 1657,
+    "decorator_apply": 30,
+    "direct": 648,
+    "method_dynamic": 2895,
+    "reflective": 29
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 5377,
+    "agreed": 0,
+    "union": 5377,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 5468.5
+}

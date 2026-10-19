@@ -1,0 +1,113 @@
+{
+  "repo_url": "https://github.com/ecoron/SerpScrap",
+  "repo_name": "SerpScrap",
+  "row_id": "C0148",
+  "stratum": "HIGH",
+  "sha_requested": "0a951525573cafedef2ecd0b212883c9c0939df5",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T17:30:10Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "0a951525573cafedef2ecd0b212883c9c0939df5",
+    "seconds_clone": 1.4
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "scrapcore",
+    "serpscrap",
+    "ui"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 42,
+    "nodes": 485,
+    "callable_nodes": 352,
+    "by_kind": {
+      "class_body": 91,
+      "function": 66,
+      "lambda": 19,
+      "method": 267,
+      "module": 42
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 2999,
+    "ast_resolved": 462,
+    "by_edge_type": {
+      "direct": 1466,
+      "method_static": 252,
+      "method_dynamic": 1121,
+      "super_dispatch": 3,
+      "reflective": 5,
+      "dynamic_import": 1,
+      "eval_exec": 0,
+      "callback_dispatch": 53,
+      "decorator_apply": 97,
+      "subprocess_ipc": 1
+    },
+    "by_target_scope": {
+      "external": 1198,
+      "in_repo": 574,
+      "unknown": 1227
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 274,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 35,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 407,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 708
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 29,
+    "decorator_apply": 32,
+    "direct": 303,
+    "dynamic_import": 1,
+    "method_dynamic": 339,
+    "reflective": 4
+  },
+  "baseline_comparison": {
+    "pycg_only": 61,
+    "pyright_only": 194,
+    "agreed": 213,
+    "union": 468,
+    "jaccard": 0.4551
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 39.7
+}

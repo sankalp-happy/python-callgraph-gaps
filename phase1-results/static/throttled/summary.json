@@ -1,0 +1,107 @@
+{
+  "repo_url": "https://github.com/erpalma/throttled",
+  "repo_name": "throttled",
+  "row_id": "C0055",
+  "stratum": "LOW",
+  "sha_requested": "8c98bdc355c103a4ca740308ea4c98b057db0af9",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T02:05:55Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "8c98bdc355c103a4ca740308ea4c98b057db0af9",
+    "seconds_clone": 1.2
+  },
+  "layout": "single-module",
+  "src_root": ".",
+  "packages": [
+    "."
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 3,
+    "nodes": 76,
+    "callable_nodes": 70,
+    "by_kind": {
+      "class_body": 3,
+      "function": 55,
+      "lambda": 2,
+      "method": 13,
+      "module": 3
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 460,
+    "ast_resolved": 204,
+    "by_edge_type": {
+      "direct": 325,
+      "method_static": 13,
+      "method_dynamic": 118,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 0,
+      "decorator_apply": 0,
+      "subprocess_ipc": 4
+    },
+    "by_target_scope": {
+      "external": 143,
+      "in_repo": 207,
+      "unknown": 110
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 144,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 2,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 145,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 58
+  },
+  "unresolved_by_edge_type": {
+    "direct": 6,
+    "method_dynamic": 52
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 1,
+    "agreed": 144,
+    "union": 145,
+    "jaccard": 0.9931
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 5.4
+}

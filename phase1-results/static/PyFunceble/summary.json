@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/funilrys/PyFunceble",
+  "repo_name": "PyFunceble",
+  "row_id": "C0158",
+  "stratum": "MED",
+  "sha_requested": "849e52d69872a68d0b2ac15a46c97420575e3b61",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:26:32Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "849e52d69872a68d0b2ac15a46c97420575e3b61",
+    "seconds_clone": 2.5
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "PyFunceble"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 270,
+    "nodes": 1866,
+    "callable_nodes": 1404,
+    "by_kind": {
+      "class_body": 192,
+      "function": 198,
+      "lambda": 11,
+      "method": 1195,
+      "module": 270
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 123,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 6022,
+    "ast_resolved": 1317,
+    "by_edge_type": {
+      "direct": 2450,
+      "method_static": 648,
+      "method_dynamic": 1850,
+      "super_dispatch": 88,
+      "reflective": 13,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 274,
+      "decorator_apply": 689,
+      "subprocess_ipc": 10
+    },
+    "by_target_scope": {
+      "external": 2160,
+      "in_repo": 1468,
+      "unknown": 2394
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 1328,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 186,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 1753,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 1167
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 40,
+    "decorator_apply": 139,
+    "direct": 503,
+    "method_dynamic": 468,
+    "reflective": 13,
+    "super_dispatch": 4
+  },
+  "baseline_comparison": {
+    "pycg_only": 498,
+    "pyright_only": 923,
+    "agreed": 830,
+    "union": 2251,
+    "jaccard": 0.3687
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 267.0
+}

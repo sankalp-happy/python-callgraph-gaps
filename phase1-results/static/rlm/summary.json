@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/alexzhang13/rlm",
+  "repo_name": "rlm",
+  "row_id": "C0027",
+  "stratum": "LOW",
+  "sha_requested": "72d6940142ddfb84ee6be573dc999a37e633e671",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-22T14:21:30Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "72d6940142ddfb84ee6be573dc999a37e633e671",
+    "seconds_clone": 2.8
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "rlm"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 32,
+    "nodes": 396,
+    "callable_nodes": 319,
+    "by_kind": {
+      "class_body": 45,
+      "function": 44,
+      "lambda": 5,
+      "method": 270,
+      "module": 32
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 1836,
+    "ast_resolved": 299,
+    "by_edge_type": {
+      "direct": 838,
+      "method_static": 172,
+      "method_dynamic": 719,
+      "super_dispatch": 23,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 1,
+      "callback_dispatch": 23,
+      "decorator_apply": 53,
+      "subprocess_ipc": 7
+    },
+    "by_target_scope": {
+      "external": 697,
+      "in_repo": 355,
+      "unknown": 784
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 174,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 10,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 331,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 379
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 10,
+    "direct": 139,
+    "method_dynamic": 230
+  },
+  "baseline_comparison": {
+    "pycg_only": 60,
+    "pyright_only": 217,
+    "agreed": 114,
+    "union": 391,
+    "jaccard": 0.2916
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 24.7
+}

@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/alibaba/EasyCV",
+  "repo_name": "EasyCV",
+  "row_id": "C0053",
+  "stratum": "MED",
+  "sha_requested": "901ff18693da724af7f9e71ddde216ff2ddbe29e",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:17:36Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "901ff18693da724af7f9e71ddde216ff2ddbe29e",
+    "seconds_clone": 2.9
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "configs",
+    "easycv"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 902,
+    "nodes": 5824,
+    "callable_nodes": 3998,
+    "by_kind": {
+      "class_body": 924,
+      "function": 750,
+      "lambda": 30,
+      "method": 3218,
+      "module": 902
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 3,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 35533,
+    "ast_resolved": 3400,
+    "by_edge_type": {
+      "direct": 20555,
+      "method_static": 1495,
+      "method_dynamic": 9241,
+      "super_dispatch": 658,
+      "reflective": 35,
+      "dynamic_import": 1,
+      "eval_exec": 20,
+      "callback_dispatch": 2655,
+      "decorator_apply": 828,
+      "subprocess_ipc": 45
+    },
+    "by_target_scope": {
+      "external": 19743,
+      "in_repo": 4106,
+      "unknown": 11684
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 3513,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 15304
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 2506,
+    "decorator_apply": 115,
+    "direct": 5385,
+    "method_dynamic": 6834,
+    "method_static": 8,
+    "reflective": 35,
+    "super_dispatch": 421
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 3513,
+    "agreed": 0,
+    "union": 3513,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 5756.7
+}

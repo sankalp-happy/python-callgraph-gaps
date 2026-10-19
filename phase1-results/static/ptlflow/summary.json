@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/hmorimitsu/ptlflow",
+  "repo_name": "ptlflow",
+  "row_id": "C0207",
+  "stratum": "LOW",
+  "sha_requested": "b4e897c6b0c11d695fa9a35de1a728354890420d",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:06:58Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "b4e897c6b0c11d695fa9a35de1a728354890420d",
+    "seconds_clone": 4.5
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "ptlflow"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 499,
+    "nodes": 6009,
+    "callable_nodes": 4119,
+    "by_kind": {
+      "class_body": 1391,
+      "function": 923,
+      "lambda": 17,
+      "method": 3179,
+      "module": 499
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 15,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 37159,
+    "ast_resolved": 4579,
+    "by_edge_type": {
+      "direct": 18916,
+      "method_static": 786,
+      "method_dynamic": 9976,
+      "super_dispatch": 1160,
+      "reflective": 15,
+      "dynamic_import": 0,
+      "eval_exec": 2,
+      "callback_dispatch": 5971,
+      "decorator_apply": 333,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 16821,
+      "in_repo": 4664,
+      "unknown": 15674
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 3131,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 25733
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 5714,
+    "decorator_apply": 25,
+    "direct": 10143,
+    "method_dynamic": 8802,
+    "reflective": 14,
+    "super_dispatch": 1035
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 3131,
+    "agreed": 0,
+    "union": 3131,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 5584.6
+}

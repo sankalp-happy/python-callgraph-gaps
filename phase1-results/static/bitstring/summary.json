@@ -1,0 +1,106 @@
+{
+  "repo_url": "https://github.com/scott-griffiths/bitstring",
+  "repo_name": "bitstring",
+  "row_id": "C0239",
+  "stratum": "LOW",
+  "sha_requested": "78e6ad529b4a3ab43f1206cf4c9abc4458a6793d",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T21:11:32Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "78e6ad529b4a3ab43f1206cf4c9abc4458a6793d",
+    "seconds_clone": 2.2
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "bitstring"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 16,
+    "nodes": 628,
+    "callable_nodes": 585,
+    "by_kind": {
+      "class_body": 17,
+      "function": 92,
+      "method": 503,
+      "module": 16
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 7,
+    "overload_stubs": 10
+  },
+  "callsites": {
+    "call_sites": 2042,
+    "ast_resolved": 515,
+    "by_edge_type": {
+      "direct": 1091,
+      "method_static": 325,
+      "method_dynamic": 401,
+      "super_dispatch": 42,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 83,
+      "decorator_apply": 100,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 830,
+      "in_repo": 619,
+      "unknown": 593
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 644,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 215
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 24,
+    "decorator_apply": 5,
+    "direct": 76,
+    "method_dynamic": 110
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 644,
+    "agreed": 0,
+    "union": 644,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 13.6
+}

@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/ByteDance-Seed/VeOmni",
+  "repo_name": "VeOmni",
+  "row_id": "C0028",
+  "stratum": "HIGH",
+  "sha_requested": "6efdf2217d46dedf4e517bf02783625aac8e75cc",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-22T21:29:41Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "6efdf2217d46dedf4e517bf02783625aac8e75cc",
+    "seconds_clone": 3.4
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "veomni"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 489,
+    "nodes": 6476,
+    "callable_nodes": 4894,
+    "by_kind": {
+      "class_body": 1093,
+      "function": 1842,
+      "lambda": 120,
+      "method": 2932,
+      "module": 489
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 9,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 40909,
+    "ast_resolved": 5122,
+    "by_edge_type": {
+      "direct": 18495,
+      "method_static": 996,
+      "method_dynamic": 16158,
+      "super_dispatch": 732,
+      "reflective": 51,
+      "dynamic_import": 15,
+      "eval_exec": 0,
+      "callback_dispatch": 2765,
+      "decorator_apply": 1692,
+      "subprocess_ipc": 5
+    },
+    "by_target_scope": {
+      "external": 15331,
+      "in_repo": 5991,
+      "unknown": 19587
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 4559,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 24150
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 2536,
+    "decorator_apply": 972,
+    "direct": 6957,
+    "dynamic_import": 8,
+    "method_dynamic": 12929,
+    "method_static": 5,
+    "reflective": 49,
+    "super_dispatch": 694
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 4559,
+    "agreed": 0,
+    "union": 4559,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 5615.3
+}

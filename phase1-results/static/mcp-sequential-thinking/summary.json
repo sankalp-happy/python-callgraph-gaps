@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/arben-adm/mcp-sequential-thinking",
+  "repo_name": "mcp-sequential-thinking",
+  "row_id": "C0096",
+  "stratum": "MED",
+  "sha_requested": "127a601bccea11a86348d335f446243756593d3f",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:03:36Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "127a601bccea11a86348d335f446243756593d3f",
+    "seconds_clone": 1.6
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "mcp_sequential_thinking"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 8,
+    "nodes": 55,
+    "callable_nodes": 43,
+    "by_kind": {
+      "class_body": 4,
+      "function": 17,
+      "lambda": 3,
+      "method": 23,
+      "module": 8
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 317,
+    "ast_resolved": 46,
+    "by_edge_type": {
+      "direct": 135,
+      "method_static": 21,
+      "method_dynamic": 141,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 1,
+      "decorator_apply": 19,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 125,
+      "in_repo": 47,
+      "unknown": 145
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 39,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 3,
+    "namespace_merged": 18
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 45,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 41
+  },
+  "unresolved_by_edge_type": {
+    "decorator_apply": 9,
+    "direct": 17,
+    "method_dynamic": 15
+  },
+  "baseline_comparison": {
+    "pycg_only": 2,
+    "pyright_only": 8,
+    "agreed": 37,
+    "union": 47,
+    "jaccard": 0.7872
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 8.2
+}

@@ -1,0 +1,111 @@
+{
+  "repo_url": "https://github.com/enthought/mayavi",
+  "repo_name": "mayavi",
+  "row_id": "C0037",
+  "stratum": "HIGH",
+  "sha_requested": "3bcb89a23cf487e7cf759bb0103c7105b6e6a2e2",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-22T23:03:16Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "3bcb89a23cf487e7cf759bb0103c7105b6e6a2e2",
+    "seconds_clone": 7.7
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "mayavi",
+    "tvtk"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 255,
+    "nodes": 2473,
+    "callable_nodes": 1928,
+    "by_kind": {
+      "class_body": 290,
+      "function": 186,
+      "lambda": 23,
+      "method": 1719,
+      "module": 255
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 9442,
+    "ast_resolved": 1409,
+    "by_edge_type": {
+      "direct": 4636,
+      "method_static": 1203,
+      "method_dynamic": 2833,
+      "super_dispatch": 190,
+      "reflective": 59,
+      "dynamic_import": 4,
+      "eval_exec": 10,
+      "callback_dispatch": 468,
+      "decorator_apply": 38,
+      "subprocess_ipc": 1
+    },
+    "by_target_scope": {
+      "external": 3928,
+      "in_repo": 2109,
+      "unknown": 3405
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 1726,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 5281
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 188,
+    "decorator_apply": 28,
+    "direct": 2574,
+    "method_dynamic": 2121,
+    "method_static": 244,
+    "reflective": 59,
+    "super_dispatch": 67
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 1726,
+    "agreed": 0,
+    "union": 1726,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 5484.5
+}

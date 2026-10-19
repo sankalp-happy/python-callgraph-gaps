@@ -1,0 +1,107 @@
+{
+  "repo_url": "https://github.com/explosion/confection",
+  "repo_name": "confection",
+  "row_id": "C0172",
+  "stratum": "HIGH",
+  "sha_requested": "b3adaf460c4d9e9b2a22a4601f61b7ea71891d2a",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T13:26:22Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "b3adaf460c4d9e9b2a22a4601f61b7ea71891d2a",
+    "seconds_clone": 1.3
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "confection"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 9,
+    "nodes": 144,
+    "callable_nodes": 115,
+    "by_kind": {
+      "class_body": 20,
+      "function": 53,
+      "lambda": 1,
+      "method": 61,
+      "module": 9
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 704,
+    "ast_resolved": 148,
+    "by_edge_type": {
+      "direct": 424,
+      "method_static": 32,
+      "method_dynamic": 205,
+      "super_dispatch": 5,
+      "reflective": 2,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 20,
+      "decorator_apply": 16,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 300,
+      "in_repo": 158,
+      "unknown": 246
+    }
+  },
+  "pycg": {
+    "status": "all_runs_failed",
+    "in_universe": 0,
+    "seeds_completed": [],
+    "deterministic_across_seeds": null,
+    "unmapped_names": 0,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 126,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 75
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 12,
+    "direct": 7,
+    "method_dynamic": 55,
+    "reflective": 1
+  },
+  "baseline_comparison": {
+    "pycg_only": 0,
+    "pyright_only": 126,
+    "agreed": 0,
+    "union": 126,
+    "jaccard": 0.0
+  },
+  "baselines_failed": [
+    "pycg"
+  ],
+  "status": "partial",
+  "seconds_total": 10.1
+}

@@ -1,0 +1,147 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 135,
+        "edges": 183,
+        "seconds": 0.12,
+        "peak_rss_mb": 14,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 135,
+        "edges": 183,
+        "seconds": 0.11,
+        "peak_rss_mb": 14,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 135,
+        "edges": 183,
+        "seconds": 0.14,
+        "peak_rss_mb": 15,
+        "detail": null
+      }
+    ],
+    "union_nodes": 135,
+    "union_edges": 183,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 135,
+    "pycg_edges": 183,
+    "name_outcomes": {
+      "mapped": 50,
+      "namespace_merged": 18,
+      "external": 64,
+      "unmapped": 3
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 17,
+      "external_module": 47,
+      "namespace_merged": 18,
+      "synthesized_path": 3
+    },
+    "namespace_merged_examples": [
+      "analysis.ThoughtAnalyzer.analyze_thought",
+      "analysis.ThoughtAnalyzer.generate_summary",
+      "logging_conf.configure_logging",
+      "models.ThoughtData",
+      "models.ThoughtData.from_dict",
+      "models.ThoughtStage.from_string",
+      "storage.ThoughtStorage",
+      "storage.ThoughtStorage.add_thought",
+      "storage.ThoughtStorage.clear_history",
+      "storage.ThoughtStorage.export_session",
+      "storage.ThoughtStorage.get_all_thoughts",
+      "storage.ThoughtStorage.import_session",
+      "storage_utils.append_thought_to_jsonl",
+      "storage_utils.load_thoughts_from_file",
+      "storage_utils.load_thoughts_from_jsonl",
+      "storage_utils.prepare_thoughts_for_serialization",
+      "storage_utils.rewrite_jsonl",
+      "storage_utils.save_thoughts_to_file"
+    ],
+    "namespace_merged_distinct": 18,
+    "unmapped_examples": [
+      "mcp_sequential_thinking.analysis.ThoughtAnalyzer.find_related_thoughts.<lambda1>",
+      "mcp_sequential_thinking.analysis.ThoughtAnalyzer.generate_summary.<lambda1>",
+      "mcp_sequential_thinking.models.ThoughtData.<lambda1>"
+    ],
+    "unmapped_distinct": 3,
+    "inventory_nodes_covered": 50,
+    "inventory_nodes_total": 55
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 39,
+      "callers_with_external_edges": 37,
+      "dropped": {
+        "callee_external": 131,
+        "caller_unmapped": 2
+      }
+    },
+    "in_universe_edges": [
+      "mcp_sequential_thinking/analysis.py::<module>->mcp_sequential_thinking/logging_conf.py::configure_logging",
+      "mcp_sequential_thinking/analysis.py::ThoughtAnalyzer.analyze_thought->mcp_sequential_thinking/analysis.py::ThoughtAnalyzer._is_mainline",
+      "mcp_sequential_thinking/analysis.py::ThoughtAnalyzer.analyze_thought->mcp_sequential_thinking/analysis.py::ThoughtAnalyzer.find_related_thoughts",
+      "mcp_sequential_thinking/analysis.py::ThoughtAnalyzer.generate_summary->mcp_sequential_thinking/analysis.py::ThoughtAnalyzer._is_mainline",
+      "mcp_sequential_thinking/models.py::ThoughtData.from_dict->mcp_sequential_thinking/models.py::ThoughtStage.from_string",
+      "mcp_sequential_thinking/server.py::<module>->mcp_sequential_thinking/logging_conf.py::configure_logging",
+      "mcp_sequential_thinking/server.py::<module>->mcp_sequential_thinking/server.py::main",
+      "mcp_sequential_thinking/server.py::<module>->mcp_sequential_thinking/storage.py::ThoughtStorage",
+      "mcp_sequential_thinking/server.py::clear_history->mcp_sequential_thinking/storage.py::ThoughtStorage.clear_history",
+      "mcp_sequential_thinking/server.py::export_session->mcp_sequential_thinking/storage.py::ThoughtStorage.export_session",
+      "mcp_sequential_thinking/server.py::generate_summary->mcp_sequential_thinking/analysis.py::ThoughtAnalyzer.generate_summary",
+      "mcp_sequential_thinking/server.py::generate_summary->mcp_sequential_thinking/storage.py::ThoughtStorage.get_all_thoughts",
+      "mcp_sequential_thinking/server.py::import_session->mcp_sequential_thinking/storage.py::ThoughtStorage.import_session",
+      "mcp_sequential_thinking/server.py::process_thought->mcp_sequential_thinking/analysis.py::ThoughtAnalyzer.analyze_thought",
+      "mcp_sequential_thinking/server.py::process_thought->mcp_sequential_thinking/models.py::ThoughtData",
+      "mcp_sequential_thinking/server.py::process_thought->mcp_sequential_thinking/models.py::ThoughtStage.from_string",
+      "mcp_sequential_thinking/server.py::process_thought->mcp_sequential_thinking/storage.py::ThoughtStorage.add_thought",
+      "mcp_sequential_thinking/server.py::process_thought->mcp_sequential_thinking/storage.py::ThoughtStorage.get_all_thoughts",
+      "mcp_sequential_thinking/storage.py::<module>->mcp_sequential_thinking/logging_conf.py::configure_logging",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage._load_session->mcp_sequential_thinking/storage_utils.py::load_thoughts_from_jsonl",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage._migrate_v1_session->mcp_sequential_thinking/storage_utils.py::load_thoughts_from_file",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage._migrate_v1_session->mcp_sequential_thinking/storage_utils.py::prepare_thoughts_for_serialization",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage._migrate_v1_session->mcp_sequential_thinking/storage_utils.py::rewrite_jsonl",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage.add_thought->mcp_sequential_thinking/storage_utils.py::append_thought_to_jsonl",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage.clear_history->mcp_sequential_thinking/storage_utils.py::rewrite_jsonl",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage.export_session->mcp_sequential_thinking/storage_utils.py::prepare_thoughts_for_serialization",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage.export_session->mcp_sequential_thinking/storage_utils.py::save_thoughts_to_file",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage.import_session->mcp_sequential_thinking/storage_utils.py::load_thoughts_from_file",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage.import_session->mcp_sequential_thinking/storage_utils.py::prepare_thoughts_for_serialization",
+      "mcp_sequential_thinking/storage.py::ThoughtStorage.import_session->mcp_sequential_thinking/storage_utils.py::rewrite_jsonl",
+      "mcp_sequential_thinking/storage_utils.py::<module>->mcp_sequential_thinking/logging_conf.py::configure_logging",
+      "mcp_sequential_thinking/storage_utils.py::append_thought_to_jsonl->mcp_sequential_thinking/storage_utils.py::_dump_record",
+      "mcp_sequential_thinking/storage_utils.py::append_thought_to_jsonl->mcp_sequential_thinking/storage_utils.py::_header_record",
+      "mcp_sequential_thinking/storage_utils.py::load_thoughts_from_file->mcp_sequential_thinking/models.py::ThoughtData.from_dict",
+      "mcp_sequential_thinking/storage_utils.py::load_thoughts_from_jsonl->mcp_sequential_thinking/models.py::ThoughtData.from_dict",
+      "mcp_sequential_thinking/storage_utils.py::rewrite_jsonl->mcp_sequential_thinking/storage_utils.py::_atomic_write_text",
+      "mcp_sequential_thinking/storage_utils.py::rewrite_jsonl->mcp_sequential_thinking/storage_utils.py::_dump_record",
+      "mcp_sequential_thinking/storage_utils.py::rewrite_jsonl->mcp_sequential_thinking/storage_utils.py::_header_record",
+      "mcp_sequential_thinking/storage_utils.py::save_thoughts_to_file->mcp_sequential_thinking/storage_utils.py::_atomic_write_text"
+    ]
+  }
+}

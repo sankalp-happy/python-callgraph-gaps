@@ -1,0 +1,95 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 74,
+        "edges": 29,
+        "seconds": 0.07,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 74,
+        "edges": 29,
+        "seconds": 0.08,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 74,
+        "edges": 29,
+        "seconds": 0.08,
+        "peak_rss_mb": 16,
+        "detail": null
+      }
+    ],
+    "union_nodes": 74,
+    "union_edges": 29,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 74,
+    "pycg_edges": 29,
+    "name_outcomes": {
+      "mapped": 66,
+      "namespace_merged": 0,
+      "external": 8,
+      "unmapped": 0
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 3,
+      "external_module": 5
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [],
+    "unmapped_distinct": 0,
+    "inventory_nodes_covered": 66,
+    "inventory_nodes_total": 77
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 13,
+      "callers_with_external_edges": 13,
+      "dropped": {
+        "callee_external": 16
+      }
+    },
+    "in_universe_edges": [
+      "src/tradingview_screener/query.py::And->src/tradingview_screener/query.py::_impl_and_or_chaining",
+      "src/tradingview_screener/query.py::Or->src/tradingview_screener/query.py::_impl_and_or_chaining",
+      "src/tradingview_screener/query.py::Query.copy->src/tradingview_screener/query.py::Query",
+      "src/tradingview_screener/query.py::Query.select->src/tradingview_screener/column.py::Column",
+      "src/tradingview_screener/screeners.py::bond->src/tradingview_screener/query.py::Query",
+      "src/tradingview_screener/screeners.py::cfd->src/tradingview_screener/query.py::Query",
+      "src/tradingview_screener/screeners.py::coin->src/tradingview_screener/query.py::Query",
+      "src/tradingview_screener/screeners.py::crypto->src/tradingview_screener/query.py::Query",
+      "src/tradingview_screener/screeners.py::crypto_dex->src/tradingview_screener/query.py::Query",
+      "src/tradingview_screener/screeners.py::forex->src/tradingview_screener/query.py::Query",
+      "src/tradingview_screener/screeners.py::futures->src/tradingview_screener/query.py::Query",
+      "src/tradingview_screener/screeners.py::options->src/tradingview_screener/query.py::Query",
+      "src/tradingview_screener/screeners.py::stocks->src/tradingview_screener/query.py::Query"
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "repo_url": "https://github.com/ronaldoussoren/py2app",
+  "repo_name": "py2app",
+  "row_id": "C0117",
+  "stratum": "HIGH",
+  "sha_requested": "d4ff73f9f119947ac1985338b8afdcc2531b9f77",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-23T21:03:22Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "d4ff73f9f119947ac1985338b8afdcc2531b9f77",
+    "seconds_clone": 1.7
+  },
+  "layout": "src",
+  "src_root": "src",
+  "packages": [
+    "src/py2app"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 76,
+    "nodes": 462,
+    "callable_nodes": 351,
+    "by_kind": {
+      "class_body": 35,
+      "function": 199,
+      "lambda": 9,
+      "method": 143,
+      "module": 76
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 3091,
+    "ast_resolved": 419,
+    "by_edge_type": {
+      "direct": 1240,
+      "method_static": 143,
+      "method_dynamic": 1541,
+      "super_dispatch": 8,
+      "reflective": 22,
+      "dynamic_import": 8,
+      "eval_exec": 9,
+      "callback_dispatch": 63,
+      "decorator_apply": 40,
+      "subprocess_ipc": 17
+    },
+    "by_target_scope": {
+      "external": 1482,
+      "in_repo": 472,
+      "unknown": 1137
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 318,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 9,
+    "namespace_merged": 36
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 402,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 504
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 60,
+    "decorator_apply": 3,
+    "direct": 71,
+    "method_dynamic": 362,
+    "super_dispatch": 8
+  },
+  "baseline_comparison": {
+    "pycg_only": 14,
+    "pyright_only": 98,
+    "agreed": 304,
+    "union": 416,
+    "jaccard": 0.7308
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 489.9
+}

@@ -1,0 +1,107 @@
+{
+  "repo_url": "https://github.com/julien-duponchelle/python-mysql-replication",
+  "repo_name": "python-mysql-replication",
+  "row_id": "C0075",
+  "stratum": "LOW",
+  "sha_requested": "490b837fa7439ceaf82a4a266566f7a7efc8a30f",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-23T06:40:09Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "490b837fa7439ceaf82a4a266566f7a7efc8a30f",
+    "seconds_clone": 1.5
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "pymysqlreplication"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 20,
+    "nodes": 322,
+    "callable_nodes": 255,
+    "by_kind": {
+      "class_body": 47,
+      "function": 33,
+      "method": 222,
+      "module": 20
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 2379,
+    "ast_resolved": 1458,
+    "by_edge_type": {
+      "direct": 1118,
+      "method_static": 758,
+      "method_dynamic": 420,
+      "super_dispatch": 43,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 14,
+      "decorator_apply": 26,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 449,
+      "in_repo": 1469,
+      "unknown": 461
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 174,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 0,
+    "namespace_merged": 10
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 233,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 271
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 7,
+    "direct": 6,
+    "method_dynamic": 258
+  },
+  "baseline_comparison": {
+    "pycg_only": 16,
+    "pyright_only": 75,
+    "agreed": 158,
+    "union": 249,
+    "jaccard": 0.6345
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 17.6
+}

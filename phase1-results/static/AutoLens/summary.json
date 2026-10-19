@@ -1,0 +1,112 @@
+{
+  "repo_url": "https://github.com/AI4Optics/AutoLens",
+  "repo_name": "AutoLens",
+  "row_id": "C0230",
+  "stratum": "MED",
+  "sha_requested": "e58db32f3a0b07f25861b5839a45970f77b5c947",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-23T12:47:16Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "e58db32f3a0b07f25861b5839a45970f77b5c947",
+    "seconds_clone": 4.2
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "deeplens"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 49,
+    "nodes": 626,
+    "callable_nodes": 529,
+    "by_kind": {
+      "class_body": 48,
+      "function": 74,
+      "lambda": 5,
+      "method": 450,
+      "module": 49
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 5299,
+    "ast_resolved": 418,
+    "by_edge_type": {
+      "direct": 2678,
+      "method_static": 296,
+      "method_dynamic": 2041,
+      "super_dispatch": 32,
+      "reflective": 9,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 151,
+      "decorator_apply": 92,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 2596,
+      "in_repo": 466,
+      "unknown": 2237
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 334,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 11,
+    "namespace_merged": 9
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 492,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 2982
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 99,
+    "decorator_apply": 64,
+    "direct": 1164,
+    "method_dynamic": 1642,
+    "method_static": 1,
+    "reflective": 9,
+    "super_dispatch": 3
+  },
+  "baseline_comparison": {
+    "pycg_only": 32,
+    "pyright_only": 190,
+    "agreed": 302,
+    "union": 524,
+    "jaccard": 0.5763
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 71.5
+}

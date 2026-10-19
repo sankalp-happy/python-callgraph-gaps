@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/grantjenks/free-python-games",
+  "repo_name": "free-python-games",
+  "row_id": "C0043",
+  "stratum": "LOW",
+  "sha_requested": "cfa331f3d2d20f3fb742c9cd5504cea53504b0ef",
+  "corpus_eligible": "pending",
+  "recorded_utc": "2026-08-23T00:34:41Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "cfa331f3d2d20f3fb742c9cd5504cea53504b0ef",
+    "seconds_clone": 1.4
+  },
+  "layout": "src",
+  "src_root": "src",
+  "packages": [
+    "src/freegames"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 29,
+    "nodes": 179,
+    "callable_nodes": 149,
+    "by_kind": {
+      "class_body": 1,
+      "function": 92,
+      "lambda": 31,
+      "method": 26,
+      "module": 29
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 2,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 839,
+    "ast_resolved": 115,
+    "by_edge_type": {
+      "direct": 714,
+      "method_static": 7,
+      "method_dynamic": 110,
+      "super_dispatch": 0,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 4,
+      "decorator_apply": 4,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 525,
+      "in_repo": 205,
+      "unknown": 109
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 130,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 31,
+    "namespace_merged": 8
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 162,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 13
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 4,
+    "decorator_apply": 2,
+    "method_dynamic": 7
+  },
+  "baseline_comparison": {
+    "pycg_only": 24,
+    "pyright_only": 56,
+    "agreed": 106,
+    "union": 186,
+    "jaccard": 0.5699
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 14.1
+}

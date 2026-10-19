@@ -1,0 +1,151 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 171,
+        "edges": 276,
+        "seconds": 0.19,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 171,
+        "edges": 276,
+        "seconds": 0.19,
+        "peak_rss_mb": 16,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 171,
+        "edges": 276,
+        "seconds": 0.18,
+        "peak_rss_mb": 16,
+        "detail": null
+      }
+    ],
+    "union_nodes": 171,
+    "union_edges": 276,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 171,
+    "pycg_edges": 276,
+    "name_outcomes": {
+      "mapped": 64,
+      "namespace_merged": 0,
+      "external": 107,
+      "unmapped": 0
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 12,
+      "external_module": 95
+    },
+    "namespace_merged_examples": [],
+    "namespace_merged_distinct": 0,
+    "unmapped_examples": [],
+    "unmapped_distinct": 0,
+    "inventory_nodes_covered": 64,
+    "inventory_nodes_total": 66
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 69,
+      "callers_with_external_edges": 53,
+      "dropped": {
+        "callee_external": 207
+      }
+    },
+    "in_universe_edges": [
+      "src/dnsrobocert/__init__.py::<module>->src/dnsrobocert/__init__.py::get_version",
+      "src/dnsrobocert/core/background.py::_renew_job->src/dnsrobocert/core/certbot.py::renew",
+      "src/dnsrobocert/core/background.py::worker->src/dnsrobocert/core/background.py::_launch_background_jobs",
+      "src/dnsrobocert/core/certbot.py::_issue->src/dnsrobocert/core/certbot.py::certonly",
+      "src/dnsrobocert/core/certbot.py::_issue->src/dnsrobocert/core/certbot.py::revoke",
+      "src/dnsrobocert/core/certbot.py::_issue->src/dnsrobocert/core/config.py::get_lineage",
+      "src/dnsrobocert/core/certbot.py::_issue->src/dnsrobocert/core/config.py::load",
+      "src/dnsrobocert/core/certbot.py::account->src/dnsrobocert/core/config.py::get_acme_url",
+      "src/dnsrobocert/core/certbot.py::account->src/dnsrobocert/core/config.py::load",
+      "src/dnsrobocert/core/certbot.py::account->src/dnsrobocert/core/utils.py::execute",
+      "src/dnsrobocert/core/certbot.py::certonly->src/dnsrobocert/core/config.py::get_acme_url",
+      "src/dnsrobocert/core/certbot.py::certonly->src/dnsrobocert/core/config.py::load",
+      "src/dnsrobocert/core/certbot.py::certonly->src/dnsrobocert/core/utils.py::execute",
+      "src/dnsrobocert/core/certbot.py::renew->src/dnsrobocert/core/certbot.py::_issue",
+      "src/dnsrobocert/core/certbot.py::revoke->src/dnsrobocert/core/config.py::get_acme_url",
+      "src/dnsrobocert/core/certbot.py::revoke->src/dnsrobocert/core/config.py::load",
+      "src/dnsrobocert/core/certbot.py::revoke->src/dnsrobocert/core/utils.py::execute",
+      "src/dnsrobocert/core/config.py::_business_check->src/dnsrobocert/core/config.py::get_lineage",
+      "src/dnsrobocert/core/config.py::find_profile_for_lineage->src/dnsrobocert/core/config.py::get_certificate",
+      "src/dnsrobocert/core/config.py::find_profile_for_lineage->src/dnsrobocert/core/config.py::get_profile",
+      "src/dnsrobocert/core/config.py::get_certificate->src/dnsrobocert/core/config.py::get_lineage",
+      "src/dnsrobocert/core/config.py::get_lineage->src/dnsrobocert/core/utils.py::normalize_lineage",
+      "src/dnsrobocert/core/config.py::load->src/dnsrobocert/core/config.py::_business_check",
+      "src/dnsrobocert/core/config.py::load->src/dnsrobocert/core/config.py::_inject_env_variables",
+      "src/dnsrobocert/core/config.py::load->src/dnsrobocert/core/config.py::_values_conversion",
+      "src/dnsrobocert/core/hooks.py::<module>->src/dnsrobocert/core/hooks.py::main",
+      "src/dnsrobocert/core/hooks.py::_autocmd->src/dnsrobocert/core/utils.py::execute",
+      "src/dnsrobocert/core/hooks.py::_autorestart->src/dnsrobocert/core/utils.py::execute",
+      "src/dnsrobocert/core/hooks.py::_fix_permissions->src/dnsrobocert/core/utils.py::fix_permissions",
+      "src/dnsrobocert/core/hooks.py::auth->src/dnsrobocert/core/challenge.py::check_one_challenge",
+      "src/dnsrobocert/core/hooks.py::auth->src/dnsrobocert/core/challenge.py::txt_challenge",
+      "src/dnsrobocert/core/hooks.py::auth->src/dnsrobocert/core/config.py::find_profile_for_lineage",
+      "src/dnsrobocert/core/hooks.py::auth->src/dnsrobocert/core/config.py::get_certificate",
+      "src/dnsrobocert/core/hooks.py::cleanup->src/dnsrobocert/core/challenge.py::txt_challenge",
+      "src/dnsrobocert/core/hooks.py::cleanup->src/dnsrobocert/core/config.py::find_profile_for_lineage",
+      "src/dnsrobocert/core/hooks.py::cleanup->src/dnsrobocert/core/config.py::get_certificate",
+      "src/dnsrobocert/core/hooks.py::deploy->src/dnsrobocert/core/config.py::get_certificate",
+      "src/dnsrobocert/core/hooks.py::deploy->src/dnsrobocert/core/hooks.py::_autocmd",
+      "src/dnsrobocert/core/hooks.py::deploy->src/dnsrobocert/core/hooks.py::_autorestart",
+      "src/dnsrobocert/core/hooks.py::deploy->src/dnsrobocert/core/hooks.py::_deploy_hook",
+      "src/dnsrobocert/core/hooks.py::deploy->src/dnsrobocert/core/hooks.py::_fix_permissions",
+      "src/dnsrobocert/core/hooks.py::deploy->src/dnsrobocert/core/hooks.py::_pfx_export",
+      "src/dnsrobocert/core/hooks.py::main->src/dnsrobocert/core/config.py::load",
+      "src/dnsrobocert/core/legacy.py::_deep_merge.merge_into->src/dnsrobocert/core/legacy.py::_deep_merge.merge_into",
+      "src/dnsrobocert/core/legacy.py::_gather_parameters->src/dnsrobocert/core/legacy.py::_deep_merge",
+      "src/dnsrobocert/core/legacy.py::migrate->src/dnsrobocert/core/legacy.py::_extract_certificates",
+      "src/dnsrobocert/core/legacy.py::migrate->src/dnsrobocert/core/legacy.py::_gather_parameters",
+      "src/dnsrobocert/core/legacy.py::migrate->src/dnsrobocert/core/legacy.py::_handle_specific_envs_variables",
+      "src/dnsrobocert/core/main.py::<module>->src/dnsrobocert/core/main.py::main",
+      "src/dnsrobocert/core/main.py::_process_config->src/dnsrobocert/core/certbot.py::_issue",
+      "src/dnsrobocert/core/main.py::_process_config->src/dnsrobocert/core/certbot.py::account",
+      "src/dnsrobocert/core/main.py::_process_config->src/dnsrobocert/core/config.py::load",
+      "src/dnsrobocert/core/main.py::_process_config->src/dnsrobocert/core/utils.py::configure_certbot_workspace",
+      "src/dnsrobocert/core/main.py::_run_config->src/dnsrobocert/core/legacy.py::migrate",
+      "src/dnsrobocert/core/main.py::_run_config->src/dnsrobocert/core/main.py::_process_config",
+      "src/dnsrobocert/core/main.py::_watch_config->src/dnsrobocert/__init__.py::get_version",
+      "src/dnsrobocert/core/main.py::_watch_config->src/dnsrobocert/core/background.py::worker",
+      "src/dnsrobocert/core/main.py::_watch_config->src/dnsrobocert/core/legacy.py::migrate",
+      "src/dnsrobocert/core/main.py::_watch_config->src/dnsrobocert/core/main.py::_Daemon.__init__",
+      "src/dnsrobocert/core/main.py::_watch_config->src/dnsrobocert/core/main.py::_Daemon.do_shutdown",
+      "src/dnsrobocert/core/main.py::_watch_config->src/dnsrobocert/core/main.py::_process_config",
+      "src/dnsrobocert/core/main.py::_watch_config->src/dnsrobocert/core/utils.py::digest",
+      "src/dnsrobocert/core/main.py::main->src/dnsrobocert/core/main.py::_run_config",
+      "src/dnsrobocert/core/main.py::main->src/dnsrobocert/core/main.py::_watch_config",
+      "src/dnsrobocert/core/main.py::main->src/dnsrobocert/core/utils.py::get_default_args",
+      "src/dnsrobocert/core/main.py::main->src/dnsrobocert/core/utils.py::validate_snap_environment",
+      "src/dnsrobocert/core/utils.py::_is_valid_path_for_snap->src/dnsrobocert/core/utils.py::_split_path",
+      "src/dnsrobocert/core/utils.py::configure_certbot_workspace->src/dnsrobocert/core/utils.py::fix_permissions",
+      "src/dnsrobocert/core/utils.py::validate_snap_environment->src/dnsrobocert/core/utils.py::_is_valid_path_for_snap"
+    ]
+  }
+}

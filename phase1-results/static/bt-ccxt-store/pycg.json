@@ -1,0 +1,123 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 94,
+        "edges": 83,
+        "seconds": 0.07,
+        "peak_rss_mb": 14,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 94,
+        "edges": 83,
+        "seconds": 0.06,
+        "peak_rss_mb": 13,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 94,
+        "edges": 83,
+        "seconds": 0.07,
+        "peak_rss_mb": 13,
+        "detail": null
+      }
+    ],
+    "union_nodes": 94,
+    "union_edges": 83,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 94,
+    "pycg_edges": 83,
+    "name_outcomes": {
+      "mapped": 50,
+      "namespace_merged": 11,
+      "external": 33,
+      "unmapped": 0
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 12,
+      "external_module": 21,
+      "namespace_merged": 11
+    },
+    "namespace_merged_examples": [
+      "ccxtstore.CCXTStore",
+      "ccxtstore.CCXTStore.cancel_order",
+      "ccxtstore.CCXTStore.create_order",
+      "ccxtstore.CCXTStore.fetch_ohlcv",
+      "ccxtstore.CCXTStore.fetch_open_orders",
+      "ccxtstore.CCXTStore.fetch_order",
+      "ccxtstore.CCXTStore.fetch_trades",
+      "ccxtstore.CCXTStore.get_balance",
+      "ccxtstore.CCXTStore.get_granularity",
+      "ccxtstore.CCXTStore.get_wallet_balance",
+      "ccxtstore.CCXTStore.private_end_point"
+    ],
+    "namespace_merged_distinct": 11,
+    "unmapped_examples": [],
+    "unmapped_distinct": 0,
+    "inventory_nodes_covered": 50,
+    "inventory_nodes_total": 55
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 28,
+      "callers_with_external_edges": 24,
+      "dropped": {
+        "callee_external": 55
+      }
+    },
+    "in_universe_edges": [
+      "ccxtbt/ccxtbroker.py::CCXTBroker.__init__->ccxtbt/ccxtstore.py::CCXTStore",
+      "ccxtbt/ccxtbroker.py::CCXTBroker._submit->ccxtbt/ccxtbroker.py::CCXTBroker.notify",
+      "ccxtbt/ccxtbroker.py::CCXTBroker._submit->ccxtbt/ccxtbroker.py::CCXTOrder.__init__",
+      "ccxtbt/ccxtbroker.py::CCXTBroker._submit->ccxtbt/ccxtstore.py::CCXTStore.create_order",
+      "ccxtbt/ccxtbroker.py::CCXTBroker._submit->ccxtbt/ccxtstore.py::CCXTStore.fetch_order",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.buy->ccxtbt/ccxtbroker.py::CCXTBroker._submit",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.cancel->ccxtbt/ccxtbroker.py::CCXTBroker.notify",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.cancel->ccxtbt/ccxtstore.py::CCXTStore.cancel_order",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.cancel->ccxtbt/ccxtstore.py::CCXTStore.fetch_order",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.get_balance->ccxtbt/ccxtstore.py::CCXTStore.get_balance",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.get_orders_open->ccxtbt/ccxtstore.py::CCXTStore.fetch_open_orders",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.get_wallet_balance->ccxtbt/ccxtstore.py::CCXTStore.get_wallet_balance",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.next->ccxtbt/ccxtbroker.py::CCXTBroker.get_balance",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.next->ccxtbt/ccxtbroker.py::CCXTBroker.getposition",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.next->ccxtbt/ccxtbroker.py::CCXTBroker.notify",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.next->ccxtbt/ccxtstore.py::CCXTStore.fetch_order",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.private_end_point->ccxtbt/ccxtstore.py::CCXTStore.private_end_point",
+      "ccxtbt/ccxtbroker.py::CCXTBroker.sell->ccxtbt/ccxtbroker.py::CCXTBroker._submit",
+      "ccxtbt/ccxtfeed.py::CCXTFeed.__init__->ccxtbt/ccxtstore.py::CCXTStore",
+      "ccxtbt/ccxtfeed.py::CCXTFeed._fetch_ohlcv->ccxtbt/ccxtstore.py::CCXTStore.fetch_ohlcv",
+      "ccxtbt/ccxtfeed.py::CCXTFeed._fetch_ohlcv->ccxtbt/ccxtstore.py::CCXTStore.get_granularity",
+      "ccxtbt/ccxtfeed.py::CCXTFeed._load->ccxtbt/ccxtfeed.py::CCXTFeed._fetch_ohlcv",
+      "ccxtbt/ccxtfeed.py::CCXTFeed._load->ccxtbt/ccxtfeed.py::CCXTFeed._load_ohlcv",
+      "ccxtbt/ccxtfeed.py::CCXTFeed._load->ccxtbt/ccxtfeed.py::CCXTFeed._load_ticks",
+      "ccxtbt/ccxtfeed.py::CCXTFeed._load_ticks->ccxtbt/ccxtstore.py::CCXTStore.fetch_trades",
+      "ccxtbt/ccxtfeed.py::CCXTFeed.start->ccxtbt/ccxtfeed.py::CCXTFeed._fetch_ohlcv",
+      "ccxtbt/ccxtstore.py::CCXTStore->ccxtbt/ccxtstore.py::CCXTStore.retry",
+      "ccxtbt/ccxtstore.py::CCXTStore.retry.retry_method->ccxtbt/ccxtstore.py::CCXTStore.__init__"
+    ]
+  }
+}

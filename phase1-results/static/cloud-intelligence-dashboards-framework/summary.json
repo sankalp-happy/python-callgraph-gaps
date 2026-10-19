@@ -1,0 +1,109 @@
+{
+  "repo_url": "https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-framework",
+  "repo_name": "cloud-intelligence-dashboards-framework",
+  "row_id": "C0116",
+  "stratum": "MED",
+  "sha_requested": "f9e36d88c47709f10e8fa784ad11d5cc0e728021",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T15:53:33Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "f9e36d88c47709f10e8fa784ad11d5cc0e728021",
+    "seconds_clone": 7.9
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "cid"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 42,
+    "nodes": 650,
+    "callable_nodes": 569,
+    "by_kind": {
+      "class_body": 39,
+      "function": 119,
+      "lambda": 24,
+      "method": 426,
+      "module": 42
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 7,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 5500,
+    "ast_resolved": 962,
+    "by_edge_type": {
+      "direct": 1912,
+      "method_static": 325,
+      "method_dynamic": 3004,
+      "super_dispatch": 12,
+      "reflective": 0,
+      "dynamic_import": 1,
+      "eval_exec": 0,
+      "callback_dispatch": 36,
+      "decorator_apply": 209,
+      "subprocess_ipc": 1
+    },
+    "by_target_scope": {
+      "external": 1279,
+      "in_repo": 1099,
+      "unknown": 3122
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 540,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": false,
+    "unmapped_names": 97,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 818,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 1332
+  },
+  "unresolved_by_edge_type": {
+    "callback_dispatch": 6,
+    "decorator_apply": 67,
+    "direct": 206,
+    "method_dynamic": 1053
+  },
+  "baseline_comparison": {
+    "pycg_only": 174,
+    "pyright_only": 452,
+    "agreed": 366,
+    "union": 992,
+    "jaccard": 0.369
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 61.8
+}

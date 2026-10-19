@@ -1,0 +1,144 @@
+{
+  "baseline": "pycg",
+  "tool_pin": "pycg==0.0.8",
+  "spec_version": "1.0",
+  "run": {
+    "seeds_attempted": [
+      "0",
+      "1",
+      "42"
+    ],
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "per_seed": [
+      {
+        "seed": "0",
+        "status": "ok",
+        "nodes": 193,
+        "edges": 200,
+        "seconds": 0.12,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "1",
+        "status": "ok",
+        "nodes": 193,
+        "edges": 200,
+        "seconds": 0.12,
+        "peak_rss_mb": 15,
+        "detail": null
+      },
+      {
+        "seed": "42",
+        "status": "ok",
+        "nodes": 193,
+        "edges": 200,
+        "seconds": 0.12,
+        "peak_rss_mb": 16,
+        "detail": null
+      }
+    ],
+    "union_nodes": 193,
+    "union_edges": 200,
+    "deterministic_across_seeds": true
+  },
+  "diagnostics": {
+    "pycg_nodes": 193,
+    "pycg_edges": 200,
+    "name_outcomes": {
+      "mapped": 74,
+      "namespace_merged": 6,
+      "external": 107,
+      "unmapped": 6
+    },
+    "name_outcomes_sum_matches": true,
+    "reasons": {
+      "builtin": 18,
+      "external_module": 89,
+      "namespace_merged": 6,
+      "synthesized_path": 6
+    },
+    "namespace_merged_examples": [
+      "conf.spider_settings.get_scrapyrt_settings",
+      "log.err",
+      "log.msg",
+      "log.setup_logging",
+      "log.setup_spider_logging",
+      "utils.extract_scrapy_request_args"
+    ],
+    "namespace_merged_distinct": 6,
+    "unmapped_examples": [
+      "scrapyrt.conf.spider_settings.get_project_settings.getpriority",
+      "scrapyrt.core.CrawlManager.crawler_runner.spider_loader.load",
+      "scrapyrt.log.setup_spider_logging.<lambda1>",
+      "scrapyrt.log.setup_spider_logging.<lambda2>",
+      "scrapyrt.log.setup_spider_logging.<list2>.<lambda1>",
+      "scrapyrt.log.setup_spider_logging.<list2>.<lambda2>"
+    ],
+    "unmapped_distinct": 6,
+    "inventory_nodes_covered": 74,
+    "inventory_nodes_total": 85
+  },
+  "edges": {
+    "baseline": "pycg",
+    "counts": {
+      "in_universe": 44,
+      "callers_with_external_edges": 47,
+      "dropped": {
+        "callee_external": 150,
+        "callee_unmapped": 2,
+        "caller_unmapped": 4
+      }
+    },
+    "in_universe_edges": [
+      "scrapyrt/cmdline.py::<module>->scrapyrt/cmdline.py::execute",
+      "scrapyrt/cmdline.py::_update_app_settings->scrapyrt/cmdline.py::find_scrapy_project",
+      "scrapyrt/cmdline.py::_update_app_settings->scrapyrt/conf/spider_settings.py::get_project_settings",
+      "scrapyrt/cmdline.py::execute->scrapyrt/cmdline.py::_update_app_settings",
+      "scrapyrt/cmdline.py::execute->scrapyrt/cmdline.py::parse_arguments",
+      "scrapyrt/cmdline.py::execute->scrapyrt/cmdline.py::run_application",
+      "scrapyrt/cmdline.py::run_application->scrapyrt/cmdline.py::get_application",
+      "scrapyrt/cmdline.py::run_application->scrapyrt/log.py::setup_logging",
+      "scrapyrt/conf/__init__.py::<module>->scrapyrt/conf/__init__.py::Settings.__init__",
+      "scrapyrt/conf/__init__.py::Settings.__init__->scrapyrt/conf/__init__.py::Settings.setmodule",
+      "scrapyrt/conf/__init__.py::Settings.setmodule->scrapyrt/conf/__init__.py::Settings.set",
+      "scrapyrt/core.py::CrawlManager.__init__->scrapyrt/core.py::CrawlManager._init_spider_start",
+      "scrapyrt/core.py::CrawlManager.__init__->scrapyrt/core.py::CrawlManager.create_spider_request",
+      "scrapyrt/core.py::CrawlManager.crawl->scrapyrt/core.py::CrawlManager.get_project_settings",
+      "scrapyrt/core.py::CrawlManager.crawl->scrapyrt/core.py::CrawlManager.set_dummy_start_methods",
+      "scrapyrt/core.py::CrawlManager.crawl->scrapyrt/core.py::ScrapyrtCrawlerRunner.__init__",
+      "scrapyrt/core.py::CrawlManager.crawl.cleanup_logging->scrapyrt/log.py::setup_spider_logging",
+      "scrapyrt/core.py::CrawlManager.create_spider_request->scrapyrt/log.py::msg",
+      "scrapyrt/core.py::CrawlManager.get_project_settings->scrapyrt/conf/spider_settings.py::get_scrapyrt_settings",
+      "scrapyrt/core.py::CrawlManager.get_project_settings->scrapyrt/core.py::CrawlManager._get_log_file_path",
+      "scrapyrt/core.py::CrawlManager.get_project_settings->scrapyrt/core.py::CrawlManager.get_project_settings",
+      "scrapyrt/core.py::CrawlManager.handle_scheduling->scrapyrt/core.py::CrawlManager.limit_requests",
+      "scrapyrt/core.py::CrawlManager.handle_scheduling->scrapyrt/core.py::CrawlManager.limit_runtime",
+      "scrapyrt/core.py::CrawlManager.read_spider->scrapyrt/log.py::setup_spider_logging",
+      "scrapyrt/core.py::CrawlManager.spider_idle->scrapyrt/log.py::msg",
+      "scrapyrt/log.py::ScrapyrtFileLogObserver.emit->scrapyrt/log.py::ScrapyrtFileLogObserver._adapt_eventdict",
+      "scrapyrt/log.py::ScrapyrtFileLogObserver.emit->scrapyrt/log.py::ScrapyrtFileLogObserver._unicode_to_str",
+      "scrapyrt/log.py::setup_logging->scrapyrt/log.py::ScrapyrtFileLogObserver.__init__",
+      "scrapyrt/log.py::setup_spider_logging->scrapyrt/log.py::SpiderFilter.__init__",
+      "scrapyrt/resources.py::CrawlResource.prepare_crawl->scrapyrt/resources.py::CrawlResource.get_required_argument",
+      "scrapyrt/resources.py::CrawlResource.prepare_crawl->scrapyrt/resources.py::CrawlResource.run_crawl",
+      "scrapyrt/resources.py::CrawlResource.render_GET->scrapyrt/resources.py::CrawlResource.prepare_crawl",
+      "scrapyrt/resources.py::CrawlResource.render_GET->scrapyrt/resources.py::CrawlResource.validate_options",
+      "scrapyrt/resources.py::CrawlResource.render_GET->scrapyrt/utils.py::extract_scrapy_request_args",
+      "scrapyrt/resources.py::CrawlResource.render_POST->scrapyrt/log.py::msg",
+      "scrapyrt/resources.py::CrawlResource.render_POST->scrapyrt/resources.py::CrawlResource.get_required_argument",
+      "scrapyrt/resources.py::CrawlResource.render_POST->scrapyrt/resources.py::CrawlResource.prepare_crawl",
+      "scrapyrt/resources.py::CrawlResource.render_POST->scrapyrt/resources.py::CrawlResource.validate_options",
+      "scrapyrt/resources.py::CrawlResource.render_POST->scrapyrt/utils.py::extract_scrapy_request_args",
+      "scrapyrt/resources.py::ServiceResource.handle_error->scrapyrt/log.py::err",
+      "scrapyrt/resources.py::ServiceResource.handle_error->scrapyrt/resources.py::ServiceResource.format_error_response",
+      "scrapyrt/resources.py::ServiceResource.render->scrapyrt/resources.py::ServiceResource.handle_error",
+      "scrapyrt/resources.py::ServiceResource.render->scrapyrt/resources.py::ServiceResource.render_object",
+      "scrapyrt/resources.py::ServiceResource.render.finish_request->scrapyrt/resources.py::ServiceResource.render_object"
+    ]
+  }
+}

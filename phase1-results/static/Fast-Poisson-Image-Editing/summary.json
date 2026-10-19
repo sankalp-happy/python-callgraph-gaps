@@ -1,0 +1,108 @@
+{
+  "repo_url": "https://github.com/Trinkle23897/Fast-Poisson-Image-Editing",
+  "repo_name": "Fast-Poisson-Image-Editing",
+  "row_id": "C0176",
+  "stratum": "MED",
+  "sha_requested": "c33f7d67a14b07e593e80206dc0d83d0e5d605d4",
+  "corpus_eligible": "yes",
+  "recorded_utc": "2026-08-23T14:03:25Z",
+  "host_arch": "amd64",
+  "extract_version": "1.0",
+  "spec_version": "1.0",
+  "image": "traceweave-static:latest",
+  "image_provenance": {
+    "image_id": "sha256:5a1991f03716ae98121f7e3a1cf7033f7d87966af9eecc5fbe6139e42cec5e0a",
+    "base_image": "python@sha256:e8d6cdadc17ce7146e1bb286e6093d58c8cf582659a558ad51cd103829655e72",
+    "platform": "linux/amd64",
+    "inside": {
+      "python": "3.10.20",
+      "pycg": "0.0.8",
+      "pycg_importable": "yes",
+      "pyright": "pyright 1.1.411",
+      "node": "v20.19.2",
+      "arch": "x86_64"
+    }
+  },
+  "clone": {
+    "status": "ok",
+    "sha_resolved": "c33f7d67a14b07e593e80206dc0d83d0e5d605d4",
+    "seconds_clone": 2.0
+  },
+  "layout": "flat",
+  "src_root": ".",
+  "packages": [
+    "fpie"
+  ],
+  "include_tests": false,
+  "inventory": {
+    "modules": 11,
+    "nodes": 94,
+    "callable_nodes": 70,
+    "by_kind": {
+      "class_body": 13,
+      "function": 21,
+      "method": 49,
+      "module": 11
+    },
+    "parse_failures": 0,
+    "locals_collision_groups": 0,
+    "redefinition_groups": 0,
+    "overload_stubs": 0
+  },
+  "callsites": {
+    "call_sites": 473,
+    "ast_resolved": 69,
+    "by_edge_type": {
+      "direct": 224,
+      "method_static": 31,
+      "method_dynamic": 197,
+      "super_dispatch": 9,
+      "reflective": 0,
+      "dynamic_import": 0,
+      "eval_exec": 0,
+      "callback_dispatch": 0,
+      "decorator_apply": 12,
+      "subprocess_ipc": 0
+    },
+    "by_target_scope": {
+      "external": 181,
+      "in_repo": 84,
+      "unknown": 208
+    }
+  },
+  "pycg": {
+    "status": "ok",
+    "in_universe": 56,
+    "seeds_completed": [
+      "0",
+      "1",
+      "42"
+    ],
+    "deterministic_across_seeds": true,
+    "unmapped_names": 17,
+    "namespace_merged": 0
+  },
+  "pyright": {
+    "status": "ok",
+    "in_universe": 62,
+    "server_restarts": 0,
+    "files_unready": 0,
+    "unresolved_call_sites": 232
+  },
+  "unresolved_by_edge_type": {
+    "decorator_apply": 8,
+    "direct": 86,
+    "method_dynamic": 130,
+    "method_static": 8
+  },
+  "baseline_comparison": {
+    "pycg_only": 10,
+    "pyright_only": 16,
+    "agreed": 46,
+    "union": 72,
+    "jaccard": 0.6389
+  },
+  "baselines_failed": [],
+  "status": "ok",
+  "seconds_total": 9.5
+}
