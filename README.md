@@ -123,15 +123,18 @@ frozen lock.
 `batch.py`, `collect.py`, `loro.py`, `d1_mapping.py`, `review_stats.py` and `sweep.py` import
 modules (`bench`, `resolve`, `ml`, `graph`, `sandbox`) from a separate repository,
 `traceweave-harness`, and drive its `tw.py` CLI (`truth`, `bench`, `resolve`). That repository is
-**not public**. This means:
+public: <https://github.com/sankalp-happy/traceweave-harness> (commit `81faa84`, the version that
+holds the `sys.monitoring` tracer, `truth.py`, `bench.py`, `resolve.py` and `ml.py`). Clone it to
+`~/traceweave-harness` or set `TW_HARNESS`. This means:
 
 - **Rebuilding the paper does not need it.** Every Study 1 number is read from the committed
   `study1-results/`. Five macros (ShivyC's `make_il`/`make_asm` counts, the `click`/`toolz` sample
   sizes, and the pilot's fused failures) are computed from four harness outputs. Those files are
   vendored under [`paper/harness-inputs/`](paper/harness-inputs/) in the harness's own layout. Set
   `TW_HARNESS=/path/to/traceweave-harness` to read a live checkout instead.
-- **Re-running Study 1 does need it.** Without the harness, the Study 1 scripts document what was
-  run, but they cannot be executed.
+- **Re-running Study 1 does need it**, plus Python 3.12+, git, a Linux x86_64 host (the corpus is
+  amd64) and a Groq key for the AI runs. The harness's `bundles/` hold only click and toolz; the
+  other corpus bundles are built by `batch.py`.
 
 ## Licence
 
